@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+declare -r SYMLINK_FLAGFILE=.symlink
+
+declare -r this_dir="$(realpath "$0" | xargs dirname)"
+declare -r dotfiles_source="$(realpath "$1")"
+declare -r dotfiles_dest="$(realpath "$2")"
+
+cd "$this_dir"
+. symlink.sh
+
+cd "$dotfiles_source"
+find_by_flagfile "$SYMLINK_FLAGFILE" . |
+symlink_parents "$dotfiles_dest"
+
+exit 0
