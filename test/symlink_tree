@@ -2,8 +2,8 @@
 
 [ -e dest ] && rm -r dest
 
-. ../symlink.sh
-create_symlinks .symlink source/ dest/
+. ../symlink_tree.sh
+symlink_tree .symlink source/ dest/
 if cmp -s symlink_tree.out <(diff -rq source/ dest/)
 then
 	echo 'test successful'

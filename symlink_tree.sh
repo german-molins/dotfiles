@@ -74,7 +74,7 @@ symlink_parents ()
 	done
 }
 
-create_symlinks ()
+symlink_tree ()
 (
 	local -r flagfile="$1"
 	local -r source_dir="$(realpath "$2")"

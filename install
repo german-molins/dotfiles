@@ -4,6 +4,6 @@ declare -r SYMLINK_FLAGFILE=.symlink
 declare -r this_dir="$(realpath "$0" | xargs dirname)"
 
 cd "$this_dir"
-. symlink.sh
+. symlink_tree.sh
 
-create_symlinks "$SYMLINK_FLAGFILE" ./home/ ~
+symlink_tree "$SYMLINK_FLAGFILE" ./home/ ~
