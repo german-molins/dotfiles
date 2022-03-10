@@ -73,3 +73,14 @@ symlink_parents ()
 		ln -s "$target" "$symlink"
 	done
 }
+
+create_symlinks ()
+(
+	local -r flagfile="$1"
+	local -r source_dir="$(realpath "$2")"
+	local -r dest_dir="$(realpath "$3")"
+
+	cd "$source_dir"
+	find_by_flagfile "$flagfile" . |
+	symlink_parents "$dest_dir"
+)
