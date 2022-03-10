@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+[ -e dest ] && rm -r dest
+
+. ../symlink.sh
+create_symlinks .symlink source/ dest/
+if cmp -s symlink_tree.out <(diff -rq source/ dest/)
+then
+	echo 'test successful'
+	exit 0
+else
+	echo 'test failed'
+	exit 1
+fi
