@@ -54,23 +54,33 @@ find_by_flagfile ()
 	fi
 }
 
-symlink_parents ()
+_symlink_parents_ ()
 {
 	local -r dest_dir="$1"
+	local -r file="$2"
+
 	local -- dir
 	local -- target
 	local -- symlink
 
+	target="$(realpath "$file")"
+	filename="$(basename "$file")"
+	dir="$(dirname "$file")"
+	dir="$dest_dir/$dir"
+	symlink="$dir/$filename"
+
+	mkdir -p "$dir"
+	ln -s "$target" "$symlink"
+}
+
+symlink_parents ()
+{
+	local -r dest_dir="$1"
+	local -- file
+
 	while read file
 	do
-		target="$(realpath "$file")"
-		filename="$(basename "$file")"
-		dir="$(dirname "$file")"
-		dir="$dest_dir/$dir"
-		symlink="$dir/$filename"
-
-		mkdir -p "$dir"
-		ln -s "$target" "$symlink"
+		_symlink_parents_ "$dest_dir" "$file"
 	done
 }
 
