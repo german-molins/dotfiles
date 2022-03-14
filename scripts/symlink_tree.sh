@@ -65,9 +65,9 @@ _symlink_parents_ ()
 
 	target="$(realpath "$file")"
 	filename="$(basename "$file")"
-	dir="$(dirname "$file")"
+	dir="$(dirname "$file" | grep -vx .)"
 	dir="$dest_dir/$dir"
-	symlink="$dir/$filename"
+	symlink="${dir%/}/$filename"
 
 	mkdir -p "$dir"
 	ln -s "$target" "$symlink"
