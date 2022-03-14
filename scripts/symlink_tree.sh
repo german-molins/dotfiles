@@ -70,7 +70,7 @@ _symlink_parents_ ()
 	symlink="${dir%/}/$filename"
 
 	mkdir -p "$dir"
-	ln -s "$target" "$symlink"
+	ln -sn "$target" "$symlink"
 }
 
 symlink_parents ()
