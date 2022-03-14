@@ -1,0 +1,17 @@
+# More info:
+#     man 3 readline
+#     info readline
+#     info rluserman
+
+set completion-ignore-case on
+set completion-map-case on
+set completion-prefix-display-length 3
+set mark-symlinked-directories on
+set expand-tilde off
+set mark-directories on
+set match-hidden-files on
+
+set editing-mode vi
+set keymap vi
+
+set keyseq-timeout 500
