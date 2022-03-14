@@ -1,0 +1,31 @@
+###
+# This is Git's user configuration file.
+###
+
+[core]
+	editor = vim
+
+[user]
+	email = germanmolins@gmail.com
+	name = viejatapera
+
+[diff]
+	tool = vimdiff
+	submodule = log
+
+[difftool]
+	prompt = false
+
+[merge]
+	tool = vimdiff
+
+[mergetool]
+	keepBackup = false
+
+[fetch]
+	prune = true
+
+[svn]
+	rmdir = true
+[submodule]
+	recurse = true
