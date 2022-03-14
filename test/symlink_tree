@@ -2,7 +2,7 @@
 
 [ -e dest ] && rm -r dest
 
-. ../symlink_tree.sh
+. ../scripts/symlink_tree.sh
 symlink_tree .symlink source/ dest/
 if cmp -s symlink_tree.out <(diff -rq source/ dest/)
 then
