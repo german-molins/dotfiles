@@ -10,14 +10,14 @@
 	name = viejatapera
 
 [diff]
-	tool = vimdiff
+	tool = gvimdiff
 	submodule = log
 
 [difftool]
 	prompt = false
 
 [merge]
-	tool = vimdiff
+	tool = gvimdiff
 
 [mergetool]
 	keepBackup = false
