@@ -1,14 +1,14 @@
 # .bash_profile
 
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
+if [ -r ~/.bashrc ]
+then
 	. ~/.bashrc
 fi
 
-# User specific environment and startup programs
+if [ -r ~/.profile ]
+then
+	. ~/.profile
+fi
 
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
-
 export PATH
-
-########################## custom modifications by German #############################
