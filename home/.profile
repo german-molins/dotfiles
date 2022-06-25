@@ -12,7 +12,7 @@ if [ -n "$BASH_VERSION" ]
 then
     if [ -f "$HOME/.bashrc" ]
 	then
-		source "$HOME/.bashrc"
+		. "$HOME/.bashrc"
     fi
 fi
 
@@ -26,9 +26,12 @@ then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-for f in $HOME/.profile.d/*.sh ; do
-    if [ -r "$f" ]; then
-        if [ "$PS1" ]; then
+for f in $HOME/.profile.d/*.sh
+do
+    if [ -r "$f" ]
+	then
+        if [ "$PS1" ]
+		then
             . "$f"
         else
             . "$f" >/dev/null
