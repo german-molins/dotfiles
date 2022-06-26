@@ -6,12 +6,22 @@
 ###
 
 product='Kensington Slimblade Trackball' 
+_DRIVER=libinput
+
+setprop ()
+{
+	option="$1"
+	shift
+	value="$@"
+
+	xinput set-prop "$product" "$_DRIVER $option" $value
+}
 
 xinput set-button-map "$product" 1 0 2 4 5 0 0 3
 
-xinput set-prop "$product" 'libinput Drag Lock Buttons' 2 1
-xinput set-prop "$product" 'libinput Rotation Angle' 0
-xinput set-prop "$product" 'libinput Middle Emulation Enabled' 0
-xinput set-prop "$product" 'libinput Natural Scrolling Enabled' 0
-xinput set-prop "$product" 'libinput Button Scrolling Button Lock Enabled' 0
-xinput set-prop "$product" 'libinput Button Scrolling Button' 2
+setprop 'Drag Lock Buttons' 2 1
+setprop 'Rotation Angle' 0
+setprop 'Middle Emulation Enabled' 0
+setprop 'Natural Scrolling Enabled' 0
+setprop 'Button Scrolling Button Lock Enabled' 0
+setprop 'Button Scrolling Button' 2
