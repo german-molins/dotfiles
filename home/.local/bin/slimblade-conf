@@ -1,0 +1,17 @@
+#!/bin/sh
+
+###
+# Configures the input device 'Kensington Slimblade Trackball' for the
+# X-Server using a preferred set of hardcoded values (right-handed).
+###
+
+product='Kensington Slimblade Trackball' 
+
+xinput set-button-map "$product" 1 0 2 4 5 0 0 3
+
+xinput set-prop "$product" 'libinput Drag Lock Buttons' 2 1
+xinput set-prop "$product" 'libinput Rotation Angle' 0
+xinput set-prop "$product" 'libinput Middle Emulation Enabled' 0
+xinput set-prop "$product" 'libinput Natural Scrolling Enabled' 0
+xinput set-prop "$product" 'libinput Button Scrolling Button Lock Enabled' 0
+xinput set-prop "$product" 'libinput Button Scrolling Button' 2
