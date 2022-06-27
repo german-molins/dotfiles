@@ -1,17 +1,18 @@
-#!/bin/sh
+#!/bin/sh -x
 
 ###
 # Configures the input device 'Kensington Slimblade Trackball' for the X-Server
-# using a preferred set of hardcoded values, either right-handed (default) or
-# left-handed. Once configured, this handedness persists in file
-# "~/.config/kenington-slimblade.conf", used if no handedness argument
-# provided.
+# using a preferred set of hardcoded values, either right-handed (default if no
+# config file), left-handed or toggle between them. Once configured, the
+# handedness value persists in file "~/.config/kenington-slimblade.conf", used
+# when no handedness argument provided.
 ###
 
 readonly product='Kensington Slimblade Trackball'
 readonly driver=libinput
 readonly conf_file_name=kenington-slimblade.conf
 readonly conf_file_path="$HOME/.config/$conf_file_name"
+readonly this_name="$(basename "$0")"
 
 setprop ()
 {
@@ -45,24 +46,52 @@ wrong_usage ()
 	>&2 echo "Wrong usage. Use with --help for more details."
 }
 
+toggle ()
+{
+	case "$1" in
+	(right-handed|rh)
+		echo left-handed
+		;;
+	(left-handed|lh)
+		echo right-handed
+		;;
+	esac
+}
+
 ###############################################################################
 
-this_name="$(basename "$0")"
+handedness=
+toggle=
+
+if [ $# -gt 1 ]
+then
+	wrong_usage
+	exit 1
+fi
+
+if [ $# -eq 1 ]
+then
+	if [ "$1" = toggle ]
+	then
+		toggle=1
+		shift
+	else
+		handedness="$1"
+	fi
+fi
 
 if [ $# -eq 0 ]
 then
 	if [ -f "$conf_file_path" ]
 	then
 		. "$conf_file_path"
+		if [ "$toggle" -eq 1 ]
+		then
+			handedness="$(toggle "$handedness")"
+		fi
 	else
 		handedness=right-handed
 	fi
-elif [ $# -eq 1 ]
-then
-	handedness="$1"
-else
-	wrong_usage
-	exit 1
 fi
 
 case "$handedness" in
@@ -73,7 +102,7 @@ case "$handedness" in
 	setprops_lh
 	;;
 (-h|--help)
-	echo "usage: $this_name [right-handed | left-handed | --help]"
+	echo "usage: $this_name [right-handed | left-handed | toggle | --help]"
 	exit 0
 	;;
 (*)
@@ -83,4 +112,4 @@ case "$handedness" in
 esac
 
 echo "handedness=$handedness" >"$conf_file_path"
-exit 0
+# exit 0
