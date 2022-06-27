@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=kensington-slimblade-conf
+NoDisplay=false
+Hidden=false
+Name[en_US]=kensington-slimblade-conf.desktop
+Comment[en_US]=Kensington Slimblade trackball configuration
+X-GNOME-Autostart-Delay=0
+X-GNOME-Autostart-enabled=true

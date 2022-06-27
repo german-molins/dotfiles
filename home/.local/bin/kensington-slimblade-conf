@@ -1,0 +1,60 @@
+#!/bin/sh
+
+###
+# Configures the input device 'Kensington Slimblade Trackball' for the X-Server
+# using a preferred set of hardcoded values, either right-handed (default) or
+# left-handed.
+###
+
+_PRODUCT='Kensington Slimblade Trackball' 
+_DRIVER=libinput
+
+setprop ()
+{
+	option="$1"
+	shift
+	value="$@"
+
+	xinput set-prop "$_PRODUCT" "$_DRIVER $option" $value
+}
+
+###
+# Set properties as right-handed.
+###
+setprops_rh ()
+{
+	xinput set-button-map "$_PRODUCT" 1 8 2 4 5 0 0 3
+	setprop 'Natural Scrolling Enabled' 0
+}
+
+###
+# Set properties as left-handed.
+###
+setprops_lh ()
+{
+	xinput set-button-map "$_PRODUCT" 2 3 1 4 5 0 0 8
+	setprop 'Natural Scrolling Enabled' 1
+}
+
+###############################################################################
+
+this_name="$(basename "$0")"
+handedness="${1:-rh}"
+
+case "$handedness" in
+(right-handed|rh)
+	setprops_rh
+	;;
+(left-handed|lh)
+	setprops_lh
+	;;
+(-h|--help)
+	echo "usage: $this_name [right-handed | left-handed | --help]"
+	;;
+(*)
+	>&2 echo "Wrong usage. Use with --help for more details."
+	exit 1
+	;;
+esac
+
+exit 0
