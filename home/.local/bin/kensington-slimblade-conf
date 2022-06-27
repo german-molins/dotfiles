@@ -3,11 +3,15 @@
 ###
 # Configures the input device 'Kensington Slimblade Trackball' for the X-Server
 # using a preferred set of hardcoded values, either right-handed (default) or
-# left-handed.
+# left-handed. Once configured, this handedness persists in file
+# "~/.config/kenington-slimblade.conf", used if no handedness argument
+# provided.
 ###
 
-_PRODUCT='Kensington Slimblade Trackball' 
-_DRIVER=libinput
+readonly product='Kensington Slimblade Trackball'
+readonly driver=libinput
+readonly conf_file_name=kenington-slimblade.conf
+readonly conf_file_path="$HOME/.config/$conf_file_name"
 
 setprop ()
 {
@@ -15,7 +19,7 @@ setprop ()
 	shift
 	value="$@"
 
-	xinput set-prop "$_PRODUCT" "$_DRIVER $option" $value
+	xinput set-prop "$product" "$driver $option" $value
 }
 
 ###
@@ -23,7 +27,7 @@ setprop ()
 ###
 setprops_rh ()
 {
-	xinput set-button-map "$_PRODUCT" 1 8 2 4 5 0 0 3
+	xinput set-button-map "$product" 1 8 2 4 5 0 0 3
 	setprop 'Natural Scrolling Enabled' 0
 }
 
@@ -32,14 +36,34 @@ setprops_rh ()
 ###
 setprops_lh ()
 {
-	xinput set-button-map "$_PRODUCT" 2 3 1 4 5 0 0 8
+	xinput set-button-map "$product" 2 3 1 4 5 0 0 8
 	setprop 'Natural Scrolling Enabled' 1
+}
+
+wrong_usage ()
+{
+	>&2 echo "Wrong usage. Use with --help for more details."
 }
 
 ###############################################################################
 
 this_name="$(basename "$0")"
-handedness="${1:-rh}"
+
+if [ $# -eq 0 ]
+then
+	if [ -f "$conf_file_path" ]
+	then
+		. "$conf_file_path"
+	else
+		handedness=right-handed
+	fi
+elif [ $# -eq 1 ]
+then
+	handedness="$1"
+else
+	wrong_usage
+	exit 1
+fi
 
 case "$handedness" in
 (right-handed|rh)
@@ -50,11 +74,13 @@ case "$handedness" in
 	;;
 (-h|--help)
 	echo "usage: $this_name [right-handed | left-handed | --help]"
+	exit 0
 	;;
 (*)
-	>&2 echo "Wrong usage. Use with --help for more details."
+	wrong_usage
 	exit 1
 	;;
 esac
 
+echo "handedness=$handedness" >"$conf_file_path"
 exit 0
