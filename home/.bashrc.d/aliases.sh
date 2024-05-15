@@ -14,6 +14,7 @@ alias lu='du -sh * | sort -hr | less -FX'
 alias c=clear
 alias c,=c\;p
 alias c.=c\;p.
+alias cf=cfiles
 alias cn=count
 alias d='date -u'
 alias eg=egrep
@@ -42,3 +43,4 @@ alias jl='jupyter-lab --no-browser --ip=0.0.0.0'
 
 # Random hex 32
 alias rhex='openssl rand -hex 32| cut -c -7'
+alias zippdf="find -type f -iname '*.pdf' -exec gzip -vf {} +"

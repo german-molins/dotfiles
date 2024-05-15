@@ -1,4 +1,4 @@
-#!/bin/sh -x
+#!/bin/sh
 
 ###
 # Configures the input device 'Kensington Slimblade Trackball' for the X-Server
