@@ -1,0 +1,14 @@
+[Desktop Entry]
+
+Type=Application
+Name=cfiles
+Comment=A ncurses file manager written in C
+
+Exec=alacritty -e cfiles
+Terminal=false
+Icon=system-file-manager
+
+Keywords=folders;filesystem;explorer;
+StartupNotify=false
+Categories=Utility;
+MimeType=inode/directory;
