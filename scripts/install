@@ -1,9 +1,0 @@
-#!/usr/bin/bash
-
-declare -r SYMLINK_FLAGFILE=.symlink
-declare -r this_dir="$(realpath "$0" | xargs dirname)"
-
-cd "$this_dir"
-. symlink_tree.sh
-
-symlink_tree "$SYMLINK_FLAGFILE" ../home/ ~
