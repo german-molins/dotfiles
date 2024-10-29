@@ -1,6 +1,0 @@
-Only in source/d1/d2: .symlink
-Only in source/d1: .symlink
-Only in source/d2/d1: .symlink
-Only in source/d2: f1
-Only in source/d2: f2
-Only in source/: .symlink
