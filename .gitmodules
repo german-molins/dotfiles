@@ -1,3 +1,3 @@
-[submodule "home/.vim"]
-	path = home/.vim
+[submodule "home/external_dot_vim"]
+	path = home/external_dot_vim
 	url = https://gitlab.com/viejatapera/dotvim.git
