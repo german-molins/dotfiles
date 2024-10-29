@@ -4,4 +4,4 @@ Germán Molins' dotfiles, managed with [`chezmoi`](https://github.com/twpayne/ch
 
 Install them with:
 
-    chezmoi init twpayne
+    chezmoi init german-molins
