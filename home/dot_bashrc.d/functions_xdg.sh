@@ -1,6 +1,6 @@
 jnew ()
 (
-	dir=/home/german/Documents/fnd/inner/journal/
+	dir="$1"
 	script_name=journal-new
 
 	cd "$dir"
