@@ -18,11 +18,11 @@ export PATH
 # !! Contents within this block are managed by juliaup !!
 
 case ":$PATH:" in
-    *:/home/german/.opt/juliaup/bin:*)
+    *:$HOME/.opt/juliaup/bin:*)
         ;;
 
     *)
-        export PATH=/home/german/.opt/juliaup/bin${PATH:+:${PATH}}
+        export PATH=$HOME/.opt/juliaup/bin${PATH:+:${PATH}}
         ;;
 esac
 
