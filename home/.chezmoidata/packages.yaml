@@ -1,0 +1,5 @@
+packages:
+  homebrew:
+    brews:
+    - lazygit
+    casks:
