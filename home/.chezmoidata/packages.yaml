@@ -1,5 +1,16 @@
 packages:
   homebrew:
     brews:
+    - atuin
+    - bash-completion@2
+    - dos2unix
+    - fd
+    - fzf
+    - gh
     - lazygit
+    - ranger
+    - readline
+    - tmux
+    - tree
+    - xsel
     casks:
