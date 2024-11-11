@@ -1,13 +1,14 @@
-###
-# This is Git's user configuration file.
-###
-
 [core]
 	editor = vim
 
 [user]
 	email = germanmolins@gmail.com
 	name = Germán Molins
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
 
 [diff]
 	tool = gvimdiff
@@ -22,12 +23,68 @@
 [mergetool]
 	keepBackup = false
 
+[push]
+    default = matching
 [fetch]
 	prune = true
+[pull]
+	rebase = false
+[rebase]
+	missingCommitsCheck = warn
+[submodule]
+	recurse = true
 
 [svn]
 	rmdir = true
-[submodule]
-	recurse = true
 [rerere]
 	enabled = true
+	autoupdate = true
+
+[credential]
+        helper = cache --timeout=86400
+
+[filter "lfs"]
+        smudge = git-lfs smudge --skip -- %f
+        process = git-lfs filter-process --skip
+[gitsh]
+	defaultCommand = status --short --untracked-files=no
+[http]
+        postBuffer = 524288000
+[https]
+        postBuffer = 524288000
+
+[alias]
+	sh = !gitsh
+	alias = !git config --get-regexp ^alias
+	amend = commit --amend --verbose
+	unstage = reset
+	soft = reset --soft
+	hard = reset --hard
+	a = add
+	aa = add --all
+	ai = add --interactive
+	ap = add --patch
+	au = add --update
+	b = branch
+	co = checkout
+	ci = commit
+	ca = commit --all
+	d = diff
+	ds = diff --stat
+	m = merge
+	p = diff --cached
+	ps = diff --cached --stat
+	f = fetch --prune
+	k = cherry-pick
+	l = log --pretty=oneline --abbrev-commit
+	lf = log --pretty=fuller --abbrev-commit
+	n = commit --amend --no-edit
+	s = status --short --untracked-files=no
+	r = rebase
+	ri = rebase -i
+	rr = rebase --reset-author
+	sw = switch
+	# pull merge
+	pm = pull
+	pr = pull --rebase
+	pop = reset HEAD^
