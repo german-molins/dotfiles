@@ -1,8 +1,10 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
+homebrew_installer=https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+
 if [[ ! $(command -v brew)  ]]
 then
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL "$homebrew_installer")"
 fi
 {{ end -}}
