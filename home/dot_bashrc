@@ -52,6 +52,8 @@ shopt -s cdspell
 shopt -s cdable_vars
 
 shopt -s checkjobs
+shopt -s histappend
+shopt -s checkwinsize
 
 set -o noclobber
 set -o vi
