@@ -3,6 +3,7 @@ packages:
     brews:
     - atuin
     - bash-completion@2
+    - dash
     - dos2unix
     - fd
     - fzf
