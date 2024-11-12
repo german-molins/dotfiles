@@ -35,3 +35,5 @@ packages:
     - watch
     - xsel
     casks:
+  pipx:
+  - aider-chat

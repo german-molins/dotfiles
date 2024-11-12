@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+{{ range .packages.pipx -}}
+pipx install {{ . | quote }}
+{{ end -}}
+{{ end -}}
