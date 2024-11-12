@@ -7,9 +7,12 @@ packages:
     - fd
     - fzf
     - gh
+    - juliaup
     - lazygit
     - ranger
     - readline
+    - task
+    - timewarrior
     - tmux
     - tree
     - xsel
