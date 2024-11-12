@@ -16,5 +16,6 @@ packages:
     - timewarrior
     - tmux
     - tree
+    - vim
     - xsel
     casks:
