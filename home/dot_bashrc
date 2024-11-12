@@ -9,13 +9,14 @@ where ()
 	EOF
 }
 
-for f in ~/.bashrc.d/*.sh 
+for file in ~/.bashrc.d/*.sh
 do
-	if [ -r "$f" ]
+	if [ -r "$file" ]
 	then
-		source "$f"
+		source "$file"
 	fi
 done
+unset file
 
 if [ -r /etc/bash_completion ] && ! shopt -oq posix
 then
