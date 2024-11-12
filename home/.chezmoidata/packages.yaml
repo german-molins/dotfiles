@@ -8,13 +8,21 @@ packages:
     - fd
     - fzf
     - gh
+    - git
+    - gitui
+    - glab
+    - gpg
+    - gpg-tui
     - htop
     - juliaup
     - lazygit
+    - make
     - ranger
     - rcs
     - readline
     - rename
+    - rsync
+    - sshfs
     - task
     - taskopen
     - taskwarrior-tui
@@ -23,5 +31,6 @@ packages:
     - tree
     - uv
     - vim
+    - watch
     - xsel
     casks:
