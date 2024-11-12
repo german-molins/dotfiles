@@ -17,6 +17,7 @@ packages:
     - juliaup
     - lazygit
     - make
+    - pipx
     - ranger
     - rcs
     - readline
