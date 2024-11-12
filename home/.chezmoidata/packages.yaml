@@ -7,12 +7,16 @@ packages:
     - fd
     - fzf
     - gh
+    - htop
     - juliaup
     - lazygit
     - ranger
     - rcs
     - readline
+    - rename
     - task
+    - taskopen
+    - taskwarrior-tui
     - timewarrior
     - tmux
     - tree
