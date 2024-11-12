@@ -1,6 +1,7 @@
 packages:
   homebrew:
     brews:
+    - aider
     - atuin
     - bash-completion@2
     - dash
@@ -36,4 +37,3 @@ packages:
     - xsel
     casks:
   pipx:
-  - aider-chat
