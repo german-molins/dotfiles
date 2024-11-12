@@ -78,6 +78,7 @@
 	k = cherry-pick
 	l = log --pretty=oneline --abbrev-commit
 	lf = log --pretty=fuller --abbrev-commit
+	g = log --graph --oneline --decorate
 	n = commit --amend --no-edit
 	s = status --short --untracked-files=no
 	r = rebase
