@@ -79,6 +79,7 @@
 	l = log --pretty=oneline --abbrev-commit
 	lf = log --pretty=fuller --abbrev-commit
 	g = log --graph --oneline --decorate
+	lfzf = log --oneline --color | fzf --ansi --no-sort --reverse --preview 'git show --color=always {+1}'
 	n = commit --amend --no-edit
 	s = status --short --untracked-files=no
 	r = rebase
