@@ -140,32 +140,6 @@ find_upward ()
 )
 
 ###
-# Mechanism to clear screen when user hits Enter with null or whitespace
-# command
-###
-_empty_cmd_check ()
-{
-    if [ "$BASH_COMMAND" != _empty_cmd_exec ]
-    then
-        EMPTY_CMD_FLAG=1
-    fi
-    return 0
-}
-
-trap _empty_cmd_check DEBUG SIGINT
-
-_empty_cmd_exec ()
-{
-    if [ ! "$EMPTY_CMD_FLAG" ]
-    then
-		eval "$EMPTY_CMD"
-    fi
-    EMPTY_CMD_FLAG=
-}
-PROMPT_COMMAND=_empty_cmd_exec
-###
-
-###
 # Find leaf directories under a directory tree structure.
 ###
 find_leaves ()
