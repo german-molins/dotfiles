@@ -51,11 +51,6 @@ export VISUAL=gvim
 export PAGER=less
 export JULIA_PROJECT=@.
 
-### User Envvars ###
-
-# Command to evaluate after entering empty or whitespaces command
-EMPTY_CMD=clear
-
 ### Interactive Shell Options ###
 
 shopt -s extglob
