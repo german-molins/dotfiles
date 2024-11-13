@@ -2,13 +2,13 @@
 # Generic aliases
 #################################################
 
-alias la='ls, -A --group-directories-first'
-alias ll='ls, -lh --file-type --group-directories-first'
-alias lla='ls, -Alh --file-type --group-directories-first'
-alias lc='ls, -1 --file-type --group-directories-first'
-alias lca='ls, -1A --file-type --group-directories-first'
-alias lcc='ls, -C --file-type --group-directories-first'
-alias lcca='ls, -CA --file-type --group-directories-first'
+alias la='ls -A --color=auto --group-directories-first'
+alias ll='ls -lh --color=auto --file-type --group-directories-first'
+alias lla='ls -Alh --color=auto --file-type --group-directories-first'
+alias lc='ls -1 --color=auto --file-type --group-directories-first'
+alias lca='ls -1A --color=auto --file-type --group-directories-first'
+alias lcc='ls -C --color=auto --file-type --group-directories-first'
+alias lcca='ls -CA --color=auto --file-type --group-directories-first'
 alias lu='du -sh * | sort -hr | less -FX'
 
 alias c=clear
