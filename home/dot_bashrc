@@ -68,6 +68,15 @@ shopt -s checkwinsize
 set -o noclobber
 set -o vi
 
+### Key Bindings ###
+
+# Key sequences (can vary between terminals)
+# ^ means Ctrl, escaped as \C.
+#
+#   F2: ^[OQ
+#
+bind -x '"\C-[OQ": "ranger"'
+
 ###
 
 where
