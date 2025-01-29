@@ -90,3 +90,4 @@
 	pm = pull
 	pr = pull --rebase
 	pop = reset HEAD^
+	wt = worktree
