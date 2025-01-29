@@ -24,6 +24,7 @@ packages:
     - rcs
     - readline
     - rename
+    - ripgrep
     - rsync
     - sshfs
     - task
