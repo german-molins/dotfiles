@@ -23,7 +23,6 @@ packages:
     - ranger
     - rcs
     - readline
-    - rename
     - ripgrep
     - rsync
     - sshfs
