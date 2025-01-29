@@ -25,10 +25,6 @@ fi
 
 ### Envvars ### 
 
-# Enable color support
-export CLICOLOR=1
-export TERM=xterm-256color
-
 # Configure ls colors
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
