@@ -19,7 +19,6 @@ multiword-tags = false
 [lsp]
 
 [lsp.diagnostics]
-wiki-title = "hint"
 dead-link = "error"
 
 [lsp.completion]
