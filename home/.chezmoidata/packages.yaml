@@ -4,6 +4,7 @@ packages:
       - aider
       - atuin
       - bash-completion@2
+      - bat
       - dash
       - dos2unix
       - fd
