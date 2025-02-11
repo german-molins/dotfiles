@@ -1,0 +1,29 @@
+[note]
+default-title = "Untitled"
+filename = "{{id}}"
+extension = "md"
+template = "default.md"
+id-charset = "hex"
+id-length = 8
+
+[extra]
+
+[format.markdown]
+link-format = "[[{{filename}}{{#if title}}|{{title}}{{/if}}]]"
+hashtags = true
+colon-tags = false
+multiword-tags = false
+
+[tool]
+
+[lsp]
+
+[lsp.diagnostics]
+wiki-title = "hint"
+dead-link = "error"
+
+[lsp.completion]
+
+[filter]
+
+[alias]
