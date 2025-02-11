@@ -44,7 +44,7 @@ PATH="$HOME/.local/bin/:$PATH"
 
 export EDITOR=vim
 export VISUAL=nvim
-export PAGER=less
+export PAGER='less -FIRX'
 export JULIA_PROJECT=@.
 
 ### Interactive Shell Options ###
