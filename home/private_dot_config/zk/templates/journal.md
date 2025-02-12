@@ -1,7 +1,6 @@
 ---
-title: {{format-date now "time"}} {{format-date now "full"}}
-date: {{format-date now}}
-time: {{format-date now "time"}}
+title: Journal entry for {{format-date now "long"}}, at {{format-date now "time"}}
+datetime: {{format-date now "%Y-%m-%d %H:%M:%S"}}
 tags:
 ---
 {{content}}
