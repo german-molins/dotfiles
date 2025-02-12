@@ -8,6 +8,10 @@ id-length = 8
 
 [extra]
 
+[group.journal.note]
+filename = '{{format-date now "%Y-%m-%d_%H-%M-%S"}}'
+template = "journal.md"
+
 [format.markdown]
 link-format = "[[{{filename}}{{#if title}}|{{title}}{{/if}}]]"
 hashtags = true
