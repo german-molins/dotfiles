@@ -30,3 +30,5 @@ dead-link = "error"
 [filter]
 
 [alias]
+journal = 'zk new "$ZK_NOTEBOOK_DIR/journal" "$@"'
+j = 'zk journal "$@"'
