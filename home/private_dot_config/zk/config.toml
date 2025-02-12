@@ -1,6 +1,6 @@
 [note]
 default-title = "Untitled"
-filename = "{{id}}"
+filename = "{{slug title}}"
 extension = "md"
 template = "default.md"
 id-charset = "hex"
@@ -11,6 +11,10 @@ id-length = 8
 [group.journal.note]
 filename = '{{format-date now "%Y-%m-%d_%H-%M-%S"}}'
 template = "journal.md"
+
+[group.archive.note]
+filename = "{{id}}"
+template = "note.md"
 
 [format.markdown]
 link-format = "[[{{filename}}{{#if title}}|{{title}}{{/if}}]]"
@@ -32,3 +36,4 @@ dead-link = "error"
 [alias]
 journal = 'zk new "$ZK_NOTEBOOK_DIR/journal" "$@"'
 j = 'zk journal "$@"'
+n = 'zk new "$ZK_NOTEBOOK_DIR/archive" "$@"'
