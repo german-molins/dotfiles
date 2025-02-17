@@ -34,6 +34,8 @@ dead-link = "error"
 [filter]
 
 [alias]
+edlast = "zk edit --limit 1 --sort modified- $@"
+
 journal = 'zk new "$ZK_NOTEBOOK_DIR/journal" "$@"'
 j = 'zk journal "$@"'
 n = 'zk new "$ZK_NOTEBOOK_DIR/archive" "$@"'
