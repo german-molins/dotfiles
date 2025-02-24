@@ -4,4 +4,3 @@ vim.opt.spelllang = {
   "en",
   "es",
 }
-vim.opt.formatoptions:append("a")
