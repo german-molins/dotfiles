@@ -1,0 +1,28 @@
+contexts:
+  default:
+    defaultIde: none
+    defaultProvider: docker
+    options:
+      DOTFILES_URL:
+        userProvided: true
+        value: https://github.com/german-molins/dotfiles
+      GPG_AGENT_FORWARDING:
+        userProvided: true
+        value: "true"
+      SSH_INJECT_DOCKER_CREDENTIALS:
+        userProvided: true
+        value: "true"
+      SSH_INJECT_GIT_CREDENTIALS:
+        userProvided: true
+        value: "true"
+    providers:
+      docker:
+        creationTimestamp: "2025-02-24T08:01:51Z"
+        initialized: true
+        options:
+          DOCKER_BUILDER: {}
+          DOCKER_HOST: {}
+          DOCKER_PATH:
+            value: docker
+          INACTIVITY_TIMEOUT: {}
+defaultContext: default
