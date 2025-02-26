@@ -24,8 +24,7 @@
 	keepBackup = false
 
 [mergetool "nvimdiff"]
-  cmd = nvim -d $MERGED $LOCAL $BASE $REMOTE -c 'wincmd J' -c 'set nofoldenable'
-  trustExitCode = true
+  layout = "(LOCAL/BASE/REMOTE),MERGED"
 
 [push]
     default = matching
