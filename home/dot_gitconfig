@@ -21,10 +21,14 @@
   cmd = nvim -d $LOCAL $REMOTE
 
 [merge]
-	tool = gvimdiff
+  tool = nvimdiff
 
 [mergetool]
 	keepBackup = false
+
+[mergetool "nvimdiff"]
+  cmd = nvim -d $MERGED $LOCAL $BASE $REMOTE -c 'wincmd J' -c 'set nofoldenable'
+  trustExitCode = true
 
 [push]
     default = matching
