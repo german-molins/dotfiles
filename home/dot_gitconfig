@@ -11,11 +11,14 @@
     branch = auto
 
 [diff]
-	tool = gvimdiff
+  tool = nvimdiff
 	submodule = log
 
 [difftool]
 	prompt = false
+
+[difftool "nvimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE
 
 [merge]
 	tool = gvimdiff
