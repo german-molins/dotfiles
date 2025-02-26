@@ -17,9 +17,6 @@
 [difftool]
 	prompt = false
 
-[difftool "nvimdiff"]
-  cmd = nvim -d $MERGED $LOCAL
-
 [merge]
   tool = nvimdiff
 
