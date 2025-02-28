@@ -34,8 +34,8 @@ dead-link = "error"
 [filter]
 
 [alias]
-# Place cursor at EOF.
-new = 'VISUAL="$VISUAL +$" zk new "$@"'
+# Place cursor at EOF and start in insert mode
+new = 'VISUAL="$VISUAL +$ -c startinsert" zk new "$@"'
 edlast = "zk edit --limit 1 --sort modified- $@"
 
 journal = 'zk new "$ZK_NOTEBOOK_DIR/journal" "$@"'
