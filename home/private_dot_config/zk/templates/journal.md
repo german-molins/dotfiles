@@ -4,4 +4,5 @@ datetime: {{format-date now "%Y-%m-%d %H:%M:%S"}}
 dow: {{format-date now "%a"}}
 tags:
 ---
+
 {{content}}
