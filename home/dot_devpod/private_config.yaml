@@ -25,4 +25,17 @@ contexts:
           DOCKER_PATH:
             value: docker
           INACTIVITY_TIMEOUT: {}
+  quantica:
+    defaultIde: none
+    defaultProvider: docker
+    providers:
+      docker:
+        creationTimestamp: "2025-03-05T14:59:47Z"
+        initialized: true
+        options:
+          DOCKER_BUILDER: {}
+          DOCKER_HOST: {}
+          DOCKER_PATH:
+            value: docker
+          INACTIVITY_TIMEOUT: {}
 defaultContext: default
