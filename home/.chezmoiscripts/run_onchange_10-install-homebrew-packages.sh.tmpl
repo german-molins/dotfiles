@@ -5,8 +5,11 @@ brew bundle --file=/dev/stdin <<EOF
 {{ range .packages.homebrew.brews -}}
 brew {{ . | quote }}
 {{ end -}}
-{{ range .packages.homebrew.casks -}}
+
+{{ if eq .chezmoi.os "darwin" -}}
+{{   range .packages.homebrew.casks -}}
 cask {{ . | quote }}
+{{   end -}}
 {{ end -}}
 EOF
 {{ end -}}
