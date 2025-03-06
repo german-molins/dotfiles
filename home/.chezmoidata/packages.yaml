@@ -41,3 +41,23 @@ packages:
     casks:
   pipx:
   nix:
+    - tmux
+    - bat
+    - fd
+    - fzf
+    - ripgrep
+    - git
+    - atuin
+    - gitui
+    - neovim
+    - gh
+    - aider-chat
+    - ranger
+    - vim
+    - uv
+    - xsel
+    - rsync
+    - sshfs-fuse
+    - rcs
+    - tree
+    - readline
