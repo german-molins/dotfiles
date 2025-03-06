@@ -5,7 +5,7 @@
 if ! nix-env -q | sed 's/-[^-]*$//' | grep -q '^{{ . }}$'; then
     nix-env --install {{ . }}
 else
-    echo "[nix-env] Skip, already installed: {{ . }}"
+    echo "[dotfiles][nix-env] Skip, already installed: {{ . }}"
 fi
 {{ end -}}
 {{ end -}}
