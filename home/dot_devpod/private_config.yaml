@@ -28,6 +28,10 @@ contexts:
   quantica:
     defaultIde: none
     defaultProvider: docker
+    options:
+      DOTFILES_URL:
+        userProvided: true
+        value: https://github.com/german-molins/dotfiles.git
     providers:
       docker:
         creationTimestamp: "2025-03-05T14:59:47Z"
