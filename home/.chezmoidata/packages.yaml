@@ -61,3 +61,4 @@ packages:
     - rcs
     - tree
     - readline
+    - nodejs
