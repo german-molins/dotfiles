@@ -1,4 +1,4 @@
-{{ if or (eq .chezmoi.os "linux") (eq .chezmoi.os "darwin") -}}
+{{ if or (and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64")) (eq .chezmoi.os "darwin") -}}
 #!/bin/bash
 
 brew bundle --file=/dev/stdin <<EOF
