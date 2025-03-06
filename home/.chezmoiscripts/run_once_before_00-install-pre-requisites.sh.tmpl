@@ -7,4 +7,10 @@ if [[ ! $(command -v brew)  ]]
 then
 	NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL "$homebrew_installer")"
 fi
+{{- else if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") -}}
+# Install Nix package manager in single-user mode.
+if [[ ! $(command -v nix)  ]]
+then
+  sh <(curl -L https://nixos.org/nix/install) --no-daemon
+fi
 {{ end -}}

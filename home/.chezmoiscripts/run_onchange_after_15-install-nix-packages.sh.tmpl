@@ -1,0 +1,7 @@
+{{ if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") -}}
+#!/bin/bash
+
+{{ range .packages.nix -}}
+nix-env --install {{ . }}
+{{ end -}}
+{{ end -}}
