@@ -1,0 +1,23 @@
+{{ if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") -}}
+#!/bin/bash
+
+nix_profile_script="$HOME"/.nix-profile/etc/profile.d/nix.sh
+
+if [ -e "$nix_profile_script" ]; then
+  . "$nix_profile_script"
+else
+  echo -n "[dotfiles][nix] ERROR: '$nix_profile_script' not found. " &>2
+  echo -n "Nix environment not avaliable. " &>2
+  echo -n "Could not intall Nix packages." &>2
+  echo
+  exit 1
+fi
+
+{{ range .packages.nix -}}
+if ! nix-env -q | sed 's/-[^-]*$//' | grep -q '^{{ . }}$'; then
+    nix-env --install {{ . }}
+else
+    echo "[dotfiles][nix-env] Skip, already installed: {{ . }}"
+fi
+{{ end -}}
+{{ end -}}
