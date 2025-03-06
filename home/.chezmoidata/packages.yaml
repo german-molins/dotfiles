@@ -19,6 +19,7 @@ packages:
       - juliaup
       - lazygit
       - make
+      - node
       - nvim
       - pipx
       - ranger
