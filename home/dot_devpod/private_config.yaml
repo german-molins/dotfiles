@@ -5,7 +5,7 @@ contexts:
     options:
       DOTFILES_URL:
         userProvided: true
-        value: https://github.com/german-molins/dotfiles
+        value: https://github.com/german-molins/dotfiles.git
       GPG_AGENT_FORWARDING:
         userProvided: true
         value: "true"
