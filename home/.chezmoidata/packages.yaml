@@ -40,3 +40,4 @@ packages:
       - zk
     casks:
   pipx:
+  nix:
