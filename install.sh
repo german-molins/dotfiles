@@ -32,7 +32,13 @@ script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
 echo "[dotfiles][install] Initializing chezmoi with source directory: $script_dir'"
 "$chezmoi" init --apply "--source=$script_dir"
 
-default_source_dir="$HOME/.local/share/chezmoi"
+# Example values:
+#   source path  : ~/.local/share/chezmoi/home
+#   chezmoi root : home
+#   source dir   : ~/.local/share/chezmoi
+chezmoi_source_path="$("$chezmoi" source-path)"
+chezmoi_root_relative="$(cat "$script_dir"/.chezmoiroot)"
+default_source_dir="${chezmoi_source_path%/$chezmoi_root_relative}"
 if [ "$script_dir" != "$default_source_dir" ]; then
   echo "[dotfiles][install] Moving repository to default chezmoi source directory."
   mv "$script_dir" "$default_source_dir"
