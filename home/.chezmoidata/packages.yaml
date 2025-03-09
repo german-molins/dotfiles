@@ -20,6 +20,7 @@ packages:
       - lazygit
       - make
       - node
+      - tree-sitter
       - nvim
       - pipx
       - ranger
@@ -59,6 +60,7 @@ packages:
     - git
     - atuin
     - gitui
+    - tree-sitter
     - neovim
     - gh
     - aider-chat
