@@ -14,10 +14,17 @@ else
 fi
 
 {{ range .packages.nix -}}
-if ! nix-env -q | sed 's/-[^-]*$//' | grep -q '^{{ . }}$'; then
+installed=$(nix-env -q | sed 's/-[^-]*$//' | grep -q '^{{ . }}$' && echo "yes" || echo "no")
+newer_version=$(nix-env --query --available {{ . }} | grep -q '^{{ . }}' && echo "yes" || echo "no")
+
+if [ "$installed" = "no" ]; then
+    echo "[dotfiles][nix-env] Installing: {{ . }}"
+    nix-env --install {{ . }}
+elif [ "$newer_version" = "yes" ]; then
+    echo "[dotfiles][nix-env] Updating: {{ . }}"
     nix-env --install {{ . }}
 else
-    echo "[dotfiles][nix-env] Skip, already installed: {{ . }}"
+    echo "[dotfiles][nix-env] Skip, already installed and up-to-date: {{ . }}"
 fi
 {{ end -}}
 {{ end -}}
