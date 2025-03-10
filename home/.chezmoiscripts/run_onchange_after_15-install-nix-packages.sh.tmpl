@@ -13,5 +13,5 @@ else
   exit 1
 fi
 
-nix-env -iA nixpkgs.dotfilesPackages
+nix-env --install --attr -- nixpkgs.dotfilesPackages
 {{ end -}}
