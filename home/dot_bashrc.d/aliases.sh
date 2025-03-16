@@ -39,6 +39,7 @@ alias ,r='vim -R'
 alias ,m='vim -m'
 alias ,.='vim -M'
 alias e=vim
+alias v=nvim
 
 alias ..l='..;lc'
 alias jl='jupyter-lab --no-browser --ip=0.0.0.0'
