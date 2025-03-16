@@ -38,8 +38,8 @@ alias wh=where
 alias ,r='vim -R'
 alias ,m='vim -m'
 alias ,.='vim -M'
-alias e=vim
-alias v=nvim
+alias e="$EDIT"
+alias v="$VISUAL"
 
 alias ..l='..;lc'
 alias jl='jupyter-lab --no-browser --ip=0.0.0.0'
