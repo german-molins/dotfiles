@@ -1,1 +1,5 @@
+{{- if stat (expandenv "$HOME/.env") -}}
 {{- include (expandenv "$HOME/.env") -}}
+{{- else -}}
+# [dotfiles][aichat] WARNING: No {{ expandenv "$HOME/.env" }} file found.
+{{- end -}}
