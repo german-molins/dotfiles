@@ -76,3 +76,4 @@ packages:
     - tree
     - readline
     - nodejs
+    - aichat
