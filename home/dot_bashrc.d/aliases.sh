@@ -11,6 +11,8 @@ alias lcc='ls -C --color=auto --file-type --group-directories-first'
 alias lcca='ls -CA --color=auto --file-type --group-directories-first'
 alias lu='du -sh * | sort -hr | less -FX'
 
+alias ai=aichat
+alias llm=aichat
 alias c=clear
 alias c,=c\;p
 alias c.=c\;p.
