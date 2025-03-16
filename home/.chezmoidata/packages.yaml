@@ -1,6 +1,7 @@
 packages:
   homebrew:
     brews:
+      - aichat
       - aider
       - atuin
       - bash-completion@2
