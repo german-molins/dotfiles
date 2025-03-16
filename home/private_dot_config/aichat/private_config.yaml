@@ -1,0 +1,7 @@
+# see https://github.com/sigoden/aichat/blob/main/config.example.yaml
+
+model: openrouter:anthropic/claude-3.5-sonnet
+clients:
+- type: openai-compatible
+  name: openrouter
+  api_base: https://openrouter.ai/api/v1
