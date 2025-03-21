@@ -18,6 +18,7 @@ packages:
       - gpg-tui
       - htop
       - juliaup
+      - jq
       - lazygit
       - make
       - node
@@ -41,6 +42,7 @@ packages:
       - vim
       - watch
       - xsel
+      - yq
       - zk
     casks:
       - firefox
@@ -77,3 +79,5 @@ packages:
     - readline
     - nodejs
     - aichat
+    - jq
+    - yq
