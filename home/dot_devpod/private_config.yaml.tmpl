@@ -32,9 +32,6 @@ contexts:
       SSH_CONFIG_PATH:
         userProvided: true
         value: {{ .chezmoi.homeDir }}/.ssh/config.d/devpod.conf
-      GPG_AGENT_FORWARDING:
-        userProvided: true
-        value: "true"
     providers:
       docker:
         creationTimestamp: "2025-03-05T14:59:47Z"
