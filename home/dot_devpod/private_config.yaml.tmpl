@@ -6,6 +6,9 @@ contexts:
       DOTFILES_URL:
         userProvided: true
         value: https://github.com/german-molins/dotfiles.git
+      SSH_CONFIG_PATH:
+        userProvided: true
+        value: {{ .chezmoi.homeDir }}/.ssh/config.d/devpod.conf
       GPG_AGENT_FORWARDING:
         userProvided: true
         value: "true"
@@ -26,6 +29,9 @@ contexts:
       DOTFILES_URL:
         userProvided: true
         value: https://github.com/german-molins/dotfiles.git
+      SSH_CONFIG_PATH:
+        userProvided: true
+        value: {{ .chezmoi.homeDir }}/.ssh/config.d/devpod.conf
     providers:
       docker:
         creationTimestamp: "2025-03-05T14:59:47Z"
