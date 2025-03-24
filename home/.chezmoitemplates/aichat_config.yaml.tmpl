@@ -1,7 +1,13 @@
 # see https://github.com/sigoden/aichat/blob/main/config.example.yaml
 
+{{ if eq .profile "personal" -}}
 model: openrouter:anthropic/claude-3.5-sonnet
+{{ else if eq .profile "quantica" -}}
+model: openai:gpt-4o
+{{- end }}
+
 clients:
+- type: openai
 - type: openai-compatible
   name: openrouter
   api_base: https://openrouter.ai/api/v1
