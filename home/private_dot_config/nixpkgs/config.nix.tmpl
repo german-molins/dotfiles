@@ -6,6 +6,9 @@
 {{- range .packages.nix }}
         {{ . -}}
 {{ end }}
+{{- range .packages.nix_extra }}
+        {{ . -}}
+{{ end }}
       ];
     };
   };
