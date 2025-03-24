@@ -83,3 +83,4 @@ packages:
     - aichat
     - jq
     - yq
+    - tldr
