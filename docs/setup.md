@@ -47,10 +47,10 @@ devpod up . --dotfiles-script-env DOTFILES_PROFILE=personal
 or
 
 ```sh
-devpod up . --dotfiles-script-env-file ~/.envrc
+devpod up . --dotfiles-script-env-file path/to/env/file
 ```
 
-### Auto-Loading Environment Variables
+### Auto-Loading Environment Variables with Direnv
 
 Shell hooks are set for `direnv` to auto-load and unload envvars found in the
 first found `.envrc` file up the `PWD` path.
@@ -59,3 +59,19 @@ Particularly, `~/.envrc` is tracked and includes templating config envvars.
 This allows to re-initialize as `chezmoi init` from home directory without the
 need to pass or export templating envvars explicitly, as they are auto-loaded
 and exported.
+
+During `chezmoi`` initialization, and especially during non-interactive
+installation by`devpod`,`~/.envrc` will be allowed implicitly by `direnv`,
+since it is in the`direnv` whitelist.
+
+`~/.dotfiles.env` file is to contain envars used to configure the `chezmoi`
+dynamic template initialization. As a conventional dotenv file (`KEY=VALUE`
+pairs), it can be passed to `devpod` as
+
+```sh
+devpod up path/to/repo/ --dotfiles-script-env-file=~/.dotfiles.env
+```
+
+Additionally it is made available by `direnv` in the home environment
+(`~/.envrc`) so that `chezmoi init` uses its current config without having to
+pass envvars explicitly.
