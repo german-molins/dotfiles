@@ -15,3 +15,6 @@ data:
   packages:
     homebrew:
       brews_extra:
+{{- if eq $profile "quantica" }}
+        - lastpass-cli
+{{- end }}
