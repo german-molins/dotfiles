@@ -37,3 +37,8 @@ dotfiles by option `--dotfiles-script-env ENVVAR=VALUE...` or
 ```sh
 devpod up . --dotfiles-script-env DOTFILES_PROFILE=personal
 ```
+
+### Auto-Loading Environment Variables
+
+Shell hooks are set for `direnv` to auto-load and unload envvars found in the
+first found `.envrc` file up the `PWD` path.
