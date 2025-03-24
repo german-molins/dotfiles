@@ -42,4 +42,8 @@ contexts:
           DOCKER_PATH:
             value: docker
           INACTIVITY_TIMEOUT: {}
+{{ if eq .profile "personal" -}}
 defaultContext: default
+{{ else if eq .profile "quantica" -}}
+defaultContext: quantica
+{{ end -}}
