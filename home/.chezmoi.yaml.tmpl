@@ -19,3 +19,6 @@ data:
         - lastpass-cli
 {{- end }}
     nix_extra:
+{{- if eq $profile "quantica" }}
+        - lastpass-cli
+{{- end }}
