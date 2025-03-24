@@ -8,7 +8,7 @@ contexts:
         value: install.sh
       DOTFILES_URL:
         userProvided: true
-        value: https://github.com/german-molins/dotfiles.git
+        value: {{ .dotfiles_url }}
       SSH_CONFIG_PATH:
         userProvided: true
         value: {{ .chezmoi.homeDir }}/.ssh/config.d/devpod.conf
@@ -34,7 +34,7 @@ contexts:
         value: install.sh
       DOTFILES_URL:
         userProvided: true
-        value: https://github.com/german-molins/dotfiles.git
+        value: {{ .dotfiles_url }}
       SSH_CONFIG_PATH:
         userProvided: true
         value: {{ .chezmoi.homeDir }}/.ssh/config.d/devpod.conf
