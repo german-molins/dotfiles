@@ -1,4 +1,12 @@
 {{ $profile := env "DOTFILES_PROFILE" | default "personal" -}}
+{{ $email := "email" -}}
+
+{{ if eq $profile "personal" -}}
+  {{ $email = "germanmolins@gmail.com" -}}
+{{ else if eq $profile "quantica" -}}
+  {{ $email = "german@quantica.io" -}}
+{{ end -}}
 
 data:
   profile: {{ $profile }}
+  email: {{ $email }}
