@@ -6,28 +6,30 @@
 # If the current directory is not the default chezmoi source directory, it moves
 # the repository to the default directory.
 
-set -e # -e: exit on error
+set -eu
 
 echo "[dotfiles][install] Starting installation script."
 
 if [ ! "$(command -v chezmoi)" ]; then
   bin_dir="$HOME/.local/bin"
   chezmoi="$bin_dir/chezmoi"
-  if [ "$(command -v curl)" ]; then
-    echo "[dotfiles][install] Installing chezmoi using curl."
-    sh -c "$(curl -fsSL https://git.io/chezmoi)" -- -b "$bin_dir"
-  elif [ "$(command -v wget)" ]; then
-    echo "[dotfiles][install] Installing chezmoi using wget."
-    sh -c "$(wget -qO- https://git.io/chezmoi)" -- -b "$bin_dir"
+  echo "[dotfiles][install] Installing chezmoi to '${chezmoi}'." >&2
+  if command -v curl >/dev/null; then
+    chezmoi_install_script="$(curl -fsSL get.chezmoi.io)"
+  elif command -v wget >/dev/null; then
+    chezmoi_install_script="$(wget -qO- get.chezmoi.io)"
   else
     echo "[dotfiles][install] To install chezmoi, you must have curl or wget installed." >&2
     exit 1
   fi
-else
-  chezmoi=chezmoi
+  sh -c "${chezmoi_install_script}" -- -b "${bin_dir}"
+  unset chezmoi_install_script bin_dir
 fi
 
 # POSIX way to get script's dir: https://stackoverflow.com/a/29834779/12156188
 script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
-echo "[dotfiles][install] Initializing chezmoi with source directory: $script_dir'"
-"$chezmoi" init --apply "--source=$script_dir"
+echo "[dotfiles][install] Initializing chezmoi with source directory '$script_dir'"
+
+set -- init --apply --source="${script_dir}"
+echo "[dotfiles][install] Running 'chezmoi $*'" >&2
+exec "$chezmoi" "$@"
