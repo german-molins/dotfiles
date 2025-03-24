@@ -1,2 +1,4 @@
+{{ $profile := env "DOTFILES_PROFILE" | default "personal" -}}
+
 data:
-  profile: {{ env "DOTFILES_PROFILE" | default "personal" }}
+  profile: {{ $profile }}
