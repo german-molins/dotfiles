@@ -3,7 +3,11 @@
 
 ########
 ## Main:
+{{ if eq .profile "personal" -}}
 model: openrouter/anthropic/claude-3.5-sonnet
+{{ else if eq .profile "quantica" -}}
+model: openai/gpt-4o
+{{- end }}
 
 ##################
 ## Model Settings:
