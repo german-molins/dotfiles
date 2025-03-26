@@ -1,6 +1,10 @@
 term xterm-256color
 
+{{ if eq .chezmoi.os "darwin" -}}
+font_size 13.0
+{{ else -}}
 font_size 12.0
+{{ end -}}
 font_family monospace
 
 startup_mode maximized
