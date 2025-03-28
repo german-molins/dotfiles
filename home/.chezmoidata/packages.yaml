@@ -58,6 +58,7 @@ packages:
       - docker
   pipx:
   nix:
+    - asdf-vm
     - tmux
     - direnv
     - bat
