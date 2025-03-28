@@ -19,7 +19,6 @@ packages:
       - gpg
       - gpg-tui
       - htop
-      - juliaup
       - jq
       - lazygit
       - make
