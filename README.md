@@ -33,10 +33,11 @@ which will install the dotfiles and move the cloned repository to the default
 
 ## Main Tools And Apps
 
+### Apps
+
 These are my daily CLI drivers:
 
 - `chezmoi`: dotfiles manager
-- `brew` / `nix`: package manager
 - `alacritty` / `kitty`: terminal emulator
 - `bash`: shell
 - `devpod`: devcontainer manager
@@ -49,3 +50,17 @@ These are my daily CLI drivers:
 - `aider`: LLM pair programmer
 - `task` / `timew`: task and time maneger
 - `zk`: notebook manager
+
+### Package Managers
+
+These package managers are used to install the tools and apps at the user
+level:
+
+- `brew`: package manager for macOS ARM and Linux AMD
+- `nix`: package manager and Linux ARM
+- `asdf`: language version manager
+
+`brew` and `nix` are used to install user-level dependencies. Bootstrapping
+them requires sudo permissions, but once installed, the user can use them to
+install packages without sudo. `asdf` is installed by `brew` or `nix`,
+depending on the OS and architecture.
