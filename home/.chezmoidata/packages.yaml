@@ -3,6 +3,7 @@ packages:
     brews:
       - aichat
       - aider
+      - asdf
       - atuin
       - bash-completion@2
       - bat
