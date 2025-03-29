@@ -1,0 +1,10 @@
+{{ if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") -}}
+#!/bin/bash
+
+# Make devbox available in the current shell.
+. "$HOME"/.nix-profile/etc/profile.d/nix.sh
+. <(devbox global shellenv)
+
+# devbox packages hash: {{ include "dot_local/share/devbox/global/default/devbox.lock" | sha256sum }}
+devbox global install
+{{ end -}}
