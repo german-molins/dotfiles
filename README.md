@@ -54,13 +54,16 @@ These are my daily CLI drivers:
 ### Package Managers
 
 These package managers are used to install the tools and apps at the user
-level:
+level ("global"), depending on system and architecture:
 
-- `brew`: package manager for macOS ARM and Linux AMD
-- `nix`: package manager and Linux ARM
-- `asdf`: language version manager
+- macOS ARM and Linux AMD:
+  - `brew`: package manager
+  - `asdf`: language version manager
+- Linux ARM:
+  - `nix`: package manager
+  - `devbox`: global and project package manager
 
 `brew` and `nix` are used to install user-level dependencies. Bootstrapping
 them requires sudo permissions, but once installed, the user can use them to
-install packages without sudo. `asdf` is installed by `brew` or `nix`,
-depending on the OS and architecture.
+install packages without sudo. `devbox` is installed by `nix` and `asdf` is
+installed by `brew`.
