@@ -67,3 +67,53 @@ level ("global"), depending on system and architecture:
 them requires sudo permissions, but once installed, the user can use them to
 install packages without sudo. `devbox` is installed by `nix` and `asdf` is
 installed by `brew`.
+
+#### Devbox
+
+`debbox` is a package manager that can instal packages globally (user level)
+and per project. It is a very convenient manager for project shell
+environments.
+
+**Global environment** 
+
+For managing packages globally, e.g.
+
+```sh
+# Installs package and updates dependencies file and lock file.
+devbox global add aider
+cd "$DEVBOX_PROJECT_ROOT"
+chezmoi add devbox.json devbox.lock
+```
+
+and
+
+```sh
+devbox global install
+```
+
+for installing the dependencies declared in `devbox.json` and `devbox.lock`.
+
+Update packages as
+
+```sh
+devbox global update
+```
+
+**Project Environment**
+
+For managing a project, e.g.
+
+```sh
+devbox init
+devbox add yq
+git add devbox.json devbox.lock
+git commit -m "build: add package yq"
+```
+
+For instantiating a Devbox-managed project, simply running
+
+```sh
+devbox install
+```
+
+will install the dependencies declared in `devbox.json` and `devbox.lock`.
