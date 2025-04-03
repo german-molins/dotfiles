@@ -30,6 +30,13 @@ fi
 script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
 echo "[dotfiles][install] Initializing chezmoi with source directory '$script_dir'"
 
-set -- init --apply --source="${script_dir}"
+if [ "${DOTFILES_APPLY:-}" = "true" ]; then
+  set -- init --apply --source="${script_dir}"
+elif [ "${DOTFILES_APPLY:-}" = "false" ]; then
+  set -- init --source="${script_dir}"
+else
+  echo "[dotfiles][install] Warning: DOTFILES_APPLY is not set to 'true' or 'false'. Defaulting to 'false'." >&2
+  set -- init --source="${script_dir}"
+fi
 echo "[dotfiles][install] Running 'chezmoi $*'" >&2
 exec "$chezmoi" "$@"
