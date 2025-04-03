@@ -39,7 +39,7 @@ source repo), providing the necessary envvars.
 ### DevPod
 
 Environment variables can be made available to `devpod` installation of
-dotfiles by option `--dotfiles-script-env ENVVAR=VALUE...` or
+dotfiles by option `--dotfiles-script-env ENVVAR=VALUE,...` or
 `--dotfiles-script-env-file env_file...`. Example using default profile:
 
 ```sh
