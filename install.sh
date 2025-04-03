@@ -48,15 +48,18 @@ if [ -n "${DOTFILES_GIT_BRANCH:-}" ]; then
   fi
 fi
 
-if [ "${DOTFILES_APPLY:-}" = "false" ]; then
-  echo "[dotfiles][install] INFO: Not applying chezmoi after init." >&2
-else
+# Run chezmoi init first
+echo "[dotfiles][install] Running 'chezmoi init $*'" >&2
+"$chezmoi" init "$@"
+
+# Apply chezmoi if DOTFILES_APPLY is not set to false
+if [ "${DOTFILES_APPLY:-}" != "false" ]; then
   if [ -n "${DOTFILES_APPLY:-}" ] && [ "${DOTFILES_APPLY}" != "true" ]; then
     >&2 echo -n "[dotfiles][install] WARNING: "
     >&2 echo "DOTFILES_APPLY invalid value '$DOTFILES_APPLY', defaulting to 'true'."
   fi
-  set -- "$@" --apply
+  echo "[dotfiles][install] Running 'chezmoi apply'" >&2
+  "$chezmoi" apply
+else
+  echo "[dotfiles][install] INFO: Not applying chezmoi after init." >&2
 fi
-
-echo "[dotfiles][install] Running 'chezmoi init $*'" >&2
-exec "$chezmoi" init "$@"
