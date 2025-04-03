@@ -8,6 +8,7 @@
 
 # Environment variables:
 : ${DOTFILES_APPLY:-}
+: ${DOTFILES_GIT_BRANCH:-}
 
 set -eu
 
@@ -34,6 +35,11 @@ script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
 echo "[dotfiles][install] Initializing chezmoi with source directory '$script_dir'"
 
 set -- init --source="${script_dir}"
+
+if [ -n "${DOTFILES_GIT_BRANCH:-}" ]; then
+  echo "[dotfiles][install] Checking out git branch '${DOTFILES_GIT_BRANCH}'." >&2
+  git -C "${script_dir}" checkout "${DOTFILES_GIT_BRANCH}"
+fi
 
 if [ "${DOTFILES_APPLY:-}" = "false" ]; then
   echo "[dotfiles][install] INFO: Not applying chezmoi after init." >&2
