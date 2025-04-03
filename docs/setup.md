@@ -4,10 +4,10 @@
 
 Environment variables that determine the templating environment:
 
-| envvar | description | allowed values |
-| --------------- | --------------- | --------------- |
-| `DOTFILES_PROFILE` | Profile name | "personal", "quantica" |
-| `DOTFILES_APPLY` | Controls if the `--apply` flag is passed during initialization | "true", "false" |
+| envvar | description | allowed values | default value |
+| --------------- | --------------- | --------------- | --------------- |
+| `DOTFILES_PROFILE` | Profile name | "personal", "quantica" | "personal" |
+| `DOTFILES_APPLY` | Controls if the `--apply` flag is passed during initialization | "true", "false" | "true" |
 
 They are used once during `chezmoi` initialization to set template data
 dynamically in `.chezmoi.yaml.tmpl`, which results in the final
