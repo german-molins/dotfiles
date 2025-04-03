@@ -8,6 +8,7 @@ Environment variables that determine the templating environment:
 | --------------- | --------------- | --------------- | --------------- |
 | `DOTFILES_PROFILE` | Profile name | "personal", "quantica" | "personal" |
 | `DOTFILES_APPLY` | Controls if the `--apply` flag is passed during initialization | "true", "false" | "true" |
+| `DOTFILES_GIT_BRANCH` | Git branch or ref to checkout | Any valid git ref | "HEAD" |
 
 They are used once during `chezmoi` initialization to set template data
 dynamically in `.chezmoi.yaml.tmpl`, which results in the final
