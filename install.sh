@@ -38,8 +38,8 @@ echo "[dotfiles][install] Initializing chezmoi with source directory '$script_di
 set -- --source="${script_dir}"
 
 if [ -n "${DOTFILES_GIT_BRANCH:-}" ]; then
-  echo "[dotfiles][install] Checking out git branch '${DOTFILES_GIT_BRANCH}'." >&2
-  git -C "${script_dir}" checkout "${DOTFILES_GIT_BRANCH}"
+  echo "[dotfiles][install] Switching to git branch '${DOTFILES_GIT_BRANCH}'." >&2
+  git -C "${script_dir}" switch "${DOTFILES_GIT_BRANCH}"
 fi
 
 if [ "${DOTFILES_APPLY:-}" = "false" ]; then
