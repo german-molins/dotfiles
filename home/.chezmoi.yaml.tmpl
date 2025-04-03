@@ -1,8 +1,9 @@
 {{ $profile := env "DOTFILES_PROFILE" | default "personal" -}}
 {{ $email := "email" -}}
+{{ $personal_email := "germanmolins@gmail.com" }}
 
 {{ if eq $profile "personal" -}}
-  {{ $email = "germanmolins@gmail.com" -}}
+  {{ $email = $personal_email -}}
 {{ else if eq $profile "quantica" -}}
   {{ $email = "german@quantica.io" -}}
 {{ end -}}
@@ -12,6 +13,7 @@ sourceDir: {{ .chezmoi.sourceDir }}
 data:
   profile: {{ $profile }}
   email: {{ $email }}
+  personal_email: {{ $personal_email }}
   name: Germán Molins
   dotfiles_url: https://github.com/german-molins/dotfiles.git
   packages:

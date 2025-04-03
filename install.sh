@@ -51,6 +51,9 @@ fi
 echo "[dotfiles][install] Running 'chezmoi init $*'" >&2
 "$chezmoi" init "$@"
 
+personal_email="$("$chezmoi" data | jq .personal_email --raw-output)"
+git -C "${script_dir}" config user.email "${personal_email}"
+
 if [ "${DOTFILES_APPLY:-}" != "false" ]; then
   if [ -n "${DOTFILES_APPLY:-}" ] && [ "${DOTFILES_APPLY}" != "true" ]; then
     >&2 echo -n "[dotfiles][install] WARNING: "
