@@ -1,5 +1,11 @@
 # Setup
 
+The chosen configuration controls the behavior during these sequential steps:
+
+- Repository cloning
+- `chezmoi` initialization
+- `chezmoi` application of dotfiles from the source directory on the target directory.
+
 ## Environment Variables
 
 Environment variables that determine the templating environment:
