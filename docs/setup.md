@@ -77,3 +77,8 @@ devpod up path/to/repo/ --dotfiles-script-env-file=~/.dotfiles.env
 Additionally it is made available by `direnv` in the home environment
 (`~/.envrc`) so that `chezmoi init` uses its current config without having to
 pass envvars explicitly.
+
+## Installation Script
+
+The cloned dotfiles Git repository will be configured with the personal profile
+email address, even in an environment with another profile.

@@ -4,7 +4,8 @@
 # initializes it with the current script directory as the source, and applies
 # the dotfiles by default. It supports switching to a specified git branch if it
 # exists in the remote repository. If no branch is specified, or if the branch
-# does not exist, the script defaults to not applying the dotfiles.
+# does not exist, the script defaults to not applying the dotfiles. The coned
+# git repo is configured with the personal profile email address.
 
 # Environment variables:
 : ${DOTFILES_APPLY:-}
