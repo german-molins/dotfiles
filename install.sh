@@ -6,6 +6,9 @@
 # If the current directory is not the default chezmoi source directory, it moves
 # the repository to the default directory.
 
+# Environment variables:
+: ${DOTFILES_APPLY:-}
+
 set -eu
 
 echo "[dotfiles][install] Starting installation script."
@@ -30,13 +33,17 @@ fi
 script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
 echo "[dotfiles][install] Initializing chezmoi with source directory '$script_dir'"
 
-if [ "${DOTFILES_APPLY:-}" = "true" ]; then
-  set -- init --apply --source="${script_dir}"
-elif [ "${DOTFILES_APPLY:-}" = "false" ]; then
-  set -- init --source="${script_dir}"
+set -- init --source="${script_dir}"
+
+if [ "${DOTFILES_APPLY:-}" = "false" ]; then
+  echo "[dotfiles][install] INFO: Not applying chezmoi after init." >&2
 else
-  echo "[dotfiles][install] Warning: DOTFILES_APPLY is not set to 'true' or 'false'. Defaulting to 'false'." >&2
-  set -- init --source="${script_dir}"
+  if [ -n "${DOTFILES_APPLY:-}" ] && [ "${DOTFILES_APPLY}" != "true" ]; then
+    >&2 echo -n "[dotfiles][install] WARNING: "
+    >&2 echo "DOTFILES_APPLY invalid value '$DOTFILES_APPLY', defaulting to 'true'."
+  fi
+  set -- "$@" --apply
 fi
+
 echo "[dotfiles][install] Running 'chezmoi $*'" >&2
 exec "$chezmoi" "$@"
