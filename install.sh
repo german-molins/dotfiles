@@ -38,8 +38,14 @@ echo "[dotfiles][install] Initializing chezmoi with source directory '$script_di
 set -- --source="${script_dir}"
 
 if [ -n "${DOTFILES_GIT_BRANCH:-}" ]; then
-  echo "[dotfiles][install] Switching to git branch '${DOTFILES_GIT_BRANCH}'." >&2
-  git -C "${script_dir}" switch "${DOTFILES_GIT_BRANCH}"
+  if git -C "${script_dir}" ls-remote --exit-code --heads origin "${DOTFILES_GIT_BRANCH}" >/dev/null; then
+    >&2 echo "[dotfiles][install] Switching to git branch '${DOTFILES_GIT_BRANCH}'."
+    git -C "${script_dir}" switch "${DOTFILES_GIT_BRANCH}"
+  else
+    >&2 echo -n "[dotfiles][install] ERROR: "
+    >&2 echo "Branch '${DOTFILES_GIT_BRANCH}' does not exist in remote. "
+    DOTFILES_APPLY=false
+  fi
 fi
 
 if [ "${DOTFILES_APPLY:-}" = "false" ]; then
