@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# [dotfiles][install] This script installs chezmoi and initializes it with the
-# dotfiles repository. It checks if chezmoi is installed, installs it if not,
-# and then initializes chezmoi with the current script directory as the source.
-# If the current directory is not the default chezmoi source directory, it moves
-# the repository to the default directory.
+# [dotfiles][install] This script installs chezmoi if not already installed,
+# initializes it with the current script directory as the source, and applies
+# the dotfiles by default. It supports switching to a specified git branch if it
+# exists in the remote repository. If no branch is specified, or if the branch
+# does not exist, the script defaults to not applying the dotfiles.
 
 # Environment variables:
 : ${DOTFILES_APPLY:-}
@@ -48,11 +48,9 @@ if [ -n "${DOTFILES_GIT_BRANCH:-}" ]; then
   fi
 fi
 
-# Run chezmoi init first
 echo "[dotfiles][install] Running 'chezmoi init $*'" >&2
 "$chezmoi" init "$@"
 
-# Apply chezmoi if DOTFILES_APPLY is not set to false
 if [ "${DOTFILES_APPLY:-}" != "false" ]; then
   if [ -n "${DOTFILES_APPLY:-}" ] && [ "${DOTFILES_APPLY}" != "true" ]; then
     >&2 echo -n "[dotfiles][install] WARNING: "
