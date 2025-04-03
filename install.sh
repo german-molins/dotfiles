@@ -34,7 +34,8 @@ fi
 script_dir="$(cd -P -- "$(dirname -- "$(command -v -- "$0")")" && pwd -P)"
 echo "[dotfiles][install] Initializing chezmoi with source directory '$script_dir'"
 
-set -- init --source="${script_dir}"
+# Set arguments for 'chezmoi init'.
+set -- --source="${script_dir}"
 
 if [ -n "${DOTFILES_GIT_BRANCH:-}" ]; then
   echo "[dotfiles][install] Checking out git branch '${DOTFILES_GIT_BRANCH}'." >&2
@@ -51,5 +52,5 @@ else
   set -- "$@" --apply
 fi
 
-echo "[dotfiles][install] Running 'chezmoi $*'" >&2
-exec "$chezmoi" "$@"
+echo "[dotfiles][install] Running 'chezmoi init $*'" >&2
+exec "$chezmoi" init "$@"
