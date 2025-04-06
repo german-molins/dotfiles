@@ -1,48 +1,21 @@
 packages:
   homebrew:
     brews:
-      - aichat
-      - aider
       - asdf
-      - atuin
       - bash-completion@2
-      - bat
       - dash
-      - direnv
       - dos2unix
-      - fd
-      - fzf
-      - gh
-      - git
-      - gitui
       - glab
       - gpg
       - gpg-tui
       - htop
-      - jq
       - lazygit
       - make
-      - node
-      - tldr
-      - tree-sitter
-      - nvim
-      - ranger
-      - rcs
-      - readline
-      - ripgrep
-      - rsync
-      - sshfs
       - task
       - taskopen
       - taskwarrior-tui
       - timewarrior
-      - tmux
-      - tree
-      - uv
-      - vim
       - watch
-      - xsel
-      - yq
       - zk
     casks:
       - firefox
