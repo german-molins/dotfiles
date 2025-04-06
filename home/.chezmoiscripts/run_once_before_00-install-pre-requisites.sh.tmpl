@@ -1,5 +1,4 @@
 #!/bin/bash
-
 {{ if or (and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64")) (eq .chezmoi.os "darwin") -}}
 
 set -eu
@@ -10,12 +9,24 @@ if [[ ! $(command -v brew)  ]]
 then
 	NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL "$homebrew_installer")"
 fi
-{{- else if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") -}}
-# Install Nix package manager in single-user mode.
+{{ end -}}
+
+{{ if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") -}}
 if [[ ! $(command -v nix)  ]]
 then
+  # Install Nix package manager in single-user mode.
   sh <(curl -L https://nixos.org/nix/install) --no-daemon
   . "$HOME"/.nix-profile/etc/profile.d/nix.sh
-  nix-env -iA nixpkgs.devbox
 fi
-{{ end -}}
+if [[ ! $(command -v devbox) ]]
+then
+    nix-env -iA nixpkgs.devbox
+fi
+
+{{ else if eq .chezmoi.os "darwin" }}
+if [[ ! $(command -v devbox) ]]
+then
+    # If not found, also installs Nix in multi-user mode in macOS.
+    curl -fsSL https://get.jetify.com/devbox | bash -s -- --force
+fi
+{{- end }}
