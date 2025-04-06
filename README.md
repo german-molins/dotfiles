@@ -51,17 +51,30 @@ These are my daily CLI drivers:
 - `task` / `timew`: task and time maneger
 - `zk`: notebook manager
 
-### Package Managers
+### Package Managers by Operating System
 
 These package managers are used to install the tools and apps at the user
 level ("global"), depending on system and architecture:
 
-- macOS ARM and Linux AMD:
-  - `brew`: package manager
-  - `asdf`: language version manager
+Package managers:
+
+- `devbox`: user and project package manager
+- `nix`: system and user package manager
+- `brew`: system package manager
+
+Operating systems:
+
+- macOS (ARM and AMD):
+  - `devbox`: tracked lock file; multi-user
+  - `nix`: no tracked lock file; multi-user
+  - `brew`: no tracked lock file; multi-user
+- Linux AMD:
+  - `devbox`: tracked lock file; single-user
+  - `nix`: no tracked lock file; single-user
+  - `brew`: no tracked lock file; multi-user
 - Linux ARM:
-  - `nix`: package manager
-  - `devbox`: global and project package manager
+  - `devbox`: tracked lock file; single-user
+  - `nix`: no tracked lock file; single-user
 
 `brew` and `nix` are used to install user-level dependencies. Bootstrapping
 them requires sudo permissions, but once installed, the user can use them to
@@ -74,7 +87,7 @@ installed by `brew`.
 and per project. It is a very convenient manager for project shell
 environments.
 
-**Global environment** 
+**Global environment**
 
 For managing packages globally, e.g.
 
