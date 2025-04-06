@@ -1,7 +1,7 @@
-{{ if or (and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64")) (eq .chezmoi.os "darwin") -}}
+{{ if or (eq .chezmoi.os "linux") (eq .chezmoi.os "darwin") -}}
 #!/bin/bash
 
-{{ if not (eq .chezmoi.os "darwin") -}}
+{{ if eq .chezmoi.os "linux" -}}
 # Make devbox available in the current shell.
 . "$HOME"/.nix-profile/etc/profile.d/nix.sh
 . <(devbox global shellenv)
