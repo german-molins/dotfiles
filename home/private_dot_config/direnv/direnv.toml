@@ -1,6 +1,7 @@
 [global]
 load_dotenv = false
 strict_env = false
+disable_stdin = true
 
 [whitelist]
 exact = ["~"]
