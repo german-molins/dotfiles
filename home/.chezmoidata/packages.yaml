@@ -1,7 +1,6 @@
 packages:
   homebrew:
     brews:
-      - asdf
       - bash-completion@2
       - dash
       - dos2unix
