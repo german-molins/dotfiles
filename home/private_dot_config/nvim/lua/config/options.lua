@@ -8,3 +8,5 @@ vim.opt.spelllang = {
   "en",
   "es",
 }
+
+vim.g.lazyvim_prettier_needs_config = true
