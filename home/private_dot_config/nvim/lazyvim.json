@@ -3,6 +3,7 @@
     "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.python",
+    "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.treesitter-context"
   ],
   "install_version": 7,
