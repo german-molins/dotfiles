@@ -36,4 +36,20 @@ return {
       end,
     },
   },
+  keys = function(_, keys)
+    table.insert(keys, {
+      "<leader>tT",
+      function()
+        local cwd = vim.fn.getcwd()
+        local file = vim.fn.expand("%:p")
+
+        if string.find(file, "/packages/") then
+          cwd = string.match(file, "(.-/packages/[^/]+)")
+        end
+
+        require("neotest").run.run(cwd)
+      end,
+      desc = "Run All Test Files (Neotest)(dotfiles)",
+    })
+  end,
 }
