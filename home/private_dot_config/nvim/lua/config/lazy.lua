@@ -20,6 +20,12 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { import = "lazyvim.plugins.extras.ai.copilot" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
+    { import = "lazyvim.plugins.extras.lang.toml" },
+    { import = "lazyvim.plugins.extras.lang.yaml" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.docker" },
+    { import = "lazyvim.plugins.extras.lang.python" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.test.core" },
     { import = "lazyvim.plugins.extras.ui.treesitter-context" },
     -- import/override with your plugins
