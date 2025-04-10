@@ -5,6 +5,8 @@ return {
   },
   opts = {
     adapters = {
+      ["neotest-python"] = {},
+
       ["neotest-jest"] = {
         jestCommand = "npm test --",
         jestConfigFile = function(file)
