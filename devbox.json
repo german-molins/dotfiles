@@ -7,6 +7,10 @@
     "init_hook": [
       "echo '=== Dotfiles development ==='"
     ],
-    "scripts": {}
+    "scripts": {
+      "docs": [
+        "./scripts/generate-devbox-docs.sh"
+      ]
+    }
   }
 }
