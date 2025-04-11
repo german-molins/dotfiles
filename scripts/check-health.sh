@@ -19,7 +19,7 @@ check_contributors()
 
         exit 1
     else
-        >&2 printf "INFO: Only contributor ($num_contributors) to this repository:\n"
+        >&2 printf "INFO: Only contributor to this repository: "
         >&2 echo "$contributors_emails"
     fi
 )
