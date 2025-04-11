@@ -1,5 +1,6 @@
 # Function to update tmux status
-__tmux_refresh() {
+__tmux_refresh()
+{
     if [ -n "$TMUX" ]; then
         tmux refresh-client -S
     fi
