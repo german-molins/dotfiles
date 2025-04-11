@@ -30,7 +30,7 @@ return {
         env = { CI = true },
         cwd = function(file)
           if is_monorepo(file) then
-            return get_monorepo_package_path(file) .. "/src"
+            return get_monorepo_package_path(file)
           else
             return vim.fn.getcwd()
           end
