@@ -9,6 +9,14 @@ local function get_monorepo_package_path(file)
   return nil
 end
 
+local function get_package_path(file)
+  if is_monorepo(file) then
+    return get_monorepo_package_path(file)
+  else
+    return vim.fn.getcwd()
+  end
+end
+
 return {
   "nvim-neotest/neotest",
   dependencies = {
@@ -21,23 +29,11 @@ return {
       ["neotest-jest"] = {
         jestCommand = "npm test --",
         jestConfigFile = function(file)
-          local cwd
-
-          if is_monorepo(file) then
-            cwd = get_monorepo_package_path(file)
-          else
-            cwd = vim.fn.getcwd()
-          end
-
-          return cwd .. "/jest.config.ts"
+          return get_package_path(file) .. "/jest.config.ts"
         end,
         env = { CI = true },
         cwd = function(file)
-          if is_monorepo(file) then
-            return get_monorepo_package_path(file)
-          else
-            return vim.fn.getcwd()
-          end
+          return get_package_path(file)
         end,
       },
     },
@@ -58,13 +54,7 @@ return {
       "<leader>tT",
       function()
         local file = vim.fn.expand("%:p")
-        local cwd
-
-        if is_monorepo(file) then
-          cwd = get_monorepo_package_path(file)
-        else
-          cwd = vim.fn.getcwd()
-        end
+        local cwd = get_package_path(file)
 
         require("neotest").run.run(cwd)
       end,
