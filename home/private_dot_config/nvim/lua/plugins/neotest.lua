@@ -53,12 +53,13 @@ return {
     table.insert(keys, {
       "<leader>tT",
       function()
-        local cwd = vim.fn.getcwd()
         local file = vim.fn.expand("%:p")
+        local cwd
 
         if is_monorepo(file) then
-          local package_path = get_monorepo_package_path(file)
-          cwd = package_path
+          cwd = get_monorepo_package_path(file)
+        else
+          cwd = vim.fn.getcwd()
         end
 
         require("neotest").run.run(cwd)
