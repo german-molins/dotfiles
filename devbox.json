@@ -11,6 +11,9 @@
     "scripts": {
       "docs": [
         "./scripts/generate-devbox-docs.sh"
+      ],
+      "health": [
+        "./scripts/check-health.sh"
       ]
     }
   }
