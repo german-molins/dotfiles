@@ -3,6 +3,7 @@ return {
   opts = {
     formatters_by_ft = {
       typescript = { "prettier" },
+      lua = { "stylua" },
       sh = { "shfmt" },
     },
     formatters = {
