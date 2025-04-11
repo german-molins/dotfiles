@@ -1,5 +1,9 @@
+local function is_monorepo(file)
+  return string.find(file, "/packages/") ~= nil
+end
+
 local function get_monorepo_package_path(file)
-  if string.find(file, "/packages/") then
+  if is_monorepo(file) then
     return string.match(file, "(.-/packages/[^/]+)")
   end
   return nil
@@ -17,15 +21,19 @@ return {
       ["neotest-jest"] = {
         jestCommand = "npm test --",
         jestConfigFile = function(file)
-          local package_path = get_monorepo_package_path(file)
-          if package_path then
+          if is_monorepo(file) then
+            local package_path = get_monorepo_package_path(file)
             return package_path .. "/src/jest.config.ts"
           end
           return vim.fn.getcwd() .. "/jest.config.ts"
         end,
         env = { CI = true },
         cwd = function(file)
-          return get_monorepo_package_path(file) or vim.fn.getcwd()
+          if is_monorepo(file) then
+            return get_monorepo_package_path(file) .. "/src"
+          else
+            return vim.fn.getcwd()
+          end
         end,
       },
     },
@@ -48,8 +56,8 @@ return {
         local cwd = vim.fn.getcwd()
         local file = vim.fn.expand("%:p")
 
-        local package_path = get_monorepo_package_path(file)
-        if package_path then
+        if is_monorepo(file) then
+          local package_path = get_monorepo_package_path(file)
           cwd = package_path
         end
 
