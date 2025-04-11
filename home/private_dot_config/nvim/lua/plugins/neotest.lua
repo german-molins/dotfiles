@@ -21,11 +21,15 @@ return {
       ["neotest-jest"] = {
         jestCommand = "npm test --",
         jestConfigFile = function(file)
+          local cwd
+
           if is_monorepo(file) then
-            local package_path = get_monorepo_package_path(file)
-            return package_path .. "/src/jest.config.ts"
+            cwd = get_monorepo_package_path(file)
+          else
+            cwd = vim.fn.getcwd()
           end
-          return vim.fn.getcwd() .. "/jest.config.ts"
+
+          return cwd .. "/jest.config.ts"
         end,
         env = { CI = true },
         cwd = function(file)
