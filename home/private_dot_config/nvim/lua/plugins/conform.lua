@@ -8,10 +8,10 @@ return {
     formatters = {
       shfmt = {
         append_args = {
-          "-i=4", -- indentation
-          "-ci", -- indent switch cases
-          "-fn", -- function next line
-          "-bn", -- allow binary operators beginning of line
+          "--indent=4",
+          "--case-indent",
+          "--func-next-line",
+          "--binary-next-line",
         },
       },
     },
