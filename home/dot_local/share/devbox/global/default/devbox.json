@@ -27,7 +27,8 @@
     "jq@latest",
     "yq@latest",
     "tldr@latest",
-    "direnv@latest"
+    "direnv@latest",
+    "httpie@latest"
   ],
   "shell": {
     "init_hook": [

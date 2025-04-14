@@ -544,6 +544,70 @@
         }
       }
     },
+    "httpie@latest": {
+      "last_modified": "2025-03-11T17:52:14Z",
+      "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#httpie",
+      "source": "devbox-search",
+      "version": "3.2.4",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7x9w8f24as6vi9nbaldsv0zawr0l2wz3-python3.12-httpie-3.2.4",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/nhxplha1z0i6narxg5jzjybyki0xj7yl-python3.12-httpie-3.2.4-dist"
+            }
+          ],
+          "store_path": "/nix/store/7x9w8f24as6vi9nbaldsv0zawr0l2wz3-python3.12-httpie-3.2.4"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/v28dzgy3p7l9cp7d8z62jilhl9041kmd-python3.12-httpie-3.2.4",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/6ngcqy5kc8ibc2qzciqnxrm68xr3c880-python3.12-httpie-3.2.4-dist"
+            }
+          ],
+          "store_path": "/nix/store/v28dzgy3p7l9cp7d8z62jilhl9041kmd-python3.12-httpie-3.2.4"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6qdnpzs3xmiqinjxgckw2l2mmb7b2hhb-python3.12-httpie-3.2.4",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/hj0w10np23ay6sm1rlkvh3c5p49fa759-python3.12-httpie-3.2.4-dist"
+            }
+          ],
+          "store_path": "/nix/store/6qdnpzs3xmiqinjxgckw2l2mmb7b2hhb-python3.12-httpie-3.2.4"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k4am99gjd9y3r33nvm048fm3xvmaljmh-python3.12-httpie-3.2.4",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/0x09a0nl848w4qi5bc1dl3b6xf492ai2-python3.12-httpie-3.2.4-dist"
+            }
+          ],
+          "store_path": "/nix/store/k4am99gjd9y3r33nvm048fm3xvmaljmh-python3.12-httpie-3.2.4"
+        }
+      }
+    },
     "jq@latest": {
       "last_modified": "2025-04-12T23:59:46Z",
       "resolved": "github:NixOS/nixpkgs/f6db44a8daa59c40ae41ba6e5823ec77fe0d2124#jq",
