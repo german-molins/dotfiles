@@ -60,6 +60,7 @@ echo 'Welcome to devbox!' > /dev/null
 * [yq@latest](https://www.nixhub.io/packages/yq)
 * [tldr@latest](https://www.nixhub.io/packages/tldr)
 * [direnv@latest](https://www.nixhub.io/packages/direnv)
+* [httpie@latest](https://www.nixhub.io/packages/httpie)
 
 ## Script Details
 
