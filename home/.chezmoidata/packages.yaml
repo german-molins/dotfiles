@@ -17,6 +17,7 @@ packages:
       - watch
       - zk
     brews_darwin:
+      - git-graph
     casks:
       - firefox
       - devpod  # Then install the CLI with the GUI button.
