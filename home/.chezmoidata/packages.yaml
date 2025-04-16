@@ -16,6 +16,7 @@ packages:
       - timewarrior
       - watch
       - zk
+    brews_darwin:
     casks:
       - firefox
       - devpod  # Then install the CLI with the GUI button.
