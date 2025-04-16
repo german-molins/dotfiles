@@ -61,6 +61,7 @@ echo 'Welcome to devbox!' > /dev/null
 * [tldr@latest](https://www.nixhub.io/packages/tldr)
 * [direnv@latest](https://www.nixhub.io/packages/direnv)
 * [httpie@latest](https://www.nixhub.io/packages/httpie)
+* [git-graph@latest](https://www.nixhub.io/packages/git-graph)
 
 ## Script Details
 
