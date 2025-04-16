@@ -20,10 +20,10 @@ packages:
       - git-graph
     casks:
       - firefox
-      - devpod  # Then install the CLI with the GUI button.
+      - devpod # Then install the CLI with the GUI button.
       - kitty
       - visual-studio-code
-      - programmer-dvorak  # Reboot; then available among keeb layouts.
+      - programmer-dvorak # Reboot; then available among keeb layouts.
       - obsidian
       # Desktop app needed because it ships with a Linux VM, since macOS can't
       # virtualise Linux kernel otherwise.
