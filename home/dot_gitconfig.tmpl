@@ -59,6 +59,7 @@
 [alias]
 	alias = !git config --get-regexp ^alias
 	sh = !gitsh
+	graph = !git-graph
   ui = !gitui
 	amend = commit --amend --verbose
 	unstage = reset
@@ -82,7 +83,8 @@
 	k = cherry-pick
 	l = log --pretty=oneline --abbrev-commit
 	lf = log --pretty=fuller --abbrev-commit
-	g = log --graph --oneline --decorate
+	gg = log --graph --oneline --decorate
+  g = graph
 	lfzf = log --oneline --color | fzf --ansi --no-sort --reverse --preview 'git show --color=always {+1}'
 	n = commit --amend --no-edit
 	s = status --short --untracked-files=no
