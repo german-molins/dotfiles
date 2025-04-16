@@ -28,7 +28,8 @@
     "yq@latest",
     "tldr@latest",
     "direnv@latest",
-    "httpie@latest"
+    "httpie@latest",
+    "git-graph@latest"
   ],
   "shell": {
     "init_hook": [

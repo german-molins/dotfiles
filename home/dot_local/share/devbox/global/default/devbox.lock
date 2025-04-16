@@ -421,6 +421,34 @@
         }
       }
     },
+    "git-graph@latest": {
+      "last_modified": "2025-03-23T05:31:05Z",
+      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#git-graph",
+      "source": "devbox-search",
+      "version": "0.6.0",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/id6w1pcssrr6mg6mzkqlkmfindps2g6v-git-graph-0.6.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/id6w1pcssrr6mg6mzkqlkmfindps2g6v-git-graph-0.6.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0cc7kyhfzbl35cn8v89fyzagyv83ysm0-git-graph-0.6.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0cc7kyhfzbl35cn8v89fyzagyv83ysm0-git-graph-0.6.0"
+        }
+      }
+    },
     "git@latest": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#git",
