@@ -30,8 +30,8 @@
     "direnv":      "latest",
     "httpie":      "latest",
     "git-graph": {
-      "version":            "latest",
-      "excluded_platforms": ["aarch64-darwin", "x86_64-darwin"]
+      "version":   "latest",
+      "platforms": ["aarch64-linux", "x86_64-linux"]
     }
   },
   "shell": {
