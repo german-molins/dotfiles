@@ -45,7 +45,9 @@ These are my daily CLI drivers:
 - `atuin`: shell history manager
 - `ranger`: file manager
 - `nvim`: text editor and IDE
+- `git`: version control
 - `gitui`: git manager
+- `git-graph`: git graph visualizer
 - `aichat`: all-in-one LLM tool
 - `aider`: LLM pair programmer
 - `task` / `timew`: task and time maneger
