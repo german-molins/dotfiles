@@ -37,23 +37,25 @@ which will install the dotfiles and move the cloned repository to the default
 
 These are my daily CLI drivers:
 
-- `chezmoi`: dotfiles manager
-- `alacritty` / `kitty`: terminal emulator
-- `bash`: shell
-- `devpod`: devcontainer manager
-- `tmux`: terminal multiplexer
-- `atuin`: shell history manager
-- `ranger`: file manager
-- `nvim`: text editor and IDE
-- `git`: version control
-- `gitui`: git manager
-- `git-graph`: git graph visualizer
-- `gh`: GitHub CLI
-- `gh-dash`: pull requests and issues manager
-- `aichat`: all-in-one LLM tool
-- `aider`: LLM pair programmer
-- `task` / `timew`: task and time maneger
-- `zk`: notebook manager
+| Name | Command | Alias | Description |
+|------|---------|-------|-------------|
+| Chezmoi | `chezmoi` | | Dotfiles manager |
+| Alacritty / Kitty | `alacritty`/`kitty` | | Terminal emulator |
+| Bash | `bash` | | Interactive shell |
+| Devpod | `devpod` | | Devcontainer manager |
+| Tmux | `tmux` | | Terminal multiplexer |
+| Atuin | `atuin` | | Shell history manager |
+| Ranger | `ranger` | | File manager |
+| Neovim | `nvim` | | Text editor and IDE |
+| Git | `git` | | Version control system |
+| Gitui | `gitui` | `git ui` | Git manager |
+| Git Graph | `git-graph` | `git graph` | Git graph visualizer |
+| GitHub CLI | `gh` | | GitHub CLI |
+| GitHub Dashboard | `gh-dash` | `gh dash` | Pull requests and issues manager |
+| AI Chat | `aichat` | `ai` | All-in-one LLM tool |
+| Aider | `aider` | | LLM pair programmer |
+| Taskwarrior / Timewarrior | `task`/`timew` | | Task and time manager |
+| Zk | `zk` | | Notebook manager |
 
 ### Package Managers by Operating System
 
