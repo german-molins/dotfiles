@@ -48,6 +48,8 @@ These are my daily CLI drivers:
 - `git`: version control
 - `gitui`: git manager
 - `git-graph`: git graph visualizer
+- `gh`: GitHub CLI
+- `gh-dash`: pull requests and issues manager
 - `aichat`: all-in-one LLM tool
 - `aider`: LLM pair programmer
 - `task` / `timew`: task and time maneger
