@@ -32,7 +32,8 @@
     "git-graph": {
       "version":   "latest",
       "platforms": ["aarch64-linux", "x86_64-linux"]
-    }
+    },
+    "gh-dash": "latest"
   },
   "shell": {
     "init_hook": [

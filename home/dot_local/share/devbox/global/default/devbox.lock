@@ -373,6 +373,54 @@
         }
       }
     },
+    "gh-dash@latest": {
+      "last_modified": "2025-03-11T17:52:14Z",
+      "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#gh-dash",
+      "source": "devbox-search",
+      "version": "4.12.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nsllw276y5ha3nm9nsapypnb09an7c5l-gh-dash-4.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nsllw276y5ha3nm9nsapypnb09an7c5l-gh-dash-4.12.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y0mpn635m0371ly3zhmnwz6ydjf398v9-gh-dash-4.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/y0mpn635m0371ly3zhmnwz6ydjf398v9-gh-dash-4.12.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/c93p6r1byj17smfgy53gzp397l6iqh69-gh-dash-4.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/c93p6r1byj17smfgy53gzp397l6iqh69-gh-dash-4.12.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hcvrd3nf99x67hljaqjisjil2x25hc6r-gh-dash-4.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hcvrd3nf99x67hljaqjisjil2x25hc6r-gh-dash-4.12.0"
+        }
+      }
+    },
     "gh@latest": {
       "last_modified": "2025-03-23T05:31:05Z",
       "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#gh",
