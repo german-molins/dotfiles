@@ -34,7 +34,8 @@
       "platforms": ["aarch64-linux", "x86_64-linux"]
     },
     "gh-dash":                   "latest",
-    "uutils-coreutils-noprefix": "latest"
+    "uutils-coreutils-noprefix": "latest",
+    "uutils-findutils":          "latest"
   },
   "shell": {
     "init_hook": [
