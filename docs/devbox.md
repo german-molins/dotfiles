@@ -62,6 +62,8 @@ echo 'Welcome to devbox!' > /dev/null
 * [direnv@latest](https://www.nixhub.io/packages/direnv)
 * [httpie@latest](https://www.nixhub.io/packages/httpie)
 * [git-graph@latest](https://www.nixhub.io/packages/git-graph)
+* [gh-dash@latest](https://www.nixhub.io/packages/gh-dash)
+* [uutils-coreutils-noprefix@latest](https://www.nixhub.io/packages/uutils-coreutils-noprefix)
 
 ## Script Details
 
