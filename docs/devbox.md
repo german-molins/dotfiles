@@ -65,6 +65,7 @@ echo 'Welcome to devbox!' > /dev/null
 * [gh-dash@latest](https://www.nixhub.io/packages/gh-dash)
 * [uutils-coreutils-noprefix@latest](https://www.nixhub.io/packages/uutils-coreutils-noprefix)
 * [uutils-findutils@latest](https://www.nixhub.io/packages/uutils-findutils)
+* [diffutils@latest](https://www.nixhub.io/packages/diffutils)
 
 ## Script Details
 
