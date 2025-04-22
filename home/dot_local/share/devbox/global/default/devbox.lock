@@ -209,6 +209,70 @@
         }
       }
     },
+    "diffutils@latest": {
+      "last_modified": "2025-03-23T05:31:05Z",
+      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#diffutils",
+      "source": "devbox-search",
+      "version": "3.10",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ivq7lckmms63zb2kaqvh3yi0r3aw1292-diffutils-3.10",
+              "default": true
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/v1dyj5f24wrm53kja2q0fy9qr5jbk527-diffutils-3.10-info"
+            }
+          ],
+          "store_path": "/nix/store/ivq7lckmms63zb2kaqvh3yi0r3aw1292-diffutils-3.10"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yqwj73257djq0kmqinpgwi8y5svghs7s-diffutils-3.10",
+              "default": true
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/cslfhxm3chcz181dcpalca2878hckfji-diffutils-3.10-info"
+            }
+          ],
+          "store_path": "/nix/store/yqwj73257djq0kmqinpgwi8y5svghs7s-diffutils-3.10"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vzrmb360i2rxjbi65amxl5xsavq7iv71-diffutils-3.10",
+              "default": true
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/84518izprnmh70clfq9qsvy5nl6rmmr2-diffutils-3.10-info"
+            }
+          ],
+          "store_path": "/nix/store/vzrmb360i2rxjbi65amxl5xsavq7iv71-diffutils-3.10"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kdrp6y7k352jb9ysjprzvmrlmiblz0jq-diffutils-3.10",
+              "default": true
+            },
+            {
+              "name": "info",
+              "path": "/nix/store/763qjpfk88cgcy4il7xc6b3gdhkkzycw-diffutils-3.10-info"
+            }
+          ],
+          "store_path": "/nix/store/kdrp6y7k352jb9ysjprzvmrlmiblz0jq-diffutils-3.10"
+        }
+      }
+    },
     "direnv@latest": {
       "last_modified": "2025-04-12T07:19:22Z",
       "resolved": "github:NixOS/nixpkgs/2349f9de17183971db12ae9e0123dab132023bd7#direnv",
