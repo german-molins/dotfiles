@@ -36,7 +36,8 @@
     "gh-dash":                   "latest",
     "uutils-coreutils-noprefix": "latest",
     "uutils-findutils":          "latest",
-    "diffutils":                 "latest"
+    "diffutils":                 "latest",
+    "eza":                       "latest"
   },
   "shell": {
     "init_hook": [

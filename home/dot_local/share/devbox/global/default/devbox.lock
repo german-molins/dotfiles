@@ -321,6 +321,74 @@
         }
       }
     },
+    "eza@latest": {
+      "last_modified": "2025-04-05T00:48:53Z",
+      "resolved": "github:NixOS/nixpkgs/250b695f41e0e2f5afbf15c6b12480de1fe0001b#eza",
+      "source": "devbox-search",
+      "version": "0.21.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/p95snhf2n8xc125lnhm3i1fmmm2waxxh-eza-0.21.0",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/92054cc810992iv1k9njmv81fial3p16-eza-0.21.0-man",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/p95snhf2n8xc125lnhm3i1fmmm2waxxh-eza-0.21.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/n86hvy3g1w00v9i2zahmdnvl8pc4pwp8-eza-0.21.0",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/gvkm5nfkykqzmp36x7fgph3m0llfm7qa-eza-0.21.0-man",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/n86hvy3g1w00v9i2zahmdnvl8pc4pwp8-eza-0.21.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3qrdxmvialjlcnjd0ny8jkw56jcddbw7-eza-0.21.0",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/29lnmzypyjv3m4ajvd8bvykn2ybx1qll-eza-0.21.0-man",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3qrdxmvialjlcnjd0ny8jkw56jcddbw7-eza-0.21.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/79gk7hachh60m6xxi6fvr6crhw6dlwva-eza-0.21.0",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/qmlvm7rx9qvcimd8f8pi7wssx81h8qwq-eza-0.21.0-man",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/79gk7hachh60m6xxi6fvr6crhw6dlwva-eza-0.21.0"
+        }
+      }
+    },
     "fd@latest": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#fd",
