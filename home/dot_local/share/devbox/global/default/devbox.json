@@ -33,7 +33,8 @@
       "version":   "latest",
       "platforms": ["aarch64-linux", "x86_64-linux"]
     },
-    "gh-dash": "latest"
+    "gh-dash":                   "latest",
+    "uutils-coreutils-noprefix": "latest"
   },
   "shell": {
     "init_hook": [
