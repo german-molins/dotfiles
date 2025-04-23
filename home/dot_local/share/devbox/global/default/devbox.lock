@@ -1401,6 +1401,34 @@
         }
       }
     },
+    "procps@latest": {
+      "last_modified": "2025-03-11T17:52:14Z",
+      "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#procps",
+      "source": "devbox-search",
+      "version": "4.0.4",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xs75kwls653gqwjjhizx1vwspb4kbfy7-procps-4.0.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/xs75kwls653gqwjjhizx1vwspb4kbfy7-procps-4.0.4"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/zkgh3sdlnblcrqq9fcf1f7smvdkbg1qv-procps-4.0.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/zkgh3sdlnblcrqq9fcf1f7smvdkbg1qv-procps-4.0.4"
+        }
+      }
+    },
     "procs@latest": {
       "last_modified": "2025-03-31T17:23:37Z",
       "resolved": "github:NixOS/nixpkgs/3eeaa42ef4c19447b48d1c676fe59077dfd0846e#procs",
