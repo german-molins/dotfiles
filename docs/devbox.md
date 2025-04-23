@@ -74,6 +74,7 @@ echo 'Welcome to devbox!' > /dev/null
 * [gnugrep@latest](https://www.nixhub.io/packages/gnugrep)
 * [gnused@latest](https://www.nixhub.io/packages/gnused)
 * [gawk@latest](https://www.nixhub.io/packages/gawk)
+* [procps@latest](https://www.nixhub.io/packages/procps)
 
 ## Script Details
 
