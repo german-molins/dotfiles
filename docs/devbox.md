@@ -66,6 +66,10 @@ echo 'Welcome to devbox!' > /dev/null
 * [uutils-coreutils-noprefix@latest](https://www.nixhub.io/packages/uutils-coreutils-noprefix)
 * [uutils-findutils@latest](https://www.nixhub.io/packages/uutils-findutils)
 * [diffutils@latest](https://www.nixhub.io/packages/diffutils)
+* [eza@latest](https://www.nixhub.io/packages/eza)
+* [duf@latest](https://www.nixhub.io/packages/duf)
+* [bottom@latest](https://www.nixhub.io/packages/bottom)
+* [dust@latest](https://www.nixhub.io/packages/dust)
 
 ## Script Details
 
