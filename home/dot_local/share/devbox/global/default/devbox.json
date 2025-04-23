@@ -41,7 +41,10 @@
     "duf":                       "latest",
     "bottom":                    "latest",
     "dust":                      "latest",
-    "procs":                     "latest"
+    "procs":                     "latest",
+    "gnugrep":                   "latest",
+    "gnused":                    "latest",
+    "gawk":                      "latest"
   },
   "shell": {
     "init_hook": [
