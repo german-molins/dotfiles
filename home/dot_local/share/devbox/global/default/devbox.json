@@ -40,7 +40,8 @@
     "eza":                       "latest",
     "duf":                       "latest",
     "bottom":                    "latest",
-    "dust":                      "latest"
+    "dust":                      "latest",
+    "procs":                     "latest"
   },
   "shell": {
     "init_hook": [
