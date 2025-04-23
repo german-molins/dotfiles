@@ -45,7 +45,9 @@
     "gnugrep":                   "latest",
     "gnused":                    "latest",
     "gawk":                      "latest",
-    "procps":                    "latest"
+    "procps":                    "latest",
+    "dateutils":                 "latest",
+    "tzdata":                    "latest"
   },
   "shell": {
     "init_hook": [
