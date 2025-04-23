@@ -70,6 +70,7 @@ echo 'Welcome to devbox!' > /dev/null
 * [duf@latest](https://www.nixhub.io/packages/duf)
 * [bottom@latest](https://www.nixhub.io/packages/bottom)
 * [dust@latest](https://www.nixhub.io/packages/dust)
+* [procs@latest](https://www.nixhub.io/packages/procs)
 
 ## Script Details
 
