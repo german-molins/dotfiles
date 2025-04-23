@@ -37,7 +37,10 @@
     "uutils-coreutils-noprefix": "latest",
     "uutils-findutils":          "latest",
     "diffutils":                 "latest",
-    "eza":                       "latest"
+    "eza":                       "latest",
+    "duf":                       "latest",
+    "bottom":                    "latest",
+    "dust":                      "latest"
   },
   "shell": {
     "init_hook": [
