@@ -60,7 +60,8 @@
       ],
       "clean": [
         "devbox run -- nix store gc --extra-experimental-features nix-command"
-      ]
+      ],
+      "list-nerd-fonts": "fc-list | grep Nerd"
     }
   }
 }
