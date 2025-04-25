@@ -1384,6 +1384,54 @@
         }
       }
     },
+    "nerd-fonts.inconsolata@latest": {
+      "last_modified": "2025-03-11T17:52:14Z",
+      "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#nerd-fonts.inconsolata",
+      "source": "devbox-search",
+      "version": "3.3.0+3.000",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/d6qrhar11kpdml8rb80y343wzvhgl1zx-nerd-fonts-inconsolata-3.3.0+3.000",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/d6qrhar11kpdml8rb80y343wzvhgl1zx-nerd-fonts-inconsolata-3.3.0+3.000"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7r7lb3zghsfzmck6ykpxsai0x29z73v0-nerd-fonts-inconsolata-3.3.0+3.000",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7r7lb3zghsfzmck6ykpxsai0x29z73v0-nerd-fonts-inconsolata-3.3.0+3.000"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/056bryfnkwcacwgh33s3b66i4v26fg0k-nerd-fonts-inconsolata-3.3.0+3.000",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/056bryfnkwcacwgh33s3b66i4v26fg0k-nerd-fonts-inconsolata-3.3.0+3.000"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/s32pjgjflkcsvgqd3mrnk1ds9qikmf9h-nerd-fonts-inconsolata-3.3.0+3.000",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/s32pjgjflkcsvgqd3mrnk1ds9qikmf9h-nerd-fonts-inconsolata-3.3.0+3.000"
+        }
+      }
+    },
     "nodejs@latest": {
       "last_modified": "2025-04-02T13:00:31Z",
       "plugin_version": "0.0.2",

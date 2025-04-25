@@ -47,7 +47,8 @@
     "gawk":                      "latest",
     "procps":                    "latest",
     "dateutils":                 "latest",
-    "tzdata":                    "latest"
+    "tzdata":                    "latest",
+    "nerd-fonts.inconsolata":    "latest"
   },
   "shell": {
     "init_hook": [
