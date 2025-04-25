@@ -65,7 +65,8 @@ keybindings:
   issues: []
   prs: []
   branches: []
-repoPaths: {}
+repoPaths:
+  "*/*": ~/repos/*/*
 theme:
   ui:
     sectionsShowCount: true
