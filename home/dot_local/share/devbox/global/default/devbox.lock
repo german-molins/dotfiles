@@ -1863,6 +1863,14 @@
             }
           ]
         },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "path": "/nix/store/qc13g9gnc06ld12d08h50d6anbqafhga-sshfs-fuse-3.7.3",
+              "default": true
+            }
+          ]
+        },
         "x86_64-linux": {
           "outputs": [
             {
