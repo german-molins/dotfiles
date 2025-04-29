@@ -978,7 +978,8 @@
       }
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "resolved": "github:NixOS/nixpkgs/ebe4301cbd8f81c4f8d3244b3632338bbeb6d49c?lastModified=1744868846&narHash=sha256-5RJTdUHDmj12Qsv7XOhuospjAjATNiTMElplWnJE9Hs%3D"
+      "last_modified": "2025-04-28T01:45:31Z",
+      "resolved": "github:NixOS/nixpkgs/29335f23bea5e34228349ea739f31ee79e267b88?lastModified=1745804731&narHash=sha256-v%2FsK3AS0QKu%2FTu5sHIfddiEHCvrbNYPv8X10Fpux68g%3D"
     },
     "gitui@latest": {
       "last_modified": "2025-03-23T14:04:58Z",
@@ -1503,6 +1504,15 @@
       "source": "devbox-search",
       "version": "4.0.4",
       "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "2008",
+              "path": "/nix/store/x007yi9hv7p080q6qbsc6yjabwgbmppj-procps-1003.1-2008",
+              "default": true
+            }
+          ]
+        },
         "aarch64-linux": {
           "outputs": [
             {
