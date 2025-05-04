@@ -58,6 +58,17 @@
       "clean": [
         "devbox run -- nix store gc --extra-experimental-features nix-command"
       ],
+      "nix-clean": [
+        "echo '[dotfiles][devbox] Starting Nix cleanup'",
+        "echo '[dotfiles][devbox] Deleting old generations...'",
+        "nix-collect-garbage -d",
+        "nix profile wipe-history --extra-experimental-features nix-command",
+        "echo '[dotfiles][devbox] Verifying and cleaning the store...'",
+        "nix-store --gc",
+        "echo '[dotfiles][devbox] Deleting stale logs...'",
+        "rm -rf /nix/var/log/nix/drvs",
+        "echo '[dotfiles][devbox] Nix cleanup complete.'"
+      ],
       "brew-clean": [
         "brew cleanup --scrub --prune=all",
         "rm -rf \"$(brew --cache)\"",
