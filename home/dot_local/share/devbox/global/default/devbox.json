@@ -58,6 +58,11 @@
       "clean": [
         "devbox run -- nix store gc --extra-experimental-features nix-command"
       ],
+      "brew-clean": [
+        "brew cleanup --scrub --prune=all",
+        "rm -rf \"$(brew --cache)\"",
+        "brew autoremove"
+      ],
       "list-nerd-fonts": "fc-list | grep Nerd"
     }
   }
