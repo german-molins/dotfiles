@@ -58,6 +58,11 @@
       "clean": [
         "devbox run -- nix store gc --extra-experimental-features nix-command"
       ],
+      "clean-all": [
+        "devbox global run clean",
+        "devbox global run nix-clean",
+        "devbox global run brew-clean"
+      ],
       "nix-clean": [
         "echo '[dotfiles][devbox] Starting Nix cleanup'",
         "echo '[dotfiles][devbox] Deleting old generations...'",
