@@ -55,9 +55,6 @@
       "echo 'Welcome to devbox!' > /dev/null"
     ],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
-      ],
       "clean": [
         "devbox run -- nix store gc --extra-experimental-features nix-command"
       ],
