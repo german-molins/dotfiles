@@ -40,7 +40,7 @@ These are my daily CLI drivers:
 | Name | Command | Alias | Description |
 |------|---------|-------|-------------|
 | Chezmoi | `chezmoi` | | Dotfiles manager |
-| Alacritty / Kitty | `alacritty`/`kitty` | | Terminal emulator |
+| Alacritty / Kitty | `alacritty` / `kitty` | | Terminal emulator |
 | Bash | `bash` | | Interactive shell |
 | Devpod | `devpod` | | Devcontainer manager |
 | Zellij / Tmux | `zellij` / `tmux` | | Terminal workspaces / multiplexer |
@@ -54,7 +54,7 @@ These are my daily CLI drivers:
 | GitHub Dashboard | `gh-dash` | `gh dash` | Pull requests and issues manager |
 | AI Chat | `aichat` | `ai` | All-in-one LLM tool |
 | Aider | `aider` | | LLM pair programmer |
-| Taskwarrior / Timewarrior | `task`/`timew` | | Task and time manager |
+| Taskwarrior / Timewarrior | `task` / `timew` | | Task and time manager |
 | Zk | `zk` | | Notebook manager |
 
 ### Package Managers by Operating System
