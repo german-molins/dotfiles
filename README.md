@@ -52,6 +52,7 @@ These are my daily CLI drivers:
 | Git Graph | `git-graph` | `git graph` | Git graph visualizer |
 | GitHub CLI | `gh` | | GitHub CLI |
 | GitHub Dashboard | `gh-dash` | `gh dash` | Pull requests and issues manager |
+| Lazydocker | `lazydocker` | | Docker and docker-compose manager |
 | AI Chat | `aichat` | `ai` | All-in-one LLM tool |
 | Aider | `aider` | | LLM pair programmer |
 | Taskwarrior / Timewarrior | `task` / `timew` | | Task and time manager |
