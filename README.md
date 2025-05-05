@@ -44,7 +44,7 @@ These are my daily CLI drivers:
 | Bash | `bash` | | Interactive shell |
 | Devpod | `devpod` | | Devcontainer manager |
 | Zellij / Tmux | `zellij` / `tmux` | | Terminal workspaces / multiplexer |
-| Zoxide | `zoxide`, `z`, `zi` | | Smarter `cd` |
+| Zoxide | `zoxide`, `cd`, `cdi` | | Smarter `cd` |
 | Atuin | `atuin` | | Shell history manager |
 | Ranger | `ranger` | | File manager |
 | Neovim | `nvim` | | Text editor and IDE |
