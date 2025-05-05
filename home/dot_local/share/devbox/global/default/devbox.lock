@@ -1337,6 +1337,54 @@
         }
       }
     },
+    "lazydocker@latest": {
+      "last_modified": "2025-03-23T05:31:05Z",
+      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#lazydocker",
+      "source": "devbox-search",
+      "version": "0.24.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/q9771npasbkq528p24rlabw0cn6a6x1w-lazydocker-0.24.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/q9771npasbkq528p24rlabw0cn6a6x1w-lazydocker-0.24.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4xff048ljdh8k681xc38vsz74z6kzldw-lazydocker-0.24.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4xff048ljdh8k681xc38vsz74z6kzldw-lazydocker-0.24.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m8c16na73chas69va5pckw1gfcjk7vzc-lazydocker-0.24.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/m8c16na73chas69va5pckw1gfcjk7vzc-lazydocker-0.24.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nyhf9vf03p3lwsb50ff2ndmkc1gbi76h-lazydocker-0.24.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nyhf9vf03p3lwsb50ff2ndmkc1gbi76h-lazydocker-0.24.1"
+        }
+      }
+    },
     "neovim@latest": {
       "last_modified": "2025-04-12T07:19:22Z",
       "resolved": "github:NixOS/nixpkgs/2349f9de17183971db12ae9e0123dab132023bd7#neovim",
