@@ -43,7 +43,7 @@ These are my daily CLI drivers:
 | Alacritty / Kitty | `alacritty`/`kitty` | | Terminal emulator |
 | Bash | `bash` | | Interactive shell |
 | Devpod | `devpod` | | Devcontainer manager |
-| Tmux | `tmux` | | Terminal multiplexer |
+| Zellij / Tmux | `zellij` / `tmux` | | Terminal workspaces / multiplexer |
 | Atuin | `atuin` | | Shell history manager |
 | Ranger | `ranger` | | File manager |
 | Neovim | `nvim` | | Text editor and IDE |
