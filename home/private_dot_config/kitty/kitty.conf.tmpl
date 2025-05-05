@@ -9,4 +9,8 @@ font_family monospace
 
 startup_mode maximized
 
+{{ if eq .chezmoi.os "darwin" -}}
+macos_option_as_alt yes
+{{ end }}
+
 include themes/solarized_dark_gfmm.conf
