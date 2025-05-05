@@ -48,7 +48,8 @@
     "procps":                    "latest",
     "dateutils":                 "latest",
     "tzdata":                    "latest",
-    "nerd-fonts.inconsolata":    "latest"
+    "nerd-fonts.inconsolata":    "latest",
+    "zellij":                    "latest"
   },
   "shell": {
     "init_hook": [
