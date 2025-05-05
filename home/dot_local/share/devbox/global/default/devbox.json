@@ -50,7 +50,8 @@
     "tzdata":                    "latest",
     "nerd-fonts.inconsolata":    "latest",
     "zellij":                    "latest",
-    "lazydocker":                "latest"
+    "lazydocker":                "latest",
+    "zoxide":                    "latest"
   },
   "shell": {
     "init_hook": [
