@@ -1,1 +1,1 @@
-. <(zoxide init bash)
+. <(zoxide init bash --cmd cd)
