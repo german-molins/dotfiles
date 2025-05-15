@@ -58,6 +58,7 @@ These are my daily CLI drivers:
 | Aider | `aider` | | LLM pair programmer |
 | Taskwarrior / Timewarrior | `task` / `timew` | | Task and time manager |
 | Zk | `zk` | | Notebook manager |
+| Lnav | `lnav` | | Logfile navigator |
 
 ### Package Managers by Operating System
 
