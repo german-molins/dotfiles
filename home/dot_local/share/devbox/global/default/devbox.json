@@ -51,7 +51,8 @@
     "nerd-fonts.inconsolata":    "latest",
     "zellij":                    "latest",
     "lazydocker":                "latest",
-    "zoxide":                    "latest"
+    "zoxide":                    "latest",
+    "lnav":                      "latest"
   },
   "shell": {
     "init_hook": [
