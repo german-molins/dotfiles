@@ -4,6 +4,9 @@ return {
     "Tsuzat/NeoSolarized.nvim",
     opts = {
       transparent = false,
+      -- Italics for different hightlight groups (eg. Statement, Condition,
+      -- Comment, Include, etc.)
+      enable_italics = false,
     },
   },
 
