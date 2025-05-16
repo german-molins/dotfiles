@@ -1,5 +1,6 @@
 return {
   { "ellisonleao/gruvbox.nvim" },
+  { "Tsuzat/NeoSolarized.nvim" },
 
   {
     "LazyVim/LazyVim",
