@@ -1,6 +1,11 @@
 return {
   { "ellisonleao/gruvbox.nvim" },
-  { "Tsuzat/NeoSolarized.nvim" },
+  {
+    "Tsuzat/NeoSolarized.nvim",
+    opts = {
+      transparent = false,
+    },
+  },
 
   {
     "LazyVim/LazyVim",
