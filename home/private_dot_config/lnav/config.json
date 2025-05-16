@@ -1,5 +1,6 @@
 {
     "ui": {
+        "theme": "solarized-dark",
         "theme-defs": {
             "default": {
                 "highlights": {
