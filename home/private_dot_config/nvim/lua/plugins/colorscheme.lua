@@ -16,6 +16,11 @@ return {
           italic = true,
         },
       },
+      -- Add specific hightlight groups
+      on_highlights = function(highlights, colors)
+        highlights.IblIndent.fg = colors.bg1
+        highlights.IblScope.bg = colors.bg0
+      end,
     },
   },
 
