@@ -1,2 +1,2 @@
-eval "$(devbox global shellenv --init-hook --recompute)"
+eval "$(devbox global shellenv --init-hook)"
 . <(devbox completion bash)
