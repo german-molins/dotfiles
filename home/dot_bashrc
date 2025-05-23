@@ -42,8 +42,8 @@ export PS2='.. '
 export PATH
 PATH="$HOME/.local/bin/:$PATH"
 
-export EDITOR=vim
 export VISUAL=nvim
+export EDITOR="$VISUAL"
 export PAGER='bat --plain'
 export JULIA_PROJECT=@.
 
