@@ -56,7 +56,8 @@
     "yazi":                      "latest",
     "file":                      "latest",
     "p7zip":                     "latest",
-    "imagemagick":               "latest"
+    "imagemagick":               "latest",
+    "xclip":                     "latest"
   },
   "shell": {
     "init_hook": [
