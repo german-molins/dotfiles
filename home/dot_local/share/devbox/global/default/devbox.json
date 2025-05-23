@@ -53,7 +53,8 @@
     "lazydocker":                "latest",
     "zoxide":                    "latest",
     "lnav":                      "latest",
-    "yazi":                      "latest"
+    "yazi":                      "latest",
+    "file":                      "latest"
   },
   "shell": {
     "init_hook": [
