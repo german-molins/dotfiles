@@ -2867,6 +2867,54 @@
         }
       }
     },
+    "wl-clipboard@latest": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#wl-clipboard",
+      "source": "devbox-search",
+      "version": "2.2.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4sm46l2mbnvn4w0irk84z5pk3z17mvi7-wl-clipboard-2.2.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4sm46l2mbnvn4w0irk84z5pk3z17mvi7-wl-clipboard-2.2.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dbzcy2cv5clnal34frjxzlm1r6fairmv-wl-clipboard-2.2.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dbzcy2cv5clnal34frjxzlm1r6fairmv-wl-clipboard-2.2.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/sknflpdxsns6d3n2wk0rxyha0q1vza44-wl-clipboard-2.2.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/sknflpdxsns6d3n2wk0rxyha0q1vza44-wl-clipboard-2.2.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y89kpm6rk0kib5rg8mkwcvhq5h6v2jyi-wl-clipboard-2.2.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/y89kpm6rk0kib5rg8mkwcvhq5h6v2jyi-wl-clipboard-2.2.1"
+        }
+      }
+    },
     "xclip@latest": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#xclip",
