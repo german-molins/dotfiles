@@ -19,8 +19,11 @@ devbox run <script>
 ## Scripts
 Scripts are custom commands that can be run using this project's environment. This project has the following scripts:
 
+* [brew-clean](#devbox-run-brew-clean)
 * [clean](#devbox-run-clean)
-* [test](#devbox-run-test)
+* [clean-all](#devbox-run-clean-all)
+* [list-nerd-fonts](#devbox-run-list-nerd-fonts)
+* [nix-clean](#devbox-run-nix-clean)
 
 ## Shell Init Hook
 The Shell Init Hook is a script that runs whenever the devbox environment is instantiated. It runs 
@@ -76,8 +79,28 @@ echo 'Welcome to devbox!' > /dev/null
 * [procps@latest](https://www.nixhub.io/packages/procps)
 * [dateutils@latest](https://www.nixhub.io/packages/dateutils)
 * [tzdata@latest](https://www.nixhub.io/packages/tzdata)
+* [nerd-fonts.inconsolata@latest](https://www.nixhub.io/packages/nerd-fonts.inconsolata)
+* [zellij@latest](https://www.nixhub.io/packages/zellij)
+* [lazydocker@latest](https://www.nixhub.io/packages/lazydocker)
+* [zoxide@latest](https://www.nixhub.io/packages/zoxide)
+* [lnav@latest](https://www.nixhub.io/packages/lnav)
+* [yazi@latest](https://www.nixhub.io/packages/yazi)
+* [file@latest](https://www.nixhub.io/packages/file)
+* [p7zip@latest](https://www.nixhub.io/packages/p7zip)
+* [imagemagick@latest](https://www.nixhub.io/packages/imagemagick)
+* [xclip@latest](https://www.nixhub.io/packages/xclip)
+* [wl-clipboard@latest](https://www.nixhub.io/packages/wl-clipboard)
+* [exiftool@latest](https://www.nixhub.io/packages/exiftool)
 
 ## Script Details
+
+### devbox run brew-clean
+```sh
+brew cleanup --scrub --prune=all
+rm -rf "$(brew --cache)"
+brew autoremove
+```
+&ensp;
 
 ### devbox run clean
 ```sh
@@ -85,9 +108,31 @@ devbox run -- nix store gc --extra-experimental-features nix-command
 ```
 &ensp;
 
-### devbox run test
+### devbox run clean-all
 ```sh
-echo "Error: no test specified" && exit 1
+devbox global run clean
+devbox global run nix-clean
+devbox global run brew-clean
+```
+&ensp;
+
+### devbox run list-nerd-fonts
+```sh
+fc-list | grep Nerd
+```
+&ensp;
+
+### devbox run nix-clean
+```sh
+echo '[dotfiles][devbox] Starting Nix cleanup'
+echo '[dotfiles][devbox] Deleting old generations...'
+nix-collect-garbage -d
+nix profile wipe-history --extra-experimental-features nix-command
+echo '[dotfiles][devbox] Verifying and cleaning the store...'
+nix-store --gc
+echo '[dotfiles][devbox] Deleting stale logs...'
+rm -rf /nix/var/log/nix/drvs
+echo '[dotfiles][devbox] Nix cleanup complete.'
 ```
 &ensp;
 
