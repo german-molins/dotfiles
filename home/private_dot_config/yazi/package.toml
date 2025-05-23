@@ -8,6 +8,11 @@ use = "yazi-rs/plugins:smart-filter"
 rev = "55bf699"
 hash = "f0c4b41b5d19a3144958383333eff6e7"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "55bf699"
+hash = "f3853bbdd1da2fad09d059ab5464abfd"
+
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
 rev = "91fdfa7"
