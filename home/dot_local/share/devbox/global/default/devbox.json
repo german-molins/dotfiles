@@ -97,6 +97,10 @@
         "echo '[dotfiles][nvim] Syncing Neovim plugins...'",
         "nvim --headless \"+Lazy! sync\" +qa"
       ],
+      "devbox-update": [
+        "echo '[dotfiles][devbox] Updating devbox...'",
+        "devbox version update"
+      ],
       "list-nerd-fonts": "fc-list | grep Nerd"
     }
   }
