@@ -105,6 +105,10 @@
         "echo '[dotfiles][yazi] Updating yazi packages...'",
         "ya pack --upgrade"
       ],
+      "chezmoi-update": [
+        "echo '[dotfiles][chezmoi] Updating chezmoi...'",
+        "chezmoi upgrade"
+      ],
       "list-nerd-fonts": "fc-list | grep Nerd"
     }
   }
