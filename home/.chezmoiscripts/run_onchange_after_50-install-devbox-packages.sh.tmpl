@@ -3,7 +3,6 @@
 {{ if eq .chezmoi.os "linux" -}}
 # Make devbox available in the current shell.
 . "$HOME"/.nix-profile/etc/profile.d/nix.sh
-. <(devbox global shellenv)
 {{ end }}
 
 # devbox packages hash: {{ include "dot_local/share/devbox/global/default/devbox.lock" | sha256sum }}
