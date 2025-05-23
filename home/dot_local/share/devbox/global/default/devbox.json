@@ -55,7 +55,8 @@
     "lnav":                      "latest",
     "yazi":                      "latest",
     "file":                      "latest",
-    "p7zip":                     "latest"
+    "p7zip":                     "latest",
+    "imagemagick":               "latest"
   },
   "shell": {
     "init_hook": [
