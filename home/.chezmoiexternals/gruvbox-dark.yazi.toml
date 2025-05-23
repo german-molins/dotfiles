@@ -1,4 +1,0 @@
-[".config/yazi/flavors/gruvbox-dark.yazi"]
-type = "git-repo"
-url = "https://github.com/bennyyip/gruvbox-dark.yazi"
-refreshPeriod = "168h"
