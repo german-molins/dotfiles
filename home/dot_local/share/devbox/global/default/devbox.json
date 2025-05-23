@@ -101,6 +101,10 @@
         "echo '[dotfiles][devbox] Updating devbox...'",
         "devbox version update"
       ],
+      "yazi-update": [
+        "echo '[dotfiles][yazi] Updating yazi packages...'",
+        "ya pack --upgrade"
+      ],
       "list-nerd-fonts": "fc-list | grep Nerd"
     }
   }
