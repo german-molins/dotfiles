@@ -89,6 +89,14 @@
         "rm -rf \"$(brew --cache)\"",
         "brew autoremove"
       ],
+      "nvim-update": [
+        "echo '[dotfiles][nvim] Updating Neovim plugins...'",
+        "nvim --headless \"+Lazy! update\" +qa"
+      ],
+      "nvim-sync": [
+        "echo '[dotfiles][nvim] Syncing Neovim plugins...'",
+        "nvim --headless \"+Lazy! sync\" +qa"
+      ],
       "list-nerd-fonts": "fc-list | grep Nerd"
     }
   }
