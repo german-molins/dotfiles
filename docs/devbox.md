@@ -45,7 +45,6 @@ echo 'Welcome to devbox!' > /dev/null
 * [neovim@latest](https://www.nixhub.io/packages/neovim)
 * [gh@latest](https://www.nixhub.io/packages/gh)
 * [aider-chat@latest](https://www.nixhub.io/packages/aider-chat)
-* [ranger@latest](https://www.nixhub.io/packages/ranger)
 * [vim@latest](https://www.nixhub.io/packages/vim)
 * [uv@latest](https://www.nixhub.io/packages/uv)
 * [xsel@latest](https://www.nixhub.io/packages/xsel)

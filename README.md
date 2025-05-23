@@ -46,7 +46,7 @@ These are my daily CLI drivers:
 | Zellij / Tmux | `zellij` / `tmux` | | Terminal workspaces / multiplexer |
 | Zoxide | `zoxide`, `cd`, `cdi` | | Smarter `cd` |
 | Atuin | `atuin` | | Shell history manager |
-| Yazi / Ranger | `yazi`, `ya` / `ranger` | `y` | File manager |
+| Yazi | `yazi`, `ya` | `y` | File manager |
 | Neovim | `nvim` | | Text editor and IDE |
 | Git | `git` | | Version control system |
 | Gitui | `gitui` | `git ui` | Git manager |
