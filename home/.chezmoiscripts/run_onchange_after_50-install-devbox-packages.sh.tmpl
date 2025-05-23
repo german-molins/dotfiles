@@ -17,4 +17,9 @@ devbox_fonts_dir="$devbox_venv_dir"/nix/profile/default/share/fonts
 mkdir -p "$fonts_dir_dest"
 cp -r --no-clobber "$devbox_fonts_dir"/* "$fonts_dir_dest"
 >&2 echo "[dotfiles][devbox] Refreshing fontconfig cache"
-fc-cache --force --verbose "$fonts_dir_dest"
+if command -v fc-cache >/dev/null; then
+  fc-cache --force --verbose "$fonts_dir_dest"
+else
+  >&2 echo "[dotfiles][devbox] fc-cache command not found, skipping font cache refresh"
+  exit 0
+fi
