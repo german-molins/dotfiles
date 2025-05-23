@@ -54,7 +54,8 @@
     "zoxide":                    "latest",
     "lnav":                      "latest",
     "yazi":                      "latest",
-    "file":                      "latest"
+    "file":                      "latest",
+    "p7zip":                     "latest"
   },
   "shell": {
     "init_hook": [

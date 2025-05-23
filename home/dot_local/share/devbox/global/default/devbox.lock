@@ -1702,6 +1702,106 @@
         }
       }
     },
+    "p7zip@latest": {
+      "last_modified": "2025-05-20T08:00:33Z",
+      "resolved": "github:NixOS/nixpkgs/2f9173bde1d3fbf1ad26ff6d52f952f9e9da52ea#p7zip",
+      "source": "devbox-search",
+      "version": "17.06",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rpghr71q3lid1jmplkpqvyllvxgdbzsm-p7zip-17.06",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/1my0rx3djbijkx9anp6spm2ra5xmz563-p7zip-17.06-man",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/wsvclz61x3sfn6fnjlgsq0bbhqapc41h-p7zip-17.06-doc"
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/ka35xpd7fdaqhx6r9blr6y63d3l73ijc-p7zip-17.06-lib"
+            }
+          ],
+          "store_path": "/nix/store/rpghr71q3lid1jmplkpqvyllvxgdbzsm-p7zip-17.06"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/j5026faw5ci93svjiq2k2a0l6f0y2lj2-p7zip-17.06",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/dmkslql8lbyp3v3qqsvwnm4hrxirwsa5-p7zip-17.06-man",
+              "default": true
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/4m0niwn5i0rlkhfg63g5aj79v4j3qg1b-p7zip-17.06-lib"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/spz6q681ylv5n748xwbaa4cs62my4nxx-p7zip-17.06-doc"
+            }
+          ],
+          "store_path": "/nix/store/j5026faw5ci93svjiq2k2a0l6f0y2lj2-p7zip-17.06"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1bidzf8yz3fbhvcpzwqwsgiaaafksajg-p7zip-17.06",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/k4hjf4fgfmjkw5wqymcc3y1n5i2an7yg-p7zip-17.06-man",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/2vx920510b2h6fpxh4yl46xhnxvv0nf9-p7zip-17.06-doc"
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/amhbws4f2qm4ag0ls0c1qjcq8c3mz0gz-p7zip-17.06-lib"
+            }
+          ],
+          "store_path": "/nix/store/1bidzf8yz3fbhvcpzwqwsgiaaafksajg-p7zip-17.06"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z3q19kz3nv8p7ib989ra9k4q885fhjnp-p7zip-17.06",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/hcdaxkh9q1przk8nb25vi2swwhf7xk59-p7zip-17.06-man",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/y3w34jmv7zcfh33qnl35w3kf9j9y8dan-p7zip-17.06-doc"
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/4w0zj25h4w6b0a7hqrsi0nrypbzqjxnw-p7zip-17.06-lib"
+            }
+          ],
+          "store_path": "/nix/store/z3q19kz3nv8p7ib989ra9k4q885fhjnp-p7zip-17.06"
+        }
+      }
+    },
     "procps@latest": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#procps",
