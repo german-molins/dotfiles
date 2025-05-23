@@ -109,6 +109,15 @@
         "echo '[dotfiles][chezmoi] Updating chezmoi...'",
         "chezmoi upgrade"
       ],
+      "update": [
+        "devbox global run chezmoi-update",
+        "devbox global run devbox-update",
+        "echo '[dotfiles][devbox] Updating devbox packages...'",
+        "command -v brew > /dev/null && brew update && brew upgrade",
+        "devbox global update",
+        "devbox global run yazi-update",
+        "devbox global run nvim-update"
+      ],
       "list-nerd-fonts": "fc-list | grep Nerd"
     }
   }
