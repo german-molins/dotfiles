@@ -513,6 +513,70 @@
         }
       }
     },
+    "exiftool@latest": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#exiftool",
+      "source": "devbox-search",
+      "version": "13.25",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/815p0cwqvcw7h7csamln3h8f1slkyakj-perl5.40.0-Image-ExifTool-13.25",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/cxaiw6chxns26daz6hsnfdbgpw8qmycy-perl5.40.0-Image-ExifTool-13.25-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/815p0cwqvcw7h7csamln3h8f1slkyakj-perl5.40.0-Image-ExifTool-13.25"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ibn1cy155rdaz56i3clms8lw7b3n87yd-perl5.40.0-Image-ExifTool-13.25",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/n7i11ldc46f2nfzwg93ddh34jrl3sl83-perl5.40.0-Image-ExifTool-13.25-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/ibn1cy155rdaz56i3clms8lw7b3n87yd-perl5.40.0-Image-ExifTool-13.25"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/achz5hsdvllcq5nx84y4ilp6l3p8fn8f-perl5.40.0-Image-ExifTool-13.25",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/shi1sjpmxk0567ylhy7r0l4cklfbiw5j-perl5.40.0-Image-ExifTool-13.25-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/achz5hsdvllcq5nx84y4ilp6l3p8fn8f-perl5.40.0-Image-ExifTool-13.25"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/04my79pvxn6xjbwk9gsx0h742lmg6sd4-perl5.40.0-Image-ExifTool-13.25",
+              "default": true
+            },
+            {
+              "name": "devdoc",
+              "path": "/nix/store/zrl47qdhyccha13m1b9jbsfd5bzrxfxz-perl5.40.0-Image-ExifTool-13.25-devdoc"
+            }
+          ],
+          "store_path": "/nix/store/04my79pvxn6xjbwk9gsx0h742lmg6sd4-perl5.40.0-Image-ExifTool-13.25"
+        }
+      }
+    },
     "eza@latest": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#eza",

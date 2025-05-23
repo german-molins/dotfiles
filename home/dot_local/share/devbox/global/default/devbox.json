@@ -58,7 +58,8 @@
     "p7zip":                     "latest",
     "imagemagick":               "latest",
     "xclip":                     "latest",
-    "wl-clipboard":              "latest"
+    "wl-clipboard":              "latest",
+    "exiftool":                  "latest"
   },
   "shell": {
     "init_hook": [
