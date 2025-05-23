@@ -20,10 +20,16 @@ devbox run <script>
 Scripts are custom commands that can be run using this project's environment. This project has the following scripts:
 
 * [brew-clean](#devbox-run-brew-clean)
+* [chezmoi-update](#devbox-run-chezmoi-update)
 * [clean](#devbox-run-clean)
 * [clean-all](#devbox-run-clean-all)
+* [devbox-update](#devbox-run-devbox-update)
 * [list-nerd-fonts](#devbox-run-list-nerd-fonts)
 * [nix-clean](#devbox-run-nix-clean)
+* [nvim-sync](#devbox-run-nvim-sync)
+* [nvim-update](#devbox-run-nvim-update)
+* [update](#devbox-run-update)
+* [yazi-update](#devbox-run-yazi-update)
 
 ## Shell Init Hook
 The Shell Init Hook is a script that runs whenever the devbox environment is instantiated. It runs 
@@ -102,6 +108,13 @@ brew autoremove
 ```
 &ensp;
 
+### devbox run chezmoi-update
+```sh
+echo '[dotfiles][chezmoi] Updating chezmoi...'
+chezmoi upgrade
+```
+&ensp;
+
 ### devbox run clean
 ```sh
 devbox run -- nix store gc --extra-experimental-features nix-command
@@ -113,6 +126,13 @@ devbox run -- nix store gc --extra-experimental-features nix-command
 devbox global run clean
 devbox global run nix-clean
 devbox global run brew-clean
+```
+&ensp;
+
+### devbox run devbox-update
+```sh
+echo '[dotfiles][devbox] Updating devbox...'
+devbox version update
 ```
 &ensp;
 
@@ -133,6 +153,39 @@ nix-store --gc
 echo '[dotfiles][devbox] Deleting stale logs...'
 rm -rf /nix/var/log/nix/drvs
 echo '[dotfiles][devbox] Nix cleanup complete.'
+```
+&ensp;
+
+### devbox run nvim-sync
+```sh
+echo '[dotfiles][nvim] Syncing Neovim plugins...'
+nvim --headless "+Lazy! sync" +qa
+```
+&ensp;
+
+### devbox run nvim-update
+```sh
+echo '[dotfiles][nvim] Updating Neovim plugins...'
+nvim --headless "+Lazy! update" +qa
+```
+&ensp;
+
+### devbox run update
+```sh
+devbox global run chezmoi-update
+devbox global run devbox-update
+echo '[dotfiles][devbox] Updating devbox packages...'
+command -v brew > /dev/null && brew update && brew upgrade
+devbox global update
+devbox global run yazi-update
+devbox global run nvim-update
+```
+&ensp;
+
+### devbox run yazi-update
+```sh
+echo '[dotfiles][yazi] Updating yazi packages...'
+ya pack --upgrade
 ```
 &ensp;
 
