@@ -82,25 +82,22 @@
     ],
     "scripts": {
       "clean": [
-        "devbox run -- nix store gc --extra-experimental-features nix-command"
-      ],
-      "clean-all": [
-        "devbox global run clean",
         "devbox global run nix-clean",
-        "devbox global run brew-clean"
+        "command -v brew >/dev/null && devbox global run brew-clean"
       ],
       "nix-clean": [
         "echo '[dotfiles][devbox] Starting Nix cleanup'",
         "echo '[dotfiles][devbox] Deleting old generations...'",
         "nix-collect-garbage -d",
         "nix profile wipe-history --extra-experimental-features nix-command",
-        "echo '[dotfiles][devbox] Verifying and cleaning the store...'",
-        "nix-store --gc",
-        "echo '[dotfiles][devbox] Deleting stale logs...'",
-        "rm -rf /nix/var/log/nix/drvs",
-        "echo '[dotfiles][devbox] Nix cleanup complete.'"
+        "echo '[dotfiles][devbox] Verifying and cleaning the Nix store...'",
+        "nix store gc",
+        "echo '[dotfiles][devbox] Deleting Nix stale logs...'",
+        "sudo rm -rf /nix/var/log/nix/drvs",
+        "echo '[dotfiles][devbox] Cleanup complete.'"
       ],
       "brew-clean": [
+        "echo '[dotfiles][brew] Starting Homebrew cleanup...'",
         "brew cleanup --scrub --prune=all",
         "rm -rf \"$(brew --cache)\"",
         "brew autoremove"
