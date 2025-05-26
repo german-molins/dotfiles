@@ -97,6 +97,19 @@ echo 'Welcome to devbox!' > /dev/null
 * [xclip@latest](https://www.nixhub.io/packages/xclip)
 * [wl-clipboard@latest](https://www.nixhub.io/packages/wl-clipboard)
 * [exiftool@latest](https://www.nixhub.io/packages/exiftool)
+* [lazysql@latest](https://www.nixhub.io/packages/lazysql)
+* [zk@latest](https://www.nixhub.io/packages/zk)
+* [htop@latest](https://www.nixhub.io/packages/htop)
+* [taskwarrior-tui@latest](https://www.nixhub.io/packages/taskwarrior-tui)
+* [taskwarrior@latest](https://www.nixhub.io/packages/taskwarrior)
+* [lazygit@latest](https://www.nixhub.io/packages/lazygit)
+* [timewarrior@latest](https://www.nixhub.io/packages/timewarrior)
+* [glab@latest](https://www.nixhub.io/packages/glab)
+* [gnupg@latest](https://www.nixhub.io/packages/gnupg)
+* [gpg-tui@latest](https://www.nixhub.io/packages/gpg-tui)
+* [dos2unix@latest](https://www.nixhub.io/packages/dos2unix)
+* [dash@latest](https://www.nixhub.io/packages/dash)
+* [taskopen@latest](https://www.nixhub.io/packages/taskopen)
 
 ## Script Details
 
