@@ -2,22 +2,9 @@ packages:
   homebrew:
     brews:
       - bash-completion@2
-      - dash
-      - dos2unix
-      - glab
-      - gpg
-      - gpg-tui
-      - htop
-      - lazygit
-      - make
-      - task
-      - taskopen
-      - taskwarrior-tui
-      - timewarrior
-      - watch
-      - zk
     brews_darwin:
       - git-graph
+      - taskopen
     casks:
       - firefox
       - devpod # Then install the CLI with the GUI button.

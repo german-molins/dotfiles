@@ -59,7 +59,22 @@
     "xclip":                     "latest",
     "wl-clipboard":              "latest",
     "exiftool":                  "latest",
-    "lazysql":                   "latest"
+    "lazysql":                   "latest",
+    "zk":                        "latest",
+    "htop":                      "latest",
+    "taskwarrior-tui":           "latest",
+    "taskwarrior":               "latest",
+    "lazygit":                   "latest",
+    "timewarrior":               "latest",
+    "glab":                      "latest",
+    "gnupg":                     "latest",
+    "gpg-tui":                   "latest",
+    "dos2unix":                  "latest",
+    "dash":                      "latest",
+    "taskopen": {
+      "version":            "latest",
+      "excluded_platforms": ["aarch64-darwin"]
+    }
   },
   "shell": {
     "init_hook": [
