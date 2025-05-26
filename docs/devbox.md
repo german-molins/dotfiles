@@ -22,7 +22,6 @@ Scripts are custom commands that can be run using this project's environment. Th
 * [brew-clean](#devbox-run-brew-clean)
 * [chezmoi-update](#devbox-run-chezmoi-update)
 * [clean](#devbox-run-clean)
-* [clean-all](#devbox-run-clean-all)
 * [devbox-update](#devbox-run-devbox-update)
 * [list-nerd-fonts](#devbox-run-list-nerd-fonts)
 * [nix-clean](#devbox-run-nix-clean)
@@ -115,6 +114,7 @@ echo 'Welcome to devbox!' > /dev/null
 
 ### devbox run brew-clean
 ```sh
+echo '[dotfiles][brew] Starting Homebrew cleanup...'
 brew cleanup --scrub --prune=all
 rm -rf "$(brew --cache)"
 brew autoremove
@@ -130,15 +130,8 @@ chezmoi upgrade
 
 ### devbox run clean
 ```sh
-devbox run -- nix store gc --extra-experimental-features nix-command
-```
-&ensp;
-
-### devbox run clean-all
-```sh
-devbox global run clean
 devbox global run nix-clean
-devbox global run brew-clean
+command -v brew >/dev/null && devbox global run brew-clean
 ```
 &ensp;
 
@@ -161,11 +154,11 @@ echo '[dotfiles][devbox] Starting Nix cleanup'
 echo '[dotfiles][devbox] Deleting old generations...'
 nix-collect-garbage -d
 nix profile wipe-history --extra-experimental-features nix-command
-echo '[dotfiles][devbox] Verifying and cleaning the store...'
-nix-store --gc
-echo '[dotfiles][devbox] Deleting stale logs...'
-rm -rf /nix/var/log/nix/drvs
-echo '[dotfiles][devbox] Nix cleanup complete.'
+echo '[dotfiles][devbox] Verifying and cleaning the Nix store...'
+nix store gc
+echo '[dotfiles][devbox] Deleting Nix stale logs...'
+sudo rm -rf /nix/var/log/nix/drvs
+echo '[dotfiles][devbox] Cleanup complete.'
 ```
 &ensp;
 
