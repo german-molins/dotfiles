@@ -1,4 +1,12 @@
 [[manager.prepend_keymap]]
+on = ["g", "?"]
+run = "help"
+
+[[manager.prepend_keymap]]
+on = ["~"]
+run = "noop"
+
+[[manager.prepend_keymap]]
 on = "F"
 run = "plugin smart-filter"
 desc = "Smart filter"
