@@ -58,7 +58,8 @@
     "imagemagick":               "latest",
     "xclip":                     "latest",
     "wl-clipboard":              "latest",
-    "exiftool":                  "latest"
+    "exiftool":                  "latest",
+    "lazysql":                   "latest"
   },
   "shell": {
     "init_hook": [

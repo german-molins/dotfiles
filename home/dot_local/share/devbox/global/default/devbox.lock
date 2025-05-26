@@ -1613,6 +1613,54 @@
         }
       }
     },
+    "lazysql@latest": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#lazysql",
+      "source": "devbox-search",
+      "version": "0.3.7",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ykf8ds7cgj80jicilmsbim9rq5120ik3-lazysql-0.3.7",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ykf8ds7cgj80jicilmsbim9rq5120ik3-lazysql-0.3.7"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vgqw66awa845pcn3j88vlrw0w5scyw2l-lazysql-0.3.7",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vgqw66awa845pcn3j88vlrw0w5scyw2l-lazysql-0.3.7"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2m7mf9gnaw9nkvhjdz74slvlfasg45rl-lazysql-0.3.7",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2m7mf9gnaw9nkvhjdz74slvlfasg45rl-lazysql-0.3.7"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k1hgqh6j09yf5z5zdapdqphpdplhlxkm-lazysql-0.3.7",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/k1hgqh6j09yf5z5zdapdqphpdplhlxkm-lazysql-0.3.7"
+        }
+      }
+    },
     "lnav@latest": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#lnav",
