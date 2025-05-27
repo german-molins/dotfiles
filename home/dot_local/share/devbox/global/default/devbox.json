@@ -110,6 +110,12 @@
         "echo '[dotfiles][nvim] Syncing Neovim plugins...'",
         "nvim --headless \"+Lazy! sync\" +qa"
       ],
+      "nvim-reinstall": [
+        "echo '[dotfiles][nvim] Reinstalling Neovim plugins...'",
+        "rm -rf ~/.config/nvimiw/ ~/.local/share/nvim/",
+        "rm ~/.config/nvim/lazy-lock.json",
+        "nvim --headless \"+Lazy! install\" +qa"
+      ],
       "devbox-update": [
         "echo '[dotfiles][devbox] Updating devbox...'",
         "devbox version update"
