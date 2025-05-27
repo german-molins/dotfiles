@@ -2,6 +2,10 @@ return {
   "folke/snacks.nvim",
   ---@type snacks.Config
   opts = {
-    picker = {},
+    picker = {
+      layout = {
+        fullscreen = true,
+      },
+    },
   },
 }
