@@ -110,6 +110,10 @@
         "echo '[dotfiles][nvim] Syncing Neovim plugins...'",
         "nvim --headless \"+Lazy! sync\" +qa"
       ],
+      "nvim-clean": [
+        "echo '[dotfiles][nvim] Cleaning Neovim plugins...'",
+        "nvim --headless \"+Lazy! clean\" +qa"
+      ],
       "nvim-reinstall": [
         "echo '[dotfiles][nvim] Reinstalling Neovim plugins...'",
         "rm -rf ~/.config/nvimiw/ ~/.local/share/nvim/",
