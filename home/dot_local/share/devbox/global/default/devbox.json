@@ -141,6 +141,10 @@
         "devbox global run yazi-update",
         "devbox global run nvim-update"
       ],
+      "chezmoi-add-all": [
+        "cd $HOME",
+        "chezmoi status | cut -d ' ' -f 2 | xargs chezmoi add"
+      ],
       "list-nerd-fonts": "fc-list | grep Nerd"
     }
   }
