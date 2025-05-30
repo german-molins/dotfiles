@@ -55,6 +55,7 @@ These are my daily CLI drivers:
 | GitHub Dashboard | `gh-dash` | `gh dash` | Pull requests and issues manager |
 | Lazydocker | `lazydocker` | | Docker and docker-compose manager |
 | AI Chat | `aichat` | `ai` | All-in-one LLM tool |
+| Amazon Q | `amazon-q` | `qchat`, `q` | LLM coding agent |
 | Aider | `aider` | | LLM pair programmer |
 | Taskwarrior / Timewarrior | `task` / `timew` | | Task and time manager |
 | Zk | `zk` | | Notebook manager |
