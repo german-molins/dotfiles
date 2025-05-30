@@ -1,30 +1,24 @@
-###########
-## options:
+read:
+  - {{ .chezmoi.homeDir }}/.aider.conventions.md
+  - .aider.conventions.md
 
-########
-## Main:
 {{ if eq .profile "personal" -}}
 model: openrouter/anthropic/claude-3.7-sonnet
 {{ else if eq .profile "quantica" -}}
 model: openrouter/anthropic/claude-3.7-sonnet
 {{- end }}
 
-##################
-## Model Settings:
+alias:
+  - "free:gemini/gemini-1.5-pro-latest"
+
 cache-prompts: true
 
-#################
-## History Files:
-
-###################
-## Output Settings:
+vim: true
 dark-mode: true
 stream: true
 code-theme: solarized-dark
 show-diffs: true
 
-################
-## Git Settings:
 gitignore: false
 subtree-only: true
 dirty-commits: false
@@ -51,18 +45,4 @@ commit-prompt: |
   or line breaks.
 
 watch-files: true
-
-#########################
-## Fixing and committing:
 auto-test: false
-
-##################
-## Other Settings:
-read:
-  - {{ .chezmoi.homeDir }}/.aider.conventions.md
-  - .aider.conventions.md
-
-vim: true
-
-alias:
-  - "free:gemini/gemini-1.5-pro-latest"
