@@ -1,0 +1,8 @@
+{
+  "autocomplete.disable": true,
+  "autocomplete.insertSpaceAutomatically": false,
+  "autocomplete.theme": "solarized-dark",
+  "chat.editMode": "vi",
+  "inline.enabled": false,
+  "mcp.loadedBefore": true
+}
