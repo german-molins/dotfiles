@@ -74,6 +74,10 @@
     "taskopen": {
       "version":            "latest",
       "excluded_platforms": ["aarch64-darwin"]
+    },
+    "amazon-q-cli": {
+      "version":            "latest",
+      "excluded_platforms": ["aarch64-darwin", "x86_64-darwin"]
     }
   },
   "shell": {

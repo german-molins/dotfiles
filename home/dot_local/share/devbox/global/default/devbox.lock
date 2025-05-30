@@ -113,6 +113,34 @@
         }
       }
     },
+    "amazon-q-cli@latest": {
+      "last_modified": "2025-05-28T04:23:31Z",
+      "resolved": "github:NixOS/nixpkgs/3d1f29646e4b57ed468d60f9d286cde23a8d1707#amazon-q-cli",
+      "source": "devbox-search",
+      "version": "1.10.1",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/69krw1zr4s57cdr51wpg67hkmy6pn89p-amazon-q-cli-1.10.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/69krw1zr4s57cdr51wpg67hkmy6pn89p-amazon-q-cli-1.10.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i8ar4y4bhls28f6minpzhk8r77cwyjzn-amazon-q-cli-1.10.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/i8ar4y4bhls28f6minpzhk8r77cwyjzn-amazon-q-cli-1.10.1"
+        }
+      }
+    },
     "atuin@latest": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#atuin",
