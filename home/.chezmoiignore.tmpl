@@ -1,6 +1,8 @@
 {{ if ne .chezmoi.os "darwin" -}}
 Library/Application Support/aichat/
+Library/Application Support/amazon-q/
 {{ end -}}
 {{ if ne .chezmoi.os "linux" -}}
 .config/aichat/
+.local/share/amazon-q/
 {{ end -}}
