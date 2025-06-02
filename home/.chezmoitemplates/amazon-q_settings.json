@@ -3,6 +3,7 @@
   "autocomplete.insertSpaceAutomatically": false,
   "autocomplete.theme": "solarized-dark",
   "chat.editMode": "vi",
+  "chat.enableNotifications": true,
   "inline.enabled": false,
   "mcp.loadedBefore": true
 }
