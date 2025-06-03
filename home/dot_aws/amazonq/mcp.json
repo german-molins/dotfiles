@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "tree_sitter": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-tree-sitter"
+      ]
+    }
+  }
+}
