@@ -78,7 +78,8 @@
     "amazon-q-cli": {
       "version":            "latest",
       "excluded_platforms": ["aarch64-darwin", "x86_64-darwin"]
-    }
+    },
+    "pnpm": "latest"
   },
   "shell": {
     "init_hook": [
