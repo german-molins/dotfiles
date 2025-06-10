@@ -541,6 +541,54 @@
         }
       }
     },
+    "dua@latest": {
+      "last_modified": "2025-05-22T23:55:03Z",
+      "resolved": "github:NixOS/nixpkgs/fe51d34885f7b5e3e7b59572796e1bcb427eccb1#dua",
+      "source": "devbox-search",
+      "version": "2.30.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hf2xsffkskb28g304xr5n9v2azsnhxim-dua-2.30.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hf2xsffkskb28g304xr5n9v2azsnhxim-dua-2.30.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/31sd9xhlj8a6assc2cznhwhfhydc99na-dua-2.30.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/31sd9xhlj8a6assc2cznhwhfhydc99na-dua-2.30.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vj1lnrx1414ha83w6fpwk0grhavpxpni-dua-2.30.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vj1lnrx1414ha83w6fpwk0grhavpxpni-dua-2.30.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/a76vm4mfz46hhyrv9hvl2lyp6ybczamj-dua-2.30.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/a76vm4mfz46hhyrv9hvl2lyp6ybczamj-dua-2.30.1"
+        }
+      }
+    },
     "duf@latest": {
       "last_modified": "2025-05-16T20:19:48Z",
       "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#duf",

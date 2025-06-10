@@ -79,7 +79,8 @@
       "version":            "latest",
       "excluded_platforms": ["aarch64-darwin", "x86_64-darwin"]
     },
-    "pnpm": "latest"
+    "pnpm": "latest",
+    "dua":  "latest"
   },
   "shell": {
     "init_hook": [
