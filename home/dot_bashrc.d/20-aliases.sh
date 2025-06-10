@@ -9,7 +9,6 @@ alias lc='ls -1 --color=auto --file-type --group-directories-first'
 alias lca='ls -1A --color=auto --file-type --group-directories-first'
 alias lcc='ls -C --color=auto --file-type --group-directories-first'
 alias lcca='ls -CA --color=auto --file-type --group-directories-first'
-alias lu='du -sh * | sort -hr | less -FX'
 
 alias ai=aichat
 alias llm=aichat
