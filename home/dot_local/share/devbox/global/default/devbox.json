@@ -87,41 +87,42 @@
     ],
     "scripts": {
       "clean": [
+        "echo '[dotfiles] Starting cleanup...'",
         "devbox global run nix-clean",
         "command -v brew >/dev/null && devbox global run brew-clean",
         "echo '[dotfiles] Cleanup complete.'"
       ],
       "nix-clean": [
-        "echo '[dotfiles][devbox] Starting Nix cleanup'",
-        "echo '[dotfiles][devbox] Deleting old generations...'",
+        "echo '[dotfiles][nix] Starting cleanup...'",
+        "echo '[dotfiles][nix] Deleting old generations...'",
         "nix-collect-garbage -d",
         "nix profile wipe-history --extra-experimental-features nix-command",
-        "echo '[dotfiles][devbox] Verifying and cleaning the Nix store...'",
+        "echo '[dotfiles][nix] Verifying and cleaning the store...'",
         "nix store gc --extra-experimental-features nix-command",
-        "echo '[dotfiles][devbox] Deleting Nix stale logs...'",
+        "echo '[dotfiles][nix] Deleting stale logs...'",
         "sudo rm -rf /nix/var/log/nix/drvs",
-        "echo '[dotfiles][devbox] Cleanup complete.'"
+        "echo '[dotfiles][nix] Cleanup complete.'"
       ],
       "brew-clean": [
-        "echo '[dotfiles][brew] Starting Homebrew cleanup...'",
+        "echo '[dotfiles][brew] Starting cleanup...'",
         "brew cleanup --scrub --prune=all",
         "rm -rf \"$(brew --cache)\"",
         "brew autoremove"
       ],
       "nvim-update": [
-        "echo '[dotfiles][nvim] Updating Neovim plugins...'",
+        "echo '[dotfiles][nvim] Updating plugins...'",
         "nvim --headless \"+Lazy! update\" +qa"
       ],
       "nvim-sync": [
-        "echo '[dotfiles][nvim] Syncing Neovim plugins...'",
+        "echo '[dotfiles][nvim] Syncing plugins...'",
         "nvim --headless \"+Lazy! sync\" +qa"
       ],
       "nvim-clean": [
-        "echo '[dotfiles][nvim] Cleaning Neovim plugins...'",
+        "echo '[dotfiles][nvim] Cleaning plugins...'",
         "nvim --headless \"+Lazy! clean\" +qa"
       ],
       "nvim-reinstall": [
-        "echo '[dotfiles][nvim] Reinstalling Neovim plugins...'",
+        "echo '[dotfiles][nvim] Reinstalling plugins...'",
         "rm -rf ~/.config/nvimiw/ ~/.local/share/nvim/",
         "rm ~/.config/nvim/lazy-lock.json",
         "nvim --headless \"+Lazy! install\" +qa"
@@ -131,7 +132,7 @@
         "devbox version update"
       ],
       "yazi-update": [
-        "echo '[dotfiles][yazi] Updating yazi packages...'",
+        "echo '[dotfiles][yazi] Updating packages...'",
         "ya pack --upgrade"
       ],
       "chezmoi-update": [
@@ -141,8 +142,8 @@
       "update": [
         "devbox global run chezmoi-update",
         "devbox global run devbox-update",
-        "echo '[dotfiles][devbox] Updating devbox packages...'",
-        "command -v brew > /dev/null && brew update && brew upgrade",
+        "command -v brew >/dev/null && brew update && brew upgrade",
+        "echo '[dotfiles][devbox] Updating packages...'",
         "devbox global update",
         "devbox global run yazi-update",
         "devbox global run nvim-update"
