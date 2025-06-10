@@ -88,7 +88,8 @@
     "scripts": {
       "clean": [
         "devbox global run nix-clean",
-        "command -v brew >/dev/null && devbox global run brew-clean"
+        "command -v brew >/dev/null && devbox global run brew-clean",
+        "echo '[dotfiles] Cleanup complete.'"
       ],
       "nix-clean": [
         "echo '[dotfiles][devbox] Starting Nix cleanup'",
