@@ -96,7 +96,7 @@
         "nix-collect-garbage -d",
         "nix profile wipe-history --extra-experimental-features nix-command",
         "echo '[dotfiles][devbox] Verifying and cleaning the Nix store...'",
-        "nix store gc",
+        "nix store gc --extra-experimental-features nix-command",
         "echo '[dotfiles][devbox] Deleting Nix stale logs...'",
         "sudo rm -rf /nix/var/log/nix/drvs",
         "echo '[dotfiles][devbox] Cleanup complete.'"
