@@ -1,5 +1,6 @@
 {
   "paths": [
+    "~/.aws/amazonq/rules/**/*.md",
     ".amazonq/rules/**/*.md",
     "README.md",
     "AmazonQ.md"
