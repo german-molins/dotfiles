@@ -3692,50 +3692,50 @@
       }
     },
     "yazi@latest": {
-      "last_modified": "2025-05-27T11:07:55Z",
-      "resolved": "github:NixOS/nixpkgs/e0042dedfbc9134ef973f64e5c7f56a38cc5cc97#yazi",
+      "last_modified": "2025-06-01T15:36:18Z",
+      "resolved": "github:NixOS/nixpkgs/5929de975bcf4c7c8d8b5ca65c8cd9ef9e44523e#yazi",
       "source": "devbox-search",
-      "version": "25.4.8",
+      "version": "25.5.31",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/rsm1qn2dqi7zsvnr540bn8rhqwnldkxg-yazi-25.4.8",
+              "path": "/nix/store/gy7r8iw79rqifckaks26q4dmqplx5qir-yazi-25.5.31",
               "default": true
             }
           ],
-          "store_path": "/nix/store/rsm1qn2dqi7zsvnr540bn8rhqwnldkxg-yazi-25.4.8"
+          "store_path": "/nix/store/gy7r8iw79rqifckaks26q4dmqplx5qir-yazi-25.5.31"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/83d2ypxlbzib9iksp3xmm6bsgg6ahhfz-yazi-25.4.8",
+              "path": "/nix/store/zkbnhznc1nk3zqrypzwbpd0ybk6in8mk-yazi-25.5.31",
               "default": true
             }
           ],
-          "store_path": "/nix/store/83d2ypxlbzib9iksp3xmm6bsgg6ahhfz-yazi-25.4.8"
+          "store_path": "/nix/store/zkbnhznc1nk3zqrypzwbpd0ybk6in8mk-yazi-25.5.31"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/1siszvfvi1l97h23v06i5lp5wgx6c26d-yazi-25.4.8",
+              "path": "/nix/store/nn7p6p4qfyxjp76h7hba06x180psf8n9-yazi-25.5.31",
               "default": true
             }
           ],
-          "store_path": "/nix/store/1siszvfvi1l97h23v06i5lp5wgx6c26d-yazi-25.4.8"
+          "store_path": "/nix/store/nn7p6p4qfyxjp76h7hba06x180psf8n9-yazi-25.5.31"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mj9bsx6l29cbak4j2ddh7gyz7wr93w0z-yazi-25.4.8",
+              "path": "/nix/store/0szfppbl0dhrlahvflz9lfmsh0b1nsbc-yazi-25.5.31",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mj9bsx6l29cbak4j2ddh7gyz7wr93w0z-yazi-25.4.8"
+          "store_path": "/nix/store/0szfppbl0dhrlahvflz9lfmsh0b1nsbc-yazi-25.5.31"
         }
       }
     },

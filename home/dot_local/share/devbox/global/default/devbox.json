@@ -134,7 +134,7 @@
       ],
       "yazi-update": [
         "echo '[dotfiles][yazi] Updating packages...'",
-        "ya pack --upgrade"
+        "ya pkg upgrade"
       ],
       "chezmoi-update": [
         "echo '[dotfiles][chezmoi] Updating chezmoi...'",

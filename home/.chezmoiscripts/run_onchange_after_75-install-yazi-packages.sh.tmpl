@@ -22,4 +22,4 @@ fi
 >&2 echo "[dotfiles][devbox] Installing yazi packages..."
 
 # packages hash: {{ include "private_dot_config/yazi/package.toml" | sha256sum }}
-ya pack --install
+ya pkg install
