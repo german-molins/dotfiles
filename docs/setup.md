@@ -59,7 +59,14 @@ or
 devpod up . --dotfiles-script-env-file path/to/env/file
 ```
 
-### Auto-Loading Environment Variables with Direnv
+### Auto-Loading Environment Variables
+
+#### With Mise
+
+It is the preferred way, as it is more efficient, clean, and does not rely on
+external dependencies like Devbox does on Direnv.
+
+### With Direnv (deprecated)
 
 Shell hooks are set for `direnv` to auto-load and unload envvars found in the
 first found `.envrc` file up the `PWD` path.

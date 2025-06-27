@@ -40,6 +40,8 @@ These are my daily CLI drivers:
 | Name | Command | Alias | Description |
 |------|---------|-------|-------------|
 | Chezmoi | `chezmoi` | | Dotfiles manager |
+| Mise | `mise` | | Global and project package manager |
+| Devbox | `devbox` | | Global and project package manager |
 | Alacritty / Kitty | `alacritty` / `kitty` | | Terminal emulator |
 | Bash | `bash` | | Interactive shell |
 | Devpod | `devpod` | | Devcontainer manager |
@@ -66,30 +68,42 @@ These are my daily CLI drivers:
 These package managers are used to install the tools and apps at the user
 level ("global"), depending on system and architecture:
 
-Package managers:
-
-- `devbox`: user and project package manager
+- `mise`: global and project package manager
+- `devbox`: global and project package manager
 - `nix`: system and user package manager
 - `brew`: system package manager
 
 Operating systems:
 
 - macOS (ARM and AMD):
+  - `mise`: tracked lock file; multi-user
   - `devbox`: tracked lock file; multi-user
   - `nix`: no tracked lock file; multi-user
   - `brew`: no tracked lock file; multi-user
 - Linux AMD:
+  - `mise`: tracked lock file; multi-user
   - `devbox`: tracked lock file; single-user
   - `nix`: no tracked lock file; single-user
   - `brew`: no tracked lock file; multi-user
 - Linux ARM:
+  - `mise`: tracked lock file; multi-user
   - `devbox`: tracked lock file; single-user
   - `nix`: no tracked lock file; single-user
 
-`brew` and `nix` are used to install user-level dependencies. Bootstrapping
-them requires sudo permissions, but once installed, the user can use them to
-install packages without sudo. `devbox` is installed by `nix` and `asdf` is
-installed by `brew`.
+Their priority order is:
+
+1. `mise`: Main package and project environment manager
+2. `devbox`: Fallback for dependencies not found in `mise` or `aqua` registry.
+   Nixhub, the Devbox's registry, is way larger than any other.
+3. `brew` and `nix`: Used to install some user-level dependencies.
+   Bootstrapping them requires sudo permissions, but once installed, the user
+can use them to install packages without sudo. `devbox` is installed by `nix`
+on Linux and bootstrapped in macOS.
+
+#### Mise
+
+`mise` is cross-platform, and is both a package and project environment manager
+(tasks/scripts and environment variables).
 
 #### Devbox
 
