@@ -1,25 +1,22 @@
 #!/bin/bash
 
-{{ if eq .chezmoi.os "linux" -}}
-# Make devbox available in the current shell.
-. "$HOME"/.nix-profile/etc/profile.d/nix.sh
-. <(devbox global shellenv)
-{{ end }}
+# Make mise available in the current shell.
+PATH="$HOME/.local/bin:$PATH"
 
-if ! command -v devbox >/dev/null; then
-  >&2 echo "[dotfiles][devbox] ERROR: 'devbox' command not found, skipping package installation"
+if ! command -v mise >/dev/null; then
+  >&2 echo "[dotfiles][yazi] ERROR: 'mise' command not found, skipping package installation"
   exit 1
 fi
 
-# Make devbox packages available in the current shell.
-. <(devbox global shellenv)
+# Make mise packages available in the current shell.
+eval "$(mise activate bash)"
 
-if ! command -v yazi >/dev/null; then
+if ! command -v ya >/dev/null; then
   >&2 echo "[dotfiles][yazi] ERROR: 'ya' command not found, skipping package installation"
   exit 1
 fi
 
->&2 echo "[dotfiles][devbox] Installing yazi packages..."
+>&2 echo "[dotfiles][yazi] Installing yazi packages..."
 
 # packages hash: {{ include "private_dot_config/yazi/package.toml" | sha256sum }}
 ya pkg install
