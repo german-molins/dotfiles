@@ -50,10 +50,5 @@
       "excluded_platforms": ["aarch64-darwin", "x86_64-darwin"]
     },
     "imagemagick": "7.1.1-47"
-  },
-  "shell": {
-    "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null"
-    ]
   }
 }
