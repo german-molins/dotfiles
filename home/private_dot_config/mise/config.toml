@@ -105,6 +105,11 @@ description = "Update Neovim plugins"
 alias = "nvim:up"
 run = "nvim --headless '+Lazy! update' +qa"
 
+[tasks."yazi:install"]
+alias = "yazi:i"
+description = "Install Yazi packages"
+run = "ya pkg install"
+
 [tasks."yazi:update"]
 alias = "yazi:up"
 description = "Update Yazi packages"
