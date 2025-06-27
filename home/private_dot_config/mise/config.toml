@@ -43,9 +43,3 @@ run = "echo 'Hello, world!'"
 [tasks.list-nerd-fonts]
 description = "List installed Nerd Fonts"
 run = "fc-list | grep Nerd"
-
-[tasks.chezmoi-add-all]
-description = "Add all changed dotfiles to chezmoi"
-run = """
-cd $HOME && chezmoi status | cut -d ' ' -f 2 | xargs chezmoi add
-"""
