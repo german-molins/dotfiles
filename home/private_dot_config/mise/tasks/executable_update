@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#MISE description="Update all tools and packages"
+
+mise run chezmoi:update
+echo '[dotfiles][devbox] Updating devbox...'
+devbox version update
+command -v brew >/dev/null && brew update && brew upgrade
+mise run mise:update
+mise run devbox:update
+mise run yazi:update
+mise run nvim:update

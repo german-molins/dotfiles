@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Update Chezmoi"
+
+echo '[dotfiles][chezmoi] Updating chezmoi...'
+chezmoi upgrade

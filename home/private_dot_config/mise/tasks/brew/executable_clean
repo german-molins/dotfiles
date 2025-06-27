@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#MISE description="Clean up Homebrew packages and caches"
+
+echo '[dotfiles][brew] Starting cleanup...'
+brew cleanup --scrub --prune=all
+rm -rf "$(brew --cache)"
+brew autoremove

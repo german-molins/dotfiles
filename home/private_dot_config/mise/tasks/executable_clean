@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#MISE description="Clean up system packages and caches"
+
+echo '[dotfiles] Starting cleanup...'
+mise run nix:clean
+command -v brew >/dev/null && mise run brew:clean
+echo '[dotfiles] Cleanup complete.'

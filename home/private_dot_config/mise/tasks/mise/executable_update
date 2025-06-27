@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Update Mise packages"
+
+echo '[dotfiles][mise] Updating packages...'
+mise upgrade

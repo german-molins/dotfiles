@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#MISE description="Clean up Nix packages and garbage collection"
+
+echo '[dotfiles][nix] Starting cleanup...'
+echo '[dotfiles][nix] Deleting old generations...'
+nix-collect-garbage -d
+nix profile wipe-history --extra-experimental-features nix-command
+echo '[dotfiles][nix] Verifying and cleaning the store...'
+nix store gc --extra-experimental-features nix-command
+echo '[dotfiles][nix] Deleting stale logs...'
+sudo rm -rf /nix/var/log/nix/drvs
+echo '[dotfiles][nix] Cleanup complete.'

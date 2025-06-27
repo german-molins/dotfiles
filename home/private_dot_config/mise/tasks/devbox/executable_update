@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Update Devbox global packages"
+
+echo '[dotfiles][devbox] Updating global packages...'
+devbox global update

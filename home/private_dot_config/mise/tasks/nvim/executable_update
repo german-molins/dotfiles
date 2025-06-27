@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Update Neovim plugins"
+
+echo '[dotfiles][nvim] Updating plugins...'
+nvim --headless "+Lazy! update" +qa

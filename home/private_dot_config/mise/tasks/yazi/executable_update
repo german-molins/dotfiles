@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Update Yazi packages"
+
+echo '[dotfiles][yazi] Updating packages...'
+ya pkg upgrade
