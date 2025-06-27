@@ -35,6 +35,7 @@ zoxide = "latest"
 [settings]
 experimental = true
 lockfile = true
+always_keep_download = true
 
 [env]
 _.file = "~/.dotfiles.env"
