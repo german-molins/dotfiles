@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-#MISE description="Say hello from a task file"
-
-echo 'Hello, world!'
