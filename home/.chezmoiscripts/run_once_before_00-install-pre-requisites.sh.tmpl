@@ -1,7 +1,12 @@
 #!/bin/bash
-{{ if or (and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64")) (eq .chezmoi.os "darwin") -}}
 
 set -eu
+
+export MISE_VERSION=v2025.6.4
+echo "[dotfiles][mise] Bootstrapping mise..."
+curl https://mise.run | sh
+
+{{ if or (and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64")) (eq .chezmoi.os "darwin") -}}
 
 homebrew_installer=https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 
