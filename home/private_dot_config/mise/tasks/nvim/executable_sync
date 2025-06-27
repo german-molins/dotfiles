@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-#MISE description="Sync Neovim plugins"
-
-echo '[dotfiles][nvim] Syncing plugins...'
-nvim --headless "+Lazy! sync" +qa

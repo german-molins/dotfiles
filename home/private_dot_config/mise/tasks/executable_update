@@ -2,9 +2,13 @@
 #MISE description="Update all tools and packages"
 
 mise run chezmoi:update
-echo '[dotfiles][devbox] Updating devbox...'
-devbox version update
-command -v brew >/dev/null && brew update && brew upgrade
+mise run devbox:self-update
+
+if command -v brew >/dev/null; then
+    mise run brew:self-update
+    mise run brew:update
+fi
+
 mise run mise:update
 mise run devbox:update
 mise run yazi:update

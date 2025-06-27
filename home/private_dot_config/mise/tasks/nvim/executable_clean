@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-#MISE description="Clean Neovim plugins"
-
-echo '[dotfiles][nvim] Cleaning plugins...'
-nvim --headless "+Lazy! clean" +qa

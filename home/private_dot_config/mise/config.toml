@@ -36,6 +36,49 @@ zoxide = "latest"
 experimental = true
 lockfile = true
 
-[tasks.list-nerd-fonts]
+[tasks."brew:update"]
+description = "Update Homebrew global packages"
+run = "brew upgrade"
+
+[tasks."brew:self-update"]
+description = "Update Homebrew"
+run = "brew update"
+
+[tasks."chezmoi:update"]
+description = "Update Chezmoi"
+run = "chezmoi upgrade"
+
+[tasks."devbox:self-update"]
+description = "Update Devbox"
+run = "devbox version update"
+
+[tasks."devbox:update"]
+description = "Update Devbox global packages"
+run = "devbox global update"
+
+[tasks."nerd-fonts:list"]
 description = "List installed Nerd Fonts"
 run = "fc-list | grep Nerd"
+
+[tasks."mise:update"]
+alias = "mise:up"
+description = "Update Mise global packages"
+run = "mise upgrade"
+
+[tasks."nvim:clean"]
+description = "Clean Neovim plugins"
+run = "nvim --headless '+Lazy! clean' +qa"
+
+[tasks."nvim:sync"]
+description = "Sync Neovim plugins"
+run = "nvim --headless '+Lazy! sync' +qa"
+
+[tasks."nvim:update"]
+description = "Update Neovim plugins"
+alias = "nvim:up"
+run = "nvim --headless '+Lazy! update' +qa"
+
+[tasks."yazi:update"]
+alias = "yazi:up"
+description = "Update Yazi packages"
+run = "ya pkg upgrade"
