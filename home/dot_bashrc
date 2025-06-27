@@ -45,7 +45,6 @@ PATH="$HOME/.local/bin/:$PATH"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export PAGER='bat --plain'
-export JULIA_PROJECT=@.
 
 ### Interactive Shell Options ###
 
