@@ -1,0 +1,6 @@
+[tools.usage]
+version = "2.1.1"
+backend = "ubi:jdx/usage"
+
+[tools.usage.checksums]
+usage-linux-aarch64 = "sha256:3634d68028c74acfba57275c370513ca84c1ace25fca7d4fd3d8b282fecb18af"
