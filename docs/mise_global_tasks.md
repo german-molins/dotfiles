@@ -42,6 +42,12 @@ Update Devbox
 
 Update Devbox global packages
 
+## `mise:lock`
+
+- **Usage**: `mise:lock`
+
+Lock mise dependencies
+
 ## `mise:update`
 
 - **Usage**: `mise:update`

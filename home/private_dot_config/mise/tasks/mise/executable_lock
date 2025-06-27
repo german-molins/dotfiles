@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+#MISE description="Lock mise dependencies"
+#MISE dir="{{cwd}}"
+
+mise config set "settings.experimental" "true"
+mise config set "settings.lockfile" "true"
+touch mise.lock
+mise install
