@@ -1,24 +1,24 @@
-[tools.aichat]
-version = "0.29.0"
-backend = "aqua:sigoden/aichat"
-
-[tools.aichat.checksums]
-"aichat-v0.29.0-aarch64-unknown-linux-musl.tar.gz" = "sha256:c92bba0abc50870b88a4094d6d8a11b5c73d452c8fa1b9d302a23fea0d876731"
-
 [tools."aqua:atuinsh/atuin"]
 version = "18.6.1"
 backend = "aqua:atuinsh/atuin"
 
 [tools."aqua:atuinsh/atuin".checksums]
+"atuin-aarch64-apple-darwin.tar.gz" = "sha256:649f1ea17a11d150c18c52341e7dbe18fdec551e38ca824b0cf6e9a7553dbf1d"
 "atuin-aarch64-unknown-linux-musl.tar.gz" = "sha256:42b7d9bde8bf2d04832c1b2ceea1d3d89ecd762a40623d92a7197d2287fff82b"
 
 [tools."aqua:dlvhdr/gh-dash"]
 version = "4.16.0"
 backend = "aqua:dlvhdr/gh-dash"
 
+[tools."aqua:dlvhdr/gh-dash".checksums]
+"gh-dash_v4.16.0_darwin-arm64" = "sha256:5ea74565e168484e573e82aced56893ae7fc1f8cd7feddb5665cf3d5671351c6"
+
 [tools."aqua:jorgerojas26/lazysql"]
 version = "0.3.7"
 backend = "aqua:jorgerojas26/lazysql"
+
+[tools."aqua:jorgerojas26/lazysql".checksums]
+"lazysql_Darwin_arm64.tar.gz" = "sha256:32227b48bb7a6ce57a52334810a91464d317c70de7bd66926832842827647028"
 
 [tools."aqua:zk-org/zk"]
 version = "0.15.1"
@@ -33,6 +33,7 @@ backend = "ubi:sharkdp/bat"
 
 [tools.bat.checksums]
 bat-linux-aarch64 = "sha256:1eb51d68dbe56cd55c50bccc6438794028432ea0bca4d06910a2a0f7532b64a1"
+bat-macos-aarch64 = "sha256:0d17225e26fe164e0c681e06a0ccf7fd7e479a987eca1c1503c8473a2ac6d207"
 
 [tools.bottom]
 version = "0.10.2"
@@ -75,13 +76,6 @@ backend = "ubi:bootandy/dust"
 
 [tools.dust.checksums]
 dust-linux-aarch64 = "sha256:2545abb9112315c4323ea9d3b9db5efadfc99e893c661a6dd1e8da474ff4e973"
-
-[tools.eza]
-version = "0.21.4"
-backend = "aqua:eza-community/eza"
-
-[tools.eza.checksums]
-"eza_aarch64-unknown-linux-gnu.tar.gz" = "sha256:df458f76662b5aa1e87fcc0d4ff5eb1063905127acd41e2aee0e20fc187394da"
 
 [tools.fd]
 version = "10.2.0"
@@ -149,13 +143,6 @@ backend = "aqua:neovim/neovim"
 [tools.node]
 version = "24.1.0"
 backend = "core:node"
-
-[tools.pnpm]
-version = "10.12.1"
-backend = "aqua:pnpm/pnpm"
-
-[tools.pnpm.checksums]
-pnpm-linux-arm64 = "sha256:c2f9e9d42d81f9f40a0f895513d014a08d5ecb0abc9e15c426ecfde6f492706b"
 
 [tools.ripgrep]
 version = "14.1.1"
