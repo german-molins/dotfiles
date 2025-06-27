@@ -91,6 +91,11 @@ run = "mise upgrade"
 description = "Clean Neovim plugins"
 run = "nvim --headless '+Lazy! clean' +qa"
 
+[tasks."nvim:install"]
+description = "Install Neovim plugins"
+alias = "nvim:i"
+run = "nvim --headless '+Lazy! install' +qa"
+
 [tasks."nvim:sync"]
 description = "Sync Neovim plugins"
 run = "nvim --headless '+Lazy! sync' +qa"
