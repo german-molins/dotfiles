@@ -8,15 +8,7 @@ if ! command -v mise >/dev/null; then
   exit 1
 fi
 
-# Make mise packages available in the current shell.
-eval "$(mise activate bash)"
-
-if ! command -v ya >/dev/null; then
-  >&2 echo "[dotfiles][yazi] ERROR: 'ya' command not found, skipping package installation"
-  exit 1
-fi
-
 >&2 echo "[dotfiles][yazi] Installing yazi packages..."
 
 # packages hash: {{ include "private_dot_config/yazi/package.toml" | sha256sum }}
-ya pkg install
+mise run yazi:install
