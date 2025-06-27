@@ -1,6 +1,211 @@
+[tools.aichat]
+version = "0.29.0"
+backend = "aqua:sigoden/aichat"
+
+[tools.aichat.checksums]
+"aichat-v0.29.0-aarch64-unknown-linux-musl.tar.gz" = "sha256:c92bba0abc50870b88a4094d6d8a11b5c73d452c8fa1b9d302a23fea0d876731"
+
+[tools."aqua:atuinsh/atuin"]
+version = "18.6.1"
+backend = "aqua:atuinsh/atuin"
+
+[tools."aqua:atuinsh/atuin".checksums]
+"atuin-aarch64-unknown-linux-musl.tar.gz" = "sha256:42b7d9bde8bf2d04832c1b2ceea1d3d89ecd762a40623d92a7197d2287fff82b"
+
+[tools."aqua:dlvhdr/gh-dash"]
+version = "4.16.0"
+backend = "aqua:dlvhdr/gh-dash"
+
+[tools."aqua:jorgerojas26/lazysql"]
+version = "0.3.7"
+backend = "aqua:jorgerojas26/lazysql"
+
+[tools."aqua:zk-org/zk"]
+version = "0.15.1"
+backend = "aqua:zk-org/zk"
+
+[tools."aqua:zk-org/zk".checksums]
+"zk-v0.15.1-linux-arm64.tar.gz" = "sha256:19460e19e3389220015aa98ca849449d9c739ffd6f45c1935b0cd2d149424ce5"
+
+[tools.bat]
+version = "0.25.0"
+backend = "ubi:sharkdp/bat"
+
+[tools.bat.checksums]
+bat-linux-aarch64 = "sha256:1eb51d68dbe56cd55c50bccc6438794028432ea0bca4d06910a2a0f7532b64a1"
+
+[tools.bottom]
+version = "0.10.2"
+backend = "aqua:ClementTsang/bottom"
+
+[tools.bottom.checksums]
+"bottom_aarch64-unknown-linux-musl.tar.gz" = "sha256:6ac953d3d95d06aa1864c85ba99bdca2e9d9b8f1ff0619213c980714b1a641f7"
+
+[tools.coreutils]
+version = "0.1.0"
+backend = "aqua:uutils/coreutils"
+
+[tools.coreutils.checksums]
+"coreutils-0.1.0-aarch64-unknown-linux-musl.tar.gz" = "sha256:6572292ee74bb6a7efa88f05d0d0a7a5c696bae0ae341a438b983ae7775c9d47"
+
+[tools.direnv]
+version = "2.36.0"
+backend = "aqua:direnv/direnv"
+
+[tools.direnv.checksums]
+"direnv.linux-arm64" = "sha256:c00a71cdb6ebb28e8232e70a7147dfab40c6f694406729c2d0430bdba79fce10"
+
+[tools.dua]
+version = "2.30.1"
+backend = "aqua:Byron/dua-cli"
+
+[tools.dua.checksums]
+"dua-v2.30.1-aarch64-unknown-linux-musl.tar.gz" = "sha256:1e90817a0ee84b64ecc8cbd7076f8ef53caa47a96191ef2abec70195e105cf83"
+
+[tools.duf]
+version = "0.8.1"
+backend = "aqua:muesli/duf"
+
+[tools.duf.checksums]
+"duf_0.8.1_linux_arm64.tar.gz" = "sha256:66d304427bb30e5766e66e740394b0b07bd852b64cc5cda755eab33adf853e72"
+
+[tools.dust]
+version = "1.2.1"
+backend = "ubi:bootandy/dust"
+
+[tools.dust.checksums]
+dust-linux-aarch64 = "sha256:2545abb9112315c4323ea9d3b9db5efadfc99e893c661a6dd1e8da474ff4e973"
+
+[tools.eza]
+version = "0.21.4"
+backend = "aqua:eza-community/eza"
+
+[tools.eza.checksums]
+"eza_aarch64-unknown-linux-gnu.tar.gz" = "sha256:df458f76662b5aa1e87fcc0d4ff5eb1063905127acd41e2aee0e20fc187394da"
+
+[tools.fd]
+version = "10.2.0"
+backend = "aqua:sharkdp/fd"
+
+[tools.fd.checksums]
+"fd-v10.2.0-aarch64-unknown-linux-musl.tar.gz" = "sha256:4e8e596646d047d904f2c5ca74b39dccc69978b6e1fb101094e534b0b59c1bb0"
+
+[tools.fzf]
+version = "0.62.0"
+backend = "aqua:junegunn/fzf"
+
+[tools.fzf.checksums]
+"fzf-0.62.0-linux_arm64.tar.gz" = "sha256:929fd132705d02f222a52e23c076018ef3e699793dd5e8c3183bb11ed9b7696e"
+
+[tools.gh]
+version = "2.74.1"
+backend = "aqua:cli/cli"
+
+[tools.gh.checksums]
+"gh_2.74.1_linux_arm64.tar.gz" = "sha256:f71257fc489a235ef22100bd12b94334a92de741edf5c81edfc712ce0945b555"
+
+[tools.gitui]
+version = "0.27.0"
+backend = "aqua:extrawurst/gitui"
+
+[tools.gitui.checksums]
+"gitui-linux-aarch64.tar.gz" = "sha256:56116e278c618c054e7575adf3b357504c75fa1b5a3ecb9314504d521c07a008"
+
+[tools.glab]
+version = "1.57.0"
+backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
+
+[tools.glab.checksums]
+glab-glab-linux-aarch64 = "sha256:2aee76f3c84784ebd07e04424e71092a5bdfcbb6a22f600584253533f8054197"
+
+[tools.jq]
+version = "1.7.1"
+backend = "aqua:jqlang/jq"
+
+[tools.jq.checksums]
+jq-linux-arm64 = "sha256:4dd2d8a0661df0b22f1bb9a1f9830f06b6f3b8f7d91211a1ef5d7c4f06a8b4a5"
+
+[tools.lazydocker]
+version = "0.24.1"
+backend = "aqua:jesseduffield/lazydocker"
+
+[tools.lazydocker.checksums]
+"lazydocker_0.24.1_Linux_arm64.tar.gz" = "sha256:c38e715f2cb56440bec16e3744005522c1d13c47d2e3730572849dc69cefd8ae"
+
+[tools.lazygit]
+version = "0.52.0"
+backend = "aqua:jesseduffield/lazygit"
+
+[tools.lazygit.checksums]
+"lazygit_0.52.0_Linux_arm64.tar.gz" = "sha256:246b09c221f3b29e8e0e2828c4a74bd2bb67e61c903e0b96c05cd464c62b8765"
+
+[tools.neovim]
+version = "0.11.2"
+backend = "aqua:neovim/neovim"
+
+[tools.neovim.checksums]
+"nvim-linux-arm64.tar.gz" = "sha256:8a832289ba2a17918b7a893160fcc4b24ba87141a5a07cdbb7304d53834c0c40"
+
+[tools.node]
+version = "24.1.0"
+backend = "core:node"
+
+[tools.pnpm]
+version = "10.12.1"
+backend = "aqua:pnpm/pnpm"
+
+[tools.pnpm.checksums]
+pnpm-linux-arm64 = "sha256:c2f9e9d42d81f9f40a0f895513d014a08d5ecb0abc9e15c426ecfde6f492706b"
+
+[tools.ripgrep]
+version = "14.1.1"
+backend = "aqua:BurntSushi/ripgrep"
+
+[tools.ripgrep.checksums]
+"ripgrep-14.1.1-aarch64-unknown-linux-gnu.tar.gz" = "sha256:c827481c4ff4ea10c9dc7a4022c8de5db34a5737cb74484d62eb94a95841ab2f"
+
+[tools.tree-sitter]
+version = "0.25.3"
+backend = "aqua:tree-sitter/tree-sitter"
+
 [tools.usage]
 version = "2.1.1"
 backend = "ubi:jdx/usage"
 
 [tools.usage.checksums]
 usage-linux-aarch64 = "sha256:3634d68028c74acfba57275c370513ca84c1ace25fca7d4fd3d8b282fecb18af"
+
+[tools.uv]
+version = "0.7.12"
+backend = "aqua:astral-sh/uv"
+
+[tools.uv.checksums]
+"uv-aarch64-unknown-linux-musl.tar.gz" = "sha256:0589f6d27bbbe2e205aa6fc25e4cd28ab97e984cdba20842de8d3a00714e13e9"
+
+[tools.yazi]
+version = "25.5.31"
+backend = "aqua:sxyazi/yazi"
+
+[tools.yazi.checksums]
+"yazi-aarch64-unknown-linux-musl.zip" = "sha256:9a838ff2d028c70d4eb4c502a75fc963ad92d2e1353133f20d9f6d5cafb9c4d6"
+
+[tools.yq]
+version = "4.45.4"
+backend = "aqua:mikefarah/yq"
+
+[tools.yq.checksums]
+yq_linux_arm64 = "sha256:a02cc637409db44a9f9cb55ea92c40019582ba88083c4d930a727ec4b59ed439"
+
+[tools.zellij]
+version = "0.42.2"
+backend = "ubi:zellij-org/zellij"
+
+[tools.zellij.checksums]
+zellij-linux-aarch64 = "sha256:edc198f939b87fee165dde2773ba1818ca52a11f29a42986945aa6a8371c888e"
+
+[tools.zoxide]
+version = "0.9.8"
+backend = "ubi:ajeetdsouza/zoxide"
+
+[tools.zoxide.checksums]
+zoxide-linux-aarch64 = "sha256:1bdc1d232836c34f4f8c4228953770ee9259697d465a43dee4dd542d4f342134"
