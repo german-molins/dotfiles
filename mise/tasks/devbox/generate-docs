@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env sh
+#MISE description="Generate Devbox documentation"
 
 DEVBOX_DOCS_FILE=docs/devbox.md
 

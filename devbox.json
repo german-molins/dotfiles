@@ -1,17 +1,9 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
   "packages": [],
   "shell": {
     "init_hook": [
       "echo '=== Dotfiles development ==='"
-    ],
-    "scripts": {
-      "docs": [
-        "./scripts/generate-devbox-docs.sh"
-      ],
-      "health": [
-        "./scripts/check-health.sh"
-      ]
-    }
+    ]
   }
 }

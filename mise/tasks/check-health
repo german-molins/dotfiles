@@ -1,8 +1,8 @@
-#/bin/env sh
+#!/usr/bin/env sh
+#MISE description="Check health of dotfiles repository"
+#MISE alias="dotfiles:doctor"
 
 ###
-# Health check
-#
 # Check that this git repo has a single contributor and that its email
 # matches the personal email from chezmoi config.
 ###
