@@ -1,3 +1,4 @@
+{{ if .devbox.enabled -}}
 {{ if and (eq .chezmoi.os "linux") (eq .chezmoi.arch "arm64") -}}
 #!/bin/bash
 
@@ -15,4 +16,5 @@ fi
 
 # nix packages checksum: {{ .packages.nix | quote | sha256sum }}
 nix-env --install --attr -- nixpkgs.dotfilesPackages
+{{ end -}}
 {{ end -}}

@@ -16,7 +16,8 @@ then
 fi
 {{ end -}}
 
-{{ if eq .chezmoi.os "linux" -}}
+{{- if .devbox.enabled -}}
+  {{ if eq .chezmoi.os "linux" -}}
 if [[ ! $(command -v nix)  ]]
 then
   # Install Nix package manager in single-user mode.
@@ -28,10 +29,11 @@ then
     nix-env -iA nixpkgs.devbox
 fi
 
-{{ else if eq .chezmoi.os "darwin" }}
+  {{ else if eq .chezmoi.os "darwin" }}
 if [[ ! $(command -v devbox) ]]
 then
     # If not found, also installs Nix in multi-user mode in macOS.
     curl -fsSL https://get.jetify.com/devbox | bash -s -- --force
 fi
-{{- end }}
+  {{- end }}
+{{- end -}}
