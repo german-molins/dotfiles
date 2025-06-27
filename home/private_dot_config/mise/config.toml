@@ -36,6 +36,8 @@ zoxide = "latest"
 experimental = true
 lockfile = true
 
+[env]
+_.file = "~/.dotfiles.env"
 
 [tasks.clean]
 description = "Clean up system packages and caches"
