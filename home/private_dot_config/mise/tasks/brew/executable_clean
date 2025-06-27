@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 #MISE description="Clean up Homebrew packages and caches"
 
+if ! command -v brew >/dev/null; then
+    >&2 echo "WARNING: Homebrew not installed"
+    exit 0
+fi
+
 brew cleanup --scrub --prune=all
 rm -rf "$(brew --cache)"
 brew autoremove

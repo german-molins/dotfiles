@@ -36,13 +36,32 @@ zoxide = "latest"
 experimental = true
 lockfile = true
 
+
+[tasks.clean]
+description = "Clean up system packages and caches"
+depends = ["nix:clean", "brew:clean"]
+
+[tasks.self-update]
+depends = ["devbox:self-update", "brew:self-update"]
+
+[tasks.update]
+description = "Update all tools and packages"
+depends = [
+  "chezmoi:update",
+  "mise:update",
+  "devbox:update",
+  "yazi:update",
+  "nvim:update",
+  "brew:update",
+]
+
 [tasks."brew:update"]
 description = "Update Homebrew global packages"
-run = "brew upgrade"
+run = "command -v brew >/dev/null && brew upgrade || exit 0"
 
 [tasks."brew:self-update"]
 description = "Update Homebrew"
-run = "brew update"
+run = "command -v brew >/dev/null && brew update || exit 0"
 
 [tasks."chezmoi:update"]
 description = "Update Chezmoi"
