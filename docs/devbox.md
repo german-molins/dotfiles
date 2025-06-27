@@ -16,67 +16,30 @@ Run a script in the devbox environment:
 ```sh
 devbox run <script>
 ```
-## Scripts
-Scripts are custom commands that can be run using this project's environment. This project has the following scripts:
-
-* [brew-clean](#devbox-run-brew-clean)
-* [chezmoi-update](#devbox-run-chezmoi-update)
-* [clean](#devbox-run-clean)
-* [devbox-update](#devbox-run-devbox-update)
-* [list-nerd-fonts](#devbox-run-list-nerd-fonts)
-* [nix-clean](#devbox-run-nix-clean)
-* [nvim-sync](#devbox-run-nvim-sync)
-* [nvim-update](#devbox-run-nvim-update)
-* [update](#devbox-run-update)
-* [yazi-update](#devbox-run-yazi-update)
-
 ## Shell Init Hook
 The Shell Init Hook is a script that runs whenever the devbox environment is instantiated. It runs 
 on `devbox shell` and on `devbox run`.
 ```sh
-test -z $DEVBOX_COREPACK_ENABLED || corepack enable --install-directory "/Users/user/.local/share/chezmoi/home/dot_local/share/devbox/global/default/.devbox/virtenv/nodejs/corepack-bin/"
-test -z $DEVBOX_COREPACK_ENABLED || export PATH="/Users/user/.local/share/chezmoi/home/dot_local/share/devbox/global/default/.devbox/virtenv/nodejs/corepack-bin/:$PATH"
-echo 'Welcome to devbox!' > /dev/null
+
 ```
 
 ## Packages
 
 * [tmux@latest](https://www.nixhub.io/packages/tmux)
-* [bat@latest](https://www.nixhub.io/packages/bat)
-* [fd@latest](https://www.nixhub.io/packages/fd)
-* [fzf@latest](https://www.nixhub.io/packages/fzf)
-* [ripgrep@latest](https://www.nixhub.io/packages/ripgrep)
 * [git@latest](https://www.nixhub.io/packages/git)
-* [atuin@latest](https://www.nixhub.io/packages/atuin)
-* [gitui@latest](https://www.nixhub.io/packages/gitui)
-* [tree-sitter@latest](https://www.nixhub.io/packages/tree-sitter)
-* [neovim@latest](https://www.nixhub.io/packages/neovim)
-* [gh@latest](https://www.nixhub.io/packages/gh)
 * [aider-chat@latest](https://www.nixhub.io/packages/aider-chat)
 * [vim@latest](https://www.nixhub.io/packages/vim)
-* [uv@latest](https://www.nixhub.io/packages/uv)
 * [xsel@latest](https://www.nixhub.io/packages/xsel)
 * [rsync@latest](https://www.nixhub.io/packages/rsync)
 * [sshfs-fuse@latest](https://www.nixhub.io/packages/sshfs-fuse)
 * [rcs@latest](https://www.nixhub.io/packages/rcs)
 * [tree@latest](https://www.nixhub.io/packages/tree)
 * [readline@latest](https://www.nixhub.io/packages/readline)
-* [nodejs@latest](https://www.nixhub.io/packages/nodejs)
-* [aichat@latest](https://www.nixhub.io/packages/aichat)
-* [jq@latest](https://www.nixhub.io/packages/jq)
-* [yq@latest](https://www.nixhub.io/packages/yq)
 * [tldr@latest](https://www.nixhub.io/packages/tldr)
-* [direnv@latest](https://www.nixhub.io/packages/direnv)
 * [httpie@latest](https://www.nixhub.io/packages/httpie)
 * [git-graph@latest](https://www.nixhub.io/packages/git-graph)
-* [gh-dash@latest](https://www.nixhub.io/packages/gh-dash)
-* [uutils-coreutils-noprefix@latest](https://www.nixhub.io/packages/uutils-coreutils-noprefix)
 * [uutils-findutils@latest](https://www.nixhub.io/packages/uutils-findutils)
 * [diffutils@latest](https://www.nixhub.io/packages/diffutils)
-* [eza@latest](https://www.nixhub.io/packages/eza)
-* [duf@latest](https://www.nixhub.io/packages/duf)
-* [bottom@latest](https://www.nixhub.io/packages/bottom)
-* [dust@latest](https://www.nixhub.io/packages/dust)
 * [procs@latest](https://www.nixhub.io/packages/procs)
 * [gnugrep@latest](https://www.nixhub.io/packages/gnugrep)
 * [gnused@latest](https://www.nixhub.io/packages/gnused)
@@ -85,116 +48,23 @@ echo 'Welcome to devbox!' > /dev/null
 * [dateutils@latest](https://www.nixhub.io/packages/dateutils)
 * [tzdata@latest](https://www.nixhub.io/packages/tzdata)
 * [nerd-fonts.inconsolata@latest](https://www.nixhub.io/packages/nerd-fonts.inconsolata)
-* [zellij@latest](https://www.nixhub.io/packages/zellij)
-* [lazydocker@latest](https://www.nixhub.io/packages/lazydocker)
-* [zoxide@latest](https://www.nixhub.io/packages/zoxide)
 * [lnav@latest](https://www.nixhub.io/packages/lnav)
-* [yazi@latest](https://www.nixhub.io/packages/yazi)
 * [file@latest](https://www.nixhub.io/packages/file)
 * [p7zip@latest](https://www.nixhub.io/packages/p7zip)
-* [imagemagick@latest](https://www.nixhub.io/packages/imagemagick)
 * [xclip@latest](https://www.nixhub.io/packages/xclip)
 * [wl-clipboard@latest](https://www.nixhub.io/packages/wl-clipboard)
 * [exiftool@latest](https://www.nixhub.io/packages/exiftool)
-* [lazysql@latest](https://www.nixhub.io/packages/lazysql)
-* [zk@latest](https://www.nixhub.io/packages/zk)
 * [htop@latest](https://www.nixhub.io/packages/htop)
 * [taskwarrior-tui@latest](https://www.nixhub.io/packages/taskwarrior-tui)
 * [taskwarrior@latest](https://www.nixhub.io/packages/taskwarrior)
-* [lazygit@latest](https://www.nixhub.io/packages/lazygit)
 * [timewarrior@latest](https://www.nixhub.io/packages/timewarrior)
-* [glab@latest](https://www.nixhub.io/packages/glab)
 * [gnupg@latest](https://www.nixhub.io/packages/gnupg)
 * [gpg-tui@latest](https://www.nixhub.io/packages/gpg-tui)
 * [dos2unix@latest](https://www.nixhub.io/packages/dos2unix)
 * [dash@latest](https://www.nixhub.io/packages/dash)
 * [taskopen@latest](https://www.nixhub.io/packages/taskopen)
-
-## Script Details
-
-### devbox run brew-clean
-```sh
-echo '[dotfiles][brew] Starting Homebrew cleanup...'
-brew cleanup --scrub --prune=all
-rm -rf "$(brew --cache)"
-brew autoremove
-```
-&ensp;
-
-### devbox run chezmoi-update
-```sh
-echo '[dotfiles][chezmoi] Updating chezmoi...'
-chezmoi upgrade
-```
-&ensp;
-
-### devbox run clean
-```sh
-devbox global run nix-clean
-command -v brew >/dev/null && devbox global run brew-clean
-```
-&ensp;
-
-### devbox run devbox-update
-```sh
-echo '[dotfiles][devbox] Updating devbox...'
-devbox version update
-```
-&ensp;
-
-### devbox run list-nerd-fonts
-```sh
-fc-list | grep Nerd
-```
-&ensp;
-
-### devbox run nix-clean
-```sh
-echo '[dotfiles][devbox] Starting Nix cleanup'
-echo '[dotfiles][devbox] Deleting old generations...'
-nix-collect-garbage -d
-nix profile wipe-history --extra-experimental-features nix-command
-echo '[dotfiles][devbox] Verifying and cleaning the Nix store...'
-nix store gc
-echo '[dotfiles][devbox] Deleting Nix stale logs...'
-sudo rm -rf /nix/var/log/nix/drvs
-echo '[dotfiles][devbox] Cleanup complete.'
-```
-&ensp;
-
-### devbox run nvim-sync
-```sh
-echo '[dotfiles][nvim] Syncing Neovim plugins...'
-nvim --headless "+Lazy! sync" +qa
-```
-&ensp;
-
-### devbox run nvim-update
-```sh
-echo '[dotfiles][nvim] Updating Neovim plugins...'
-nvim --headless "+Lazy! update" +qa
-```
-&ensp;
-
-### devbox run update
-```sh
-devbox global run chezmoi-update
-devbox global run devbox-update
-echo '[dotfiles][devbox] Updating devbox packages...'
-command -v brew > /dev/null && brew update && brew upgrade
-devbox global update
-devbox global run yazi-update
-devbox global run nvim-update
-```
-&ensp;
-
-### devbox run yazi-update
-```sh
-echo '[dotfiles][yazi] Updating yazi packages...'
-ya pack --upgrade
-```
-&ensp;
-
+* [amazon-q-cli@latest](https://www.nixhub.io/packages/amazon-q-cli)
+* [imagemagick@7.1.1-47](https://www.nixhub.io/packages/imagemagick)
 
 
 <!-- gen-readme end -->
