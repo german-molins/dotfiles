@@ -1,2 +1,12 @@
 [tools]
 jq = "1.7.1"
+
+[tasks."docs:generate"]
+alias = ["docs:g", "docs:update", "docs:up"]
+depends = ["mise:generate-docs", "devbox:generate-docs"]
+
+[tasks."mise:generate-docs"]
+alias = "mise:update-docs"
+run = """
+mise generate task-docs --cd "$HOME" >docs/mise_global_tasks.md
+"""
