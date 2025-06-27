@@ -1,2 +1,6 @@
 [tools]
 usage = "latest"
+
+[settings]
+experimental = true
+lockfile = true
