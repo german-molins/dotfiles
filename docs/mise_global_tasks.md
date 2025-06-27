@@ -99,6 +99,26 @@ Sync Neovim plugins
 
 Update Neovim plugins
 
+## `python:init`
+
+- **Usage**: `python:init`
+
+Initialize a Python project with uv and pytest
+
+## `python:scaffold`
+
+- Depends: python:init, python:tasks-add
+
+- **Usage**: `python:scaffold`
+
+Scaffold a Python project with uv and pytest
+
+## `python:tasks-add`
+
+- **Usage**: `python:tasks-add`
+
+Add default tasks for a Python project with uv and pytest
+
 ## `self-update`
 
 - Depends: devbox:self-update, brew:self-update

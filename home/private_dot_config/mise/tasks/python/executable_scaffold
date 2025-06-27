@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+#MISE description="Scaffold a Python project with uv and pytest"
+#MISE dir="{{cwd}}"
+#MISE depends=["python:init", "python:tasks-add"]

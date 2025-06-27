@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+#MISE description="Initialize a Python project with uv and pytest"
+#MISE dir="{{cwd}}"
+
+mise use usage
+mise use uv
+uv init
+uv add pytest
+mise run mise:lock
