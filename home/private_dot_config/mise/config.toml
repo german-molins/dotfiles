@@ -35,3 +35,7 @@ zoxide = "latest"
 [settings]
 experimental = true
 lockfile = true
+
+[tasks.hello-world]
+description = "Say hello from a task in settings"
+run = "echo 'Hello, world!'"
