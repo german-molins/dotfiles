@@ -10,13 +10,17 @@ There are several installation options.
 
 Install as
 
-    chezmoi init german-molins
+```sh
+chezmoi init german-molins
+```
 
 ## Install with `curl`
 
 Run command
 
-    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply german-molins
+```sh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply german-molins
+```
 
 ## Installation Script
 
@@ -25,15 +29,15 @@ part of their configuration, like `devpod` or `vscode`.
 
 Clone this repo and run the installation script,
 
-    git clone https://github.com/german-molins/dotfiles.git
-    dotfiles/install.sh
+```sh
+git clone https://github.com/german-molins/dotfiles.git
+dotfiles/install.sh
+```
 
 which will install the dotfiles and move the cloned repository to the default
 `chezmoi` location.
 
 ## Main Tools And Apps
-
-### Apps
 
 These are my daily CLI drivers:
 
@@ -63,17 +67,17 @@ These are my daily CLI drivers:
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
 | [Lnav](https://lnav.org/) | `lnav` | | Logfile navigator |
 
-### Package Managers by Operating System
+## Package and Project Managers
 
 These package managers are used to install the tools and apps at the user
 level ("global"), depending on system and architecture:
 
-- `mise`: global and project package manager
-- `devbox`: global and project package manager
+- `mise`: primary global and project package manager
+- `devbox`: fallback global and project package manager
 - `nix`: system and user package manager
 - `brew`: system package manager
 
-Operating systems:
+Package Managers by operating system:
 
 - macOS (ARM and AMD):
   - `mise`: tracked lock file; multi-user
@@ -92,65 +96,140 @@ Operating systems:
 
 Their priority order is:
 
-1. `mise`: Main package and project environment manager
-2. `devbox`: Fallback for dependencies not found in `mise` or `aqua` registry.
-   Nixhub, the Devbox's registry, is way larger than any other.
+1. `mise`: Primary package and project environment manager (tasks/scripts and
+   environment variables)
+2. `devbox`: Fallback for dependencies not found in `mise` registry
+   (deprecated). Nixhub, the Devbox's registry, is way larger than any other,
+so it's kept as a fallback option for packages not available in Mise,
+particularly for macOS (darwin) where some packages like `eza`, `aichat`, and
+`pnpm` are not supported by the Mise backends.
 3. `brew` and `nix`: Used to install some user-level dependencies.
    Bootstrapping them requires sudo permissions, but once installed, the user
-can use them to install packages without sudo. `devbox` is installed by `nix`
-on Linux and bootstrapped in macOS.
+can use them to install packages without sudo.
 
-#### Mise
+### Mise
 
-`mise` is cross-platform, and is both a package and project environment manager
-(tasks/scripts and environment variables).
+`mise` is cross-platform, and is the primary tool for both package and project
+environment management (tasks/scripts and environment variables).
 
-#### Devbox
-
-`debbox` is a package manager that can instal packages globally (user level)
-and per project. It is a very convenient manager for project shell
-environments.
-
-**Global environment**
+#### Mise Global Environment
 
 For managing packages globally, e.g.
 
 ```sh
-# Installs package and updates dependencies file and lock file.
-devbox global add aider
-cd "$DEVBOX_PROJECT_ROOT"
-chezmoi add devbox.json devbox.lock
+# Installs package globally
+mise use -g fd
+# Add ~/.local/config/config.{toml,lock}
+chezmoi re-add
+```
+
+For packages available in the Aqua registry but not directly in Mise:
+
+```sh
+mise use -g aqua:organization/package@version
 ```
 
 and
 
 ```sh
-devbox global install
+mise install
 ```
 
-for installing the dependencies declared in `devbox.json` and `devbox.lock`.
+for installing the dependencies declared in `mise.toml` and `mise.lock`.
 
 Update packages as
 
 ```sh
-devbox global update
+mise upgrade
 ```
 
-**Project Environment**
+or using the mise task:
+
+```sh
+mise run mise:update
+```
+
+Lock dependencies to specific versions:
+
+```sh
+mise run mise:lock
+```
+
+#### Project Environment
 
 For managing a project, e.g.
 
 ```sh
-devbox init
-devbox add yq
-git add devbox.json devbox.lock
-git commit -m "build: add package yq"
+cd your-project
+mise use node
+mise use python@3.11
+git add mise.toml mise.lock
+git commit -m "build: add node and python dependencies"
 ```
 
-For instantiating a Devbox-managed project, simply running
+For instantiating a Mise-managed project, simply running
 
 ```sh
-devbox install
+mise install
 ```
 
-will install the dependencies declared in `devbox.json` and `devbox.lock`.
+will install the dependencies declared in `mise.toml` and `mise.lock`.
+
+#### Mise Tasks
+
+Mise also manages tasks (scripts) that can be run with:
+
+```sh
+mise run task-name
+```
+
+To see all available tasks:
+
+```sh
+# Print list
+mise tasks
+
+# Interactize fuzzy search
+mise run
+```
+
+### Devbox
+
+`devbox` is now deprecated but kept as a fallback for packages not available in
+the Mise registry, particularly for macOS (darwin) where some packages like
+`eza`, `aichat`, and `pnpm` are not available for macOS in the Mise registry
+backends.
+
+#### Devbox Global Environment
+
+For managing packages globally:
+
+```sh
+# Add a global package
+devbox global add <package>
+
+# Update global packages
+devbox global update
+```
+
+The Devbox environment is automatically activated via direnv integration, so
+there's no need to run `devbox shell` manually.
+
+#### Devbox Project Environment
+
+For managing a project with Devbox:
+
+```sh
+# Initialize a new project
+cd your-project
+devbox init
+
+# Add project dependencies
+devbox add <package>
+
+# Install project dependencies
+devbox install
+
+# Update project dependencies
+devbox update
+```

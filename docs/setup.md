@@ -64,9 +64,11 @@ devpod up . --dotfiles-script-env-file path/to/env/file
 #### With Mise
 
 It is the preferred way, as it is more efficient, clean, and does not rely on
-external dependencies like Devbox does on Direnv.
+external dependencies like Devbox does on Direnv. Mise centralizes the
+management of packages, environment variables and tasks. Mise environments
+activation, both global and per-project, is managed through a Bash init hook.
 
-### With Direnv (deprecated)
+#### With Direnv (deprecated)
 
 Shell hooks are set for `direnv` to auto-load and unload envvars found in the
 first found `.envrc` file up the `PWD` path.
