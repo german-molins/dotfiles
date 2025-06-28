@@ -85,18 +85,18 @@ backend = "aqua:sharkdp/fd"
 "fd-v10.2.0-aarch64-unknown-linux-musl.tar.gz" = "sha256:4e8e596646d047d904f2c5ca74b39dccc69978b6e1fb101094e534b0b59c1bb0"
 
 [tools.fzf]
-version = "0.62.0"
+version = "0.63.0"
 backend = "aqua:junegunn/fzf"
 
 [tools.fzf.checksums]
-"fzf-0.62.0-linux_arm64.tar.gz" = "sha256:929fd132705d02f222a52e23c076018ef3e699793dd5e8c3183bb11ed9b7696e"
+"fzf-0.63.0-darwin_arm64.tar.gz" = "sha256:2f3a1ac15ee28df1e23112bcc3eacf2d2488d1d2d0477159a4c3b21338b4ea91"
 
 [tools.gh]
-version = "2.74.1"
+version = "2.74.2"
 backend = "aqua:cli/cli"
 
 [tools.gh.checksums]
-"gh_2.74.1_linux_arm64.tar.gz" = "sha256:f71257fc489a235ef22100bd12b94334a92de741edf5c81edfc712ce0945b555"
+"gh_2.74.2_macOS_arm64.zip" = "sha256:42dceea5beae957a8a9545e38043a6d75fa3b5505fdcea75a278f873f0845b26"
 
 [tools.gitui]
 version = "0.27.0"
@@ -106,18 +106,18 @@ backend = "aqua:extrawurst/gitui"
 "gitui-linux-aarch64.tar.gz" = "sha256:56116e278c618c054e7575adf3b357504c75fa1b5a3ecb9314504d521c07a008"
 
 [tools.glab]
-version = "1.57.0"
+version = "1.61.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
 [tools.glab.checksums]
-glab-glab-linux-aarch64 = "sha256:2aee76f3c84784ebd07e04424e71092a5bdfcbb6a22f600584253533f8054197"
+glab-glab-macos-aarch64 = "sha256:c0087e1568012448e9d3bc58c78d114fd74513bb467c52c5a040b29c08604b99"
 
 [tools.jq]
-version = "1.7.1"
+version = "1.8.0"
 backend = "aqua:jqlang/jq"
 
 [tools.jq.checksums]
-jq-linux-arm64 = "sha256:4dd2d8a0661df0b22f1bb9a1f9830f06b6f3b8f7d91211a1ef5d7c4f06a8b4a5"
+jq-macos-arm64 = "sha256:aaf1efbb376d6e3eaf61f63807c32c1df519f5857dfc4f581826fa2df4b715ae"
 
 [tools.lazydocker]
 version = "0.24.1"
@@ -141,8 +141,11 @@ backend = "aqua:neovim/neovim"
 "nvim-linux-arm64.tar.gz" = "sha256:8a832289ba2a17918b7a893160fcc4b24ba87141a5a07cdbb7304d53834c0c40"
 
 [tools.node]
-version = "24.1.0"
+version = "24.3.0"
 backend = "core:node"
+
+[tools.node.checksums]
+"node-v24.3.0-darwin-arm64.tar.gz" = "sha256:fee91aa5febeda47ef9f6c0afd2f2bcd3dacb0e656c29de0b5274e0ea1ca3565"
 
 [tools.ripgrep]
 version = "14.1.1"
@@ -152,8 +155,11 @@ backend = "aqua:BurntSushi/ripgrep"
 "ripgrep-14.1.1-aarch64-unknown-linux-gnu.tar.gz" = "sha256:c827481c4ff4ea10c9dc7a4022c8de5db34a5737cb74484d62eb94a95841ab2f"
 
 [tools.tree-sitter]
-version = "0.25.3"
+version = "0.25.6"
 backend = "aqua:tree-sitter/tree-sitter"
+
+[tools.tree-sitter.checksums]
+"tree-sitter-macos-arm64.gz" = "sha256:4e6a8892b4b67eff13fc125ba8fc552d75ce02c1ed24bb634d3eb15f2d315356"
 
 [tools.usage]
 version = "2.1.1"
@@ -163,11 +169,11 @@ backend = "ubi:jdx/usage"
 usage-linux-aarch64 = "sha256:3634d68028c74acfba57275c370513ca84c1ace25fca7d4fd3d8b282fecb18af"
 
 [tools.uv]
-version = "0.7.12"
+version = "0.7.16"
 backend = "aqua:astral-sh/uv"
 
 [tools.uv.checksums]
-"uv-aarch64-unknown-linux-musl.tar.gz" = "sha256:0589f6d27bbbe2e205aa6fc25e4cd28ab97e984cdba20842de8d3a00714e13e9"
+"uv-aarch64-apple-darwin.tar.gz" = "sha256:a157919a2a615fac5de0fcef5120a63de7e6582fb6e0ae4428238af347ed1054"
 
 [tools.yazi]
 version = "25.5.31"
