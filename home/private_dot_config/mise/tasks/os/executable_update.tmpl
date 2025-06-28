@@ -1,0 +1,37 @@
+#!/usr/bin/env sh
+#MISE description="Update system packages"
+#MISE alias="distro:update"
+
+set -eu
+
+{{ if eq .chezmoi.os "darwin" -}}
+brew update && brew upgrade && brew cleanup
+
+{{- else if eq .chezmoi.os "linux" -}}
+
+{{ if eq .chezmoi.osRelease.id "ubuntu" -}}
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+
+{{ else if eq .chezmoi.osRelease.id "debian" -}}
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+
+{{ else if eq .chezmoi.osRelease.id "fedora" -}}
+sudo dnf update -y && sudo dnf autoremove -y
+
+{{ else if eq .chezmoi.osRelease.id "centos" -}}
+sudo dnf update -y && sudo dnf autoremove -y
+
+{{ else if eq .chezmoi.osRelease.id "arch" -}}
+sudo pacman -Syu --noconfirm
+
+{{ else -}}
+echo "[dotfiles] Unknown Linux distribution: {{ .chezmoi.osRelease.id }}"
+echo "[dotfiles] Please update this script to support your distribution."
+exit 1
+{{ end -}}
+
+{{ else }}
+echo "[dotfiles] Unsupported operating system: {{ .chezmoi.os }}"
+echo "[dotfiles] Please update this script to support your OS."
+exit 1
+{{ end }}

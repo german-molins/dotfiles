@@ -99,6 +99,13 @@ Sync Neovim plugins
 
 Update Neovim plugins
 
+## `os:update`
+
+- **Usage**: `os:update`
+- **Aliases**: `distro:update`
+
+Update system packages
+
 ## `python:init`
 
 - **Usage**: `python:init`
