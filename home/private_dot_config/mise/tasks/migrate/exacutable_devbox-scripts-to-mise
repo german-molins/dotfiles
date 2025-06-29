@@ -1,11 +1,12 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S usage bash
+#MISE description="Migrate Devbox scripts to Mise tasks"
 
 #######################################################################
 # Devbox Scripts to Mise Tasks Migration Script
 #######################################################################
 #
 # This script migrates scripts from Devbox global scripts to Mise tasks.
-# 
+#
 # Features:
 # - Automatically detects and processes all Devbox global scripts
 # - Properly handles both script formats in devbox.json:
@@ -116,7 +117,7 @@ for script_name in $SCRIPT_NAMES; do
 
     # Check if script is defined as a string or an array
     script_type=$(jq -r "if .shell.scripts.\"$script_name\" | type == \"string\" then \"string\" else \"array\" end" "$DEVBOX_CONFIG_PATH")
-    
+
     if [ "$script_type" = "string" ]; then
         # Handle single-line script defined as a string
         script_content=$(jq -r ".shell.scripts.\"$script_name\"" "$DEVBOX_CONFIG_PATH")
@@ -173,7 +174,7 @@ for script_name in $SCRIPT_NAMES; do
 
     # Remove the script from devbox.json
     log_info "  Removing script from Devbox global configuration..."
-    jq "del(.shell.scripts.\"$script_name\")" "$DEVBOX_CONFIG_PATH" > "$DEVBOX_CONFIG_PATH.tmp" && mv "$DEVBOX_CONFIG_PATH.tmp" "$DEVBOX_CONFIG_PATH"
+    jq "del(.shell.scripts.\"$script_name\")" "$DEVBOX_CONFIG_PATH" >"$DEVBOX_CONFIG_PATH.tmp" && mv "$DEVBOX_CONFIG_PATH.tmp" "$DEVBOX_CONFIG_PATH"
     log_info "  Successfully removed script from Devbox global configuration"
 
     update_stat "migrated_scripts"
