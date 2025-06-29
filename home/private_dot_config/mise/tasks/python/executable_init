@@ -7,3 +7,5 @@ mise use uv
 uv init
 uv add pytest
 mise run mise:lock
+
+mise config set "settings.python.uv_venv_auto" "true"
