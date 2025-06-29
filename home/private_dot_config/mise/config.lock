@@ -42,6 +42,13 @@ backend = "aqua:ClementTsang/bottom"
 [tools.bottom.checksums]
 "bottom_aarch64-unknown-linux-musl.tar.gz" = "sha256:6ac953d3d95d06aa1864c85ba99bdca2e9d9b8f1ff0619213c980714b1a641f7"
 
+[tools.chezmoi]
+version = "2.62.7"
+backend = "ubi:twpayne/chezmoi"
+
+[tools.chezmoi.checksums]
+chezmoi-macos-aarch64 = "sha256:79c55c3f37ebf7ef7cec162e348e00618965b83dcad764a8a9258276bb1dbebe"
+
 [tools.coreutils]
 version = "0.1.0"
 backend = "aqua:uutils/coreutils"

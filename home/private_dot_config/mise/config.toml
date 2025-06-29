@@ -5,6 +5,7 @@
 "aqua:zk-org/zk" = "latest"
 bat = "latest"
 bottom = "latest"
+chezmoi = "latest"
 coreutils = "latest"
 direnv = "latest"
 dua = "latest"
