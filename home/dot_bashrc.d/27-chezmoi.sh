@@ -1,0 +1,1 @@
+eval "$(chezmoi completion bash)"
