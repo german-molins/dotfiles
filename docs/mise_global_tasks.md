@@ -130,6 +130,28 @@ Commit changes after scaffolding
 
 Add default tasks for a Python project with uv and pytest
 
+## `scaffold`
+
+- **Usage**: `scaffold <project> <SUBCOMMAND>`
+
+Scaffold a project
+
+### Arguments
+
+#### `<project>`
+
+Project type
+
+**Choices:**
+
+- `python`
+
+### `scaffold help`
+
+- **Usage**: `scaffold help`
+
+Show this help message
+
 ## `self-update`
 
 - Depends: devbox:self-update, brew:self-update

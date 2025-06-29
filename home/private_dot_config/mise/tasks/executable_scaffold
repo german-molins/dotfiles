@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#MISE description="Scaffold a project"
+#MISE dir="{{cwd}}"
+#USAGE arg "<project>" help="Project type" {
+#USAGE   choices "python"
+#USAGE }
+
+if [ "$usage_project" = python ]; then
+    mise run python:scaffold
+fi
