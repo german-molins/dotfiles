@@ -112,6 +112,13 @@ backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 [tools.glab.checksums]
 glab-glab-macos-aarch64 = "sha256:c0087e1568012448e9d3bc58c78d114fd74513bb467c52c5a040b29c08604b99"
 
+[tools.hyperfine]
+version = "1.19.0"
+backend = "aqua:sharkdp/hyperfine"
+
+[tools.hyperfine.checksums]
+"hyperfine-v1.19.0-x86_64-apple-darwin.tar.gz" = "sha256:80ad420c0a9a5d090f6ca0ddc9305a139d57ba6b6e8e7adf22c800389baf3ab6"
+
 [tools.jq]
 version = "1.8.0"
 backend = "aqua:jqlang/jq"
