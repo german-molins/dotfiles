@@ -48,6 +48,7 @@ These are my daily CLI drivers:
 | [Devbox](https://www.jetpack.io/devbox/) | `devbox` | | Global and project package manager |
 | [Alacritty](https://alacritty.org/) / [Kitty](https://sw.kovidgoyal.net/kitty/) | `alacritty` / `kitty` | | Terminal emulator |
 | [Bash](https://devdocs.io/bash/) | `bash` | | Interactive shell |
+| [Usage](https://devdocs.io/bash/) | `usage` | | Polyglot script CLI manager |
 | [Devpod](https://devpod.sh/) | `devpod` | | Devcontainer manager |
 | [Zellij](https://zellij.dev/) / [Tmux](https://github.com/tmux/tmux) | `zellij` / `tmux` | | Terminal workspaces / multiplexer |
 | [Zoxide](https://github.com/ajeetdsouza/zoxide) | `zoxide`, `cd`, `cdi` | | Smarter `cd` |
