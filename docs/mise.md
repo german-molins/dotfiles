@@ -60,3 +60,19 @@ Helper scripts available for migration:
 compatibility and availability
 - `migrate-devbox-scripts-to-mise.sh`: Converts Devbox scripts to Mise tasks,
 handling both simple and complex scripts
+
+## Tasks
+
+### Integration with Usage
+
+From [Usage documentation](https://usage.jdx.dev/cli/scripts),
+
+> Scripts can be used with the Usage CLI to display help, powerful arg parsing,
+> and autocompletion in any language.
+
+Tasks that specify their CLI with Usage don't need to have the `usage` runtime
+(or shebang `#!/bin/usr/env -S usage bash` for file tasks) for arg parsing,
+completion and tasks docs generation to work, since `mise` already integrates
+`usage`. This is convenient to prevent syntax highlighting, since the `usage`
+shebang breaks it. However, it is necessary for standalone Usage scripts not
+managed by `mise` directly as tasks.
