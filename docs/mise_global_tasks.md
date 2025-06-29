@@ -114,11 +114,15 @@ Initialize a Python project with uv and pytest
 
 ## `python:scaffold`
 
-- Depends: python:init, python:tasks-add
-
-- **Usage**: `python:scaffold`
+- **Usage**: `python:scaffold [--commit]`
 
 Scaffold a Python project with uv and pytest
+
+### Flags
+
+#### `--commit`
+
+Commit changes after scaffolding
 
 ## `python:tasks-add`
 

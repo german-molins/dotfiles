@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 #MISE description="Add default tasks for a Python project with uv and pytest"
 #MISE dir="{{cwd}}"
-#MISE wait_for=["python:init"]
 
 mise tasks add "install" \
     --description "Install dependencies" \
