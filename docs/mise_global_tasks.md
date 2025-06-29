@@ -101,10 +101,16 @@ Update Neovim plugins
 
 ## `os:update`
 
-- **Usage**: `os:update`
+- **Usage**: `os:update [--clean]`
 - **Aliases**: `distro:update`
 
 Update system packages
+
+### Flags
+
+#### `--clean`
+
+Clean up after update
 
 ## `python:init`
 
