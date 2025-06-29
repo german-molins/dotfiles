@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env -S usage bash
+#USAGE about "Migrate from Devbox global packages to Mise"
+#USAGE flag "--accept-other-versions" help="Accept different versions if exact version not available in Mise registry"
 
 ##
 # Script to migrate from Devbox global packages to Mise
@@ -8,16 +10,6 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
-
-# Parse command line arguments
-accept_other_versions=false
-while [[ "$#" -gt 0 ]]; do
-    case $1 in
-        --accept-other-versions) accept_other_versions=true ;;
-        *) echo "Unknown parameter: $1"; exit 1 ;;
-    esac
-    shift
-done
 
 log_info()
 {
@@ -58,7 +50,7 @@ if [ -z "$devbox_packages" ]; then
 fi
 
 stats_file=$(mktemp --suffix=.json)
-cat > "$stats_file" << EOF
+cat >"$stats_file" <<EOF
 {
   "total_packages": 0,
   "migrated_packages": 0,
@@ -76,21 +68,23 @@ cat > "$stats_file" << EOF
 }
 EOF
 
-update_stat() {
+update_stat()
+{
     local key=$1
     local value=$(jq ".$key" "$stats_file")
     value=$((value + 1))
-    jq ".$key = $value" "$stats_file" > "${stats_file}.tmp" && mv "${stats_file}.tmp" "$stats_file"
+    jq ".$key = $value" "$stats_file" >"${stats_file}.tmp" && mv "${stats_file}.tmp" "$stats_file"
 }
 
-add_package_to_list() {
+add_package_to_list()
+{
     local list_name=$1
     local package_name=$2
     local version_info=$3
-    
+
     # Add package with version info to the appropriate list
     local package_entry="\"$package_name@$version_info\""
-    jq ".package_lists.$list_name += [$package_entry]" "$stats_file" > "${stats_file}.tmp" && mv "${stats_file}.tmp" "$stats_file"
+    jq ".package_lists.$list_name += [$package_entry]" "$stats_file" >"${stats_file}.tmp" && mv "${stats_file}.tmp" "$stats_file"
 }
 
 while read -r line; do
@@ -114,11 +108,11 @@ while read -r line; do
         if mise use -g "$package_name@$actual_version" &>/dev/null; then
             log_info "Successfully installed $package_name@$actual_version with mise"
             install_success=true
-        elif [ "$accept_other_versions" = true ]; then
+        elif [ "$usage_accept_other_versions" = true ]; then
             log_warning "Exact version $actual_version not found. Installing latest available version..."
             if mise use -g "$package_name" &>/dev/null; then
                 installed_version=$(mise list "$package_name" | grep -oP '(?<=\s)\S+$')
-                
+
                 if [ "$installed_version" != "$actual_version" ]; then
                     if [[ "$installed_version" > "$actual_version" ]]; then
                         log_warning "Upgraded: $package_name from $actual_version to $installed_version"
