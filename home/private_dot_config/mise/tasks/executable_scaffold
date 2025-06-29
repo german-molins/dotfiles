@@ -4,7 +4,13 @@
 #USAGE arg "<project>" help="Project type" {
 #USAGE   choices "python"
 #USAGE }
+#USAGE flag "--commit" help="Commit changes after scaffolding"
 
 if [ "$usage_project" = python ]; then
     mise run python:scaffold
+fi
+
+if [ "$usage_commit" = "true" ]; then
+    git add -A
+    git commit -m "build: Scaffold Python project with uv and pytest"
 fi

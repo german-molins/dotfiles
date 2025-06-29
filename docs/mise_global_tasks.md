@@ -114,15 +114,9 @@ Initialize a Python project with uv and pytest
 
 ## `python:scaffold`
 
-- **Usage**: `python:scaffold [--commit]`
+- **Usage**: `python:scaffold`
 
 Scaffold a Python project with uv and pytest
-
-### Flags
-
-#### `--commit`
-
-Commit changes after scaffolding
 
 ## `python:tasks-add`
 
@@ -132,7 +126,7 @@ Add default tasks for a Python project with uv and pytest
 
 ## `scaffold`
 
-- **Usage**: `scaffold <project> <SUBCOMMAND>`
+- **Usage**: `scaffold [--commit] <project>`
 
 Scaffold a project
 
@@ -146,11 +140,11 @@ Project type
 
 - `python`
 
-### `scaffold help`
+### Flags
 
-- **Usage**: `scaffold help`
+#### `--commit`
 
-Show this help message
+Commit changes after scaffolding
 
 ## `self-update`
 
