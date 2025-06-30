@@ -38,7 +38,7 @@ always_keep_download = true
 idiomatic_version_file_enable_tools = []
 
 [env]
-_.file = "~/.dotfiles.env"
+_.file = ["~/.dotfiles.env", "~/.env"]
 
 [tasks.clean]
 description = "Clean up system packages and caches"
