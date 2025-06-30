@@ -166,6 +166,18 @@ Commit changes after scaffolding
 
 Update all tools and packages
 
+## `upt`
+
+- **Usage**: `upt [cmd]…`
+
+Install system packages with upt
+
+### Arguments
+
+#### `[cmd]…`
+
+Command to run with upt
+
 ## `yazi:install`
 
 - **Usage**: `yazi:install`

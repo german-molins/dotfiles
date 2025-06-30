@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#MISE description="Install system packages with upt"
+#USAGE arg "<cmd>..." default="" help="Command to run with upt"
+
+cmd="$(which upt) $usage_cmd"
+
+{{ if ne .chezmoi.os "darwin" }}
+cmd="sudo $cmd"
+{{ end -}}
+
+eval "$cmd"
