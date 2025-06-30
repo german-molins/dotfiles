@@ -2,6 +2,15 @@
 
 Germán Molins' dotfiles, managed with [`chezmoi`](https://github.com/twpayne/chezmoi).
 
+## About
+
+The main goal of this project is to provide a state-as-code, fully reproducible
+platform-independent PDE (personal development environment). This is achieved
+by using this tool set:
+
+- Dotfiles manager with templating support: Chezmoi
+- Cross-platform package managers: Mise-In-Place, Devbox, UPT
+
 ## Installation
 
 There are several installation options.
