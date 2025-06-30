@@ -175,6 +175,13 @@ backend = "aqua:tree-sitter/tree-sitter"
 [tools.tree-sitter.checksums]
 "tree-sitter-macos-arm64.gz" = "sha256:4e6a8892b4b67eff13fc125ba8fc552d75ce02c1ed24bb634d3eb15f2d315356"
 
+[tools.upt]
+version = "0.9.0"
+backend = "ubi:sigoden/upt"
+
+[tools.upt.checksums]
+upt-macos-aarch64 = "sha256:956038a27363d1189ac5042b4afc784b88f5828257d29de12dcbcd19d340b475"
+
 [tools.usage]
 version = "2.1.1"
 backend = "ubi:jdx/usage"

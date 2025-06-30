@@ -46,6 +46,7 @@ These are my daily CLI drivers:
 | [Chezmoi](https://www.chezmoi.io/) | `chezmoi` | | Dotfiles manager |
 | [Mise](https://mise.jdx.dev/) | `mise` | | Global and project package manager |
 | [Devbox](https://www.jetpack.io/devbox/) | `devbox` | | Global and project package manager |
+| [UPT](https://github.com/sigoden/upt) | `upt` | | Cross-platform system package manager|
 | [Alacritty](https://alacritty.org/) / [Kitty](https://sw.kovidgoyal.net/kitty/) | `alacritty` / `kitty` | | Terminal emulator |
 | [Bash](https://devdocs.io/bash/) | `bash` | | Interactive shell |
 | [Usage](https://devdocs.io/bash/) | `usage` | | Polyglot script CLI manager |
