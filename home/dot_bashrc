@@ -9,21 +9,7 @@ where ()
 	EOF
 }
 
-for file in ~/.bashrc.d/*.sh
-do
-	if [ -r "$file" ]
-	then
-		source "$file"
-	fi
-done
-unset file
-
-if [ -r /etc/bash_completion ] && ! shopt -oq posix
-then
-    source /etc/bash_completion
-fi
-
-### Envvars ### 
+### Env vars ### 
 
 # Configure ls colors
 if [ -x /usr/bin/dircolors ]; then
@@ -62,6 +48,22 @@ shopt -s checkwinsize
 
 set -o noclobber
 set -o vi
+
+### Sourcing ###
+
+for file in ~/.bashrc.d/*.sh
+do
+	if [ -r "$file" ]
+	then
+		source "$file"
+	fi
+done
+unset file
+
+if [ -r /etc/bash_completion ] && ! shopt -oq posix
+then
+    source /etc/bash_completion
+fi
 
 ###
 
