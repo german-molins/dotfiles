@@ -2,5 +2,7 @@
 #MISE description="Reinstall Neovim plugins"
 
 rm -rf ~/.local/share/nvim/
-rm ~/.config/nvim/lazy-lock.json
+rm -r ~/.config/nvim/
+chezmoi apply --force ~/.config/nvim/
+
 mise run nvim:install
