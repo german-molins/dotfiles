@@ -1,3 +1,0 @@
-[submodule "home/external_dot_vim"]
-	path = home/external_dot_vim
-	url = https://github.com/german-molins/dotvim.git

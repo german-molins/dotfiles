@@ -1,0 +1,6 @@
+All scripts under this dir (recursive) are intended to be "sourced" by vimrc,
+as in
+
+	runtime! vimrc.d/**/*.vim
+
+The setting runtimepath will find this dir under ~/.vim/.
