@@ -66,7 +66,6 @@ on `devbox shell` and on `devbox run`.
 * [imagemagick@7.1.1-47](https://www.nixhub.io/packages/imagemagick)
 * [aichat@0.29.0](https://www.nixhub.io/packages/aichat)
 * [pnpm@10.12.1](https://www.nixhub.io/packages/pnpm)
-* [eza@0.21.4](https://www.nixhub.io/packages/eza)
 
 
 <!-- gen-readme end -->

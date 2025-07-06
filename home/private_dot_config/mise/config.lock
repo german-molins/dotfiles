@@ -27,6 +27,10 @@ backend = "aqua:zk-org/zk"
 [tools."aqua:zk-org/zk".checksums]
 "zk-v0.15.1-linux-arm64.tar.gz" = "sha256:19460e19e3389220015aa98ca849449d9c739ffd6f45c1935b0cd2d149424ce5"
 
+[tools."asdf:mise-plugins/mise-eza"]
+version = "0.21.4"
+backend = "asdf:mise-plugins/mise-eza"
+
 [tools.bat]
 version = "0.25.0"
 backend = "ubi:sharkdp/bat"
