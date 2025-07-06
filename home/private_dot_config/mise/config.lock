@@ -75,7 +75,7 @@ version = "1.19.0"
 backend = "aqua:sharkdp/hyperfine"
 
 [tools.jq]
-version = "1.8.0"
+version = "1.8.1"
 backend = "aqua:jqlang/jq"
 
 [tools.lazydocker]
