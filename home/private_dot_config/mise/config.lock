@@ -165,6 +165,13 @@ backend = "core:node"
 [tools.node.checksums]
 "node-v24.3.0-darwin-arm64.tar.gz" = "sha256:fee91aa5febeda47ef9f6c0afd2f2bcd3dacb0e656c29de0b5274e0ea1ca3565"
 
+[tools.pnpm]
+version = "10.12.1"
+backend = "aqua:pnpm/pnpm"
+
+[tools.pnpm.checksums]
+pnpm-linux-x64 = "sha256:eb2dc1f109bca046ce734d062c8dd8f34db2b58a115992f9b086456efd7b2305"
+
 [tools.ripgrep]
 version = "14.1.1"
 backend = "aqua:BurntSushi/ripgrep"
