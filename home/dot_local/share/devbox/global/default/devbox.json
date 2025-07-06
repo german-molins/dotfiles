@@ -48,7 +48,7 @@
       "version":            "latest",
       "excluded_platforms": ["aarch64-darwin", "x86_64-darwin"]
     },
-    "imagemagick": "7.1.1-47",
-    "aichat":      "0.29.0"
+    "imagemagick": "latest",
+    "aichat":      "latest"
   }
 }
