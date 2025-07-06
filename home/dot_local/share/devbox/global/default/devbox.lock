@@ -1,7 +1,7 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "aichat@0.29.0": {
+    "aichat@latest": {
       "last_modified": "2025-06-20T02:24:11Z",
       "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#aichat",
       "source": "devbox-search",
@@ -50,94 +50,114 @@
       }
     },
     "aider-chat@latest": {
-      "last_modified": "2025-06-24T02:18:21Z",
-      "resolved": "github:NixOS/nixpkgs/69dfebb3d175bde602f612915c5576a41b18486b#aider-chat",
+      "last_modified": "2025-07-02T16:07:57Z",
+      "resolved": "github:NixOS/nixpkgs/b32441ec0fae600e647cf4e6d6c245286a583106#aider-chat",
       "source": "devbox-search",
-      "version": "0.84.0",
+      "version": "0.85.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/6lnz5lvxl2j23anr15vqcpwca90ff1g5-python3.12-aider-chat-0.84.0",
+              "path": "/nix/store/vvrxd6vjzbrx0yh0q37mhj16bbn9784f-python3.12-aider-chat-0.85.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/ckq9479wx0pixzrkxy2fdzyr4ld6xayj-python3.12-aider-chat-0.84.0-dist"
+              "path": "/nix/store/y37yvhdqlaqin2qa0wl1h42mkr59fs3l-python3.12-aider-chat-0.85.0-dist"
             }
           ],
-          "store_path": "/nix/store/6lnz5lvxl2j23anr15vqcpwca90ff1g5-python3.12-aider-chat-0.84.0"
+          "store_path": "/nix/store/vvrxd6vjzbrx0yh0q37mhj16bbn9784f-python3.12-aider-chat-0.85.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/kl71jwqy48vph0rqnpba58n7ixqw4bga-python3.12-aider-chat-0.84.0",
+              "path": "/nix/store/vlr3bqs6fcinajcsbr6ydgzb2pzxmisk-python3.12-aider-chat-0.85.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/6hsqjcw7dv8p68kf7rv6zl2zrrpa3nsk-python3.12-aider-chat-0.84.0-dist"
+              "path": "/nix/store/zgz0c6bvdy1l7bdwv79z5q7fxyh14rhk-python3.12-aider-chat-0.85.0-dist"
             }
           ],
-          "store_path": "/nix/store/kl71jwqy48vph0rqnpba58n7ixqw4bga-python3.12-aider-chat-0.84.0"
+          "store_path": "/nix/store/vlr3bqs6fcinajcsbr6ydgzb2pzxmisk-python3.12-aider-chat-0.85.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/zbmgwlibsswz7yzxjq8apyds87l8m73q-python3.12-aider-chat-0.84.0",
+              "path": "/nix/store/rw2h64zyng5mcvs7f9vjhcgvri7lm6rk-python3.12-aider-chat-0.85.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/nifzw0fd12py6hhk8bk7lc4b3pd4g5hn-python3.12-aider-chat-0.84.0-dist"
+              "path": "/nix/store/9r9dv9zcbwfnwi1ibdqb0kadc2qg0czw-python3.12-aider-chat-0.85.0-dist"
             }
           ],
-          "store_path": "/nix/store/zbmgwlibsswz7yzxjq8apyds87l8m73q-python3.12-aider-chat-0.84.0"
+          "store_path": "/nix/store/rw2h64zyng5mcvs7f9vjhcgvri7lm6rk-python3.12-aider-chat-0.85.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/i4zkv502r6crh666vfnkld1pa607skxa-python3.12-aider-chat-0.84.0",
+              "path": "/nix/store/pknh146x6kc4nb111xy4fpzls8agfv1b-python3.12-aider-chat-0.85.0",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/p8agvvp9mi0m735nd7263b1bfrvlk4zf-python3.12-aider-chat-0.84.0-dist"
+              "path": "/nix/store/f3cnfn6vd84cy3g8y6pmkvqc43cxvirb-python3.12-aider-chat-0.85.0-dist"
             }
           ],
-          "store_path": "/nix/store/i4zkv502r6crh666vfnkld1pa607skxa-python3.12-aider-chat-0.84.0"
+          "store_path": "/nix/store/pknh146x6kc4nb111xy4fpzls8agfv1b-python3.12-aider-chat-0.85.0"
         }
       }
     },
     "amazon-q-cli@latest": {
-      "last_modified": "2025-06-24T02:18:21Z",
-      "resolved": "github:NixOS/nixpkgs/69dfebb3d175bde602f612915c5576a41b18486b#amazon-q-cli",
+      "last_modified": "2025-06-27T03:16:46Z",
+      "resolved": "github:NixOS/nixpkgs/80d50fc87924c2a0d346372d242c27973cf8cdbf#amazon-q-cli",
       "source": "devbox-search",
       "version": "1.12.1",
       "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2li85h0dg0qzy6s5z8dgyz4zy307501p-amazon-q-cli-1.12.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2li85h0dg0qzy6s5z8dgyz4zy307501p-amazon-q-cli-1.12.1"
+        },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/x1vdk5mmj5xbx3mg59gpqf59jwl9j19n-amazon-q-cli-1.12.1",
+              "path": "/nix/store/6hah7zcw7h8qy0fn9bvldrs5ll3kzh6i-amazon-q-cli-1.12.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/x1vdk5mmj5xbx3mg59gpqf59jwl9j19n-amazon-q-cli-1.12.1"
+          "store_path": "/nix/store/6hah7zcw7h8qy0fn9bvldrs5ll3kzh6i-amazon-q-cli-1.12.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4w2i2bc9sdajls013snd8ly82i65rai6-amazon-q-cli-1.12.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4w2i2bc9sdajls013snd8ly82i65rai6-amazon-q-cli-1.12.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/bycj5bgl9xs7zshrbj5nncr218cf988i-amazon-q-cli-1.12.1",
+              "path": "/nix/store/ga41spr8vz9lxsgpap4qaqmjdswhwizh-amazon-q-cli-1.12.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/bycj5bgl9xs7zshrbj5nncr218cf988i-amazon-q-cli-1.12.1"
+          "store_path": "/nix/store/ga41spr8vz9lxsgpap4qaqmjdswhwizh-amazon-q-cli-1.12.1"
         }
       }
     },
@@ -682,8 +702,8 @@
       }
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-06-27T03:16:46Z",
-      "resolved": "github:NixOS/nixpkgs/80d50fc87924c2a0d346372d242c27973cf8cdbf?lastModified=1750994206&narHash=sha256-3u6rEbIX9CN%2F5A5%2Fmc3u0wIO1geZ0EhjvPBXmRDHqWM%3D"
+      "last_modified": "2025-07-06T07:15:37Z",
+      "resolved": "github:NixOS/nixpkgs/ceb24d94c6feaa4e8737a8e2bd3cf71c3a7eaaa0?lastModified=1751786137&narHash=sha256-lIlUKVGCGsh0Q2EA7%2F6xRtKUZjaQ%2Fur8uUyY%2BMynHXQ%3D"
     },
     "gnugrep@latest": {
       "last_modified": "2025-06-20T02:24:11Z",
@@ -1021,9 +1041,9 @@
         }
       }
     },
-    "imagemagick@7.1.1-47": {
-      "last_modified": "2025-06-20T02:24:11Z",
-      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#imagemagick",
+    "imagemagick@latest": {
+      "last_modified": "2025-07-02T16:07:57Z",
+      "resolved": "github:NixOS/nixpkgs/b32441ec0fae600e647cf4e6d6c245286a583106#imagemagick",
       "source": "devbox-search",
       "version": "7.1.1-47",
       "systems": {
@@ -1071,12 +1091,12 @@
               "default": true
             },
             {
-              "name": "dev",
-              "path": "/nix/store/7yqlrkfapcw2da81aywnia7x3k2y27i0-imagemagick-7.1.1-47-dev"
-            },
-            {
               "name": "doc",
               "path": "/nix/store/dv1x6pzqa8bk2gmnaq00nk6klhjpzkcc-imagemagick-7.1.1-47-doc"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/7yqlrkfapcw2da81aywnia7x3k2y27i0-imagemagick-7.1.1-47-dev"
             }
           ],
           "store_path": "/nix/store/hydd07w5m5k3crqp9gyw6k4gv5ila0x4-imagemagick-7.1.1-47"
@@ -1089,12 +1109,12 @@
               "default": true
             },
             {
-              "name": "dev",
-              "path": "/nix/store/c1na7xdwr8yd7vr91sqpl6avi0fqz8rf-imagemagick-7.1.1-47-dev"
-            },
-            {
               "name": "doc",
               "path": "/nix/store/hwl4bx329n402h935qls985jyxwppsry-imagemagick-7.1.1-47-doc"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/c1na7xdwr8yd7vr91sqpl6avi0fqz8rf-imagemagick-7.1.1-47-dev"
             }
           ],
           "store_path": "/nix/store/3rvn3p974bi9llyfr1sjrg02911l52b7-imagemagick-7.1.1-47"
@@ -1206,8 +1226,8 @@
       }
     },
     "p7zip@latest": {
-      "last_modified": "2025-06-25T00:36:27Z",
-      "resolved": "github:NixOS/nixpkgs/992f916556fcfaa94451ebc7fc6e396134bbf5b1#p7zip",
+      "last_modified": "2025-06-29T07:09:35Z",
+      "resolved": "github:NixOS/nixpkgs/a48741b083d4f36dd79abd9f760c84da6b4dc0e5#p7zip",
       "source": "devbox-search",
       "version": "17.06",
       "systems": {
@@ -1293,12 +1313,12 @@
               "default": true
             },
             {
-              "name": "lib",
-              "path": "/nix/store/kh9s9yygr7gcczlngvah9l7jcf4cn4z9-p7zip-17.06-lib"
-            },
-            {
               "name": "doc",
               "path": "/nix/store/ap5dr2801ai6326vgy1qrizlr7nvbi2l-p7zip-17.06-doc"
+            },
+            {
+              "name": "lib",
+              "path": "/nix/store/kh9s9yygr7gcczlngvah9l7jcf4cn4z9-p7zip-17.06-lib"
             }
           ],
           "store_path": "/nix/store/a1zpcnk5lm2cdbd7h2x64wajrwmacp81-p7zip-17.06"
@@ -1439,8 +1459,8 @@
       }
     },
     "readline@latest": {
-      "last_modified": "2025-06-24T02:18:21Z",
-      "resolved": "github:NixOS/nixpkgs/69dfebb3d175bde602f612915c5576a41b18486b#readline",
+      "last_modified": "2025-07-02T23:15:33Z",
+      "resolved": "github:NixOS/nixpkgs/d55716bb59b91ae9d1ced4b1ccdea7a442ecbfdb#readline",
       "source": "devbox-search",
       "version": "8.2p13",
       "systems": {
@@ -1538,16 +1558,16 @@
               "default": true
             },
             {
-              "name": "dev",
-              "path": "/nix/store/vz9aw3qw639i2qgaj8dpz524kwiy0g8q-readline-8.2p13-dev"
-            },
-            {
               "name": "doc",
               "path": "/nix/store/wrha4rba839y54bkwklgk7a5ji3mgnab-readline-8.2p13-doc"
             },
             {
               "name": "info",
               "path": "/nix/store/5hq9vx9gvhrny7rd3kwdka0yggdc6fzd-readline-8.2p13-info"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/vz9aw3qw639i2qgaj8dpz524kwiy0g8q-readline-8.2p13-dev"
             }
           ],
           "store_path": "/nix/store/zl2k2ayhk22q2s6pvgm7qb8f07zzhq6p-readline-8.2p13"
