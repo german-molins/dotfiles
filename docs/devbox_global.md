@@ -28,7 +28,6 @@ on `devbox shell` and on `devbox run`.
 * [tmux@latest](https://www.nixhub.io/packages/tmux)
 * [git@latest](https://www.nixhub.io/packages/git)
 * [aider-chat@latest](https://www.nixhub.io/packages/aider-chat)
-* [vim@latest](https://www.nixhub.io/packages/vim)
 * [xsel@latest](https://www.nixhub.io/packages/xsel)
 * [rsync@latest](https://www.nixhub.io/packages/rsync)
 * [sshfs-fuse@latest](https://www.nixhub.io/packages/sshfs-fuse)

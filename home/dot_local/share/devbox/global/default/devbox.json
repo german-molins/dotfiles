@@ -4,7 +4,6 @@
     "tmux":       "latest",
     "git":        "latest",
     "aider-chat": "latest",
-    "vim":        "latest",
     "xsel":       "latest",
     "rsync":      "latest",
     "sshfs-fuse": "latest",
