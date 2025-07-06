@@ -7,18 +7,20 @@ backend = "aqua:atuinsh/atuin"
 "atuin-aarch64-unknown-linux-musl.tar.gz" = "sha256:42b7d9bde8bf2d04832c1b2ceea1d3d89ecd762a40623d92a7197d2287fff82b"
 
 [tools."aqua:dlvhdr/gh-dash"]
-version = "4.16.0"
+version = "4.16.1"
 backend = "aqua:dlvhdr/gh-dash"
 
 [tools."aqua:dlvhdr/gh-dash".checksums]
 "gh-dash_v4.16.0_darwin-arm64" = "sha256:5ea74565e168484e573e82aced56893ae7fc1f8cd7feddb5665cf3d5671351c6"
+"gh-dash_v4.16.1_linux-amd64" = "sha256:2e68b59c129e01678477f6e63d07021d0e98c1a654de5dacfc94ae114fc49bff"
 
 [tools."aqua:jorgerojas26/lazysql"]
-version = "0.3.7"
+version = "0.3.8"
 backend = "aqua:jorgerojas26/lazysql"
 
 [tools."aqua:jorgerojas26/lazysql".checksums]
 "lazysql_Darwin_arm64.tar.gz" = "sha256:32227b48bb7a6ce57a52334810a91464d317c70de7bd66926832842827647028"
+"lazysql_Linux_x86_64.tar.gz" = "sha256:d01a9b188face5724bc8bdd9d4447b82f593bdd902c7ab265f499bac16604612"
 
 [tools."aqua:zk-org/zk"]
 version = "0.15.1"
@@ -61,10 +63,11 @@ backend = "aqua:uutils/coreutils"
 "coreutils-0.1.0-aarch64-unknown-linux-musl.tar.gz" = "sha256:6572292ee74bb6a7efa88f05d0d0a7a5c696bae0ae341a438b983ae7775c9d47"
 
 [tools.direnv]
-version = "2.36.0"
+version = "2.37.0"
 backend = "aqua:direnv/direnv"
 
 [tools.direnv.checksums]
+"direnv.linux-amd64" = "sha256:2d97ce8832569ca0975cddb49c5625483b1eea22d01ffc7d9c87a2c92bf6e9e5"
 "direnv.linux-arm64" = "sha256:c00a71cdb6ebb28e8232e70a7147dfab40c6f694406729c2d0430bdba79fce10"
 
 [tools.dua]
@@ -82,11 +85,12 @@ backend = "aqua:muesli/duf"
 "duf_0.8.1_linux_arm64.tar.gz" = "sha256:66d304427bb30e5766e66e740394b0b07bd852b64cc5cda755eab33adf853e72"
 
 [tools.dust]
-version = "1.2.1"
+version = "1.2.2"
 backend = "ubi:bootandy/dust"
 
 [tools.dust.checksums]
 dust-linux-aarch64 = "sha256:2545abb9112315c4323ea9d3b9db5efadfc99e893c661a6dd1e8da474ff4e973"
+dust-linux-x86_64 = "sha256:1e0b2c51756d83a49fe2ce2e15feed3019bf09b7e15a3f6235e176c7d7531d0f"
 
 [tools.fd]
 version = "10.2.0"
@@ -135,6 +139,7 @@ version = "1.8.0"
 backend = "aqua:jqlang/jq"
 
 [tools.jq.checksums]
+jq-linux-amd64 = "sha256:8926c33326111bcd67a47a970b5a5db933ef9194ad925994934c639c76a0605c"
 jq-macos-arm64 = "sha256:aaf1efbb376d6e3eaf61f63807c32c1df519f5857dfc4f581826fa2df4b715ae"
 
 [tools.lazydocker]
@@ -145,11 +150,12 @@ backend = "aqua:jesseduffield/lazydocker"
 "lazydocker_0.24.1_Linux_arm64.tar.gz" = "sha256:c38e715f2cb56440bec16e3744005522c1d13c47d2e3730572849dc69cefd8ae"
 
 [tools.lazygit]
-version = "0.52.0"
+version = "0.53.0"
 backend = "aqua:jesseduffield/lazygit"
 
 [tools.lazygit.checksums]
 "lazygit_0.52.0_Linux_arm64.tar.gz" = "sha256:246b09c221f3b29e8e0e2828c4a74bd2bb67e61c903e0b96c05cd464c62b8765"
+"lazygit_0.53.0_Linux_x86_64.tar.gz" = "sha256:e379d9463b9ba68e2652dfbc4b9a1b677a7afd000c021ec10aaeb04b3491a52d"
 
 [tools.neovim]
 version = "0.11.2"
@@ -166,11 +172,11 @@ backend = "core:node"
 "node-v24.3.0-darwin-arm64.tar.gz" = "sha256:fee91aa5febeda47ef9f6c0afd2f2bcd3dacb0e656c29de0b5274e0ea1ca3565"
 
 [tools.pnpm]
-version = "10.12.1"
+version = "10.12.4"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm.checksums]
-pnpm-linux-x64 = "sha256:eb2dc1f109bca046ce734d062c8dd8f34db2b58a115992f9b086456efd7b2305"
+pnpm-linux-x64 = "sha256:ac2768434cbc6c5fec71da4abae7845802bbfe326d590aa0004cdf8bf0815b26"
 pnpm-macos-arm64 = "sha256:8b39b2129a19eeec9511eb7cdde2450b604e389551d59ad738167f7495b56d52"
 
 [tools.ripgrep]
@@ -202,11 +208,12 @@ backend = "ubi:jdx/usage"
 usage-linux-aarch64 = "sha256:3634d68028c74acfba57275c370513ca84c1ace25fca7d4fd3d8b282fecb18af"
 
 [tools.uv]
-version = "0.7.16"
+version = "0.7.19"
 backend = "aqua:astral-sh/uv"
 
 [tools.uv.checksums]
 "uv-aarch64-apple-darwin.tar.gz" = "sha256:a157919a2a615fac5de0fcef5120a63de7e6582fb6e0ae4428238af347ed1054"
+"uv-x86_64-unknown-linux-musl.tar.gz" = "sha256:6236ed00a7442ab2c0f56f807d5a3331f3fb5c7640a357482fbc8492682641b2"
 
 [tools.yazi]
 version = "25.5.31"
