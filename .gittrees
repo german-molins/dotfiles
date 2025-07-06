@@ -13,16 +13,6 @@
 	url    = https://github.com/haystackandroid/night-and-day
 	branch = master
 
-[subtree "vim-matchit"]
-	path   = home/dot_vim/pack/dist/start/vim-matchit
-	url    = https://github.com/adelarsq/vim-matchit
-	branch = master
-
-[subtree "vim-python-matchit"]
-	path   = home/dot_vim/pack/plugin/start/vim-python-matchit
-	url    = https://github.com/voithos/vim-python-matchit
-	branch = master
-
 [subtree "vim-commentary"]
 	path   = home/dot_vim/pack/plugin/start/vim-commentary
 	url    = https://github.com/tpope/vim-commentary
@@ -33,29 +23,14 @@
 	url    = https://github.com/tpope/vim-surround
 	branch = master
 
-[subtree "restore-view"]
-	path   = home/dot_vim/pack/plugin/start/restore-view
-	url    = https://github.com/vim-scripts/restore_view.vim
-	branch = master
-
 [subtree "vim-repeat"]
 	path   = home/dot_vim/pack/plugin/opt/vim-repeat
 	url    = https://github.com/tpope/vim-repeat
 	branch = master
 
-[subtree "fzf"]
-	path   = home/dot_vim/pack/plugin/start/fzf
-	url    = https://github.com/junegunn/fzf.git
-	branch = master
-
 [subtree "repeatable-motions"]
 	path   = home/dot_vim/pack/plugin/opt/repeatable-motions
 	url    = https://github.com/vim-scripts/repeatable-motions.vim
-	branch = master
-
-[subtree "nerdtree"]
-	path   = home/dot_vim/pack/plugin/start/nerdtree
-	url    = https://github.com/preservim/nerdtree
 	branch = master
 
 [subtree "auto-pairs"]
@@ -66,9 +41,4 @@
 [subtree "bullets.vim"]
 	path   = home/dot_vim/pack/plugin/opt/bullets.vim
 	url    = https://github.com/dkarter/bullets.vim
-	branch = master
-
-[subtree "julia-vim"]
-	path   = home/dot_vim/pack/syntax/start/julia-vim
-	url    = https://github.com/JuliaEditorSupport/julia-vim
 	branch = master
