@@ -33,7 +33,6 @@ on `devbox shell` and on `devbox run`.
 * [sshfs-fuse@latest](https://www.nixhub.io/packages/sshfs-fuse)
 * [rcs@latest](https://www.nixhub.io/packages/rcs)
 * [readline@latest](https://www.nixhub.io/packages/readline)
-* [git-graph@latest](https://www.nixhub.io/packages/git-graph)
 * [diffutils@latest](https://www.nixhub.io/packages/diffutils)
 * [gnugrep@latest](https://www.nixhub.io/packages/gnugrep)
 * [gnused@latest](https://www.nixhub.io/packages/gnused)

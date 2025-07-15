@@ -3,7 +3,6 @@ packages:
     brews:
       - bash-completion@2
     brews_darwin:
-      - git-graph
       - taskopen
     casks:
       - firefox

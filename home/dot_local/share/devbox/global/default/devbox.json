@@ -9,10 +9,6 @@
     "sshfs-fuse": "latest",
     "rcs":        "latest",
     "readline":   "latest",
-    "git-graph": {
-      "version":   "latest",
-      "platforms": ["aarch64-linux", "x86_64-linux"]
-    },
     "diffutils":              "latest",
     "gnugrep":                "latest",
     "gnused":                 "latest",

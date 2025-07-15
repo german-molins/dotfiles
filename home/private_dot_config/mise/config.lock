@@ -38,6 +38,10 @@ backend = "aqua:ClementTsang/bottom"
 version = "0.8.0"
 backend = "cargo:findutils"
 
+[tools."cargo:git-graph"]
+version = "0.6.0"
+backend = "cargo:git-graph"
+
 [tools.chezmoi]
 version = "2.63.0"
 backend = "ubi:twpayne/chezmoi"

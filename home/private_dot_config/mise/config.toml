@@ -9,6 +9,7 @@
 bat = "latest"
 bottom = "latest"
 "cargo:findutils" = "latest"
+"cargo:git-graph" = "latest"
 chezmoi = "latest"
 coreutils = "latest"
 direnv = "latest"
