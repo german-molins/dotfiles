@@ -150,6 +150,10 @@ backend = "aqua:astral-sh/uv"
 [tools.uv.checksums]
 "uv-aarch64-apple-darwin.tar.gz" = "sha256:69da236af5934209a5c059fff1b2f69068918c423601f42448b1d92336853127"
 
+[tools.vim]
+version = "9.1.1401"
+backend = "asdf:vim"
+
 [tools.yazi]
 version = "25.5.31"
 backend = "aqua:sxyazi/yazi"
