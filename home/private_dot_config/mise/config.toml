@@ -4,7 +4,7 @@
 "aqua:dlvhdr/gh-dash" = "latest"
 "aqua:jorgerojas26/lazysql" = "latest"
 "aqua:zk-org/zk" = "latest"
-"asdf:mise-plugins/mise-eza" = "0.21.4"
+"asdf:mise-plugins/mise-eza" = "latest"
 bat = "latest"
 bottom = "latest"
 chezmoi = "latest"
