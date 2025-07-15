@@ -64,9 +64,8 @@ on `devbox shell` and on `devbox run`.
 * [dash@latest](https://www.nixhub.io/packages/dash)
 * [taskopen@latest](https://www.nixhub.io/packages/taskopen)
 * [amazon-q-cli@latest](https://www.nixhub.io/packages/amazon-q-cli)
-* [imagemagick@7.1.1-47](https://www.nixhub.io/packages/imagemagick)
-* [aichat@0.29.0](https://www.nixhub.io/packages/aichat)
-* [pnpm@10.12.1](https://www.nixhub.io/packages/pnpm)
+* [imagemagick@latest](https://www.nixhub.io/packages/imagemagick)
+* [aichat@latest](https://www.nixhub.io/packages/aichat)
 
 
 <!-- gen-readme end -->
