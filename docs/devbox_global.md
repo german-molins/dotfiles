@@ -45,7 +45,6 @@ on `devbox shell` and on `devbox run`.
 * [tzdata@latest](https://www.nixhub.io/packages/tzdata)
 * [nerd-fonts.inconsolata@latest](https://www.nixhub.io/packages/nerd-fonts.inconsolata)
 * [file@latest](https://www.nixhub.io/packages/file)
-* [p7zip@latest](https://www.nixhub.io/packages/p7zip)
 * [xclip@latest](https://www.nixhub.io/packages/xclip)
 * [wl-clipboard@latest](https://www.nixhub.io/packages/wl-clipboard)
 * [exiftool@latest](https://www.nixhub.io/packages/exiftool)

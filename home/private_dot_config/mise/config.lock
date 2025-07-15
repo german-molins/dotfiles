@@ -10,6 +10,10 @@ backend = "aqua:dbrgn/tealdeer"
 version = "4.16.1"
 backend = "aqua:dlvhdr/gh-dash"
 
+[tools."aqua:ip7z/7zip"]
+version = "25.00"
+backend = "aqua:ip7z/7zip"
+
 [tools."aqua:jorgerojas26/lazysql"]
 version = "0.3.8"
 backend = "aqua:jorgerojas26/lazysql"
