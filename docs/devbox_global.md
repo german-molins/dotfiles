@@ -33,7 +33,6 @@ on `devbox shell` and on `devbox run`.
 * [rsync@latest](https://www.nixhub.io/packages/rsync)
 * [sshfs-fuse@latest](https://www.nixhub.io/packages/sshfs-fuse)
 * [rcs@latest](https://www.nixhub.io/packages/rcs)
-* [tree@latest](https://www.nixhub.io/packages/tree)
 * [readline@latest](https://www.nixhub.io/packages/readline)
 * [httpie@latest](https://www.nixhub.io/packages/httpie)
 * [git-graph@latest](https://www.nixhub.io/packages/git-graph)

@@ -9,7 +9,6 @@
     "rsync":      "latest",
     "sshfs-fuse": "latest",
     "rcs":        "latest",
-    "tree":       "latest",
     "readline":   "latest",
     "httpie":     "latest",
     "git-graph": {
