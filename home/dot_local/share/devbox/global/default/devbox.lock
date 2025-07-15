@@ -1730,54 +1730,6 @@
         }
       }
     },
-    "uutils-findutils@latest": {
-      "last_modified": "2025-06-20T02:24:11Z",
-      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#uutils-findutils",
-      "source": "devbox-search",
-      "version": "0.8.0",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/bdhh6xalw2g47hyyhl40dvb4jmmsid9z-uutils-findutils-0.8.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/bdhh6xalw2g47hyyhl40dvb4jmmsid9z-uutils-findutils-0.8.0"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/cpsq81n7a37910prrczrqjplj4rk3v6n-uutils-findutils-0.8.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/cpsq81n7a37910prrczrqjplj4rk3v6n-uutils-findutils-0.8.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/n3dzj1km5smj9l4lyp3p24k1lxvg8h69-uutils-findutils-0.8.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/n3dzj1km5smj9l4lyp3p24k1lxvg8h69-uutils-findutils-0.8.0"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/mdwklp73zl12h0sxkgdrxjfk2yxnxln3-uutils-findutils-0.8.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/mdwklp73zl12h0sxkgdrxjfk2yxnxln3-uutils-findutils-0.8.0"
-        }
-      }
-    },
     "wl-clipboard@latest": {
       "last_modified": "2025-07-09T16:14:05Z",
       "resolved": "github:NixOS/nixpkgs/be9e214982e20b8310878ac2baa063a961c1bdf6#wl-clipboard",

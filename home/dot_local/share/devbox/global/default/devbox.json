@@ -13,7 +13,6 @@
       "version":   "latest",
       "platforms": ["aarch64-linux", "x86_64-linux"]
     },
-    "uutils-findutils":       "latest",
     "diffutils":              "latest",
     "gnugrep":                "latest",
     "gnused":                 "latest",
