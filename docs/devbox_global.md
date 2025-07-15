@@ -35,7 +35,6 @@ on `devbox shell` and on `devbox run`.
 * [rcs@latest](https://www.nixhub.io/packages/rcs)
 * [tree@latest](https://www.nixhub.io/packages/tree)
 * [readline@latest](https://www.nixhub.io/packages/readline)
-* [tldr@latest](https://www.nixhub.io/packages/tldr)
 * [httpie@latest](https://www.nixhub.io/packages/httpie)
 * [git-graph@latest](https://www.nixhub.io/packages/git-graph)
 * [uutils-findutils@latest](https://www.nixhub.io/packages/uutils-findutils)

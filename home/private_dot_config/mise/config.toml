@@ -1,5 +1,6 @@
 [tools]
 "aqua:atuinsh/atuin" = "latest"
+"aqua:dbrgn/tealdeer" = "latest"
 "aqua:dlvhdr/gh-dash" = "latest"
 "aqua:jorgerojas26/lazysql" = "latest"
 "aqua:zk-org/zk" = "latest"
