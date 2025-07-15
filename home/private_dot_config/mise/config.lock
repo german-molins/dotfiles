@@ -132,6 +132,10 @@ pnpm-macos-arm64 = "blake3:69de9157e5cd30c173424f11ebf43d5a993241ca632da90e75b5d
 version = "14.1.1"
 backend = "aqua:BurntSushi/ripgrep"
 
+[tools.rust]
+version = "1.88.0"
+backend = "core:rust"
+
 [tools.tree-sitter]
 version = "0.25.6"
 backend = "aqua:tree-sitter/tree-sitter"
