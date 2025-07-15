@@ -36,7 +36,6 @@ on `devbox shell` and on `devbox run`.
 * [git-graph@latest](https://www.nixhub.io/packages/git-graph)
 * [uutils-findutils@latest](https://www.nixhub.io/packages/uutils-findutils)
 * [diffutils@latest](https://www.nixhub.io/packages/diffutils)
-* [procs@latest](https://www.nixhub.io/packages/procs)
 * [gnugrep@latest](https://www.nixhub.io/packages/gnugrep)
 * [gnused@latest](https://www.nixhub.io/packages/gnused)
 * [gawk@latest](https://www.nixhub.io/packages/gawk)

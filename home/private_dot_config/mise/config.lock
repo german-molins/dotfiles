@@ -136,6 +136,10 @@ backend = "aqua:BurntSushi/ripgrep"
 version = "0.25.6"
 backend = "aqua:tree-sitter/tree-sitter"
 
+[tools."ubi:dalance/procs"]
+version = "0.14.10"
+backend = "ubi:dalance/procs"
+
 [tools."ubi:peteretelej/tree"]
 version = "1.1.0"
 backend = "ubi:peteretelej/tree"

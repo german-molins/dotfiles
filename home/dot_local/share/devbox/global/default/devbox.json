@@ -15,7 +15,6 @@
     },
     "uutils-findutils":       "latest",
     "diffutils":              "latest",
-    "procs":                  "latest",
     "gnugrep":                "latest",
     "gnused":                 "latest",
     "gawk":                   "latest",

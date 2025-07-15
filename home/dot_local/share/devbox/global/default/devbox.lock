@@ -1142,54 +1142,6 @@
         }
       }
     },
-    "procs@latest": {
-      "last_modified": "2025-06-20T02:24:11Z",
-      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#procs",
-      "source": "devbox-search",
-      "version": "0.14.10",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/f5xf3lf5xp2p4h9hw982nmqamvap71a3-procs-0.14.10",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/f5xf3lf5xp2p4h9hw982nmqamvap71a3-procs-0.14.10"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/5hq6nr56y0sfcfvpvhjjia3w2q3x0iwp-procs-0.14.10",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/5hq6nr56y0sfcfvpvhjjia3w2q3x0iwp-procs-0.14.10"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/i20iv33xsbczy1xixs5ng2p64mslzmvj-procs-0.14.10",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/i20iv33xsbczy1xixs5ng2p64mslzmvj-procs-0.14.10"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/zvvxsivbwxgrdvsi209cvp25nazm6sag-procs-0.14.10",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/zvvxsivbwxgrdvsi209cvp25nazm6sag-procs-0.14.10"
-        }
-      }
-    },
     "rcs@latest": {
       "last_modified": "2025-06-20T02:24:11Z",
       "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#rcs",
