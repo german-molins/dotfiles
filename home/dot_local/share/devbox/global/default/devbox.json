@@ -9,7 +9,6 @@
     "sshfs-fuse": "latest",
     "rcs":        "latest",
     "readline":   "latest",
-    "httpie":     "latest",
     "git-graph": {
       "version":   "latest",
       "platforms": ["aarch64-linux", "x86_64-linux"]

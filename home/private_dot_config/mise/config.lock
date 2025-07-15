@@ -113,6 +113,10 @@ backend = "core:node"
 [tools.node.checksums]
 "node-v24.4.0-darwin-arm64.tar.gz" = "sha256:d7db0e5017d68f4e34405f5c99ad3895481793cc6420550e582b7eedf911780f"
 
+[tools."pipx:httpie"]
+version = "3.2.4"
+backend = "pipx:httpie"
+
 [tools.pnpm]
 version = "10.13.1"
 backend = "aqua:pnpm/pnpm"
