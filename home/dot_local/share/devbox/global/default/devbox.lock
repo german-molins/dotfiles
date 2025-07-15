@@ -1057,62 +1057,6 @@
         }
       }
     },
-    "lnav@latest": {
-      "last_modified": "2025-06-20T02:24:11Z",
-      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#lnav",
-      "source": "devbox-search",
-      "version": "0.12.4",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/zwrcapai6fjkqdam6z6j3g6f6fvlpk30-lnav-0.12.4",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/zwrcapai6fjkqdam6z6j3g6f6fvlpk30-lnav-0.12.4"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/nhlcwyp5rnp4yapz5i8p9hv9mzjv0y18-lnav-0.12.4",
-              "default": true
-            },
-            {
-              "name": "debug",
-              "path": "/nix/store/pq61ywfg6n9rg7h8s2jbj4dy6xpsncds-lnav-0.12.4-debug"
-            }
-          ],
-          "store_path": "/nix/store/nhlcwyp5rnp4yapz5i8p9hv9mzjv0y18-lnav-0.12.4"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/1gdm0zn15sfny5zkfgszq9wl34v72r84-lnav-0.12.4",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/1gdm0zn15sfny5zkfgszq9wl34v72r84-lnav-0.12.4"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/pbixg25qixwgv5kg205r0gzq7fvf0ca8-lnav-0.12.4",
-              "default": true
-            },
-            {
-              "name": "debug",
-              "path": "/nix/store/57v4hxdbzjalv2vab6rax0izzafgdnwa-lnav-0.12.4-debug"
-            }
-          ],
-          "store_path": "/nix/store/pbixg25qixwgv5kg205r0gzq7fvf0ca8-lnav-0.12.4"
-        }
-      }
-    },
     "nerd-fonts.inconsolata@latest": {
       "last_modified": "2025-06-20T02:24:11Z",
       "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#nerd-fonts.inconsolata",

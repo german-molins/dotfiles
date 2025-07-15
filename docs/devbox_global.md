@@ -44,7 +44,6 @@ on `devbox shell` and on `devbox run`.
 * [dateutils@latest](https://www.nixhub.io/packages/dateutils)
 * [tzdata@latest](https://www.nixhub.io/packages/tzdata)
 * [nerd-fonts.inconsolata@latest](https://www.nixhub.io/packages/nerd-fonts.inconsolata)
-* [lnav@latest](https://www.nixhub.io/packages/lnav)
 * [file@latest](https://www.nixhub.io/packages/file)
 * [p7zip@latest](https://www.nixhub.io/packages/p7zip)
 * [xclip@latest](https://www.nixhub.io/packages/xclip)
