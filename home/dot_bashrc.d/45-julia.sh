@@ -1,5 +1,3 @@
-export JULIA_PROJECT=@.
-
 ###
 # Pluto notebook
 ###

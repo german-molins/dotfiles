@@ -63,6 +63,8 @@ VISUAL = "nvim"
 EDITOR = "{{env.VISUAL}}"
 PAGER = "bat --plain"
 
+JULIA_PROJECT = "@."
+
 [tasks.clean]
 description = "Clean up system packages and caches"
 depends = ["nix:clean", "brew:clean"]
