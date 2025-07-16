@@ -1,0 +1,3 @@
+[tools.jq]
+version = "1.7.1"
+backend = "aqua:jqlang/jq"

@@ -10,3 +10,7 @@ alias = "mise:update-docs"
 run = """
 mise generate task-docs --cd "$HOME" >docs/mise_global_tasks.md
 """
+
+[settings]
+experimental = true
+lockfile = true
