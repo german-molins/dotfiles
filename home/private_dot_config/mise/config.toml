@@ -51,6 +51,8 @@ lockfile = true
 always_keep_download = true
 idiomatic_version_file_enable_tools = []
 
+[settings.cargo]
+binstall = true
 [env]
 _.file = ["~/.dotfiles.env", "~/.env"]
 
