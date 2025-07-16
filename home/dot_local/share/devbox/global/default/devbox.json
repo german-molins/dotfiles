@@ -34,7 +34,8 @@
       "excluded_platforms": ["aarch64-darwin"]
     },
     "amazon-q-cli": "latest",
-    "imagemagick": "latest",
-    "aichat":      "latest"
+    "imagemagick":  "latest",
+    "aichat":       "latest",
+    "renameutils":  "latest"
   }
 }

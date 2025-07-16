@@ -1278,6 +1278,54 @@
         }
       }
     },
+    "renameutils@latest": {
+      "last_modified": "2025-06-20T02:24:11Z",
+      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#renameutils",
+      "source": "devbox-search",
+      "version": "0.12.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/x272vaxxnrd0fvzywnd7vc8qwmnz9gl6-renameutils-0.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/x272vaxxnrd0fvzywnd7vc8qwmnz9gl6-renameutils-0.12.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pyb5rs8s4l82h44ms173a6xp8783glrj-renameutils-0.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pyb5rs8s4l82h44ms173a6xp8783glrj-renameutils-0.12.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/s7i4ndly163ifcab5bnp20c95s59wnl9-renameutils-0.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/s7i4ndly163ifcab5bnp20c95s59wnl9-renameutils-0.12.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2xx7ylsx0n8fphksjf4xwrhyn4m0s81h-renameutils-0.12.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2xx7ylsx0n8fphksjf4xwrhyn4m0s81h-renameutils-0.12.0"
+        }
+      }
+    },
     "rsync@latest": {
       "last_modified": "2025-06-20T02:24:11Z",
       "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#rsync",
