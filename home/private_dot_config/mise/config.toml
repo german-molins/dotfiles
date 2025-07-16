@@ -1,4 +1,5 @@
 [tools]
+aichat = "latest"
 "aqua:atuinsh/atuin" = "latest"
 "aqua:dbrgn/tealdeer" = "latest"
 "aqua:dlvhdr/gh-dash" = "latest"

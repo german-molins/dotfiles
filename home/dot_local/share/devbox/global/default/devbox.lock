@@ -1,54 +1,6 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "aichat@latest": {
-      "last_modified": "2025-06-20T02:24:11Z",
-      "resolved": "github:NixOS/nixpkgs/076e8c6678d8c54204abcb4b1b14c366835a58bb#aichat",
-      "source": "devbox-search",
-      "version": "0.29.0",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/afyx1f360n9k685jc2sdcxnww9gngz2j-aichat-0.29.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/afyx1f360n9k685jc2sdcxnww9gngz2j-aichat-0.29.0"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/l7jidckhi3gq9kddkac9hkr2j76czwfh-aichat-0.29.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/l7jidckhi3gq9kddkac9hkr2j76czwfh-aichat-0.29.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/vvvs1s7nqf1y5f0yjbwm0wadhqgqinzw-aichat-0.29.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/vvvs1s7nqf1y5f0yjbwm0wadhqgqinzw-aichat-0.29.0"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/f3fv6xs0kypr0z5dz7f1i7b3nxwr5svh-aichat-0.29.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/f3fv6xs0kypr0z5dz7f1i7b3nxwr5svh-aichat-0.29.0"
-        }
-      }
-    },
     "aider-chat@latest": {
       "last_modified": "2025-07-08T22:16:38Z",
       "resolved": "github:NixOS/nixpkgs/2a2130494ad647f953593c4e84ea4df839fbd68c#aider-chat",
