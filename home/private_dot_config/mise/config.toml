@@ -63,6 +63,8 @@ VISUAL = "nvim"
 EDITOR = "{{env.VISUAL}}"
 PAGER = "bat --plain"
 
+# WSL2
+BROWSER = "firefox.exe"
 JULIA_PROJECT = "@."
 
 [tasks.clean]
