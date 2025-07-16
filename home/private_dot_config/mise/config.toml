@@ -53,8 +53,12 @@ idiomatic_version_file_enable_tools = []
 
 [settings.cargo]
 binstall = true
+
 [env]
 _.file = ["~/.dotfiles.env", "~/.env"]
+VISUAL = "nvim"
+EDITOR = { value = "{{env.VISUAL}}" }
+PAGER = "bat --plain"
 
 [tasks.clean]
 description = "Clean up system packages and caches"

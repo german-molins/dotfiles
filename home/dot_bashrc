@@ -28,10 +28,6 @@ export PS2='.. '
 export PATH
 PATH="$HOME/.local/bin/:$PATH"
 
-export VISUAL=nvim
-export EDITOR="$VISUAL"
-export PAGER='bat --plain'
-
 ### Interactive Shell Options ###
 
 shopt -s extglob
