@@ -60,7 +60,7 @@ _.path = ["~/.local/bin/"]
 PS1 = ": "
 PS2 = ".. "
 VISUAL = "nvim"
-EDITOR = { value = "{{env.VISUAL}}" }
+EDITOR = "{{env.VISUAL}}"
 PAGER = "bat --plain"
 
 [tasks.clean]
