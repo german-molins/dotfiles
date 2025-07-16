@@ -1,1 +1,1 @@
-. <(zoxide init bash --cmd cd)
+eval "$(zoxide init bash --cmd cd)"
