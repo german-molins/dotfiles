@@ -1,14 +1,3 @@
-where ()
-{
-	cat <<- EOF
-	host  : $HOSTNAME
-	user  : $USER
-	shell : bash $BASH_VERSION
-	wd    : $PWD
-
-	EOF
-}
-
 ### Sourcing ###
 
 for file in ~/.bashrc.d/*.sh

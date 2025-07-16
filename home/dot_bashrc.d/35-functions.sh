@@ -2,6 +2,17 @@
 # Generic functions for everyday use
 #################################################
 
+where()
+{
+    cat <<-EOF
+	host  : $HOSTNAME
+	user  : $USER
+	shell : bash $BASH_VERSION
+	wd    : $PWD
+
+	EOF
+}
+
 ###
 # Change working directory to parent N times.
 # POSIX compatible
