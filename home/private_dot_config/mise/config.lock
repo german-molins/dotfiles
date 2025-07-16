@@ -34,6 +34,13 @@ backend = "ubi:sharkdp/bat"
 version = "0.10.2"
 backend = "aqua:ClementTsang/bottom"
 
+[tools.cargo-binstall]
+version = "1.14.1"
+backend = "aqua:cargo-bins/cargo-binstall"
+
+[tools.cargo-binstall.checksums]
+"cargo-binstall-aarch64-apple-darwin.zip" = "blake3:5993dfa234baa8ae3748e21de57bd0613e592d7db9a95edaa4c61efb4d5f820d"
+
 [tools."cargo:findutils"]
 version = "0.8.0"
 backend = "cargo:findutils"

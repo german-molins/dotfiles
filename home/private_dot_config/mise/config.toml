@@ -8,6 +8,7 @@
 "asdf:mise-plugins/mise-eza" = "latest"
 bat = "latest"
 bottom = "latest"
+cargo-binstall = "latest"
 "cargo:findutils" = "latest"
 "cargo:git-graph" = "latest"
 chezmoi = "latest"
