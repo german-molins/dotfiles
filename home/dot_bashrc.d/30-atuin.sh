@@ -1,4 +1,4 @@
-[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-if command -v atuin &>/dev/null; then
+if [[ -f ~/.bash-preexec.sh ]]; then
+    source ~/.bash-preexec.sh
     eval "$(atuin init bash)"
 fi
