@@ -9,17 +9,20 @@ where ()
 	EOF
 }
 
-### Env vars ### 
+### Sourcing ###
 
-# Configure ls colors
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+for file in ~/.bashrc.d/*.sh
+do
+	if [ -r "$file" ]
+	then
+		source "$file"
+	fi
+done
+unset file
+
+if [ -r /etc/bash_completion ] && ! shopt -oq posix
+then
+    source /etc/bash_completion
 fi
 
 ### Interactive Shell Options ###
@@ -39,20 +42,17 @@ shopt -s checkwinsize
 set -o noclobber
 set -o vi
 
-### Sourcing ###
+### Other ### 
 
-for file in ~/.bashrc.d/*.sh
-do
-	if [ -r "$file" ]
-	then
-		source "$file"
-	fi
-done
-unset file
-
-if [ -r /etc/bash_completion ] && ! shopt -oq posix
-then
-    source /etc/bash_completion
+# Configure ls colors
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
 fi
 
 ###
