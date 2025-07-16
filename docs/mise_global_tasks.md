@@ -117,6 +117,13 @@ Scaffold a Python project with uv and pytest
 
 Add default tasks for a Python project with uv and pytest
 
+## `random-hex`
+
+- **Usage**: `random-hex`
+- **Aliases**: `rhex`
+
+Generate a 32-bit random hex number
+
 ## `scaffold`
 
 - **Usage**: `scaffold [--commit] <project>`
@@ -178,3 +185,9 @@ Install Yazi packages
 - **Aliases**: `yazi:up`
 
 Update Yazi packages
+
+## `zippdf`
+
+- **Usage**: `zippdf`
+
+Compress PDF files in the current directory recursively
