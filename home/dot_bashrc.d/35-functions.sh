@@ -14,44 +14,6 @@ where()
 }
 
 ###
-# Change working directory to parent N times.
-# POSIX compatible
-###
-..()
-{
-    cd $(printf "%${1:-1}s" | sed 's: :../:g')
-}
-
-ls,()
-{
-    ls "$@" | less -FX
-}
-
-egr()
-{
-    egrep "$1" **/*."$2"
-}
-
-###
-# Print path to working dir from this depth up to n levels above.
-# Special cases:
-#     n = "" or unset is equiv to `pwd`
-#     n = 0 is equiv to command `pwd|xargs basename`
-#     n > path_depth is equiv to n = path_depth
-###
-pwd()
-{
-    declare n="$1"
-    declare f
-
-    f=$(builtin pwd | tr / \  | wc -w)
-    if [ -z $n ] || ((n > f)); then
-        n=$f
-    fi
-    builtin pwd | cut -f $((f + 1 - n))-
-}
-
-###
 # List dir's contents (default wd) or view file's contents.
 ###
 ,()
@@ -70,32 +32,6 @@ pwd()
     else
         >&2 echo "error: pass directory or regular file"
     fi
-}
-
-###
-# If there is only one tmux session, attach to it; else list sessions.
-###
-txa()
-{
-    local session
-
-    case $# in
-    0)
-        if [ $(tmux ls | wc -l) -eq 1 ]; then
-            tmux attach
-        else
-            tmux ls
-            return 1
-        fi
-        ;;
-    1)
-        session="$1"
-        tmux attach -t "$session"
-        ;;
-    *)
-        >&2 echo "only zero or one argument allowed"
-        ;;
-    esac
 }
 
 ###
