@@ -137,3 +137,12 @@ run = "ya pkg install"
 alias = "yazi:up"
 description = "Update Yazi packages"
 run = "ya pkg upgrade"
+
+[tasks.random-hex]
+description = "Generate a 32-bit random hex number"
+alias = "rhex"
+run = "openssl rand -hex 32| cut -c -7"
+
+[tasks.zippdf]
+description = "Compress PDF files in the current directory recursively"
+run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
