@@ -56,6 +56,8 @@ binstall = true
 
 [env]
 _.file = ["~/.dotfiles.env", "~/.env"]
+PS1 = ": "
+PS2 = ".. "
 VISUAL = "nvim"
 EDITOR = { value = "{{env.VISUAL}}" }
 PAGER = "bat --plain"
