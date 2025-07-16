@@ -28,7 +28,3 @@ for source_dir in ~/.local/share/chezmoi_*; do
         alias "chezmoi-${name}"="chezmoi --source ${source_dir}"
     fi
 done
-
-{{ if eq .chezmoi.os "linux" -}}
-alias q=amazon-q
-{{- end }}

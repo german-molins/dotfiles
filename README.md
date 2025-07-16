@@ -72,7 +72,7 @@ These are my daily CLI drivers:
 | [GitHub Dashboard](https://dlvhdr.github.io/gh-dash/) | `gh-dash` | `gh dash` | Pull requests and issues manager |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker) | `lazydocker` | | Docker and docker-compose manager |
 | [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | All-in-one LLM tool |
-| [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `q` | LLM coding agent |
+| [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | LLM coding agent |
 | [Aider](https://aider.chat/) | `aider` | | LLM pair programmer |
 | [Taskwarrior](https://taskwarrior.org/) / [Timewarrior](https://timewarrior.net/) | `task` / `timew` | | Task and time manager |
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
