@@ -23,7 +23,7 @@ version = "0.15.1"
 backend = "aqua:zk-org/zk"
 
 [tools."asdf:mise-plugins/mise-eza"]
-version = "0.21.4"
+version = "0.22.1"
 backend = "asdf:mise-plugins/mise-eza"
 
 [tools.bat]
@@ -122,15 +122,18 @@ version = "0.53.0"
 backend = "aqua:jesseduffield/lazygit"
 
 [tools.neovim]
-version = "0.11.2"
+version = "0.11.3"
 backend = "aqua:neovim/neovim"
 
+[tools.neovim.checksums]
+"nvim-macos-arm64.tar.gz" = "blake3:90c6560ae5281ccdb9cc0f3fa38ba3572d7b4c5f85bd048b0d8481b7b25c8015"
+
 [tools.node]
-version = "24.4.0"
+version = "24.4.1"
 backend = "core:node"
 
 [tools.node.checksums]
-"node-v24.4.0-darwin-arm64.tar.gz" = "sha256:d7db0e5017d68f4e34405f5c99ad3895481793cc6420550e582b7eedf911780f"
+"node-v24.4.1-darwin-arm64.tar.gz" = "sha256:55a772a600b7bdafb4b35945b3935090e27aff9934b4c11b281220fcd99139d7"
 
 [tools."pipx:httpie"]
 version = "3.2.4"
@@ -186,7 +189,7 @@ backend = "aqua:astral-sh/uv"
 "uv-aarch64-apple-darwin.tar.gz" = "sha256:69da236af5934209a5c059fff1b2f69068918c423601f42448b1d92336853127"
 
 [tools.vim]
-version = "9.1.1401"
+version = "9.1.1552"
 backend = "asdf:vim"
 
 [tools.yazi]
