@@ -1,0 +1,11 @@
+version = 1
+
+[envs.default]
+channels = ["conda-forge"]
+dependencies = { gawk = "*" , sed = "*" }
+exposed = { awk = "awk", gawk = "gawk", "gawk-5.3.1" = "gawk-5.3.1", gawkbug = "gawkbug" }
+
+[envs.sed]
+channels = ["conda-forge"]
+dependencies = { sed = "*" }
+exposed = { sed = "sed" }

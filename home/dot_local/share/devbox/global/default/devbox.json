@@ -11,8 +11,6 @@
     "readline":   "latest",
     "diffutils":              "latest",
     "gnugrep":                "latest",
-    "gnused":                 "latest",
-    "gawk":                   "latest",
     "procps":                 "latest",
     "dateutils":              "latest",
     "tzdata":                 "latest",
