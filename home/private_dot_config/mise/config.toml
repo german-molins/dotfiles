@@ -58,13 +58,14 @@ binstall = true
 
 [env]
 _.file = ["~/.dotfiles.env", "~/.env"]
-_.path = ["~/.local/bin/"]
+_.path = ["~/.local/bin/", "~/.local/share/pixi/bin/"]
 PS1 = ": "
 PS2 = ".. "
 VISUAL = "nvim"
 EDITOR = "{{env.VISUAL}}"
 PAGER = "bat --plain"
 
+PIXI_HOME = "{{env.HOME}}/.local/share/pixi"
 # WSL2
 BROWSER = "firefox.exe"
 JULIA_PROJECT = "@."
