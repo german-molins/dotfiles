@@ -146,6 +146,13 @@ backend = "core:node"
 version = "3.2.4"
 backend = "pipx:httpie"
 
+[tools.pixi]
+version = "0.49.0"
+backend = "ubi:prefix-dev/pixi"
+
+[tools.pixi.checksums]
+pixi-macos-aarch64 = "blake3:b575081fc379721266a21534fdec9ebdaf50f2024ff0334e6a3f719b0c344850"
+
 [tools.pnpm]
 version = "10.13.1"
 backend = "aqua:pnpm/pnpm"
