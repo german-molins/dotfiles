@@ -79,6 +79,7 @@ experimental = true
 lockfile = true
 always_keep_download = true
 idiomatic_version_file_enable_tools = []
+shorthands_file = "~/.config/mise/shorthands.toml"
 
 [settings.cargo]
 binstall = true
