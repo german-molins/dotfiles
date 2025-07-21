@@ -2,9 +2,6 @@
 version = "0.30.0"
 backend = "aqua:sigoden/aichat"
 
-[tools.aichat.checksums]
-"aichat-v0.30.0-aarch64-apple-darwin.tar.gz" = "blake3:7a42eda6774b1cdf40d4487f6e441b700118eb9876d2d1e697827ea05d84541a"
-
 [tools."aqua:atuinsh/atuin"]
 version = "18.6.1"
 backend = "aqua:atuinsh/atuin"
@@ -45,9 +42,6 @@ backend = "aqua:ClementTsang/bottom"
 version = "1.14.1"
 backend = "aqua:cargo-bins/cargo-binstall"
 
-[tools.cargo-binstall.checksums]
-"cargo-binstall-aarch64-apple-darwin.zip" = "blake3:5993dfa234baa8ae3748e21de57bd0613e592d7db9a95edaa4c61efb4d5f820d"
-
 [tools."cargo:findutils"]
 version = "0.8.0"
 backend = "cargo:findutils"
@@ -59,9 +53,6 @@ backend = "cargo:git-graph"
 [tools.chezmoi]
 version = "2.63.0"
 backend = "ubi:twpayne/chezmoi"
-
-[tools.chezmoi.checksums]
-chezmoi-macos-aarch64 = "blake3:f7e274688ded31cb3e903d6940f9b4013445dc640503bb08b1c06bf3b1008fdd"
 
 [tools.coreutils]
 version = "0.1.0"
@@ -91,15 +82,9 @@ backend = "aqua:sharkdp/fd"
 version = "0.64.0"
 backend = "aqua:junegunn/fzf"
 
-[tools.fzf.checksums]
-"fzf-0.64.0-darwin_arm64.tar.gz" = "sha256:c71d2528e090de5d4765017d745f8a4fed44b43703f93247a28f6dc2aa4c7c01"
-
 [tools.gh]
 version = "2.75.0"
 backend = "aqua:cli/cli"
-
-[tools.gh.checksums]
-"gh_2.75.0_macOS_arm64.zip" = "sha256:b0edb5ad1a189c6b67512acdc0bbf1b4cc30ba82ac60170bf68f9945ffca2c86"
 
 [tools.gitui]
 version = "0.27.0"
@@ -108,9 +93,6 @@ backend = "aqua:extrawurst/gitui"
 [tools.glab]
 version = "1.62.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
-
-[tools.glab.checksums]
-glab-glab-macos-aarch64 = "blake3:ecfc50df41256dea1fa797b4aac0303b2eb8fef1254b83ebb6dec8f432aa5fff"
 
 [tools.hyperfine]
 version = "1.19.0"
@@ -132,15 +114,121 @@ backend = "aqua:jesseduffield/lazygit"
 version = "0.11.3"
 backend = "aqua:neovim/neovim"
 
-[tools.neovim.checksums]
-"nvim-macos-arm64.tar.gz" = "blake3:90c6560ae5281ccdb9cc0f3fa38ba3572d7b4c5f85bd048b0d8481b7b25c8015"
+[tools."nix:aider-chat"]
+version = "0.85.2"
+backend = "nix:aider-chat"
+
+[tools."nix:amazon-q-cli"]
+version = "1.12.4"
+backend = "nix:amazon-q-cli"
+
+[tools."nix:dash"]
+version = "0.5.12"
+backend = "nix:dash"
+
+[tools."nix:dateutils"]
+version = "0.4.11"
+backend = "nix:dateutils"
+
+[tools."nix:diffutils"]
+version = "3.12"
+backend = "nix:diffutils"
+
+[tools."nix:dos2unix"]
+version = "7.5.2"
+backend = "nix:dos2unix"
+
+[tools."nix:exiftool"]
+version = "13.25"
+backend = "nix:exiftool"
+
+[tools."nix:file"]
+version = "5.45"
+backend = "nix:file"
+
+[tools."nix:gawk"]
+version = "5.3.2"
+backend = "nix:gawk"
+
+[tools."nix:git"]
+version = "2.50.0"
+backend = "nix:git"
+
+[tools."nix:gnugrep"]
+version = "3.12"
+backend = "nix:gnugrep"
+
+[tools."nix:gnupg"]
+version = "2.4.7"
+backend = "nix:gnupg"
+
+[tools."nix:gnused"]
+version = "4.9"
+backend = "nix:gnused"
+
+[tools."nix:gpg-tui"]
+version = "0.11.1"
+backend = "nix:gpg-tui"
+
+[tools."nix:htop"]
+version = "3.4.1"
+backend = "nix:htop"
+
+[tools."nix:imagemagick"]
+version = "7.1.1-47"
+backend = "nix:imagemagick"
+
+[tools."nix:rcs"]
+version = "5.10.1"
+backend = "nix:rcs"
+
+[tools."nix:readline"]
+version = "8.2p13"
+backend = "nix:readline"
+
+[tools."nix:renameutils"]
+version = "0.12.0"
+backend = "nix:renameutils"
+
+[tools."nix:rsync"]
+version = "3.4.1"
+backend = "nix:rsync"
+
+[tools."nix:taskwarrior"]
+version = "2.6.2"
+backend = "nix:taskwarrior"
+
+[tools."nix:taskwarrior-tui"]
+version = "0.26.3"
+backend = "nix:taskwarrior-tui"
+
+[tools."nix:timewarrior"]
+version = "1.8.0"
+backend = "nix:timewarrior"
+
+[tools."nix:tmux"]
+version = "3.2a"
+backend = "nix:tmux"
+
+[tools."nix:tzdata"]
+version = "2025b"
+backend = "nix:tzdata"
+
+[tools."nix:wl-clipboard"]
+version = "2.2.1"
+backend = "nix:wl-clipboard"
+
+[tools."nix:xclip"]
+version = "0.13"
+backend = "nix:xclip"
+
+[tools."nix:xsel"]
+version = "1.2.1"
+backend = "nix:xsel"
 
 [tools.node]
 version = "24.4.1"
 backend = "core:node"
-
-[tools.node.checksums]
-"node-v24.4.1-darwin-arm64.tar.gz" = "sha256:55a772a600b7bdafb4b35945b3935090e27aff9934b4c11b281220fcd99139d7"
 
 [tools."pipx:httpie"]
 version = "3.2.4"
@@ -149,9 +237,6 @@ backend = "pipx:httpie"
 [tools.pnpm]
 version = "10.13.1"
 backend = "aqua:pnpm/pnpm"
-
-[tools.pnpm.checksums]
-pnpm-macos-arm64 = "blake3:69de9157e5cd30c173424f11ebf43d5a993241ca632da90e75b5d5e51ca16650"
 
 [tools.ripgrep]
 version = "14.1.1"
@@ -185,15 +270,9 @@ backend = "ubi:sigoden/upt"
 version = "2.2.0"
 backend = "ubi:jdx/usage"
 
-[tools.usage.checksums]
-usage-macos-aarch64 = "blake3:7598d717a7dc70ac55228ff0d8bd475f0b926da11e334e4acef54134696b12c5"
-
 [tools.uv]
 version = "0.7.20"
 backend = "aqua:astral-sh/uv"
-
-[tools.uv.checksums]
-"uv-aarch64-apple-darwin.tar.gz" = "sha256:69da236af5934209a5c059fff1b2f69068918c423601f42448b1d92336853127"
 
 [tools.vim]
 version = "9.1.1552"
@@ -206,9 +285,6 @@ backend = "aqua:sxyazi/yazi"
 [tools.yq]
 version = "4.46.1"
 backend = "aqua:mikefarah/yq"
-
-[tools.yq.checksums]
-yq_darwin_arm64 = "blake3:cdde85205638c91d85f4c5a47e24c7580807f5e2ea688d83057e948ed734fdf2"
 
 [tools.zellij]
 version = "0.42.2"
