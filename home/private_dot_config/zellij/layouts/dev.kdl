@@ -1,0 +1,25 @@
+layout {
+  default_tab_template {
+      pane size=1 borderless=true {
+          plugin location="zellij:tab-bar"
+      }
+      children
+      pane size=1 borderless=true {
+          plugin location="zellij:status-bar"
+      }
+  }
+  tab name="vcs graph" {
+    pane command="git-graph"
+  }
+  tab name="vcs" focus=true {
+    pane command="gitui"
+  }
+  tab name="edit" {
+    pane command="nvim"
+  }
+  tab name="ai" {
+    pane command="amazon-q" start_suspended=true {
+      args "chat" "--resume"
+    }
+  }
+}
