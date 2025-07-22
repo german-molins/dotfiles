@@ -2,12 +2,14 @@
 version = "0.30.0"
 backend = "aqua:sigoden/aichat"
 
-[tools.aichat.checksums]
-"aichat-v0.30.0-aarch64-apple-darwin.tar.gz" = "blake3:7a42eda6774b1cdf40d4487f6e441b700118eb9876d2d1e697827ea05d84541a"
-
 [tools."aqua:atuinsh/atuin"]
-version = "18.6.1"
+version = "18.7.1"
 backend = "aqua:atuinsh/atuin"
+
+[tools."aqua:atuinsh/atuin".platforms.macos-arm64]
+checksum = "sha256:807427ad685fed6ac27ff96a494046f203f011f72a14add73ba4214723cc9190"
+size = 12474522
+url = "https://github.com/atuinsh/atuin/releases/download/v18.7.1/atuin-aarch64-apple-darwin.tar.gz"
 
 [tools."aqua:dbrgn/tealdeer"]
 version = "1.7.2"
@@ -30,7 +32,7 @@ version = "0.15.1"
 backend = "aqua:zk-org/zk"
 
 [tools."asdf:mise-plugins/mise-eza"]
-version = "0.22.1"
+version = "0.23.0"
 backend = "asdf:mise-plugins/mise-eza"
 
 [tools.bat]
@@ -45,9 +47,6 @@ backend = "aqua:ClementTsang/bottom"
 version = "1.14.1"
 backend = "aqua:cargo-bins/cargo-binstall"
 
-[tools.cargo-binstall.checksums]
-"cargo-binstall-aarch64-apple-darwin.zip" = "blake3:5993dfa234baa8ae3748e21de57bd0613e592d7db9a95edaa4c61efb4d5f820d"
-
 [tools."cargo:findutils"]
 version = "0.8.0"
 backend = "cargo:findutils"
@@ -59,9 +58,6 @@ backend = "cargo:git-graph"
 [tools.chezmoi]
 version = "2.63.0"
 backend = "ubi:twpayne/chezmoi"
-
-[tools.chezmoi.checksums]
-chezmoi-macos-aarch64 = "blake3:f7e274688ded31cb3e903d6940f9b4013445dc640503bb08b1c06bf3b1008fdd"
 
 [tools.coreutils]
 version = "0.1.0"
@@ -91,26 +87,25 @@ backend = "aqua:sharkdp/fd"
 version = "0.64.0"
 backend = "aqua:junegunn/fzf"
 
-[tools.fzf.checksums]
-"fzf-0.64.0-darwin_arm64.tar.gz" = "sha256:c71d2528e090de5d4765017d745f8a4fed44b43703f93247a28f6dc2aa4c7c01"
-
 [tools.gh]
-version = "2.75.0"
+version = "2.76.0"
 backend = "aqua:cli/cli"
 
-[tools.gh.checksums]
-"gh_2.75.0_macOS_arm64.zip" = "sha256:b0edb5ad1a189c6b67512acdc0bbf1b4cc30ba82ac60170bf68f9945ffca2c86"
+[tools.gh.platforms.macos-arm64]
+checksum = "sha256:678e976b72c453e13131409b12794859c58f0750f75dc1c71b57601e247b6f01"
+size = 13451367
+url = "https://github.com/cli/cli/releases/download/v2.76.0/gh_2.76.0_macOS_arm64.zip"
 
 [tools.gitui]
 version = "0.27.0"
 backend = "aqua:extrawurst/gitui"
 
 [tools.glab]
-version = "1.62.0"
+version = "1.63.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
-[tools.glab.checksums]
-glab-glab-macos-aarch64 = "blake3:ecfc50df41256dea1fa797b4aac0303b2eb8fef1254b83ebb6dec8f432aa5fff"
+[tools.glab.platforms.macos-arm64-glab-glab]
+checksum = "blake3:8fde3cc89f9dc7ad19a396ac403eb9eafb2508a04927fcd3813d2d1808052ebb"
 
 [tools.hyperfine]
 version = "1.19.0"
@@ -132,15 +127,9 @@ backend = "aqua:jesseduffield/lazygit"
 version = "0.11.3"
 backend = "aqua:neovim/neovim"
 
-[tools.neovim.checksums]
-"nvim-macos-arm64.tar.gz" = "blake3:90c6560ae5281ccdb9cc0f3fa38ba3572d7b4c5f85bd048b0d8481b7b25c8015"
-
 [tools.node]
 version = "24.4.1"
 backend = "core:node"
-
-[tools.node.checksums]
-"node-v24.4.1-darwin-arm64.tar.gz" = "sha256:55a772a600b7bdafb4b35945b3935090e27aff9934b4c11b281220fcd99139d7"
 
 [tools."pipx:httpie"]
 version = "3.2.4"
@@ -149,9 +138,6 @@ backend = "pipx:httpie"
 [tools.pnpm]
 version = "10.13.1"
 backend = "aqua:pnpm/pnpm"
-
-[tools.pnpm.checksums]
-pnpm-macos-arm64 = "blake3:69de9157e5cd30c173424f11ebf43d5a993241ca632da90e75b5d5e51ca16650"
 
 [tools.ripgrep]
 version = "14.1.1"
@@ -162,16 +148,24 @@ version = "1.88.0"
 backend = "core:rust"
 
 [tools.tree-sitter]
-version = "0.25.6"
+version = "0.25.8"
 backend = "aqua:tree-sitter/tree-sitter"
+
+[tools.tree-sitter.platforms.macos-arm64]
+checksum = "blake3:bab3deebfe6bc5f90bdce6883989a93d9280412b16bf45c22637bb2dc09739aa"
+size = 5904471
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.8/tree-sitter-macos-arm64.gz"
 
 [tools."ubi:dalance/procs"]
 version = "0.14.10"
 backend = "ubi:dalance/procs"
 
 [tools."ubi:peteretelej/tree"]
-version = "1.1.0"
+version = "1.2.0"
 backend = "ubi:peteretelej/tree"
+
+[tools."ubi:peteretelej/tree".platforms.macos-arm64-tree]
+checksum = "blake3:939b4d02f369f2b9df3db8afba46f90b06f9ee499a09b360da4293cc43e131d6"
 
 [tools."ubi:tstack/lnav"]
 version = "0.12.4"
@@ -182,21 +176,18 @@ version = "0.9.0"
 backend = "ubi:sigoden/upt"
 
 [tools.usage]
-version = "2.2.0"
+version = "2.2.2"
 backend = "ubi:jdx/usage"
 
-[tools.usage.checksums]
-usage-macos-aarch64 = "blake3:7598d717a7dc70ac55228ff0d8bd475f0b926da11e334e4acef54134696b12c5"
+[tools.usage.platforms.macos-arm64-usage]
+checksum = "blake3:8a7b96db5e8d04f208a9728f6eaa7e10d17de5357b091fa83e87c591225cf87b"
 
 [tools.uv]
-version = "0.7.20"
+version = "0.8.0"
 backend = "aqua:astral-sh/uv"
 
-[tools.uv.checksums]
-"uv-aarch64-apple-darwin.tar.gz" = "sha256:69da236af5934209a5c059fff1b2f69068918c423601f42448b1d92336853127"
-
 [tools.vim]
-version = "9.1.1552"
+version = "9.1.1577"
 backend = "asdf:vim"
 
 [tools.yazi]
@@ -206,9 +197,6 @@ backend = "aqua:sxyazi/yazi"
 [tools.yq]
 version = "4.46.1"
 backend = "aqua:mikefarah/yq"
-
-[tools.yq.checksums]
-yq_darwin_arm64 = "blake3:cdde85205638c91d85f4c5a47e24c7580807f5e2ea688d83057e948ed734fdf2"
 
 [tools.zellij]
 version = "0.42.2"
