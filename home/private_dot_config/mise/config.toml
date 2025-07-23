@@ -74,12 +74,14 @@ zoxide = "latest"
 "nix:renameutils" = "latest"
 "nix:readline" = "latest"
 
+[plugins]
+nix = "https://github.com/jbadeau/mise-nix.git"
+
 [settings]
 experimental = true
 lockfile = true
 always_keep_download = true
 idiomatic_version_file_enable_tools = []
-shorthands_file = "~/.config/mise/shorthands.toml"
 
 [settings.cargo]
 binstall = true
