@@ -12,7 +12,9 @@ layout {
     pane command="git-graph"
   }
   tab name="vcs" focus=true {
-    pane command="gitui"
+    pane command="bash" {
+      args "-c" "gitui"
+    }
   }
   tab name="edit" {
     pane command="nvim"
