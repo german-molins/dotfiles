@@ -55,13 +55,15 @@ These are my daily CLI drivers:
 | [Chezmoi](https://www.chezmoi.io/) | `chezmoi` | | Dotfiles manager |
 | [Mise](https://mise.jdx.dev/) | `mise` | | Global and project package manager |
 | [Devbox](https://www.jetpack.io/devbox/) | `devbox` | | Global and project package manager |
-| [UPT](https://github.com/sigoden/upt) | `upt` | `mise upt --` | Cross-platform system package manager|
-| [Alacritty](https://alacritty.org/) / [Kitty](https://sw.kovidgoyal.net/kitty/) | `alacritty` / `kitty` | | Terminal emulator |
+| [UPT](https://github.com/sigoden/upt) | `upt` | `mise run upt` | Cross-platform system package manager|
+| [Kitty](https://sw.kovidgoyal.net/kitty/) | `kitty` | | Terminal emulator |
+| [Alacritty](https://alacritty.org/) | `alacritty` | | Terminal emulator |
 | [Bash](https://devdocs.io/bash/) | `bash` | | Interactive shell |
 | [Usage](https://devdocs.io/bash/) | `usage` | | Polyglot script CLI manager |
 | [Devpod](https://devpod.sh/) | `devpod` | | Devcontainer manager |
-| [Zellij](https://zellij.dev/) / [Tmux](https://github.com/tmux/tmux) | `zellij` / `tmux` | | Terminal workspaces / multiplexer |
-| [Zoxide](https://github.com/ajeetdsouza/zoxide) | `zoxide`, `cd`, `cdi` | | Smarter `cd` |
+| [Zellij](https://zellij.dev/) | `zellij` | `z{e,r}{,f,i}` | Terminal workspaces |
+| [Tmux](https://github.com/tmux/tmux) | `tmux` | | Terminal multiplexer |
+| [Zoxide](https://github.com/ajeetdsouza/zoxide) | `zoxide` | `cd`, `cdi` | Smarter `cd` |
 | [Atuin](https://atuin.sh/) | `atuin` | | Shell history manager |
 | [Yazi](https://yazi-rs.github.io/) | `yazi`, `ya` | `y` | File manager |
 | [Neovim](https://neovim.io/) | `nvim` | | Text editor and IDE |
@@ -74,7 +76,8 @@ These are my daily CLI drivers:
 | [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | All-in-one LLM tool |
 | [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | LLM coding agent |
 | [Aider](https://aider.chat/) | `aider` | | LLM pair programmer |
-| [Taskwarrior](https://taskwarrior.org/) / [Timewarrior](https://timewarrior.net/) | `task` / `timew` | | Task and time manager |
+| [Taskwarrior](https://taskwarrior.org/) | `task` | | Task manager |
+| [Timewarrior](https://timewarrior.net/) | `timew` | | Time manager |
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
 | [Lnav](https://lnav.org/) | `lnav` | | Logfile navigator |
 
