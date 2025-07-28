@@ -2,6 +2,14 @@
 bun = "latest"
 jq = "1.7.1"
 
+[tasks."docs:dev"]
+alias = "docs:b"
+run = "bun run docs:dev"
+
+[tasks."docs:build"]
+alias = "docs:b"
+run = "bun run docs:build"
+
 [tasks."docs:generate"]
 alias = ["docs:g", "docs:update", "docs:up"]
 depends = ["mise:generate-docs", "devbox:generate-docs"]
