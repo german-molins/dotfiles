@@ -31,6 +31,7 @@ export default defineConfig({
       },
       {
         text: "Package Managers",
+        link: "/package_managers",
         items: [
           { text: "Mise", link: "/mise_global_tasks" },
           { text: "Devbox", link: "devbox_global" }
