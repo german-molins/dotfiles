@@ -1,5 +1,14 @@
 # Development Guide
 
+## Documentation
+
+Stack used to build this static site:
+
+- Framework: [VitePress](https://vitepress.dev/)
+- Build runtime: [Bun](https://bun.com/)
+
+## Devpod
+
 A typical end-to-end testing or debugging command can look like
 
 ```sh

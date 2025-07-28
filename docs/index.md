@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
@@ -8,18 +7,17 @@ hero:
   tagline: german-molins
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Documentation
+      link: /welcome
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Setup
+      link: /setup
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Mise
+    details: Package and environment manager
+  - title: Zellij
+    details: Terminal workspaces
+  - title: Neovim
+    details: Full-fledged text editor
 ---
-
