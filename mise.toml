@@ -1,4 +1,5 @@
 [tools]
+bun = "latest"
 jq = "1.7.1"
 
 [tasks."docs:generate"]

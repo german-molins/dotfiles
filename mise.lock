@@ -1,3 +1,11 @@
+[tools.bun]
+version = "1.2.19"
+backend = "core:bun"
+
+[tools.bun.platforms.macos-arm64]
+checksum = "blake3:1d033789f9a12ddcc7b1e03c675af1dfcbf770aa7fbfa2c49dc6599e591e4779"
+size = 21573514
+
 [tools.jq]
 version = "1.7.1"
 backend = "aqua:jqlang/jq"
