@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Dotfiles",
   description: "Personal development environment",
+  base: '/dotfiles/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
