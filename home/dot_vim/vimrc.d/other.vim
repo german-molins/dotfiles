@@ -8,7 +8,6 @@ set viewoptions-=options
 
 set autochdir
 set matchpairs+=<:>
-" Recom by plugin latex-suite.
 set grepprg=grep\ -nH\ $*
 
 set wildchar=<Tab>
