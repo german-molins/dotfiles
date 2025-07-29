@@ -20,6 +20,7 @@ export default defineConfig({
           { text: "Home Directory", link: '/home' },
           {
             text: 'Tools',
+            link: "/tools",
             collapsed: true,
             items: [
               { text: "Mise", link: '/tools/mise' },
