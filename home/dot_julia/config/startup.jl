@@ -1,9 +1,3 @@
-###
-# To disable the loading of this startup file, use command-line option
-#     --startup-file=no
-###
-
-# REPL startup
 atreplinit() do repl
 	let
 		project = Base.load_path_expand("@")
@@ -26,11 +20,9 @@ atreplinit() do repl
 end
 
 let
-	# program file
-	if !isempty(PROGRAM_FILE)
+	if !isempty(PROGRAM_FILE)  # CLI
 		# ...
-	# either command line or REPL
-	else
+	else  # REPL
 		# ...
 	end
 end
