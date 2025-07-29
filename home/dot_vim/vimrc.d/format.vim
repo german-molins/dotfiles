@@ -4,8 +4,8 @@ set autoindent
 set textwidth=79
 
 set noexpandtab
-set tabstop=4       
-set softtabstop=-1 
+set tabstop=4
+set softtabstop=-1
 set shiftwidth=0
 
 set nonumber
