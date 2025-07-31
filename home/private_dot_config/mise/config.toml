@@ -1,5 +1,6 @@
 [tools]
 aichat = "latest"
+amp = "latest"
 "aqua:atuinsh/atuin" = "latest"
 "aqua:dbrgn/tealdeer" = "latest"
 "aqua:dlvhdr/gh-dash" = "latest"

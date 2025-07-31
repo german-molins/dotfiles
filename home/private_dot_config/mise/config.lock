@@ -2,6 +2,10 @@
 version = "0.30.0"
 backend = "aqua:sigoden/aichat"
 
+[tools.amp]
+version = "0.0.1753782358-g203024"
+backend = "npm:@sourcegraph/amp"
+
 [tools."aqua:atuinsh/atuin"]
 version = "18.7.1"
 backend = "aqua:atuinsh/atuin"
