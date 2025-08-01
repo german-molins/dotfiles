@@ -56,7 +56,7 @@ on `devbox shell` and on `devbox run`.
 * [taskopen@latest](https://www.nixhub.io/packages/taskopen)
 * [amazon-q-cli@latest](https://www.nixhub.io/packages/amazon-q-cli)
 * [imagemagick@latest](https://www.nixhub.io/packages/imagemagick)
-* [aichat@latest](https://www.nixhub.io/packages/aichat)
+* [renameutils@latest](https://www.nixhub.io/packages/renameutils)
 
 
 <!-- gen-readme end -->
