@@ -135,6 +135,10 @@ backend = "aqua:neovim/neovim"
 version = "24.4.1"
 backend = "core:node"
 
+[tools.pandoc]
+version = "3.7.0.2"
+backend = "ubi:jgm/pandoc"
+
 [tools."pipx:httpie"]
 version = "3.2.4"
 backend = "pipx:httpie"
