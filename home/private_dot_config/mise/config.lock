@@ -28,8 +28,13 @@ version = "25.00"
 backend = "aqua:ip7z/7zip"
 
 [tools."aqua:jorgerojas26/lazysql"]
-version = "0.3.8"
+version = "0.4.0"
 backend = "aqua:jorgerojas26/lazysql"
+
+[tools."aqua:jorgerojas26/lazysql".platforms.macos-arm64]
+checksum = "sha256:12fd0a3d420a734bb1b5c6be1cc1edc8b5f60f84d3382d5203e852d3947d0bdc"
+size = 5234544
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.0/lazysql_Darwin_arm64.tar.gz"
 
 [tools."aqua:zk-org/zk"]
 version = "0.15.1"
@@ -48,8 +53,13 @@ version = "0.10.2"
 backend = "aqua:ClementTsang/bottom"
 
 [tools.cargo-binstall]
-version = "1.14.1"
+version = "1.14.3"
 backend = "aqua:cargo-bins/cargo-binstall"
+
+[tools.cargo-binstall.platforms.macos-arm64]
+checksum = "blake3:4e0e5318781fd43853337c899394843a46eb6e1cb09d947ba05da021cc617fac"
+size = 5997842
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.14.3/cargo-binstall-aarch64-apple-darwin.zip"
 
 [tools."cargo:findutils"]
 version = "0.8.0"
@@ -60,16 +70,24 @@ version = "0.6.0"
 backend = "cargo:git-graph"
 
 [tools.chezmoi]
-version = "2.63.0"
+version = "2.63.1"
 backend = "ubi:twpayne/chezmoi"
+
+[tools.chezmoi.platforms.macos-arm64-chezmoi]
+checksum = "blake3:4e86125ca47f2832b66ab0f8b69a4acd75ec5b6a009f9f36da4841093de796e0"
 
 [tools.coreutils]
 version = "0.1.0"
 backend = "aqua:uutils/coreutils"
 
 [tools.direnv]
-version = "2.37.0"
+version = "2.37.1"
 backend = "aqua:direnv/direnv"
+
+[tools.direnv.platforms.macos-arm64]
+checksum = "blake3:c6eabcde5fbd389aa0f0ca2a3ded9be347ecf1b937794aa98738feccbdcef8b0"
+size = 7899154
+url = "https://github.com/direnv/direnv/releases/download/v2.37.1/direnv.darwin-arm64"
 
 [tools.dua]
 version = "2.30.1"
@@ -80,36 +98,44 @@ version = "0.8.1"
 backend = "aqua:muesli/duf"
 
 [tools.dust]
-version = "1.2.2"
+version = "1.2.3"
 backend = "ubi:bootandy/dust"
+
+[tools.dust.platforms.macos-arm64-dust]
+checksum = "blake3:9b0d6258a0bf37ba6692d864cb2f9a61274c6f19baee1d50dfc4a1e3bce056a4"
 
 [tools.fd]
 version = "10.2.0"
 backend = "aqua:sharkdp/fd"
 
 [tools.fzf]
-version = "0.64.0"
+version = "0.65.0"
 backend = "aqua:junegunn/fzf"
 
+[tools.fzf.platforms.macos-arm64]
+checksum = "sha256:9e4dfe01a67020a19861c881fd2ffbb8dd19b118b15e82e8fae83c578ca61ab7"
+size = 1657463
+url = "https://github.com/junegunn/fzf/releases/download/v0.65.0/fzf-0.65.0-darwin_arm64.tar.gz"
+
 [tools.gh]
-version = "2.76.0"
+version = "2.76.2"
 backend = "aqua:cli/cli"
 
 [tools.gh.platforms.macos-arm64]
-checksum = "sha256:678e976b72c453e13131409b12794859c58f0750f75dc1c71b57601e247b6f01"
-size = 13451367
-url = "https://github.com/cli/cli/releases/download/v2.76.0/gh_2.76.0_macOS_arm64.zip"
+checksum = "sha256:43cea90fbd5d3b607b6125082f4a5faf7d5fc2e548d3d349a3b0310706a4f878"
+size = 17359067
+url = "https://github.com/cli/cli/releases/download/v2.76.2/gh_2.76.2_macOS_arm64.zip"
 
 [tools.gitui]
 version = "0.27.0"
 backend = "aqua:extrawurst/gitui"
 
 [tools.glab]
-version = "1.63.0"
+version = "1.65.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:8fde3cc89f9dc7ad19a396ac403eb9eafb2508a04927fcd3813d2d1808052ebb"
+checksum = "blake3:3337eb00ad1736695c3022686bcbc74c5873a35364007be2fa6b7c1e0b9dfa0f"
 
 [tools.hyperfine]
 version = "1.19.0"
@@ -144,8 +170,13 @@ version = "3.2.4"
 backend = "pipx:httpie"
 
 [tools.pnpm]
-version = "10.13.1"
+version = "10.14.0"
 backend = "aqua:pnpm/pnpm"
+
+[tools.pnpm.platforms.macos-arm64]
+checksum = "blake3:d5098f21e90b56f8e76fdd6ba25d22240c44343c61622f02fc92c50b92738823"
+size = 62022240
+url = "https://github.com/pnpm/pnpm/releases/download/v10.14.0/pnpm-macos-arm64"
 
 [tools.ripgrep]
 version = "14.1.1"
@@ -169,15 +200,18 @@ version = "0.14.10"
 backend = "ubi:dalance/procs"
 
 [tools."ubi:peteretelej/tree"]
-version = "1.2.0"
+version = "1.2.1"
 backend = "ubi:peteretelej/tree"
 
 [tools."ubi:peteretelej/tree".platforms.macos-arm64-tree]
-checksum = "blake3:939b4d02f369f2b9df3db8afba46f90b06f9ee499a09b360da4293cc43e131d6"
+checksum = "blake3:acc3348d82020f3fd378111629f8a7c9a8a9ecec43e9687ddde1e1be75ae6318"
 
 [tools."ubi:tstack/lnav"]
-version = "0.12.4"
+version = "0.13.0"
 backend = "ubi:tstack/lnav"
+
+[tools."ubi:tstack/lnav".platforms.macos-arm64-lnav]
+checksum = "blake3:96ac8599b305b735f2c6a1e487aa554ff3ce656c5bea6735af7b38561398698c"
 
 [tools.upt]
 version = "0.9.0"
@@ -191,11 +225,11 @@ backend = "ubi:jdx/usage"
 checksum = "blake3:8a7b96db5e8d04f208a9728f6eaa7e10d17de5357b091fa83e87c591225cf87b"
 
 [tools.uv]
-version = "0.8.0"
+version = "0.8.4"
 backend = "aqua:astral-sh/uv"
 
 [tools.vim]
-version = "9.1.1577"
+version = "9.1.1591"
 backend = "asdf:vim"
 
 [tools.yazi]
@@ -203,8 +237,13 @@ version = "25.5.31"
 backend = "aqua:sxyazi/yazi"
 
 [tools.yq]
-version = "4.46.1"
+version = "4.47.1"
 backend = "aqua:mikefarah/yq"
+
+[tools.yq.platforms.macos-arm64]
+checksum = "blake3:576374b350e23e8a83123dbb2008bb9115c27cc6569699bfdd6b034562969f16"
+size = 11079202
+url = "https://github.com/mikefarah/yq/releases/download/v4.47.1/yq_darwin_arm64"
 
 [tools.zellij]
 version = "0.42.2"
