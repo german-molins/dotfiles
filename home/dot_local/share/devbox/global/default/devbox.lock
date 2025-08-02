@@ -66,50 +66,50 @@
       }
     },
     "amazon-q-cli@latest": {
-      "last_modified": "2025-07-15T16:15:05Z",
-      "resolved": "github:NixOS/nixpkgs/dab3a6e781554f965bde3def0aa2fda4eb8f1708#amazon-q-cli",
+      "last_modified": "2025-07-24T15:00:16Z",
+      "resolved": "github:NixOS/nixpkgs/b74a30dbc0a72e20df07d43109339f780b439291#amazon-q-cli",
       "source": "devbox-search",
-      "version": "1.12.4",
+      "version": "1.12.6",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/09x7qwn1m6hai2xa8yb3f5dgj6yvzgjg-amazon-q-cli-1.12.4",
+              "path": "/nix/store/6csa8cw28mgqp0ic6ivzpd4cms75k8ld-amazon-q-cli-1.12.6",
               "default": true
             }
           ],
-          "store_path": "/nix/store/09x7qwn1m6hai2xa8yb3f5dgj6yvzgjg-amazon-q-cli-1.12.4"
+          "store_path": "/nix/store/6csa8cw28mgqp0ic6ivzpd4cms75k8ld-amazon-q-cli-1.12.6"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/g3x7rjzmmc0yj5l6fdrvcrqvjhz1milq-amazon-q-cli-1.12.4",
+              "path": "/nix/store/1b3yrkgs84x4cl346c4iazy7wa6zw6lg-amazon-q-cli-1.12.6",
               "default": true
             }
           ],
-          "store_path": "/nix/store/g3x7rjzmmc0yj5l6fdrvcrqvjhz1milq-amazon-q-cli-1.12.4"
+          "store_path": "/nix/store/1b3yrkgs84x4cl346c4iazy7wa6zw6lg-amazon-q-cli-1.12.6"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/xwp9c4pa79gb1zcngjdmbwjn39zbcjg7-amazon-q-cli-1.12.4",
+              "path": "/nix/store/fn1hq4dzznzgc4jskcbcv9qzapjyr94q-amazon-q-cli-1.12.6",
               "default": true
             }
           ],
-          "store_path": "/nix/store/xwp9c4pa79gb1zcngjdmbwjn39zbcjg7-amazon-q-cli-1.12.4"
+          "store_path": "/nix/store/fn1hq4dzznzgc4jskcbcv9qzapjyr94q-amazon-q-cli-1.12.6"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mcgfaiv799f93kcbhayfi396qvmyqj77-amazon-q-cli-1.12.4",
+              "path": "/nix/store/lrma8xlc4c1xmpx4da7x44mnwh5g4ag4-amazon-q-cli-1.12.6",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mcgfaiv799f93kcbhayfi396qvmyqj77-amazon-q-cli-1.12.4"
+          "store_path": "/nix/store/lrma8xlc4c1xmpx4da7x44mnwh5g4ag4-amazon-q-cli-1.12.6"
         }
       }
     },
@@ -613,12 +613,12 @@
               "default": true
             },
             {
-              "name": "doc",
-              "path": "/nix/store/fypvhmxqj3583rkzxvmwakw10yri2i23-git-2.50.0-doc"
-            },
-            {
               "name": "debug",
               "path": "/nix/store/h29apnv0hcp0w03whsh03izhq7ln1jyw-git-2.50.0-debug"
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/fypvhmxqj3583rkzxvmwakw10yri2i23-git-2.50.0-doc"
             }
           ],
           "store_path": "/nix/store/khdq35xh67vw7j7k9y4q9l0svxznhx1b-git-2.50.0"
@@ -626,8 +626,8 @@
       }
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-07-20T07:42:04Z",
-      "resolved": "github:NixOS/nixpkgs/7c688a0875df5a8c28a53fb55ae45e94eae0dddb?lastModified=1752997324&narHash=sha256-vtTM4oDke3SeDj%2B1ey6DjmzXdq8ZZSCLWSaApADDvIE%3D"
+      "last_modified": "2025-08-01T14:55:05Z",
+      "resolved": "github:NixOS/nixpkgs/e7eabdc701d7dbb810fd91a97ec358caa4c1fc50?lastModified=1754060105&narHash=sha256-di5L6e5Iiv%2BoegS07j9h23FdqEpXn0ZQqMlDOEMw1EY%3D"
     },
     "gnugrep@latest": {
       "last_modified": "2025-07-13T22:45:35Z",
@@ -1115,8 +1115,8 @@
       }
     },
     "readline@latest": {
-      "last_modified": "2025-07-19T04:40:28Z",
-      "resolved": "github:NixOS/nixpkgs/6b4955211758ba47fac850c040a27f23b9b4008f#readline",
+      "last_modified": "2025-07-25T08:26:56Z",
+      "resolved": "github:NixOS/nixpkgs/6027c30c8e9810896b92429f0092f624f7b1aace#readline",
       "source": "devbox-search",
       "version": "8.2p13",
       "systems": {
@@ -1214,16 +1214,16 @@
               "default": true
             },
             {
-              "name": "dev",
-              "path": "/nix/store/r5bisfkfmms2fv48s9dxwknlj10k09jv-readline-8.2p13-dev"
-            },
-            {
               "name": "doc",
               "path": "/nix/store/a7c0y1krfdg4937gx11nfj1ms05483jb-readline-8.2p13-doc"
             },
             {
               "name": "info",
               "path": "/nix/store/yf4z7rf4md3c7qxz9p2n9m9gbaxkfx91-readline-8.2p13-info"
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/r5bisfkfmms2fv48s9dxwknlj10k09jv-readline-8.2p13-dev"
             }
           ],
           "store_path": "/nix/store/0xq895kzz9gpfh36iyzdlywp073s6ksk-readline-8.2p13"
