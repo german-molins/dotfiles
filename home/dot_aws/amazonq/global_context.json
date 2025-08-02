@@ -1,10 +1,8 @@
 {
   "paths": [
     "~/.config/AGENT.md",
-    "~/.config/agent/**/*.md",
-    "~/.aws/amazonq/rules/**/*.md",
     "AGENT.md",
-    ".agent/**/*.md",
+    "~/.aws/amazonq/rules/**/*.md",
     ".amazonq/rules/**/*.md",
     "README.md"
   ],

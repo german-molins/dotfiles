@@ -10,15 +10,8 @@ rules:
 
 See [specification of `AGENT.md` files](https://ampcode.com/AGENT.md).
 
-### Absolute Paths (Global)
-
-- `~/.config/AGENT.md` - Global agent configuration
-- `~/.config/agent/**/*.md` - Global agent rules and context files
-
-### Relative Paths (Project)
-
-- `AGENT.md` - Project-specific agent configuration
-- `.agent/**/*.md` - Project-specific agent rules and context files
+- `~/.config/AGENT.md` - Global (user) agent context file
+- `AGENT.md` - Local (project) agent configuration
 
 ## Amp
 
@@ -37,7 +30,8 @@ Amp reads context through:
 
 1. Local `AGENT.md` file in project root
 2. Global `~/.config/AGENT.md` file
-3. Referenced files using `@` syntax (e.g., `@~/.config/agent/git.md`)
+3. Subdir `AGENT.md` files in path of files referenced in thread.
+3. Referenced files using `@` syntax.
 
 Reference: [Amp Manual - AGENT.md](https://ampcode.com/manual#AGENT.md)
 
