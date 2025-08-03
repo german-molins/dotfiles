@@ -123,7 +123,7 @@ version = "0.85.2"
 backend = "nix:aider-chat"
 
 [tools."nix:amazon-q-cli"]
-version = "1.12.4"
+version = "1.12.6"
 backend = "nix:amazon-q-cli"
 
 [tools."nix:dash"]
