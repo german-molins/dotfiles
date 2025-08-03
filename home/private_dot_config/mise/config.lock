@@ -175,10 +175,6 @@ backend = "ubi:jdx/usage"
 version = "0.8.4"
 backend = "asdf:uv"
 
-[tools.vim]
-version = "9.1.1591"
-backend = "asdf:vim"
-
 [tools.yazi]
 version = "25.5.31"
 backend = "aqua:sxyazi/yazi"

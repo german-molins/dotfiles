@@ -41,7 +41,6 @@ tree-sitter = "latest"
 upt = "latest"
 usage = "latest"
 uv = "latest"
-vim = "latest"
 yazi = "latest"
 yq = "latest"
 zellij = "latest"
@@ -61,7 +60,7 @@ idiomatic_version_file_enable_tools = []
 binstall = true
 
 [env]
-MISE_ENV = "nix"
+MISE_ENV = "nix,opt"
 _.file = ["~/.dotfiles.env", "~/.env"]
 _.path = ["~/.local/bin/"]
 PS1 = ": "
