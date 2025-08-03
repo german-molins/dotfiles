@@ -1,7 +1,6 @@
 [tools]
 aichat = "latest"
 amp = "latest"
-"aqua:atuinsh/atuin" = "latest"
 "aqua:dbrgn/tealdeer" = "latest"
 "aqua:dlvhdr/gh-dash" = "latest"
 "aqua:ip7z/7zip" = "latest"
@@ -75,6 +74,7 @@ zoxide = "latest"
 "nix:imagemagick" = "latest"
 "nix:renameutils" = "latest"
 "nix:readline" = "latest"
+atuin = "latest"
 
 [plugins]
 nix = "https://github.com/jbadeau/mise-nix.git"

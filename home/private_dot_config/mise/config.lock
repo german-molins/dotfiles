@@ -6,10 +6,6 @@ backend = "aqua:sigoden/aichat"
 version = "0.0.1753782358-g203024"
 backend = "npm:@sourcegraph/amp"
 
-[tools."aqua:atuinsh/atuin"]
-version = "18.7.1"
-backend = "aqua:atuinsh/atuin"
-
 [tools."aqua:dbrgn/tealdeer"]
 version = "1.7.2"
 backend = "aqua:dbrgn/tealdeer"
@@ -33,6 +29,15 @@ backend = "aqua:zk-org/zk"
 [tools."asdf:mise-plugins/mise-eza"]
 version = "0.23.0"
 backend = "asdf:mise-plugins/mise-eza"
+
+[tools.atuin]
+version = "18.6.1"
+backend = "aqua:atuinsh/atuin"
+
+[tools.atuin.platforms.macos-arm64]
+checksum = "sha256:649f1ea17a11d150c18c52341e7dbe18fdec551e38ca824b0cf6e9a7553dbf1d"
+size = 12077570
+url = "https://github.com/atuinsh/atuin/releases/download/v18.6.1/atuin-aarch64-apple-darwin.tar.gz"
 
 [tools.bat]
 version = "0.25.0"
