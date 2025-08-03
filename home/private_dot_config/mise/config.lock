@@ -24,8 +24,13 @@ version = "4.16.1"
 backend = "aqua:dlvhdr/gh-dash"
 
 [tools."aqua:ip7z/7zip"]
-version = "25.00"
+version = "25.01"
 backend = "aqua:ip7z/7zip"
+
+[tools."aqua:ip7z/7zip".platforms.macos-arm64]
+checksum = "blake3:cd8680b90c3d2f6808c58b017097d8dbb77800285d0b8aa6061aff81bb6499bf"
+size = 1876264
+url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-mac.tar.xz"
 
 [tools."aqua:jorgerojas26/lazysql"]
 version = "0.4.0"
@@ -90,8 +95,13 @@ size = 7899154
 url = "https://github.com/direnv/direnv/releases/download/v2.37.1/direnv.darwin-arm64"
 
 [tools.dua]
-version = "2.30.1"
+version = "2.31.0"
 backend = "aqua:Byron/dua-cli"
+
+[tools.dua.platforms.macos-arm64]
+checksum = "blake3:7407852d801138372b7841291bf787238d4fc6e90865645a9d9ee73e5b28c773"
+size = 1013911
+url = "https://github.com/Byron/dua-cli/releases/download/v2.31.0/dua-v2.31.0-x86_64-apple-darwin.tar.gz"
 
 [tools.duf]
 version = "0.8.1"
@@ -109,13 +119,13 @@ version = "10.2.0"
 backend = "aqua:sharkdp/fd"
 
 [tools.fzf]
-version = "0.65.0"
+version = "0.65.1"
 backend = "aqua:junegunn/fzf"
 
 [tools.fzf.platforms.macos-arm64]
-checksum = "sha256:9e4dfe01a67020a19861c881fd2ffbb8dd19b118b15e82e8fae83c578ca61ab7"
-size = 1657463
-url = "https://github.com/junegunn/fzf/releases/download/v0.65.0/fzf-0.65.0-darwin_arm64.tar.gz"
+checksum = "sha256:2fc1de9545e49efce63a7c1f8cd2616c0c112478867d5a99e5b24570038a57a1"
+size = 1657951
+url = "https://github.com/junegunn/fzf/releases/download/v0.65.1/fzf-0.65.1-darwin_arm64.tar.gz"
 
 [tools.gh]
 version = "2.76.2"
@@ -200,11 +210,11 @@ version = "0.14.10"
 backend = "ubi:dalance/procs"
 
 [tools."ubi:peteretelej/tree"]
-version = "1.2.1"
+version = "1.2.2"
 backend = "ubi:peteretelej/tree"
 
 [tools."ubi:peteretelej/tree".platforms.macos-arm64-tree]
-checksum = "blake3:acc3348d82020f3fd378111629f8a7c9a8a9ecec43e9687ddde1e1be75ae6318"
+checksum = "blake3:40b95021c4c7d5e63c1fa84c2c4b80982111143d3f8f1a1fa8f2840e6526b048"
 
 [tools."ubi:tstack/lnav"]
 version = "0.13.0"
