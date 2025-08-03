@@ -35,7 +35,12 @@ is more efficient and centralizes the management of the environment.
 
 ## Migration from Devbox
 
-Packages can be migrated from Devbox to Mise using the following approach:
+### Aproach 1: Direct Migration
+
+Packages can be migrated from Devbox to Mise using the following approach,
+which works for packages from Nixhub registry (backend used by Devbox) that are
+also in the Mise registry or in some of the backend registries supported by
+Mise:
 
 1. Check if the package is available in Mise registry or Aqua registry
 2. Use `mise use -g package@version` to add it to Mise
@@ -51,6 +56,17 @@ Devbox scripts can be migrated to Mise tasks by:
 1. Converting single-line scripts to entries in `config.toml`
 2. Converting multi-line scripts to task files with appropriate grouping
 3. Replacing any references to `devbox global run` with `mise run`
+
+### Approach 2: Using Mise Backend Plugin `mise-nix`
+
+[`mise-nix`](https://github.com/jbadeau/mise-nix) is a [backend
+plugin](https://mise.jdx.dev/plugin-usage.html#backend-plugins) that provides
+support for installing packages from [Nixhub](https://www.nixhub.io/)
+registry or from flakes as git links. It provides the same packaging source as Devbox, with
+the benefits of managing them with Mise, except for these current limitations:
+
+- `mise upgrade` not supported for these packages. See [the issue I
+opened](https://github.com/jbadeau/mise-nix/issues/7).
 
 ### Migration Scripts
 

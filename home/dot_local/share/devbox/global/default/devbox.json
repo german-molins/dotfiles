@@ -1,40 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
   "packages": {
-    "tmux":       "latest",
-    "git":        "latest",
-    "aider-chat": "latest",
-    "xsel":       "latest",
-    "rsync":      "latest",
-    "sshfs-fuse": "latest",
-    "rcs":        "latest",
-    "readline":   "latest",
-    "diffutils":              "latest",
-    "gnugrep":                "latest",
-    "gnused":                 "latest",
-    "gawk":                   "latest",
     "procps":                 "latest",
-    "dateutils":              "latest",
-    "tzdata":                 "latest",
     "nerd-fonts.inconsolata": "latest",
-    "file":                   "latest",
-    "xclip":                  "latest",
-    "wl-clipboard":           "latest",
-    "exiftool":               "latest",
-    "htop":                   "latest",
-    "taskwarrior-tui":        "latest",
-    "taskwarrior":            "latest",
-    "timewarrior":            "latest",
-    "gnupg":                  "latest",
-    "gpg-tui":                "latest",
-    "dos2unix":               "latest",
-    "dash":                   "latest",
     "taskopen": {
       "version":            "latest",
       "excluded_platforms": ["aarch64-darwin"]
     },
-    "amazon-q-cli": "latest",
-    "imagemagick":  "latest",
-    "renameutils":  "latest"
+    "sshfs-fuse": "latest"
   }
 }

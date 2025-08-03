@@ -10,11 +10,6 @@ backend = "npm:@sourcegraph/amp"
 version = "18.7.1"
 backend = "aqua:atuinsh/atuin"
 
-[tools."aqua:atuinsh/atuin".platforms.macos-arm64]
-checksum = "sha256:807427ad685fed6ac27ff96a494046f203f011f72a14add73ba4214723cc9190"
-size = 12474522
-url = "https://github.com/atuinsh/atuin/releases/download/v18.7.1/atuin-aarch64-apple-darwin.tar.gz"
-
 [tools."aqua:dbrgn/tealdeer"]
 version = "1.7.2"
 backend = "aqua:dbrgn/tealdeer"
@@ -27,19 +22,9 @@ backend = "aqua:dlvhdr/gh-dash"
 version = "25.01"
 backend = "aqua:ip7z/7zip"
 
-[tools."aqua:ip7z/7zip".platforms.macos-arm64]
-checksum = "blake3:cd8680b90c3d2f6808c58b017097d8dbb77800285d0b8aa6061aff81bb6499bf"
-size = 1876264
-url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-mac.tar.xz"
-
 [tools."aqua:jorgerojas26/lazysql"]
 version = "0.4.0"
 backend = "aqua:jorgerojas26/lazysql"
-
-[tools."aqua:jorgerojas26/lazysql".platforms.macos-arm64]
-checksum = "sha256:12fd0a3d420a734bb1b5c6be1cc1edc8b5f60f84d3382d5203e852d3947d0bdc"
-size = 5234544
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.0/lazysql_Darwin_arm64.tar.gz"
 
 [tools."aqua:zk-org/zk"]
 version = "0.15.1"
@@ -61,11 +46,6 @@ backend = "aqua:ClementTsang/bottom"
 version = "1.14.3"
 backend = "aqua:cargo-bins/cargo-binstall"
 
-[tools.cargo-binstall.platforms.macos-arm64]
-checksum = "blake3:4e0e5318781fd43853337c899394843a46eb6e1cb09d947ba05da021cc617fac"
-size = 5997842
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.14.3/cargo-binstall-aarch64-apple-darwin.zip"
-
 [tools."cargo:findutils"]
 version = "0.8.0"
 backend = "cargo:findutils"
@@ -78,9 +58,6 @@ backend = "cargo:git-graph"
 version = "2.63.1"
 backend = "ubi:twpayne/chezmoi"
 
-[tools.chezmoi.platforms.macos-arm64-chezmoi]
-checksum = "blake3:4e86125ca47f2832b66ab0f8b69a4acd75ec5b6a009f9f36da4841093de796e0"
-
 [tools.coreutils]
 version = "0.1.0"
 backend = "aqua:uutils/coreutils"
@@ -89,19 +66,9 @@ backend = "aqua:uutils/coreutils"
 version = "2.37.1"
 backend = "aqua:direnv/direnv"
 
-[tools.direnv.platforms.macos-arm64]
-checksum = "blake3:c6eabcde5fbd389aa0f0ca2a3ded9be347ecf1b937794aa98738feccbdcef8b0"
-size = 7899154
-url = "https://github.com/direnv/direnv/releases/download/v2.37.1/direnv.darwin-arm64"
-
 [tools.dua]
 version = "2.31.0"
 backend = "aqua:Byron/dua-cli"
-
-[tools.dua.platforms.macos-arm64]
-checksum = "blake3:7407852d801138372b7841291bf787238d4fc6e90865645a9d9ee73e5b28c773"
-size = 1013911
-url = "https://github.com/Byron/dua-cli/releases/download/v2.31.0/dua-v2.31.0-x86_64-apple-darwin.tar.gz"
 
 [tools.duf]
 version = "0.8.1"
@@ -111,9 +78,6 @@ backend = "aqua:muesli/duf"
 version = "1.2.3"
 backend = "ubi:bootandy/dust"
 
-[tools.dust.platforms.macos-arm64-dust]
-checksum = "blake3:9b0d6258a0bf37ba6692d864cb2f9a61274c6f19baee1d50dfc4a1e3bce056a4"
-
 [tools.fd]
 version = "10.2.0"
 backend = "aqua:sharkdp/fd"
@@ -122,19 +86,9 @@ backend = "aqua:sharkdp/fd"
 version = "0.65.1"
 backend = "aqua:junegunn/fzf"
 
-[tools.fzf.platforms.macos-arm64]
-checksum = "sha256:2fc1de9545e49efce63a7c1f8cd2616c0c112478867d5a99e5b24570038a57a1"
-size = 1657951
-url = "https://github.com/junegunn/fzf/releases/download/v0.65.1/fzf-0.65.1-darwin_arm64.tar.gz"
-
 [tools.gh]
 version = "2.76.2"
 backend = "aqua:cli/cli"
-
-[tools.gh.platforms.macos-arm64]
-checksum = "sha256:43cea90fbd5d3b607b6125082f4a5faf7d5fc2e548d3d349a3b0310706a4f878"
-size = 17359067
-url = "https://github.com/cli/cli/releases/download/v2.76.2/gh_2.76.2_macOS_arm64.zip"
 
 [tools.gitui]
 version = "0.27.0"
@@ -143,9 +97,6 @@ backend = "aqua:extrawurst/gitui"
 [tools.glab]
 version = "1.65.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
-
-[tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:3337eb00ad1736695c3022686bcbc74c5873a35364007be2fa6b7c1e0b9dfa0f"
 
 [tools.hyperfine]
 version = "1.19.0"
@@ -167,6 +118,118 @@ backend = "aqua:jesseduffield/lazygit"
 version = "0.11.3"
 backend = "aqua:neovim/neovim"
 
+[tools."nix:aider-chat"]
+version = "0.85.2"
+backend = "nix:aider-chat"
+
+[tools."nix:amazon-q-cli"]
+version = "1.12.4"
+backend = "nix:amazon-q-cli"
+
+[tools."nix:dash"]
+version = "0.5.12"
+backend = "nix:dash"
+
+[tools."nix:dateutils"]
+version = "0.4.11"
+backend = "nix:dateutils"
+
+[tools."nix:diffutils"]
+version = "3.12"
+backend = "nix:diffutils"
+
+[tools."nix:dos2unix"]
+version = "7.5.2"
+backend = "nix:dos2unix"
+
+[tools."nix:exiftool"]
+version = "13.25"
+backend = "nix:exiftool"
+
+[tools."nix:file"]
+version = "5.45"
+backend = "nix:file"
+
+[tools."nix:gawk"]
+version = "5.3.2"
+backend = "nix:gawk"
+
+[tools."nix:git"]
+version = "2.50.0"
+backend = "nix:git"
+
+[tools."nix:gnugrep"]
+version = "3.12"
+backend = "nix:gnugrep"
+
+[tools."nix:gnupg"]
+version = "2.4.7"
+backend = "nix:gnupg"
+
+[tools."nix:gnused"]
+version = "4.9"
+backend = "nix:gnused"
+
+[tools."nix:gpg-tui"]
+version = "0.11.1"
+backend = "nix:gpg-tui"
+
+[tools."nix:htop"]
+version = "3.4.1"
+backend = "nix:htop"
+
+[tools."nix:imagemagick"]
+version = "7.1.1-47"
+backend = "nix:imagemagick"
+
+[tools."nix:rcs"]
+version = "5.10.1"
+backend = "nix:rcs"
+
+[tools."nix:readline"]
+version = "8.2p13"
+backend = "nix:readline"
+
+[tools."nix:renameutils"]
+version = "0.12.0"
+backend = "nix:renameutils"
+
+[tools."nix:rsync"]
+version = "3.4.1"
+backend = "nix:rsync"
+
+[tools."nix:taskwarrior"]
+version = "2.6.2"
+backend = "nix:taskwarrior"
+
+[tools."nix:taskwarrior-tui"]
+version = "0.26.3"
+backend = "nix:taskwarrior-tui"
+
+[tools."nix:timewarrior"]
+version = "1.8.0"
+backend = "nix:timewarrior"
+
+[tools."nix:tmux"]
+version = "3.2a"
+backend = "nix:tmux"
+
+[tools."nix:tzdata"]
+version = "2025b"
+backend = "nix:tzdata"
+
+[tools."nix:wl-clipboard"]
+version = "2.2.1"
+backend = "nix:wl-clipboard"
+
+[tools."nix:xclip"]
+version = "0.13"
+backend = "nix:xclip"
+
+[tools."nix:xsel"]
+version = "1.2.1"
+backend = "nix:xsel"
+
 [tools.node]
 version = "24.4.1"
 backend = "core:node"
@@ -183,11 +246,6 @@ backend = "pipx:httpie"
 version = "10.14.0"
 backend = "aqua:pnpm/pnpm"
 
-[tools.pnpm.platforms.macos-arm64]
-checksum = "blake3:d5098f21e90b56f8e76fdd6ba25d22240c44343c61622f02fc92c50b92738823"
-size = 62022240
-url = "https://github.com/pnpm/pnpm/releases/download/v10.14.0/pnpm-macos-arm64"
-
 [tools.ripgrep]
 version = "14.1.1"
 backend = "aqua:BurntSushi/ripgrep"
@@ -200,11 +258,6 @@ backend = "core:rust"
 version = "0.25.8"
 backend = "aqua:tree-sitter/tree-sitter"
 
-[tools.tree-sitter.platforms.macos-arm64]
-checksum = "blake3:bab3deebfe6bc5f90bdce6883989a93d9280412b16bf45c22637bb2dc09739aa"
-size = 5904471
-url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.8/tree-sitter-macos-arm64.gz"
-
 [tools."ubi:dalance/procs"]
 version = "0.14.10"
 backend = "ubi:dalance/procs"
@@ -213,15 +266,9 @@ backend = "ubi:dalance/procs"
 version = "1.2.2"
 backend = "ubi:peteretelej/tree"
 
-[tools."ubi:peteretelej/tree".platforms.macos-arm64-tree]
-checksum = "blake3:40b95021c4c7d5e63c1fa84c2c4b80982111143d3f8f1a1fa8f2840e6526b048"
-
 [tools."ubi:tstack/lnav"]
 version = "0.13.0"
 backend = "ubi:tstack/lnav"
-
-[tools."ubi:tstack/lnav".platforms.macos-arm64-lnav]
-checksum = "blake3:96ac8599b305b735f2c6a1e487aa554ff3ce656c5bea6735af7b38561398698c"
 
 [tools.upt]
 version = "0.9.0"
@@ -231,12 +278,9 @@ backend = "ubi:sigoden/upt"
 version = "2.2.2"
 backend = "ubi:jdx/usage"
 
-[tools.usage.platforms.macos-arm64-usage]
-checksum = "blake3:8a7b96db5e8d04f208a9728f6eaa7e10d17de5357b091fa83e87c591225cf87b"
-
 [tools.uv]
 version = "0.8.4"
-backend = "aqua:astral-sh/uv"
+backend = "asdf:uv"
 
 [tools.vim]
 version = "9.1.1591"
@@ -249,11 +293,6 @@ backend = "aqua:sxyazi/yazi"
 [tools.yq]
 version = "4.47.1"
 backend = "aqua:mikefarah/yq"
-
-[tools.yq.platforms.macos-arm64]
-checksum = "blake3:576374b350e23e8a83123dbb2008bb9115c27cc6569699bfdd6b034562969f16"
-size = 11079202
-url = "https://github.com/mikefarah/yq/releases/download/v4.47.1/yq_darwin_arm64"
 
 [tools.zellij]
 version = "0.42.2"

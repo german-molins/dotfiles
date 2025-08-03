@@ -8,5 +8,7 @@ if ! command -v mise >/dev/null; then
     exit 1
 fi
 
+mise plugin add nix --quiet
+
 # mise packages hash: {{ include "private_dot_config/mise/config.lock" | sha256sum }}
 mise install
