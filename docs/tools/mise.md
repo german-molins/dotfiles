@@ -77,6 +77,33 @@ compatibility and availability
 - `migrate-devbox-scripts-to-mise.sh`: Converts Devbox scripts to Mise tasks,
 handling both simple and complex scripts
 
+## Environments
+
+Activated environments are managed by env var `MISE_ENV` as a comma-separated
+list. Implemented global environments are
+
+- `nix`: Packages using plugin backend `mise-nix`
+- `opt`: Optional packages (heavy or rarely used)
+
+Currently they are all activated by default. When declaring project
+environments locally, they must be appended to the value of activated global
+environments, else the latter would be deactivated inside the Mise-managed
+project. Example `mise.local.toml`:
+
+```toml
+[env]
+MISE_ENV = "{{env.MISE_ENV}},prod,dev"
+```
+
+Environments take precedence over the base Mise environment, so to add a
+package to a config file higher in the directory hierarchy one has to either
+`cd`, use path option `-p` or, in the case of the global environment, clear the
+`MISE_ENV` value as in
+
+```sh
+MISE_ENV= mise use -g tlrc
+```
+
 ## Tasks
 
 ### Integration with Usage
