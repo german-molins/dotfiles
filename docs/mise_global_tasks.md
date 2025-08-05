@@ -24,7 +24,7 @@ Update Chezmoi
 
 ## `clean`
 
-- Depends: nix:clean, brew:clean
+- Depends: mise:clean, nix:clean, brew:clean
 
 - **Usage**: `clean`
 
@@ -41,6 +41,12 @@ Update Devbox
 - **Usage**: `devbox:update`
 
 Update Devbox global packages
+
+## `mise:clean`
+
+- **Usage**: `mise:clean`
+
+Clean Mise cache
 
 ## `mise:lock`
 

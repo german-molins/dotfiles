@@ -76,7 +76,7 @@ JULIA_PROJECT = "@."
 
 [tasks.clean]
 description = "Clean up system packages and caches"
-depends = ["nix:clean", "brew:clean"]
+depends = ["mise:clean", "nix:clean", "brew:clean"]
 
 [tasks.self-update]
 depends = ["devbox:self-update", "brew:self-update"]
@@ -120,6 +120,10 @@ run = "fc-list | grep Nerd"
 alias = "mise:up"
 description = "Update Mise global packages"
 run = "mise upgrade"
+
+[tasks."mise:clean"]
+description = "Clean Mise cache"
+run = "mise prune"
 
 [tasks."nvim:clean"]
 description = "Clean Neovim plugins"
