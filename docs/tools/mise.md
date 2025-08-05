@@ -66,7 +66,9 @@ registry or from flakes as git links. It provides the same packaging source as D
 the benefits of managing them with Mise, except for these current limitations:
 
 - `mise upgrade` not supported for these packages. See [the issue I
-opened](https://github.com/jbadeau/mise-nix/issues/7).
+opened](https://github.com/jbadeau/mise-nix/issues/7), which the author found
+out to be actually a Mise bug, for which he opened a
+[discussion](https://github.com/jdx/mise/discussions/5909).
 
 ### Migration Scripts
 
