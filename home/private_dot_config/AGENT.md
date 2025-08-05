@@ -11,7 +11,9 @@
 
 ## Code Style
 
-- NEVER write comments except very rarely for very nuanced clarifications.
+- NEVER write code comments except very rarely for very nuanced clarifications.
+- Unless otherwise stated, ALWAYS write shell scripts to be POSIX and using
+shebang `#!/usr/bin/env sh`.
 
 ## Git Workflow
 
