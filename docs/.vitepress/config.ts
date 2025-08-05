@@ -25,7 +25,8 @@ export default defineConfig({
             items: [
               { text: "Mise", link: '/tools/mise' },
               { text: "Git", link: '/tools/git' },
-              { text: "Neovim", link: '/tools/nvim' }
+              { text: "Neovim", link: '/tools/nvim' },
+              { text: "uutils", link: '/tools/uutils' }
             ]
           }
         ]
