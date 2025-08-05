@@ -1,5 +1,4 @@
 [tools]
-"nix:aider-chat" = "latest"
 "nix:dos2unix" = "latest"
 "nix:gawk" = "latest"
 "nix:git" = "latest"
