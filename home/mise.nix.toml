@@ -8,7 +8,6 @@
 "nix:rsync" = "latest"
 "nix:rcs" = "latest"
 "nix:gnugrep" = "latest"
-"nix:diffutils" = "latest"
 "nix:gnused" = "latest"
 "nix:dateutils" = "latest"
 "nix:tzdata" = "latest"

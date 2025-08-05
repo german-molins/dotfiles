@@ -51,6 +51,10 @@ backend = "aqua:ClementTsang/bottom"
 version = "1.14.3"
 backend = "aqua:cargo-bins/cargo-binstall"
 
+[tools."cargo:diffutils"]
+version = "0.4.2"
+backend = "cargo:diffutils"
+
 [tools."cargo:findutils"]
 version = "0.8.0"
 backend = "cargo:findutils"

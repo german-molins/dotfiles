@@ -14,10 +14,6 @@ backend = "nix:dash"
 version = "0.4.11"
 backend = "nix:dateutils"
 
-[tools."nix:diffutils"]
-version = "3.12"
-backend = "nix:diffutils"
-
 [tools."nix:dos2unix"]
 version = "7.5.2"
 backend = "nix:dos2unix"

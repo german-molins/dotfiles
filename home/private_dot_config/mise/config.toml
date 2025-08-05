@@ -46,6 +46,7 @@ yq = "latest"
 zellij = "latest"
 zoxide = "latest"
 atuin = "latest"
+"cargo:diffutils" = "latest"
 
 [plugins]
 nix = "https://github.com/jbadeau/mise-nix.git"
