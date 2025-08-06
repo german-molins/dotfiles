@@ -1,7 +1,6 @@
 [tools]
 aichat = "latest"
 amp = "latest"
-"aqua:dbrgn/tealdeer" = "latest"
 "aqua:dlvhdr/gh-dash" = "latest"
 "aqua:ip7z/7zip" = "latest"
 "aqua:jorgerojas26/lazysql" = "latest"
@@ -47,6 +46,7 @@ zellij = "latest"
 zoxide = "latest"
 atuin = "latest"
 "cargo:diffutils" = "latest"
+tlrc = "latest"
 
 [plugins]
 nix = "https://github.com/jbadeau/mise-nix.git"
@@ -73,6 +73,7 @@ PAGER = "bat --plain"
 # WSL2
 BROWSER = "firefox.exe"
 JULIA_PROJECT = "@."
+TLRC_CONFIG = "{{env.HOME}}/.config/tlrc/config.toml"
 
 [tasks.clean]
 description = "Clean up system packages and caches"

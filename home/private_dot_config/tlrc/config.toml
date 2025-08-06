@@ -1,0 +1,10 @@
+[style.title]
+color = "cyan"
+bold = true
+
+[style.description]
+
+[style.example]
+
+[style.placeholder]
+color = "yellow"

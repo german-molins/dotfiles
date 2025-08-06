@@ -6,10 +6,6 @@ backend = "aqua:sigoden/aichat"
 version = "0.0.1753782358-g203024"
 backend = "npm:@sourcegraph/amp"
 
-[tools."aqua:dbrgn/tealdeer"]
-version = "1.7.2"
-backend = "aqua:dbrgn/tealdeer"
-
 [tools."aqua:dlvhdr/gh-dash"]
 version = "4.16.1"
 backend = "aqua:dlvhdr/gh-dash"
@@ -150,6 +146,10 @@ backend = "aqua:BurntSushi/ripgrep"
 [tools.rust]
 version = "1.88.0"
 backend = "core:rust"
+
+[tools.tlrc]
+version = "1.11.1"
+backend = "aqua:tldr-pages/tlrc"
 
 [tools.tree-sitter]
 version = "0.25.8"
