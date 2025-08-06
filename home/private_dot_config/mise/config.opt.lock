@@ -1,3 +1,11 @@
+[tools.ffmpeg]
+version = "7.1.1"
+backend = "asdf:ffmpeg"
+
+[tools.resvg]
+version = "0.45.1"
+backend = "aqua:linebender/resvg"
+
 [tools.vim]
 version = "9.1.1591"
 backend = "asdf:vim"
