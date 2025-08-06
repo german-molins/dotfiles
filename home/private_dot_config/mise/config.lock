@@ -119,6 +119,15 @@ backend = "aqua:jesseduffield/lazydocker"
 version = "0.53.0"
 backend = "aqua:jesseduffield/lazygit"
 
+[tools.lnav]
+version = "0.13.0"
+backend = "aqua:tstack/lnav"
+
+[tools.lnav.platforms.macos-arm64]
+checksum = "blake3:78d597199b0c46e2371ed922ac39562decc0d09bd913cba10d3db2853ea8cfe8"
+size = 12736379
+url = "https://github.com/tstack/lnav/releases/download/v0.13.0/lnav-0.13.0-x86_64-macos.zip"
+
 [tools.neovim]
 version = "0.11.3"
 backend = "aqua:neovim/neovim"
@@ -162,10 +171,6 @@ backend = "ubi:dalance/procs"
 [tools."ubi:peteretelej/tree"]
 version = "1.2.2"
 backend = "ubi:peteretelej/tree"
-
-[tools."ubi:tstack/lnav"]
-version = "0.13.0"
-backend = "ubi:tstack/lnav"
 
 [tools.upt]
 version = "0.9.0"
