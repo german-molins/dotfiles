@@ -47,6 +47,7 @@ atuin = "latest"
 "cargo:diffutils" = "latest"
 tlrc = "latest"
 lnav = "latest"
+xh = "latest"
 
 [plugins]
 nix = "https://github.com/jbadeau/mise-nix.git"

@@ -184,6 +184,15 @@ backend = "ubi:jdx/usage"
 version = "0.8.4"
 backend = "asdf:uv"
 
+[tools.xh]
+version = "0.24.1"
+backend = "aqua:ducaale/xh"
+
+[tools.xh.platforms.macos-arm64]
+checksum = "blake3:ec31720629e9a1e4869b01c9194405743a666a974fa6c91d885f5919ddf76ef0"
+size = 3530843
+url = "https://github.com/ducaale/xh/releases/download/v0.24.1/xh-v0.24.1-aarch64-apple-darwin.tar.gz"
+
 [tools.yazi]
 version = "25.5.31"
 backend = "aqua:sxyazi/yazi"
