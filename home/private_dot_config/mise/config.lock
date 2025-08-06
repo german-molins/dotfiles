@@ -164,6 +164,10 @@ backend = "aqua:tldr-pages/tlrc"
 version = "0.25.8"
 backend = "aqua:tree-sitter/tree-sitter"
 
+[tools.tssh]
+version = "0.1.22"
+backend = "aqua:trzsz/trzsz-ssh"
+
 [tools."ubi:dalance/procs"]
 version = "0.14.10"
 backend = "ubi:dalance/procs"

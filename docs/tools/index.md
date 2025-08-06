@@ -1,6 +1,8 @@
 # Tools
 
-## Main Tools And Apps
+## List Of Tools
+
+### Main Tools And Apps
 
 These are my daily CLI drivers:
 
@@ -36,6 +38,13 @@ These are my daily CLI drivers:
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
 | [Lnav](https://lnav.org/) | `lnav` | | Logfile navigator |
 
+### Other Tools
+
+
+| Name | Commands | Aliases | Description |
+|------|---------|-------|-------------|
+| [Trzsz-ssh](https://trzsz.github.io/ssh) | `tssh` | | SSH client, drop-in replacement of [OpenSSH](https://www.openssh.com/) |
+
 ## Package Registries
 
 Mise:
@@ -57,3 +66,4 @@ Yazi:
 ## Sites Of Interest
 
 - [Terminal Trove](https://terminaltrove.com/)
+
