@@ -12,5 +12,12 @@
     "mise tasks --local --extended",
     "pandoc *"
   ],
-  "amp.mcpServers": {}
+  "amp.mcpServers": {
+    "mise": {
+      "command": "mise",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
 }
