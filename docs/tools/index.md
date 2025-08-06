@@ -1,4 +1,6 @@
-# Main Tools And Apps
+# Tools
+
+## Main Tools And Apps
 
 These are my daily CLI drivers:
 
@@ -33,3 +35,25 @@ These are my daily CLI drivers:
 | [Timewarrior](https://timewarrior.net/) | `timew` | | Time manager |
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
 | [Lnav](https://lnav.org/) | `lnav` | | Logfile navigator |
+
+## Package Registries
+
+Mise:
+
+- [Mise registry](https://mise.jdx.dev/registry.html#tools)
+- Aqua backend: [Aqua registry](https://aquaproj.github.io/docs/products/aqua-registry/)
+- Cargo backend: [Crates](https://crates.io/)
+- Pipx backend: [PyPI](https://pypi.org/)
+
+Devbox:
+
+- [NixHub](https://www.nixhub.io/)
+
+Yazi:
+
+- Official plugins: [Plugins](https://github.com/yazi-rs/plugins)
+- Color schemes: [Flavors](https://github.com/yazi-rs/flavors)
+
+## Sites Of Interest
+
+- [Terminal Trove](https://terminaltrove.com/)
