@@ -65,6 +65,9 @@ binstall = true
 MISE_ENV = "nix,opt"
 _.file = ["~/.dotfiles.env", "~/.env"]
 _.path = ["~/.local/bin/"]
+
+XDG_CONFIG_HOME = "{{env.HOME}}/.config"
+
 PS1 = ": "
 PS2 = ".. "
 VISUAL = "nvim"
