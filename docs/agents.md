@@ -37,8 +37,12 @@ Reference: [Amp Manual - AGENT.md](https://ampcode.com/manual#AGENT.md)
 
 ## Amazon Q Developer
 
-[Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/)
-is AWS's LLM coding agent with CLI interface.
+References:
+
+- [Primary documentation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html)
+- [Technical documentation](https://aws.github.io/amazon-q-developer-cli/)
+
+AZQ is AWS's LLM coding agent with CLI interface.
 
 ### Configuration
 
