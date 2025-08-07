@@ -26,6 +26,7 @@ export default defineConfig({
               { text: "Mise", link: '/tools/mise' },
               { text: "System Dependencies", link: '/tools/system_dependencies' },
               { text: "Git", link: '/tools/git' },
+              { text: "Atuin", link: '/tools/atuin' },
               { text: "Neovim", link: '/tools/nvim' },
               { text: "http", link: '/tools/http' },
               { text: "uutils", link: '/tools/uutils' },
