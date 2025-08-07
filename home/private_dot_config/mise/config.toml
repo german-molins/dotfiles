@@ -45,10 +45,10 @@ zellij = "latest"
 zoxide = "latest"
 atuin = "latest"
 "cargo:diffutils" = "latest"
-tlrc = "latest"
 xh = "latest"
 tssh = "latest"
 "ubi:tstack/lnav" = "latest"
+"cargo:tlrc" = "latest"
 
 [plugins]
 nix = "https://github.com/jbadeau/mise-nix.git"

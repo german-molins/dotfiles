@@ -64,6 +64,10 @@ backend = "cargo:findutils"
 version = "0.6.0"
 backend = "cargo:git-graph"
 
+[tools."cargo:tlrc"]
+version = "1.11.1"
+backend = "cargo:tlrc"
+
 [tools.chezmoi]
 version = "2.64.0"
 backend = "ubi:twpayne/chezmoi"
@@ -164,10 +168,6 @@ backend = "aqua:BurntSushi/ripgrep"
 [tools.rust]
 version = "1.88.0"
 backend = "core:rust"
-
-[tools.tlrc]
-version = "1.11.1"
-backend = "aqua:tldr-pages/tlrc"
 
 [tools.tree-sitter]
 version = "0.25.8"
