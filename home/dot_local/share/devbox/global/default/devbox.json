@@ -7,6 +7,7 @@
       "version":            "latest",
       "excluded_platforms": ["aarch64-darwin"]
     },
-    "sshfs-fuse": "latest"
+    "sshfs-fuse": "latest",
+    "gitflow":    "latest"
   }
 }
