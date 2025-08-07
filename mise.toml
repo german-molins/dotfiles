@@ -1,6 +1,6 @@
 [tools]
 bun = "latest"
-jq = "1.7.1"
+jq = "latest"
 
 [hooks]
 postinstall = "bun install"

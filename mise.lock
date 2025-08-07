@@ -7,5 +7,10 @@ checksum = "blake3:1d033789f9a12ddcc7b1e03c675af1dfcbf770aa7fbfa2c49dc6599e591e4
 size = 21573514
 
 [tools.jq]
-version = "1.7.1"
+version = "1.8.1"
 backend = "aqua:jqlang/jq"
+
+[tools.jq.platforms.macos-arm64]
+checksum = "sha256:a9fe3ea2f86dfc72f6728417521ec9067b343277152b114f4e98d8cb0e263603"
+size = 841408
+url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-macos-arm64"
