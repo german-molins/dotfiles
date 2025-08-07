@@ -31,7 +31,7 @@ Amp reads context through:
 1. Local `AGENT.md` file in project root
 2. Global `~/.config/AGENT.md` file
 3. Subdir `AGENT.md` files in path of files referenced in thread.
-3. Referenced files using `@` syntax.
+4. Referenced files using `@` syntax.
 
 Reference: [Amp Manual - AGENT.md](https://ampcode.com/manual#AGENT.md)
 
