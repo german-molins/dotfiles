@@ -1,5 +1,5 @@
 [tools."nix:amazon-q-cli"]
-version = "1.12.6"
+version = "1.12.7"
 backend = "nix:amazon-q-cli"
 
 [tools."nix:dash"]
