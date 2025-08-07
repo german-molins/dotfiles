@@ -7,5 +7,5 @@ version = "0.45.1"
 backend = "aqua:linebender/resvg"
 
 [tools.vim]
-version = "9.1.1591"
+version = "9.1.1602"
 backend = "asdf:vim"
