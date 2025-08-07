@@ -132,15 +132,6 @@ checksum = "sha256:25710495177762f9df2dccaf5e7deed8e5ec70871b7ad385cffa8f7de0646
 size = 7571702
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.54.1/lazygit_0.54.1_darwin_arm64.tar.gz"
 
-[tools.lnav]
-version = "0.13.0"
-backend = "aqua:tstack/lnav"
-
-[tools.lnav.platforms.macos-arm64]
-checksum = "blake3:78d597199b0c46e2371ed922ac39562decc0d09bd913cba10d3db2853ea8cfe8"
-size = 12736379
-url = "https://github.com/tstack/lnav/releases/download/v0.13.0/lnav-0.13.0-x86_64-macos.zip"
-
 [tools.neovim]
 version = "0.11.3"
 backend = "aqua:neovim/neovim"
@@ -193,6 +184,10 @@ backend = "ubi:dalance/procs"
 [tools."ubi:peteretelej/tree"]
 version = "1.2.2"
 backend = "ubi:peteretelej/tree"
+
+[tools."ubi:tstack/lnav"]
+version = "0.13.0"
+backend = "ubi:tstack/lnav"
 
 [tools.upt]
 version = "0.9.0"
