@@ -40,9 +40,9 @@ These are my daily CLI drivers:
 
 ### Other Tools
 
-
 | Name | Commands | Aliases | Description |
 |------|---------|-------|-------------|
+| [Git Flow](https://github.com/nvie/gitflow) | `git-flow` | `git flow` | Commands for the Gitflow branching model |
 | [Trzsz-ssh](https://trzsz.github.io/ssh) | `tssh` | | SSH client, drop-in replacement of [OpenSSH](https://www.openssh.com/) |
 
 ## Package Registries
@@ -66,4 +66,3 @@ Yazi:
 ## Sites Of Interest
 
 - [Terminal Trove](https://terminaltrove.com/)
-
