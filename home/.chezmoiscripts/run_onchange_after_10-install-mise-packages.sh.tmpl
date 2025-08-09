@@ -10,5 +10,7 @@ fi
 
 mise plugin add nix --quiet
 
-# mise packages hash: {{ include "private_dot_config/mise/config.lock" | sha256sum }}
+# mise packages: {{ include "private_dot_config/mise/config.lock" | sha256sum }}
+# mise nix packages: {{ include "private_dot_config/mise/config.nix.lock" | sha256sum }}
+# mise opt packages: {{ include "private_dot_config/mise/config.opt.lock" | sha256sum }}
 mise install
