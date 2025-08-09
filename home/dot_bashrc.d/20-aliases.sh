@@ -1,11 +1,7 @@
-alias ll='ls -lh --color=auto --file-type --group-directories-first'
-alias lla='ls -Alh --color=auto --file-type --group-directories-first'
-
 alias ai=aichat
 alias llm=aichat
 alias c=clear
 alias h=head
-alias l=ll
 alias p=pwd
 alias t=tail
 alias u='df -H "$HOME"'
