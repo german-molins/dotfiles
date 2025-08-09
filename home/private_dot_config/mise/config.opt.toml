@@ -1,4 +1,3 @@
 [tools]
 resvg = "latest"
-vim = "latest"
 ffmpeg = "latest"

@@ -72,7 +72,7 @@ XDG_CONFIG_HOME = "{{env.HOME}}/.config"
 PS1 = ": "
 PS2 = ".. "
 VISUAL = "nvim"
-EDITOR = "{{env.VISUAL}}"
+EDITOR = "nvim -u NONE"
 PAGER = "bat --plain"
 
 # WSL2
