@@ -14,3 +14,4 @@ packages:
       # Desktop app needed because it ships with a Linux VM, since macOS can't
       # virtualise Linux kernel otherwise.
       # - docker
+      - db-browser-for-sqlite
