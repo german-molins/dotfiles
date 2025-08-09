@@ -49,6 +49,7 @@ xh = "latest"
 tssh = "latest"
 "ubi:tstack/lnav" = "latest"
 "cargo:tlrc" = "latest"
+carapace = "latest"
 
 [plugins]
 nix = "https://github.com/jbadeau/mise-nix.git"

@@ -48,6 +48,15 @@ checksum = "blake3:ebd4005ddf506a56497b293f2577323999ae26daec427e3f2f7f4da3ce6cd
 size = 1799125
 url = "https://github.com/ClementTsang/bottom/releases/download/0.11.0/bottom_aarch64-apple-darwin.tar.gz"
 
+[tools.carapace]
+version = "1.4.1"
+backend = "aqua:carapace-sh/carapace-bin"
+
+[tools.carapace.platforms.macos-arm64]
+checksum = "sha256:4dfb87a8914b8ece99a57d1f2f424dcb173b5ddd8b2d41f5d36c397d24b17ef1"
+size = 12312027
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.4.1/carapace-bin_1.4.1_darwin_arm64.tar.gz"
+
 [tools.cargo-binstall]
 version = "1.14.3"
 backend = "aqua:cargo-bins/cargo-binstall"

@@ -21,6 +21,7 @@ These are my daily CLI drivers:
 | [Tmux](https://github.com/tmux/tmux) | `tmux` | | Terminal multiplexer |
 | [Zoxide](https://github.com/ajeetdsouza/zoxide) | `zoxide` | `cd`, `cdi` | Smarter `cd` |
 | [Atuin](https://atuin.sh/) | `atuin` | | Shell history manager |
+| [Carapace](https://carapace-sh.github.io/carapace-bin/) | `carapace` | | Shell completion |
 | [Yazi](https://yazi-rs.github.io/) | `yazi`, `ya` | `y` | File manager |
 | [Neovim](https://neovim.io/) | `nvim` | | Text editor and IDE |
 | [Git](https://git-scm.com/) | `git` | | Version control system |
