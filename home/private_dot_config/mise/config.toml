@@ -69,8 +69,6 @@ MISE_ENV = "nix,opt"
 _.file = ["~/.dotfiles.env", "~/.env", "~/.config/user-dirs.dirs"]
 _.path = ["~/.local/bin/"]
 
-XDG_CONFIG_HOME = "{{env.HOME}}/.config"
-
 PS1 = ": "
 PS2 = ".. "
 VISUAL = "nvim"
