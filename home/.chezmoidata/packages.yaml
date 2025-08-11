@@ -1,4 +1,6 @@
 packages:
+  upt:
+    - zsh
   homebrew:
     brews:
       - bash-completion@2
