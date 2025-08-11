@@ -164,3 +164,18 @@ devbox install
 # Update project dependencies
 devbox update
 ```
+
+## UPT
+
+[UPT](https://github.com/sigoden/upt) is a cross-platform package manager
+that wraps the default package manager shipped by the vendor on
+each platform. Homebrew is the one exception, which is an external dependency.
+It is also an exception in the sense that it *must not* be run with `sudo`. All
+other platform's system package managers *do* require `sudo`.
+
+For this reason Mise task `upt` is available. It is a Chezmoi template that
+omits the `sudo` prefix on MacOS, and is used like
+
+```sh
+mise run upt install my-tool
+```
