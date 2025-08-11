@@ -66,7 +66,7 @@ binstall = true
 
 [env]
 MISE_ENV = "nix,opt"
-_.file = ["~/.dotfiles.env", "~/.env"]
+_.file = ["~/.dotfiles.env", "~/.env", "~/.config/user-dirs.dirs"]
 _.path = ["~/.local/bin/"]
 
 XDG_CONFIG_HOME = "{{env.HOME}}/.config"
