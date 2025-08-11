@@ -12,7 +12,6 @@
 "devbox:tzdata" = "latest"
 "devbox:file" = "latest"
 "devbox:xclip" = "latest"
-"devbox:wl-clipboard" = "latest"
 "devbox:exiftool" = "latest"
 "devbox:htop" = "latest"
 "devbox:taskwarrior-tui" = "latest"

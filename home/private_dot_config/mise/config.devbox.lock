@@ -94,10 +94,6 @@ backend = "devbox:tmux"
 version = "2025b"
 backend = "devbox:tzdata"
 
-[tools."devbox:wl-clipboard"]
-version = "2.2.1"
-backend = "devbox:wl-clipboard"
-
 [tools."devbox:xclip"]
 version = "0.13"
 backend = "devbox:xclip"
