@@ -8,9 +8,14 @@ if ! command -v mise >/dev/null; then
     exit 1
 fi
 
-mise plugin add nix --quiet
+{{ if eq .chezmoi.os "linux" -}}
+# Make nix available in current shell.
+. "$HOME"/.nix-profile/etc/profile.d/nix.sh
+{{ end }}
+
+mise plugin add nix "https://github.com/jbadeau/mise-nix.git" --quiet
 
 # mise packages: {{ include "private_dot_config/mise/config.lock" | sha256sum }}
 # mise nix packages: {{ include "private_dot_config/mise/config.nix.lock" | sha256sum }}
 # mise opt packages: {{ include "private_dot_config/mise/config.opt.lock" | sha256sum }}
-mise install
+MISE_ENV=opt,nix mise install
