@@ -52,7 +52,7 @@ tssh = "latest"
 carapace = "latest"
 
 [plugins]
-nix = "https://github.com/jbadeau/mise-nix.git"
+# nix = "https://github.com/jbadeau/mise-nix.git"
 
 [settings]
 experimental = true
@@ -65,7 +65,7 @@ idiomatic_version_file_enable_tools = []
 binstall = true
 
 [env]
-MISE_ENV = "nix,opt"
+MISE_ENV = "devbox,opt"
 _.file = ["~/.dotfiles.env", "~/.env", "~/.config/user-dirs.dirs"]
 _.path = ["~/.local/bin/"]
 

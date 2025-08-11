@@ -13,9 +13,9 @@ fi
 . "$HOME"/.nix-profile/etc/profile.d/nix.sh
 {{ end }}
 
-mise plugin add nix "https://github.com/jbadeau/mise-nix.git" --quiet
+mise plugin install devbox "https://github.com/jbadeau/mise-nix.git" --quiet
 
 # mise packages: {{ include "private_dot_config/mise/config.lock" | sha256sum }}
-# mise nix packages: {{ include "private_dot_config/mise/config.nix.lock" | sha256sum }}
+# mise nix packages: {{ include "private_dot_config/mise/config.devbox.lock" | sha256sum }}
 # mise opt packages: {{ include "private_dot_config/mise/config.opt.lock" | sha256sum }}
-MISE_ENV=opt,nix mise install
+MISE_ENV=devbox,opt mise install

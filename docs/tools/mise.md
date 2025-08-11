@@ -61,9 +61,10 @@ Devbox scripts can be migrated to Mise tasks by:
 
 [`mise-nix`](https://github.com/jbadeau/mise-nix) is a [backend
 plugin](https://mise.jdx.dev/plugin-usage.html#backend-plugins) that provides
-support for installing packages from [Nixhub](https://www.nixhub.io/)
-registry or from flakes as git links. It provides the same packaging source as Devbox, with
-the benefits of managing them with Mise, except for these current limitations:
+support for installing packages from [Nixhub](https://www.nixhub.io/) registry
+("built for devbox by [jetify](https://www.jetify.com/)") or from flakes as
+git links. It provides the same packaging source as Devbox, with the benefits
+of managing them with Mise, except for these current limitations:
 
 - `mise upgrade` not supported for these packages. See [the issue I
 opened](https://github.com/jbadeau/mise-nix/issues/7), which the author found
@@ -84,7 +85,7 @@ handling both simple and complex scripts
 Activated environments are managed by env var `MISE_ENV` as a comma-separated
 list. Implemented global environments are
 
-- `nix`: Packages using plugin backend `mise-nix`
+- `devbox`: Packages using plugin backend `mise-nix`
 - `opt`: Optional packages (heavy or rarely used)
 
 Currently they are all activated by default. When declaring project
