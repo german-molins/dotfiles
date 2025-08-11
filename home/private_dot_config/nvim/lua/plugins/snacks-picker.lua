@@ -11,6 +11,7 @@ return {
           return vim.o.columns >= 200 and "default" or "vertical"
         end,
       },
+      hidden = true,
     },
   },
 }
