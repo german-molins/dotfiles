@@ -59,6 +59,7 @@ experimental = true
 lockfile = true
 always_keep_download = true
 idiomatic_version_file_enable_tools = []
+trusted_config_paths = ["{{ exec(command='chezmoi source-path') }}"]
 
 [settings.cargo]
 binstall = true
