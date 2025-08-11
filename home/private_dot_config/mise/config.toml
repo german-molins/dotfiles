@@ -96,6 +96,7 @@ depends = [
   "yazi:update",
   "nvim:update",
   "brew:update",
+  "upt:update",
 ]
 
 [tasks."brew:update"]
@@ -117,6 +118,10 @@ run = "devbox version update"
 [tasks."devbox:update"]
 description = "Update Devbox global packages"
 run = "devbox global update"
+
+[tasks."upt:update"]
+description = "Update system packages"
+run = ["mise run upt update", "mise run upt upgrade"]
 
 [tasks."nerd-fonts:list"]
 description = "List installed Nerd Fonts"
