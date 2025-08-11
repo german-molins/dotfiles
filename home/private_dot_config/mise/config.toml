@@ -57,6 +57,7 @@ nix = "https://github.com/jbadeau/mise-nix.git"
 [settings]
 experimental = true
 lockfile = true
+activate_aggressive = true
 always_keep_download = true
 idiomatic_version_file_enable_tools = []
 
