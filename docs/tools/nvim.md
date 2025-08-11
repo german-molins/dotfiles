@@ -1,5 +1,15 @@
 # Neovim
 
+## LazyVim
+
+[LazyVim](https://www.lazyvim.org/) is the used plugin manager.
+
+Plugins shipped with LazyVim for which I provide explicit configuration that
+overrides the defaults:
+
+- [`snacks.nvim`]
+  - [Snacks Picker](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md)
+
 ## Project-Local Configuration
 
 Plugin `nvim-config-local` is used to load project-local configuration files.
