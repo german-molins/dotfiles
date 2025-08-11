@@ -1,9 +1,11 @@
 # System Dependencies
 
-- `ffmpeg` (mise env `opt` with backend `asdf`):
-  - Yazi: Video thumnails
-- `resvg` (mise env `opt` with backend `devbox`):
-  - Neovim: Plugin `mdmath`
-  - Yazi: Preview SVG images
-- ImageMagick (mise env `devbox`):
-  - Yazi: Image formats preview
+The following is a list of system-level dependencies required by various tools.
+These dependencies are managed through different mise environments and
+backends.
+
+| Dependency | Environment | Backend | Tools |
+|------------|-------------|---------|-------|
+| ffmpeg | opt | asdf | Yazi |
+| resvg | opt | devbox | Neovim, Yazi |
+| ImageMagick | devbox | devbox | Yazi |
