@@ -66,6 +66,10 @@ backend = "devbox:readline"
 version = "0.12.0"
 backend = "devbox:renameutils"
 
+[tools."devbox:resvg"]
+version = "0.45.1"
+backend = "devbox:resvg"
+
 [tools."devbox:rsync"]
 version = "3.4.1"
 backend = "devbox:rsync"

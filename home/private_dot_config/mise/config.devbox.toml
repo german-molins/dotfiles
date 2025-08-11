@@ -25,3 +25,4 @@
 "devbox:imagemagick" = "latest"
 "devbox:renameutils" = "latest"
 "devbox:readline" = "latest"
+"devbox:resvg" = "0.45.1"
