@@ -15,7 +15,7 @@ These are my daily CLI drivers:
 | [Kitty](https://sw.kovidgoyal.net/kitty/) | `kitty` | | Terminal emulator |
 | [Alacritty](https://alacritty.org/) | `alacritty` | | Terminal emulator |
 | [Bash](https://devdocs.io/bash/) | `bash` | | Interactive shell |
-| [Usage](https://devdocs.io/bash/) | `usage` | | Polyglot script CLI manager |
+| [Usage](https://usage.jdx.dev/) | `usage` | | Polyglot script CLI manager |
 | [Devpod](https://devpod.sh/) | `devpod` | | Devcontainer manager |
 | [Zellij](https://zellij.dev/) | `zellij` | `z{e,r}{,f,i}` | Terminal workspaces |
 | [Tmux](https://github.com/tmux/tmux) | `tmux` | | Terminal multiplexer |
