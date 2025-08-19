@@ -52,7 +52,7 @@ tssh = "latest"
 carapace = "latest"
 
 [plugins]
-# nix = "https://github.com/jbadeau/mise-nix.git"
+devbox = "https://github.com/jbadeau/mise-nix.git"
 
 [settings]
 experimental = true
