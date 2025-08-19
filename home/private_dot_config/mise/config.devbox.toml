@@ -25,3 +25,4 @@
 "devbox:renameutils" = "latest"
 "devbox:readline" = "latest"
 "devbox:resvg" = "0.45.1"
+"devbox:poppler-utils" = "latest"

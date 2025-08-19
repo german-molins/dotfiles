@@ -25,13 +25,14 @@ export default defineConfig({
             items: [
               { text: "Mise", link: '/tools/mise' },
               { text: "System Dependencies", link: '/tools/system_dependencies' },
+              { text: "General Utils", link: '/tools/utils' },
               { text: "Git", link: '/tools/git' },
               { text: "Lazygit", link: '/tools/lazygit' },
               { text: "Atuin", link: '/tools/atuin' },
               { text: "Neovim", link: '/tools/nvim' },
               { text: "http", link: '/tools/http' },
               { text: "uutils", link: '/tools/uutils' },
-              { text: "tldr", link: '/tools/tldr' }
+              { text: "tldr", link: '/tools/tldr' },
             ]
           }
         ]

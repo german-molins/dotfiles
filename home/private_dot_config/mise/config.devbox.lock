@@ -54,6 +54,10 @@ backend = "devbox:htop"
 version = "7.1.1-47"
 backend = "devbox:imagemagick"
 
+[tools."devbox:poppler-utils"]
+version = "25.07.0"
+backend = "devbox:poppler-utils"
+
 [tools."devbox:rcs"]
 version = "5.10.1"
 backend = "devbox:rcs"
