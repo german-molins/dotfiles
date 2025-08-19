@@ -26,3 +26,4 @@
 "devbox:readline" = "latest"
 "devbox:resvg" = "latest"
 "devbox:poppler-utils" = "latest"
+"nix:git-extras" = "latest"
