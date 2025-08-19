@@ -72,7 +72,7 @@ _.path = ["~/.local/bin/"]
 PS1 = ": "
 PS2 = ".. "
 VISUAL = "nvim"
-EDITOR = "nvim -u NONE"
+EDITOR = "__nvim-bare"
 PAGER = "bat --plain"
 
 # WSL2

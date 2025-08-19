@@ -1,5 +1,14 @@
 # Home
 
+## Environment
+
+Environment variables (managed by mise):
+
+| Env Var | Value |
+|---|---|
+| `EDITOR` | Bare Neovim |
+| `VISUAL` | Neovim |
+
 ## Home Structure
 
 - `repos/${owner}/${repo}`: Repositories are to be cloned in this directory
