@@ -20,7 +20,7 @@
 "devbox:gnupg" = "latest"
 "devbox:gpg-tui" = "latest"
 "devbox:dash" = "latest"
-"devbox:amazon-q-cli" = "latest"
+"devbox:amazon-q-cli" = "1.13.1"
 "devbox:imagemagick" = "latest"
 "devbox:renameutils" = "latest"
 "devbox:readline" = "latest"
