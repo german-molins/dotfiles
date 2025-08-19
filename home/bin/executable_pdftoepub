@@ -1,20 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env -S usage bash
+#USAGE about "Convert a PDF file to EPUB format using pdftotext and pandoc"
+#USAGE arg "<input_pdf>" help="The PDF file to convert"
 
 set -euo pipefail
 
-function show_help() {
-    cat << EOF
-Usage: $(basename "$0") <input.pdf>
-
-Convert a PDF file to EPUB format using pdftotext and pandoc.
-
-Arguments:
-    input.pdf    The PDF file to convert
-
-The output will be created in the same directory as the input file,
-with the same name but .epub extension.
-EOF
-}
+input_file="$usage_input_pdf"
 
 # Check if we have all required commands
 for cmd in pdftotext pandoc; do
@@ -23,14 +13,6 @@ for cmd in pdftotext pandoc; do
         exit 1
     fi
 done
-
-# Check arguments
-if [ $# -ne 1 ]; then
-    show_help
-    exit 1
-fi
-
-input_file="$1"
 
 # Check if input file exists and is readable
 if [ ! -f "$input_file" ]; then
