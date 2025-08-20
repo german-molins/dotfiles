@@ -4,9 +4,11 @@
 
 [LazyVim](https://www.lazyvim.org/) is the used plugin manager.
 
-Plugins shipped with LazyVim for which I provide explicit configuration that
-overrides the defaults:
+Following is a list of plugins supported by LazyVim. For some of them I provide
+explicit configuration that overrides the defaults:
 
+- [Octo](https://github.com/pwntester/octo.nvim): Edit GH PRs, issues and
+discussions.
 - [`snacks.nvim`]
   - [Snacks Picker](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md)
 
