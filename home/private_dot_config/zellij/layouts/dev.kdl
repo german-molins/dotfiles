@@ -8,6 +8,9 @@ layout {
           plugin location="zellij:status-bar"
       }
   }
+  tab name="gh" {
+    pane command="gh-dash"
+  }
   tab name="vcs graph" {
     pane command="git-graph"
   }
