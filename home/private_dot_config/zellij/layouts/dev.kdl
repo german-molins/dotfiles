@@ -8,15 +8,13 @@ layout {
           plugin location="zellij:status-bar"
       }
   }
-  tab name="gh" {
-    pane command="gh-dash"
-  }
-  tab name="vcs graph" {
-    pane command="git-graph"
-  }
   tab name="vcs" focus=true {
-    pane command="bash" {
-      args "-c" "gitui"
+    pane stacked=true {
+      pane name="graph" command="git-graph"
+      pane name="gitui" expanded=true command="bash" {
+        args "-c" "gitui"
+      }
+      pane name="gh" command="gh-dash" start_suspended=true
     }
   }
   tab name="edit" {
