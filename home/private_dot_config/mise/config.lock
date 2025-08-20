@@ -6,6 +6,10 @@ backend = "aqua:sigoden/aichat"
 version = "0.0.1755490419-ge27404"
 backend = "npm:@sourcegraph/amp"
 
+[tools."aqua:charmbracelet/crush"]
+version = "0.6.3"
+backend = "aqua:charmbracelet/crush"
+
 [tools."aqua:dlvhdr/gh-dash"]
 version = "4.16.1"
 backend = "aqua:dlvhdr/gh-dash"

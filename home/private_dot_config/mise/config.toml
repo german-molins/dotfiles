@@ -50,6 +50,7 @@ tssh = "latest"
 "ubi:tstack/lnav" = "latest"
 "cargo:tlrc" = "latest"
 carapace = "latest"
+"aqua:charmbracelet/crush" = "latest"
 
 [plugins]
 devbox = "https://github.com/jbadeau/mise-nix.git"

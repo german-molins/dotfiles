@@ -34,6 +34,7 @@ These are my daily CLI drivers:
 | [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | All-in-one LLM tool |
 | [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | LLM coding agent |
 | [Amp](https://ampcode.com/) | `amp` | | LLM coding agent |
+| [Crush](https://github.com/charmbracelet/crush) | `crush` | | LLM coding agent |
 | [Taskwarrior](https://taskwarrior.org/) | `task` | | Task manager |
 | [Timewarrior](https://timewarrior.net/) | `timew` | | Time manager |
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
