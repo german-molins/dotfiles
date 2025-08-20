@@ -15,7 +15,7 @@ Environment variables that determine the templating environment:
 | `DOTFILES_PROFILE` | Profile name | "personal", "quantica" | "personal" | Use default |
 | `DOTFILES_APPLY` | Controls if the `--apply` flag is passed during initialization | "true", "false" | "true" | WARNING; Use default |
 | `DOTFILES_GIT_BRANCH` | Git branch or ref to checkout | Any valid git ref | "HEAD" | WARNING; Disable chezmoi apply |
-| `DOTFILES_DEVBOX_ENABLED` | Enable or disable Devbox bootstrapping | "true", "false" | "true" | ERROR |
+| `DOTFILES_DEVBOX_ENABLED` | Enable or disable Devbox and Direnv | "true", "false" | "true" | ERROR |
 
 They are used once during `chezmoi` initialization to set template data
 dynamically in `.chezmoi.yaml.tmpl`, which results in the final
