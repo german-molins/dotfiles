@@ -11,6 +11,7 @@ layout {
   tab name="vcs" focus=true {
     pane stacked=true {
       pane name="graph" command="git-graph"
+      pane name="lazygit" command="lazygit"
       pane name="gitui" expanded=true command="bash" {
         args "-c" "gitui"
       }
