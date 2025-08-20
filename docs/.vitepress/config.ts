@@ -26,6 +26,7 @@ export default defineConfig({
               { text: "Mise", link: '/tools/mise' },
               { text: "System Dependencies", link: '/tools/system_dependencies' },
               { text: "General Utils", link: '/tools/utils' },
+              { text: "Zellij", link: '/tools/zellij' },
               { text: "Git", link: '/tools/git' },
               { text: "Lazygit", link: '/tools/lazygit' },
               { text: "Atuin", link: '/tools/atuin' },
