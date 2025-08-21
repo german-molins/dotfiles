@@ -12,6 +12,11 @@ discussions.
 - [`snacks.nvim`]
   - [Snacks Picker](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md)
 
+## Colorschemes
+
+- [Gruvbox](https://github.com/ellisonleao/gruvbox.nvim) (default)
+- [NeoSolarized](https://github.com/Tsuzat/NeoSolarized.nvim)
+
 ## Project-Local Configuration
 
 Plugin `nvim-config-local` is used to load project-local configuration files.
