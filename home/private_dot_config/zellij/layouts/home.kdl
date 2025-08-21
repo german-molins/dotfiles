@@ -15,4 +15,7 @@ layout {
   tab name="docker" {
     pane command="lazydocker" start_suspended=true
   }
+  tab name="gh" {
+    pane command="gh-dash" start_suspended=true
+  }
 }
