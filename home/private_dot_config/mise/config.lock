@@ -3,12 +3,17 @@ version = "0.30.0"
 backend = "aqua:sigoden/aichat"
 
 [tools.amp]
-version = "0.0.1755490419-ge27404"
+version = "0.0.1755748885-g56e2f8"
 backend = "npm:@sourcegraph/amp"
 
 [tools."aqua:charmbracelet/crush"]
-version = "0.6.3"
+version = "0.7.0"
 backend = "aqua:charmbracelet/crush"
+
+[tools."aqua:charmbracelet/crush".platforms.macos-arm64]
+checksum = "sha256:75698e75e6c68190612f791f85d9ab0ad5627286fdc0c1d6b4f954ed1d0abf85"
+size = 16033314
+url = "https://github.com/charmbracelet/crush/releases/download/v0.7.0/crush_0.7.0_Darwin_arm64.tar.gz"
 
 [tools."aqua:dlvhdr/gh-dash"]
 version = "4.16.1"
@@ -179,8 +184,13 @@ version = "3.2.4"
 backend = "pipx:httpie"
 
 [tools.pnpm]
-version = "10.14.0"
+version = "10.15.0"
 backend = "aqua:pnpm/pnpm"
+
+[tools.pnpm.platforms.macos-arm64]
+checksum = "blake3:b5e9f77f558f0e2974d56ebc4060f88a323b10f3e18406917b1aeff9b86d73ef"
+size = 62650608
+url = "https://github.com/pnpm/pnpm/releases/download/v10.15.0/pnpm-macos-arm64"
 
 [tools.ripgrep]
 version = "14.1.1"
@@ -219,7 +229,7 @@ version = "2.2.2"
 backend = "ubi:jdx/usage"
 
 [tools.uv]
-version = "0.8.11"
+version = "0.8.12"
 backend = "asdf:uv"
 
 [tools.xh]
