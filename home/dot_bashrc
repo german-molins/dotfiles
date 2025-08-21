@@ -1,15 +1,46 @@
-for file in ~/.bashrc.d/*.sh
-do
-	if [ -r "$file" ]
-	then
-		source "$file"
-	fi
-done
-unset file
+# Bash startup profiling (when enabled)
+if [ "$BASH_PROFILE_TIMING" = "1" ]; then
+    # Clear previous log
+    > ~/.bash_profile_timing.log
+    
+    # Function to profile source operations
+    profile_source() {
+        local start_time=$EPOCHREALTIME
+        source "$1"
+        local end_time=$EPOCHREALTIME
+        echo "$start_time $end_time $1" >> ~/.bash_profile_timing.log
+    }
+    
+    echo "Bash profiling enabled. Log will be written to ~/.bash_profile_timing.log"
+    
+    # Profile each bashrc.d file
+    for file in ~/.bashrc.d/*.sh
+    do
+        if [ -r "$file" ]
+        then
+            profile_source "$file"
+        fi
+    done
+    unset file
+else
+    # Normal operation - source files without profiling
+    for file in ~/.bashrc.d/*.sh
+    do
+        if [ -r "$file" ]
+        then
+            source "$file"
+        fi
+    done
+    unset file
+fi
 
 if [ -r /etc/bash_completion ] && ! shopt -oq posix
 then
-    source /etc/bash_completion
+    if [ "$BASH_PROFILE_TIMING" = "1" ]; then
+        profile_source /etc/bash_completion
+    else
+        source /etc/bash_completion
+    fi
 fi
 
 

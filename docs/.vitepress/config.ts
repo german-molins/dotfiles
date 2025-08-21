@@ -17,6 +17,7 @@ export default defineConfig({
         items: [
           { text: 'Setup', link: '/setup' },
           { text: "Home Directory", link: '/home' },
+          { text: 'Bash', link: '/bash' },
           { text: 'Agents', link: '/agents' },
           {
             text: 'Tools',

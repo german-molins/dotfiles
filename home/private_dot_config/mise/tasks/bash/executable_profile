@@ -1,0 +1,64 @@
+#!/usr/bin/env sh
+#MISE description="Process bash startup profiling logs and generate timing reports"
+#MISE sources="~/.bash_profile_timing.log"
+#MISE outputs=["timing.csv", "summary.txt"]
+
+# Check if the source log file exists
+if [ ! -f "$HOME/.bash_profile_timing.log" ]; then
+    echo "ERROR: Bash profile timing log not found at ~/.bash_profile_timing.log"
+    echo "To generate this log, you need to add profiling instrumentation to your bash startup files."
+    echo ""
+    echo "Add this to your ~/.bashrc or ~/.bash_profile:"
+    echo ""
+    echo "# Bash startup profiling (when enabled)"
+    echo "if [ \"\$BASH_PROFILE_TIMING\" = \"1\" ]; then"
+    echo "    profile_source() {"
+    echo "        local start_time=\$EPOCHREALTIME"
+    echo "        source \"\$1\""
+    echo "        local end_time=\$EPOCHREALTIME"
+    echo "        echo \"\$start_time \$end_time \$1\" >> ~/.bash_profile_timing.log"
+    echo "    }"
+    echo "    # Replace 'source' calls with 'profile_source' when profiling"
+    echo "fi"
+    echo ""
+    echo "Then run: BASH_PROFILE_TIMING=1 bash -l"
+    exit 1
+fi
+
+# Get the directory where the AWK scripts are located
+SCRIPTS_DIR="$HOME/.config/mise/scripts"
+
+# Check if AWK scripts exist
+if [ ! -f "$SCRIPTS_DIR/log_to_csv.awk" ] || [ ! -f "$SCRIPTS_DIR/csv_summary.awk" ]; then
+    echo "ERROR: Required AWK scripts not found in $SCRIPTS_DIR"
+    echo "Expected files:"
+    echo "  - $SCRIPTS_DIR/log_to_csv.awk"
+    echo "  - $SCRIPTS_DIR/csv_summary.awk"
+    exit 1
+fi
+
+# Process the log file
+echo "Processing bash startup timing log..."
+
+# Convert raw log to CSV
+awk -f "$SCRIPTS_DIR/log_to_csv.awk" "$HOME/.bash_profile_timing.log" > timing.csv
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Failed to convert log to CSV"
+    exit 1
+fi
+
+echo "Generated timing.csv with $(wc -l < timing.csv) entries"
+
+# Generate formatted summary
+awk -f "$SCRIPTS_DIR/csv_summary.awk" timing.csv > summary.txt
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Failed to generate summary"
+    exit 1
+fi
+
+echo "Generated summary.txt"
+echo ""
+echo "=== Bash Startup Timing Summary ==="
+cat summary.txt
