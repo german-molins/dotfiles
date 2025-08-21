@@ -1,0 +1,48 @@
+#!/usr/bin/env sh
+#MISE description="Process bash startup profiling logs and generate timing reports"
+#MISE sources="~/.bash_profile_timing.log"
+#MISE outputs=["timing.csv", "summary.txt"]
+
+# Check if the source log file exists
+if [ ! -f "$HOME/.bash_profile_timing.log" ]; then
+    echo "ERROR: Bash profile timing log not found at ~/.bash_profile_timing.log"
+    echo "To generate this log, you need to add profiling instrumentation to your bash startup files."
+    echo ""
+    echo "The profile_source function is already defined in ~/.bashrc."
+    echo "It automatically profiles when BASH_PROFILE_TIMING=1 is set."
+    echo ""
+    echo "To profile your bash startup:"
+    echo "BASH_PROFILE_TIMING=1 bash -l"
+    exit 1
+fi
+
+SCRIPTS_DIR="$HOME/.config/mise/scripts"
+
+if [ ! -f "$SCRIPTS_DIR/log_to_csv.awk" ] || [ ! -f "$SCRIPTS_DIR/csv_summary.awk" ]; then
+    echo "ERROR: Required AWK scripts not found in $SCRIPTS_DIR"
+    echo "Expected files:"
+    echo "  - $SCRIPTS_DIR/log_to_csv.awk"
+    echo "  - $SCRIPTS_DIR/csv_summary.awk"
+    exit 1
+fi
+
+echo "Processing bash startup timing log..."
+awk -f "$SCRIPTS_DIR/log_to_csv.awk" "$HOME/.bash_profile_timing.log" >timing.csv
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Failed to convert log to CSV"
+    exit 1
+fi
+echo "Generated timing.csv with $(wc -l <timing.csv) entries"
+
+awk -f "$SCRIPTS_DIR/csv_summary.awk" timing.csv >summary.txt
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Failed to generate summary"
+    exit 1
+fi
+
+echo "Generated summary.txt"
+echo ""
+echo "=== Bash Startup Timing Summary ==="
+cat summary.txt

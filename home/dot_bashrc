@@ -1,17 +1,30 @@
-for file in ~/.bashrc.d/*.sh
-do
-	if [ -r "$file" ]
-	then
-		source "$file"
-	fi
+# Bash startup profiling function
+profile_source() {
+  if [ "$BASH_PROFILE_TIMING" = "1" ]; then
+    if [ ! -f ~/.bash_profile_timing.log ]; then
+      >~/.bash_profile_timing.log
+      echo "Bash profiling enabled. Log will be written to ~/.bash_profile_timing.log"
+    fi
+
+    local start_time=$EPOCHREALTIME
+    source "$1"
+    local end_time=$EPOCHREALTIME
+    echo "$start_time $end_time $1" >>~/.bash_profile_timing.log
+  else
+    source "$1"
+  fi
+}
+
+for file in ~/.bashrc.d/*.sh; do
+  if [ -r "$file" ]; then
+    profile_source "$file"
+  fi
 done
 unset file
 
-if [ -r /etc/bash_completion ] && ! shopt -oq posix
-then
-    source /etc/bash_completion
+if [ -r /etc/bash_completion ] && ! shopt -oq posix; then
+  profile_source /etc/bash_completion
 fi
-
 
 shopt -s extglob
 shopt -s globstar
@@ -27,6 +40,5 @@ shopt -s checkwinsize
 
 set -o noclobber
 set -o vi
-
 
 where
