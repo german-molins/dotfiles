@@ -19,6 +19,10 @@ url = "https://github.com/charmbracelet/crush/releases/download/v0.7.0/crush_0.7
 version = "4.16.1"
 backend = "aqua:dlvhdr/gh-dash"
 
+[tools."aqua:gitui-org/gitui"]
+version = "0.27.0"
+backend = "aqua:gitui-org/gitui"
+
 [tools."aqua:ip7z/7zip"]
 version = "25.01"
 backend = "aqua:ip7z/7zip"
@@ -129,10 +133,6 @@ backend = "aqua:junegunn/fzf"
 [tools.gh]
 version = "2.76.2"
 backend = "aqua:cli/cli"
-
-[tools."github:gitui-org/gitui"]
-version = "0.27.0"
-backend = "github:gitui-org/gitui"
 
 [tools.glab]
 version = "1.67.0"
