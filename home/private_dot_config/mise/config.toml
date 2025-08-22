@@ -51,6 +51,7 @@ tssh = "latest"
 "cargo:tlrc" = "latest"
 carapace = "latest"
 "aqua:charmbracelet/crush" = "latest"
+"github:ghetzel/mdnstool" = "latest"
 
 [plugins]
 devbox = "https://github.com/jbadeau/mise-nix.git"

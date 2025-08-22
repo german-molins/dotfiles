@@ -134,6 +134,10 @@ backend = "aqua:junegunn/fzf"
 version = "2.76.2"
 backend = "aqua:cli/cli"
 
+[tools."github:ghetzel/mdnstool"]
+version = "0.0.3"
+backend = "github:ghetzel/mdnstool"
+
 [tools.glab]
 version = "1.67.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"

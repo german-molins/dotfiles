@@ -47,6 +47,7 @@ These are my daily CLI drivers:
 | [Git Flow](https://github.com/nvie/gitflow) | `git-flow` | `git flow` | Commands for the Gitflow branching model |
 | [Git Extras](https://github.com/tj/git-extras) | `git-extras` | `git extra`, [full list](https://github.com/tj/git-extras/blob/main/Commands.md) | Extensive set of convenient Git subcommands |
 | [Trzsz-ssh](https://trzsz.github.io/ssh) | `tssh` | | SSH client, drop-in replacement of [OpenSSH](https://www.openssh.com/) |
+| [mdnstool](https://github.com/ghetzel/mdnstool) | `mdnstool` | `mdns` | mDNS utility |
 
 ## Package Registries
 
