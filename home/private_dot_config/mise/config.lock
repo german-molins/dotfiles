@@ -187,6 +187,10 @@ backend = "ubi:jgm/pandoc"
 version = "3.2.4"
 backend = "pipx:httpie"
 
+[tools.pitchfork]
+version = "0.1.5"
+backend = "aqua:jdx/pitchfork"
+
 [tools.pnpm]
 version = "10.15.0"
 backend = "aqua:pnpm/pnpm"

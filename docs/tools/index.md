@@ -31,6 +31,7 @@ These are my daily CLI drivers:
 | [GitHub CLI](https://cli.github.com/) | `gh` | | GitHub CLI |
 | [GitHub Dashboard](https://dlvhdr.github.io/gh-dash/) | `gh-dash` | `gh dash` | Pull requests and issues manager |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker) | `lazydocker` | | Docker and docker-compose manager |
+| [Pitchfork](https://pitchfork.jdx.dev/) | `pitchfork` | | Daemons manager |
 | [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | All-in-one LLM tool |
 | [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | LLM coding agent |
 | [Amp](https://ampcode.com/) | `amp` | | LLM coding agent |
