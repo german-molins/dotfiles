@@ -91,6 +91,10 @@ backend = "cargo:findutils"
 version = "0.6.0"
 backend = "cargo:git-graph"
 
+[tools."cargo:somo"]
+version = "1.1.0"
+backend = "cargo:somo"
+
 [tools."cargo:tlrc"]
 version = "1.11.1"
 backend = "cargo:tlrc"
