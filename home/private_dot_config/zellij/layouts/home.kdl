@@ -12,11 +12,11 @@ layout {
   tab name="notes" cwd="notebook" focus=true {
     pane command="nvim"
   }
-  tab name="system" {
-    pane command="btm" start_suspended=true
-  }
-  tab name="docker" {
-    pane command="lazydocker" start_suspended=true
+  tab name="monitor" {
+    pane stacked=true {
+      pane name="docker" command="lazydocker" start_suspended=true
+      pane name="system" command="btm" start_suspended=true
+    }
   }
   tab name="gh" {
     pane command="gh-dash" start_suspended=true
