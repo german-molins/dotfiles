@@ -12,6 +12,9 @@ layout {
   tab name="notes" cwd="notebook" focus=true {
     pane command="nvim"
   }
+  tab name="system" {
+    pane command="btm" start_suspended=true
+  }
   tab name="docker" {
     pane command="lazydocker" start_suspended=true
   }
