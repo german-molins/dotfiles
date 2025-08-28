@@ -73,4 +73,5 @@ Yazi:
 
 ## Sites Of Interest
 
-- [Terminal Trove](https://terminaltrove.com/)
+- [Terminal Trove](https://terminaltrove.com/): Discover and share terminal tools
+- [dotfyle](https://dotfyle.com/): Discover and share Neovim plugins
