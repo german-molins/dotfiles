@@ -110,6 +110,10 @@ checksum = "blake3:4c1e5c1c689a6d13c24097928b064f8fa4d45c14e3d6c35468b8e6451ee5e
 version = "0.1.0"
 backend = "aqua:uutils/coreutils"
 
+[tools.cosign]
+version = "2.5.3"
+backend = "aqua:sigstore/cosign"
+
 [tools.direnv]
 version = "2.37.1"
 backend = "aqua:direnv/direnv"

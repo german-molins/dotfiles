@@ -51,6 +51,7 @@ These are my daily CLI drivers:
 | [Trzsz-ssh](https://trzsz.github.io/ssh) | `tssh` | | SSH client, drop-in replacement of [OpenSSH](https://www.openssh.com/) |
 | [mdnstool](https://github.com/ghetzel/mdnstool) | `mdnstool` | `mdns` | mDNS utility |
 | [somo](https://github.com/theopfr/somo/) | `somo` | | Socket and port monitoring |
+| [cosign](https://github.com/sigstore/cosign) | `cosign` | | Signing and verifying packages |
 
 ## Package Registries
 

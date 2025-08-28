@@ -8,6 +8,7 @@ backends.
 
 | Dependency | Environment | Backend | Tools |
 |------------|-------------|---------|-------|
+| cosign | global | aqua | mise |
 | ffmpeg | opt | asdf | Yazi |
 | resvg | opt | devbox | Neovim, Yazi |
 | ImageMagick | devbox | devbox | Yazi |
