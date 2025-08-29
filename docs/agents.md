@@ -8,10 +8,11 @@ tasks.
 Agents use standardized context file paths for providing additional context and
 rules:
 
-See [specification of `AGENT.md` files](https://ampcode.com/AGENT.md).
+See [specification of `AGENTS.md` files](https://agents.md).
 
-- `~/.config/AGENT.md` - Global (user) agent context file
-- `AGENT.md` - Local (project) agent configuration
+- `~/.config/AGENTS.md` - Global (user) agent context file
+- `AGENTS.md` - Local (project) agent configuration. It admits nesting files
+for subdirectories.
 
 ## Amp
 
@@ -21,19 +22,19 @@ context files.
 ### Configuration
 
 - **Settings**: `~/.config/amp/settings.json`
-- **Context Support**: Built-in support for `AGENT.md` files and `@` file
+- **Context Support**: Built-in support for `AGENTS.md` files and `@` file
 prefix syntax to read other files
 
 ### Context File Usage
 
 Amp reads context through:
 
-1. Local `AGENT.md` file in project root
-2. Global `~/.config/AGENT.md` file
-3. Subdir `AGENT.md` files in path of files referenced in thread.
+1. Local `AGENTS.md` file in project root
+2. Global `~/.config/AGENTS.md` file
+3. Subdir `AGENTS.md` files in path of files referenced in thread.
 4. Referenced files using `@` syntax.
 
-Reference: [Amp Manual - AGENT.md](https://ampcode.com/manual#AGENT.md)
+Reference: [Amp Manual - AGENTS.md](https://ampcode.com/manual#AGENTS.md)
 
 ## Amazon Q Developer
 
