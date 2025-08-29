@@ -23,11 +23,11 @@ layout {
   }
   tab name="ai" {
     pane stacked=true {
-      pane name="gemini" command="gemini" start_suspended=true
-      pane name="opencode" command="opencode" start_suspended=true
-      pane name="crush" command="crush" start_suspended=true
-      pane name="amp" command="amp" start_suspended=true
-      pane name="azq" command="amazon-q" start_suspended=true {
+      pane name="Gemini" command="gemini" start_suspended=true
+      pane name="Opencode" command="opencode" start_suspended=true
+      pane name="Crush" command="crush" start_suspended=true
+      pane name="Amp" command="amp" start_suspended=true
+      pane name="Amazon Q" command="amazon-q" start_suspended=true {
         args "chat" "--resume"
       }
     }
