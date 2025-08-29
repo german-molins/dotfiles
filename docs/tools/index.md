@@ -46,6 +46,7 @@ Coding agents:
 | [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | Subscription / free tier | |
 | [Amp](https://ampcode.com/) | `amp` | | Amp subscription | `AMP_API_KEY` |
 | [Crush](https://github.com/charmbracelet/crush) | `crush` | | OpenRouter | `OPENROUTER_API_KEY` |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `gemini` | | Google free OAuth / API | `GEMINI_API_KEY` |
 
 External LLM service providers:
 

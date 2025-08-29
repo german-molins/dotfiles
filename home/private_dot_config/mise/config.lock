@@ -143,6 +143,10 @@ url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch6
 version = "0.65.1"
 backend = "aqua:junegunn/fzf"
 
+[tools.gemini-cli]
+version = "0.2.2"
+backend = "npm:@google/gemini-cli"
+
 [tools.gh]
 version = "2.78.0"
 backend = "aqua:cli/cli"
