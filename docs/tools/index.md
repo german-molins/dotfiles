@@ -47,6 +47,7 @@ Coding agents:
 | [Amp](https://ampcode.com/) | `amp` | | Amp subscription | `AMP_API_KEY` |
 | [Crush](https://github.com/charmbracelet/crush) | `crush` | | OpenRouter | `OPENROUTER_API_KEY` |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `gemini` | | Google free OAuth / API | `GEMINI_API_KEY` |
+| [Opencode](https://opencode.ai) | `opencode` | `oc` | OpenRouter | `OPENROUTER_API_KEY` |
 
 External LLM service providers:
 

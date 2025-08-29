@@ -56,6 +56,7 @@ pitchfork = "latest"
 "cargo:somo" = "latest"
 cosign = "latest"
 gemini-cli = "latest"
+opencode = "latest"
 
 [plugins]
 devbox = "https://github.com/jbadeau/mise-nix.git"

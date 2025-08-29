@@ -201,6 +201,10 @@ checksum = "sha256:ff8298faaf82c85444aad7f1e12a4882496286ea9008702029b359d7fac7f
 size = 51078653
 url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
 
+[tools.opencode]
+version = "0.5.28"
+backend = "aqua:sst/opencode"
+
 [tools.pandoc]
 version = "3.7.0.2"
 backend = "ubi:jgm/pandoc"
