@@ -106,6 +106,10 @@ backend = "ubi:twpayne/chezmoi"
 [tools.chezmoi.platforms.macos-arm64-chezmoi]
 checksum = "blake3:4ce42c24126ec6c460348da04a007ed4a9b31ac17a31b39a19a074d5846973d1"
 
+[tools.codebuff]
+version = "1.0.470"
+backend = "npm:codebuff"
+
 [tools.coreutils]
 version = "0.1.0"
 backend = "aqua:uutils/coreutils"

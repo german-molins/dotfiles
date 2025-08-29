@@ -23,6 +23,7 @@ layout {
   }
   tab name="ai" {
     pane stacked=true {
+      pane name="Codebuff" command="codebuff" start_suspended=true
       pane name="Gemini" command="gemini" start_suspended=true
       pane name="Opencode" command="opencode" start_suspended=true
       pane name="Crush" command="crush" start_suspended=true

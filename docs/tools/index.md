@@ -48,6 +48,7 @@ Coding agents:
 | [Crush](https://github.com/charmbracelet/crush) | `crush` | | OpenRouter | `OPENROUTER_API_KEY` |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `gemini` | | Google free OAuth / API | `GEMINI_API_KEY` |
 | [Opencode](https://opencode.ai) | `opencode` | `oc` | OpenRouter | `OPENROUTER_API_KEY` |
+| [Codebuff](https://www.codebuff.com) | `codebuff` | | Free tier | |
 
 External LLM service providers:
 
