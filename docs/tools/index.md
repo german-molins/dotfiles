@@ -33,14 +33,23 @@ These are my daily CLI drivers:
 | [bottom](https://github.com/ClementTsang/bottom) | `btm` | | System monitor |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker) | `lazydocker` | | Docker and docker-compose manager |
 | [Pitchfork](https://pitchfork.jdx.dev/) | `pitchfork` | | Daemons manager |
-| [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | All-in-one LLM tool |
-| [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | LLM coding agent |
-| [Amp](https://ampcode.com/) | `amp` | | LLM coding agent |
-| [Crush](https://github.com/charmbracelet/crush) | `crush` | | LLM coding agent |
 | [Taskwarrior](https://taskwarrior.org/) | `task` | | Task manager |
 | [Timewarrior](https://timewarrior.net/) | `timew` | | Time manager |
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
 | [Lnav](https://lnav.org/) | `lnav` | | Logfile navigator |
+
+Coding agents:
+
+| Name | Commands | Aliases | LLM Providers | API Keys |
+|---|---|---|---|---|
+| [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | OpenRouter | `OPENROUTER_API_KEY` |
+| [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | Subscription / free tier | |
+| [Amp](https://ampcode.com/) | `amp` | | Amp subscription | `AMP_API_KEY` |
+| [Crush](https://github.com/charmbracelet/crush) | `crush` | | OpenRouter | `OPENROUTER_API_KEY` |
+
+External LLM service providers:
+
+- [OpenRouter](https://openrouter.ai)
 
 ### Other Tools
 
