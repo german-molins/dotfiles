@@ -83,8 +83,7 @@ VISUAL = "nvim"
 EDITOR = "__nvim-bare"
 PAGER = "bat --plain"
 
-# WSL2
-BROWSER = "firefox.exe"
+BROWSER = "firefox"
 JULIA_PROJECT = "@."
 TLRC_CONFIG = "{{env.HOME}}/.config/tlrc/config.toml"
 
