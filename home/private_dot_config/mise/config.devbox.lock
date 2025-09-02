@@ -30,6 +30,10 @@ backend = "devbox:gawk"
 version = "2.50.0"
 backend = "devbox:git"
 
+[tools."devbox:git-extras"]
+version = "7.4.0"
+backend = "devbox:git-extras"
+
 [tools."devbox:gnugrep"]
 version = "3.12"
 backend = "devbox:gnugrep"
@@ -105,7 +109,3 @@ backend = "devbox:xclip"
 [tools."devbox:xsel"]
 version = "1.2.1"
 backend = "devbox:xsel"
-
-[tools."nix:git-extras"]
-version = "7.4.0"
-backend = "nix:git-extras"
