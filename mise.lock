@@ -2,6 +2,10 @@
 version = "1.2.19"
 backend = "core:bun"
 
+[tools.bun.platforms.linux-x64]
+checksum = "blake3:59b98062e8014acf0bebfccbae2825fb88ac4486269f2b04e596862f07b01c86"
+size = 38401482
+
 [tools.bun.platforms.macos-arm64]
 checksum = "blake3:1d033789f9a12ddcc7b1e03c675af1dfcbf770aa7fbfa2c49dc6599e591e4779"
 size = 21573514
