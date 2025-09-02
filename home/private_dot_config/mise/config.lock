@@ -3,21 +3,26 @@ version = "0.30.0"
 backend = "aqua:sigoden/aichat"
 
 [tools.amp]
-version = "0.0.1756382501-g1569e5"
+version = "0.0.1756800102-g7dd105"
 backend = "npm:@sourcegraph/amp"
 
 [tools."aqua:charmbracelet/crush"]
-version = "0.7.2"
+version = "0.7.4"
 backend = "aqua:charmbracelet/crush"
 
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:05e3fce8981c6a102bac5a20438e2cea25ebde5f0656a835cad759746584651f"
-size = 16040680
-url = "https://github.com/charmbracelet/crush/releases/download/v0.7.2/crush_0.7.2_Darwin_arm64.tar.gz"
+checksum = "sha256:535ec95bab333fd130f5ceb0af0797703ba02fd6df0118fdb3b544a77a12f7c0"
+size = 16042957
+url = "https://github.com/charmbracelet/crush/releases/download/v0.7.4/crush_0.7.4_Darwin_arm64.tar.gz"
 
 [tools."aqua:dlvhdr/gh-dash"]
-version = "4.16.1"
+version = "4.16.2"
 backend = "aqua:dlvhdr/gh-dash"
+
+[tools."aqua:dlvhdr/gh-dash".platforms.macos-arm64]
+checksum = "sha256:eaf9c6fa99576774c5f5f61774c07938e2f360a69cd5d115871126cbc7885007"
+size = 19429506
+url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.16.2/gh-dash_v4.16.2_darwin-arm64"
 
 [tools."aqua:gitui-org/gitui"]
 version = "0.27.0"
@@ -36,7 +41,7 @@ version = "0.15.1"
 backend = "aqua:zk-org/zk"
 
 [tools."asdf:mise-plugins/mise-eza"]
-version = "0.23.0"
+version = "0.23.1"
 backend = "asdf:mise-plugins/mise-eza"
 
 [tools.atuin]
@@ -71,13 +76,13 @@ size = 12312027
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.4.1/carapace-bin_1.4.1_darwin_arm64.tar.gz"
 
 [tools.cargo-binstall]
-version = "1.15.1"
+version = "1.15.3"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall.platforms.macos-arm64]
-checksum = "blake3:b4eb1b87079e6c709fa30748436bc32cbce71d5df3bb8e43ff81fe951068ee1b"
-size = 5989092
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.1/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "blake3:8fb84239a9f54c0107faa2cf6ac12c658572b943356e1291c4cf39f34af6ceaf"
+size = 6004746
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.3/cargo-binstall-aarch64-apple-darwin.zip"
 
 [tools."cargo:diffutils"]
 version = "0.4.2"
@@ -144,8 +149,13 @@ size = 1337349
 url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-apple-darwin.tar.gz"
 
 [tools.fzf]
-version = "0.65.1"
+version = "0.65.2"
 backend = "aqua:junegunn/fzf"
+
+[tools.fzf.platforms.macos-arm64]
+checksum = "sha256:a1464f1d4b75c3a92975f67055f9e407800ed35820ea7d73f2afb90aeb0491e8"
+size = 1658005
+url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-darwin_arm64.tar.gz"
 
 [tools.gemini-cli]
 version = "0.2.2"
@@ -193,8 +203,13 @@ size = 7572130
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.54.2/lazygit_0.54.2_darwin_arm64.tar.gz"
 
 [tools.neovim]
-version = "0.11.3"
+version = "0.11.4"
 backend = "aqua:neovim/neovim"
+
+[tools.neovim.platforms.macos-arm64]
+checksum = "blake3:31e761b1a1aa3642dec4b09b2f080f99fe550ecfb82e77f7bf11382d5f0630de"
+size = 9194532
+url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-macos-arm64.tar.gz"
 
 [tools.node]
 version = "24.7.0"
@@ -206,8 +221,13 @@ size = 51078653
 url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
 
 [tools.opencode]
-version = "0.5.28"
+version = "0.6.1"
 backend = "aqua:sst/opencode"
+
+[tools.opencode.platforms.macos-arm64]
+checksum = "blake3:56f86d0d555315eb3ee58b8feba12d02cb2820dc01a5dc38880745cf7c753985"
+size = 29625731
+url = "https://github.com/sst/opencode/releases/download/v0.6.1/opencode-darwin-arm64.zip"
 
 [tools.pandoc]
 version = "3.7.0.2"
@@ -222,13 +242,13 @@ version = "0.1.5"
 backend = "aqua:jdx/pitchfork"
 
 [tools.pnpm]
-version = "10.15.0"
+version = "10.15.1"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm.platforms.macos-arm64]
-checksum = "blake3:b5e9f77f558f0e2974d56ebc4060f88a323b10f3e18406917b1aeff9b86d73ef"
-size = 62650608
-url = "https://github.com/pnpm/pnpm/releases/download/v10.15.0/pnpm-macos-arm64"
+checksum = "blake3:502db5ea7eeeccf6307a8af184d2a63acdf88cdb3346d7fb0d55617e807d1c5a"
+size = 62649648
+url = "https://github.com/pnpm/pnpm/releases/download/v10.15.1/pnpm-macos-arm64"
 
 [tools.ripgrep]
 version = "14.1.1"
@@ -267,7 +287,7 @@ version = "2.2.2"
 backend = "ubi:jdx/usage"
 
 [tools.uv]
-version = "0.8.13"
+version = "0.8.14"
 backend = "asdf:uv"
 
 [tools.xh]
