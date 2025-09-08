@@ -10,6 +10,11 @@ backend = "npm:@sourcegraph/amp"
 version = "0.7.6"
 backend = "aqua:charmbracelet/crush"
 
+[tools."aqua:charmbracelet/crush".platforms.linux-x64]
+checksum = "sha256:637919e6de40a6350c15ab737ec08125ebd5f92449a0e726079d160b8a7fd8b9"
+size = 16670091
+url = "https://github.com/charmbracelet/crush/releases/download/v0.7.6/crush_0.7.6_Linux_x86_64.tar.gz"
+
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
 checksum = "sha256:e94656bb74fb63141515b7d5770540c3fbcd9d495187c37fcefdef2fb9035794"
 size = 16040686
@@ -35,6 +40,11 @@ backend = "aqua:ip7z/7zip"
 [[tools."aqua:jorgerojas26/lazysql"]]
 version = "0.4.1"
 backend = "aqua:jorgerojas26/lazysql"
+
+[tools."aqua:jorgerojas26/lazysql".platforms.linux-x64]
+checksum = "sha256:0981a8cdd94e0168d5a71dda76f9723219a32c24c63d3a6454c00a6f19da378a"
+size = 5566303
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.1/lazysql_Linux_x86_64.tar.gz"
 
 [tools."aqua:jorgerojas26/lazysql".platforms.macos-arm64]
 checksum = "sha256:32765a9ffa94a4a151348231406e486ebfd052950d0acf823cc6b1bc82078ad3"
@@ -84,6 +94,11 @@ url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.4.1/cara
 version = "1.15.4"
 backend = "aqua:cargo-bins/cargo-binstall"
 
+[tools.cargo-binstall.platforms.linux-x64]
+checksum = "blake3:e96726cf26e534a44f61e015cc427ed92868fbf351fb7f1245d30e044d74cfa7"
+size = 6774865
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.4/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+
 [tools.cargo-binstall.platforms.macos-arm64]
 checksum = "blake3:6a9104a686d44217ccfdcc2b9333a708d8ebd5a4abafe4d2eda5dec77c051a67"
 size = 5997376
@@ -123,6 +138,11 @@ backend = "npm:codebuff"
 [[tools.coreutils]]
 version = "0.2.0"
 backend = "aqua:uutils/coreutils"
+
+[tools.coreutils.platforms.linux-x64]
+checksum = "blake3:6a3a985d446da5a170a76ca075cc2285e2f2463ac60567af252ab1c10df3f636"
+size = 5555974
+url = "https://github.com/uutils/coreutils/releases/download/0.2.0/coreutils-0.2.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.coreutils.platforms.macos-arm64]
 checksum = "blake3:8164b2d8446da5d16d1e9efcdb09c4982962983d9d239eb0902326864fd4264c"
@@ -188,6 +208,9 @@ backend = "github:ghetzel/mdnstool"
 version = "1.68.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
+[tools.glab.platforms.linux-x64-glab-glab]
+checksum = "blake3:735e690f3609fe7df0e5c01dda9f096723ab6fd471dbebf8074d7939572db5df"
+
 [tools.glab.platforms.macos-arm64-glab-glab]
 checksum = "blake3:a933901a2f43daf5bdbaa4cb9c1b5854576a819209e6b3924e679a59bcbec7d0"
 
@@ -199,9 +222,19 @@ backend = "aqua:sharkdp/hyperfine"
 version = "0.33.0"
 backend = "aqua:jj-vcs/jj"
 
+[tools.jj.platforms.linux-x64]
+checksum = "blake3:f38a02f3dba5badaf44de043083dd2a289dcbd088143bf551289ebf4a1921c49"
+size = 9510782
+url = "https://github.com/jj-vcs/jj/releases/download/v0.33.0/jj-v0.33.0-x86_64-unknown-linux-musl.tar.gz"
+
 [[tools.jjui]]
 version = "0.9.3"
 backend = "aqua:idursun/jjui"
+
+[tools.jjui.platforms.linux-x64]
+checksum = "blake3:1f52f90514c89e1bca00fe6dfee65739e4545852ec5581ab8d9a20b5f90a1c8a"
+size = 3945927
+url = "https://github.com/idursun/jjui/releases/download/v0.9.3/jjui-0.9.3-linux-amd64.zip"
 
 [tools.jjui.platforms.macos-arm64]
 checksum = "blake3:fa3ba7d14cadeb02cca37c3b2197025aa3dd86190de892012580fa20a47d52aa"
@@ -219,6 +252,11 @@ backend = "aqua:jesseduffield/lazydocker"
 [[tools.lazygit]]
 version = "0.55.0"
 backend = "aqua:jesseduffield/lazygit"
+
+[tools.lazygit.platforms.linux-x64]
+checksum = "sha256:e7c1c2d127ebdb241398f3daf05907a71a0c977ff12beba6b8ebdb069f9dba6a"
+size = 7928753
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.0/lazygit_0.55.0_linux_x86_64.tar.gz"
 
 [tools.lazygit.platforms.macos-arm64]
 checksum = "sha256:a3679901c0618c906424c0f9cf49abb4b687b2c610f47ff344420b9a494becf4"
@@ -247,6 +285,11 @@ url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
 version = "0.6.5"
 backend = "aqua:sst/opencode"
 
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:d8adde047bb71bece7553750df1bbcf5297831edbbb9102436a5d14dd0f39242"
+size = 46650972
+url = "https://github.com/sst/opencode/releases/download/v0.6.5/opencode-linux-x64.zip"
+
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:eaf30971f4515360a907dc8fc43958c042f08d816747ce06730809ff22d5dd70"
 size = 29629147
@@ -255,6 +298,9 @@ url = "https://github.com/sst/opencode/releases/download/v0.6.5/opencode-darwin-
 [[tools.pandoc]]
 version = "3.8"
 backend = "ubi:jgm/pandoc"
+
+[tools.pandoc.platforms.linux-x64-pandoc]
+checksum = "blake3:83eb3a8ca17605958114fd83e48a1bb00b8cf3cdac22c62d0502dd7bf54ccbb2"
 
 [tools.pandoc.platforms.macos-arm64-pandoc]
 checksum = "blake3:5c9f98c5a3863a63deaa75e5a56651b91bb70d46b2d032bff7c7a7f760b00f27"
@@ -287,6 +333,11 @@ backend = "core:rust"
 [[tools.tree-sitter]]
 version = "0.25.9"
 backend = "aqua:tree-sitter/tree-sitter"
+
+[tools.tree-sitter.platforms.linux-x64]
+checksum = "blake3:610065da52184f27562b0747a6109dd8f867249217be90e43e1080e69b91a490"
+size = 6687217
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree-sitter-linux-x64.gz"
 
 [tools.tree-sitter.platforms.macos-arm64]
 checksum = "blake3:924988b10a157dad5d03184dacee61e1d8fb1a9f542f431cda484c5ed7910a7d"
