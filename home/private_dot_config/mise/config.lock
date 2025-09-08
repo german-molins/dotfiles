@@ -36,6 +36,11 @@ backend = "aqua:ip7z/7zip"
 version = "0.4.0"
 backend = "aqua:jorgerojas26/lazysql"
 
+[tools."aqua:jorgerojas26/lazysql".platforms.macos-arm64]
+checksum = "sha256:12fd0a3d420a734bb1b5c6be1cc1edc8b5f60f84d3382d5203e852d3947d0bdc"
+size = 5234544
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.0/lazysql_Darwin_arm64.tar.gz"
+
 [[tools."aqua:zk-org/zk"]]
 version = "0.15.1"
 backend = "aqua:zk-org/zk"
@@ -118,6 +123,11 @@ backend = "npm:codebuff"
 [[tools.coreutils]]
 version = "0.1.0"
 backend = "aqua:uutils/coreutils"
+
+[tools.coreutils.platforms.macos-arm64]
+checksum = "blake3:9eeeaf1129fec4b79ebcbfc8c352976591affe34d1a6e75ac37cac5913995ede"
+size = 4140227
+url = "https://github.com/uutils/coreutils/releases/download/0.1.0/coreutils-0.1.0-aarch64-apple-darwin.tar.gz"
 
 [[tools.cosign]]
 version = "2.5.3"
@@ -233,6 +243,9 @@ url = "https://github.com/sst/opencode/releases/download/v0.6.1/opencode-darwin-
 version = "3.7.0.2"
 backend = "ubi:jgm/pandoc"
 
+[tools.pandoc.platforms.macos-arm64-pandoc]
+checksum = "blake3:3d18130bd80752f6ae98c90f5fc2db6bef859147db4cfae98ec376521629e4c1"
+
 [[tools."pipx:httpie"]]
 version = "3.2.4"
 backend = "pipx:httpie"
@@ -261,6 +274,11 @@ backend = "core:rust"
 [[tools.tree-sitter]]
 version = "0.25.8"
 backend = "aqua:tree-sitter/tree-sitter"
+
+[tools.tree-sitter.platforms.macos-arm64]
+checksum = "blake3:bab3deebfe6bc5f90bdce6883989a93d9280412b16bf45c22637bb2dc09739aa"
+size = 5904471
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.8/tree-sitter-macos-arm64.gz"
 
 [[tools.tssh]]
 version = "0.1.22"
