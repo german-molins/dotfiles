@@ -59,9 +59,6 @@ gemini-cli = "latest"
 opencode = "latest"
 codebuff = "latest"
 
-[plugins]
-devbox = "https://github.com/jbadeau/mise-nix.git"
-
 [settings]
 experimental = true
 lockfile = true
