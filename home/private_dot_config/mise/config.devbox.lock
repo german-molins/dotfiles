@@ -1,111 +1,111 @@
-[tools."devbox:amazon-q-cli"]
+[[tools."devbox:amazon-q-cli"]]
 version = "1.13.1"
 backend = "devbox:amazon-q-cli"
 
-[tools."devbox:dash"]
+[[tools."devbox:dash"]]
 version = "0.5.12"
 backend = "devbox:dash"
 
-[tools."devbox:dateutils"]
+[[tools."devbox:dateutils"]]
 version = "0.4.11"
 backend = "devbox:dateutils"
 
-[tools."devbox:dos2unix"]
+[[tools."devbox:dos2unix"]]
 version = "7.5.2"
 backend = "devbox:dos2unix"
 
-[tools."devbox:exiftool"]
+[[tools."devbox:exiftool"]]
 version = "13.25"
 backend = "devbox:exiftool"
 
-[tools."devbox:file"]
+[[tools."devbox:file"]]
 version = "5.45"
 backend = "devbox:file"
 
-[tools."devbox:gawk"]
+[[tools."devbox:gawk"]]
 version = "5.3.2"
 backend = "devbox:gawk"
 
-[tools."devbox:git"]
+[[tools."devbox:git"]]
 version = "2.50.0"
 backend = "devbox:git"
 
-[tools."devbox:git-extras"]
+[[tools."devbox:git-extras"]]
 version = "7.4.0"
 backend = "devbox:git-extras"
 
-[tools."devbox:gnugrep"]
+[[tools."devbox:gnugrep"]]
 version = "3.12"
 backend = "devbox:gnugrep"
 
-[tools."devbox:gnupg"]
+[[tools."devbox:gnupg"]]
 version = "2.4.7"
 backend = "devbox:gnupg"
 
-[tools."devbox:gnused"]
+[[tools."devbox:gnused"]]
 version = "4.9"
 backend = "devbox:gnused"
 
-[tools."devbox:gpg-tui"]
+[[tools."devbox:gpg-tui"]]
 version = "0.11.1"
 backend = "devbox:gpg-tui"
 
-[tools."devbox:htop"]
+[[tools."devbox:htop"]]
 version = "3.4.1"
 backend = "devbox:htop"
 
-[tools."devbox:imagemagick"]
+[[tools."devbox:imagemagick"]]
 version = "7.1.1-47"
 backend = "devbox:imagemagick"
 
-[tools."devbox:poppler-utils"]
+[[tools."devbox:poppler-utils"]]
 version = "25.07.0"
 backend = "devbox:poppler-utils"
 
-[tools."devbox:rcs"]
+[[tools."devbox:rcs"]]
 version = "5.10.1"
 backend = "devbox:rcs"
 
-[tools."devbox:readline"]
+[[tools."devbox:readline"]]
 version = "8.2p13"
 backend = "devbox:readline"
 
-[tools."devbox:renameutils"]
+[[tools."devbox:renameutils"]]
 version = "0.12.0"
 backend = "devbox:renameutils"
 
-[tools."devbox:resvg"]
+[[tools."devbox:resvg"]]
 version = "0.45.1"
 backend = "devbox:resvg"
 
-[tools."devbox:rsync"]
+[[tools."devbox:rsync"]]
 version = "3.4.1"
 backend = "devbox:rsync"
 
-[tools."devbox:taskwarrior"]
+[[tools."devbox:taskwarrior"]]
 version = "2.6.2"
 backend = "devbox:taskwarrior"
 
-[tools."devbox:taskwarrior-tui"]
+[[tools."devbox:taskwarrior-tui"]]
 version = "0.26.3"
 backend = "devbox:taskwarrior-tui"
 
-[tools."devbox:timewarrior"]
+[[tools."devbox:timewarrior"]]
 version = "1.8.0"
 backend = "devbox:timewarrior"
 
-[tools."devbox:tmux"]
+[[tools."devbox:tmux"]]
 version = "3.2a"
 backend = "devbox:tmux"
 
-[tools."devbox:tzdata"]
+[[tools."devbox:tzdata"]]
 version = "2025b"
 backend = "devbox:tzdata"
 
-[tools."devbox:xclip"]
+[[tools."devbox:xclip"]]
 version = "0.13"
 backend = "devbox:xclip"
 
-[tools."devbox:xsel"]
+[[tools."devbox:xsel"]]
 version = "1.2.1"
 backend = "devbox:xsel"

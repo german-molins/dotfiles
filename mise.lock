@@ -1,4 +1,4 @@
-[tools.bun]
+[[tools.bun]]
 version = "1.2.19"
 backend = "core:bun"
 
@@ -10,7 +10,7 @@ size = 38401482
 checksum = "blake3:1d033789f9a12ddcc7b1e03c675af1dfcbf770aa7fbfa2c49dc6599e591e4779"
 size = 21573514
 
-[tools.jq]
+[[tools.jq]]
 version = "1.8.1"
 backend = "aqua:jqlang/jq"
 
