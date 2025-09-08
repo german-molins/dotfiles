@@ -3,17 +3,17 @@ version = "0.30.0"
 backend = "aqua:sigoden/aichat"
 
 [[tools.amp]]
-version = "0.0.1756800102-g7dd105"
+version = "0.0.1757319535-ge2105c"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
-version = "0.7.4"
+version = "0.7.6"
 backend = "aqua:charmbracelet/crush"
 
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:535ec95bab333fd130f5ceb0af0797703ba02fd6df0118fdb3b544a77a12f7c0"
-size = 16042957
-url = "https://github.com/charmbracelet/crush/releases/download/v0.7.4/crush_0.7.4_Darwin_arm64.tar.gz"
+checksum = "sha256:e94656bb74fb63141515b7d5770540c3fbcd9d495187c37fcefdef2fb9035794"
+size = 16040686
+url = "https://github.com/charmbracelet/crush/releases/download/v0.7.6/crush_0.7.6_Darwin_arm64.tar.gz"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
@@ -33,13 +33,13 @@ version = "25.01"
 backend = "aqua:ip7z/7zip"
 
 [[tools."aqua:jorgerojas26/lazysql"]]
-version = "0.4.0"
+version = "0.4.1"
 backend = "aqua:jorgerojas26/lazysql"
 
 [tools."aqua:jorgerojas26/lazysql".platforms.macos-arm64]
-checksum = "sha256:12fd0a3d420a734bb1b5c6be1cc1edc8b5f60f84d3382d5203e852d3947d0bdc"
-size = 5234544
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.0/lazysql_Darwin_arm64.tar.gz"
+checksum = "sha256:32765a9ffa94a4a151348231406e486ebfd052950d0acf823cc6b1bc82078ad3"
+size = 5364056
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.1/lazysql_Darwin_arm64.tar.gz"
 
 [[tools."aqua:zk-org/zk"]]
 version = "0.15.1"
@@ -81,13 +81,13 @@ size = 12312027
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.4.1/carapace-bin_1.4.1_darwin_arm64.tar.gz"
 
 [[tools.cargo-binstall]]
-version = "1.15.3"
+version = "1.15.4"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall.platforms.macos-arm64]
-checksum = "blake3:8fb84239a9f54c0107faa2cf6ac12c658572b943356e1291c4cf39f34af6ceaf"
-size = 6004746
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.3/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "blake3:6a9104a686d44217ccfdcc2b9333a708d8ebd5a4abafe4d2eda5dec77c051a67"
+size = 5997376
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.4/cargo-binstall-aarch64-apple-darwin.zip"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -121,13 +121,13 @@ version = "1.0.470"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
-version = "0.1.0"
+version = "0.2.0"
 backend = "aqua:uutils/coreutils"
 
 [tools.coreutils.platforms.macos-arm64]
-checksum = "blake3:9eeeaf1129fec4b79ebcbfc8c352976591affe34d1a6e75ac37cac5913995ede"
-size = 4140227
-url = "https://github.com/uutils/coreutils/releases/download/0.1.0/coreutils-0.1.0-aarch64-apple-darwin.tar.gz"
+checksum = "blake3:8164b2d8446da5d16d1e9efcdb09c4982962983d9d239eb0902326864fd4264c"
+size = 4419172
+url = "https://github.com/uutils/coreutils/releases/download/0.2.0/coreutils-0.2.0-aarch64-apple-darwin.tar.gz"
 
 [[tools.cosign]]
 version = "2.5.3"
@@ -168,7 +168,7 @@ size = 1658005
 url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-darwin_arm64.tar.gz"
 
 [[tools.gemini-cli]]
-version = "0.2.2"
+version = "0.3.4"
 backend = "npm:@google/gemini-cli"
 
 [[tools.gh]]
@@ -185,11 +185,11 @@ version = "0.0.3"
 backend = "github:ghetzel/mdnstool"
 
 [[tools.glab]]
-version = "1.67.0"
+version = "1.68.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:104dbce9fabe4684f73d094a92dc0d256dff80072e5f957f144f06f8eaf6067d"
+checksum = "blake3:a933901a2f43daf5bdbaa4cb9c1b5854576a819209e6b3924e679a59bcbec7d0"
 
 [[tools.hyperfine]]
 version = "1.19.0"
@@ -204,13 +204,13 @@ version = "0.24.1"
 backend = "aqua:jesseduffield/lazydocker"
 
 [[tools.lazygit]]
-version = "0.54.2"
+version = "0.55.0"
 backend = "aqua:jesseduffield/lazygit"
 
 [tools.lazygit.platforms.macos-arm64]
-checksum = "sha256:3325b15d93740501a8ad933bc836c77aa8b47c38352d6291728df30583ceda1b"
-size = 7572130
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.54.2/lazygit_0.54.2_darwin_arm64.tar.gz"
+checksum = "sha256:a3679901c0618c906424c0f9cf49abb4b687b2c610f47ff344420b9a494becf4"
+size = 7597758
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.0/lazygit_0.55.0_darwin_arm64.tar.gz"
 
 [[tools.neovim]]
 version = "0.11.4"
@@ -231,20 +231,20 @@ size = 51078653
 url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.6.1"
+version = "0.6.5"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:56f86d0d555315eb3ee58b8feba12d02cb2820dc01a5dc38880745cf7c753985"
-size = 29625731
-url = "https://github.com/sst/opencode/releases/download/v0.6.1/opencode-darwin-arm64.zip"
+checksum = "blake3:eaf30971f4515360a907dc8fc43958c042f08d816747ce06730809ff22d5dd70"
+size = 29629147
+url = "https://github.com/sst/opencode/releases/download/v0.6.5/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
-version = "3.7.0.2"
+version = "3.8"
 backend = "ubi:jgm/pandoc"
 
 [tools.pandoc.platforms.macos-arm64-pandoc]
-checksum = "blake3:3d18130bd80752f6ae98c90f5fc2db6bef859147db4cfae98ec376521629e4c1"
+checksum = "blake3:5c9f98c5a3863a63deaa75e5a56651b91bb70d46b2d032bff7c7a7f760b00f27"
 
 [[tools."pipx:httpie"]]
 version = "3.2.4"
@@ -272,13 +272,13 @@ version = "1.89.0"
 backend = "core:rust"
 
 [[tools.tree-sitter]]
-version = "0.25.8"
+version = "0.25.9"
 backend = "aqua:tree-sitter/tree-sitter"
 
 [tools.tree-sitter.platforms.macos-arm64]
-checksum = "blake3:bab3deebfe6bc5f90bdce6883989a93d9280412b16bf45c22637bb2dc09739aa"
-size = 5904471
-url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.8/tree-sitter-macos-arm64.gz"
+checksum = "blake3:924988b10a157dad5d03184dacee61e1d8fb1a9f542f431cda484c5ed7910a7d"
+size = 5919571
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree-sitter-macos-arm64.gz"
 
 [[tools.tssh]]
 version = "0.1.22"
@@ -305,7 +305,7 @@ version = "2.2.2"
 backend = "ubi:jdx/usage"
 
 [[tools.uv]]
-version = "0.8.14"
+version = "0.8.15"
 backend = "asdf:uv"
 
 [[tools.xh]]
