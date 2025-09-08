@@ -5,7 +5,6 @@ amp = "latest"
 "aqua:ip7z/7zip" = "latest"
 "aqua:jorgerojas26/lazysql" = "latest"
 "aqua:zk-org/zk" = "latest"
-"asdf:mise-plugins/mise-eza" = "latest"
 bat = "latest"
 bottom = "latest"
 cargo-binstall = "latest"
@@ -60,6 +59,7 @@ opencode = "latest"
 codebuff = "latest"
 jjui = "latest"
 jj = "latest"
+eza = "latest"
 
 [settings]
 experimental = true
