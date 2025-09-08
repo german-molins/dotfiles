@@ -24,12 +24,6 @@ These are my daily CLI drivers:
 | [Carapace](https://carapace-sh.github.io/carapace-bin/) | `carapace` | | Shell completion |
 | [Yazi](https://yazi-rs.github.io/) | `yazi`, `ya` | `y` | File manager |
 | [Neovim](https://neovim.io/) | `nvim` | | Text editor and IDE |
-| [Git](https://git-scm.com/) | `git` | | Version control system |
-| [Gitui](https://github.com/extrawurst/gitui) | `gitui` | `git ui` | Git manager |
-| [Lazygit](https://github.com/jesseduffield/lazygit) | `lazygit` | `git lazy` | Git manager |
-| [Git Graph](https://github.com/mlange-42/git-graph) | `git-graph` | `git graph` | Git graph visualizer |
-| [GitHub CLI](https://cli.github.com/) | `gh` | | GitHub CLI |
-| [GitHub Dashboard](https://dlvhdr.github.io/gh-dash/) | `gh-dash` | `gh dash` | Pull requests and issues manager |
 | [bottom](https://github.com/ClementTsang/bottom) | `btm` | | System monitor |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker) | `lazydocker` | | Docker and docker-compose manager |
 | [Pitchfork](https://pitchfork.jdx.dev/) | `pitchfork` | | Daemons manager |
@@ -37,6 +31,19 @@ These are my daily CLI drivers:
 | [Timewarrior](https://timewarrior.net/) | `timew` | | Time manager |
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
 | [Lnav](https://lnav.org/) | `lnav` | | Logfile navigator |
+
+VCS:
+
+| Name | Commands | Aliases | Description |
+|------|---------|-------|-------------|
+| [Git](https://git-scm.com/) | `git` | | Version control system |
+| [Gitui](https://github.com/extrawurst/gitui) | `gitui` | `git ui` | Git manager |
+| [Lazygit](https://github.com/jesseduffield/lazygit) | `lazygit` | `git lazy` | Git manager |
+| [Git Graph](https://github.com/mlange-42/git-graph) | `git-graph` | `git graph` | Git graph visualizer |
+| [GitHub CLI](https://cli.github.com/) | `gh` | | GitHub CLI |
+| [GitHub Dashboard](https://dlvhdr.github.io/gh-dash/) | `gh-dash` | `gh dash` | Pull requests and issues manager |
+| [Jujutsu](https://jj-vcs.github.io) | `jj` | | Git-compatible VCS |
+| [Jujutsu UI](https://idursun.github.io/jjui) | `jjui` | | Jujutsu manager |
 
 Coding agents:
 

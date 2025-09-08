@@ -195,6 +195,19 @@ checksum = "blake3:a933901a2f43daf5bdbaa4cb9c1b5854576a819209e6b3924e679a59bcbec
 version = "1.19.0"
 backend = "aqua:sharkdp/hyperfine"
 
+[[tools.jj]]
+version = "0.33.0"
+backend = "aqua:jj-vcs/jj"
+
+[[tools.jjui]]
+version = "0.9.3"
+backend = "aqua:idursun/jjui"
+
+[tools.jjui.platforms.macos-arm64]
+checksum = "blake3:fa3ba7d14cadeb02cca37c3b2197025aa3dd86190de892012580fa20a47d52aa"
+size = 3640754
+url = "https://github.com/idursun/jjui/releases/download/v0.9.3/jjui-0.9.3-darwin-arm64.zip"
+
 [[tools.jq]]
 version = "1.8.1"
 backend = "aqua:jqlang/jq"

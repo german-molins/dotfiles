@@ -58,6 +58,8 @@ cosign = "latest"
 gemini-cli = "latest"
 opencode = "latest"
 codebuff = "latest"
+jjui = "latest"
+jj = "latest"
 
 [settings]
 experimental = true
