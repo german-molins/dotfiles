@@ -151,6 +151,14 @@
               "default": true
             }
           ]
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/nix/store/36pj7qpc7l35vhxa1qgipaddrr8qldps-sshfs-fuse-3.7.3",
+              "default": true
+            }
+          ]
         }
       }
     },
