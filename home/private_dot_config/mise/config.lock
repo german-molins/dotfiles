@@ -170,15 +170,6 @@ url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_darwin_a
 version = "1.2.3"
 backend = "ubi:bootandy/dust"
 
-[[tools.eza]]
-version = "0.23.2"
-backend = "aqua:eza-community/eza"
-
-[tools.eza.platforms.linux-x64]
-checksum = "blake3:b0950a2f7036d26f6dcc20cc6ced87b762034950b57ffe6e2d54be41dbccba68"
-size = 1222446
-url = "https://github.com/eza-community/eza/releases/download/v0.23.2/eza_x86_64-unknown-linux-musl.tar.gz"
-
 [[tools.fd]]
 version = "10.3.0"
 backend = "aqua:sharkdp/fd"
@@ -209,6 +200,10 @@ backend = "aqua:cli/cli"
 checksum = "sha256:62290b0dbc9965ebbc20d2b481fe83aa167fadc28e0d81a5d93eec6efc9d3b72"
 size = 17396485
 url = "https://github.com/cli/cli/releases/download/v2.78.0/gh_2.78.0_macOS_arm64.zip"
+
+[[tools."github:eza-community/eza"]]
+version = "0.23.2"
+backend = "github:eza-community/eza"
 
 [[tools."github:ghetzel/mdnstool"]]
 version = "0.0.3"

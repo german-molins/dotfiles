@@ -59,7 +59,7 @@ opencode = "latest"
 codebuff = "latest"
 jjui = "latest"
 jj = "latest"
-eza = "latest"
+"github:eza-community/eza" = "latest"
 
 [settings]
 experimental = true
