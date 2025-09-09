@@ -2,6 +2,11 @@
 version = "0.30.0"
 backend = "aqua:sigoden/aichat"
 
+[tools.aichat.platforms.linux-arm64]
+checksum = "blake3:ea7218da4dea9f512a16a7c934cfbe38d6403de5648eb81591b4839e2990622a"
+size = 5464580
+url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
+
 [[tools.amp]]
 version = "0.0.1757395280-g8db5f1"
 backend = "npm:@sourcegraph/amp"
@@ -9,6 +14,11 @@ backend = "npm:@sourcegraph/amp"
 [[tools."aqua:charmbracelet/crush"]]
 version = "0.7.6"
 backend = "aqua:charmbracelet/crush"
+
+[tools."aqua:charmbracelet/crush".platforms.linux-arm64]
+checksum = "sha256:e2394bc4d45d446b58a9b0b31aff1ec37677043cc2483490a26b147ea7fa50cf"
+size = 15285338
+url = "https://github.com/charmbracelet/crush/releases/download/v0.7.6/crush_0.7.6_Linux_arm64.tar.gz"
 
 [tools."aqua:charmbracelet/crush".platforms.linux-x64]
 checksum = "sha256:637919e6de40a6350c15ab737ec08125ebd5f92449a0e726079d160b8a7fd8b9"
@@ -24,6 +34,11 @@ url = "https://github.com/charmbracelet/crush/releases/download/v0.7.6/crush_0.7
 version = "4.16.2"
 backend = "aqua:dlvhdr/gh-dash"
 
+[tools."aqua:dlvhdr/gh-dash".platforms.linux-arm64]
+checksum = "sha256:9d077b0cc7f1a19e5fe3f66496ed192323f88d0cd98339c99085a26ae9d6017d"
+size = 18809016
+url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.16.2/gh-dash_v4.16.2_linux-arm64"
+
 [tools."aqua:dlvhdr/gh-dash".platforms.macos-arm64]
 checksum = "sha256:eaf9c6fa99576774c5f5f61774c07938e2f360a69cd5d115871126cbc7885007"
 size = 19429506
@@ -33,13 +48,28 @@ url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.16.2/gh-dash_v4.16
 version = "0.27.0"
 backend = "aqua:gitui-org/gitui"
 
+[tools."aqua:gitui-org/gitui".platforms.linux-arm64]
+checksum = "blake3:c9105b081aaa36854eea38606f664b6b960ee6c7edf8af135993a3909989e13b"
+size = 5916903
+url = "https://github.com/gitui-org/gitui/releases/download/v0.27.0/gitui-linux-aarch64.tar.gz"
+
 [[tools."aqua:ip7z/7zip"]]
 version = "25.01"
 backend = "aqua:ip7z/7zip"
 
+[tools."aqua:ip7z/7zip".platforms.linux-arm64]
+checksum = "blake3:f170e6f1587086fe89f759e4f2846a2bd1420b57435612cee8ac85f506de0cc6"
+size = 1326736
+url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-linux-arm64.tar.xz"
+
 [[tools."aqua:jorgerojas26/lazysql"]]
 version = "0.4.1"
 backend = "aqua:jorgerojas26/lazysql"
+
+[tools."aqua:jorgerojas26/lazysql".platforms.linux-arm64]
+checksum = "sha256:b2c72dfd34c88d18a67c5de6b3ae5ec2a64dcdb35e5983cce59d28a6f1e10518"
+size = 5175621
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.1/lazysql_Linux_arm64.tar.gz"
 
 [tools."aqua:jorgerojas26/lazysql".platforms.linux-x64]
 checksum = "sha256:0981a8cdd94e0168d5a71dda76f9723219a32c24c63d3a6454c00a6f19da378a"
@@ -55,9 +85,19 @@ url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.1/lazysql_
 version = "0.15.1"
 backend = "aqua:zk-org/zk"
 
+[tools."aqua:zk-org/zk".platforms.linux-arm64]
+checksum = "blake3:26f804b05f21088e77fe4d2d54f10d7e4089130871c459d29c2741bcde2279ad"
+size = 9688306
+url = "https://github.com/zk-org/zk/releases/download/v0.15.1/zk-v0.15.1-linux-arm64.tar.gz"
+
 [[tools.atuin]]
 version = "18.8.0"
 backend = "aqua:atuinsh/atuin"
+
+[tools.atuin.platforms.linux-arm64]
+checksum = "sha256:d6270f44b11ee3aa781a7ba4d9e947e8569e3b8073f3c0eae5e41c4a69d859f4"
+size = 13833762
+url = "https://github.com/atuinsh/atuin/releases/download/v18.8.0/atuin-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.atuin.platforms.macos-arm64]
 checksum = "sha256:639093c091d19077b06b52b098236075feee878f8409858adb1f875986b8c195"
@@ -68,9 +108,17 @@ url = "https://github.com/atuinsh/atuin/releases/download/v18.8.0/atuin-aarch64-
 version = "0.25.0"
 backend = "ubi:sharkdp/bat"
 
+[tools.bat.platforms.linux-arm64-bat]
+checksum = "blake3:8ed6417a16273fcb859c46fbaf7e9c7487e06e8e50fcd0c988f8f88ff3d09bcd"
+
 [[tools.bottom]]
 version = "0.11.1"
 backend = "aqua:ClementTsang/bottom"
+
+[tools.bottom.platforms.linux-arm64]
+checksum = "blake3:0f078e5ee93c87e00736e99fc8aa33e92f548b21800e13cce11f88747c75d98e"
+size = 1939946
+url = "https://github.com/ClementTsang/bottom/releases/download/0.11.1/bottom_aarch64-unknown-linux-musl.tar.gz"
 
 [tools.bottom.platforms.macos-arm64]
 checksum = "blake3:a4a924b78400e5eb8d14af363837e97b5b289cbd8204691ec9657fb584b385e6"
@@ -81,6 +129,11 @@ url = "https://github.com/ClementTsang/bottom/releases/download/0.11.1/bottom_aa
 version = "1.5.0"
 backend = "aqua:carapace-sh/carapace-bin"
 
+[tools.carapace.platforms.linux-arm64]
+checksum = "sha256:392ea4c6147d294029a2371eed8e005e5ca266d37a4b55e188905d9ccc4a4e51"
+size = 12014179
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.0/carapace-bin_1.5.0_linux_arm64.tar.gz"
+
 [tools.carapace.platforms.macos-arm64]
 checksum = "sha256:d16842cca75720c4f97e3d0238874d03cf48173783c8dc0d809ec7338f4f344a"
 size = 12633887
@@ -89,6 +142,11 @@ url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.0/cara
 [[tools.cargo-binstall]]
 version = "1.15.4"
 backend = "aqua:cargo-bins/cargo-binstall"
+
+[tools.cargo-binstall.platforms.linux-arm64]
+checksum = "blake3:8278cbeab75ad60b2708388dfa28bf9483aab5f3781a37d231f9f717f5b886eb"
+size = 6374993
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.4/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall.platforms.linux-x64]
 checksum = "blake3:e96726cf26e534a44f61e015cc427ed92868fbf351fb7f1245d30e044d74cfa7"
@@ -124,6 +182,9 @@ backend = "cargo:tlrc"
 version = "2.65.0"
 backend = "ubi:twpayne/chezmoi"
 
+[tools.chezmoi.platforms.linux-arm64-chezmoi]
+checksum = "blake3:107a9f2fdfb3aba4073e8f78e311db44b821e90f80bf4cca255edd49f2a31dd1"
+
 [tools.chezmoi.platforms.macos-arm64-chezmoi]
 checksum = "blake3:4ce42c24126ec6c460348da04a007ed4a9b31ac17a31b39a19a074d5846973d1"
 
@@ -134,6 +195,11 @@ backend = "npm:codebuff"
 [[tools.coreutils]]
 version = "0.2.0"
 backend = "aqua:uutils/coreutils"
+
+[tools.coreutils.platforms.linux-arm64]
+checksum = "blake3:d57af92ee5f2ef700e475a9431f688e0f50ba6c60a7378cfd56fcc5b9d0cbd12"
+size = 5177962
+url = "https://github.com/uutils/coreutils/releases/download/0.2.0/coreutils-0.2.0-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.coreutils.platforms.linux-x64]
 checksum = "blake3:6a3a985d446da5a170a76ca075cc2285e2f2463ac60567af252ab1c10df3f636"
@@ -149,17 +215,37 @@ url = "https://github.com/uutils/coreutils/releases/download/0.2.0/coreutils-0.2
 version = "2.5.3"
 backend = "aqua:sigstore/cosign"
 
+[tools.cosign.platforms.linux-arm64]
+checksum = "sha256:bffabe4cf183122b7de3111257a863c99e7dc6cf1093bfd7bf961de1795589b8"
+size = 148539773
+url = "https://github.com/sigstore/cosign/releases/download/v2.5.3/cosign-linux-arm64"
+
 [[tools.direnv]]
 version = "2.37.1"
 backend = "aqua:direnv/direnv"
+
+[tools.direnv.platforms.linux-arm64]
+checksum = "blake3:e6edd6b534ed664e084d72ae81ded52c437e1d57aae1f8420531a8293635afce"
+size = 7667896
+url = "https://github.com/direnv/direnv/releases/download/v2.37.1/direnv.linux-arm64"
 
 [[tools.dua]]
 version = "2.31.0"
 backend = "aqua:Byron/dua-cli"
 
+[tools.dua.platforms.linux-arm64]
+checksum = "blake3:8200301584d2052e65a0f268aa9a0a69778615a53afe5b45ccec868415eef173"
+size = 1102548
+url = "https://github.com/Byron/dua-cli/releases/download/v2.31.0/dua-v2.31.0-aarch64-unknown-linux-musl.tar.gz"
+
 [[tools.duf]]
 version = "0.9.1"
 backend = "aqua:muesli/duf"
+
+[tools.duf.platforms.linux-arm64]
+checksum = "sha256:22ea0ad29f6610bf443aa351e600de97e47a9b380ef58316606a84bb8f595216"
+size = 1189297
+url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_arm64.tar.gz"
 
 [tools.duf.platforms.macos-arm64]
 checksum = "sha256:512ba0ff3585bb8c65841de557a4c4b8712332db005dc952fa98d373a05d01df"
@@ -170,9 +256,17 @@ url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_darwin_a
 version = "1.2.3"
 backend = "ubi:bootandy/dust"
 
+[tools.dust.platforms.linux-arm64-dust]
+checksum = "blake3:b2ff411a57fdb89d684cd34b091b03c9a27496633f700ae72cc43f5d521812de"
+
 [[tools.fd]]
 version = "10.3.0"
 backend = "aqua:sharkdp/fd"
+
+[tools.fd.platforms.linux-arm64]
+checksum = "blake3:e5ca6076622e1aa87c6537a2d37f47c6ac0c4dfd9d5a2c6942e8b06ee71ca71c"
+size = 1608477
+url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.fd.platforms.macos-arm64]
 checksum = "blake3:e7a554aed4fea189f2aa297e82087ceaebb844eac55a2503e5321cce88fbb636"
@@ -182,6 +276,11 @@ url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch6
 [[tools.fzf]]
 version = "0.65.2"
 backend = "aqua:junegunn/fzf"
+
+[tools.fzf.platforms.linux-arm64]
+checksum = "sha256:097347160595bf03a426d2abe0a17e14ca060540ddfc0ea45c0a9be62bb29a2b"
+size = 1521163
+url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-linux_arm64.tar.gz"
 
 [tools.fzf.platforms.macos-arm64]
 checksum = "sha256:a1464f1d4b75c3a92975f67055f9e407800ed35820ea7d73f2afb90aeb0491e8"
@@ -196,6 +295,11 @@ backend = "npm:@google/gemini-cli"
 version = "2.78.0"
 backend = "aqua:cli/cli"
 
+[tools.gh.platforms.linux-arm64]
+checksum = "sha256:9e3ca75b227a5503f6ef92c4b8b6dbf94e34bfdd8069ac0f16b8739856ebba7b"
+size = 16550684
+url = "https://github.com/cli/cli/releases/download/v2.78.0/gh_2.78.0_linux_arm64.tar.gz"
+
 [tools.gh.platforms.macos-arm64]
 checksum = "sha256:62290b0dbc9965ebbc20d2b481fe83aa167fadc28e0d81a5d93eec6efc9d3b72"
 size = 17396485
@@ -205,13 +309,26 @@ url = "https://github.com/cli/cli/releases/download/v2.78.0/gh_2.78.0_macOS_arm6
 version = "0.23.2"
 backend = "github:eza-community/eza"
 
+[tools."github:eza-community/eza".platforms.linux-arm64]
+checksum = "blake3:236df3e477792f5be9093e4f9090ffda725c1be0757851100d9d0d2da3dac608"
+size = 965251
+url = "https://github.com/eza-community/eza/releases/download/v0.23.2/eza_aarch64-unknown-linux-gnu.tar.gz"
+
 [[tools."github:ghetzel/mdnstool"]]
 version = "0.0.3"
 backend = "github:ghetzel/mdnstool"
 
+[tools."github:ghetzel/mdnstool".platforms.linux-arm64]
+checksum = "blake3:ecbab90f2b3cddbb1656261da2e7837550f422437757bde75f62ad7c236171c1"
+size = 9547776
+url = "https://github.com/ghetzel/mdnstool/releases/download/v0.0.3/mdnstool-linux-arm64"
+
 [[tools.glab]]
 version = "1.68.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
+
+[tools.glab.platforms.linux-arm64-glab-glab]
+checksum = "blake3:86d764c5106c2254049dd1612242674381d32ba171bbbaccda4a4710540c1549"
 
 [tools.glab.platforms.linux-x64-glab-glab]
 checksum = "blake3:735e690f3609fe7df0e5c01dda9f096723ab6fd471dbebf8074d7939572db5df"
@@ -223,9 +340,19 @@ checksum = "blake3:a933901a2f43daf5bdbaa4cb9c1b5854576a819209e6b3924e679a59bcbec
 version = "1.19.0"
 backend = "aqua:sharkdp/hyperfine"
 
+[tools.hyperfine.platforms.linux-arm64]
+checksum = "blake3:bccb6f93e3d216586b299cb42e0b81f683ef1dd45fcc11dd7fb804652ce0a56a"
+size = 605877
+url = "https://github.com/sharkdp/hyperfine/releases/download/v1.19.0/hyperfine-v1.19.0-aarch64-unknown-linux-gnu.tar.gz"
+
 [[tools.jj]]
 version = "0.33.0"
 backend = "aqua:jj-vcs/jj"
+
+[tools.jj.platforms.linux-arm64]
+checksum = "blake3:d8ff44daf7aaae4002176f4b909e3941aadb258164c71b3042bd16ee29c09ede"
+size = 8878572
+url = "https://github.com/jj-vcs/jj/releases/download/v0.33.0/jj-v0.33.0-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.jj.platforms.linux-x64]
 checksum = "blake3:f38a02f3dba5badaf44de043083dd2a289dcbd088143bf551289ebf4a1921c49"
@@ -235,6 +362,11 @@ url = "https://github.com/jj-vcs/jj/releases/download/v0.33.0/jj-v0.33.0-x86_64-
 [[tools.jjui]]
 version = "0.9.3"
 backend = "aqua:idursun/jjui"
+
+[tools.jjui.platforms.linux-arm64]
+checksum = "blake3:be1c2944bb2081e2bbf588f24645b496d06f46a8262aeb9ac72a074dbe29ddbd"
+size = 3702066
+url = "https://github.com/idursun/jjui/releases/download/v0.9.3/jjui-0.9.3-linux-arm64.zip"
 
 [tools.jjui.platforms.linux-x64]
 checksum = "blake3:1f52f90514c89e1bca00fe6dfee65739e4545852ec5581ab8d9a20b5f90a1c8a"
@@ -250,13 +382,28 @@ url = "https://github.com/idursun/jjui/releases/download/v0.9.3/jjui-0.9.3-darwi
 version = "1.8.1"
 backend = "aqua:jqlang/jq"
 
+[tools.jq.platforms.linux-arm64]
+checksum = "sha256:6bc62f25981328edd3cfcfe6fe51b073f2d7e7710d7ef7fcdac28d4e384fc3d4"
+size = 1797872
+url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-arm64"
+
 [[tools.lazydocker]]
 version = "0.24.1"
 backend = "aqua:jesseduffield/lazydocker"
 
+[tools.lazydocker.platforms.linux-arm64]
+checksum = "sha256:c38e715f2cb56440bec16e3744005522c1d13c47d2e3730572849dc69cefd8ae"
+size = 4322131
+url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_arm64.tar.gz"
+
 [[tools.lazygit]]
 version = "0.55.0"
 backend = "aqua:jesseduffield/lazygit"
+
+[tools.lazygit.platforms.linux-arm64]
+checksum = "sha256:6730250c140cd02e464f3e49b838deb4422ee61ada3227d4d88bd23fa881b8f0"
+size = 7286208
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.0/lazygit_0.55.0_linux_arm64.tar.gz"
 
 [tools.lazygit.platforms.linux-x64]
 checksum = "sha256:e7c1c2d127ebdb241398f3daf05907a71a0c977ff12beba6b8ebdb069f9dba6a"
@@ -272,6 +419,11 @@ url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.0/lazygi
 version = "0.11.4"
 backend = "aqua:neovim/neovim"
 
+[tools.neovim.platforms.linux-arm64]
+checksum = "blake3:178fa17777fe45897f3f81fe1db032eb18e41d9de5e2da99b64556c1e0f40c66"
+size = 10891274
+url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-arm64.tar.gz"
+
 [tools.neovim.platforms.macos-arm64]
 checksum = "blake3:31e761b1a1aa3642dec4b09b2f080f99fe550ecfb82e77f7bf11382d5f0630de"
 size = 9194532
@@ -280,6 +432,11 @@ url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-macos-arm
 [[tools.node]]
 version = "24.7.0"
 backend = "core:node"
+
+[tools.node.platforms.linux-arm64]
+checksum = "sha256:04df0283d2a8a06271a690fbe2528661527b3a09f0f28c8bb63327d8888be184"
+size = 58472562
+url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-linux-arm64.tar.gz"
 
 [tools.node.platforms.macos-arm64]
 checksum = "sha256:ff8298faaf82c85444aad7f1e12a4882496286ea9008702029b359d7fac7f8b3"
@@ -290,6 +447,11 @@ url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
 version = "0.6.6"
 backend = "aqua:sst/opencode"
 
+[tools.opencode.platforms.linux-arm64]
+checksum = "blake3:05e27d334e68262470d28a34964fc26be7d43bfd306fad0aa8b6390ef1b1f64b"
+size = 44756546
+url = "https://github.com/sst/opencode/releases/download/v0.6.6/opencode-linux-arm64.zip"
+
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:4ab42703d54581fa5c1d3e1088c84736ea6ed8d210024d6347c4be7b3ee97696"
 size = 29630303
@@ -298,6 +460,9 @@ url = "https://github.com/sst/opencode/releases/download/v0.6.6/opencode-darwin-
 [[tools.pandoc]]
 version = "3.8"
 backend = "ubi:jgm/pandoc"
+
+[tools.pandoc.platforms.linux-arm64-pandoc]
+checksum = "blake3:60c229e8b97ccb43f10efbc8c7fafdb8cdb7d65c8b45e1de5972d5b833e0742c"
 
 [tools.pandoc.platforms.linux-x64-pandoc]
 checksum = "blake3:83eb3a8ca17605958114fd83e48a1bb00b8cf3cdac22c62d0502dd7bf54ccbb2"
@@ -313,9 +478,19 @@ backend = "pipx:httpie"
 version = "0.1.5"
 backend = "aqua:jdx/pitchfork"
 
+[tools.pitchfork.platforms.linux-arm64]
+checksum = "blake3:865b86fa0d502bbc9ca96019a62d189e5855f9a31308eb0611ce09617b618315"
+size = 2810401
+url = "https://github.com/jdx/pitchfork/releases/download/v0.1.5/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+
 [[tools.pnpm]]
 version = "10.15.1"
 backend = "aqua:pnpm/pnpm"
+
+[tools.pnpm.platforms.linux-arm64]
+checksum = "blake3:8e31f25db2ffd01ae7a28f8b35e815e33a84cb3def0d44bc9947e4f956379920"
+size = 61973377
+url = "https://github.com/pnpm/pnpm/releases/download/v10.15.1/pnpm-linux-arm64"
 
 [tools.pnpm.platforms.macos-arm64]
 checksum = "blake3:502db5ea7eeeccf6307a8af184d2a63acdf88cdb3346d7fb0d55617e807d1c5a"
@@ -326,6 +501,11 @@ url = "https://github.com/pnpm/pnpm/releases/download/v10.15.1/pnpm-macos-arm64"
 version = "14.1.1"
 backend = "aqua:BurntSushi/ripgrep"
 
+[tools.ripgrep.platforms.linux-arm64]
+checksum = "sha256:c827481c4ff4ea10c9dc7a4022c8de5db34a5737cb74484d62eb94a95841ab2f"
+size = 2047405
+url = "https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-aarch64-unknown-linux-gnu.tar.gz"
+
 [[tools.rust]]
 version = "1.89.0"
 backend = "core:rust"
@@ -333,6 +513,11 @@ backend = "core:rust"
 [[tools.tree-sitter]]
 version = "0.25.9"
 backend = "aqua:tree-sitter/tree-sitter"
+
+[tools.tree-sitter.platforms.linux-arm64]
+checksum = "blake3:d9d1b32035d2161250af4cce89f8862e59af4947702219822270d754f9ccb076"
+size = 3645906
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree-sitter-linux-arm64.gz"
 
 [tools.tree-sitter.platforms.linux-x64]
 checksum = "blake3:610065da52184f27562b0747a6109dd8f867249217be90e43e1080e69b91a490"
@@ -348,25 +533,45 @@ url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree
 version = "0.1.22"
 backend = "aqua:trzsz/trzsz-ssh"
 
+[tools.tssh.platforms.linux-arm64]
+checksum = "sha256:ecc3efd021a1932c1d61dc76d36cac0f2e1bd1c0ea8c6634f9521a36f388c301"
+size = 4742242
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.22/tssh_0.1.22_linux_aarch64.tar.gz"
+
 [[tools."ubi:dalance/procs"]]
 version = "0.14.10"
 backend = "ubi:dalance/procs"
+
+[tools."ubi:dalance/procs".platforms.linux-arm64-procs]
+checksum = "blake3:c1738e75467818a3c1cef7d2dfa4cbd79cf8b8e02b090711662d0fbf4da21aaf"
 
 [[tools."ubi:peteretelej/tree"]]
 version = "1.2.2"
 backend = "ubi:peteretelej/tree"
 
+[tools."ubi:peteretelej/tree".platforms.linux-arm64-tree]
+checksum = "blake3:b01b0eb5e63e183e11163be56bc39114265f04fafa366fbe5e1562bbeeefda0f"
+
 [[tools."ubi:tstack/lnav"]]
 version = "0.13.0"
 backend = "ubi:tstack/lnav"
+
+[tools."ubi:tstack/lnav".platforms.linux-arm64-lnav]
+checksum = "blake3:bc38be00fc5fbd4adda8f92ccf32000de7995b5bf13f276378f1b5d5ebcc93c7"
 
 [[tools.upt]]
 version = "0.9.0"
 backend = "ubi:sigoden/upt"
 
+[tools.upt.platforms.linux-arm64-upt]
+checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8bb20"
+
 [[tools.usage]]
 version = "2.2.2"
 backend = "ubi:jdx/usage"
+
+[tools.usage.platforms.linux-arm64-usage]
+checksum = "blake3:859e0e42b42c05d2a9d841a8c9140fcfd89c8a1ec18c88eca510e029894e038d"
 
 [[tools.uv]]
 version = "0.8.15"
@@ -375,6 +580,11 @@ backend = "asdf:uv"
 [[tools.xh]]
 version = "0.24.1"
 backend = "aqua:ducaale/xh"
+
+[tools.xh.platforms.linux-arm64]
+checksum = "blake3:c1c76d4214f6935d8e08dea556d9286904c679ec83f9bf4bbc22cdbeb840c3d2"
+size = 3618725
+url = "https://github.com/ducaale/xh/releases/download/v0.24.1/xh-v0.24.1-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.xh.platforms.macos-arm64]
 checksum = "blake3:ec31720629e9a1e4869b01c9194405743a666a974fa6c91d885f5919ddf76ef0"
@@ -385,13 +595,26 @@ url = "https://github.com/ducaale/xh/releases/download/v0.24.1/xh-v0.24.1-aarch6
 version = "25.5.31"
 backend = "aqua:sxyazi/yazi"
 
+[tools.yazi.platforms.linux-arm64]
+checksum = "blake3:18b81cf78bd3eb146f5e8405228e2e0678f5adde97e9e2d811e7a000944a4fef"
+size = 7753495
+url = "https://github.com/sxyazi/yazi/releases/download/v25.5.31/yazi-aarch64-unknown-linux-musl.zip"
+
 [[tools.yq]]
 version = "4.47.1"
 backend = "aqua:mikefarah/yq"
 
+[tools.yq.platforms.linux-arm64]
+checksum = "blake3:fdbd2b9ef6f364fdd762c0c355268c9b196871925636322a756818078d1080ef"
+size = 10813624
+url = "https://github.com/mikefarah/yq/releases/download/v4.47.1/yq_linux_arm64"
+
 [[tools.zellij]]
 version = "0.43.1"
 backend = "ubi:zellij-org/zellij"
+
+[tools.zellij.platforms.linux-arm64-zellij]
+checksum = "blake3:c8d05e7ffb2dd792faff5d6fef0a4fa8cb8af80ed7d448656a29264bb2f4824f"
 
 [tools.zellij.platforms.macos-arm64-zellij]
 checksum = "blake3:7d132a60b3d884ad8e16e02b89ba1da5907bc0d36570f4c9f8f4cb885dce78d6"
@@ -399,3 +622,6 @@ checksum = "blake3:7d132a60b3d884ad8e16e02b89ba1da5907bc0d36570f4c9f8f4cb885dce7
 [[tools.zoxide]]
 version = "0.9.8"
 backend = "ubi:ajeetdsouza/zoxide"
+
+[tools.zoxide.platforms.linux-arm64-zoxide]
+checksum = "blake3:12f64fc400294f27b03a3e671b431afcece23b78083154d2fa1d00f481d8a10a"
