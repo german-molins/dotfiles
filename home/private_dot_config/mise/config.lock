@@ -3,7 +3,7 @@ version = "0.30.0"
 backend = "aqua:sigoden/aichat"
 
 [[tools.amp]]
-version = "0.0.1757319535-ge2105c"
+version = "0.0.1757395280-g8db5f1"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
@@ -78,13 +78,13 @@ size = 1781908
 url = "https://github.com/ClementTsang/bottom/releases/download/0.11.1/bottom_aarch64-apple-darwin.tar.gz"
 
 [[tools.carapace]]
-version = "1.4.1"
+version = "1.5.0"
 backend = "aqua:carapace-sh/carapace-bin"
 
 [tools.carapace.platforms.macos-arm64]
-checksum = "sha256:4dfb87a8914b8ece99a57d1f2f424dcb173b5ddd8b2d41f5d36c397d24b17ef1"
-size = 12312027
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.4.1/carapace-bin_1.4.1_darwin_arm64.tar.gz"
+checksum = "sha256:d16842cca75720c4f97e3d0238874d03cf48173783c8dc0d809ec7338f4f344a"
+size = 12633887
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.0/carapace-bin_1.5.0_darwin_arm64.tar.gz"
 
 [[tools.cargo-binstall]]
 version = "1.15.4"
@@ -113,7 +113,7 @@ version = "0.6.0"
 backend = "cargo:git-graph"
 
 [[tools."cargo:somo"]]
-version = "1.1.0"
+version = "1.2.0"
 backend = "cargo:somo"
 
 [[tools."cargo:tlrc"]]
@@ -158,8 +158,13 @@ version = "2.31.0"
 backend = "aqua:Byron/dua-cli"
 
 [[tools.duf]]
-version = "0.8.1"
+version = "0.9.1"
 backend = "aqua:muesli/duf"
+
+[tools.duf.platforms.macos-arm64]
+checksum = "sha256:512ba0ff3585bb8c65841de557a4c4b8712332db005dc952fa98d373a05d01df"
+size = 1212705
+url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_darwin_arm64.tar.gz"
 
 [[tools.dust]]
 version = "1.2.3"
@@ -287,18 +292,13 @@ size = 51078653
 url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.6.5"
+version = "0.6.6"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "blake3:d8adde047bb71bece7553750df1bbcf5297831edbbb9102436a5d14dd0f39242"
-size = 46650972
-url = "https://github.com/sst/opencode/releases/download/v0.6.5/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:eaf30971f4515360a907dc8fc43958c042f08d816747ce06730809ff22d5dd70"
-size = 29629147
-url = "https://github.com/sst/opencode/releases/download/v0.6.5/opencode-darwin-arm64.zip"
+checksum = "blake3:4ab42703d54581fa5c1d3e1088c84736ea6ed8d210024d6347c4be7b3ee97696"
+size = 29630303
+url = "https://github.com/sst/opencode/releases/download/v0.6.6/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
