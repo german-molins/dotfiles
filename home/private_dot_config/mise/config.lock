@@ -134,6 +134,11 @@ checksum = "sha256:392ea4c6147d294029a2371eed8e005e5ca266d37a4b55e188905d9ccc4a4
 size = 12014179
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.0/carapace-bin_1.5.0_linux_arm64.tar.gz"
 
+[tools.carapace.platforms.linux-x64]
+checksum = "sha256:08765d2f79c4d3a88d56204ef417c529eb118d2b056ff65948c8202db6a956eb"
+size = 12919827
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.0/carapace-bin_1.5.0_linux_amd64.tar.gz"
+
 [tools.carapace.platforms.macos-arm64]
 checksum = "sha256:d16842cca75720c4f97e3d0238874d03cf48173783c8dc0d809ec7338f4f344a"
 size = 12633887
@@ -247,6 +252,11 @@ checksum = "sha256:22ea0ad29f6610bf443aa351e600de97e47a9b380ef58316606a84bb8f595
 size = 1189297
 url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_arm64.tar.gz"
 
+[tools.duf.platforms.linux-x64]
+checksum = "sha256:5add851e7062c5e56939abb664705e4d14fa2d06289490aff31d51f153832de7"
+size = 1285584
+url = "https://github.com/muesli/duf/releases/download/v0.9.1/duf_0.9.1_linux_x86_64.tar.gz"
+
 [tools.duf.platforms.macos-arm64]
 checksum = "sha256:512ba0ff3585bb8c65841de557a4c4b8712332db005dc952fa98d373a05d01df"
 size = 1212705
@@ -313,6 +323,11 @@ backend = "github:eza-community/eza"
 checksum = "blake3:236df3e477792f5be9093e4f9090ffda725c1be0757851100d9d0d2da3dac608"
 size = 965251
 url = "https://github.com/eza-community/eza/releases/download/v0.23.2/eza_aarch64-unknown-linux-gnu.tar.gz"
+
+[tools."github:eza-community/eza".platforms.linux-x64]
+checksum = "blake3:9c0946741facebe9d70676179fab73065e50295b3d68f7369d65accf828318f0"
+size = 1051502
+url = "https://github.com/eza-community/eza/releases/download/v0.23.2/eza_x86_64-unknown-linux-gnu.tar.gz"
 
 [[tools."github:ghetzel/mdnstool"]]
 version = "0.0.3"
@@ -451,6 +466,11 @@ backend = "aqua:sst/opencode"
 checksum = "blake3:05e27d334e68262470d28a34964fc26be7d43bfd306fad0aa8b6390ef1b1f64b"
 size = 44756546
 url = "https://github.com/sst/opencode/releases/download/v0.6.6/opencode-linux-arm64.zip"
+
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:c9ce94b0aa28bc43606b818bc9cb22a98964488287df9549a1eeec7e46dc9b5a"
+size = 46650952
+url = "https://github.com/sst/opencode/releases/download/v0.6.6/opencode-linux-x64.zip"
 
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:4ab42703d54581fa5c1d3e1088c84736ea6ed8d210024d6347c4be7b3ee97696"
