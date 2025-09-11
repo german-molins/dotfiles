@@ -1,0 +1,424 @@
+#!/usr/bin/env lua
+
+--[[
+MISE Environment Manager (using mise.local.toml files)
+
+Manages MISE_ENV via existing mise configuration files:
+- Global: ~/.mise.local.toml
+- Per-project: ./mise.local.toml
+
+Usage:
+  lua mise-env-manager.lua add development staging
+  lua mise-env-manager.lua remove staging  
+  lua mise-env-manager.lua list
+--]]
+
+local function file_exists(path)
+    local f = io.open(path,"r")
+    if f then
+        f:close()
+        return true
+    end
+    return false
+end
+
+local function read_file(path)
+    if not file_exists(path) then
+        return ""
+    end
+    local f = io.open(path,"r")
+    if not f then return "" end
+    local content = f:read("*all")
+    f:close()
+    return content
+end
+
+local function write_file(path,content)
+    local f = io.open(path,"w")
+    if not f then
+        error("Cannot write to " .. path)
+    end
+    f:write(content)
+    f:close()
+end
+
+local function split(str,delimiter)
+    local result = {}
+    if str == "" then return result end
+    
+    for part in str:gmatch("[^" .. delimiter .. "]+") do
+        table.insert(result,part)
+    end
+    return result
+end
+
+local function unique(tbl)
+    local seen = {}
+    local result = {}
+    for _,v in ipairs(tbl) do
+        if not seen[v] then
+            seen[v] = true
+            table.insert(result,v)
+        end
+    end
+    return result
+end
+
+local function remove_items(tbl,items_to_remove)
+    local remove_set = {}
+    for _,item in ipairs(items_to_remove) do
+        remove_set[item] = true
+    end
+    
+    local result = {}
+    for _,item in ipairs(tbl) do
+        if not remove_set[item] then
+            table.insert(result,item)
+        end
+    end
+    return result
+end
+
+-- Parse TOML MISE_ENV from [env] section or root level
+local function parse_mise_env_toml(content)
+    local envs = {}
+    
+    -- First check if there's an [env] section
+    local before_env,env_content,after_env = content:match("(.-)%[env%](.-)(\n%[.-%]|$)")
+
+    if env_content then
+        -- Look for MISE_ENV in [env] section
+        local env_value = env_content:match('MISE_ENV%s*=%s*"([^"]*)"')
+        if env_value then
+            envs = split(env_value,",")
+        end
+    else
+        -- Fall back to root level parsing for backward compatibility
+        local env_value = content:match('MISE_ENV%s*=%s*"([^"]*)"')
+        if env_value then
+            envs = split(env_value,",")
+        end
+    end
+    
+    return envs
+end
+
+-- Generate TOML with MISE_ENV in proper [env] section
+local function generate_mise_env_toml(envs,original_content)
+    local env_string = table.concat(envs,",")
+    
+    if #envs > 0 then
+        -- We have environments to set
+        
+        -- Check if [env] section already exists
+        if original_content:find("%[env%]") then
+            -- Update existing [env] section
+            
+            -- Get the content between [env] and next section/bracket
+            local env_start = original_content:find("%[env%]")
+            local next_section_start = original_content:find("\n%[",env_start)
+            
+            if not next_section_start then
+                next_section_start = #original_content + 1
+            end
+            
+            local before_env = original_content:sub(1,env_start + 6) -- [env]\n
+            local after_env = original_content:sub(next_section_start)
+            
+            -- Remove any existing MISE_ENV line from the env section
+            local env_content = original_content:sub(env_start + 6,next_section_start - 1)
+            env_content = env_content:gsub("MISE_ENV%s*=%s*\"[^\"]*\"\n?","")
+            env_content = env_content:gsub("^%s*", ""):gsub("%s*$", "")
+            
+            return before_env .. 'MISE_ENV = "' .. env_string .. '"\n' .. env_content .. after_env
+        else
+            -- No [env] section, create it
+            original_content = original_content:gsub("^%s*", "")
+            return "[env]\nMISE_ENV = \"" .. env_string .. "\"\n" .. original_content
+        end
+    else
+        -- Remove MISE_ENV from TOML
+        
+        -- If there's an [env] section
+        if original_content:find("%[env%]") then
+            local env_start = original_content:find("%[env%]")
+            local next_section_start = original_content:find("\n%[",env_start)
+            
+            if not next_section_start then
+                next_section_start = #original_content + 1
+            end
+            
+            local before_env = original_content:sub(1,env_start + 6)
+            local after_env = original_content:sub(next_section_start)
+            local env_content = original_content:sub(env_start + 6,next_section_start - 1)
+            
+            -- Remove MISE_ENV line and any extra newlines
+            env_content = env_content:gsub("MISE_ENV%s*=%s*\"[^\"]*\"\n","")
+            env_content = env_content:gsub("^%s*", ""):gsub("%s*$", "")
+            
+            if env_content:match("^%s*$") then
+                -- [env] section is empty,remove the entire section
+                return original_content:gsub("%[env%](.-)(\n%[|$)","%2")
+            else
+                return before_env .. env_content .. after_env
+            end
+        end
+        
+        -- Also remove from root level if it exists there
+        return original_content:gsub("MISE_ENV%s*=%s*\"[^\"]*\"\n?","")
+    end
+end
+
+local MiseEnvManager = {}
+MiseEnvManager.__index = MiseEnvManager
+
+function MiseEnvManager:new()
+    local obj = {
+        global_local_file = os.getenv("HOME") .. "/.mise.local.toml",
+        project_local_file = "./mise.local.toml"
+    }
+    setmetatable(obj,self)
+    return obj
+end
+
+function MiseEnvManager:get_global_envs()
+    local content = read_file(self.global_local_file)
+    return parse_mise_env_toml(content)
+end
+
+function MiseEnvManager:get_project_envs()
+    local content = read_file(self.project_local_file)
+    return parse_mise_env_toml(content)
+end
+
+function MiseEnvManager:save_global_envs(envs)
+    local content = read_file(self.global_local_file)
+    local new_content = generate_mise_env_toml(envs,content)
+    write_file(self.global_local_file,new_content)
+end
+
+function MiseEnvManager:save_project_envs(envs)
+    local content = read_file(self.project_local_file)
+    local new_content = generate_mise_env_toml(envs,content)
+    write_file(self.project_local_file,new_content)
+end
+
+function MiseEnvManager:build_complete_env()
+    local global = self:get_global_envs()
+    local project = self:get_project_envs()
+    
+    -- Per mise docs: per-project envs append to global,last one wins
+    -- So return global + project (with project taking precedence if duplicates)
+    local result = {}
+    
+    -- Add global first,then project (project overwrites)
+    local seen = {}
+    for _,env in ipairs(global) do
+        if not seen[env] then
+            seen[env] = true
+            table.insert(result,env)
+        end
+    end
+    
+    for _,env in ipairs(project) do
+        if not seen[env] then
+            seen[env] = true
+            table.insert(result,env)
+        end
+    end
+    
+    return result
+end
+
+function MiseEnvManager:update_mise_env_output()
+    local complete = self:build_complete_env()
+    local env_string = #complete > 0 and table.concat(complete,",") or ""
+    
+    if env_string ~= "" then
+        print('export MISE_ENV="' .. env_string .. '"')
+        print('# Run: eval "$(module load mise && mise exec -- ~/.local/bin/mise-env-manager update)"')
+    else
+        print('unset MISE_ENV')
+        print('# Run: eval "$(module load mise && mise exec -- ~/.local/bin/mise-env-manager update)"')
+    end
+end
+
+function MiseEnvManager:add(envs,is_global)
+    local current_envs = is_global and self:get_global_envs() or self:get_project_envs()
+    
+    -- Combine and deduplicate
+    local combined = {}
+    for _,env in ipairs(current_envs) do
+        table.insert(combined,env)
+    end
+    for _,env in ipairs(envs) do
+        table.insert(combined,env)
+    end
+    local new_envs = unique(combined)
+    
+    if is_global then
+        self:save_global_envs(new_envs)
+        print("Added to global (~/.mise.local.toml): " .. table.concat(envs,","))
+        print("New MISE_ENV: " .. table.concat(self:build_complete_env(),","))
+    else
+        self:save_project_envs(new_envs)
+        print("Added to project (./mise.local.toml): " .. table.concat(envs,","))
+        print("New MISE_ENV: " .. table.concat(self:build_complete_env(),","))
+    end
+end
+
+function MiseEnvManager:remove(envs,is_global)
+    local current_envs = is_global and self:get_global_envs() or self:get_project_envs()
+    local new_envs = remove_items(current_envs,envs)
+    
+    if is_global then
+        self:save_global_envs(new_envs)
+        print("Removed from global (~/.mise.local.toml): " .. table.concat(envs,","))
+        print("Current MISE_ENV: " .. table.concat(self:build_complete_env(),","))
+    else
+        self:save_project_envs(new_envs)
+        print("Removed from project (./mise.local.toml): " .. table.concat(envs,","))
+        print("Current MISE_ENV: " .. table.concat(self:build_complete_env(),","))
+    end
+end
+
+function MiseEnvManager:list()
+    local global = self:get_global_envs()
+    local project = self:get_project_envs()
+    local complete = self:build_complete_env()
+    
+    print("Global environments (~/.mise.local.toml): " .. (#global > 0 and table.concat(global,",") or "(none)"))
+    print("Project environments (./mise.local.toml): " .. (#project > 0 and table.concat(project,",") or "(none)"))
+    print("Combined MISE_ENV: " .. (#complete > 0 and table.concat(complete,",") or "(empty)"))
+    
+    -- Show file status
+    print("\nFiles:")
+    if file_exists(self.global_local_file) then
+        print("  ✓ ~/.mise.local.toml (exists)")
+    else
+        print("  ○ ~/.mise.local.toml (not exists)")
+    end
+    if file_exists(self.project_local_file) then
+        print("  ✓ ./mise.local.toml (exists)")
+    else
+        print("  ○ ./mise.local.toml (not exists)")
+    end
+end
+
+function MiseEnvManager:clear()
+    self:save_project_envs({})
+    print("Cleared project environments (./mise.local.toml)")
+end
+
+function MiseEnvManager:reset()
+    self:save_global_envs({})
+    self:save_project_envs({})
+    print("Reset all environments")
+end
+
+function MiseEnvManager:set_envs(envs,is_global)
+    if is_global then
+        self:save_global_envs(envs)
+        print("Set global environments (~/.mise.local.toml): " .. table.concat(envs,","))
+    else
+        self:save_project_envs(envs)
+        print("Set project environments (./mise.local.toml): " .. table.concat(envs,","))
+    end
+end
+
+function MiseEnvManager:help()
+    print([[
+MISE Environment Manager (using mise.local.toml)
+
+Manages MISE_ENV via existing mise configuration files:
+• Global: ~/.mise.local.toml (MISE_ENV persists across projects)
+• Project: ./mise.local.toml (per-directory envs)
+
+MISE_ENV behavior (per docs):
+• Multiple envs: MISE_ENV="dev,test,staging"
+• Per-project appends: Project envs append but can override global ones
+• Priority: Last env with same name wins
+
+Usage:
+  mise exec -- ~/.local/bin/mise-env-manager <command> [options] [environments...]
+
+Commands:
+  add <envs...>    Add environments (--global for global file)
+  remove <envs...> Remove environments (--global for global file)  
+  set <envs...>    Set environments,replacing current (--global for global file)
+  list             List all environments and file status
+  clear            Clear project environments only
+  reset            Clear both global and project environments
+  update           Output environment variable export command
+  help             Show this help
+
+Options:
+  --global         Operate on global ~/.mise.local.toml instead of project
+
+Examples:
+  mise exec -- ~/.local/bin/mise-env-manager add development staging
+  mise exec -- ~/.local/bin/mise-env-manager add --global production  
+  mise exec -- ~/.local/bin/mise-env-manager remove staging
+  mise exec -- ~/.local/bin/mise-env-manager list
+  mise exec -- ~/.local/bin/mise-env-manager clear
+
+To apply changes to your shell session:
+  eval "$(mise exec -- ~/.local/bin/mise-env-manager update)"
+]])
+end
+
+-- CLI interface
+function main()
+    local manager = MiseEnvManager:new()
+    local args = arg or {}
+    
+    if #args == 0 then
+        manager:help()
+        return
+    end
+
+    local command = args[1]
+    local is_global = false
+    local envs = {}
+    
+    -- Parse arguments
+    for i = 2,#args do
+        if args[i] == "--global" then
+            is_global = true
+        else
+            table.insert(envs,args[i])
+        end
+    end
+
+    if command == "add" then
+        if #envs == 0 then
+            print("Error: No environments specified to add")
+            os.exit(1)
+        end
+        manager:add(envs,is_global)
+    elseif command == "remove" then
+        if #envs == 0 then
+            print("Error: No environments specified to remove")
+            os.exit(1)
+        end
+        manager:remove(envs,is_global)
+    elseif command == "set" then
+        manager:set_envs(envs,is_global)
+    elseif command == "list" then
+        manager:list()
+    elseif command == "clear" then
+        manager:clear()
+    elseif command == "reset" then
+        manager:reset()
+    elseif command == "update" then
+        manager:update_mise_env_output()
+    elseif command == "help" or command == "--help" or command == "-h" then
+        manager:help()
+    else
+        print("Error: Unknown command '" .. command .. "'")
+        print('Run "mise exec -- ~/.local/bin/mise-env-manager help" for usage information')
+        os.exit(1)
+    end
+end
+
+main()
