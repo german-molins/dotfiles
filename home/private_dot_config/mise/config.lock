@@ -12,23 +12,13 @@ version = "0.0.1757433710-g1a2823"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
-version = "0.7.6"
+version = "0.7.9"
 backend = "aqua:charmbracelet/crush"
 
-[tools."aqua:charmbracelet/crush".platforms.linux-arm64]
-checksum = "sha256:e2394bc4d45d446b58a9b0b31aff1ec37677043cc2483490a26b147ea7fa50cf"
-size = 15285338
-url = "https://github.com/charmbracelet/crush/releases/download/v0.7.6/crush_0.7.6_Linux_arm64.tar.gz"
-
 [tools."aqua:charmbracelet/crush".platforms.linux-x64]
-checksum = "sha256:637919e6de40a6350c15ab737ec08125ebd5f92449a0e726079d160b8a7fd8b9"
-size = 16670091
-url = "https://github.com/charmbracelet/crush/releases/download/v0.7.6/crush_0.7.6_Linux_x86_64.tar.gz"
-
-[tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:e94656bb74fb63141515b7d5770540c3fbcd9d495187c37fcefdef2fb9035794"
-size = 16040686
-url = "https://github.com/charmbracelet/crush/releases/download/v0.7.6/crush_0.7.6_Darwin_arm64.tar.gz"
+checksum = "sha256:9b86d9a245eebf96161e902943729c1ec69eec51d0d42be49ba7d7fad784baf0"
+size = 16684076
+url = "https://github.com/charmbracelet/crush/releases/download/v0.7.9/crush_0.7.9_Linux_x86_64.tar.gz"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
@@ -184,37 +174,24 @@ version = "1.11.1"
 backend = "cargo:tlrc"
 
 [[tools.chezmoi]]
-version = "2.65.0"
+version = "2.65.1"
 backend = "ubi:twpayne/chezmoi"
 
-[tools.chezmoi.platforms.linux-arm64-chezmoi]
-checksum = "blake3:107a9f2fdfb3aba4073e8f78e311db44b821e90f80bf4cca255edd49f2a31dd1"
-
-[tools.chezmoi.platforms.macos-arm64-chezmoi]
-checksum = "blake3:4ce42c24126ec6c460348da04a007ed4a9b31ac17a31b39a19a074d5846973d1"
+[tools.chezmoi.platforms.linux-x64-chezmoi]
+checksum = "blake3:208cd44e3d11d5aa35c8953e9eaf8936c45e4f882508cecece4838fffeb1b9d1"
 
 [[tools.codebuff]]
 version = "1.0.476"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
-version = "0.2.0"
+version = "0.2.2"
 backend = "aqua:uutils/coreutils"
 
-[tools.coreutils.platforms.linux-arm64]
-checksum = "blake3:d57af92ee5f2ef700e475a9431f688e0f50ba6c60a7378cfd56fcc5b9d0cbd12"
-size = 5177962
-url = "https://github.com/uutils/coreutils/releases/download/0.2.0/coreutils-0.2.0-aarch64-unknown-linux-musl.tar.gz"
-
 [tools.coreutils.platforms.linux-x64]
-checksum = "blake3:6a3a985d446da5a170a76ca075cc2285e2f2463ac60567af252ab1c10df3f636"
-size = 5555974
-url = "https://github.com/uutils/coreutils/releases/download/0.2.0/coreutils-0.2.0-x86_64-unknown-linux-musl.tar.gz"
-
-[tools.coreutils.platforms.macos-arm64]
-checksum = "blake3:8164b2d8446da5d16d1e9efcdb09c4982962983d9d239eb0902326864fd4264c"
-size = 4419172
-url = "https://github.com/uutils/coreutils/releases/download/0.2.0/coreutils-0.2.0-aarch64-apple-darwin.tar.gz"
+checksum = "blake3:c209881eff54755ac2043d4aaf0d34680be9163b6555b81c737ab269d5553ff0"
+size = 5461853
+url = "https://github.com/uutils/coreutils/releases/download/0.2.2/coreutils-0.2.2-x86_64-unknown-linux-musl.tar.gz"
 
 [[tools.cosign]]
 version = "2.5.3"
@@ -302,18 +279,13 @@ version = "0.3.4"
 backend = "npm:@google/gemini-cli"
 
 [[tools.gh]]
-version = "2.78.0"
+version = "2.79.0"
 backend = "aqua:cli/cli"
 
-[tools.gh.platforms.linux-arm64]
-checksum = "sha256:9e3ca75b227a5503f6ef92c4b8b6dbf94e34bfdd8069ac0f16b8739856ebba7b"
-size = 16550684
-url = "https://github.com/cli/cli/releases/download/v2.78.0/gh_2.78.0_linux_arm64.tar.gz"
-
-[tools.gh.platforms.macos-arm64]
-checksum = "sha256:62290b0dbc9965ebbc20d2b481fe83aa167fadc28e0d81a5d93eec6efc9d3b72"
-size = 17396485
-url = "https://github.com/cli/cli/releases/download/v2.78.0/gh_2.78.0_macOS_arm64.zip"
+[tools.gh.platforms.linux-x64]
+checksum = "sha256:e7af0c72a607c0528fda1989f7c8e3be85e67d321889002af0e2938ad9c8fb68"
+size = 17940762
+url = "https://github.com/cli/cli/releases/download/v2.79.0/gh_2.79.0_linux_amd64.tar.gz"
 
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
@@ -486,13 +458,13 @@ size = 51078653
 url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.6.8"
+version = "0.7.1"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "blake3:6c56d59aea18bbb0bbbc12108ecdb93c37d7a674c4dfb43397274345bd752ee7"
-size = 46656884
-url = "https://github.com/sst/opencode/releases/download/v0.6.8/opencode-linux-x64.zip"
+checksum = "blake3:a4a76d5bf697130621d23e0eedba5ca2a92dad1f8cfa4de6b468b362cdf048c9"
+size = 47383288
+url = "https://github.com/sst/opencode/releases/download/v0.7.1/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
@@ -590,7 +562,7 @@ backend = "ubi:jdx/usage"
 checksum = "blake3:859e0e42b42c05d2a9d841a8c9140fcfd89c8a1ec18c88eca510e029894e038d"
 
 [[tools.uv]]
-version = "0.8.15"
+version = "0.8.17"
 backend = "asdf:uv"
 
 [[tools.xh]]
