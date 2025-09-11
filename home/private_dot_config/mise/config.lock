@@ -315,6 +315,15 @@ checksum = "sha256:62290b0dbc9965ebbc20d2b481fe83aa167fadc28e0d81a5d93eec6efc9d3
 size = 17396485
 url = "https://github.com/cli/cli/releases/download/v2.78.0/gh_2.78.0_macOS_arm64.zip"
 
+[[tools."github:dalance/procs"]]
+version = "0.14.10"
+backend = "github:dalance/procs"
+
+[tools."github:dalance/procs".platforms.linux-x64]
+checksum = "blake3:9433cce7a903a8d07b85c3d9b9520d699759b4dedc00d5d1123b348355682e15"
+size = 2483155
+url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-x86_64-linux.zip"
+
 [[tools."github:eza-community/eza"]]
 version = "0.23.2"
 backend = "github:eza-community/eza"
@@ -337,6 +346,24 @@ backend = "github:ghetzel/mdnstool"
 checksum = "blake3:ecbab90f2b3cddbb1656261da2e7837550f422437757bde75f62ad7c236171c1"
 size = 9547776
 url = "https://github.com/ghetzel/mdnstool/releases/download/v0.0.3/mdnstool-linux-arm64"
+
+[[tools."github:peteretelej/tree"]]
+version = "1.2.2"
+backend = "github:peteretelej/tree"
+
+[tools."github:peteretelej/tree".platforms.linux-x64]
+checksum = "blake3:09ab4ed22826c0c48eb6ad117955b11a75b04dcc2278a9989ea2db1fafb662ca"
+size = 555478
+url = "https://github.com/peteretelej/tree/releases/download/v1.2.2/tree-v1.2.2-Linux-amd64.tar.gz"
+
+[[tools."github:tstack/lnav"]]
+version = "0.13.1"
+backend = "github:tstack/lnav"
+
+[tools."github:tstack/lnav".platforms.linux-x64]
+checksum = "blake3:ececbf145572de433bd99ed125f0e90f04df4b73045be6b7401b948738334a99"
+size = 36167277
+url = "https://github.com/tstack/lnav/releases/download/v0.13.1/lnav-0.13.1-linux-musl-x86_64.zip"
 
 [[tools.glab]]
 version = "1.68.0"
@@ -547,27 +574,6 @@ backend = "aqua:trzsz/trzsz-ssh"
 checksum = "sha256:ecc3efd021a1932c1d61dc76d36cac0f2e1bd1c0ea8c6634f9521a36f388c301"
 size = 4742242
 url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.22/tssh_0.1.22_linux_aarch64.tar.gz"
-
-[[tools."ubi:dalance/procs"]]
-version = "0.14.10"
-backend = "ubi:dalance/procs"
-
-[tools."ubi:dalance/procs".platforms.linux-arm64-procs]
-checksum = "blake3:c1738e75467818a3c1cef7d2dfa4cbd79cf8b8e02b090711662d0fbf4da21aaf"
-
-[[tools."ubi:peteretelej/tree"]]
-version = "1.2.2"
-backend = "ubi:peteretelej/tree"
-
-[tools."ubi:peteretelej/tree".platforms.linux-arm64-tree]
-checksum = "blake3:b01b0eb5e63e183e11163be56bc39114265f04fafa366fbe5e1562bbeeefda0f"
-
-[[tools."ubi:tstack/lnav"]]
-version = "0.13.1"
-backend = "ubi:tstack/lnav"
-
-[tools."ubi:tstack/lnav".platforms.linux-x64-lnav]
-checksum = "blake3:7871cfbb271ec7285f4f0c83c2f163c2590206a22bf128842ab50ae77fc19b62"
 
 [[tools.upt]]
 version = "0.9.0"
