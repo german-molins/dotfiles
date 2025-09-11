@@ -127,7 +127,7 @@ run = "devbox global update"
 
 [tasks."upt:update"]
 description = "Update system packages"
-run = ["mise run upt update", "mise run upt upgrade"]
+run = ["mise run upt update", "mise run upt upgrade --yes"]
 
 [tasks."nerd-fonts:list"]
 description = "List installed Nerd Fonts"
