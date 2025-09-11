@@ -4,7 +4,7 @@
 MISE Environment Manager (using mise.local.toml files)
 
 Manages MISE_ENV via existing mise configuration files:
-- Global: ~/.mise.local.toml
+- Global: ~/mise.local.toml
 - Per-project: ./mise.local.toml
 
 Usage:
@@ -189,7 +189,7 @@ MiseEnvManager.__index = MiseEnvManager
 
 function MiseEnvManager:new()
     local obj = {
-        global_local_file = os.getenv("HOME") .. "/.mise.local.toml",
+        global_local_file = os.getenv("HOME") .. "/mise.local.toml",
         project_local_file = "./mise.local.toml"
     }
     setmetatable(obj, self)
@@ -295,7 +295,7 @@ function MiseEnvManager:add(envs, is_global)
 
     if is_global then
         self:save_global_envs(new_envs)
-        print("Added to global (~/.mise.local.toml): " .. table.concat(envs, ","))
+        print("Added to global (~/mise.local.toml): " .. table.concat(envs, ","))
         print("New MISE_ENV: " .. table.concat(self:build_complete_env(), ","))
     else
         self:save_project_envs(new_envs)
@@ -310,7 +310,7 @@ function MiseEnvManager:remove(envs, is_global)
 
     if is_global then
         self:save_global_envs(new_envs)
-        print("Removed from global (~/.mise.local.toml): " .. table.concat(envs, ","))
+        print("Removed from global (~/mise.local.toml): " .. table.concat(envs, ","))
         print("Current MISE_ENV: " .. table.concat(self:build_complete_env(), ","))
     else
         self:save_project_envs(new_envs)
@@ -324,16 +324,16 @@ function MiseEnvManager:list()
     local project = self:get_project_envs()
     local complete = self:build_complete_env()
 
-    print("Global environments (~/.mise.local.toml): " .. (#global > 0 and table.concat(global, ",") or "(none)"))
+    print("Global environments (~/mise.local.toml): " .. (#global > 0 and table.concat(global, ",") or "(none)"))
     print("Project environments (./mise.local.toml): " .. (#project > 0 and table.concat(project, ",") or "(none)"))
     print("Combined MISE_ENV: " .. (#complete > 0 and table.concat(complete, ",") or "(empty)"))
 
     -- Show file status
     print("\nFiles:")
     if file_exists(self.global_local_file) then
-        print("  ✓ ~/.mise.local.toml (exists)")
+        print("  ✓ ~/mise.local.toml (exists)")
     else
-        print("  ○ ~/.mise.local.toml (not exists)")
+        print("  ○ ~/mise.local.toml (not exists)")
     end
     if file_exists(self.project_local_file) then
         print("  ✓ ./mise.local.toml (exists)")
@@ -356,7 +356,7 @@ end
 function MiseEnvManager:set_envs(envs, is_global)
     if is_global then
         self:save_global_envs(envs)
-        print("Set global environments (~/.mise.local.toml): " .. table.concat(envs, ","))
+        print("Set global environments (~/mise.local.toml): " .. table.concat(envs, ","))
     else
         self:save_project_envs(envs)
         print("Set project environments (./mise.local.toml): " .. table.concat(envs, ","))
@@ -368,7 +368,7 @@ function MiseEnvManager:help()
 MISE Environment Manager (using mise.local.toml)
 
 Manages MISE_ENV via existing mise configuration files:
-• Global: ~/.mise.local.toml (MISE_ENV persists across projects)
+• Global: ~/mise.local.toml (MISE_ENV persists across projects)
 • Project: ./mise.local.toml (per-directory envs)
 
 MISE_ENV behavior (per docs):
@@ -390,7 +390,7 @@ Commands:
   help             Show this help
 
 Options:
-  --global         Operate on global ~/.mise.local.toml instead of project
+  --global         Operate on global ~/mise.local.toml instead of project
 
 Examples:
   mise exec -- ~/.local/bin/mise-env-manager add development staging
