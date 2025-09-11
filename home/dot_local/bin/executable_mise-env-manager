@@ -83,7 +83,7 @@ local function remove_items(tbl, items_to_remove)
 end
 
 -- Parse TOML MISE_ENV from [env] section or root level
-local function parse_mise_env_toml(content, global_env_string)
+local function parse_mise_env_toml(content)
     local envs = {}
 
     -- First check if there's an [env] section
@@ -102,10 +102,9 @@ local function parse_mise_env_toml(content, global_env_string)
         -- Check for template
         local template, rest = env_value:match("({{ env%.MISE_ENV }})(.*)")
         if template then
-            -- Has template, substitute with global_env_string if provided
-            local substituted = global_env_string or ""
+            -- Has template, extract the project-specific part
             rest = rest:gsub("^,%s*", "")  -- remove leading comma and spaces
-            env_value = substituted .. (rest ~= "" and "," .. rest or "")
+            env_value = rest
         end
         envs = split(env_value, ",")
     end
@@ -191,8 +190,7 @@ MiseEnvManager.__index = MiseEnvManager
 function MiseEnvManager:new()
     local obj = {
         global_local_file = os.getenv("HOME") .. "/.mise.local.toml",
-        project_local_file = "./mise.local.toml",
-        global_env = os.getenv("MISE_ENV") or ""
+        project_local_file = "./mise.local.toml"
     }
     setmetatable(obj, self)
     return obj
@@ -203,16 +201,19 @@ function MiseEnvManager:get_global_envs()
     local file_envs = parse_mise_env_toml(content)
     if #file_envs > 0 then
         return file_envs
-    elseif self.global_env ~= "" then
-        return split(self.global_env, ",")
     else
-        return {}
+        local env = os.getenv("MISE_ENV") or ""
+        if env ~= "" then
+            return split(env, ",")
+        else
+            return {}
+        end
     end
 end
 
 function MiseEnvManager:get_project_envs()
     local content = read_file(self.project_local_file)
-    return parse_mise_env_toml(content, self.global_env)
+    return parse_mise_env_toml(content)
 end
 
 function MiseEnvManager:save_global_envs(envs)
@@ -224,9 +225,10 @@ end
 
 function MiseEnvManager:save_project_envs(envs)
     local content = read_file(self.project_local_file)
+    local global_envs = self:get_global_envs()
     local env_string
     if #envs > 0 then
-        if self.global_env ~= "" then
+        if #global_envs > 0 then
             env_string = "{{ env.MISE_ENV }}," .. table.concat(envs, ",")
         else
             env_string = table.concat(envs, ",")
