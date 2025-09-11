@@ -1,0 +1,6 @@
+:root {
+  --vp-c-brand-1: #10b981;     /* Primary alien green */
+  --vp-c-brand-2: #0f766e;     /* Secondary teal green (more readable for code) */
+  --vp-c-brand-3: #047857;     /* Tertiary forest green */
+  --vp-c-brand-soft: rgba(15, 118, 110, 0.14); /* Soft teal green background */
+}
