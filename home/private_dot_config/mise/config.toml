@@ -55,6 +55,7 @@ lazyssh = "latest"
 pandoc = "latest"
 amp = "latest"
 "github:atuinsh/atuin" = "latest"
+lua = "latest"
 
 [settings]
 experimental = true

@@ -406,6 +406,10 @@ checksum = "sha256:43163742c109e73f2b71db682fe04fb25dac23e132edd6cf93752b26b408e
 size = 4824315
 url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Darwin_arm64.tar.gz"
 
+[[tools.lua]]
+version = "5.4.8"
+backend = "asdf:lua"
+
 [[tools.neovim]]
 version = "0.11.5"
 backend = "aqua:neovim/neovim"
