@@ -60,6 +60,7 @@ codebuff = "latest"
 jjui = "latest"
 jj = "latest"
 "github:eza-community/eza" = "latest"
+lua = "latest"
 
 [settings]
 experimental = true

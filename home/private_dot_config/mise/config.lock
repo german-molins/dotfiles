@@ -462,6 +462,10 @@ checksum = "sha256:a3679901c0618c906424c0f9cf49abb4b687b2c610f47ff344420b9a494be
 size = 7597758
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.0/lazygit_0.55.0_darwin_arm64.tar.gz"
 
+[[tools.lua]]
+version = "5.4.8"
+backend = "asdf:lua"
+
 [[tools.neovim]]
 version = "0.11.4"
 backend = "aqua:neovim/neovim"
