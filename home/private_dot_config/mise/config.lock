@@ -20,6 +20,11 @@ checksum = "sha256:9b86d9a245eebf96161e902943729c1ec69eec51d0d42be49ba7d7fad784b
 size = 16684076
 url = "https://github.com/charmbracelet/crush/releases/download/v0.7.9/crush_0.7.9_Linux_x86_64.tar.gz"
 
+[tools."aqua:charmbracelet/crush".platforms.macos-arm64]
+checksum = "sha256:82974465cfcc7cc015eb90f14b03bb10ffaee12ae562a1540f7d883a9675993d"
+size = 16062268
+url = "https://github.com/charmbracelet/crush/releases/download/v0.7.9/crush_0.7.9_Darwin_arm64.tar.gz"
+
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
 backend = "aqua:dlvhdr/gh-dash"
@@ -180,6 +185,9 @@ backend = "ubi:twpayne/chezmoi"
 [tools.chezmoi.platforms.linux-x64-chezmoi]
 checksum = "blake3:208cd44e3d11d5aa35c8953e9eaf8936c45e4f882508cecece4838fffeb1b9d1"
 
+[tools.chezmoi.platforms.macos-arm64-chezmoi]
+checksum = "blake3:9eefa5ddb76d5b098a806811f1d0016f7982fdea0fe789c49435fd9b2dbd24ec"
+
 [[tools.codebuff]]
 version = "1.0.476"
 backend = "npm:codebuff"
@@ -192,6 +200,11 @@ backend = "aqua:uutils/coreutils"
 checksum = "blake3:c209881eff54755ac2043d4aaf0d34680be9163b6555b81c737ab269d5553ff0"
 size = 5461853
 url = "https://github.com/uutils/coreutils/releases/download/0.2.2/coreutils-0.2.2-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.coreutils.platforms.macos-arm64]
+checksum = "blake3:3788b6c6912d16224e875dfc579820ae2b57af51c1be4630840c4f69451e2aa2"
+size = 4418677
+url = "https://github.com/uutils/coreutils/releases/download/0.2.2/coreutils-0.2.2-aarch64-apple-darwin.tar.gz"
 
 [[tools.cosign]]
 version = "2.5.3"
@@ -287,6 +300,11 @@ checksum = "sha256:e7af0c72a607c0528fda1989f7c8e3be85e67d321889002af0e2938ad9c8f
 size = 17940762
 url = "https://github.com/cli/cli/releases/download/v2.79.0/gh_2.79.0_linux_amd64.tar.gz"
 
+[tools.gh.platforms.macos-arm64]
+checksum = "sha256:5454f9509e3dbb8f321310e9e344877d9a01ebb8f8703886b1afb0936d60ffaa"
+size = 17418178
+url = "https://github.com/cli/cli/releases/download/v2.79.0/gh_2.79.0_macOS_arm64.zip"
+
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
 backend = "github:dalance/procs"
@@ -295,6 +313,11 @@ backend = "github:dalance/procs"
 checksum = "blake3:9433cce7a903a8d07b85c3d9b9520d699759b4dedc00d5d1123b348355682e15"
 size = 2483155
 url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-x86_64-linux.zip"
+
+[tools."github:dalance/procs".platforms.macos-arm64]
+checksum = "blake3:4215cb2f2620f7c0658b644e9afbd844c32cd14593c38938167ba65f8fb19acb"
+size = 2025599
+url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-aarch64-mac.zip"
 
 [[tools."github:eza-community/eza"]]
 version = "0.23.2"
@@ -328,6 +351,11 @@ checksum = "blake3:09ab4ed22826c0c48eb6ad117955b11a75b04dcc2278a9989ea2db1fafb66
 size = 555478
 url = "https://github.com/peteretelej/tree/releases/download/v1.2.2/tree-v1.2.2-Linux-amd64.tar.gz"
 
+[tools."github:peteretelej/tree".platforms.macos-arm64]
+checksum = "blake3:087cc57941f72ac8eb9e967d6e0d9ad9453e3078a7602957cb9e1d0398372a43"
+size = 511524
+url = "https://github.com/peteretelej/tree/releases/download/v1.2.2/tree-v1.2.2-macOS-arm64.tar.gz"
+
 [[tools."github:tstack/lnav"]]
 version = "0.13.1"
 backend = "github:tstack/lnav"
@@ -336,6 +364,11 @@ backend = "github:tstack/lnav"
 checksum = "blake3:ececbf145572de433bd99ed125f0e90f04df4b73045be6b7401b948738334a99"
 size = 36167277
 url = "https://github.com/tstack/lnav/releases/download/v0.13.1/lnav-0.13.1-linux-musl-x86_64.zip"
+
+[tools."github:tstack/lnav".platforms.macos-arm64]
+checksum = "blake3:0e9baff2bb85272251c671a35395a4a079a3cc1feeab0b2ae296c10b158fedf7"
+size = 12480851
+url = "https://github.com/tstack/lnav/releases/download/v0.13.1/lnav-0.13.1-aarch64-macos.zip"
 
 [[tools.glab]]
 version = "1.68.0"
@@ -465,6 +498,11 @@ backend = "aqua:sst/opencode"
 checksum = "blake3:a4a76d5bf697130621d23e0eedba5ca2a92dad1f8cfa4de6b468b362cdf048c9"
 size = 47383288
 url = "https://github.com/sst/opencode/releases/download/v0.7.1/opencode-linux-x64.zip"
+
+[tools.opencode.platforms.macos-arm64]
+checksum = "blake3:9136c05205380e6cb1a95dd3ad7e759c8c07ce345f40d7ef0e98d559e97dc6a8"
+size = 30129346
+url = "https://github.com/sst/opencode/releases/download/v0.7.1/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
