@@ -15,7 +15,7 @@ devbox_fonts_dir="$devbox_venv_dir"/nix/profile/default/share/fonts
 
 >&2 echo "[dotfiles][devbox] Copying newly installed fonts to '$fonts_dir_dest'"
 mkdir -p "$fonts_dir_dest"
-cp -r --no-clobber "$devbox_fonts_dir"/* "$fonts_dir_dest"
+cp -r --update=none "$devbox_fonts_dir"/* "$fonts_dir_dest"
 >&2 echo "[dotfiles][devbox] Refreshing fontconfig cache"
 if command -v fc-cache >/dev/null; then
   fc-cache --force --verbose "$fonts_dir_dest"
