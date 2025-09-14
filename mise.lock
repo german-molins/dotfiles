@@ -1,10 +1,10 @@
 [[tools.bun]]
-version = "1.2.21"
+version = "1.2.22"
 backend = "core:bun"
 
 [tools.bun.platforms.linux-x64]
-checksum = "blake3:cf519ce71d7c518e211001f428ae34c2ec2a4f0484787bdf28baf7f372c94860"
-size = 39128668
+checksum = "blake3:bf32acffd6e77803ba760caf8d2909389da01c95613b81fe155fe87e2a8f8004"
+size = 39256266
 
 [[tools.jq]]
 version = "1.8.1"
