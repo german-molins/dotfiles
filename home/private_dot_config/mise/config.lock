@@ -8,22 +8,17 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1757433710-g1a2823"
+version = "0.0.1757880072-g1e891a"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
-version = "0.7.9"
+version = "0.8.1"
 backend = "aqua:charmbracelet/crush"
 
 [tools."aqua:charmbracelet/crush".platforms.linux-x64]
-checksum = "sha256:9b86d9a245eebf96161e902943729c1ec69eec51d0d42be49ba7d7fad784baf0"
-size = 16684076
-url = "https://github.com/charmbracelet/crush/releases/download/v0.7.9/crush_0.7.9_Linux_x86_64.tar.gz"
-
-[tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:82974465cfcc7cc015eb90f14b03bb10ffaee12ae562a1540f7d883a9675993d"
-size = 16062268
-url = "https://github.com/charmbracelet/crush/releases/download/v0.7.9/crush_0.7.9_Darwin_arm64.tar.gz"
+checksum = "sha256:e58efa98257e32dc7b68417531702867778b602581f5584c5807d7f68a871512"
+size = 16810693
+url = "https://github.com/charmbracelet/crush/releases/download/v0.8.1/crush_0.8.1_Linux_x86_64.tar.gz"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
@@ -140,23 +135,13 @@ size = 12633887
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.0/carapace-bin_1.5.0_darwin_arm64.tar.gz"
 
 [[tools.cargo-binstall]]
-version = "1.15.4"
+version = "1.15.5"
 backend = "aqua:cargo-bins/cargo-binstall"
 
-[tools.cargo-binstall.platforms.linux-arm64]
-checksum = "blake3:8278cbeab75ad60b2708388dfa28bf9483aab5f3781a37d231f9f717f5b886eb"
-size = 6374993
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.4/cargo-binstall-aarch64-unknown-linux-musl.tgz"
-
 [tools.cargo-binstall.platforms.linux-x64]
-checksum = "blake3:e96726cf26e534a44f61e015cc427ed92868fbf351fb7f1245d30e044d74cfa7"
-size = 6774865
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.4/cargo-binstall-x86_64-unknown-linux-musl.tgz"
-
-[tools.cargo-binstall.platforms.macos-arm64]
-checksum = "blake3:6a9104a686d44217ccfdcc2b9333a708d8ebd5a4abafe4d2eda5dec77c051a67"
-size = 5997376
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.4/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "blake3:1a5fa23fb172db04713b8acd854227ad5df08480dcc0a2fbd71f4fd93c0693ca"
+size = 6790102
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.5/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -189,7 +174,7 @@ checksum = "blake3:208cd44e3d11d5aa35c8953e9eaf8936c45e4f882508cecece4838fffeb1b
 checksum = "blake3:9eefa5ddb76d5b098a806811f1d0016f7982fdea0fe789c49435fd9b2dbd24ec"
 
 [[tools.codebuff]]
-version = "1.0.476"
+version = "1.0.485"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
@@ -207,13 +192,13 @@ size = 4418677
 url = "https://github.com/uutils/coreutils/releases/download/0.2.2/coreutils-0.2.2-aarch64-apple-darwin.tar.gz"
 
 [[tools.cosign]]
-version = "2.5.3"
+version = "2.6.0"
 backend = "aqua:sigstore/cosign"
 
-[tools.cosign.platforms.linux-arm64]
-checksum = "sha256:bffabe4cf183122b7de3111257a863c99e7dc6cf1093bfd7bf961de1795589b8"
-size = 148539773
-url = "https://github.com/sigstore/cosign/releases/download/v2.5.3/cosign-linux-arm64"
+[tools.cosign.platforms.linux-x64]
+checksum = "sha256:ea5c65f99425d6cfbb5c4b5de5dac035f14d09131c1a0ea7c7fc32eab39364f9"
+size = 155329864
+url = "https://github.com/sigstore/cosign/releases/download/v2.6.0/cosign-linux-amd64"
 
 [[tools.direnv]]
 version = "2.37.1"
@@ -288,7 +273,7 @@ size = 1658005
 url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-darwin_arm64.tar.gz"
 
 [[tools.gemini-cli]]
-version = "0.3.4"
+version = "0.4.1"
 backend = "npm:@google/gemini-cli"
 
 [[tools.gh]]
@@ -320,18 +305,13 @@ size = 2025599
 url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-aarch64-mac.zip"
 
 [[tools."github:eza-community/eza"]]
-version = "0.23.2"
+version = "0.23.3"
 backend = "github:eza-community/eza"
 
-[tools."github:eza-community/eza".platforms.linux-arm64]
-checksum = "blake3:236df3e477792f5be9093e4f9090ffda725c1be0757851100d9d0d2da3dac608"
-size = 965251
-url = "https://github.com/eza-community/eza/releases/download/v0.23.2/eza_aarch64-unknown-linux-gnu.tar.gz"
-
 [tools."github:eza-community/eza".platforms.linux-x64]
-checksum = "blake3:9c0946741facebe9d70676179fab73065e50295b3d68f7369d65accf828318f0"
-size = 1051502
-url = "https://github.com/eza-community/eza/releases/download/v0.23.2/eza_x86_64-unknown-linux-gnu.tar.gz"
+checksum = "blake3:2372510b54dd9e22d62bdcf3c7b7655e1135b00d2d2bf8e72b4d830f72744234"
+size = 1051574
+url = "https://github.com/eza-community/eza/releases/download/v0.23.3/eza_x86_64-unknown-linux-gnu.tar.gz"
 
 [[tools."github:ghetzel/mdnstool"]]
 version = "0.0.3"
@@ -491,18 +471,13 @@ size = 51078653
 url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.7.1"
+version = "0.8.0"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "blake3:a4a76d5bf697130621d23e0eedba5ca2a92dad1f8cfa4de6b468b362cdf048c9"
-size = 47383288
-url = "https://github.com/sst/opencode/releases/download/v0.7.1/opencode-linux-x64.zip"
-
-[tools.opencode.platforms.macos-arm64]
-checksum = "blake3:9136c05205380e6cb1a95dd3ad7e759c8c07ce345f40d7ef0e98d559e97dc6a8"
-size = 30129346
-url = "https://github.com/sst/opencode/releases/download/v0.7.1/opencode-darwin-arm64.zip"
+checksum = "blake3:0fc3ae7d6be27c58876fcaaf46e85d917c6d823a65f7c9c9bb86fa1c7d2ccc70"
+size = 47386971
+url = "https://github.com/sst/opencode/releases/download/v0.8.0/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
@@ -531,18 +506,13 @@ size = 2810401
 url = "https://github.com/jdx/pitchfork/releases/download/v0.1.5/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [[tools.pnpm]]
-version = "10.15.1"
+version = "10.16.1"
 backend = "aqua:pnpm/pnpm"
 
-[tools.pnpm.platforms.linux-arm64]
-checksum = "blake3:8e31f25db2ffd01ae7a28f8b35e815e33a84cb3def0d44bc9947e4f956379920"
-size = 61973377
-url = "https://github.com/pnpm/pnpm/releases/download/v10.15.1/pnpm-linux-arm64"
-
-[tools.pnpm.platforms.macos-arm64]
-checksum = "blake3:502db5ea7eeeccf6307a8af184d2a63acdf88cdb3346d7fb0d55617e807d1c5a"
-size = 62649648
-url = "https://github.com/pnpm/pnpm/releases/download/v10.15.1/pnpm-macos-arm64"
+[tools.pnpm.platforms.linux-x64]
+checksum = "blake3:8056959ec23513dbbdced7c7bc3ca51fc54717418d425fdb6b5d60e4075f0d70"
+size = 65957057
+url = "https://github.com/pnpm/pnpm/releases/download/v10.16.1/pnpm-linux-x64"
 
 [[tools.ripgrep]]
 version = "14.1.1"
