@@ -170,6 +170,11 @@ alias = "yazi:up"
 description = "Update Yazi packages"
 run = "ya pkg upgrade"
 
+[tasks."python:scaffold"]
+description = "Scaffold a Python project with uv and pytest"
+dir = "{{cwd}}"
+run = [{ task = "python:init" }, { task = "python:tasks-add" }]
+
 [tasks.random-hex]
 description = "Generate a 32-bit random hex number"
 alias = "rhex"
