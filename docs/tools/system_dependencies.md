@@ -18,6 +18,11 @@ backends.
 
 ## Coreutils
 
+> **Warning**: The following approach is currently disabled; no stubs are being
+> installed because they interfere in the chezmoi bootstrap init process
+> because some needed coreutils are not available because `coreutils` command
+> is not installed yet, and the sytem coreutils have to be used instead.
+
 Official uutils/coreutils GitHub releases provide a single binary `coreutils`
 that implements various Unix core utilities as subcommands. To make individual
 commands like `md5sum`, `sha256sum`, etc. available in the PATH, lightweight
