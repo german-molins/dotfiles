@@ -44,3 +44,6 @@ echo "Generated summary.txt"
 echo ""
 echo "=== Bash Startup Timing Summary ==="
 cat summary.txt
+
+# Clean up intermediate files
+rm -f timing.csv summary.txt

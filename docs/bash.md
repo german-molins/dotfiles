@@ -56,72 +56,75 @@ user  : user
 shell : bash 5.3.3(1)-release
 wd    : /home/user
 
-$ mise run bash:profile
+: mise run bash:profile
 [bash:profile] $ ~/.config/mise/tasks/bash/profile
 Processing bash startup timing log...
-Generated timing.csv with 45 entries
+Generated timing.csv with 24 entries
 Generated summary.txt
 
 === Bash Startup Timing Summary ===
 Rank  Sourced File                                        Time (ms)   Relative   Cumulative
 ----- -----------------------------------------           ---------   --------  -----------
-1     /Users/user/.bashrc.d/17-mise.sh                      568.093     34.73%       34.73%
-2     /Users/user/.bashrc.d/15-devbox.sh                    293.092     17.92%       52.65%
-3     /Users/user/.bashrc.d/40-homebrew.sh                   22.445      1.37%       54.02%
-4     /Users/user/.bashrc.d/19-pixi.sh                       18.649      1.14%       55.16%
-5     /Users/user/.bashrc.d/30-atuin.sh                      16.998      1.04%       56.20%
-6     /Users/user/.bashrc.d/75-zellij.sh                     14.770      0.90%       57.10%
-7     /Users/user/.bashrc.d/27-chezmoi.sh                    14.298      0.87%       57.97%
-8     /Users/user/.bashrc.d/82-carapace.sh                    9.805      0.60%       58.57%
-9     /Users/user/.bashrc.d/90-direnv.sh                      6.041      0.37%       58.94%
-10    /Users/user/.bashrc.d/18-usage.sh                       4.509      0.28%       59.22%
-11    /Users/user/.bashrc.d/25-zoxide.sh                      4.266      0.26%       59.48%
-12    /Users/user/.bashrc.d/35-functions.sh                   0.089      0.01%       59.48%
-13    /Users/user/.bashrc.d/55-task.sh                        0.078      0.00%       59.49%
-14    /Users/user/.bashrc.d/05-cache.sh                       0.063      0.00%       59.49%
-15    /Users/user/.bashrc.d/20-aliases.sh                     0.047      0.00%       59.50%
-16    /Users/user/.bashrc.d/45-julia.sh                       0.040      0.00%       59.50%
-17    /Users/user/.bashrc.d/10-nix.sh                         0.032      0.00%       59.50%
-18    /Users/user/.bashrc.d/57-yazi.sh                        0.031      0.00%       59.50%
-19    /Users/user/.bashrc.d/60-tmux.sh                        0.030      0.00%       59.50%
-20    /Users/user/.bashrc.d/32-nvim.sh                        0.025      0.00%       59.51%
-21    /Users/user/.bashrc.d/47-amazon-q.sh                    0.024      0.00%       59.51%
-22    /Users/user/.bashrc.d/48-amazon-q_cargo.sh              0.020      0.00%       59.51%
-23    /Users/user/.bashrc.d/50-aichat.sh                      0.018      0.00%       59.51%
-24    /Users/user/.bashrc.d/52-jupyter.sh                     0.017      0.00%       59.51%
-      TOTAL                                                1635.818      100%        100%
+1     /Users/user/.bashrc.d/17-mise.sh                      627.363     51.65%       51.65%
+2     /Users/user/.bashrc.d/15-devbox.sh                    337.218     27.76%       79.41%
+3     /Users/user/.bashrc.d/27-chezmoi.sh                    66.921      5.51%       84.92%
+4     /Users/user/.bashrc.d/82-carapace.sh                   42.791      3.52%       88.44%
+5     /Users/user/.bashrc.d/19-pixi.sh                       42.516      3.50%       91.94%
+6     /Users/user/.bashrc.d/40-homebrew.sh                   25.505      2.10%       94.04%
+7     /Users/user/.bashrc.d/90-direnv.sh                     20.107      1.66%       95.70%
+8     /Users/user/.bashrc.d/30-atuin.sh                      19.015      1.57%       97.26%
+9     /Users/user/.bashrc.d/75-zellij.sh                     16.325      1.34%       98.60%
+10    /Users/user/.bashrc.d/25-zoxide.sh                      7.302      0.60%       99.21%
+11    /Users/user/.bashrc.d/18-usage.sh                       4.817      0.40%       99.60%
+12    /Users/user/.bashrc.d/32-nvim.sh                        0.328      0.03%       99.63%
+13    /Users/user/.bashrc.d/35-functions.sh                   0.309      0.03%       99.65%
+14    /Users/user/.bashrc.d/05-cache.sh                       0.272      0.02%       99.68%
+15    /Users/user/.bashrc.d/20-aliases.sh                     0.197      0.02%       99.69%
+16    /Users/user/.bashrc.d/60-tmux.sh                        0.180      0.01%       99.71%
+17    /Users/user/.bashrc.d/10-nix.sh                         0.170      0.01%       99.72%
+18    /Users/user/.bashrc.d/47-amazon-q.sh                    0.168      0.01%       99.74%
+19    /Users/user/.bashrc.d/45-julia.sh                       0.164      0.01%       99.75%
+20    /Users/user/.bashrc.d/55-task.sh                        0.139      0.01%       99.76%
+21    /Users/user/.bashrc.d/48-amazon-q_cargo.sh              0.134      0.01%       99.77%
+22    /Users/user/.bashrc.d/50-aichat.sh                      0.109      0.01%       99.78%
+23    /Users/user/.bashrc.d/57-yazi.sh                        0.063      0.01%       99.79%
+24    /Users/user/.bashrc.d/52-jupyter.sh                     0.044      0.00%       99.79%
+      TOTAL SOURCED                                        1212.157    99.79%      99.79%
+      TOTAL                                                1214.708      100%        100%
 ```
 
-With caching:
+With caching (60% faster):
 
 ```bash
+=== Bash Startup Timing Summary ===
 Rank  Sourced File                                        Time (ms)   Relative   Cumulative
 ----- -----------------------------------------           ---------   --------  -----------
-1     /Users/user/.bashrc.d/17-mise.sh                       94.839      2.31%        2.31%
-2     /Users/user/.bashrc.d/40-homebrew.sh                   61.463      1.50%        3.81%
-3     /Users/user/.bashrc.d/30-atuin.sh                      48.259      1.18%        4.99%
-4     /Users/user/.bashrc.d/15-devbox.sh                     46.130      1.12%        6.11%
-5     /Users/user/.bashrc.d/25-zoxide.sh                     39.275      0.96%        7.07%
-6     /Users/user/.bashrc.d/75-zellij.sh                     38.593      0.94%        8.01%
-7     /Users/user/.bashrc.d/18-usage.sh                      38.432      0.94%        8.94%
-8     /Users/user/.bashrc.d/90-direnv.sh                     36.934      0.90%        9.84%
-9     /Users/user/.bashrc.d/82-carapace.sh                   36.095      0.88%       10.72%
-10    /Users/user/.bashrc.d/19-pixi.sh                       18.432      0.45%       11.17%
-11    /Users/user/.bashrc.d/27-chezmoi.sh                    14.225      0.35%       11.52%
-12    /Users/user/.bashrc.d/35-functions.sh                   0.107      0.00%       11.52%
-13    /Users/user/.bashrc.d/55-task.sh                        0.078      0.00%       11.52%
-14    /Users/user/.bashrc.d/05-cache.sh                       0.070      0.00%       11.53%
-15    /Users/user/.bashrc.d/45-julia.sh                       0.066      0.00%       11.53%
-16    /Users/user/.bashrc.d/20-aliases.sh                     0.048      0.00%       11.53%
-17    /Users/user/.bashrc.d/60-tmux.sh                        0.038      0.00%       11.53%
-18    /Users/user/.bashrc.d/10-nix.sh                         0.035      0.00%       11.53%
-19    /Users/user/.bashrc.d/57-yazi.sh                        0.030      0.00%       11.53%
-20    /Users/user/.bashrc.d/32-nvim.sh                        0.026      0.00%       11.53%
-21    /Users/user/.bashrc.d/48-amazon-q_cargo.sh              0.025      0.00%       11.53%
-22    /Users/user/.bashrc.d/47-amazon-q.sh                    0.023      0.00%       11.53%
-23    /Users/user/.bashrc.d/50-aichat.sh                      0.018      0.00%       11.53%
-24    /Users/user/.bashrc.d/52-jupyter.sh                     0.018      0.00%       11.53%
-      TOTAL                                                4103.311      100%        100%
+1     /Users/user/.bashrc.d/17-mise.sh                      101.585     21.02%       21.02%
+2     /Users/user/.bashrc.d/40-homebrew.sh                   58.143     12.03%       33.05%
+3     /Users/user/.bashrc.d/15-devbox.sh                     50.943     10.54%       43.59%
+4     /Users/user/.bashrc.d/30-atuin.sh                      47.790      9.89%       53.48%
+5     /Users/user/.bashrc.d/90-direnv.sh                     39.156      8.10%       61.58%
+6     /Users/user/.bashrc.d/25-zoxide.sh                     38.471      7.96%       69.54%
+7     /Users/user/.bashrc.d/18-usage.sh                      37.715      7.80%       77.34%
+8     /Users/user/.bashrc.d/75-zellij.sh                     37.555      7.77%       85.11%
+9     /Users/user/.bashrc.d/82-carapace.sh                   35.852      7.42%       92.53%
+10    /Users/user/.bashrc.d/19-pixi.sh                       18.856      3.90%       96.43%
+11    /Users/user/.bashrc.d/27-chezmoi.sh                    14.085      2.91%       99.35%
+12    /Users/user/.bashrc.d/35-functions.sh                   0.098      0.02%       99.37%
+13    /Users/user/.bashrc.d/05-cache.sh                       0.068      0.01%       99.38%
+14    /Users/user/.bashrc.d/55-task.sh                        0.067      0.01%       99.40%
+15    /Users/user/.bashrc.d/45-julia.sh                       0.053      0.01%       99.41%
+16    /Users/user/.bashrc.d/20-aliases.sh                     0.048      0.01%       99.42%
+17    /Users/user/.bashrc.d/10-nix.sh                         0.032      0.01%       99.42%
+18    /Users/user/.bashrc.d/57-yazi.sh                        0.030      0.01%       99.43%
+19    /Users/user/.bashrc.d/60-tmux.sh                        0.030      0.01%       99.44%
+20    /Users/user/.bashrc.d/47-amazon-q.sh                    0.028      0.01%       99.44%
+21    /Users/user/.bashrc.d/32-nvim.sh                        0.025      0.01%       99.45%
+22    /Users/user/.bashrc.d/50-aichat.sh                      0.021      0.00%       99.45%
+23    /Users/user/.bashrc.d/48-amazon-q_cargo.sh              0.020      0.00%       99.46%
+24    /Users/user/.bashrc.d/52-jupyter.sh                     0.017      0.00%       99.46%
+      TOTAL SOURCED                                         480.688    99.46%      99.46%
+      TOTAL                                                 483.298      100%        100%
 ```
 
 ### Notes
