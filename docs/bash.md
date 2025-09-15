@@ -37,10 +37,7 @@ during bash initialization to identify performance bottlenecks.
 
 ### Output
 
-The task generates two files:
-
-- `timing.csv`: Raw timing data in CSV format (file,duration_ms)
-- `summary.txt`: Formatted summary with rankings and percentages
+The task processes the timing data in a pipeline and displays a formatted summary with rankings and percentages. No intermediate files are created.
 
 ### Example Output
 
@@ -50,7 +47,7 @@ Without activation hooks caching:
 
 ```bash
 $ BASH_PROFILE_TIMING=1 exec bash
-Bash profiling enabled. Log will be written to ~/.bash_profile_timing.log
+Bash profiling enabled. Log will be written to ~/.local/share/dotfiles/bash/profile_timing.log
 host  : example-host
 user  : user
 shell : bash 5.3.3(1)-release
@@ -59,8 +56,6 @@ wd    : /home/user
 : mise run bash:profile
 [bash:profile] $ ~/.config/mise/tasks/bash/profile
 Processing bash startup timing log...
-Generated timing.csv with 24 entries
-Generated summary.txt
 
 === Bash Startup Timing Summary ===
 Rank  Sourced File                                        Time (ms)   Relative   Cumulative
@@ -130,7 +125,8 @@ Rank  Sourced File                                        Time (ms)   Relative  
 ### Notes
 
 - Profiling only works with Bash 5+ (requires `$EPOCHREALTIME`)
-- The timing log is cleared each time profiling is enabled
+- The timing log is overwritten at the start of each profiling session
+- Log is stored at `~/.local/share/dotfiles/bash/profile_timing.log`
 - Only files in `~/.bashrc.d/*.sh` and `/etc/bash_completion` are profiled
 - Disable profiling by unsetting the variable: `unset BASH_PROFILE_TIMING`
 

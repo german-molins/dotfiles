@@ -172,7 +172,7 @@ run = "ya pkg upgrade"
 
 [tasks."bash:clean"]
 description = "Clean bash startup caches"
-run = "rm -rf ~/.cache/dotfiles/bash"
+run = ["rm -rf ~/.cache/dotfiles/bash ~/.local/share/bash"]
 
 [tasks."python:scaffold"]
 description = "Scaffold a Python project with uv and pytest"

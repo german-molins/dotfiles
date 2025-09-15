@@ -1,9 +1,11 @@
 #!/usr/bin/env sh
 #MISE description="Process bash startup profiling logs and generate timing reports"
 
+LOG_FILE="$HOME/.local/share/dotfiles/bash/profile_timing.log"
+
 # Check if the source log file exists
-if [ ! -f "$HOME/.bash_profile_timing.log" ]; then
-    echo "ERROR: Bash profile timing log not found at ~/.bash_profile_timing.log"
+if [ ! -f "$LOG_FILE" ]; then
+    echo "ERROR: Bash profile timing log not found at $LOG_FILE"
     echo "To generate this log, you need to add profiling instrumentation to your bash startup files."
     echo ""
     echo "The profile_source function is already defined in ~/.bashrc."
@@ -25,25 +27,8 @@ if [ ! -f "$SCRIPTS_DIR/log_to_csv.awk" ] || [ ! -f "$SCRIPTS_DIR/csv_summary.aw
 fi
 
 echo "Processing bash startup timing log..."
-awk -f "$SCRIPTS_DIR/log_to_csv.awk" "$HOME/.bash_profile_timing.log" >timing.csv
 
-if [ $? -ne 0 ]; then
-    echo "ERROR: Failed to convert log to CSV"
-    exit 1
-fi
-echo "Generated timing.csv with $(wc -l <timing.csv) entries"
-
-awk -f "$SCRIPTS_DIR/csv_summary.awk" timing.csv >summary.txt
-
-if [ $? -ne 0 ]; then
-    echo "ERROR: Failed to generate summary"
-    exit 1
-fi
-
-echo "Generated summary.txt"
+# Pipeline: log -> CSV -> summary (output to stdout)
 echo ""
 echo "=== Bash Startup Timing Summary ==="
-cat summary.txt
-
-# Clean up intermediate files
-rm -f timing.csv summary.txt
+awk -f "$SCRIPTS_DIR/log_to_csv.awk" "$LOG_FILE" | awk -f "$SCRIPTS_DIR/csv_summary.awk"
