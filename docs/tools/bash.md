@@ -39,4 +39,14 @@ Outputs from various tools' init and completion commands are cached to `~/.cache
 - Manual clearing with `_mise_evalcache_clear` (Mise) and `_evalcache_clear` (general)
 - Automatic invalidation on tool binary changes
 
+### Disabling Cache for Profiling
+
+To compare bash startup performance with and without caching, set the `DISABLE_BASH_CACHE` environment variable:
+
+```bash
+DISABLE_BASH_CACHE=1 bash
+```
+
+This will bypass all caching mechanisms and execute commands directly, allowing you to profile the uncached startup time.
+
 These optimizations significantly reduce shell startup time by avoiding repeated computation of static initialization scripts.

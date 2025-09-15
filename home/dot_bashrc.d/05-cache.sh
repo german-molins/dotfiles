@@ -1,6 +1,12 @@
 # Caching functions for bash startup optimization
 
 _evalcache() {
+  # Allow disabling cache via environment variable for profiling comparisons
+  if [[ -n "${DISABLE_BASH_CACHE:-}" ]]; then
+    "$@"
+    return
+  fi
+
   local cache_dir="${HOME}/.cache/dotfiles/bash"
   mkdir -p "$cache_dir"
    local cache_file="${cache_dir}/$(echo "$*" | md5sum | cut -d' ' -f1).sh"
