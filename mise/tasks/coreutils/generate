@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+#MISE description = "Generate coreutils command stubs in ~/bin"
+
+BIN_DIR=home/dot_local/bin
+
+mkdir -p "$BIN_DIR"
+echo "Generating uutils/coreutils stubs..."
+
+for cmd in $(coreutils --list); do
+    stub_file="$BIN_DIR/executable_$cmd"
+    printf '#!/usr/bin/env sh\nexec coreutils %s "$@"\n' "$cmd" >"$stub_file"
+    echo "Generated stub $stub_file"
+done

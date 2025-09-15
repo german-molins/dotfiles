@@ -5,6 +5,10 @@ jq = "latest"
 [hooks]
 postinstall = "bun install"
 
+[tasks.generate]
+alias = ["gen", "g"]
+depends = ["docs:generate", "mise:generate-docs", "coreutils:generate"]
+
 [tasks."docs:dev"]
 alias = "docs:b"
 run = "bun run docs:dev"

@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+exec coreutils sha3-384sum "$@"
