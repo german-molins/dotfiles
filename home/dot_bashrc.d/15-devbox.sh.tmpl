@@ -1,4 +1,4 @@
 {{ if .devbox.enabled -}}
-eval "$(devbox global shellenv --init-hook)"
-. <(devbox completion bash)
+eval "$(_evalcache devbox global shellenv --init-hook)"
+eval "$(_evalcache devbox completion bash)"
 {{ end -}}

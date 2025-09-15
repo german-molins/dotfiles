@@ -1,1 +1,1 @@
-eval "$(zoxide init bash --cmd cd)"
+eval "$(_evalcache zoxide init bash --cmd cd)"

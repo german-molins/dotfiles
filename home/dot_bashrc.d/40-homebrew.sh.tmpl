@@ -8,5 +8,5 @@ eval "$(/usr/local/bin/brew shellenv 2>/dev/null)"
 {{- end }}
 
 if [ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]; then
-  source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
+  eval "$(_evalcache source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh")"
 fi

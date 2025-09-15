@@ -1,1 +1,1 @@
-eval "$(usage --completions bash)"
+eval "$(_evalcache usage --completions bash)"

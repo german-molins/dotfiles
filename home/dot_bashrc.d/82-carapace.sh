@@ -1,1 +1,1 @@
-source <(carapace _carapace)
+eval "$(_evalcache carapace _carapace)"

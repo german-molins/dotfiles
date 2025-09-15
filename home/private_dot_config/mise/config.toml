@@ -170,6 +170,10 @@ alias = "yazi:up"
 description = "Update Yazi packages"
 run = "ya pkg upgrade"
 
+[tasks."bash:clean"]
+description = "Clean bash startup caches"
+run = "rm -rf ~/.cache/dotfiles/bash"
+
 [tasks."python:scaffold"]
 description = "Scaffold a Python project with uv and pytest"
 dir = "{{cwd}}"
