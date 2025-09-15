@@ -14,6 +14,7 @@ backends.
 | ImageMagick | devbox | devbox | Yazi |
 | Pandoc | global | ubi | `pdftoepub`, Neovim plugins |
 | `pdftotext` | devbox | devbox | `pdftoepub` |
+| `md5sum` (uutils/coreutils) | global | aqua | Bash caching |
 
 ## Dependencies managed by UPT
 

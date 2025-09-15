@@ -21,7 +21,7 @@
  _mise_evalcache_hook() {
    local cache_dir="${HOME}/.cache/dotfiles/bash/hooks"
    mkdir -p "$cache_dir"
-   local key=$(echo "$* $(pwd)" | md5 | cut -d' ' -f1)
+   local key=$(echo "$* $(pwd)" | md5sum | cut -d' ' -f1)
    local cache_file="${cache_dir}/${key}.sh"
    local deps=("$HOME/.local/bin/mise")
    local cache_valid=true

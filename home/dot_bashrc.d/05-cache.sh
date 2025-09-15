@@ -3,7 +3,7 @@
 _evalcache() {
   local cache_dir="${HOME}/.cache/dotfiles/bash"
   mkdir -p "$cache_dir"
-  local cache_file="${cache_dir}/$(echo "$*" | md5 | cut -d' ' -f1).sh"
+   local cache_file="${cache_dir}/$(echo "$*" | md5sum | cut -d' ' -f1).sh"
   local deps=()
   # Add common deps if needed, but for now none
   local cache_valid=true
