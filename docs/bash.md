@@ -46,6 +46,8 @@ The task generates two files:
 
 After enabling profiling and running the commands, the output might look like this:
 
+Without activation hooks caching:
+
 ```bash
 $ BASH_PROFILE_TIMING=1 exec bash
 Bash profiling enabled. Log will be written to ~/.bash_profile_timing.log
@@ -88,6 +90,38 @@ Rank  Sourced File                                        Time (ms)   Relative  
 23    /Users/user/.bashrc.d/50-aichat.sh                      0.018      0.00%       59.51%
 24    /Users/user/.bashrc.d/52-jupyter.sh                     0.017      0.00%       59.51%
       TOTAL                                                1635.818      100%        100%
+```
+
+With caching:
+
+```bash
+Rank  Sourced File                                        Time (ms)   Relative   Cumulative
+----- -----------------------------------------           ---------   --------  -----------
+1     /Users/user/.bashrc.d/17-mise.sh                       94.839      2.31%        2.31%
+2     /Users/user/.bashrc.d/40-homebrew.sh                   61.463      1.50%        3.81%
+3     /Users/user/.bashrc.d/30-atuin.sh                      48.259      1.18%        4.99%
+4     /Users/user/.bashrc.d/15-devbox.sh                     46.130      1.12%        6.11%
+5     /Users/user/.bashrc.d/25-zoxide.sh                     39.275      0.96%        7.07%
+6     /Users/user/.bashrc.d/75-zellij.sh                     38.593      0.94%        8.01%
+7     /Users/user/.bashrc.d/18-usage.sh                      38.432      0.94%        8.94%
+8     /Users/user/.bashrc.d/90-direnv.sh                     36.934      0.90%        9.84%
+9     /Users/user/.bashrc.d/82-carapace.sh                   36.095      0.88%       10.72%
+10    /Users/user/.bashrc.d/19-pixi.sh                       18.432      0.45%       11.17%
+11    /Users/user/.bashrc.d/27-chezmoi.sh                    14.225      0.35%       11.52%
+12    /Users/user/.bashrc.d/35-functions.sh                   0.107      0.00%       11.52%
+13    /Users/user/.bashrc.d/55-task.sh                        0.078      0.00%       11.52%
+14    /Users/user/.bashrc.d/05-cache.sh                       0.070      0.00%       11.53%
+15    /Users/user/.bashrc.d/45-julia.sh                       0.066      0.00%       11.53%
+16    /Users/user/.bashrc.d/20-aliases.sh                     0.048      0.00%       11.53%
+17    /Users/user/.bashrc.d/60-tmux.sh                        0.038      0.00%       11.53%
+18    /Users/user/.bashrc.d/10-nix.sh                         0.035      0.00%       11.53%
+19    /Users/user/.bashrc.d/57-yazi.sh                        0.030      0.00%       11.53%
+20    /Users/user/.bashrc.d/32-nvim.sh                        0.026      0.00%       11.53%
+21    /Users/user/.bashrc.d/48-amazon-q_cargo.sh              0.025      0.00%       11.53%
+22    /Users/user/.bashrc.d/47-amazon-q.sh                    0.023      0.00%       11.53%
+23    /Users/user/.bashrc.d/50-aichat.sh                      0.018      0.00%       11.53%
+24    /Users/user/.bashrc.d/52-jupyter.sh                     0.018      0.00%       11.53%
+      TOTAL                                                4103.311      100%        100%
 ```
 
 ### Notes
