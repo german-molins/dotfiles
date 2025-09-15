@@ -35,6 +35,6 @@ END {
         cum_pct=(cum_dur/total_elapsed)*100
         printf "%-5d %-50s %10.3f %9.2f%% %11.2f%%\n", i+1, f, files[f], pct, cum_pct
     }
-    printf "%-5s %-50s %10.3f %9s %11s\n", "", "TOTAL SOURCED", total_sourced, sprintf("%.2f%%", (total_sourced/total_elapsed)*100), sprintf("%.2f%%", (total_sourced/total_elapsed)*100)
-    printf "%-5s %-50s %10.3f %9s %11s\n", "", "TOTAL", total_elapsed, "100%", "100%"
+    printf "%-5s %-50s %10.3f %10s %12s\n", "", "TOTAL SOURCED", total_sourced, sprintf("%.2f%%", (total_sourced/total_elapsed)*100), sprintf("%.2f%%", (total_sourced/total_elapsed)*100)
+    printf "%-5s %-50s %10.3f %10s %12s\n", "", "TOTAL", total_elapsed, "100%", "100%"
 }

@@ -89,8 +89,8 @@ Rank  Sourced File                                        Time (ms)   Relative  
 22    /Users/user/.bashrc.d/50-aichat.sh                      0.109      0.01%       99.78%
 23    /Users/user/.bashrc.d/57-yazi.sh                        0.063      0.01%       99.79%
 24    /Users/user/.bashrc.d/52-jupyter.sh                     0.044      0.00%       99.79%
-      TOTAL SOURCED                                        1212.157    99.79%      99.79%
-      TOTAL                                                1214.708      100%        100%
+      TOTAL SOURCED                                        1212.157     99.79%       99.79%
+      TOTAL                                                1214.708       100%         100%
 ```
 
 With caching (60% faster):
@@ -123,8 +123,8 @@ Rank  Sourced File                                        Time (ms)   Relative  
 22    /Users/user/.bashrc.d/50-aichat.sh                      0.021      0.00%       99.45%
 23    /Users/user/.bashrc.d/48-amazon-q_cargo.sh              0.020      0.00%       99.46%
 24    /Users/user/.bashrc.d/52-jupyter.sh                     0.017      0.00%       99.46%
-      TOTAL SOURCED                                         480.688    99.46%      99.46%
-      TOTAL                                                 483.298      100%        100%
+      TOTAL SOURCED                                         480.688     99.46%       99.46%
+      TOTAL                                                 483.298       100%         100%
 ```
 
 ### Notes
