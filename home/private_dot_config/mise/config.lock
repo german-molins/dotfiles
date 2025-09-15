@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1757880072-g1e891a"
+version = "0.0.1757923348-g0a51d9"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
@@ -477,18 +477,13 @@ size = 9194532
 url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-macos-arm64.tar.gz"
 
 [[tools.node]]
-version = "24.7.0"
+version = "24.8.0"
 backend = "core:node"
 
-[tools.node.platforms.linux-arm64]
-checksum = "sha256:04df0283d2a8a06271a690fbe2528661527b3a09f0f28c8bb63327d8888be184"
-size = 58472562
-url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-linux-arm64.tar.gz"
-
 [tools.node.platforms.macos-arm64]
-checksum = "sha256:ff8298faaf82c85444aad7f1e12a4882496286ea9008702029b359d7fac7f8b3"
-size = 51078653
-url = "https://nodejs.org/dist/v24.7.0/node-v24.7.0-darwin-arm64.tar.gz"
+checksum = "sha256:d81191a1866760eb918caa976c023036bc1fc7405ea31b148905211522045767"
+size = 51094172
+url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
 version = "0.8.0"
