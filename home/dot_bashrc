@@ -23,7 +23,12 @@ profile_source() {
 
 for file in ~/.bashrc.d/*.sh; do
   if [ -r "$file" ]; then
-    profile_source "$file"
+    # Bypass profiling for atuin to preserve execution context
+    if [[ "$file" == *"atuin"* ]]; then
+      source "$file"
+    else
+      profile_source "$file"
+    fi
   fi
 done
 unset file

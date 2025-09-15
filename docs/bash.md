@@ -129,6 +129,7 @@ Rank  Sourced File                                        Time (ms)   Relative  
 - Log is stored at `~/.local/share/dotfiles/bash/profile_timing.log`
 - Only files in `~/.bashrc.d/*.sh` and `/etc/bash_completion` are profiled
 - Disable profiling by unsetting the variable: `unset BASH_PROFILE_TIMING`
+- **Caveat**: Atuin files bypass profiling to preserve execution context. Atuin's bash-preexec hooks are extremely sensitive to execution context - even function wrappers change the call stack enough to break command recording
 
 ## Bash Configuration Files
 
