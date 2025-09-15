@@ -29,6 +29,7 @@ on `devbox shell` and on `devbox run`.
 * [nerd-fonts.inconsolata@latest](https://www.nixhub.io/packages/nerd-fonts.inconsolata)
 * [taskopen@latest](https://www.nixhub.io/packages/taskopen)
 * [sshfs-fuse@latest](https://www.nixhub.io/packages/sshfs-fuse)
+* [gitflow@latest](https://www.nixhub.io/packages/gitflow)
 
 
 <!-- gen-readme end -->
