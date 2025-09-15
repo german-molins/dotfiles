@@ -10,15 +10,16 @@
     local cache_dir="${HOME}/.cache/dotfiles/bash/mise"
     mkdir -p "$cache_dir"
     local cache_file="${cache_dir}/activate_bash.sh"
-    local deps=("$HOME/.local/bin/mise")
+    local deps=("$HOME/.local/bin/mise" "$HOME/.local/share/mise/installs")
     local cache_valid=true
     for dep in "${deps[@]}"; do
-      if [[ -f "$dep" && "$dep" -nt "$cache_file" ]]; then
+      if [[ -e "$dep" && "$dep" -nt "$cache_file" ]]; then
         cache_valid=false
         break
       fi
     done
     if [[ ! -f "$cache_file" ]] || ! $cache_valid; then
+      rm -f "$cache_file"
       "$@" > "$cache_file"
     fi
     cat "$cache_file"
@@ -35,15 +36,16 @@
     mkdir -p "$cache_dir"
     local key=$(echo "$* $(pwd)" | md5sum | cut -d' ' -f1)
     local cache_file="${cache_dir}/${key}.sh"
-    local deps=("$HOME/.local/bin/mise")
+    local deps=("$HOME/.local/bin/mise" "$HOME/.local/share/mise/installs" "mise.toml")
     local cache_valid=true
     for dep in "${deps[@]}"; do
-      if [[ -f "$dep" && "$dep" -nt "$cache_file" ]]; then
+      if [[ -e "$dep" && "$dep" -nt "$cache_file" ]]; then
         cache_valid=false
         break
       fi
     done
     if [[ ! -f "$cache_file" ]] || ! $cache_valid; then
+      rm -f "$cache_file"
       "$@" > "$cache_file"
     fi
     cat "$cache_file"

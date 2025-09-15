@@ -131,6 +131,22 @@ Rank  Sourced File                                        Time (ms)   Relative  
 - Disable profiling by unsetting the variable: `unset BASH_PROFILE_TIMING`
 - **Caveat**: Atuin files bypass profiling to preserve execution context. Atuin's bash-preexec hooks are extremely sensitive to execution context - even function wrappers change the call stack enough to break command recording
 
+### Activation Hook Caching
+
+To improve startup performance, mise activation hooks are cached. The cache is automatically refreshed when:
+
+- The mise binary (`~/.local/bin/mise`) is updated
+- Tool installations change (`~/.local/share/mise/installs` directory timestamp)
+- Project configuration changes (`mise.toml` in current directory)
+
+**Limitations**: The cache may not refresh for all configuration changes (e.g., global config modifications, environment-specific configs). If activation hooks seem stale, manually clear the cache:
+
+```bash
+mise run bash:clean
+```
+
+This removes all cached activation hooks and forces regeneration on next shell startup.
+
 ## Bash Configuration Files
 
 The `~/.bashrc.d/` directory contains modular configuration files:

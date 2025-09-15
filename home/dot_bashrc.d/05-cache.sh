@@ -20,6 +20,7 @@ _evalcache() {
     fi
   done
   if [[ ! -f "$cache_file" ]] || ! $cache_valid; then
+    rm -f "$cache_file"
     "$@" > "$cache_file"
   fi
   cat "$cache_file"
