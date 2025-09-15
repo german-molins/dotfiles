@@ -20,6 +20,11 @@ checksum = "sha256:e58efa98257e32dc7b68417531702867778b602581f5584c5807d7f68a871
 size = 16810693
 url = "https://github.com/charmbracelet/crush/releases/download/v0.8.1/crush_0.8.1_Linux_x86_64.tar.gz"
 
+[tools."aqua:charmbracelet/crush".platforms.macos-arm64]
+checksum = "sha256:8df3affb426a14591f25eb27ca29dd001b7ff0a31edfa37dfb2ca27af26798af"
+size = 16188411
+url = "https://github.com/charmbracelet/crush/releases/download/v0.8.1/crush_0.8.1_Darwin_arm64.tar.gz"
+
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
 backend = "aqua:dlvhdr/gh-dash"
@@ -143,6 +148,11 @@ checksum = "blake3:1a5fa23fb172db04713b8acd854227ad5df08480dcc0a2fbd71f4fd93c069
 size = 6790102
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.5/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
+[tools.cargo-binstall.platforms.macos-arm64]
+checksum = "blake3:4eff2c4ed16a8864b20b55fbe855821e60dfb633c04e40ab67679a0639f08b2f"
+size = 6004395
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.5/cargo-binstall-aarch64-apple-darwin.zip"
+
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
 backend = "cargo:diffutils"
@@ -199,6 +209,11 @@ backend = "aqua:sigstore/cosign"
 checksum = "sha256:ea5c65f99425d6cfbb5c4b5de5dac035f14d09131c1a0ea7c7fc32eab39364f9"
 size = 155329864
 url = "https://github.com/sigstore/cosign/releases/download/v2.6.0/cosign-linux-amd64"
+
+[tools.cosign.platforms.macos-arm64]
+checksum = "sha256:dea5b83b8b375b99ac803c7bdb1f798963dbeb47789ceb72153202e7f20e8d07"
+size = 154611890
+url = "https://github.com/sigstore/cosign/releases/download/v2.6.0/cosign-darwin-arm64"
 
 [[tools.direnv]]
 version = "2.37.1"
@@ -312,6 +327,11 @@ backend = "github:eza-community/eza"
 checksum = "blake3:2372510b54dd9e22d62bdcf3c7b7655e1135b00d2d2bf8e72b4d830f72744234"
 size = 1051574
 url = "https://github.com/eza-community/eza/releases/download/v0.23.3/eza_x86_64-unknown-linux-gnu.tar.gz"
+
+[tools."github:eza-community/eza".platforms.macos-arm64]
+checksum = "blake3:1c56552301100a0f9f302555c72ec61a8cb360d750838c73319964185cf41b9b"
+size = 7273
+url = "https://github.com/eza-community/eza/releases/download/v0.23.3/completions-0.23.3.tar.gz"
 
 [[tools."github:ghetzel/mdnstool"]]
 version = "0.0.3"
@@ -479,6 +499,11 @@ checksum = "blake3:0fc3ae7d6be27c58876fcaaf46e85d917c6d823a65f7c9c9bb86fa1c7d2cc
 size = 47386971
 url = "https://github.com/sst/opencode/releases/download/v0.8.0/opencode-linux-x64.zip"
 
+[tools.opencode.platforms.macos-arm64]
+checksum = "blake3:845143e5f8ffd8c21d2bc269588212d44b5a65117d93ef2a10d3cb15cb6514cb"
+size = 30129315
+url = "https://github.com/sst/opencode/releases/download/v0.8.0/opencode-darwin-arm64.zip"
+
 [[tools.pandoc]]
 version = "3.8"
 backend = "ubi:jgm/pandoc"
@@ -513,6 +538,11 @@ backend = "aqua:pnpm/pnpm"
 checksum = "blake3:8056959ec23513dbbdced7c7bc3ca51fc54717418d425fdb6b5d60e4075f0d70"
 size = 65957057
 url = "https://github.com/pnpm/pnpm/releases/download/v10.16.1/pnpm-linux-x64"
+
+[tools.pnpm.platforms.macos-arm64]
+checksum = "blake3:323003f615d38556a2575e80e321f9617f21f981943af57461d216027bd3a9fc"
+size = 62658736
+url = "https://github.com/pnpm/pnpm/releases/download/v10.16.1/pnpm-macos-arm64"
 
 [[tools.ripgrep]]
 version = "14.1.1"
