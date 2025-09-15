@@ -14,6 +14,8 @@ Environment variables (managed by mise):
 - `repos/${owner}/${repo}`: Repositories are to be cloned in this directory
 hierarchy, where the owner may refer to a user or an organization.
 - `sandbox/*/`: Playground for any kind of bounded trial or draft.
+- `~/.cache/dotfiles/`: Custom dotfiles caches for performance optimizations
+(see e.g. [Bash caching](../tools/bash.md#startup-caching-optimizations)).
 
 ## Fonts
 

@@ -24,6 +24,7 @@ export default defineConfig({
             link: "/tools",
             collapsed: true,
             items: [
+              { text: "Bash", link: '/tools/bash' },
               { text: "Mise", link: '/tools/mise' },
               { text: "System Dependencies", link: '/tools/system_dependencies' },
               { text: "General Utils", link: '/tools/utils' },

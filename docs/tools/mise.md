@@ -28,6 +28,9 @@ Mise has been configured with some specific settings:
 Mise is integrated with the shell through activation and completion hooks. This
 replaces the previous direnv-based approach used with Devbox.
 
+For activation performance optimizations during Bash startup, see [Mise Caching
+Optimization](../bash.md#mise-caching-optimization).
+
 ## Environment Variables
 
 Mise handles environment variables that were previously managed by direnv. This
