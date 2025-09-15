@@ -50,8 +50,8 @@
       }
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-09-13T06:53:53Z",
-      "resolved": "github:NixOS/nixpkgs/6d7ec06d6868ac6d94c371458fc2391ded9ff13d?lastModified=1757746433&narHash=sha256-fEvTiU4s9lWgW7mYEU%2F1QUPirgkn%2BodUBTaindgiziY%3D"
+      "last_modified": "2025-09-14T09:47:56Z",
+      "resolved": "github:NixOS/nixpkgs/af745796c2755d6f3a6d835967862184d53a17ff?lastModified=1757843276&narHash=sha256-GNqrHTSABo9Fwvhcgq4hy4Us5OY368gIEJCI48lBWhM%3D"
     },
     "nerd-fonts.inconsolata@latest": {
       "last_modified": "2025-07-28T17:09:23Z",
