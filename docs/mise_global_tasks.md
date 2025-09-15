@@ -1,3 +1,9 @@
+## `bash:profile`
+
+- **Usage**: `bash:profile`
+
+Process bash startup profiling logs and generate timing reports
+
 ## `brew:clean`
 
 - **Usage**: `brew:clean`
@@ -117,6 +123,12 @@ Initialize a Python project with uv and pytest
 
 Scaffold a Python project with uv and pytest
 
+## `python:scaffold`
+
+- **Usage**: `python:scaffold`
+
+Scaffold a Python project with uv and pytest
+
 ## `python:tasks-add`
 
 - **Usage**: `python:tasks-add`
@@ -160,7 +172,7 @@ Commit changes after scaffolding
 
 ## `update`
 
-- Depends: chezmoi:update, mise:update, devbox:update, yazi:update, nvim:update, brew:update
+- Depends: chezmoi:update, mise:update, devbox:update, yazi:update, nvim:update, brew:update, upt:update
 
 - **Usage**: `update`
 
@@ -177,6 +189,12 @@ Install system packages with upt
 #### `[cmd]…`
 
 Command to run with upt
+
+## `upt:update`
+
+- **Usage**: `upt:update`
+
+Update system packages
 
 ## `yazi:install`
 
