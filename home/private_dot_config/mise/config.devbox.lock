@@ -38,10 +38,6 @@ backend = "devbox:git-extras"
 version = "3.12"
 backend = "devbox:gnugrep"
 
-[[tools."devbox:gnupg"]]
-version = "2.4.7"
-backend = "devbox:gnupg"
-
 [[tools."devbox:gnused"]]
 version = "4.9"
 backend = "devbox:gnused"
