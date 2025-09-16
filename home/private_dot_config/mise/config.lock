@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1758009709-ge9802a"
+version = "0.0.1758038511-g34c115"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
@@ -179,7 +179,7 @@ checksum = "blake3:208cd44e3d11d5aa35c8953e9eaf8936c45e4f882508cecece4838fffeb1b
 checksum = "blake3:9eefa5ddb76d5b098a806811f1d0016f7982fdea0fe789c49435fd9b2dbd24ec"
 
 [[tools.codebuff]]
-version = "1.0.485"
+version = "1.0.491"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
@@ -366,11 +366,11 @@ size = 12480851
 url = "https://github.com/tstack/lnav/releases/download/v0.13.1/lnav-0.13.1-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.71.1"
+version = "1.71.2"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
-[tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:15cc09e60684322b1bd2036c6422e99ea60a9f548681b270530a06333e7f9b5f"
+[tools.glab.platforms.linux-x64-glab-glab]
+checksum = "blake3:a0c5e2eafac4ff38bd113d0f5226cc962e79ebe658f31d8468b60872ed7840d2"
 
 [[tools.hyperfine]]
 version = "1.19.0"
@@ -475,13 +475,13 @@ size = 51094172
 url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.9.1"
+version = "0.9.5"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.macos-arm64]
-checksum = "blake3:694e59eafc17638a83dcff407368bc5723aece040cd188b6e779cba7827603c5"
-size = 30153422
-url = "https://github.com/sst/opencode/releases/download/v0.9.1/opencode-darwin-arm64.zip"
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:8e63d9ad72df8fbce17ba30526dc528c07f02ada1b73a454e89be787726e5f36"
+size = 47424592
+url = "https://github.com/sst/opencode/releases/download/v0.9.5/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
