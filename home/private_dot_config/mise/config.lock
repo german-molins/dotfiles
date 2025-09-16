@@ -8,22 +8,17 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1757923348-g0a51d9"
+version = "0.0.1758009709-ge9802a"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
-version = "0.8.1"
+version = "0.8.2"
 backend = "aqua:charmbracelet/crush"
 
-[tools."aqua:charmbracelet/crush".platforms.linux-x64]
-checksum = "sha256:e58efa98257e32dc7b68417531702867778b602581f5584c5807d7f68a871512"
-size = 16810693
-url = "https://github.com/charmbracelet/crush/releases/download/v0.8.1/crush_0.8.1_Linux_x86_64.tar.gz"
-
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:8df3affb426a14591f25eb27ca29dd001b7ff0a31edfa37dfb2ca27af26798af"
-size = 16188411
-url = "https://github.com/charmbracelet/crush/releases/download/v0.8.1/crush_0.8.1_Darwin_arm64.tar.gz"
+checksum = "sha256:c4fd98f2081b2ef7cb5042004839438c44a6412d44ec8c8522ed8f8533e8361b"
+size = 16197878
+url = "https://github.com/charmbracelet/crush/releases/download/v0.8.2/crush_0.8.2_Darwin_arm64.tar.gz"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
@@ -225,13 +220,13 @@ size = 7667896
 url = "https://github.com/direnv/direnv/releases/download/v2.37.1/direnv.linux-arm64"
 
 [[tools.dua]]
-version = "2.31.0"
+version = "2.32.0"
 backend = "aqua:Byron/dua-cli"
 
-[tools.dua.platforms.linux-arm64]
-checksum = "blake3:8200301584d2052e65a0f268aa9a0a69778615a53afe5b45ccec868415eef173"
-size = 1102548
-url = "https://github.com/Byron/dua-cli/releases/download/v2.31.0/dua-v2.31.0-aarch64-unknown-linux-musl.tar.gz"
+[tools.dua.platforms.macos-arm64]
+checksum = "blake3:b3030dab15f1dd19255b2a1b8a09fc99703c87073ca47d421b57717502940cda"
+size = 1022092
+url = "https://github.com/Byron/dua-cli/releases/download/v2.32.0/dua-v2.32.0-x86_64-apple-darwin.tar.gz"
 
 [[tools.duf]]
 version = "0.9.1"
@@ -371,17 +366,11 @@ size = 12480851
 url = "https://github.com/tstack/lnav/releases/download/v0.13.1/lnav-0.13.1-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.68.0"
+version = "1.71.1"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
-[tools.glab.platforms.linux-arm64-glab-glab]
-checksum = "blake3:86d764c5106c2254049dd1612242674381d32ba171bbbaccda4a4710540c1549"
-
-[tools.glab.platforms.linux-x64-glab-glab]
-checksum = "blake3:735e690f3609fe7df0e5c01dda9f096723ab6fd471dbebf8074d7939572db5df"
-
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:a933901a2f43daf5bdbaa4cb9c1b5854576a819209e6b3924e679a59bcbec7d0"
+checksum = "blake3:15cc09e60684322b1bd2036c6422e99ea60a9f548681b270530a06333e7f9b5f"
 
 [[tools.hyperfine]]
 version = "1.19.0"
@@ -486,18 +475,13 @@ size = 51094172
 url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.8.0"
+version = "0.9.1"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "blake3:0fc3ae7d6be27c58876fcaaf46e85d917c6d823a65f7c9c9bb86fa1c7d2ccc70"
-size = 47386971
-url = "https://github.com/sst/opencode/releases/download/v0.8.0/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:845143e5f8ffd8c21d2bc269588212d44b5a65117d93ef2a10d3cb15cb6514cb"
-size = 30129315
-url = "https://github.com/sst/opencode/releases/download/v0.8.0/opencode-darwin-arm64.zip"
+checksum = "blake3:694e59eafc17638a83dcff407368bc5723aece040cd188b6e779cba7827603c5"
+size = 30153422
+url = "https://github.com/sst/opencode/releases/download/v0.9.1/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
