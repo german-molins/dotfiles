@@ -15,6 +15,11 @@ backend = "npm:@sourcegraph/amp"
 version = "0.8.3"
 backend = "aqua:charmbracelet/crush"
 
+[tools."aqua:charmbracelet/crush".platforms.linux-x64]
+checksum = "sha256:28598d23302416974d3181c4b76d29962f9b0645c5d62352d8cf17fd455773c0"
+size = 16815141
+url = "https://github.com/charmbracelet/crush/releases/download/v0.8.3/crush_0.8.3_Linux_x86_64.tar.gz"
+
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
 checksum = "sha256:48797c0b0d607997e17330fb406909807fe566df08a160f4d0a97de717f039fb"
 size = 16198207
@@ -480,6 +485,11 @@ url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 [[tools.opencode]]
 version = "0.9.9"
 backend = "aqua:sst/opencode"
+
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:ace468f66c644b40609b742e00585e1fbd3948f7fc5d41bb8ee42ce8cf5f703e"
+size = 47426237
+url = "https://github.com/sst/opencode/releases/download/v0.9.9/opencode-linux-x64.zip"
 
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:59cf1598aeedb7b0e4b0488cc9065bfc075cbc24516e7768c2f0f726d0018d53"
