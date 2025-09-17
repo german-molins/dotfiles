@@ -372,6 +372,9 @@ backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 [tools.glab.platforms.linux-x64-glab-glab]
 checksum = "blake3:a0c5e2eafac4ff38bd113d0f5226cc962e79ebe658f31d8468b60872ed7840d2"
 
+[tools.glab.platforms.macos-arm64-glab-glab]
+checksum = "blake3:3522bcbfb9bef621395e85bffc69e0b5ef72b4e8f6f461b253f2d12399a40125"
+
 [[tools.hyperfine]]
 version = "1.19.0"
 backend = "aqua:sharkdp/hyperfine"
@@ -482,6 +485,11 @@ backend = "aqua:sst/opencode"
 checksum = "blake3:8e63d9ad72df8fbce17ba30526dc528c07f02ada1b73a454e89be787726e5f36"
 size = 47424592
 url = "https://github.com/sst/opencode/releases/download/v0.9.5/opencode-linux-x64.zip"
+
+[tools.opencode.platforms.macos-arm64]
+checksum = "blake3:3a32aef2da9f531802f73da94701584ebfe491d9c15790997d644658ee81fe95"
+size = 30171623
+url = "https://github.com/sst/opencode/releases/download/v0.9.5/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
