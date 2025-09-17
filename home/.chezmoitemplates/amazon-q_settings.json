@@ -6,5 +6,9 @@
   "chat.enableNotifications": true,
   "inline.enabled": false,
   "telemetry.enabled": false,
-  "mcp.loadedBefore": true
+  "mcp.loadedBefore": true,
+  "chat.enableTodoList": true,
+  "chat.enableKnowledge": true,
+  "chat.enableThinking": true,
+  "chat.enableTangentMode": true
 }
