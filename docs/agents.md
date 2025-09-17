@@ -49,17 +49,8 @@ AZQ is AWS's LLM coding agent with CLI interface.
 
 - **Global Context**: `~/.aws/amazonq/global_context.json` - defines the
 standardized context file paths.
-- **Rules Directory**: `~/.aws/amazonq/rules/`
 - **Profiles**: `~/.aws/amazonq/profiles/`
 - **MCP Config**: `~/.aws/amazonq/mcp.json`
-
-### Context Files
-
-Besides the shared context files, Amazon Q automatically includes context from:
-
-1. Amazon Q specific rules (`~/.aws/amazonq/rules/**/*.md`)
-2. Project-specific files (`.amazonq/rules/**/*.md`)
-3. Project documentation (`README.md`)
 
 ## Comparison
 
