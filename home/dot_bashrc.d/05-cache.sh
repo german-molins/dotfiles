@@ -20,6 +20,7 @@ _evalcache() {
     fi
   done
   if [[ ! -f "$cache_file" ]] || ! $cache_valid; then
+    [[ "${DOTFILES_VERBOSE:-}" == "true" ]] && echo "[evalcache] Refreshing cache for command '$*'" >&2
     rm -f "$cache_file"
     "$@" > "$cache_file"
   fi

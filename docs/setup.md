@@ -12,6 +12,7 @@ Environment variables that determine the templating environment:
 
 | envvar | description | allowed values | default value | on invalid value |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
+| `DOTFILES_VERBOSE` | Enable verbose output for operations | "true", "false" | "false" | Use default |
 | `DOTFILES_PROFILE` | Profile name | "personal", "quantica" | "personal" | Use default |
 | `DOTFILES_APPLY` | Controls if the `--apply` flag is passed during initialization | "true", "false" | "true" | WARNING; Use default |
 | `DOTFILES_GIT_BRANCH` | Git branch or ref to checkout | Any valid git ref | "HEAD" | WARNING; Disable chezmoi apply |
