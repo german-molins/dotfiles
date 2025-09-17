@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+###
+# Stub for 'chat_cli', the executable installed by
+# cargo:aws/amazon-q-developer-cli
+###
+
+exec mise exec -- chat_cli "$@"
