@@ -1,3 +1,2 @@
-alias qchat=amazon-q
-alias azq=amazon-q
-alias q=amazon-q
+# Executable installed by cargo:aws/amazon-q-developer-cli
+alias q=chat_cli

@@ -1,7 +1,3 @@
-[[tools."devbox:amazon-q-cli"]]
-version = "1.13.1"
-backend = "devbox:amazon-q-cli"
-
 [[tools."devbox:dash"]]
 version = "0.5.12"
 backend = "devbox:dash"
