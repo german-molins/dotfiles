@@ -8,17 +8,17 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1758038511-g34c115"
+version = "0.0.1758110495-gd12a92"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
-version = "0.8.2"
+version = "0.8.3"
 backend = "aqua:charmbracelet/crush"
 
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:c4fd98f2081b2ef7cb5042004839438c44a6412d44ec8c8522ed8f8533e8361b"
-size = 16197878
-url = "https://github.com/charmbracelet/crush/releases/download/v0.8.2/crush_0.8.2_Darwin_arm64.tar.gz"
+checksum = "sha256:48797c0b0d607997e17330fb406909807fe566df08a160f4d0a97de717f039fb"
+size = 16198207
+url = "https://github.com/charmbracelet/crush/releases/download/v0.8.3/crush_0.8.3_Darwin_arm64.tar.gz"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
@@ -478,18 +478,13 @@ size = 51094172
 url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.9.5"
+version = "0.9.9"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "blake3:8e63d9ad72df8fbce17ba30526dc528c07f02ada1b73a454e89be787726e5f36"
-size = 47424592
-url = "https://github.com/sst/opencode/releases/download/v0.9.5/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:3a32aef2da9f531802f73da94701584ebfe491d9c15790997d644658ee81fe95"
-size = 30171623
-url = "https://github.com/sst/opencode/releases/download/v0.9.5/opencode-darwin-arm64.zip"
+checksum = "blake3:59cf1598aeedb7b0e4b0488cc9065bfc075cbc24516e7768c2f0f726d0018d53"
+size = 30175689
+url = "https://github.com/sst/opencode/releases/download/v0.9.9/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
