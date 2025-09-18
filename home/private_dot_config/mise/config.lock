@@ -438,23 +438,13 @@ size = 4322131
 url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_arm64.tar.gz"
 
 [[tools.lazygit]]
-version = "0.55.0"
+version = "0.55.1"
 backend = "aqua:jesseduffield/lazygit"
 
-[tools.lazygit.platforms.linux-arm64]
-checksum = "sha256:6730250c140cd02e464f3e49b838deb4422ee61ada3227d4d88bd23fa881b8f0"
-size = 7286208
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.0/lazygit_0.55.0_linux_arm64.tar.gz"
-
-[tools.lazygit.platforms.linux-x64]
-checksum = "sha256:e7c1c2d127ebdb241398f3daf05907a71a0c977ff12beba6b8ebdb069f9dba6a"
-size = 7928753
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.0/lazygit_0.55.0_linux_x86_64.tar.gz"
-
 [tools.lazygit.platforms.macos-arm64]
-checksum = "sha256:a3679901c0618c906424c0f9cf49abb4b687b2c610f47ff344420b9a494becf4"
-size = 7597758
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.0/lazygit_0.55.0_darwin_arm64.tar.gz"
+checksum = "sha256:d5761da15dc95348e4d508ce3245a132a6129dbace866144b24591f2a5c73b8e"
+size = 7598349
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.1/lazygit_0.55.1_darwin_arm64.tar.gz"
 
 [[tools.neovim]]
 version = "0.11.4"
