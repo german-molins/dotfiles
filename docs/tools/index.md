@@ -18,7 +18,6 @@ These are my daily CLI drivers:
 | [Usage](https://usage.jdx.dev/) | `usage` | | Polyglot script CLI manager |
 | [Devpod](https://devpod.sh/) | `devpod` | | Devcontainer manager |
 | [Zellij](https://zellij.dev/) | `zellij` | `z{e,r}{,f,i}` | Terminal workspaces |
-| [Tmux](https://github.com/tmux/tmux) | `tmux` | | Terminal multiplexer |
 | [Zoxide](https://github.com/ajeetdsouza/zoxide) | `zoxide` | `cd`, `cdi` | Smarter `cd` |
 | [Atuin](https://atuin.sh/) | `atuin` | | Shell history manager |
 | [Carapace](https://carapace-sh.github.io/carapace-bin/) | `carapace` | | Shell completion |
@@ -71,6 +70,14 @@ External LLM service providers:
 | [mdnstool](https://github.com/ghetzel/mdnstool) | `mdnstool` | `mdns` | mDNS utility |
 | [somo](https://github.com/theopfr/somo/) | `somo` | | Socket and port monitoring |
 | [cosign](https://github.com/sigstore/cosign) | `cosign` | | Signing and verifying packages |
+
+### Fallback Apps
+
+The following apps are not installed by default but have configuration available:
+
+| App | Installed | Configuration |
+|-----|-----------|---------------|
+| tmux | No | Yes |
 
 ## Package Registries
 

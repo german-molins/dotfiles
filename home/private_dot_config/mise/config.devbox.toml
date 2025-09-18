@@ -2,7 +2,6 @@
 "devbox:dos2unix" = "latest"
 "devbox:gawk" = "latest"
 "devbox:git" = "latest"
-"devbox:tmux" = "latest"
 "devbox:xsel" = "latest"
 "devbox:rsync" = "latest"
 "devbox:rcs" = "latest"

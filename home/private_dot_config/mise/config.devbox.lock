@@ -86,10 +86,6 @@ backend = "devbox:taskwarrior-tui"
 version = "1.8.0"
 backend = "devbox:timewarrior"
 
-[[tools."devbox:tmux"]]
-version = "3.2a"
-backend = "devbox:tmux"
-
 [[tools."devbox:tzdata"]]
 version = "2025b"
 backend = "devbox:tzdata"
