@@ -15,6 +15,11 @@ backend = "npm:@sourcegraph/amp"
 version = "0.9.0"
 backend = "aqua:charmbracelet/crush"
 
+[tools."aqua:charmbracelet/crush".platforms.linux-x64]
+checksum = "sha256:6cad74d15cd36694ad3fb791c90df61a208a61063168a4dca0c4197783443f58"
+size = 16815054
+url = "https://github.com/charmbracelet/crush/releases/download/v0.9.0/crush_0.9.0_Linux_x86_64.tar.gz"
+
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
 checksum = "sha256:13a4c6222c9513f35f259af61c3aaaf0959ed7a5923cddc3aeaae2afb5aac6b2"
 size = 16174174
@@ -356,6 +361,9 @@ url = "https://github.com/tstack/lnav/releases/download/v0.13.1/lnav-0.13.1-aarc
 version = "1.72.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
+[tools.glab.platforms.linux-x64-glab-glab]
+checksum = "blake3:b2688769781bbd03ce08270dc68bf4a8fc9256abfac89b92e7d8bbe09a426fbd"
+
 [tools.glab.platforms.macos-arm64-glab-glab]
 checksum = "blake3:68401823b284e38417b3c53d54dfb93ee69522c467db6a89f3043a395f58ba27"
 
@@ -413,6 +421,11 @@ url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/laz
 [[tools.lazygit]]
 version = "0.55.1"
 backend = "aqua:jesseduffield/lazygit"
+
+[tools.lazygit.platforms.linux-x64]
+checksum = "sha256:6385a699dde302b7fdcd1cc8910ae225ed0c19a230285569c586051576f0d6a3"
+size = 7929493
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.1/lazygit_0.55.1_linux_x86_64.tar.gz"
 
 [tools.lazygit.platforms.macos-arm64]
 checksum = "sha256:d5761da15dc95348e4d508ce3245a132a6129dbace866144b24591f2a5c73b8e"
