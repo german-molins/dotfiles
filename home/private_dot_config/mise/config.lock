@@ -43,15 +43,6 @@ checksum = "blake3:c9105b081aaa36854eea38606f664b6b960ee6c7edf8af135993a3909989e
 size = 5916903
 url = "https://github.com/gitui-org/gitui/releases/download/v0.27.0/gitui-linux-aarch64.tar.gz"
 
-[[tools."aqua:ip7z/7zip"]]
-version = "25.01"
-backend = "aqua:ip7z/7zip"
-
-[tools."aqua:ip7z/7zip".platforms.linux-arm64]
-checksum = "blake3:f170e6f1587086fe89f759e4f2846a2bd1420b57435612cee8ac85f506de0cc6"
-size = 1326736
-url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-linux-arm64.tar.xz"
-
 [[tools."aqua:jorgerojas26/lazysql"]]
 version = "0.4.1"
 backend = "aqua:jorgerojas26/lazysql"
@@ -151,10 +142,6 @@ url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.5/ca
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
 backend = "cargo:diffutils"
-
-[[tools."cargo:findutils"]]
-version = "0.8.0"
-backend = "cargo:findutils"
 
 [[tools."cargo:git-graph"]]
 version = "0.6.0"
@@ -372,15 +359,6 @@ backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 [tools.glab.platforms.macos-arm64-glab-glab]
 checksum = "blake3:68401823b284e38417b3c53d54dfb93ee69522c467db6a89f3043a395f58ba27"
 
-[[tools.hyperfine]]
-version = "1.19.0"
-backend = "aqua:sharkdp/hyperfine"
-
-[tools.hyperfine.platforms.linux-arm64]
-checksum = "blake3:bccb6f93e3d216586b299cb42e0b81f683ef1dd45fcc11dd7fb804652ce0a56a"
-size = 605877
-url = "https://github.com/sharkdp/hyperfine/releases/download/v1.19.0/hyperfine-v1.19.0-aarch64-unknown-linux-gnu.tar.gz"
-
 [[tools.jj]]
 version = "0.33.0"
 backend = "aqua:jj-vcs/jj"
@@ -549,15 +527,6 @@ url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree
 checksum = "blake3:924988b10a157dad5d03184dacee61e1d8fb1a9f542f431cda484c5ed7910a7d"
 size = 5919571
 url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree-sitter-macos-arm64.gz"
-
-[[tools.tssh]]
-version = "0.1.22"
-backend = "aqua:trzsz/trzsz-ssh"
-
-[tools.tssh.platforms.linux-arm64]
-checksum = "sha256:ecc3efd021a1932c1d61dc76d36cac0f2e1bd1c0ea8c6634f9521a36f388c301"
-size = 4742242
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.22/tssh_0.1.22_linux_aarch64.tar.gz"
 
 [[tools.upt]]
 version = "0.9.0"

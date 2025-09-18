@@ -1,7 +1,38 @@
+[[tools."aqua:ip7z/7zip"]]
+version = "25.01"
+backend = "aqua:ip7z/7zip"
+
+[tools."aqua:ip7z/7zip".platforms.linux-arm64]
+checksum = "blake3:f170e6f1587086fe89f759e4f2846a2bd1420b57435612cee8ac85f506de0cc6"
+size = 1326736
+url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-linux-arm64.tar.xz"
+
 [[tools."cargo:aws/amazon-q-developer-cli"]]
 version = "tag:v1.16.1"
 backend = "cargo:aws/amazon-q-developer-cli"
 
+[[tools."cargo:findutils"]]
+version = "0.8.0"
+backend = "cargo:findutils"
+
 [[tools.ffmpeg]]
 version = "8.0"
 backend = "asdf:ffmpeg"
+
+[[tools.hyperfine]]
+version = "1.19.0"
+backend = "aqua:sharkdp/hyperfine"
+
+[tools.hyperfine.platforms.linux-arm64]
+checksum = "blake3:bccb6f93e3d216586b299cb42e0b81f683ef1dd45fcc11dd7fb804652ce0a56a"
+size = 605877
+url = "https://github.com/sharkdp/hyperfine/releases/download/v1.19.0/hyperfine-v1.19.0-aarch64-unknown-linux-gnu.tar.gz"
+
+[[tools.tssh]]
+version = "0.1.22"
+backend = "aqua:trzsz/trzsz-ssh"
+
+[tools.tssh.platforms.linux-arm64]
+checksum = "sha256:ecc3efd021a1932c1d61dc76d36cac0f2e1bd1c0ea8c6634f9521a36f388c301"
+size = 4742242
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.22/tssh_0.1.22_linux_aarch64.tar.gz"

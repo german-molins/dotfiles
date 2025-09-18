@@ -1,3 +1,7 @@
 [tools]
+"aqua:ip7z/7zip" = "latest"
+"cargo:findutils" = "latest"
+hyperfine = "latest"
+tssh = "latest"
 "cargo:aws/amazon-q-developer-cli" = "tag:v1.16.1"
 ffmpeg = "latest"
