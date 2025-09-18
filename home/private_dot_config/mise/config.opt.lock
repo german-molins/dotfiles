@@ -1,5 +1,5 @@
 [[tools."cargo:aws/amazon-q-developer-cli"]]
-version = "tag:v1.16.0"
+version = "tag:v1.16.1"
 backend = "cargo:aws/amazon-q-developer-cli"
 
 [[tools.ffmpeg]]
