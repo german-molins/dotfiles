@@ -8,22 +8,17 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1758168207-gd06c97"
+version = "0.0.1758211304-g9709b6"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
-version = "0.8.3"
+version = "0.9.0"
 backend = "aqua:charmbracelet/crush"
 
-[tools."aqua:charmbracelet/crush".platforms.linux-x64]
-checksum = "sha256:28598d23302416974d3181c4b76d29962f9b0645c5d62352d8cf17fd455773c0"
-size = 16815141
-url = "https://github.com/charmbracelet/crush/releases/download/v0.8.3/crush_0.8.3_Linux_x86_64.tar.gz"
-
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:48797c0b0d607997e17330fb406909807fe566df08a160f4d0a97de717f039fb"
-size = 16198207
-url = "https://github.com/charmbracelet/crush/releases/download/v0.8.3/crush_0.8.3_Darwin_arm64.tar.gz"
+checksum = "sha256:13a4c6222c9513f35f259af61c3aaaf0959ed7a5923cddc3aeaae2afb5aac6b2"
+size = 16174174
+url = "https://github.com/charmbracelet/crush/releases/download/v0.9.0/crush_0.9.0_Darwin_arm64.tar.gz"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
