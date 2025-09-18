@@ -21,6 +21,40 @@ environments
 - **Modular bash**: `home/dot_bashrc.d/NN-name.sh` numbered 10-90 for load
 order
 
+## Mise Configuration
+
+This repository uses Mise as the primary package and environment manager. There are two distinct Mise configurations to avoid confusion:
+
+### Local Mise Configuration (Project)
+
+- **Location**: `mise.toml` in the repository root
+- **Purpose**: Manages tools and tasks specific to this dotfiles project
+- **Tasks**: Documentation generation, build tasks
+- **Terminology**: Referred to as "local" mise config
+
+### Global Mise Configuration (System)
+
+- **Location**: `home/private_dot_config/mise/config.toml` (Chezmoi source directory)
+- **Purpose**: Manages user-wide tools and environments
+- **Tools**: Extensive list of CLI tools, editors, and utilities
+- **Environments**:
+  - `devbox`: Packages using `mise-nix` backend (Nixhub registry)
+  - `opt`: Optional/heavy packages
+- **Activation**: Controlled by `MISE_ENV` environment variable (default: "devbox,opt")
+- **Terminology**: Referred to as "global" mise config
+
+For more details on Mise, see [docs/tools/mise.md](docs/tools/mise.md).
+
+## Dotfiles Repository Structure
+
+- **Chezmoi Source Directory**: `home/` contains all typical configuration
+files.
+- **Chezmoi Target Directory**: Files are applied to `$HOME` by Chezmoi
+
+**Important**: When discussing changes to configuration files, always refer to
+the Chezmoi source directory (`home/`) rather than the target locations in
+`$HOME`. This repository is the source for dotfiles managed by Chezmoi.
+
 ## Code Style & Conventions
 
 - **Bash scripts**: 4-space indentation, `shfmt` formatting, snake_case
