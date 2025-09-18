@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1758110495-gd12a92"
+version = "0.0.1758168207-gd06c97"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
@@ -288,7 +288,7 @@ size = 1658005
 url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-darwin_arm64.tar.gz"
 
 [[tools.gemini-cli]]
-version = "0.4.1"
+version = "0.5.3"
 backend = "npm:@google/gemini-cli"
 
 [[tools.gh]]
@@ -371,14 +371,11 @@ size = 12480851
 url = "https://github.com/tstack/lnav/releases/download/v0.13.1/lnav-0.13.1-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.71.2"
+version = "1.72.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
-[tools.glab.platforms.linux-x64-glab-glab]
-checksum = "blake3:a0c5e2eafac4ff38bd113d0f5226cc962e79ebe658f31d8468b60872ed7840d2"
-
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:3522bcbfb9bef621395e85bffc69e0b5ef72b4e8f6f461b253f2d12399a40125"
+checksum = "blake3:68401823b284e38417b3c53d54dfb93ee69522c467db6a89f3043a395f58ba27"
 
 [[tools.hyperfine]]
 version = "1.19.0"
@@ -483,7 +480,7 @@ size = 51094172
 url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.9.9"
+version = "0.9.11"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
@@ -492,9 +489,9 @@ size = 47426237
 url = "https://github.com/sst/opencode/releases/download/v0.9.9/opencode-linux-x64.zip"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:59cf1598aeedb7b0e4b0488cc9065bfc075cbc24516e7768c2f0f726d0018d53"
-size = 30175689
-url = "https://github.com/sst/opencode/releases/download/v0.9.9/opencode-darwin-arm64.zip"
+checksum = "blake3:86bd8a22cfb236894d25168efed8e747d2e969e05453f74bb1865ed58711104a"
+size = 30175647
+url = "https://github.com/sst/opencode/releases/download/v0.9.11/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
@@ -592,7 +589,7 @@ backend = "ubi:jdx/usage"
 checksum = "blake3:859e0e42b42c05d2a9d841a8c9140fcfd89c8a1ec18c88eca510e029894e038d"
 
 [[tools.uv]]
-version = "0.8.17"
+version = "0.8.18"
 backend = "asdf:uv"
 
 [[tools.xh]]
