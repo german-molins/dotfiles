@@ -1,6 +1,5 @@
 [tools]
 aichat = "latest"
-amp = "latest"
 "aqua:dlvhdr/gh-dash" = "latest"
 "aqua:jorgerojas26/lazysql" = "latest"
 "aqua:zk-org/zk" = "latest"
