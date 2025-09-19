@@ -15,7 +15,7 @@ Environment variables (managed by mise):
 hierarchy, where the owner may refer to a user or an organization.
 - `sandbox/*/`: Playground for any kind of bounded trial or draft.
 - `~/.cache/dotfiles/`: Custom dotfiles caches for performance optimizations
-(see e.g. [Bash caching](../tools/bash.md#startup-caching-optimizations)).
+(see e.g. [Bash caching](tools/bash.md#startup-caching-optimizations)).
 
 ## Fonts
 
