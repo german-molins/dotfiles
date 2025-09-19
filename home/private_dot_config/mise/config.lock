@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1758211304-g9709b6"
+version = "0.0.1758268900-g3eb628"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:charmbracelet/crush"]]
@@ -275,7 +275,7 @@ size = 1658005
 url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-darwin_arm64.tar.gz"
 
 [[tools.gemini-cli]]
-version = "0.5.3"
+version = "0.5.4"
 backend = "npm:@google/gemini-cli"
 
 [[tools.gh]]
@@ -456,18 +456,13 @@ size = 51094172
 url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.9.11"
+version = "0.10.0"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "blake3:ace468f66c644b40609b742e00585e1fbd3948f7fc5d41bb8ee42ce8cf5f703e"
-size = 47426237
-url = "https://github.com/sst/opencode/releases/download/v0.9.9/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:86bd8a22cfb236894d25168efed8e747d2e969e05453f74bb1865ed58711104a"
-size = 30175647
-url = "https://github.com/sst/opencode/releases/download/v0.9.11/opencode-darwin-arm64.zip"
+checksum = "blake3:d96fd8e22f03af1595edb00ee54e7c031ed6450e98b2aa7e24a4dcb26112000f"
+size = 30172006
+url = "https://github.com/sst/opencode/releases/download/v0.10.0/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
@@ -519,7 +514,7 @@ size = 2047405
 url = "https://github.com/BurntSushi/ripgrep/releases/download/14.1.1/ripgrep-14.1.1-aarch64-unknown-linux-gnu.tar.gz"
 
 [[tools.rust]]
-version = "1.89.0"
+version = "1.90.0"
 backend = "core:rust"
 
 [[tools.tree-sitter]]
