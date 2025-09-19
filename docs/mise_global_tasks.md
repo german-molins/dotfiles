@@ -1,3 +1,9 @@
+## `bash:clean`
+
+- **Usage**: `bash:clean`
+
+Clean bash startup caches
+
 ## `bash:profile`
 
 - **Usage**: `bash:profile`
