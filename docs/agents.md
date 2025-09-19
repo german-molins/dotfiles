@@ -19,10 +19,10 @@ for subdirectories.
 Several Model Context Protocol (MCP)
 servers are configured to enhance coding assistants capabilities:
 
-| Name | Type | Protocol | Description |
-|------|------|----------|-------------|
-| [Context7](https://context7.com) | remote | http | Provides up-to-date, version-specific documentation and code examples directly from source repositories |
-| [Mise MCP](https://mise.jdx.dev/mcp.html) | local | stdio | Exposes mise-managed development environment information |
+| Name | Type | Protocol | API Key | Description |
+|------|------|----------|---------|-------------|
+| [Context7](https://context7.com) | remote | http | `CONTEXT7_API_KEY` | Up-to-date, version-specific documentation and code examples directly from source repositories |
+| [Mise MCP](https://mise.jdx.dev/mcp.html) | local | stdio | - | Exposes mise-managed development environment information |
 
 ## Amazon Q Developer
 
