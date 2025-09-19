@@ -5,6 +5,9 @@ export default defineConfig({
   description: "Personal development environment",
   base: '/dotfiles/',
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Documentation', link: '/welcome' }
