@@ -443,18 +443,13 @@ size = 51094172
 url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.10.2"
+version = "0.10.3"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "blake3:e0bdc21516b5e928506f15560dfab44d9864b92cf6e73c915c92962899120cf6"
-size = 47423964
-url = "https://github.com/sst/opencode/releases/download/v0.10.2/opencode-linux-x64.zip"
-
-[tools.opencode.platforms.macos-arm64]
-checksum = "blake3:5ee73bd801b07047da66b6009fdbbb333f9d9cfe623d046c8ebbd44740d52fe7"
-size = 30170647
-url = "https://github.com/sst/opencode/releases/download/v0.10.2/opencode-darwin-arm64.zip"
+checksum = "blake3:dd6770ece4b636349898c5206172c958d5dc8f5dfecce7f6ed810f7dfe19fc1c"
+size = 47424142
+url = "https://github.com/sst/opencode/releases/download/v0.10.3/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
@@ -483,18 +478,13 @@ size = 2810401
 url = "https://github.com/jdx/pitchfork/releases/download/v0.1.5/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [[tools.pnpm]]
-version = "10.16.1"
+version = "10.17.0"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm.platforms.linux-x64]
-checksum = "blake3:8056959ec23513dbbdced7c7bc3ca51fc54717418d425fdb6b5d60e4075f0d70"
-size = 65957057
-url = "https://github.com/pnpm/pnpm/releases/download/v10.16.1/pnpm-linux-x64"
-
-[tools.pnpm.platforms.macos-arm64]
-checksum = "blake3:323003f615d38556a2575e80e321f9617f21f981943af57461d216027bd3a9fc"
-size = 62658736
-url = "https://github.com/pnpm/pnpm/releases/download/v10.16.1/pnpm-macos-arm64"
+checksum = "blake3:b9782ee5215848804d6fafdf4cc420973469677945d0c9b6a9729dfc9ace8e35"
+size = 65957681
+url = "https://github.com/pnpm/pnpm/releases/download/v10.17.0/pnpm-linux-x64"
 
 [[tools.ripgrep]]
 version = "14.1.1"
