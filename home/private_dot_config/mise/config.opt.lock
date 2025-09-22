@@ -28,6 +28,15 @@ checksum = "blake3:bccb6f93e3d216586b299cb42e0b81f683ef1dd45fcc11dd7fb804652ce0a
 size = 605877
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.19.0/hyperfine-v1.19.0-aarch64-unknown-linux-gnu.tar.gz"
 
+[[tools.numbat]]
+version = "1.16.0"
+backend = "aqua:sharkdp/numbat"
+
+[tools.numbat.platforms.macos-arm64]
+checksum = "blake3:9822a13603a8effc61ae9b64a68d0cb4e1a2b5fc219739142e19c199371254e9"
+size = 2615002
+url = "https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-aarch64-apple-darwin.tar.gz"
+
 [[tools.tssh]]
 version = "0.1.22"
 backend = "aqua:trzsz/trzsz-ssh"

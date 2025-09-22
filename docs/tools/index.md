@@ -68,6 +68,7 @@ External LLM service providers:
 | [mdnstool](https://github.com/ghetzel/mdnstool) | `mdnstool` | `mdns` | mDNS utility |
 | [somo](https://github.com/theopfr/somo/) | `somo` | | Socket and port monitoring |
 | [cosign](https://github.com/sigstore/cosign) | `cosign` | | Signing and verifying packages |
+| [Numbat](https://numbat.dev) | `numbat` | | Scientific calculator with physical units |
 
 ### Fallback Apps
 
