@@ -443,18 +443,13 @@ size = 51094172
 url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.10.3"
+version = "0.11.1"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "blake3:dd6770ece4b636349898c5206172c958d5dc8f5dfecce7f6ed810f7dfe19fc1c"
-size = 47424142
-url = "https://github.com/sst/opencode/releases/download/v0.10.3/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:0e425d78a0d70bddb1f7f71182a1b3f1648bddae662306372da8ea1b15790f84"
-size = 30170734
-url = "https://github.com/sst/opencode/releases/download/v0.10.3/opencode-darwin-arm64.zip"
+checksum = "blake3:28ca47faab2899357e23fc2e41b2f008cbbc9a27045267105d5a1b9d77d73f60"
+size = 30170449
+url = "https://github.com/sst/opencode/releases/download/v0.11.1/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
