@@ -451,6 +451,11 @@ checksum = "blake3:dd6770ece4b636349898c5206172c958d5dc8f5dfecce7f6ed810f7dfe19f
 size = 47424142
 url = "https://github.com/sst/opencode/releases/download/v0.10.3/opencode-linux-x64.zip"
 
+[tools.opencode.platforms.macos-arm64]
+checksum = "blake3:0e425d78a0d70bddb1f7f71182a1b3f1648bddae662306372da8ea1b15790f84"
+size = 30170734
+url = "https://github.com/sst/opencode/releases/download/v0.10.3/opencode-darwin-arm64.zip"
+
 [[tools.pandoc]]
 version = "3.8"
 backend = "ubi:jgm/pandoc"
@@ -485,6 +490,11 @@ backend = "aqua:pnpm/pnpm"
 checksum = "blake3:b9782ee5215848804d6fafdf4cc420973469677945d0c9b6a9729dfc9ace8e35"
 size = 65957681
 url = "https://github.com/pnpm/pnpm/releases/download/v10.17.0/pnpm-linux-x64"
+
+[tools.pnpm.platforms.macos-arm64]
+checksum = "blake3:40ea44afce8b9696ade950d816e334398b4c4f84460595c0010a519c97b2ded5"
+size = 62659280
+url = "https://github.com/pnpm/pnpm/releases/download/v10.17.0/pnpm-macos-arm64"
 
 [[tools.ripgrep]]
 version = "14.1.1"
