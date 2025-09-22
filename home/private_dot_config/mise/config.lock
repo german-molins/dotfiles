@@ -162,7 +162,7 @@ checksum = "blake3:208cd44e3d11d5aa35c8953e9eaf8936c45e4f882508cecece4838fffeb1b
 checksum = "blake3:9eefa5ddb76d5b098a806811f1d0016f7982fdea0fe789c49435fd9b2dbd24ec"
 
 [[tools.codebuff]]
-version = "1.0.491"
+version = "1.0.492"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
@@ -483,18 +483,13 @@ size = 2810401
 url = "https://github.com/jdx/pitchfork/releases/download/v0.1.5/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [[tools.pnpm]]
-version = "10.17.0"
+version = "10.17.1"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm.platforms.linux-x64]
-checksum = "blake3:b9782ee5215848804d6fafdf4cc420973469677945d0c9b6a9729dfc9ace8e35"
-size = 65957681
-url = "https://github.com/pnpm/pnpm/releases/download/v10.17.0/pnpm-linux-x64"
-
-[tools.pnpm.platforms.macos-arm64]
-checksum = "blake3:40ea44afce8b9696ade950d816e334398b4c4f84460595c0010a519c97b2ded5"
-size = 62659280
-url = "https://github.com/pnpm/pnpm/releases/download/v10.17.0/pnpm-macos-arm64"
+checksum = "blake3:2e22381b1e6af7cc8def6028cad41e2890d71752d6dd8de31da642f429670a3d"
+size = 65959465
+url = "https://github.com/pnpm/pnpm/releases/download/v10.17.1/pnpm-linux-x64"
 
 [[tools.ripgrep]]
 version = "14.1.1"
