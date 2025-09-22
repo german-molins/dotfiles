@@ -446,6 +446,11 @@ url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 version = "0.11.1"
 backend = "aqua:sst/opencode"
 
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:203e7156a76903e94641853c55cda45b689d800a8f227ccbf9868d57c274df53"
+size = 47424854
+url = "https://github.com/sst/opencode/releases/download/v0.11.1/opencode-linux-x64.zip"
+
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:28ca47faab2899357e23fc2e41b2f008cbbc9a27045267105d5a1b9d77d73f60"
 size = 30170449
