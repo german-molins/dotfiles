@@ -510,23 +510,13 @@ version = "1.90.0"
 backend = "core:rust"
 
 [[tools.tree-sitter]]
-version = "0.25.9"
+version = "0.25.10"
 backend = "aqua:tree-sitter/tree-sitter"
 
-[tools.tree-sitter.platforms.linux-arm64]
-checksum = "blake3:d9d1b32035d2161250af4cce89f8862e59af4947702219822270d754f9ccb076"
-size = 3645906
-url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree-sitter-linux-arm64.gz"
-
-[tools.tree-sitter.platforms.linux-x64]
-checksum = "blake3:610065da52184f27562b0747a6109dd8f867249217be90e43e1080e69b91a490"
-size = 6687217
-url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree-sitter-linux-x64.gz"
-
 [tools.tree-sitter.platforms.macos-arm64]
-checksum = "blake3:924988b10a157dad5d03184dacee61e1d8fb1a9f542f431cda484c5ed7910a7d"
-size = 5919571
-url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.9/tree-sitter-macos-arm64.gz"
+checksum = "blake3:d5aa9afa9f9c8f5bec9795ea5a1461539c30ae21586dde1120e688c9c82bc351"
+size = 5938770
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.10/tree-sitter-macos-arm64.gz"
 
 [[tools.upt]]
 version = "0.9.0"
@@ -543,7 +533,7 @@ backend = "ubi:jdx/usage"
 checksum = "blake3:859e0e42b42c05d2a9d841a8c9140fcfd89c8a1ec18c88eca510e029894e038d"
 
 [[tools.uv]]
-version = "0.8.19"
+version = "0.8.20"
 backend = "asdf:uv"
 
 [[tools.xh]]
