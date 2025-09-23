@@ -513,6 +513,11 @@ backend = "core:rust"
 version = "0.25.10"
 backend = "aqua:tree-sitter/tree-sitter"
 
+[tools.tree-sitter.platforms.linux-x64]
+checksum = "blake3:7be7cee5f139c18c1b46143b52dbd2f9c5ebc7459c25e0a26ca3bb74df32735a"
+size = 6521182
+url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.25.10/tree-sitter-linux-x64.gz"
+
 [tools.tree-sitter.platforms.macos-arm64]
 checksum = "blake3:d5aa9afa9f9c8f5bec9795ea5a1461539c30ae21586dde1120e688c9c82bc351"
 size = 5938770
