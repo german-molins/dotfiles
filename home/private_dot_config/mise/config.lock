@@ -491,6 +491,11 @@ checksum = "blake3:2e22381b1e6af7cc8def6028cad41e2890d71752d6dd8de31da642f429670
 size = 65959465
 url = "https://github.com/pnpm/pnpm/releases/download/v10.17.1/pnpm-linux-x64"
 
+[tools.pnpm.platforms.macos-arm64]
+checksum = "blake3:307c16cc53c65c91209fc3ed2901871adc0fb08f4300d3a6dd4cb5c326ee06f5"
+size = 62661104
+url = "https://github.com/pnpm/pnpm/releases/download/v10.17.1/pnpm-macos-arm64"
+
 [[tools.ripgrep]]
 version = "14.1.1"
 backend = "aqua:BurntSushi/ripgrep"
