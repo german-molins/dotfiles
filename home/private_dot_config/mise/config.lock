@@ -11,6 +11,11 @@ url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.
 version = "0.9.3"
 backend = "aqua:charmbracelet/crush"
 
+[tools."aqua:charmbracelet/crush".platforms.linux-x64]
+checksum = "sha256:e920afb955a34521213201047f73236e6400f1fb1907efc9c60c07f5250252e3"
+size = 16898929
+url = "https://github.com/charmbracelet/crush/releases/download/v0.9.3/crush_0.9.3_Linux_x86_64.tar.gz"
+
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
 checksum = "sha256:9038c959383db14cd2e400c04ee8c6e3fad85bd04765039a9d27316ddd000021"
 size = 16255840
@@ -150,6 +155,9 @@ backend = "cargo:tlrc"
 version = "2.65.2"
 backend = "ubi:twpayne/chezmoi"
 
+[tools.chezmoi.platforms.linux-x64-chezmoi]
+checksum = "blake3:5dfec568e6268dddf0bf4c5d4a537dba7de1fc581f24c1eb0ed36e83b2044153"
+
 [tools.chezmoi.platforms.macos-arm64-chezmoi]
 checksum = "blake3:369649a853db70c99fa545652beacc81e02102b9c1511878a10fe1f54e89bf88"
 
@@ -260,6 +268,11 @@ url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-darw
 [[tools.gh]]
 version = "2.80.0"
 backend = "aqua:cli/cli"
+
+[tools.gh.platforms.linux-x64]
+checksum = "sha256:e0afffbf36548194aed8a1bdaf474314857a808b1b1cfa38743e2f4ed6a35b0b"
+size = 18079593
+url = "https://github.com/cli/cli/releases/download/v2.80.0/gh_2.80.0_linux_amd64.tar.gz"
 
 [tools.gh.platforms.macos-arm64]
 checksum = "sha256:4e3567687d714272be3664244c045785573660803eabf41dff9a3a701b39f3b6"
@@ -432,6 +445,11 @@ url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
 [[tools.opencode]]
 version = "0.11.3"
 backend = "aqua:sst/opencode"
+
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:d759ce446ca6e9f13fcfabd25172d44d2d0fc07c3230c07cdccd5b93ff8f0854"
+size = 47423613
+url = "https://github.com/sst/opencode/releases/download/v0.11.3/opencode-linux-x64.zip"
 
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:39f81e3549d36ec71802b1f90fb8bc4c034560bd4cea8ba9aeb77e92b59191ad"
