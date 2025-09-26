@@ -117,18 +117,13 @@ size = 12633887
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.0/carapace-bin_1.5.0_darwin_arm64.tar.gz"
 
 [[tools.cargo-binstall]]
-version = "1.15.5"
+version = "1.15.6"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall.platforms.linux-x64]
-checksum = "blake3:1a5fa23fb172db04713b8acd854227ad5df08480dcc0a2fbd71f4fd93c0693ca"
-size = 6790102
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.5/cargo-binstall-x86_64-unknown-linux-musl.tgz"
-
-[tools.cargo-binstall.platforms.macos-arm64]
-checksum = "blake3:4eff2c4ed16a8864b20b55fbe855821e60dfb633c04e40ab67679a0639f08b2f"
-size = 6004395
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.5/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "blake3:779d104f2f8a3b840a2a56659e3da44f96419d7a5378555b9c3dabe756ac4271"
+size = 6770808
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.6/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -438,13 +433,13 @@ size = 58864014
 url = "https://nodejs.org/dist/v24.9.0/node-v24.9.0-linux-x64.tar.gz"
 
 [[tools.opencode]]
-version = "0.11.4"
+version = "0.12.1"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "blake3:75e1e1ad390873abc04c40289f67895b524fc6f87f2bf216a8207bf67e6423d9"
-size = 47424380
-url = "https://github.com/sst/opencode/releases/download/v0.11.4/opencode-linux-x64.zip"
+checksum = "blake3:5a4a41aa3965b0689db1f70b3f297913f53d5e85dca653d198a63e65cc3f89b6"
+size = 47423507
+url = "https://github.com/sst/opencode/releases/download/v0.12.1/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
