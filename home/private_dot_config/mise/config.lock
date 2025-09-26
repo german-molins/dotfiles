@@ -8,18 +8,13 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools."aqua:charmbracelet/crush"]]
-version = "0.9.3"
+version = "0.10.0"
 backend = "aqua:charmbracelet/crush"
 
 [tools."aqua:charmbracelet/crush".platforms.linux-x64]
-checksum = "sha256:e920afb955a34521213201047f73236e6400f1fb1907efc9c60c07f5250252e3"
-size = 16898929
-url = "https://github.com/charmbracelet/crush/releases/download/v0.9.3/crush_0.9.3_Linux_x86_64.tar.gz"
-
-[tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:9038c959383db14cd2e400c04ee8c6e3fad85bd04765039a9d27316ddd000021"
-size = 16255840
-url = "https://github.com/charmbracelet/crush/releases/download/v0.9.3/crush_0.9.3_Darwin_arm64.tar.gz"
+checksum = "sha256:51f39a62ec6b98ebd40bd7cd302e2b529a5626d4642588e6b0541b3e54161555"
+size = 16898917
+url = "https://github.com/charmbracelet/crush/releases/download/v0.10.0/crush_0.10.0_Linux_x86_64.tar.gz"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
@@ -162,7 +157,7 @@ checksum = "blake3:5dfec568e6268dddf0bf4c5d4a537dba7de1fc581f24c1eb0ed36e83b2044
 checksum = "blake3:369649a853db70c99fa545652beacc81e02102b9c1511878a10fe1f54e89bf88"
 
 [[tools.codebuff]]
-version = "1.0.492"
+version = "1.0.496"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
@@ -434,27 +429,22 @@ size = 9194532
 url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-macos-arm64.tar.gz"
 
 [[tools.node]]
-version = "24.8.0"
+version = "24.9.0"
 backend = "core:node"
 
-[tools.node.platforms.macos-arm64]
-checksum = "sha256:d81191a1866760eb918caa976c023036bc1fc7405ea31b148905211522045767"
-size = 51094172
-url = "https://nodejs.org/dist/v24.8.0/node-v24.8.0-darwin-arm64.tar.gz"
+[tools.node.platforms.linux-x64]
+checksum = "sha256:d57d6c28a35785f58f33899a0aa0bfc83f7a8ef4448b6cf3f7d0961efc7b9189"
+size = 58864014
+url = "https://nodejs.org/dist/v24.9.0/node-v24.9.0-linux-x64.tar.gz"
 
 [[tools.opencode]]
-version = "0.11.3"
+version = "0.11.4"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "blake3:d759ce446ca6e9f13fcfabd25172d44d2d0fc07c3230c07cdccd5b93ff8f0854"
-size = 47423613
-url = "https://github.com/sst/opencode/releases/download/v0.11.3/opencode-linux-x64.zip"
-
-[tools.opencode.platforms.macos-arm64]
-checksum = "blake3:39f81e3549d36ec71802b1f90fb8bc4c034560bd4cea8ba9aeb77e92b59191ad"
-size = 30171956
-url = "https://github.com/sst/opencode/releases/download/v0.11.3/opencode-darwin-arm64.zip"
+checksum = "blake3:75e1e1ad390873abc04c40289f67895b524fc6f87f2bf216a8207bf67e6423d9"
+size = 47424380
+url = "https://github.com/sst/opencode/releases/download/v0.11.4/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8"
