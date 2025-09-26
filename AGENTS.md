@@ -45,6 +45,16 @@ This repository uses Mise as the primary package and environment manager. There 
 
 For more details on Mise, see [docs/tools/mise.md](docs/tools/mise.md).
 
+## Tool Documentation References
+
+For detailed documentation on configured tools, see:
+
+- [Tools Index](docs/tools/index.md): Overview of all tools and apps
+- [Bash](docs/tools/bash.md): Shell configuration and aliases
+- [Git](docs/tools/git.md): Version control setup
+- [Neovim](docs/tools/nvim.md): Editor configuration and plugins
+- [Zk](docs/tools/zk.md): Note-taking setup and integration
+
 ## Dotfiles Repository Structure
 
 - **Chezmoi Source Directory**: `home/` contains all typical configuration
