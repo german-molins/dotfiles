@@ -1,8 +1,8 @@
 return {
   "zk-org/zk-nvim",
   config = function()
-    require("zk").setup({
-      picker = "fzf_lua",
+     require("zk").setup({
+       picker = "snacks_picker",
 
       lsp = {
         config = {
