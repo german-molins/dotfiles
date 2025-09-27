@@ -5,9 +5,9 @@
     "context7": {
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
-       "headers": {
-        "CONTEXT7_API_KEY": {{ env "CONTEXT7_API_KEY" | quote }}
-      },
+        "headers": {
+         "CONTEXT7_API_KEY": {{ env "CONTEXT7_API_KEY" | quote }}
+       },
     },
     "mise": {
       "type": "local",
@@ -17,4 +17,23 @@
       ],
     }
   },
+  "agent": {
+    "scientist": {
+      "mode": "subagent",
+      "description": "Scientific calculator using Numbat for computations with units and constants",
+      "prompt": "{file:./scientist.md}",
+      "tools": {
+        "bash": true,
+        "write": false,
+        "edit": false
+      }
+    }
+  },
+  "command": {
+    "scicalc": {
+      "template": "Calculate: $ARGUMENTS",
+      "description": "Perform scientific calculations with units using Numbat",
+      "agent": "scientist"
+    }
+  }
 }
