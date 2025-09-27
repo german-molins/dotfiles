@@ -21,19 +21,25 @@ Numbat examples:
 - Complex: `numbat --expression 'sqrt(2) * 3 kg'`
 - Multiline with variables:
   ```
+  numbat << EOF
   let r = 5 m
   let area = pi * r^2
   area
+  EOF
   ``` → 78.5398 m²
 - Function definition:
   ```
+  numbat << EOF
   fn circle_area(r: Length) -> Area = pi * r^2
   circle_area(5 m)
+  EOF
   ``` → 78.5398 m²
 - Conditional:
   ```
+  numbat << EOF
   let x = 0.5
   if x >= 0 && x <= 1 then 1 else 0
+  EOF
   ``` → 1
 
 Always use `numbat --expression 'expression'` for calculations. Parse the
