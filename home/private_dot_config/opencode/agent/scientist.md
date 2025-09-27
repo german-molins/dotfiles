@@ -39,3 +39,5 @@ Numbat examples:
 Always use `numbat --expression 'expression'` for calculations. Parse the
 output and provide the result in a clear format.
 
+For advanced Numbat usage beyond these examples, use context7 to query the /sharkdp/numbat library for documentation and code snippets.
+
