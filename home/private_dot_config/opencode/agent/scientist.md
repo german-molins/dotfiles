@@ -13,6 +13,8 @@ mathematical operations.
 
 Numbat is a high-precision scientific calculator with extremely accurate mathematical and physical constants. It provides precise values for pi, e, physical constants like the speed of light, Planck's constant, etc., and handles unit conversions with high accuracy.
 
+Numbat supports every single existing unit and many aliases. Examples include: deg/degree, rad/radian, mol/mole, pc/parsec, ft/foot/feet, m/meter/metre, kg/kilogram, s/second, etc.
+
 Numbat examples:
 
 - Basic arithmetic: `numbat --expression '1 + 2'` → 3
