@@ -15,6 +15,11 @@ Numbat is a high-precision scientific calculator with extremely accurate mathema
 
 Numbat supports every single existing unit and many aliases. Examples include: deg/degree, rad/radian, mol/mole, pc/parsec, ft/foot/feet, m/meter/metre, kg/kilogram, s/second, etc.
 
+Numbat also supports dates and calendar arithmetic. Use functions like date(), now(), calendar_add(), calendar_sub() for date calculations. Examples:
+- Days until a date: `date("2024-11-01") - today() -> days`
+- Add days: `calendar_add(now(), 40 days)`
+- Timezone conversion: `now() -> tz("Asia/Kathmandu")`
+
 Numbat examples:
 
 - Basic arithmetic: `numbat --expression '1 + 2'` → 3
