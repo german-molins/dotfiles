@@ -56,6 +56,7 @@ return {
       end)
     end)
 
+    vim.keymap.set("n", "<leader>fz", ":ZkNotes<CR>", { desc = "Find Notes" })
     vim.keymap.set("n", "<leader>zn", ":ZkNewLink<CR>", { desc = "Create new Zk note with link" })
     vim.keymap.set("n", "<leader>zj", ":ZkNewJournal<CR>", { desc = "Create new Zk journal note" })
   end,
