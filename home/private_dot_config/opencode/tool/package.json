@@ -1,0 +1,13 @@
+{
+  "name": "tool",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^0.12.1"
+  }
+}
