@@ -50,8 +50,8 @@
       }
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-09-25T01:21:52Z",
-      "resolved": "github:NixOS/nixpkgs/e57b3b16ad8758fd681511a078f35c416a8cc939?lastModified=1758763312&narHash=sha256-puBMviZhYlqOdUUgEmMVJpXqC%2FToEqSvkyZ30qQ09xM%3D"
+      "last_modified": "2025-09-28T14:42:27Z",
+      "resolved": "github:NixOS/nixpkgs/647e5c14cbd5067f44ac86b74f014962df460840?lastModified=1759070547&narHash=sha256-JVZl8NaVRYb0%2B381nl7LvPE%2BA774%2FdRpif01FKLrYFQ%3D"
     },
     "nerd-fonts.inconsolata@latest": {
       "last_modified": "2025-09-18T16:33:27Z",
@@ -107,6 +107,15 @@
       "source": "devbox-search",
       "version": "4.0.4",
       "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "2008",
+              "path": "/nix/store/5kyj36g08zq4xi5311fww00b39jcb0bg-procps-1003.1-2008",
+              "default": true
+            }
+          ]
+        },
         "aarch64-linux": {
           "outputs": [
             {
