@@ -11,6 +11,11 @@ url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.
 version = "0.10.2"
 backend = "aqua:charmbracelet/crush"
 
+[tools."aqua:charmbracelet/crush".platforms.linux-x64]
+checksum = "sha256:5cd2c916b4c486df7b706154961e0a1b026c53162254a6a80f6c490a31e66b39"
+size = 16905016
+url = "https://github.com/charmbracelet/crush/releases/download/v0.10.2/crush_0.10.2_Linux_x86_64.tar.gz"
+
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
 checksum = "sha256:fff406b6e5ee84ac8f9126890fdc915095e3a3bcff98efc11688aa0db528b3b4"
 size = 16266456
@@ -533,6 +538,9 @@ checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8b
 [[tools.usage]]
 version = "2.3.1"
 backend = "ubi:jdx/usage"
+
+[tools.usage.platforms.linux-x64-usage]
+checksum = "blake3:fd52cc6e9e9df09ae7686db60c6ff0f02b529f3f4656d92b41b1bc53003f1d29"
 
 [tools.usage.platforms.macos-arm64-usage]
 checksum = "blake3:35cdb14fad4653a005ca1dc0a3500734c5b275b4e86bb96bce9da6fc6925204a"
