@@ -261,18 +261,13 @@ size = 1658005
 url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-darwin_arm64.tar.gz"
 
 [[tools.gh]]
-version = "2.80.0"
+version = "2.81.0"
 backend = "aqua:cli/cli"
 
-[tools.gh.platforms.linux-x64]
-checksum = "sha256:e0afffbf36548194aed8a1bdaf474314857a808b1b1cfa38743e2f4ed6a35b0b"
-size = 18079593
-url = "https://github.com/cli/cli/releases/download/v2.80.0/gh_2.80.0_linux_amd64.tar.gz"
-
 [tools.gh.platforms.macos-arm64]
-checksum = "sha256:4e3567687d714272be3664244c045785573660803eabf41dff9a3a701b39f3b6"
-size = 17561757
-url = "https://github.com/cli/cli/releases/download/v2.80.0/gh_2.80.0_macOS_arm64.zip"
+checksum = "sha256:b0f5a81601291123a25792859f7ca82229c1f1ae05b4b9f1a7e9e8bb63e649d5"
+size = 17559059
+url = "https://github.com/cli/cli/releases/download/v2.81.0/gh_2.81.0_macOS_arm64.zip"
 
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
@@ -443,13 +438,13 @@ size = 51124089
 url = "https://nodejs.org/dist/v24.9.0/node-v24.9.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.13.5"
+version = "0.13.7"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:ee5def3d48d2a4c925ab3a697a19dc5742b9fb10777c3d9911208563be2b27b7"
-size = 30172471
-url = "https://github.com/sst/opencode/releases/download/v0.13.5/opencode-darwin-arm64.zip"
+checksum = "blake3:f69620df61dfbbd44a2b4eec1a06320a90a4399009bb9cf4b45fa253eca15d68"
+size = 30179766
+url = "https://github.com/sst/opencode/releases/download/v0.13.7/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.1"
