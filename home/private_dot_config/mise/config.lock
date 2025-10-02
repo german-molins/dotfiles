@@ -8,18 +8,13 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools."aqua:charmbracelet/crush"]]
-version = "0.10.2"
+version = "0.10.4"
 backend = "aqua:charmbracelet/crush"
 
-[tools."aqua:charmbracelet/crush".platforms.linux-x64]
-checksum = "sha256:5cd2c916b4c486df7b706154961e0a1b026c53162254a6a80f6c490a31e66b39"
-size = 16905016
-url = "https://github.com/charmbracelet/crush/releases/download/v0.10.2/crush_0.10.2_Linux_x86_64.tar.gz"
-
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:fff406b6e5ee84ac8f9126890fdc915095e3a3bcff98efc11688aa0db528b3b4"
-size = 16266456
-url = "https://github.com/charmbracelet/crush/releases/download/v0.10.2/crush_0.10.2_Darwin_arm64.tar.gz"
+checksum = "sha256:2175d11338acbcbf7f911f1db791b7a991fba0a68155dd4d3e6702cf8bbd87ac"
+size = 16281974
+url = "https://github.com/charmbracelet/crush/releases/download/v0.10.4/crush_0.10.4_Darwin_arm64.tar.gz"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.16.2"
@@ -148,7 +143,7 @@ version = "1.2.0"
 backend = "cargo:somo"
 
 [[tools."cargo:tlrc"]]
-version = "1.11.1"
+version = "1.12.0"
 backend = "cargo:tlrc"
 
 [[tools.chezmoi]]
@@ -448,31 +443,20 @@ size = 51124089
 url = "https://nodejs.org/dist/v24.9.0/node-v24.9.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.12.1"
+version = "0.13.5"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "blake3:5a4a41aa3965b0689db1f70b3f297913f53d5e85dca653d198a63e65cc3f89b6"
-size = 47423507
-url = "https://github.com/sst/opencode/releases/download/v0.12.1/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:664e2a5f681f5417733aa1631558f35359e0770da14723c0fa5cbd42c9971099"
-size = 30168187
-url = "https://github.com/sst/opencode/releases/download/v0.12.1/opencode-darwin-arm64.zip"
+checksum = "blake3:ee5def3d48d2a4c925ab3a697a19dc5742b9fb10777c3d9911208563be2b27b7"
+size = 30172471
+url = "https://github.com/sst/opencode/releases/download/v0.13.5/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
-version = "3.8"
+version = "3.8.1"
 backend = "ubi:jgm/pandoc"
 
-[tools.pandoc.platforms.linux-arm64-pandoc]
-checksum = "blake3:60c229e8b97ccb43f10efbc8c7fafdb8cdb7d65c8b45e1de5972d5b833e0742c"
-
-[tools.pandoc.platforms.linux-x64-pandoc]
-checksum = "blake3:83eb3a8ca17605958114fd83e48a1bb00b8cf3cdac22c62d0502dd7bf54ccbb2"
-
 [tools.pandoc.platforms.macos-arm64-pandoc]
-checksum = "blake3:5c9f98c5a3863a63deaa75e5a56651b91bb70d46b2d032bff7c7a7f760b00f27"
+checksum = "blake3:c88a1112dff508190e43b88daa1fd2dd893531e1a4846d8bd5ff83bb09d8684d"
 
 [[tools."pipx:httpie"]]
 version = "3.2.4"
@@ -536,14 +520,11 @@ backend = "ubi:sigoden/upt"
 checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8bb20"
 
 [[tools.usage]]
-version = "2.3.1"
+version = "2.3.2"
 backend = "ubi:jdx/usage"
 
-[tools.usage.platforms.linux-x64-usage]
-checksum = "blake3:fd52cc6e9e9df09ae7686db60c6ff0f02b529f3f4656d92b41b1bc53003f1d29"
-
 [tools.usage.platforms.macos-arm64-usage]
-checksum = "blake3:35cdb14fad4653a005ca1dc0a3500734c5b275b4e86bb96bce9da6fc6925204a"
+checksum = "blake3:2dcd87217718388d8af56addd65640d3c310a6bcf2c03471903e9bd751520f2c"
 
 [[tools.uv]]
 version = "0.8.22"
