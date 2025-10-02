@@ -44,6 +44,11 @@ with the cursor positioned at the last line in insert mode. This relies on the
 - [Gruvbox](https://github.com/ellisonleao/gruvbox.nvim) (default)
 - [NeoSolarized](https://github.com/Tsuzat/NeoSolarized.nvim)
 
+### [Sidekick](https://github.com/folke/sidekick.nvim) (LazyVim extra)
+
+- Copilot Tab completion and next cursor position prediction.
+- Integration with many code assistant CLIs.
+
 ## Project-Local Configuration
 
 Plugin `nvim-config-local` is used to load project-local configuration files.
