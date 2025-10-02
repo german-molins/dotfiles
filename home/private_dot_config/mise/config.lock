@@ -11,6 +11,11 @@ url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.
 version = "0.10.4"
 backend = "aqua:charmbracelet/crush"
 
+[tools."aqua:charmbracelet/crush".platforms.linux-x64]
+checksum = "sha256:ba42c3efdcbd523aac3424691433a3189aaba7606d0005ae5eb556c1fccf8141"
+size = 16920891
+url = "https://github.com/charmbracelet/crush/releases/download/v0.10.4/crush_0.10.4_Linux_x86_64.tar.gz"
+
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
 checksum = "sha256:2175d11338acbcbf7f911f1db791b7a991fba0a68155dd4d3e6702cf8bbd87ac"
 size = 16281974
@@ -264,6 +269,11 @@ url = "https://github.com/junegunn/fzf/releases/download/v0.65.2/fzf-0.65.2-darw
 version = "2.81.0"
 backend = "aqua:cli/cli"
 
+[tools.gh.platforms.linux-x64]
+checksum = "sha256:d507c82e3ae47af875b93472f39e01cbf9f85808ec0a69751e0932a43514d7ff"
+size = 18083696
+url = "https://github.com/cli/cli/releases/download/v2.81.0/gh_2.81.0_linux_amd64.tar.gz"
+
 [tools.gh.platforms.macos-arm64]
 checksum = "sha256:b0f5a81601291123a25792859f7ca82229c1f1ae05b4b9f1a7e9e8bb63e649d5"
 size = 17559059
@@ -441,6 +451,11 @@ url = "https://nodejs.org/dist/v24.9.0/node-v24.9.0-darwin-arm64.tar.gz"
 version = "0.13.7"
 backend = "aqua:sst/opencode"
 
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:a81574d224c64a651235d2f323dff3b3a904177df1332ac6227a734ec53c1e73"
+size = 47431292
+url = "https://github.com/sst/opencode/releases/download/v0.13.7/opencode-linux-x64.zip"
+
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:f69620df61dfbbd44a2b4eec1a06320a90a4399009bb9cf4b45fa253eca15d68"
 size = 30179766
@@ -449,6 +464,9 @@ url = "https://github.com/sst/opencode/releases/download/v0.13.7/opencode-darwin
 [[tools.pandoc]]
 version = "3.8.1"
 backend = "ubi:jgm/pandoc"
+
+[tools.pandoc.platforms.linux-x64-pandoc]
+checksum = "blake3:f9186e126967373fa41dd5c32c98d22d3330042e78c63c41f331fc6115f86a40"
 
 [tools.pandoc.platforms.macos-arm64-pandoc]
 checksum = "blake3:c88a1112dff508190e43b88daa1fd2dd893531e1a4846d8bd5ff83bb09d8684d"
@@ -517,6 +535,9 @@ checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8b
 [[tools.usage]]
 version = "2.3.2"
 backend = "ubi:jdx/usage"
+
+[tools.usage.platforms.linux-x64-usage]
+checksum = "blake3:16e96fa56f855ee30c189a8e48c4ed62e4adea98a582d6243ab33c2a664f878a"
 
 [tools.usage.platforms.macos-arm64-usage]
 checksum = "blake3:2dcd87217718388d8af56addd65640d3c310a6bcf2c03471903e9bd751520f2c"
