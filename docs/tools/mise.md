@@ -125,3 +125,49 @@ completion and tasks docs generation to work, since `mise` already integrates
 `usage`. This is convenient to prevent syntax highlighting, since the `usage`
 shebang breaks it. However, it is necessary for standalone Usage scripts not
 managed by `mise` directly as tasks.
+
+## Managing Multiple Versions of the Same Tool
+
+Mise supports installing several versions of the same tool, with the latest
+taking precedence in activation hooks. The binaries of hidden versions can be
+accessed through `mise which` as shown in the example below:
+
+```sh
+$ mise which node --tool=node@23 --cd="$HOME"
+/Users/user/.local/share/mise/installs/node/23.11.1/bin/node
+
+$ mise which node --cd="$HOME"
+/Users/user/.local/share/mise/installs/node/24.9.0/bin/node
+```
+
+Declare multiple installed versions of the same tool in
+`~/.config/mise/config.toml`:
+
+```toml
+node = ["latest", "23"]
+```
+
+See all the installed versions (global declared and per-project):
+
+```sh
+: mise list|rg node
+node                              19.9.0
+node                              20.13.1
+node                              22.19.0
+node                              23.11.1                 ~/.config/mise/config.toml         23
+node                              24.6.0
+node                              24.7.0
+node                              24.9.0                  ~/.config/mise/config.toml         latest
+```
+
+or
+
+```sh
+: mise tool node
+Backend:            core:node
+Installed Versions: 19.9.0 20.13.1 22.19.0 23.11.1 24.6.0 24.7.0 24.9.0
+Active Version:     24.9.0
+Requested Version:  latest
+Config Source:      ~/.config/mise/config.toml
+Tool Options:       [none]
+```
