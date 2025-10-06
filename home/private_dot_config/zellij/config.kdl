@@ -277,3 +277,4 @@ load_plugins {
 }
  
 default_mode "normal"
+theme "solarized-dark"
