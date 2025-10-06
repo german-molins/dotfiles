@@ -1,4 +1,6 @@
 return {
   "pwntester/octo.nvim",
-  opts = {},
+  opts = {
+    picker = "snacks",
+  },
 }
