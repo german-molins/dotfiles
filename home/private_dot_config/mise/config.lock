@@ -25,6 +25,11 @@ url = "https://github.com/charmbracelet/crush/releases/download/v0.10.4/crush_0.
 version = "4.17.0"
 backend = "aqua:dlvhdr/gh-dash"
 
+[tools."aqua:dlvhdr/gh-dash".platforms.linux-x64]
+checksum = "sha256:3bf8e54e6a340da17281a54c2bc17f357470de3b070e8a356babe6b5b23a4800"
+size = 19574968
+url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.17.0/gh-dash_v4.17.0_linux-amd64"
+
 [tools."aqua:dlvhdr/gh-dash".platforms.macos-arm64]
 checksum = "sha256:e3e0ba68a3632cf75579e84e7eb8682c555bd0c10547ff560aefd067484a5529"
 size = 19446226
@@ -101,6 +106,11 @@ url = "https://github.com/ClementTsang/bottom/releases/download/0.11.1/bottom_aa
 version = "1.5.1"
 backend = "aqua:carapace-sh/carapace-bin"
 
+[tools.carapace.platforms.linux-x64]
+checksum = "sha256:59d0d32e828aad4888fd814fde155ebd84e31427dc6f893b7476e679d6a66d58"
+size = 13467643
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.1/carapace-bin_1.5.1_linux_amd64.tar.gz"
+
 [tools.carapace.platforms.macos-arm64]
 checksum = "sha256:352097457db12e6d13bbf7f2af8646754b33cfeb36b4b7e77df7bd7e72b9b2b7"
 size = 13543048
@@ -167,6 +177,11 @@ url = "https://github.com/uutils/coreutils/releases/download/0.2.2/coreutils-0.2
 [[tools.cosign]]
 version = "2.6.1"
 backend = "aqua:sigstore/cosign"
+
+[tools.cosign.platforms.linux-x64]
+checksum = "sha256:064954c5d8c7e3b28188eee5b1727b31c411550bc5fefd41aa672d3c761d103a"
+size = 155339383
+url = "https://github.com/sigstore/cosign/releases/download/v2.6.1/cosign-linux-amd64"
 
 [tools.cosign.platforms.macos-arm64]
 checksum = "sha256:54047052cf46f40a5c3c95a510db276e164ba77e096aea1ca1b733f770359689"
@@ -277,6 +292,13 @@ url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.1
 version = "0.23.4"
 backend = "github:eza-community/eza"
 
+[tools."github:eza-community/eza".platforms.linux-x64]
+checksum = "blake3:00f5d902dc6aab24f0d7092fc45221b0eefde07c580700276c9b8787fa45a05b"
+name = "eza_x86_64-unknown-linux-gnu.tar.gz"
+size = 1050865
+url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249830"
+
 [tools."github:eza-community/eza".platforms.macos-arm64]
 checksum = "blake3:5e74dc2b667e092a7509f6dfb39beec987e10507632f7858b87135e97d05e1ed"
 size = 7257
@@ -322,6 +344,9 @@ url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarc
 [[tools.glab]]
 version = "1.73.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
+
+[tools.glab.platforms.linux-x64-glab-glab]
+checksum = "blake3:0662f5d063122c1aea3df49a3907052b7e21b84448d5db8e041a32d2060d77dc"
 
 [tools.glab.platforms.macos-arm64-glab-glab]
 checksum = "blake3:8baada68cd1ec438a407b8398136f69cd63b1bbfe7ce3b23231d02f822e0b2db"
@@ -418,6 +443,11 @@ url = "https://nodejs.org/dist/v24.9.0/node-v24.9.0-darwin-arm64.tar.gz"
 version = "0.14.4"
 backend = "aqua:sst/opencode"
 
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:47d3c395e0e18afa29d88d1dcefcb950e412c2f87840f6766df64033e73c80f9"
+size = 47439138
+url = "https://github.com/sst/opencode/releases/download/v0.14.4/opencode-linux-x64.zip"
+
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:2ae9babc6ba8f2d49f2a029db52fc2fc9a61dafde6045e22bdd9f33e42b61f4a"
 size = 30186477
@@ -426,6 +456,9 @@ url = "https://github.com/sst/opencode/releases/download/v0.14.4/opencode-darwin
 [[tools.pandoc]]
 version = "3.8.2"
 backend = "ubi:jgm/pandoc"
+
+[tools.pandoc.platforms.linux-x64-pandoc]
+checksum = "blake3:adaf2662998a19aab26092edf7d1846614f66974c5b9a192e54e2c6fbd0bf82a"
 
 [tools.pandoc.platforms.macos-arm64-pandoc]
 checksum = "blake3:b0861119b7eec8bd89a783677c40f52713a19c022a443cd30bfa728ed34eb77e"
@@ -438,6 +471,11 @@ backend = "pipx:httpie"
 version = "0.2.0"
 backend = "aqua:jdx/pitchfork"
 
+[tools.pitchfork.platforms.linux-x64]
+checksum = "blake3:3633b2ee2627e72aa9c78b65cf668133476219fc3f3d3ee3d02d533cada6395e"
+size = 3079569
+url = "https://github.com/jdx/pitchfork/releases/download/v0.2.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+
 [tools.pitchfork.platforms.macos-arm64]
 checksum = "blake3:93eaa0061fec026210224d8c71d8ca7145e243fe5e9e9580f6c2d00596503183"
 size = 2654766
@@ -446,6 +484,11 @@ url = "https://github.com/jdx/pitchfork/releases/download/v0.2.0/pitchfork-aarch
 [[tools.pnpm]]
 version = "10.18.1"
 backend = "aqua:pnpm/pnpm"
+
+[tools.pnpm.platforms.linux-x64]
+checksum = "blake3:24fa56d3a7956b79e07272b00dcc169cfde8379df314e9ba33b8994438798c80"
+size = 65967869
+url = "https://github.com/pnpm/pnpm/releases/download/v10.18.1/pnpm-linux-x64"
 
 [tools.pnpm.platforms.macos-arm64]
 checksum = "blake3:70d92c5b9ed0d00845828612683f915fefd72444e42bef8f5c23e0b19e3b83d0"
