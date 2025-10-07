@@ -320,14 +320,11 @@ size = 12491104
 url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.72.0"
+version = "1.73.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
-[tools.glab.platforms.linux-x64-glab-glab]
-checksum = "blake3:b2688769781bbd03ce08270dc68bf4a8fc9256abfac89b92e7d8bbe09a426fbd"
-
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:68401823b284e38417b3c53d54dfb93ee69522c467db6a89f3043a395f58ba27"
+checksum = "blake3:8baada68cd1ec438a407b8398136f69cd63b1bbfe7ce3b23231d02f822e0b2db"
 
 [[tools.jj]]
 version = "0.34.0"
@@ -418,45 +415,42 @@ size = 51124089
 url = "https://nodejs.org/dist/v24.9.0/node-v24.9.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.14.1"
+version = "0.14.4"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:e0b4396be4657cca74cf2396b590a282f71b7e34e159507a0fcf732d51f58e6f"
-size = 30182692
-url = "https://github.com/sst/opencode/releases/download/v0.14.1/opencode-darwin-arm64.zip"
+checksum = "blake3:2ae9babc6ba8f2d49f2a029db52fc2fc9a61dafde6045e22bdd9f33e42b61f4a"
+size = 30186477
+url = "https://github.com/sst/opencode/releases/download/v0.14.4/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
-version = "3.8.1"
+version = "3.8.2"
 backend = "ubi:jgm/pandoc"
 
-[tools.pandoc.platforms.linux-x64-pandoc]
-checksum = "blake3:f9186e126967373fa41dd5c32c98d22d3330042e78c63c41f331fc6115f86a40"
-
 [tools.pandoc.platforms.macos-arm64-pandoc]
-checksum = "blake3:c88a1112dff508190e43b88daa1fd2dd893531e1a4846d8bd5ff83bb09d8684d"
+checksum = "blake3:b0861119b7eec8bd89a783677c40f52713a19c022a443cd30bfa728ed34eb77e"
 
 [[tools."pipx:httpie"]]
 version = "3.2.4"
 backend = "pipx:httpie"
 
 [[tools.pitchfork]]
-version = "0.1.5"
+version = "0.2.0"
 backend = "aqua:jdx/pitchfork"
 
-[tools.pitchfork.platforms.linux-arm64]
-checksum = "blake3:865b86fa0d502bbc9ca96019a62d189e5855f9a31308eb0611ce09617b618315"
-size = 2810401
-url = "https://github.com/jdx/pitchfork/releases/download/v0.1.5/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+[tools.pitchfork.platforms.macos-arm64]
+checksum = "blake3:93eaa0061fec026210224d8c71d8ca7145e243fe5e9e9580f6c2d00596503183"
+size = 2654766
+url = "https://github.com/jdx/pitchfork/releases/download/v0.2.0/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [[tools.pnpm]]
-version = "10.18.0"
+version = "10.18.1"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm.platforms.macos-arm64]
-checksum = "blake3:5cf7b120727fd70206dce91b9403d09d1a2d668db2c7f95ed54a2e0b63666fc0"
-size = 62669520
-url = "https://github.com/pnpm/pnpm/releases/download/v10.18.0/pnpm-macos-arm64"
+checksum = "blake3:70d92c5b9ed0d00845828612683f915fefd72444e42bef8f5c23e0b19e3b83d0"
+size = 62669712
+url = "https://github.com/pnpm/pnpm/releases/download/v10.18.1/pnpm-macos-arm64"
 
 [[tools.ripgrep]]
 version = "14.1.1"
@@ -503,7 +497,7 @@ checksum = "blake3:16e96fa56f855ee30c189a8e48c4ed62e4adea98a582d6243ab33c2a664f8
 checksum = "blake3:2dcd87217718388d8af56addd65640d3c310a6bcf2c03471903e9bd751520f2c"
 
 [[tools.uv]]
-version = "0.8.23"
+version = "0.8.24"
 backend = "asdf:uv"
 
 [[tools.xh]]
