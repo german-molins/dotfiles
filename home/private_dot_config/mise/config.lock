@@ -89,32 +89,22 @@ backend = "ubi:sharkdp/bat"
 checksum = "blake3:8ed6417a16273fcb859c46fbaf7e9c7487e06e8e50fcd0c988f8f88ff3d09bcd"
 
 [[tools.bottom]]
-version = "0.11.1"
+version = "0.11.2"
 backend = "aqua:ClementTsang/bottom"
 
-[tools.bottom.platforms.linux-arm64]
-checksum = "blake3:0f078e5ee93c87e00736e99fc8aa33e92f548b21800e13cce11f88747c75d98e"
-size = 1939946
-url = "https://github.com/ClementTsang/bottom/releases/download/0.11.1/bottom_aarch64-unknown-linux-musl.tar.gz"
-
 [tools.bottom.platforms.macos-arm64]
-checksum = "blake3:a4a924b78400e5eb8d14af363837e97b5b289cbd8204691ec9657fb584b385e6"
-size = 1781908
-url = "https://github.com/ClementTsang/bottom/releases/download/0.11.1/bottom_aarch64-apple-darwin.tar.gz"
+checksum = "blake3:28758bbce8abcf4f11ba7b0992ad4cea3ac38430a44042d65270b59f94aa8047"
+size = 1800076
+url = "https://github.com/ClementTsang/bottom/releases/download/0.11.2/bottom_aarch64-apple-darwin.tar.gz"
 
 [[tools.carapace]]
-version = "1.5.1"
+version = "1.5.2"
 backend = "aqua:carapace-sh/carapace-bin"
 
-[tools.carapace.platforms.linux-x64]
-checksum = "sha256:59d0d32e828aad4888fd814fde155ebd84e31427dc6f893b7476e679d6a66d58"
-size = 13467643
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.1/carapace-bin_1.5.1_linux_amd64.tar.gz"
-
 [tools.carapace.platforms.macos-arm64]
-checksum = "sha256:352097457db12e6d13bbf7f2af8646754b33cfeb36b4b7e77df7bd7e72b9b2b7"
-size = 13543048
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.1/carapace-bin_1.5.1_darwin_arm64.tar.gz"
+checksum = "sha256:6f8d5d3e1d151d402d120d0f938b92ad6ab13c33262dba3175915dd89d3e3733"
+size = 13391261
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.2/carapace-bin_1.5.2_darwin_arm64.tar.gz"
 
 [[tools.cargo-binstall]]
 version = "1.15.6"
@@ -175,18 +165,13 @@ size = 4418677
 url = "https://github.com/uutils/coreutils/releases/download/0.2.2/coreutils-0.2.2-aarch64-apple-darwin.tar.gz"
 
 [[tools.cosign]]
-version = "2.6.1"
+version = "3.0.1"
 backend = "aqua:sigstore/cosign"
 
-[tools.cosign.platforms.linux-x64]
-checksum = "sha256:064954c5d8c7e3b28188eee5b1727b31c411550bc5fefd41aa672d3c761d103a"
-size = 155339383
-url = "https://github.com/sigstore/cosign/releases/download/v2.6.1/cosign-linux-amd64"
-
 [tools.cosign.platforms.macos-arm64]
-checksum = "sha256:54047052cf46f40a5c3c95a510db276e164ba77e096aea1ca1b733f770359689"
-size = 154611874
-url = "https://github.com/sigstore/cosign/releases/download/v2.6.1/cosign-darwin-arm64"
+checksum = "sha256:dad2a161d91fba199d1ebae7e5652a4c2dd412cbb1ab6b4cc8ad6a15378319fe"
+size = 154681746
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.1/cosign-darwin-arm64"
 
 [[tools.direnv]]
 version = "2.37.1"
@@ -440,18 +425,13 @@ size = 51124089
 url = "https://nodejs.org/dist/v24.9.0/node-v24.9.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.14.4"
+version = "0.14.6"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "blake3:47d3c395e0e18afa29d88d1dcefcb950e412c2f87840f6766df64033e73c80f9"
-size = 47439138
-url = "https://github.com/sst/opencode/releases/download/v0.14.4/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:2ae9babc6ba8f2d49f2a029db52fc2fc9a61dafde6045e22bdd9f33e42b61f4a"
-size = 30186477
-url = "https://github.com/sst/opencode/releases/download/v0.14.4/opencode-darwin-arm64.zip"
+checksum = "blake3:45fee06d67722ac85aa7d9c086a16692b1b77d38efe77489b3e79b7c03f4f49d"
+size = 30191015
+url = "https://github.com/sst/opencode/releases/download/v0.14.6/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2"
@@ -540,7 +520,7 @@ checksum = "blake3:16e96fa56f855ee30c189a8e48c4ed62e4adea98a582d6243ab33c2a664f8
 checksum = "blake3:2dcd87217718388d8af56addd65640d3c310a6bcf2c03471903e9bd751520f2c"
 
 [[tools.uv]]
-version = "0.8.24"
+version = "0.9.0"
 backend = "asdf:uv"
 
 [[tools.xh]]
