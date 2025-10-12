@@ -411,6 +411,15 @@ checksum = "sha256:d5761da15dc95348e4d508ce3245a132a6129dbace866144b24591f2a5c73
 size = 7598349
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.1/lazygit_0.55.1_darwin_arm64.tar.gz"
 
+[[tools.lazyssh]]
+version = "0.3.0"
+backend = "aqua:Adembc/lazyssh"
+
+[tools.lazyssh.platforms.macos-arm64]
+checksum = "sha256:43163742c109e73f2b71db682fe04fb25dac23e132edd6cf93752b26b408e8c8"
+size = 4824315
+url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Darwin_arm64.tar.gz"
+
 [[tools.neovim]]
 version = "0.11.4"
 backend = "aqua:neovim/neovim"

@@ -54,6 +54,7 @@ codebuff = "latest"
 jjui = "latest"
 jj = "latest"
 "github:eza-community/eza" = "latest"
+lazyssh = "latest"
 
 [settings]
 experimental = true
