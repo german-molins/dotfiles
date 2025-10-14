@@ -23,6 +23,13 @@ backend = "asdf:ffmpeg"
 version = "0.2.4"
 backend = "github:mat2cc/redis_tui"
 
+[tools."github:mat2cc/redis_tui".platforms.linux-x64]
+checksum = "blake3:4e3c57ee8dacfcb9fbf1483859f87e003376d6336e3066eb7f2b23192cd8f917"
+name = "redis_tui_Linux_x86_64.tar.gz"
+size = 4454249
+url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948148"
+
 [[tools.hyperfine]]
 version = "1.19.0"
 backend = "aqua:sharkdp/hyperfine"

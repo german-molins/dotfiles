@@ -11,6 +11,11 @@ url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.
 version = "0.11.0"
 backend = "aqua:charmbracelet/crush"
 
+[tools."aqua:charmbracelet/crush".platforms.linux-x64]
+checksum = "sha256:c2bacab7200a48559ea038cb9d70c564f59938c42e3ff818bf5477d49e8b519a"
+size = 17099251
+url = "https://github.com/charmbracelet/crush/releases/download/v0.11.0/crush_0.11.0_Linux_x86_64.tar.gz"
+
 [tools."aqua:charmbracelet/crush".platforms.macos-arm64]
 checksum = "sha256:303a85392378cdd92690f0b75596ad014f57ddcfe54fba2a5e5068485c65a881"
 size = 16455168
@@ -19,6 +24,11 @@ url = "https://github.com/charmbracelet/crush/releases/download/v0.11.0/crush_0.
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.18.0"
 backend = "aqua:dlvhdr/gh-dash"
+
+[tools."aqua:dlvhdr/gh-dash".platforms.linux-x64]
+checksum = "sha256:272eb67ab8f0bbbd2fe96ebeaf9684b86a6fdf95ebdf3e2495b1da8ac0b2c98b"
+size = 19554488
+url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.18.0/gh-dash_v4.18.0_linux-amd64"
 
 [tools."aqua:dlvhdr/gh-dash".platforms.macos-arm64]
 checksum = "sha256:4b9f167e9030aee116a0a236d66ff69d52acd227dac8a53b290ece4462787f9a"
@@ -442,6 +452,11 @@ url = "https://nodejs.org/dist/v24.10.0/node-v24.10.0-darwin-arm64.tar.gz"
 [[tools.opencode]]
 version = "0.15.2"
 backend = "aqua:sst/opencode"
+
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:4785aea3cec12b6764edfcdea4b568f919ee5bc7a1cb08eb14b3aac3c2fe5e7c"
+size = 48016167
+url = "https://github.com/sst/opencode/releases/download/v0.15.2/opencode-linux-x64.zip"
 
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:dec61c4eead90adb844823c40e09458c8ce806c50fffddfcb82b3ddd215c69d8"
