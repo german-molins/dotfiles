@@ -55,6 +55,7 @@ jjui = "latest"
 jj = "latest"
 "github:eza-community/eza" = "latest"
 lazyssh = "latest"
+"cargo:lazyjj" = "latest"
 
 [settings]
 experimental = true
