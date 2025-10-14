@@ -10,5 +10,8 @@
   "chat.enableTodoList": true,
   "chat.enableKnowledge": true,
   "chat.enableThinking": true,
-  "chat.enableTangentMode": true
+  "chat.enableTangentMode": true,
+  "chat.enableCheckpoint": true,
+  "chat.enableContextUsageIndicator": true,
+  "chat.enableDelegate": true
 }
