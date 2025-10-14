@@ -17,4 +17,5 @@ packages:
       # virtualise Linux kernel otherwise.
       # - docker
       - db-browser-for-sqlite
+      - another-redis-desktop-manager
       - wireshark-app
