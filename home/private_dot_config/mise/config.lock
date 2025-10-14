@@ -111,6 +111,11 @@ checksum = "sha256:e72aa3faf9b0f48a6931f38519360f6050305b711d3edffa1c382b0ba6b01
 size = 13224626
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.3/carapace-bin_1.5.3_linux_amd64.tar.gz"
 
+[tools.carapace.platforms.macos-arm64]
+checksum = "sha256:df29c65ba25bfee848af767fae993d61585a2e832dbfd3485242405fab53966a"
+size = 13391266
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.3/carapace-bin_1.5.3_darwin_arm64.tar.gz"
+
 [[tools.cargo-binstall]]
 version = "1.15.7"
 backend = "aqua:cargo-bins/cargo-binstall"
@@ -119,6 +124,11 @@ backend = "aqua:cargo-bins/cargo-binstall"
 checksum = "blake3:43c50bfc80bfe55dffeedfae7c43b34121b4fe2aa223b0ced25fa9bbb5f87595"
 size = 6756326
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.7/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+
+[tools.cargo-binstall.platforms.macos-arm64]
+checksum = "blake3:acf19e09f01cea0aac1e714d1ba60b10c2ee0464b70b5a975ccc038ffe6fc554"
+size = 5997740
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.7/cargo-binstall-aarch64-apple-darwin.zip"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -242,6 +252,11 @@ checksum = "sha256:362d5f92187560a87338b427dbe573d1e1bf8b4fb4bab1f44aca6a8f7fe80
 size = 1799208
 url = "https://github.com/junegunn/fzf/releases/download/v0.66.0/fzf-0.66.0-linux_amd64.tar.gz"
 
+[tools.fzf.platforms.macos-arm64]
+checksum = "sha256:b64a9862f30f3d4568c0433dd5a23bc626fa1ede2c6e1a5e8e680bbf96725ea6"
+size = 1747376
+url = "https://github.com/junegunn/fzf/releases/download/v0.66.0/fzf-0.66.0-darwin_arm64.tar.gz"
+
 [[tools.gh]]
 version = "2.81.0"
 backend = "aqua:cli/cli"
@@ -330,6 +345,9 @@ backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 [tools.glab.platforms.linux-x64-glab-glab]
 checksum = "blake3:d1ad7b15eb0214255a35b428d51577e46da57f50e7f54acdc4d18726682c5913"
 
+[tools.glab.platforms.macos-arm64-glab-glab]
+checksum = "blake3:9d0577b0fb9b71b21935bbba11da6936a0251b2d7768290c802759c5ea4a28b0"
+
 [[tools.jj]]
 version = "0.34.0"
 backend = "aqua:jj-vcs/jj"
@@ -347,6 +365,11 @@ backend = "aqua:idursun/jjui"
 checksum = "blake3:d2491ec16d58815c20b8064e23e1d2c992b1b189aebc956304ae44b94fd7e3b7"
 size = 3936179
 url = "https://github.com/idursun/jjui/releases/download/v0.9.4/jjui-0.9.4-linux-amd64.zip"
+
+[tools.jjui.platforms.macos-arm64]
+checksum = "blake3:61631b5597b46dd0bccdf130f8e6356677a8a28ea4572e8d43f6c03cc07f109c"
+size = 3627157
+url = "https://github.com/idursun/jjui/releases/download/v0.9.4/jjui-0.9.4-darwin-arm64.zip"
 
 [[tools.jq]]
 version = "1.8.1"
@@ -417,6 +440,11 @@ checksum = "sha256:2b03c5417ce0b1076780df00e01da373bead3b4b80d1c78c1ad10ee7b918d
 size = 58957192
 url = "https://nodejs.org/dist/v24.10.0/node-v24.10.0-linux-x64.tar.gz"
 
+[tools.node.platforms.macos-arm64]
+checksum = "sha256:fbc3d6e1e1d962450d058e918214373872cc4c46e08673f31c35932afac4a8c5"
+size = 51169103
+url = "https://nodejs.org/dist/v24.10.0/node-v24.10.0-darwin-arm64.tar.gz"
+
 [[tools.opencode]]
 version = "0.15.0"
 backend = "aqua:sst/opencode"
@@ -425,6 +453,11 @@ backend = "aqua:sst/opencode"
 checksum = "blake3:a642bc207405d89a4b9fb65bf24d5d2a97c68de323550c08b2ef3b08e44d1fe8"
 size = 48016834
 url = "https://github.com/sst/opencode/releases/download/v0.15.0/opencode-linux-x64.zip"
+
+[tools.opencode.platforms.macos-arm64]
+checksum = "blake3:42e96f106256224ace00accd256d9d135a9341a20d7ded6dd369b21309dcfd79"
+size = 30644138
+url = "https://github.com/sst/opencode/releases/download/v0.15.0/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2"
@@ -448,6 +481,11 @@ backend = "aqua:jdx/pitchfork"
 checksum = "blake3:ff695dffc593c5069079d879efc8efc53381ceb9e6d924fc2e02c215adbee768"
 size = 3149347
 url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+
+[tools.pitchfork.platforms.macos-arm64]
+checksum = "blake3:ce0eb4d5b6bc60bd66377e263f67abba884da2ec9e185c38d6eefbd9d7fd88aa"
+size = 2749662
+url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [[tools.pnpm]]
 version = "10.18.2"
@@ -542,6 +580,11 @@ backend = "aqua:mikefarah/yq"
 checksum = "blake3:5370c3b6f540df194b6596448cf9b159c34db3a33c7a418ee2f32ac613ec86fd"
 size = 11485368
 url = "https://github.com/mikefarah/yq/releases/download/v4.48.1/yq_linux_amd64"
+
+[tools.yq.platforms.macos-arm64]
+checksum = "blake3:6e0fcb5770ee814265c2d0be03f4328eb443e1b9f07b9ee7be273cd7e59b7fc5"
+size = 10980802
+url = "https://github.com/mikefarah/yq/releases/download/v4.48.1/yq_darwin_arm64"
 
 [[tools.zellij]]
 version = "0.43.1"
