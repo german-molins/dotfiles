@@ -19,6 +19,10 @@ backend = "cargo:findutils"
 version = "8.0"
 backend = "asdf:ffmpeg"
 
+[[tools."github:mat2cc/redis_tui"]]
+version = "0.2.4"
+backend = "github:mat2cc/redis_tui"
+
 [[tools.hyperfine]]
 version = "1.19.0"
 backend = "aqua:sharkdp/hyperfine"
