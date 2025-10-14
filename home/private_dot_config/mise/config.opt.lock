@@ -8,7 +8,7 @@ size = 1326736
 url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-linux-arm64.tar.xz"
 
 [[tools."cargo:aws/amazon-q-developer-cli"]]
-version = "tag:1.18.0"
+version = "tag:1.18.1"
 backend = "cargo:aws/amazon-q-developer-cli"
 
 [[tools."cargo:findutils"]]
