@@ -3,6 +3,6 @@
 "cargo:findutils" = "latest"
 hyperfine = "latest"
 tssh = "latest"
-"cargo:aws/amazon-q-developer-cli" = "tag:v1.17.1"
+"cargo:aws/amazon-q-developer-cli" = "tag:1.18.0"
 ffmpeg = "latest"
 numbat = "latest"
