@@ -38,7 +38,6 @@ VCS:
 | [Git](https://git-scm.com/) | `git` | | Version control system |
 | [Gitui](https://github.com/extrawurst/gitui) | `gitui` | `git ui` | Git manager |
 | [Lazygit](https://github.com/jesseduffield/lazygit) | `lazygit` | `git lazy` | Git manager |
-| [Git Graph](https://github.com/mlange-42/git-graph) | `git-graph` | `git graph` | Git graph visualizer |
 | [GitHub CLI](https://cli.github.com/) | `gh` | | GitHub CLI |
 | [GitHub Dashboard](https://dlvhdr.github.io/gh-dash/) | `gh-dash` | `gh dash` | Pull requests and issues manager |
 | [Jujutsu](https://jj-vcs.github.io) | `jj` | | Git-compatible VCS |

@@ -10,12 +10,12 @@ layout {
   }
   tab name="vcs" focus=true {
     pane stacked=true {
-      pane name="graph" command="git-graph"
-      pane name="lazygit" command="lazygit"
-      pane name="gitui" expanded=true command="bash" {
-        args "-c" "gitui"
-      }
-      pane name="gh" command="gh-dash" start_suspended=true
+        pane name="Jujutsu UI" expanded=true command="jjui" start_suspended=true
+        pane name="Lazygit" command="lazygit"
+        pane name="GitUI" command="bash" {
+          args "-c" "gitui"
+        }
+        pane name="GH Dash" command="gh-dash" start_suspended=true
     }
   }
   tab name="edit" {

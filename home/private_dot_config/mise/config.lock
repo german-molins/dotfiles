@@ -134,10 +134,6 @@ url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.7/ca
 version = "0.4.2"
 backend = "cargo:diffutils"
 
-[[tools."cargo:git-graph"]]
-version = "0.6.0"
-backend = "cargo:git-graph"
-
 [[tools."cargo:lazyjj"]]
 version = "0.5.0"
 backend = "cargo:lazyjj"
