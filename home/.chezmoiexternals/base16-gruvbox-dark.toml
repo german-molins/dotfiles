@@ -1,0 +1,5 @@
+[".config/jjui/themes/base16-gruvbox-dark.toml"]
+type = "file"
+url = "https://raw.githubusercontent.com/vic/tinted-jjui/main/themes/base16-gruvbox-dark.toml"
+refreshPeriod = "168h"
+readonly = true
