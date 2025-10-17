@@ -247,6 +247,11 @@ url = "https://github.com/junegunn/fzf/releases/download/v0.66.0/fzf-0.66.0-darw
 version = "2.82.0"
 backend = "aqua:cli/cli"
 
+[tools.gh.platforms.linux-x64]
+checksum = "sha256:aba32dd552112101464941c7b5ee5f097896e1e234eb99581ff1652f44c4009a"
+size = 18085983
+url = "https://github.com/cli/cli/releases/download/v2.82.0/gh_2.82.0_linux_amd64.tar.gz"
+
 [tools.gh.platforms.macos-arm64]
 checksum = "sha256:c52d24f92858743e7142c0ddbea7ba3679e116062a48f364be8fe6aa6b24e42c"
 size = 17555802
@@ -322,6 +327,9 @@ url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarc
 [[tools.glab]]
 version = "1.74.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
+
+[tools.glab.platforms.linux-x64-glab-glab]
+checksum = "blake3:492cf888d5c1d2377c31c423f5c4d894ac52b4604be9d40bc97106a99dcdaafb"
 
 [tools.glab.platforms.macos-arm64-glab-glab]
 checksum = "blake3:d31447174b138969f19d789c6af39fdd8cec1f97f81e37ecce4b65ae21e65bda"
@@ -413,6 +421,11 @@ url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-macos-arm
 version = "25.0.0"
 backend = "core:node"
 
+[tools.node.platforms.linux-x64]
+checksum = "sha256:28dd46a6733192647d7c8267343f5a3f1c616f773c448e2c0d2539ae70724b40"
+size = 58163068
+url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-linux-x64.tar.gz"
+
 [tools.node.platforms.macos-arm64]
 checksum = "sha256:e3734fe04ebebf5b88cb6e1db770d3fbf736bd861748597ca008ad3d51f165f8"
 size = 52626882
@@ -421,6 +434,11 @@ url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 [[tools.opencode]]
 version = "0.15.7"
 backend = "aqua:sst/opencode"
+
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:88c8c0962f93ae4fe7e3446bfd4772eebd002b4df69e4d6332813aca4e0d2b1e"
+size = 48095509
+url = "https://github.com/sst/opencode/releases/download/v0.15.7/opencode-linux-x64.zip"
 
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:8d84e2434282c2c24e6fde6e1abf11a86ef80081ed6b0801502605d38d94bd1b"
@@ -459,6 +477,11 @@ url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-aarch
 version = "10.18.3"
 backend = "aqua:pnpm/pnpm"
 
+[tools.pnpm.platforms.linux-x64]
+checksum = "blake3:4d3619a2c9951900d508f599b61f66b1380cba820b8e273dc08b808ade9fbcdd"
+size = 65881715
+url = "https://github.com/pnpm/pnpm/releases/download/v10.18.3/pnpm-linux-x64"
+
 [tools.pnpm.platforms.macos-arm64]
 checksum = "blake3:e21e546ad9760548e72d3de6741e1b752f1faa54cb30aebc314764c1e18f4cd7"
 size = 62582528
@@ -467,6 +490,11 @@ url = "https://github.com/pnpm/pnpm/releases/download/v10.18.3/pnpm-macos-arm64"
 [[tools.ripgrep]]
 version = "15.0.0"
 backend = "aqua:BurntSushi/ripgrep"
+
+[tools.ripgrep.platforms.linux-x64]
+checksum = "sha256:253ad0fd5fef0d64cba56c70dccdacc1916d4ed70ad057cc525fcdb0c3bbd2a7"
+size = 2262100
+url = "https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.ripgrep.platforms.macos-arm64]
 checksum = "sha256:98bb2e61e7277ba0ea72d2ae2592497fd8d2940934a16b122448d302a6637e3b"
