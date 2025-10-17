@@ -50,7 +50,6 @@ Coding agents:
 |---|---|---|---|---|
 | [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | OpenRouter | `OPENROUTER_API_KEY` |
 | [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | Paid subscription<br>Free tier subscription | |
-| [Crush](https://github.com/charmbracelet/crush) | `crush` | | OpenRouter | `OPENROUTER_API_KEY` |
 | [Opencode](https://opencode.ai) | `opencode` | `oc` | Opencode Zen<br>OpenRouter | `OPENCODE_API_KEY`<br>`OPENROUTER_API_KEY` |
 | [Codebuff](https://www.codebuff.com) | `codebuff` | | Free tier | |
 

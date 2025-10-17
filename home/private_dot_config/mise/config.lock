@@ -7,15 +7,6 @@ checksum = "blake3:ea7218da4dea9f512a16a7c934cfbe38d6403de5648eb81591b4839e29906
 size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
-[[tools."aqua:charmbracelet/crush"]]
-version = "0.11.2"
-backend = "aqua:charmbracelet/crush"
-
-[tools."aqua:charmbracelet/crush".platforms.macos-arm64]
-checksum = "sha256:847cccd208086759d9c858b914bd3fa453582646aefed20c3b08384b7cfb8678"
-size = 16456492
-url = "https://github.com/charmbracelet/crush/releases/download/v0.11.2/crush_0.11.2_Darwin_arm64.tar.gz"
-
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.18.0"
 backend = "aqua:dlvhdr/gh-dash"
