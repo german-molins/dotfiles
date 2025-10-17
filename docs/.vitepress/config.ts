@@ -37,6 +37,7 @@ export default defineConfig({
               { text: "jjui", link: '/tools/jjui' },
               { text: "Atuin", link: '/tools/atuin' },
               { text: "Neovim", link: '/tools/nvim' },
+              { text: "Zk", link: '/tools/zk' },
               { text: "http", link: '/tools/http' },
               { text: "uutils", link: '/tools/uutils' },
               { text: "tldr", link: '/tools/tldr' },

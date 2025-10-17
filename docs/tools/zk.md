@@ -28,4 +28,6 @@ Templates are located in `home/private_dot_config/zk/templates/` and use Handleb
 
 ### Neovim
 
-See the [zk-nvim section in Neovim docs](tools/nvim.md#zk) for custom commands and keymaps that integrate Zk with Neovim.
+See the [zk-nvim section in Neovim docs](./nvim.md#zk) for custom commands
+and keymaps that integrate Zk with Neovim.
+
