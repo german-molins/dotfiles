@@ -419,18 +419,13 @@ size = 9194532
 url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-macos-arm64.tar.gz"
 
 [[tools.node]]
-version = "24.10.0"
+version = "25.0.0"
 backend = "core:node"
 
-[tools.node.platforms.linux-x64]
-checksum = "sha256:2b03c5417ce0b1076780df00e01da373bead3b4b80d1c78c1ad10ee7b918d90c"
-size = 58957192
-url = "https://nodejs.org/dist/v24.10.0/node-v24.10.0-linux-x64.tar.gz"
-
 [tools.node.platforms.macos-arm64]
-checksum = "sha256:fbc3d6e1e1d962450d058e918214373872cc4c46e08673f31c35932afac4a8c5"
-size = 51169103
-url = "https://nodejs.org/dist/v24.10.0/node-v24.10.0-darwin-arm64.tar.gz"
+checksum = "sha256:e3734fe04ebebf5b88cb6e1db770d3fbf736bd861748597ca008ad3d51f165f8"
+size = 52626882
+url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
 version = "0.15.7"
