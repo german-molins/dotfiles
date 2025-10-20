@@ -140,7 +140,7 @@ backend = "ubi:twpayne/chezmoi"
 checksum = "blake3:e1a62543695924866d7fa46f5790eb3ed41a1d63a9c131143857c1db27c75e0e"
 
 [[tools.codebuff]]
-version = "1.0.501"
+version = "1.0.502"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
