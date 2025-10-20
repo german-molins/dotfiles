@@ -68,11 +68,11 @@ size = 12509150
 url = "https://github.com/atuinsh/atuin/releases/download/v18.8.0/atuin-aarch64-apple-darwin.tar.gz"
 
 [[tools.bat]]
-version = "0.25.0"
+version = "0.26.0"
 backend = "ubi:sharkdp/bat"
 
-[tools.bat.platforms.linux-arm64-bat]
-checksum = "blake3:8ed6417a16273fcb859c46fbaf7e9c7487e06e8e50fcd0c988f8f88ff3d09bcd"
+[tools.bat.platforms.macos-arm64-bat]
+checksum = "blake3:801d41e726a41a95e59a2f2c35930f9bbe4a4a3c1b05717cfea0d105a3e5671e"
 
 [[tools.bottom]]
 version = "0.11.2"
@@ -133,11 +133,11 @@ version = "1.12.0"
 backend = "cargo:tlrc"
 
 [[tools.chezmoi]]
-version = "2.66.0"
+version = "2.66.1"
 backend = "ubi:twpayne/chezmoi"
 
-[tools.chezmoi.platforms.linux-x64-chezmoi]
-checksum = "blake3:a25e8398fe90621b0ee5526b7b45edebc942e132b4cd4ef09efd6c1a46a9c34d"
+[tools.chezmoi.platforms.macos-arm64-chezmoi]
+checksum = "blake3:e1a62543695924866d7fa46f5790eb3ed41a1d63a9c131143857c1db27c75e0e"
 
 [[tools.codebuff]]
 version = "1.0.501"
@@ -432,28 +432,20 @@ size = 52626882
 url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.15.7"
+version = "0.15.8"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "blake3:88c8c0962f93ae4fe7e3446bfd4772eebd002b4df69e4d6332813aca4e0d2b1e"
-size = 48095509
-url = "https://github.com/sst/opencode/releases/download/v0.15.7/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:8d84e2434282c2c24e6fde6e1abf11a86ef80081ed6b0801502605d38d94bd1b"
-size = 30729137
-url = "https://github.com/sst/opencode/releases/download/v0.15.7/opencode-darwin-arm64.zip"
+checksum = "blake3:80b128e60478e86089beddeeaab906d410e74c7c0d8a366b40de710f9064deb7"
+size = 30699972
+url = "https://github.com/sst/opencode/releases/download/v0.15.8/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
-version = "3.8.2"
+version = "3.8.2.1"
 backend = "ubi:jgm/pandoc"
 
-[tools.pandoc.platforms.linux-x64-pandoc]
-checksum = "blake3:adaf2662998a19aab26092edf7d1846614f66974c5b9a192e54e2c6fbd0bf82a"
-
 [tools.pandoc.platforms.macos-arm64-pandoc]
-checksum = "blake3:b0861119b7eec8bd89a783677c40f52713a19c022a443cd30bfa728ed34eb77e"
+checksum = "blake3:bec3817b595ebda4d991d6f625e0018e17607e6b44b4f6ea5df7afd059f6e5c0"
 
 [[tools."pipx:httpie"]]
 version = "3.2.4"
@@ -537,7 +529,7 @@ checksum = "blake3:16e96fa56f855ee30c189a8e48c4ed62e4adea98a582d6243ab33c2a664f8
 checksum = "blake3:2dcd87217718388d8af56addd65640d3c310a6bcf2c03471903e9bd751520f2c"
 
 [[tools.uv]]
-version = "0.9.3"
+version = "0.9.4"
 backend = "asdf:uv"
 
 [[tools.xh]]
