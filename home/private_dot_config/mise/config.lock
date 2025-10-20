@@ -441,7 +441,7 @@ size = 30699972
 url = "https://github.com/sst/opencode/releases/download/v0.15.8/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
-version = "3.8.2.1"
+version = "3.8.2"
 backend = "ubi:jgm/pandoc"
 
 [tools.pandoc.platforms.macos-arm64-pandoc]
