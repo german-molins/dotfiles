@@ -22,7 +22,6 @@ lazydocker = "latest"
 lazygit = "latest"
 neovim = "latest"
 node = "latest"
-pandoc = "latest"
 "pipx:httpie" = "latest"
 pnpm = "latest"
 ripgrep = "latest"
@@ -54,6 +53,7 @@ jj = "latest"
 "github:eza-community/eza" = "latest"
 lazyssh = "latest"
 "cargo:lazyjj" = "latest"
+pandoc = "latest"
 
 [settings]
 experimental = true
