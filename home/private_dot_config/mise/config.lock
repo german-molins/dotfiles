@@ -54,18 +54,13 @@ size = 9688306
 url = "https://github.com/zk-org/zk/releases/download/v0.15.1/zk-v0.15.1-linux-arm64.tar.gz"
 
 [[tools.atuin]]
-version = "18.8.0"
+version = "18.9.0"
 backend = "aqua:atuinsh/atuin"
 
-[tools.atuin.platforms.linux-arm64]
-checksum = "sha256:d6270f44b11ee3aa781a7ba4d9e947e8569e3b8073f3c0eae5e41c4a69d859f4"
-size = 13833762
-url = "https://github.com/atuinsh/atuin/releases/download/v18.8.0/atuin-aarch64-unknown-linux-musl.tar.gz"
-
 [tools.atuin.platforms.macos-arm64]
-checksum = "sha256:639093c091d19077b06b52b098236075feee878f8409858adb1f875986b8c195"
-size = 12509150
-url = "https://github.com/atuinsh/atuin/releases/download/v18.8.0/atuin-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:e68b1e4dfae55bcb29512032638bc65fa2ef8119c02cd7d38e889f7d1a746fbe"
+size = 12496171
+url = "https://github.com/atuinsh/atuin/releases/download/v18.9.0/atuin-aarch64-apple-darwin.tar.gz"
 
 [[tools.bat]]
 version = "0.26.0"
@@ -344,18 +339,13 @@ size = 9570722
 url = "https://github.com/jj-vcs/jj/releases/download/v0.34.0/jj-v0.34.0-x86_64-unknown-linux-musl.tar.gz"
 
 [[tools.jjui]]
-version = "0.9.4"
+version = "0.9.5"
 backend = "aqua:idursun/jjui"
 
-[tools.jjui.platforms.linux-x64]
-checksum = "blake3:d2491ec16d58815c20b8064e23e1d2c992b1b189aebc956304ae44b94fd7e3b7"
-size = 3936179
-url = "https://github.com/idursun/jjui/releases/download/v0.9.4/jjui-0.9.4-linux-amd64.zip"
-
 [tools.jjui.platforms.macos-arm64]
-checksum = "blake3:61631b5597b46dd0bccdf130f8e6356677a8a28ea4572e8d43f6c03cc07f109c"
-size = 3627157
-url = "https://github.com/idursun/jjui/releases/download/v0.9.4/jjui-0.9.4-darwin-arm64.zip"
+checksum = "blake3:cf6757026bc6695fa647d4ed8bd014f68d97aaec3b6dc87c4eeb2be9879f03a3"
+size = 3681659
+url = "https://github.com/idursun/jjui/releases/download/v0.9.5/jjui-0.9.5-darwin-arm64.zip"
 
 [[tools.jq]]
 version = "1.8.1"
@@ -432,13 +422,13 @@ size = 52626882
 url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.15.8"
+version = "0.15.10"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:80b128e60478e86089beddeeaab906d410e74c7c0d8a366b40de710f9064deb7"
-size = 30699972
-url = "https://github.com/sst/opencode/releases/download/v0.15.8/opencode-darwin-arm64.zip"
+checksum = "blake3:96c4ecef98fe709c6a63057764d5d809c06f1e3ad85a57371fedbe5c8e226152"
+size = 30741225
+url = "https://github.com/sst/opencode/releases/download/v0.15.10/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
