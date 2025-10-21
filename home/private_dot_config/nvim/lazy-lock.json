@@ -1,5 +1,5 @@
 {
-  "LazyVim": { "branch": "main", "commit": "561da43c435f330674c9b18bb335be7e1126d928" },
+  "LazyVim": { "branch": "main", "commit": "a65d5d530d372b39a468dfbb2ce633f344770c5c" },
   "NeoSolarized.nvim": { "branch": "master", "commit": "3c55ad358c062aa4879950c4f83b4deeac6b72df" },
   "SchemaStore.nvim": { "branch": "main", "commit": "e71cc0607284739892287f6a2d92753999179dcf" },
   "blink-copilot": { "branch": "main", "commit": "5d35fd07fcc148be20442da1bdd2407e03263d7d" },
