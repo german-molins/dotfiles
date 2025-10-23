@@ -54,6 +54,7 @@ jj = "latest"
 lazyssh = "latest"
 "cargo:lazyjj" = "latest"
 pandoc = "latest"
+amp = "latest"
 
 [settings]
 experimental = true

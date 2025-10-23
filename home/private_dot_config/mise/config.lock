@@ -7,6 +7,10 @@ checksum = "blake3:ea7218da4dea9f512a16a7c934cfbe38d6403de5648eb81591b4839e29906
 size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
+[[tools.amp]]
+version = "0.0.1761220913-ga5c515"
+backend = "npm:@sourcegraph/amp"
+
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.18.0"
 backend = "aqua:dlvhdr/gh-dash"

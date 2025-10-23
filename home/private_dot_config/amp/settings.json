@@ -1,0 +1,23 @@
+{
+  "amp.git.commit.coauthor.enabled": false,
+  "amp.git.commit.ampThread.enabled": false,
+  "amp.updates.autoUpdate.enabled": false,
+  "amp.anthropic.thinking.enabled": true,
+  "amp.tools.disable": [],
+  "amp.commands.allowlist": [
+    "git diff *",
+    "git log *",
+    "git show *",
+    "git status *",
+    "mise tasks --local --extended",
+    "pandoc *"
+  ],
+  "amp.mcpServers": {
+    "mise": {
+      "command": "mise",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}
