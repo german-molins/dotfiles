@@ -61,6 +61,11 @@ url = "https://github.com/zk-org/zk/releases/download/v0.15.1/zk-v0.15.1-linux-a
 version = "18.10.0"
 backend = "aqua:atuinsh/atuin"
 
+[tools.atuin.platforms.linux-x64]
+checksum = "sha256:3bde3af69d9fc88633c43488c6ce3c116c642733d923bbf4c4224108310bd64d"
+size = 14521838
+url = "https://github.com/atuinsh/atuin/releases/download/v18.10.0/atuin-x86_64-unknown-linux-musl.tar.gz"
+
 [tools.atuin.platforms.macos-arm64]
 checksum = "sha256:9ac9618cf57bcfe561d53d0539ffee9b8185286b11f3b330df26fe35d06411f1"
 size = 12523696
@@ -246,6 +251,11 @@ url = "https://github.com/junegunn/fzf/releases/download/v0.66.0/fzf-0.66.0-darw
 version = "2.82.1"
 backend = "aqua:cli/cli"
 
+[tools.gh.platforms.linux-x64]
+checksum = "sha256:afada88676dfccea384e6cc28ae990b3e31bbc55f9d75c4697f902c757fa462b"
+size = 18099610
+url = "https://github.com/cli/cli/releases/download/v2.82.1/gh_2.82.1_linux_amd64.tar.gz"
+
 [tools.gh.platforms.macos-arm64]
 checksum = "sha256:8cf015d101a5a43bbf662155d47ba6242bd1a1630c814e764254efa86e448ba7"
 size = 17577889
@@ -424,6 +434,11 @@ url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 version = "0.15.14"
 backend = "aqua:sst/opencode"
 
+[tools.opencode.platforms.linux-x64]
+checksum = "blake3:429dc5e7c7bcd42681d3cb493f7d51dbfaa4f91c80c35a21ad67f8e0557dff57"
+size = 49948685
+url = "https://github.com/sst/opencode/releases/download/v0.15.14/opencode-linux-x64.zip"
+
 [tools.opencode.platforms.macos-arm64]
 checksum = "blake3:dbd30274a9cbba3967c760de1f1908e27c8e2289a085d0035740d8bcdeeaddd6"
 size = 32620156
@@ -432,6 +447,9 @@ url = "https://github.com/sst/opencode/releases/download/v0.15.14/opencode-darwi
 [[tools.pandoc]]
 version = "3.8.2.1"
 backend = "ubi:jgm/pandoc"
+
+[tools.pandoc.platforms.linux-x64-pandoc]
+checksum = "blake3:db6a97b75ce060ebfc773b4e8bb3739720e81ce1234954059e97af17ef213371"
 
 [[tools."pipx:httpie"]]
 version = "3.2.4"
@@ -455,6 +473,11 @@ url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-aarch
 version = "10.19.0"
 backend = "aqua:pnpm/pnpm"
 
+[tools.pnpm.platforms.linux-x64]
+checksum = "blake3:ca645e33be6759df7e98fb1ad068ac0dc165887af2879c9a3f349a66b40216ef"
+size = 65887453
+url = "https://github.com/pnpm/pnpm/releases/download/v10.19.0/pnpm-linux-x64"
+
 [tools.pnpm.platforms.macos-arm64]
 checksum = "blake3:626ab746013f1f65fc447cd13407e34ba3f7ea0a12bebf06042382629e13dc0b"
 size = 62588240
@@ -463,6 +486,11 @@ url = "https://github.com/pnpm/pnpm/releases/download/v10.19.0/pnpm-macos-arm64"
 [[tools.ripgrep]]
 version = "15.1.0"
 backend = "aqua:BurntSushi/ripgrep"
+
+[tools.ripgrep.platforms.linux-x64]
+checksum = "sha256:1c9297be4a084eea7ecaedf93eb03d058d6faae29bbc57ecdaf5063921491599"
+size = 2263077
+url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.ripgrep.platforms.macos-arm64]
 checksum = "sha256:378e973289176ca0c6054054ee7f631a065874a352bf43f0fa60ef079b6ba715"
@@ -497,6 +525,9 @@ checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8b
 [[tools.usage]]
 version = "2.4.0"
 backend = "ubi:jdx/usage"
+
+[tools.usage.platforms.linux-x64-usage]
+checksum = "blake3:990bda6811e4d8eaece61b2be44f649ba86c3b5217975ea411dcfb7e11dd8987"
 
 [tools.usage.platforms.macos-arm64-usage]
 checksum = "blake3:02be6c309db74d8ff415bc793692080f1f5c0341ae054681144f28fd9154ab23"
