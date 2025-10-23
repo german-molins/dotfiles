@@ -57,10 +57,6 @@ checksum = "blake3:26f804b05f21088e77fe4d2d54f10d7e4089130871c459d29c2741bcde227
 size = 9688306
 url = "https://github.com/zk-org/zk/releases/download/v0.15.1/zk-v0.15.1-linux-arm64.tar.gz"
 
-[[tools.atuin]]
-version = "18.9.0"
-backend = "aqua:atuinsh/atuin"
-
 [[tools.bat]]
 version = "0.26.0"
 backend = "ubi:sharkdp/bat"
@@ -250,6 +246,17 @@ url = "https://github.com/cli/cli/releases/download/v2.82.1/gh_2.82.1_linux_amd6
 checksum = "sha256:8cf015d101a5a43bbf662155d47ba6242bd1a1630c814e764254efa86e448ba7"
 size = 17577889
 url = "https://github.com/cli/cli/releases/download/v2.82.1/gh_2.82.1_macOS_arm64.zip"
+
+[[tools."github:atuinsh/atuin"]]
+version = "18.10.0"
+backend = "github:atuinsh/atuin"
+
+[tools."github:atuinsh/atuin".platforms.linux-x64]
+checksum = "blake3:aeeb2ac55aab8630f85b6cc26b101212809b6b2f91665798847d6ccde65102ad"
+name = "atuin-x86_64-unknown-linux-gnu.tar.gz"
+size = 14013957
+url = "https://github.com/atuinsh/atuin/releases/download/v18.10.0/atuin-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/307051869"
 
 [[tools."github:dalance/procs"]]
 version = "0.14.10"

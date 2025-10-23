@@ -36,7 +36,6 @@ yazi = "latest"
 yq = "latest"
 zellij = "latest"
 zoxide = "latest"
-atuin = "latest"
 "cargo:diffutils" = "latest"
 xh = "latest"
 "github:tstack/lnav" = "latest"
@@ -55,6 +54,7 @@ lazyssh = "latest"
 "cargo:lazyjj" = "latest"
 pandoc = "latest"
 amp = "latest"
+"github:atuinsh/atuin" = "latest"
 
 [settings]
 experimental = true
