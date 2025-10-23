@@ -58,13 +58,13 @@ size = 9688306
 url = "https://github.com/zk-org/zk/releases/download/v0.15.1/zk-v0.15.1-linux-arm64.tar.gz"
 
 [[tools.atuin]]
-version = "18.9.0"
+version = "18.10.0"
 backend = "aqua:atuinsh/atuin"
 
 [tools.atuin.platforms.macos-arm64]
-checksum = "sha256:e68b1e4dfae55bcb29512032638bc65fa2ef8119c02cd7d38e889f7d1a746fbe"
-size = 12496171
-url = "https://github.com/atuinsh/atuin/releases/download/v18.9.0/atuin-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:9ac9618cf57bcfe561d53d0539ffee9b8185286b11f3b330df26fe35d06411f1"
+size = 12523696
+url = "https://github.com/atuinsh/atuin/releases/download/v18.10.0/atuin-aarch64-apple-darwin.tar.gz"
 
 [[tools.bat]]
 version = "0.26.0"
@@ -243,18 +243,13 @@ size = 1747376
 url = "https://github.com/junegunn/fzf/releases/download/v0.66.0/fzf-0.66.0-darwin_arm64.tar.gz"
 
 [[tools.gh]]
-version = "2.82.0"
+version = "2.82.1"
 backend = "aqua:cli/cli"
 
-[tools.gh.platforms.linux-x64]
-checksum = "sha256:aba32dd552112101464941c7b5ee5f097896e1e234eb99581ff1652f44c4009a"
-size = 18085983
-url = "https://github.com/cli/cli/releases/download/v2.82.0/gh_2.82.0_linux_amd64.tar.gz"
-
 [tools.gh.platforms.macos-arm64]
-checksum = "sha256:c52d24f92858743e7142c0ddbea7ba3679e116062a48f364be8fe6aa6b24e42c"
-size = 17555802
-url = "https://github.com/cli/cli/releases/download/v2.82.0/gh_2.82.0_macOS_arm64.zip"
+checksum = "sha256:8cf015d101a5a43bbf662155d47ba6242bd1a1630c814e764254efa86e448ba7"
+size = 17577889
+url = "https://github.com/cli/cli/releases/download/v2.82.1/gh_2.82.1_macOS_arm64.zip"
 
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
@@ -426,13 +421,13 @@ size = 52626882
 url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.15.10"
+version = "0.15.14"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "blake3:96c4ecef98fe709c6a63057764d5d809c06f1e3ad85a57371fedbe5c8e226152"
-size = 30741225
-url = "https://github.com/sst/opencode/releases/download/v0.15.10/opencode-darwin-arm64.zip"
+checksum = "blake3:dbd30274a9cbba3967c760de1f1908e27c8e2289a085d0035740d8bcdeeaddd6"
+size = 32620156
+url = "https://github.com/sst/opencode/releases/download/v0.15.14/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -457,32 +452,22 @@ size = 2749662
 url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [[tools.pnpm]]
-version = "10.18.3"
+version = "10.19.0"
 backend = "aqua:pnpm/pnpm"
 
-[tools.pnpm.platforms.linux-x64]
-checksum = "blake3:4d3619a2c9951900d508f599b61f66b1380cba820b8e273dc08b808ade9fbcdd"
-size = 65881715
-url = "https://github.com/pnpm/pnpm/releases/download/v10.18.3/pnpm-linux-x64"
-
 [tools.pnpm.platforms.macos-arm64]
-checksum = "blake3:e21e546ad9760548e72d3de6741e1b752f1faa54cb30aebc314764c1e18f4cd7"
-size = 62582528
-url = "https://github.com/pnpm/pnpm/releases/download/v10.18.3/pnpm-macos-arm64"
+checksum = "blake3:626ab746013f1f65fc447cd13407e34ba3f7ea0a12bebf06042382629e13dc0b"
+size = 62588240
+url = "https://github.com/pnpm/pnpm/releases/download/v10.19.0/pnpm-macos-arm64"
 
 [[tools.ripgrep]]
-version = "15.0.0"
+version = "15.1.0"
 backend = "aqua:BurntSushi/ripgrep"
 
-[tools.ripgrep.platforms.linux-x64]
-checksum = "sha256:253ad0fd5fef0d64cba56c70dccdacc1916d4ed70ad057cc525fcdb0c3bbd2a7"
-size = 2262100
-url = "https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-x86_64-unknown-linux-musl.tar.gz"
-
 [tools.ripgrep.platforms.macos-arm64]
-checksum = "sha256:98bb2e61e7277ba0ea72d2ae2592497fd8d2940934a16b122448d302a6637e3b"
-size = 1775660
-url = "https://github.com/BurntSushi/ripgrep/releases/download/15.0.0/ripgrep-15.0.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:378e973289176ca0c6054054ee7f631a065874a352bf43f0fa60ef079b6ba715"
+size = 1777930
+url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-aarch64-apple-darwin.tar.gz"
 
 [[tools.rust]]
 version = "1.90.0"
@@ -510,17 +495,14 @@ backend = "ubi:sigoden/upt"
 checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8bb20"
 
 [[tools.usage]]
-version = "2.3.2"
+version = "2.4.0"
 backend = "ubi:jdx/usage"
 
-[tools.usage.platforms.linux-x64-usage]
-checksum = "blake3:16e96fa56f855ee30c189a8e48c4ed62e4adea98a582d6243ab33c2a664f878a"
-
 [tools.usage.platforms.macos-arm64-usage]
-checksum = "blake3:2dcd87217718388d8af56addd65640d3c310a6bcf2c03471903e9bd751520f2c"
+checksum = "blake3:02be6c309db74d8ff415bc793692080f1f5c0341ae054681144f28fd9154ab23"
 
 [[tools.uv]]
-version = "0.9.4"
+version = "0.9.5"
 backend = "asdf:uv"
 
 [[tools.xh]]
