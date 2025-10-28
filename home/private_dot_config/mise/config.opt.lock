@@ -54,10 +54,10 @@ size = 2615002
 url = "https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.0-aarch64-apple-darwin.tar.gz"
 
 [[tools.tssh]]
-version = "0.1.22"
+version = "0.1.23"
 backend = "aqua:trzsz/trzsz-ssh"
 
-[tools.tssh.platforms.linux-arm64]
-checksum = "sha256:ecc3efd021a1932c1d61dc76d36cac0f2e1bd1c0ea8c6634f9521a36f388c301"
-size = 4742242
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.22/tssh_0.1.22_linux_aarch64.tar.gz"
+[tools.tssh.platforms.macos-arm64]
+checksum = "sha256:06ee8b76e9d59cce6318ddb2f82d194d6700c068d1b5d1914cc1a3dd91c75908"
+size = 6592339
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.23/tssh_0.1.23_macos_aarch64.tar.gz"
