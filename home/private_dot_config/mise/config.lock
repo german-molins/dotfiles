@@ -258,6 +258,13 @@ size = 14013957
 url = "https://github.com/atuinsh/atuin/releases/download/v18.10.0/atuin-x86_64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/307051869"
 
+[tools."github:atuinsh/atuin".platforms.macos-arm64]
+checksum = "sha256:9ac9618cf57bcfe561d53d0539ffee9b8185286b11f3b330df26fe35d06411f1"
+name = "atuin-aarch64-apple-darwin.tar.gz"
+size = 12523696
+url = "https://github.com/atuinsh/atuin/releases/download/v18.10.0/atuin-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/307051854"
+
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
 backend = "github:dalance/procs"
