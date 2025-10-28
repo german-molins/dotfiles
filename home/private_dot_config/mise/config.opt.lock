@@ -57,6 +57,11 @@ url = "https://github.com/sharkdp/numbat/releases/download/v1.16.0/numbat-v1.16.
 version = "0.1.23"
 backend = "aqua:trzsz/trzsz-ssh"
 
+[tools.tssh.platforms.linux-x64]
+checksum = "sha256:f2049a174c6e2ba1b6bc0451985c5207f204c04d30339f9714425d58b296cb20"
+size = 6312809
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.23/tssh_0.1.23_linux_x86_64.tar.gz"
+
 [tools.tssh.platforms.macos-arm64]
 checksum = "sha256:06ee8b76e9d59cce6318ddb2f82d194d6700c068d1b5d1914cc1a3dd91c75908"
 size = 6592339

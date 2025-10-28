@@ -96,6 +96,11 @@ url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.3/cara
 version = "1.15.9"
 backend = "aqua:cargo-bins/cargo-binstall"
 
+[tools.cargo-binstall.platforms.linux-x64]
+checksum = "sha256:4aa0d88fdf39abd7444d3475f3bf4100bc5d498a3113339990a65dd2f9e40255"
+size = 6786640
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.9/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+
 [tools.cargo-binstall.platforms.macos-arm64]
 checksum = "sha256:4e48568bcbe823e0e5b4d83eb62482a4a3ed6aa796b7522408840e36c2539de4"
 size = 6016612
@@ -132,6 +137,11 @@ backend = "npm:codebuff"
 version = "0.3.0"
 backend = "aqua:uutils/coreutils"
 
+[tools.coreutils.platforms.linux-x64]
+checksum = "sha256:4f31610e2681e278e7bce14f4dc0fc5f0265a10b102f7153c8cff40af640cf31"
+size = 5417859
+url = "https://github.com/uutils/coreutils/releases/download/0.3.0/coreutils-0.3.0-x86_64-unknown-linux-musl.tar.gz"
+
 [tools.coreutils.platforms.macos-arm64]
 checksum = "sha256:af60b273599671520b8bf2dc646fee455023d74bf72826e8491729b12748c563"
 size = 4949995
@@ -140,6 +150,11 @@ url = "https://github.com/uutils/coreutils/releases/download/0.3.0/coreutils-0.3
 [[tools.cosign]]
 version = "3.0.2"
 backend = "aqua:sigstore/cosign"
+
+[tools.cosign.platforms.linux-x64]
+checksum = "sha256:46dbdcb5467a3dfec2526923d0b3365e40c8d9dc00ec23d5aca3437449e8cbfd"
+size = 156288179
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.2/cosign-linux-amd64"
 
 [tools.cosign.platforms.macos-arm64]
 checksum = "sha256:3823b044de184da21e300bc5e20dd29d3fa9243af3ba70c4a5da1712f3385d46"
@@ -207,6 +222,11 @@ url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-aarch6
 [[tools.fzf]]
 version = "0.66.1"
 backend = "aqua:junegunn/fzf"
+
+[tools.fzf.platforms.linux-x64]
+checksum = "sha256:eca8d793061283122d79ff81baf996535c0bfbf7058253142aaf2578e56943ef"
+size = 1799252
+url = "https://github.com/junegunn/fzf/releases/download/v0.66.1/fzf-0.66.1-linux_amd64.tar.gz"
 
 [tools.fzf.platforms.macos-arm64]
 checksum = "sha256:0f44db428cb65a0b646e99a506422a59f4b2fc3d3973b35387f78bba48c79c16"
@@ -418,6 +438,11 @@ url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 version = "0.15.18"
 backend = "aqua:sst/opencode"
 
+[tools.opencode.platforms.linux-x64]
+checksum = "sha256:7f83c10ae9d07b48dd58f5bc36926e949669741794eb8c041f9ab48409063950"
+size = 49955900
+url = "https://github.com/sst/opencode/releases/download/v0.15.18/opencode-linux-x64.zip"
+
 [tools.opencode.platforms.macos-arm64]
 checksum = "sha256:a8b18905f171993f50aacb569752ee56ff39ea46e0476395a0ab597fd5340576"
 size = 32623251
@@ -504,6 +529,9 @@ checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8b
 [[tools.usage]]
 version = "2.5.1"
 backend = "ubi:jdx/usage"
+
+[tools.usage.platforms.linux-x64-usage]
+checksum = "blake3:145eb22d52e023e75e5beee114481b10b6461589f4c71b24c5b441d0d7e14a22"
 
 [tools.usage.platforms.macos-arm64-usage]
 checksum = "blake3:d7f590b7f3dff32dfb65b3db56521398b2418a9e3bef539e971db4bc499bff6b"
