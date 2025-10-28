@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1761552151-g51e32e"
+version = "0.0.1761667293-g539b00"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -35,18 +35,13 @@ size = 5916903
 url = "https://github.com/gitui-org/gitui/releases/download/v0.27.0/gitui-linux-aarch64.tar.gz"
 
 [[tools."aqua:jorgerojas26/lazysql"]]
-version = "0.4.2"
+version = "0.4.3"
 backend = "aqua:jorgerojas26/lazysql"
 
 [tools."aqua:jorgerojas26/lazysql".platforms.linux-x64]
-checksum = "sha256:86735b2c4a80aab1d993e51a48bae723d3d8b98b2ee5cc4de99015ddf60373ae"
-size = 5575579
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.2/lazysql_Linux_x86_64.tar.gz"
-
-[tools."aqua:jorgerojas26/lazysql".platforms.macos-arm64]
-checksum = "sha256:ab1b054a83d8bc2f3c5d4a7c43918987edd95bec8b364db41916bd9dbc40ea08"
-size = 5372313
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.2/lazysql_Darwin_arm64.tar.gz"
+checksum = "sha256:55ecd0aca11410e0e2b6795edbf5619b6f6a34deebda4411340da1e0423ff23f"
+size = 5585608
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.3/lazysql_Linux_x86_64.tar.gz"
 
 [[tools."aqua:zk-org/zk"]]
 version = "0.15.1"
@@ -130,7 +125,7 @@ backend = "ubi:twpayne/chezmoi"
 checksum = "blake3:e1a62543695924866d7fa46f5790eb3ed41a1d63a9c131143857c1db27c75e0e"
 
 [[tools.codebuff]]
-version = "1.0.502"
+version = "1.0.506"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
@@ -171,13 +166,13 @@ size = 7667896
 url = "https://github.com/direnv/direnv/releases/download/v2.37.1/direnv.linux-arm64"
 
 [[tools.dua]]
-version = "2.32.0"
+version = "2.32.2"
 backend = "aqua:Byron/dua-cli"
 
-[tools.dua.platforms.macos-arm64]
-checksum = "blake3:b3030dab15f1dd19255b2a1b8a09fc99703c87073ca47d421b57717502940cda"
-size = 1022092
-url = "https://github.com/Byron/dua-cli/releases/download/v2.32.0/dua-v2.32.0-x86_64-apple-darwin.tar.gz"
+[tools.dua.platforms.linux-x64]
+checksum = "sha256:b9c5440b4a5b7fe3118392f2d2e5a31353bc8f825378a448fc542d09b9743053"
+size = 1201572
+url = "https://github.com/Byron/dua-cli/releases/download/v2.32.2/dua-v2.32.2-x86_64-unknown-linux-musl.tar.gz"
 
 [[tools.duf]]
 version = "0.9.1"
@@ -435,18 +430,13 @@ size = 52626882
 url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "0.15.18"
+version = "0.15.20"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "sha256:7f83c10ae9d07b48dd58f5bc36926e949669741794eb8c041f9ab48409063950"
-size = 49955900
-url = "https://github.com/sst/opencode/releases/download/v0.15.18/opencode-linux-x64.zip"
-
-[tools.opencode.platforms.macos-arm64]
-checksum = "sha256:a8b18905f171993f50aacb569752ee56ff39ea46e0476395a0ab597fd5340576"
-size = 32623251
-url = "https://github.com/sst/opencode/releases/download/v0.15.18/opencode-darwin-arm64.zip"
+checksum = "sha256:466d1da792afb090cdb300ea144469bdb19cda8d8fa339311f87fc6e1f63cac7"
+size = 49968333
+url = "https://github.com/sst/opencode/releases/download/v0.15.20/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -474,18 +464,13 @@ size = 2749662
 url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [[tools.pnpm]]
-version = "10.19.0"
+version = "10.20.0"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm.platforms.linux-x64]
-checksum = "blake3:ca645e33be6759df7e98fb1ad068ac0dc165887af2879c9a3f349a66b40216ef"
-size = 65887453
-url = "https://github.com/pnpm/pnpm/releases/download/v10.19.0/pnpm-linux-x64"
-
-[tools.pnpm.platforms.macos-arm64]
-checksum = "blake3:626ab746013f1f65fc447cd13407e34ba3f7ea0a12bebf06042382629e13dc0b"
-size = 62588240
-url = "https://github.com/pnpm/pnpm/releases/download/v10.19.0/pnpm-macos-arm64"
+checksum = "sha256:d25defac8655080add042decfa94b5c3b28cafbb048edd4de6dc2c41f9220418"
+size = 65892053
+url = "https://github.com/pnpm/pnpm/releases/download/v10.20.0/pnpm-linux-x64"
 
 [[tools.ripgrep]]
 version = "15.1.0"
