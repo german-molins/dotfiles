@@ -1,14 +1,10 @@
 [[tools.bun]]
-version = "1.3.0"
+version = "1.3.1"
 backend = "core:bun"
 
-[tools.bun.platforms.linux-x64]
-checksum = "blake3:fa75018494a4add8c86fa10a5507a6c17aaa513aaea366e77ae1c6df84c7cb40"
-size = 39506212
-
 [tools.bun.platforms.macos-arm64]
-checksum = "blake3:58ff76650b967e1a14eec5e6992b41aec9e5a4a96020f81fdebbc41a713ec821"
-size = 22391665
+checksum = "blake3:1643fe56ae2f8adc8229a82672484113c01c82b5fe15b3e498610fc050831ffd"
+size = 22437956
 
 [[tools.jq]]
 version = "1.8.1"
