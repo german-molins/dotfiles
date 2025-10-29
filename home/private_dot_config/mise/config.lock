@@ -8,22 +8,17 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1761667293-g539b00"
+version = "0.0.1761753711-g54abf0"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
-version = "4.18.0"
+version = "4.19.0"
 backend = "aqua:dlvhdr/gh-dash"
 
 [tools."aqua:dlvhdr/gh-dash".platforms.linux-x64]
-checksum = "sha256:272eb67ab8f0bbbd2fe96ebeaf9684b86a6fdf95ebdf3e2495b1da8ac0b2c98b"
-size = 19554488
-url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.18.0/gh-dash_v4.18.0_linux-amd64"
-
-[tools."aqua:dlvhdr/gh-dash".platforms.macos-arm64]
-checksum = "sha256:4b9f167e9030aee116a0a236d66ff69d52acd227dac8a53b290ece4462787f9a"
-size = 19430002
-url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.18.0/gh-dash_v4.18.0_darwin-arm64"
+checksum = "sha256:29bb0b5f1ffb0a8096d7a2ed9825ebe9add4a2d26e2f5aeabb8e03bd216b7d4a"
+size = 20361400
+url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.19.0/gh-dash_v4.19.0_linux-amd64"
 
 [[tools."aqua:gitui-org/gitui"]]
 version = "0.27.0"
@@ -416,27 +411,22 @@ size = 9194532
 url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-macos-arm64.tar.gz"
 
 [[tools.node]]
-version = "25.0.0"
+version = "25.1.0"
 backend = "core:node"
 
 [tools.node.platforms.linux-x64]
-checksum = "sha256:28dd46a6733192647d7c8267343f5a3f1c616f773c448e2c0d2539ae70724b40"
-size = 58163068
-url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-linux-x64.tar.gz"
-
-[tools.node.platforms.macos-arm64]
-checksum = "sha256:e3734fe04ebebf5b88cb6e1db770d3fbf736bd861748597ca008ad3d51f165f8"
-size = 52626882
-url = "https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
+checksum = "sha256:0b8de924cd43546a2098c091b73002442cd61340622b2c1489df408755de21fc"
+size = 54581244
+url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-linux-x64.tar.gz"
 
 [[tools.opencode]]
-version = "0.15.20"
+version = "0.15.26"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "sha256:466d1da792afb090cdb300ea144469bdb19cda8d8fa339311f87fc6e1f63cac7"
-size = 49968333
-url = "https://github.com/sst/opencode/releases/download/v0.15.20/opencode-linux-x64.zip"
+checksum = "sha256:9bd89a22f0cb283974bd950d2717dfb1b2889bda532414c22a283f8c6cd7e113"
+size = 49973649
+url = "https://github.com/sst/opencode/releases/download/v0.15.26/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -522,7 +512,7 @@ checksum = "blake3:145eb22d52e023e75e5beee114481b10b6461589f4c71b24c5b441d0d7e14
 checksum = "blake3:d7f590b7f3dff32dfb65b3db56521398b2418a9e3bef539e971db4bc499bff6b"
 
 [[tools.uv]]
-version = "0.9.5"
+version = "0.9.6"
 backend = "asdf:uv"
 
 [[tools.xh]]
