@@ -4,6 +4,10 @@ name = {{ .name | quote }}
 
 [aliases]
 ui = ["util", "exec", "--", "jjui"]
+metaedit-update-timestamps = ["metaedit", "--update-author-timestamp", "--update-committer-timestamp", "-r", "$1"]
+abandon-branch-from-trunk = ["abandon", "($1::) - (trunk()::)"]
+tug = ["bookmark", "move", "--from", "heads(::@- & bookmarks())", "--to", "@"]
+rebase-all = ["rebase", "-s", "all:roots(trunk()..mutable())", "-d", "trunk()"]
 
 [colors]
 "diff token" = { underline = false }

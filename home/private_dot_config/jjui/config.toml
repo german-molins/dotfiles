@@ -1,2 +1,46 @@
 [ui]
 theme = "base16-solarized-dark"
+
+[leader.k]
+context = ["$change_id"]
+help = "Move revision up"
+send = [":", "rebase -r \"$change_id\" -A \"$change_id\"+", "enter"]
+
+[leader.j]
+context = ["$change_id"]
+help = "Move revision down"
+send = [":", "rebase -r \"$change_id\" -B \"$change_id\"-", "enter"]
+
+[leader.a]
+context = ["$change_id"]
+help = "New after"
+send = [":", "new -A \"$change_id\"", "enter"]
+
+[leader.e]
+context = ["$checked_files"]
+help = "Edit checked files"
+send = ["$", "$VISUAL $checked_files", "enter"]
+
+[leader.m]
+context = ["$change_id"]
+help = "Metaedit update timestamps"
+send = [":", "metaedit-update-timestamps \"$change_id\"", "enter"]
+
+[leader.A]
+context = ["$change_id"]
+help = "Abandon branch from trunk"
+send = [":", "abandon-branch-from-trunk \"$change_id\"", "enter"]
+
+[leader.t]
+context = ["$change_id"]
+help = "Tug bookmark to current"
+send = [":", "tug", "enter"]
+
+[leader.B]
+help = "Rebase all to trunk"
+send = [":", "rebase-all", "enter"]
+
+[leader.R]
+context = ["$revset"]
+help = "Save revset as alias"
+send = ["$", "jj config set --repo revset-aliases.$(gum input --placeholder 'Revset Alias') $revset", "enter"]
