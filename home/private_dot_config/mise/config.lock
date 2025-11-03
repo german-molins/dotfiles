@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1761753711-g54abf0"
+version = "0.0.1762128105-g199541"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -69,32 +69,22 @@ size = 1800076
 url = "https://github.com/ClementTsang/bottom/releases/download/0.11.2/bottom_aarch64-apple-darwin.tar.gz"
 
 [[tools.carapace]]
-version = "1.5.3"
+version = "1.5.4"
 backend = "aqua:carapace-sh/carapace-bin"
 
 [tools.carapace.platforms.linux-x64]
-checksum = "sha256:e72aa3faf9b0f48a6931f38519360f6050305b711d3edffa1c382b0ba6b01093"
-size = 13224626
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.3/carapace-bin_1.5.3_linux_amd64.tar.gz"
-
-[tools.carapace.platforms.macos-arm64]
-checksum = "sha256:df29c65ba25bfee848af767fae993d61585a2e832dbfd3485242405fab53966a"
-size = 13391266
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.3/carapace-bin_1.5.3_darwin_arm64.tar.gz"
+checksum = "sha256:f539228a7ed56b21157b2bd3405ca3e12fa5a04be486f215fce0cd7bbbce0619"
+size = 13428514
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.4/carapace-bin_1.5.4_linux_amd64.tar.gz"
 
 [[tools.cargo-binstall]]
-version = "1.15.9"
+version = "1.15.10"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall.platforms.linux-x64]
-checksum = "sha256:4aa0d88fdf39abd7444d3475f3bf4100bc5d498a3113339990a65dd2f9e40255"
-size = 6786640
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.9/cargo-binstall-x86_64-unknown-linux-musl.tgz"
-
-[tools.cargo-binstall.platforms.macos-arm64]
-checksum = "sha256:4e48568bcbe823e0e5b4d83eb62482a4a3ed6aa796b7522408840e36c2539de4"
-size = 6016612
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.9/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "sha256:c4957cb4f2cb5ddafe02aa740e8719c6772534a0198ef6714f87e2d5dbfe81b1"
+size = 6767806
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.10/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -113,14 +103,14 @@ version = "1.12.0"
 backend = "cargo:tlrc"
 
 [[tools.chezmoi]]
-version = "2.66.1"
+version = "2.67.0"
 backend = "ubi:twpayne/chezmoi"
 
-[tools.chezmoi.platforms.macos-arm64-chezmoi]
-checksum = "blake3:e1a62543695924866d7fa46f5790eb3ed41a1d63a9c131143857c1db27c75e0e"
+[tools.chezmoi.platforms.linux-x64-chezmoi]
+checksum = "blake3:8d3f1e6baf72a247cb03dadd9f36bce2ef4b7771e7acd4e5e0c71ab4bc5c7e1b"
 
 [[tools.codebuff]]
-version = "1.0.506"
+version = "1.0.508"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
@@ -323,14 +313,11 @@ size = 12491104
 url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.74.0"
+version = "1.75.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
 [tools.glab.platforms.linux-x64-glab-glab]
-checksum = "blake3:492cf888d5c1d2377c31c423f5c4d894ac52b4604be9d40bc97106a99dcdaafb"
-
-[tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:d31447174b138969f19d789c6af39fdd8cec1f97f81e37ecce4b65ae21e65bda"
+checksum = "blake3:fe5181223bcd6644b24f7c42aec2222581fdffdc1985a0c3c2e2e0f200817c44"
 
 [[tools.jj]]
 version = "0.34.0"
@@ -369,18 +356,13 @@ size = 4322131
 url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_arm64.tar.gz"
 
 [[tools.lazygit]]
-version = "0.55.1"
+version = "0.56.0"
 backend = "aqua:jesseduffield/lazygit"
 
 [tools.lazygit.platforms.linux-x64]
-checksum = "sha256:6385a699dde302b7fdcd1cc8910ae225ed0c19a230285569c586051576f0d6a3"
-size = 7929493
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.1/lazygit_0.55.1_linux_x86_64.tar.gz"
-
-[tools.lazygit.platforms.macos-arm64]
-checksum = "sha256:d5761da15dc95348e4d508ce3245a132a6129dbace866144b24591f2a5c73b8e"
-size = 7598349
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.55.1/lazygit_0.55.1_darwin_arm64.tar.gz"
+checksum = "sha256:ced13c2ae074bbf6c201bc700ee2971e193b811c3b2ae0ed4d00d6225c6c9ab7"
+size = 7954785
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.56.0/lazygit_0.56.0_linux_x86_64.tar.gz"
 
 [[tools.lazyssh]]
 version = "0.3.0"
@@ -420,13 +402,13 @@ size = 54581244
 url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-linux-x64.tar.gz"
 
 [[tools.opencode]]
-version = "0.15.26"
+version = "1.0.11"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "sha256:9bd89a22f0cb283974bd950d2717dfb1b2889bda532414c22a283f8c6cd7e113"
-size = 49973649
-url = "https://github.com/sst/opencode/releases/download/v0.15.26/opencode-linux-x64.zip"
+checksum = "sha256:9fd6add2f13ae61563e1579867a905de1be78ba5936ad57145a2da397150a730"
+size = 47050062
+url = "https://github.com/sst/opencode/releases/download/v1.0.11/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -477,7 +459,7 @@ size = 1777930
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-aarch64-apple-darwin.tar.gz"
 
 [[tools.rust]]
-version = "1.90.0"
+version = "1.91.0"
 backend = "core:rust"
 
 [[tools.tree-sitter]]
@@ -502,17 +484,14 @@ backend = "ubi:sigoden/upt"
 checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8bb20"
 
 [[tools.usage]]
-version = "2.5.1"
+version = "2.6.0"
 backend = "ubi:jdx/usage"
 
 [tools.usage.platforms.linux-x64-usage]
-checksum = "blake3:145eb22d52e023e75e5beee114481b10b6461589f4c71b24c5b441d0d7e14a22"
-
-[tools.usage.platforms.macos-arm64-usage]
-checksum = "blake3:d7f590b7f3dff32dfb65b3db56521398b2418a9e3bef539e971db4bc499bff6b"
+checksum = "blake3:cf3ca1eda16f14af733a75cfa136e14e44ddb8b4b63ccd8d0ac0327f0a9a4dc4"
 
 [[tools.uv]]
-version = "0.9.6"
+version = "0.9.7"
 backend = "asdf:uv"
 
 [[tools.xh]]
