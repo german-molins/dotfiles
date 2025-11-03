@@ -1,2 +1,6 @@
 [ui]
 theme = "base16-solarized-dark"
+
+[custom_commands."push with created bookmark"]
+key = ["p"]
+args = ["git", "push", "-c", "$change_id"]
