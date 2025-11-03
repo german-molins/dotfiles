@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1762128105-g199541"
+version = "0.0.1762176014-g1aaa7d"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -415,18 +415,13 @@ size = 4824315
 url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Darwin_arm64.tar.gz"
 
 [[tools.neovim]]
-version = "0.11.4"
+version = "0.11.5"
 backend = "aqua:neovim/neovim"
 
-[tools.neovim.platforms.linux-arm64]
-checksum = "blake3:178fa17777fe45897f3f81fe1db032eb18e41d9de5e2da99b64556c1e0f40c66"
-size = 10891274
-url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-arm64.tar.gz"
-
 [tools.neovim.platforms.macos-arm64]
-checksum = "blake3:31e761b1a1aa3642dec4b09b2f080f99fe550ecfb82e77f7bf11382d5f0630de"
-size = 9194532
-url = "https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-macos-arm64.tar.gz"
+checksum = "sha256:79143d3b408f7034f90b7cf59af2276de09ef8a4c2f1a28e4c99581b249d3107"
+size = 9204217
+url = "https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-macos-arm64.tar.gz"
 
 [[tools.node]]
 version = "25.1.0"
@@ -443,18 +438,13 @@ size = 52626542
 url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.11"
+version = "1.0.15"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "sha256:9fd6add2f13ae61563e1579867a905de1be78ba5936ad57145a2da397150a730"
-size = 47050062
-url = "https://github.com/sst/opencode/releases/download/v1.0.11/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:6197ee99f68d48c22b33a4a66b14c6d951ff913642494a2e5c932d6f95c42c86"
-size = 29068854
-url = "https://github.com/sst/opencode/releases/download/v1.0.11/opencode-darwin-arm64.zip"
+checksum = "sha256:fdb199e46c409885bb3a06adf4d4faa9e1984456c62b633916c4c6fe204a59b6"
+size = 29113806
+url = "https://github.com/sst/opencode/releases/download/v1.0.15/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
