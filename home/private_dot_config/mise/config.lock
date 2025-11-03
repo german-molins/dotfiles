@@ -20,6 +20,11 @@ checksum = "sha256:29bb0b5f1ffb0a8096d7a2ed9825ebe9add4a2d26e2f5aeabb8e03bd216b7
 size = 20361400
 url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.19.0/gh-dash_v4.19.0_linux-amd64"
 
+[tools."aqua:dlvhdr/gh-dash".platforms.macos-arm64]
+checksum = "sha256:6d0d05e11df379b175edfa8b44559daa288555cc1a1e442a8298307b87c7f699"
+size = 20070786
+url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.19.0/gh-dash_v4.19.0_darwin-arm64"
+
 [[tools."aqua:gitui-org/gitui"]]
 version = "0.27.0"
 backend = "aqua:gitui-org/gitui"
@@ -37,6 +42,11 @@ backend = "aqua:jorgerojas26/lazysql"
 checksum = "sha256:55ecd0aca11410e0e2b6795edbf5619b6f6a34deebda4411340da1e0423ff23f"
 size = 5585608
 url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.3/lazysql_Linux_x86_64.tar.gz"
+
+[tools."aqua:jorgerojas26/lazysql".platforms.macos-arm64]
+checksum = "sha256:39e680d89359904df69ba3686af8ce59325db15944519df19534babbdc23781a"
+size = 5377179
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.3/lazysql_Darwin_arm64.tar.gz"
 
 [[tools."aqua:zk-org/zk"]]
 version = "0.15.1"
@@ -77,6 +87,11 @@ checksum = "sha256:f539228a7ed56b21157b2bd3405ca3e12fa5a04be486f215fce0cd7bbbce0
 size = 13428514
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.4/carapace-bin_1.5.4_linux_amd64.tar.gz"
 
+[tools.carapace.platforms.macos-arm64]
+checksum = "sha256:31f66b158c7b9943c0f198bad5c76e40928dee765630a1da2fe73d0bdd2697a2"
+size = 13605798
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.4/carapace-bin_1.5.4_darwin_arm64.tar.gz"
+
 [[tools.cargo-binstall]]
 version = "1.15.10"
 backend = "aqua:cargo-bins/cargo-binstall"
@@ -85,6 +100,11 @@ backend = "aqua:cargo-bins/cargo-binstall"
 checksum = "sha256:c4957cb4f2cb5ddafe02aa740e8719c6772534a0198ef6714f87e2d5dbfe81b1"
 size = 6767806
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.10/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+
+[tools.cargo-binstall.platforms.macos-arm64]
+checksum = "sha256:9aa40aca226028c4ec45637f060815d8899fb4e49fb6e97947280c83d34a82d8"
+size = 5958077
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.10/cargo-binstall-aarch64-apple-darwin.zip"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -108,6 +128,9 @@ backend = "ubi:twpayne/chezmoi"
 
 [tools.chezmoi.platforms.linux-x64-chezmoi]
 checksum = "blake3:8d3f1e6baf72a247cb03dadd9f36bce2ef4b7771e7acd4e5e0c71ab4bc5c7e1b"
+
+[tools.chezmoi.platforms.macos-arm64-chezmoi]
+checksum = "blake3:02e5e7b0a1715b1c63020abf1430a29a7a131a6280c975a883416816d4b29ea5"
 
 [[tools.codebuff]]
 version = "1.0.508"
@@ -158,6 +181,11 @@ backend = "aqua:Byron/dua-cli"
 checksum = "sha256:b9c5440b4a5b7fe3118392f2d2e5a31353bc8f825378a448fc542d09b9743053"
 size = 1201572
 url = "https://github.com/Byron/dua-cli/releases/download/v2.32.2/dua-v2.32.2-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.dua.platforms.macos-arm64]
+checksum = "sha256:0f942ce487be1b0f573ed8ca1c58f3fbaff87fcfcc65618e6f8c118dab2576f7"
+size = 1027593
+url = "https://github.com/Byron/dua-cli/releases/download/v2.32.2/dua-v2.32.2-x86_64-apple-darwin.tar.gz"
 
 [[tools.duf]]
 version = "0.9.1"
@@ -319,6 +347,9 @@ backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 [tools.glab.platforms.linux-x64-glab-glab]
 checksum = "blake3:fe5181223bcd6644b24f7c42aec2222581fdffdc1985a0c3c2e2e0f200817c44"
 
+[tools.glab.platforms.macos-arm64-glab-glab]
+checksum = "blake3:ad766c6c12b318e8a9e38c891a82141a99e51e8bed31a96056f85464767e6440"
+
 [[tools.jj]]
 version = "0.34.0"
 backend = "aqua:jj-vcs/jj"
@@ -364,6 +395,11 @@ checksum = "sha256:ced13c2ae074bbf6c201bc700ee2971e193b811c3b2ae0ed4d00d6225c6c9
 size = 7954785
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.56.0/lazygit_0.56.0_linux_x86_64.tar.gz"
 
+[tools.lazygit.platforms.macos-arm64]
+checksum = "sha256:1835b5183809f50d1d15683ac059384e5f15017acb8b40695b734a8529a54ed1"
+size = 7503731
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.56.0/lazygit_0.56.0_darwin_arm64.tar.gz"
+
 [[tools.lazyssh]]
 version = "0.3.0"
 backend = "aqua:Adembc/lazyssh"
@@ -401,6 +437,11 @@ checksum = "sha256:0b8de924cd43546a2098c091b73002442cd61340622b2c1489df408755de2
 size = 54581244
 url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-linux-x64.tar.gz"
 
+[tools.node.platforms.macos-arm64]
+checksum = "sha256:811dcf54580d9eef0abfed9f65457545d2aac8e24853b6e638194fcba0257168"
+size = 52626542
+url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
+
 [[tools.opencode]]
 version = "1.0.11"
 backend = "aqua:sst/opencode"
@@ -409,6 +450,11 @@ backend = "aqua:sst/opencode"
 checksum = "sha256:9fd6add2f13ae61563e1579867a905de1be78ba5936ad57145a2da397150a730"
 size = 47050062
 url = "https://github.com/sst/opencode/releases/download/v1.0.11/opencode-linux-x64.zip"
+
+[tools.opencode.platforms.macos-arm64]
+checksum = "sha256:6197ee99f68d48c22b33a4a66b14c6d951ff913642494a2e5c932d6f95c42c86"
+size = 29068854
+url = "https://github.com/sst/opencode/releases/download/v1.0.11/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -443,6 +489,11 @@ backend = "aqua:pnpm/pnpm"
 checksum = "sha256:d25defac8655080add042decfa94b5c3b28cafbb048edd4de6dc2c41f9220418"
 size = 65892053
 url = "https://github.com/pnpm/pnpm/releases/download/v10.20.0/pnpm-linux-x64"
+
+[tools.pnpm.platforms.macos-arm64]
+checksum = "sha256:6ce67b7b237b349fbb27a1f52fe0b3d6d754679fec2b31c9db98e134599f1371"
+size = 62592784
+url = "https://github.com/pnpm/pnpm/releases/download/v10.20.0/pnpm-macos-arm64"
 
 [[tools.ripgrep]]
 version = "15.1.0"
@@ -489,6 +540,9 @@ backend = "ubi:jdx/usage"
 
 [tools.usage.platforms.linux-x64-usage]
 checksum = "blake3:cf3ca1eda16f14af733a75cfa136e14e44ddb8b4b63ccd8d0ac0327f0a9a4dc4"
+
+[tools.usage.platforms.macos-arm64-usage]
+checksum = "blake3:4784ce9570869607774cf551e9e6abf6089496867911a4d067bd79d82b3a79a1"
 
 [[tools.uv]]
 version = "0.9.7"
