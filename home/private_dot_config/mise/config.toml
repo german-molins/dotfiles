@@ -99,6 +99,7 @@ depends = [
   "brew:update",
   "upt:update",
 ]
+run = { task = "bash:clear-cache" }
 
 [tasks."brew:update"]
 description = "Update Homebrew global packages"
@@ -131,7 +132,11 @@ run = "fc-list | grep Nerd"
 [tasks."mise:update"]
 alias = "mise:up"
 description = "Update Mise global packages"
-run = ["mise upgrade", "mise plugins upgrade"]
+run = [
+  "mise upgrade",
+  "mise plugins upgrade",
+  { task = "bash:clear-mise-cache" },
+]
 
 [tasks."mise:clean"]
 description = "Clean Mise cache"

@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+#MISE description="Clear mise-related bash caches"
+
+rm -rf ~/.cache/dotfiles/bash/mise ~/.cache/dotfiles/bash/hooks

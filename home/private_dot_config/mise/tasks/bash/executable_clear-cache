@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+#MISE description="Clear bash startup caches"
+
+rm -rf ~/.cache/dotfiles/bash
