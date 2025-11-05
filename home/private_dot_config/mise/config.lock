@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1762176014-g1aaa7d"
+version = "0.0.1762243289-gbbb5bb"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -438,13 +438,13 @@ size = 52626542
 url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.15"
+version = "1.0.18"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:fdb199e46c409885bb3a06adf4d4faa9e1984456c62b633916c4c6fe204a59b6"
-size = 29113806
-url = "https://github.com/sst/opencode/releases/download/v1.0.15/opencode-darwin-arm64.zip"
+checksum = "sha256:f590cdfec62d539e2f3d5b657c5392a984539ee9c3a729fc199130bbc6396836"
+size = 29130192
+url = "https://github.com/sst/opencode/releases/download/v1.0.18/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
