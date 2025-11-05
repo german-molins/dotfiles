@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1762243289-gbbb5bb"
+version = "0.0.1762335391-gc028df"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -242,18 +242,13 @@ size = 1747511
 url = "https://github.com/junegunn/fzf/releases/download/v0.66.1/fzf-0.66.1-darwin_arm64.tar.gz"
 
 [[tools.gh]]
-version = "2.82.1"
+version = "2.83.0"
 backend = "aqua:cli/cli"
 
-[tools.gh.platforms.linux-x64]
-checksum = "sha256:afada88676dfccea384e6cc28ae990b3e31bbc55f9d75c4697f902c757fa462b"
-size = 18099610
-url = "https://github.com/cli/cli/releases/download/v2.82.1/gh_2.82.1_linux_amd64.tar.gz"
-
 [tools.gh.platforms.macos-arm64]
-checksum = "sha256:8cf015d101a5a43bbf662155d47ba6242bd1a1630c814e764254efa86e448ba7"
-size = 17577889
-url = "https://github.com/cli/cli/releases/download/v2.82.1/gh_2.82.1_macOS_arm64.zip"
+checksum = "sha256:fecba907bc361d5e33620dbf1145f11432c39fb2b388a839463cfbb89a84820b"
+size = 17385865
+url = "https://github.com/cli/cli/releases/download/v2.83.0/gh_2.83.0_macOS_arm64.zip"
 
 [[tools."github:atuinsh/atuin"]]
 version = "18.10.0"
@@ -341,14 +336,11 @@ size = 12491104
 url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.75.0"
+version = "1.76.2"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
-[tools.glab.platforms.linux-x64-glab-glab]
-checksum = "blake3:fe5181223bcd6644b24f7c42aec2222581fdffdc1985a0c3c2e2e0f200817c44"
-
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:ad766c6c12b318e8a9e38c891a82141a99e51e8bed31a96056f85464767e6440"
+checksum = "blake3:d36cd8567443a4e0398977731791df39badb335c30f69644c0f8896c256a0cd7"
 
 [[tools.jj]]
 version = "0.34.0"
@@ -438,13 +430,13 @@ size = 52626542
 url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.18"
+version = "1.0.24"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:f590cdfec62d539e2f3d5b657c5392a984539ee9c3a729fc199130bbc6396836"
-size = 29130192
-url = "https://github.com/sst/opencode/releases/download/v1.0.18/opencode-darwin-arm64.zip"
+checksum = "sha256:5879124e0ad17c04e2f91a4dc2090434f10216ce3843af61c94c5b92008c5dfd"
+size = 29145245
+url = "https://github.com/sst/opencode/releases/download/v1.0.24/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
