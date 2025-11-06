@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1762335391-gc028df"
+version = "0.0.1762416114-g1b95f5"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -351,6 +351,11 @@ checksum = "blake3:e97bd4ac9c204ce064f682cd6f9d8d7f7a26e962e5f29d1107b75393f0077
 size = 9570722
 url = "https://github.com/jj-vcs/jj/releases/download/v0.34.0/jj-v0.34.0-x86_64-unknown-linux-musl.tar.gz"
 
+[tools.jj.platforms.macos-arm64]
+checksum = "sha256:8893d34ff0c76e16fdf46ba8771ea2498294957aec5efb0618de15cc493aee27"
+size = 8820785
+url = "https://github.com/jj-vcs/jj/releases/download/v0.34.0/jj-v0.34.0-aarch64-apple-darwin.tar.gz"
+
 [[tools.jjui]]
 version = "0.9.5"
 backend = "aqua:idursun/jjui"
@@ -430,13 +435,13 @@ size = 52626542
 url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.24"
+version = "1.0.35"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:5879124e0ad17c04e2f91a4dc2090434f10216ce3843af61c94c5b92008c5dfd"
-size = 29145245
-url = "https://github.com/sst/opencode/releases/download/v1.0.24/opencode-darwin-arm64.zip"
+checksum = "sha256:4c04f7573936c7c35f6f1698867db2efc8b18feb40e8bea896a85fbbb7f9e310"
+size = 29131209
+url = "https://github.com/sst/opencode/releases/download/v1.0.35/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
