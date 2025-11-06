@@ -438,6 +438,11 @@ url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
 version = "1.0.35"
 backend = "aqua:sst/opencode"
 
+[tools.opencode.platforms.linux-x64]
+checksum = "sha256:fedcfcf4ad2ab49216f451973a5c7a308a545bf2251c120599e8ef91d27787c0"
+size = 47066519
+url = "https://github.com/sst/opencode/releases/download/v1.0.35/opencode-linux-x64.zip"
+
 [tools.opencode.platforms.macos-arm64]
 checksum = "sha256:4c04f7573936c7c35f6f1698867db2efc8b18feb40e8bea896a85fbbb7f9e310"
 size = 29131209
