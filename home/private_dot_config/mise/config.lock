@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1762416114-g1b95f5"
+version = "0.0.1762704072-gac8d42"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -65,18 +65,13 @@ backend = "ubi:sharkdp/bat"
 checksum = "blake3:801d41e726a41a95e59a2f2c35930f9bbe4a4a3c1b05717cfea0d105a3e5671e"
 
 [[tools.bottom]]
-version = "0.11.2"
+version = "0.11.3"
 backend = "aqua:ClementTsang/bottom"
 
 [tools.bottom.platforms.linux-x64]
-checksum = "blake3:6d9f0193110aab1b6dd2cbaabba27656966adaf8db904e64b3b7b018e51061c4"
-size = 2184439
-url = "https://github.com/ClementTsang/bottom/releases/download/0.11.2/bottom_x86_64-unknown-linux-musl.tar.gz"
-
-[tools.bottom.platforms.macos-arm64]
-checksum = "blake3:28758bbce8abcf4f11ba7b0992ad4cea3ac38430a44042d65270b59f94aa8047"
-size = 1800076
-url = "https://github.com/ClementTsang/bottom/releases/download/0.11.2/bottom_aarch64-apple-darwin.tar.gz"
+checksum = "sha256:64326f87cb309cc1dea4388f3bf6f569515f0d5a3dba07ec21bc2e33e95f744d"
+size = 2163690
+url = "https://github.com/ClementTsang/bottom/releases/download/0.11.3/bottom_x86_64-unknown-linux-musl.tar.gz"
 
 [[tools.carapace]]
 version = "1.5.4"
@@ -93,18 +88,13 @@ size = 13605798
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.4/carapace-bin_1.5.4_darwin_arm64.tar.gz"
 
 [[tools.cargo-binstall]]
-version = "1.15.10"
+version = "1.15.11"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall.platforms.linux-x64]
-checksum = "sha256:c4957cb4f2cb5ddafe02aa740e8719c6772534a0198ef6714f87e2d5dbfe81b1"
-size = 6767806
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.10/cargo-binstall-x86_64-unknown-linux-musl.tgz"
-
-[tools.cargo-binstall.platforms.macos-arm64]
-checksum = "sha256:9aa40aca226028c4ec45637f060815d8899fb4e49fb6e97947280c83d34a82d8"
-size = 5958077
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.10/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "sha256:82d6c69a87d222bbf834371af0dc4d1c08037739ea54be9f4857e00ff7af05c7"
+size = 6770344
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.11/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -133,7 +123,7 @@ checksum = "blake3:8d3f1e6baf72a247cb03dadd9f36bce2ef4b7771e7acd4e5e0c71ab4bc5c7
 checksum = "blake3:02e5e7b0a1715b1c63020abf1430a29a7a131a6280c975a883416816d4b29ea5"
 
 [[tools.codebuff]]
-version = "1.0.508"
+version = "1.0.509"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
@@ -343,18 +333,13 @@ backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 checksum = "blake3:d36cd8567443a4e0398977731791df39badb335c30f69644c0f8896c256a0cd7"
 
 [[tools.jj]]
-version = "0.34.0"
+version = "0.35.0"
 backend = "aqua:jj-vcs/jj"
 
 [tools.jj.platforms.linux-x64]
-checksum = "blake3:e97bd4ac9c204ce064f682cd6f9d8d7f7a26e962e5f29d1107b75393f007768d"
-size = 9570722
-url = "https://github.com/jj-vcs/jj/releases/download/v0.34.0/jj-v0.34.0-x86_64-unknown-linux-musl.tar.gz"
-
-[tools.jj.platforms.macos-arm64]
-checksum = "sha256:8893d34ff0c76e16fdf46ba8771ea2498294957aec5efb0618de15cc493aee27"
-size = 8820785
-url = "https://github.com/jj-vcs/jj/releases/download/v0.34.0/jj-v0.34.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:9967a240e3294a0bce4444c55d40a35b70af44c69b558689aced95e4e497cef2"
+size = 9670601
+url = "https://github.com/jj-vcs/jj/releases/download/v0.35.0/jj-v0.35.0-x86_64-unknown-linux-musl.tar.gz"
 
 [[tools.jjui]]
 version = "0.9.5"
@@ -435,18 +420,13 @@ size = 52626542
 url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.35"
+version = "1.0.51"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.linux-x64]
-checksum = "sha256:fedcfcf4ad2ab49216f451973a5c7a308a545bf2251c120599e8ef91d27787c0"
-size = 47066519
-url = "https://github.com/sst/opencode/releases/download/v1.0.35/opencode-linux-x64.zip"
-
-[tools.opencode.platforms.macos-arm64]
-checksum = "sha256:4c04f7573936c7c35f6f1698867db2efc8b18feb40e8bea896a85fbbb7f9e310"
-size = 29131209
-url = "https://github.com/sst/opencode/releases/download/v1.0.35/opencode-darwin-arm64.zip"
+checksum = "sha256:fdbb9d7542724a90a998c30095f74c3477736d1fec030ce401f69ac7351f896a"
+size = 47145845
+url = "https://github.com/sst/opencode/releases/download/v1.0.51/opencode-linux-x64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -537,7 +517,7 @@ checksum = "blake3:cf3ca1eda16f14af733a75cfa136e14e44ddb8b4b63ccd8d0ac0327f0a9a4
 checksum = "blake3:4784ce9570869607774cf551e9e6abf6089496867911a4d067bd79d82b3a79a1"
 
 [[tools.uv]]
-version = "0.9.7"
+version = "0.9.8"
 backend = "asdf:uv"
 
 [[tools.xh]]
