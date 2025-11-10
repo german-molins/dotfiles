@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1762704072-gac8d42"
+version = "0.0.1762761683-g060d08"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -137,18 +137,13 @@ version = "1.0.509"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
-version = "0.3.0"
+version = "0.4.0"
 backend = "aqua:uutils/coreutils"
 
-[tools.coreutils.platforms.linux-x64]
-checksum = "sha256:4f31610e2681e278e7bce14f4dc0fc5f0265a10b102f7153c8cff40af640cf31"
-size = 5417859
-url = "https://github.com/uutils/coreutils/releases/download/0.3.0/coreutils-0.3.0-x86_64-unknown-linux-musl.tar.gz"
-
 [tools.coreutils.platforms.macos-arm64]
-checksum = "sha256:af60b273599671520b8bf2dc646fee455023d74bf72826e8491729b12748c563"
-size = 4949995
-url = "https://github.com/uutils/coreutils/releases/download/0.3.0/coreutils-0.3.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:a148b660eeaf409af7a4406903f93d0e6713a5eb9adcaf71a1d732f1e3cc3522"
+size = 5024637
+url = "https://github.com/uutils/coreutils/releases/download/0.4.0/coreutils-0.4.0-aarch64-apple-darwin.tar.gz"
 
 [[tools.cosign]]
 version = "3.0.2"
@@ -430,18 +425,13 @@ size = 52626542
 url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.51"
+version = "1.0.54"
 backend = "aqua:sst/opencode"
 
-[tools.opencode.platforms.linux-x64]
-checksum = "sha256:fdbb9d7542724a90a998c30095f74c3477736d1fec030ce401f69ac7351f896a"
-size = 47145845
-url = "https://github.com/sst/opencode/releases/download/v1.0.51/opencode-linux-x64.zip"
-
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:4be8078a48357dce62341fe5ee1183fb209b6463c8f120444dfb4daccd64f44a"
-size = 29215613
-url = "https://github.com/sst/opencode/releases/download/v1.0.51/opencode-darwin-arm64.zip"
+checksum = "sha256:9cd8e1c45ac29649fa9e7f60d24cf300872b8531ca85d95e09eff62d370e3c25"
+size = 29216959
+url = "https://github.com/sst/opencode/releases/download/v1.0.54/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -469,18 +459,13 @@ size = 2749662
 url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [[tools.pnpm]]
-version = "10.20.0"
+version = "10.21.0"
 backend = "aqua:pnpm/pnpm"
 
-[tools.pnpm.platforms.linux-x64]
-checksum = "sha256:d25defac8655080add042decfa94b5c3b28cafbb048edd4de6dc2c41f9220418"
-size = 65892053
-url = "https://github.com/pnpm/pnpm/releases/download/v10.20.0/pnpm-linux-x64"
-
 [tools.pnpm.platforms.macos-arm64]
-checksum = "sha256:6ce67b7b237b349fbb27a1f52fe0b3d6d754679fec2b31c9db98e134599f1371"
-size = 62592784
-url = "https://github.com/pnpm/pnpm/releases/download/v10.20.0/pnpm-macos-arm64"
+checksum = "sha256:ca58565512fe2387130fc1ef59d5e45cde42a0e39183d531b473b3cfc88f5e60"
+size = 62504432
+url = "https://github.com/pnpm/pnpm/releases/download/v10.21.0/pnpm-macos-arm64"
 
 [[tools.ripgrep]]
 version = "15.1.0"
