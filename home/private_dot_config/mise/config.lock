@@ -73,6 +73,11 @@ checksum = "sha256:64326f87cb309cc1dea4388f3bf6f569515f0d5a3dba07ec21bc2e33e95f7
 size = 2163690
 url = "https://github.com/ClementTsang/bottom/releases/download/0.11.3/bottom_x86_64-unknown-linux-musl.tar.gz"
 
+[tools.bottom.platforms.macos-arm64]
+checksum = "sha256:631affa075b7e1a6944bc0882a43f0ca811c2c593a871247d2794d2881f65f93"
+size = 1774800
+url = "https://github.com/ClementTsang/bottom/releases/download/0.11.3/bottom_aarch64-apple-darwin.tar.gz"
+
 [[tools.carapace]]
 version = "1.5.4"
 backend = "aqua:carapace-sh/carapace-bin"
@@ -95,6 +100,11 @@ backend = "aqua:cargo-bins/cargo-binstall"
 checksum = "sha256:82d6c69a87d222bbf834371af0dc4d1c08037739ea54be9f4857e00ff7af05c7"
 size = 6770344
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.11/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+
+[tools.cargo-binstall.platforms.macos-arm64]
+checksum = "sha256:6ef11db952aaf5d9fc569e1f1585d124ee852d38bb585c5e97202fa141ee44b0"
+size = 5970490
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.15.11/cargo-binstall-aarch64-apple-darwin.zip"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -427,6 +437,11 @@ backend = "aqua:sst/opencode"
 checksum = "sha256:fdbb9d7542724a90a998c30095f74c3477736d1fec030ce401f69ac7351f896a"
 size = 47145845
 url = "https://github.com/sst/opencode/releases/download/v1.0.51/opencode-linux-x64.zip"
+
+[tools.opencode.platforms.macos-arm64]
+checksum = "sha256:4be8078a48357dce62341fe5ee1183fb209b6463c8f120444dfb4daccd64f44a"
+size = 29215613
+url = "https://github.com/sst/opencode/releases/download/v1.0.51/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
