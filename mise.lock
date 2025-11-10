@@ -6,6 +6,10 @@ backend = "core:bun"
 checksum = "blake3:d9f743140120e39812867aa896512deea4fe99ab866029f8bd5a347557c61073"
 size = 39630922
 
+[tools.bun.platforms.macos-arm64]
+checksum = "blake3:973aa23e358881b982235a05e659ca4ba81dc734ce1cd2cd06dbe9122ea7a58c"
+size = 22511628
+
 [[tools.jq]]
 version = "1.8.1"
 backend = "aqua:jqlang/jq"
