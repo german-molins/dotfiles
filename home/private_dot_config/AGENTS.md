@@ -1,5 +1,9 @@
 # User AGENT Rules
 
+## Tools
+
+- When you need to search docs, use `context7` tools.
+
 ## Development Environment
 
 - Runtime, environment and tasks manager: `mise`
