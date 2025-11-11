@@ -7,6 +7,7 @@ alias e="$EDITOR"
 alias v="$VISUAL"
 
 alias mdns=mdnstool
+alias cc=claude
 alias oc=opencode
 alias num=numbat
 alias calc=numbat

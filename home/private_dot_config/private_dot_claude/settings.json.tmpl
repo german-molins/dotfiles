@@ -1,0 +1,17 @@
+{
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "transport": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": {{ env "CONTEXT7_API_KEY" | quote }}
+      }
+    },
+    "mise": {
+      "type": "local",
+      "transport": "stdio",
+      "command": ["mise", "mcp"]
+    }
+  }
+}

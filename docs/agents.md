@@ -88,3 +88,36 @@ AZQ is AWS's LLM coding agent with CLI interface.
 standardized context file paths.
 - **Profiles**: `~/.aws/amazonq/profiles/`
 - **MCP Config**: `~/.aws/amazonq/mcp.json`
+
+## Claude Code
+
+[Claude Code](https://code.claude.com) is Anthropic's official CLI coding agent.
+
+### Configuration
+
+- **User Settings**: `~/.claude/settings.json` - defines MCP servers and user preferences
+- **User Context**: `~/.claude/CLAUDE.md` - global (user) context file
+- **Project Settings**: `.claude/settings.json` - project-specific configuration
+- **Project Context**: `.claude/CLAUDE.md` - local (project) context file
+
+### Context File Usage
+
+Claude Code reads context through:
+
+1. Global `~/.claude/CLAUDE.md` file
+2. Local `.claude/CLAUDE.md` file in project root
+3. Referenced files using `@` syntax
+
+**Note**: While Claude Code uses `CLAUDE.md` as its native context file format,
+it can reference the standardized `AGENTS.md` files by including `@~/.config/AGENTS.md`
+or `@AGENTS.md` in the respective `CLAUDE.md` files.
+
+Reference: [Claude Code Settings](https://code.claude.com/docs/en/settings)
+
+### MCP Server Configuration
+
+MCP servers are configured through the `mcp` key in `settings.json` or via the
+`claude mcp add` command. The following MCP servers are pre-configured:
+
+- **Context7**: Remote HTTP server for up-to-date documentation
+- **Mise**: Local stdio server exposing mise environment information
