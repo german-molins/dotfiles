@@ -19,3 +19,4 @@ packages:
       - db-browser-for-sqlite
       - another-redis-desktop-manager
       - wireshark-app
+      - windows-app
