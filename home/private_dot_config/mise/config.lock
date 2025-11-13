@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1762948899-g026085"
+version = "0.0.1763020879-gea8503"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -420,13 +420,13 @@ size = 52638870
 url = "https://nodejs.org/dist/v25.2.0/node-v25.2.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.61"
+version = "1.0.62"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:00ee849b5e3f59ccb721d2f2f26bbdee9cdedc86e5e98f80681a842d2de44f56"
-size = 29321990
-url = "https://github.com/sst/opencode/releases/download/v1.0.61/opencode-darwin-arm64.zip"
+checksum = "sha256:a68b1f1a2c720557d4d44321b215037dda4a2358c5f34e42bcb434c1459d6c41"
+size = 29330793
+url = "https://github.com/sst/opencode/releases/download/v1.0.62/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -454,13 +454,13 @@ size = 2749662
 url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [[tools.pnpm]]
-version = "10.21.0"
+version = "10.22.0"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm.platforms.macos-arm64]
-checksum = "sha256:ca58565512fe2387130fc1ef59d5e45cde42a0e39183d531b473b3cfc88f5e60"
-size = 62504432
-url = "https://github.com/pnpm/pnpm/releases/download/v10.21.0/pnpm-macos-arm64"
+checksum = "sha256:818bfd5782292cc74673e5f5f365ffc88cc735b1eff6ded342322eb7f2d2ce94"
+size = 62505632
+url = "https://github.com/pnpm/pnpm/releases/download/v10.22.0/pnpm-macos-arm64"
 
 [[tools.ripgrep]]
 version = "15.1.0"
@@ -502,14 +502,14 @@ backend = "ubi:sigoden/upt"
 checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8bb20"
 
 [[tools.usage]]
-version = "2.7.0"
+version = "2.8.0"
 backend = "ubi:jdx/usage"
 
 [tools.usage.platforms.macos-arm64-usage]
-checksum = "blake3:0ec0de8cde4d819eecff2203bedec27df6a17eb9e55aef38f5ef66c5ad8ec82a"
+checksum = "blake3:b58c11a3a3a17de627b3e754a293839f3a03cc028acd68bf916351a3ea613e4f"
 
 [[tools.uv]]
-version = "0.9.8"
+version = "0.9.9"
 backend = "asdf:uv"
 
 [[tools.xh]]
