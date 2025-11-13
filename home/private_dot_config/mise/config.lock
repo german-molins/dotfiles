@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1762761683-g060d08"
+version = "0.0.1762948899-g026085"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -331,11 +331,11 @@ size = 12491104
 url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.76.2"
+version = "1.77.0"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:d36cd8567443a4e0398977731791df39badb335c30f69644c0f8896c256a0cd7"
+checksum = "blake3:bf7935f661772a381ac45fc6c904c7e7448de64375ce4860624104bdfdefba99"
 
 [[tools.jj]]
 version = "0.35.0"
@@ -411,27 +411,22 @@ size = 9204217
 url = "https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-macos-arm64.tar.gz"
 
 [[tools.node]]
-version = "25.1.0"
+version = "25.2.0"
 backend = "core:node"
 
-[tools.node.platforms.linux-x64]
-checksum = "sha256:0b8de924cd43546a2098c091b73002442cd61340622b2c1489df408755de21fc"
-size = 54581244
-url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-linux-x64.tar.gz"
-
 [tools.node.platforms.macos-arm64]
-checksum = "sha256:811dcf54580d9eef0abfed9f65457545d2aac8e24853b6e638194fcba0257168"
-size = 52626542
-url = "https://nodejs.org/dist/v25.1.0/node-v25.1.0-darwin-arm64.tar.gz"
+checksum = "sha256:5ce975101e85598d2f1f84b297e8bd7ff315e46fa644be1ffc76f0c48de480bb"
+size = 52638870
+url = "https://nodejs.org/dist/v25.2.0/node-v25.2.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.54"
+version = "1.0.61"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:9cd8e1c45ac29649fa9e7f60d24cf300872b8531ca85d95e09eff62d370e3c25"
-size = 29216959
-url = "https://github.com/sst/opencode/releases/download/v1.0.54/opencode-darwin-arm64.zip"
+checksum = "sha256:00ee849b5e3f59ccb721d2f2f26bbdee9cdedc86e5e98f80681a842d2de44f56"
+size = 29321990
+url = "https://github.com/sst/opencode/releases/download/v1.0.61/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -482,7 +477,7 @@ size = 1777930
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-aarch64-apple-darwin.tar.gz"
 
 [[tools.rust]]
-version = "1.91.0"
+version = "1.91.1"
 backend = "core:rust"
 
 [[tools.tree-sitter]]
@@ -507,14 +502,11 @@ backend = "ubi:sigoden/upt"
 checksum = "blake3:40ab37c6d7fd7e31815e377891c0626a6ddf6afa92a58c04d0c1966269d8bb20"
 
 [[tools.usage]]
-version = "2.6.0"
+version = "2.7.0"
 backend = "ubi:jdx/usage"
 
-[tools.usage.platforms.linux-x64-usage]
-checksum = "blake3:cf3ca1eda16f14af733a75cfa136e14e44ddb8b4b63ccd8d0ac0327f0a9a4dc4"
-
 [tools.usage.platforms.macos-arm64-usage]
-checksum = "blake3:4784ce9570869607774cf551e9e6abf6089496867911a4d067bd79d82b3a79a1"
+checksum = "blake3:0ec0de8cde4d819eecff2203bedec27df6a17eb9e55aef38f5ef66c5ad8ec82a"
 
 [[tools.uv]]
 version = "0.9.8"
