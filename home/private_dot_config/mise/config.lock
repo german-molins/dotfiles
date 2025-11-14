@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1763107286-g6ea5d6"
+version = "0.0.1763150480-ge61f28"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -133,7 +133,7 @@ checksum = "blake3:8d3f1e6baf72a247cb03dadd9f36bce2ef4b7771e7acd4e5e0c71ab4bc5c7
 checksum = "blake3:02e5e7b0a1715b1c63020abf1430a29a7a131a6280c975a883416816d4b29ea5"
 
 [[tools.codebuff]]
-version = "1.0.509"
+version = "1.0.511"
 backend = "npm:codebuff"
 
 [[tools.coreutils]]
