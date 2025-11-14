@@ -1,4 +1,4 @@
-hash -p ~/.local/bin/mise mise
+export PATH="~/.local/bin:$PATH"
 
 _mise_evalcache()
 {
