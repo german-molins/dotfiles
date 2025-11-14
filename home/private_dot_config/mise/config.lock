@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1763020879-gea8503"
+version = "0.0.1763107286-g6ea5d6"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -237,13 +237,13 @@ size = 1747511
 url = "https://github.com/junegunn/fzf/releases/download/v0.66.1/fzf-0.66.1-darwin_arm64.tar.gz"
 
 [[tools.gh]]
-version = "2.83.0"
+version = "2.83.1"
 backend = "aqua:cli/cli"
 
 [tools.gh.platforms.macos-arm64]
-checksum = "sha256:fecba907bc361d5e33620dbf1145f11432c39fb2b388a839463cfbb89a84820b"
-size = 17385865
-url = "https://github.com/cli/cli/releases/download/v2.83.0/gh_2.83.0_macOS_arm64.zip"
+checksum = "sha256:4461a4f07cfdbeb83f96dce8d3789d5115b22185fb1a6fd3ec7f7befb755db0c"
+size = 17386980
+url = "https://github.com/cli/cli/releases/download/v2.83.1/gh_2.83.1_macOS_arm64.zip"
 
 [[tools."github:atuinsh/atuin"]]
 version = "18.10.0"
@@ -420,13 +420,13 @@ size = 52638870
 url = "https://nodejs.org/dist/v25.2.0/node-v25.2.0-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.62"
+version = "1.0.65"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:a68b1f1a2c720557d4d44321b215037dda4a2358c5f34e42bcb434c1459d6c41"
-size = 29330793
-url = "https://github.com/sst/opencode/releases/download/v1.0.62/opencode-darwin-arm64.zip"
+checksum = "sha256:4eea8adb288a977ef3c7dcea29e4645975adccb3835705aa80b4ec1d186b24a9"
+size = 29333849
+url = "https://github.com/sst/opencode/releases/download/v1.0.65/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
