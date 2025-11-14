@@ -144,6 +144,13 @@ automatically refreshed when:
 - Tool installations change (`~/.local/share/mise/installs` directory timestamp)
 - Project configuration changes (`mise.toml` in current directory)
 
+The caching implementation includes robust error handling for edge cases:
+
+- **First execution**: When mise isn't installed yet, activation is skipped gracefully
+- **Command failures**: If `mise activate bash` fails, an empty cache is created to prevent errors
+- **Missing output**: Commands that produce no output are handled safely
+- **Binary availability**: Mise activation only occurs if the binary is available
+
 **Limitations**: The cache may not refresh for all configuration changes (e.g.,
 global config modifications, environment-specific configs). If activation hooks
 seem stale, manually clear the cache:

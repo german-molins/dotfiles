@@ -22,9 +22,15 @@ _mise_evalcache()
     if [[ ! -f "$cache_file" ]] || ! $cache_valid; then
         [[ "${DOTFILES_VERBOSE:-}" == "true" ]] && echo "[mise-evalcache] Refreshing cache for command '$*'" >&2
         rm -f "$cache_file"
-        "$@" >"$cache_file"
+        if "$@" >"$cache_file" 2>/dev/null && [[ -s "$cache_file" ]]; then
+            # Command succeeded and produced output
+            :
+        else
+            # Command failed or produced no output, create empty cache
+            : >"$cache_file"
+        fi
     fi
-    cat "$cache_file"
+    [[ -f "$cache_file" ]] && cat "$cache_file"
 }
 
 _mise_evalcache_clear()
@@ -32,5 +38,8 @@ _mise_evalcache_clear()
     rm -rf "${HOME}/.cache/dotfiles/bash/mise" "${HOME}/.cache/dotfiles/bash/hooks"
 }
 
-eval "$(_mise_evalcache mise activate bash)"
-eval "$(mise completion bash --include-bash-completion-lib)"
+# Only activate mise if the binary exists
+if command -v mise >/dev/null 2>&1; then
+    eval "$(_mise_evalcache mise activate bash)"
+    eval "$(mise completion bash --include-bash-completion-lib)"
+fi
