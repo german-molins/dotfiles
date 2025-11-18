@@ -23,13 +23,13 @@ layout {
   }
   tab name="ai" {
     pane stacked=true {
-      pane name="OpenCode" command="opencode" start_suspended=true
+      pane name="OpenCode" expanded=true command="opencode" start_suspended=true
       pane name="Amp" command="amp" start_suspended=true
       pane name="Amazon Q" command="q" start_suspended=true {
-      pane name="Claude" command="claude" start_suspended=true
-      pane name="Codebuff" command="codebuff" start_suspended=true
         args "chat" "--resume"
       }
+      pane name="Claude" command="claude" start_suspended=true
+      pane name="Codebuff" command="codebuff" start_suspended=true
     }
   }
 }
