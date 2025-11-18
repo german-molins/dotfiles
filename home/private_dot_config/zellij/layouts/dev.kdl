@@ -1,35 +1,69 @@
 layout {
   default_tab_template {
-      pane size=1 borderless=true {
+      pane {
+          size 1
+          borderless true
           plugin location="zellij:tab-bar"
       }
       children
-      pane size=1 borderless=true {
+      pane {
+          size 1
+          borderless true
           plugin location="zellij:status-bar"
       }
   }
+
   tab name="vcs" focus=true {
     pane stacked=true {
-        pane name="Jujutsu UI" expanded=true command="jjui" start_suspended=true
-        pane name="Lazygit" command="lazygit"
-        pane name="GitUI" command="bash" {
-          args "-c" "gitui"
-        }
-        pane name="GH Dash" command="gh-dash" start_suspended=true
+      pane name="Jujutsu UI" {
+        command "jjui"
+        start_suspended true
+        expanded true
+      }
+      pane name="Lazygit" {
+        command "lazygit"
+      }
+      pane name="GitUI" {
+        command "bash"
+        args "-c" "gitui"
+      }
+      pane name="GH Dash" {
+        command "gh-dash"
+        start_suspended true
+      }
     }
   }
+
   tab name="edit" {
-    pane command="nvim"
+    pane {
+      command "nvim"
+    }
   }
+
   tab name="ai" {
     pane stacked=true {
-      pane name="OpenCode" expanded=true command="opencode" start_suspended=true
-      pane name="Amp" command="amp" start_suspended=true
-      pane name="Amazon Q" command="q" start_suspended=true {
-        args "chat" "--resume"
+      pane name="OpenCode" {
+        command "opencode"
+        start_suspended true
+        expanded true
       }
-      pane name="Claude" command="claude" start_suspended=true
-      pane name="Codebuff" command="codebuff" start_suspended=true
+      pane name="Amp" {
+        command "amp"
+        start_suspended true
+      }
+      pane name="Amazon Q" {
+        command "q"
+        args "chat" "--resume"
+        start_suspended true
+      }
+      pane name="Claude" {
+        command "claude"
+        start_suspended true
+      }
+      pane name="Codebuff" {
+        command "codebuff"
+        start_suspended true
+      }
     }
   }
 }
