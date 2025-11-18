@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1763366491-g91a5d6"
+version = "0.0.1763452890-gc416eb"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -69,18 +69,13 @@ size = 1775774
 url = "https://github.com/ClementTsang/bottom/releases/download/0.11.4/bottom_aarch64-apple-darwin.tar.gz"
 
 [[tools.carapace]]
-version = "1.5.4"
+version = "1.5.5"
 backend = "aqua:carapace-sh/carapace-bin"
 
-[tools.carapace.platforms.linux-x64]
-checksum = "sha256:f539228a7ed56b21157b2bd3405ca3e12fa5a04be486f215fce0cd7bbbce0619"
-size = 13428514
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.4/carapace-bin_1.5.4_linux_amd64.tar.gz"
-
 [tools.carapace.platforms.macos-arm64]
-checksum = "sha256:31f66b158c7b9943c0f198bad5c76e40928dee765630a1da2fe73d0bdd2697a2"
-size = 13605798
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.4/carapace-bin_1.5.4_darwin_arm64.tar.gz"
+checksum = "sha256:a33f3131bca488fc1934107f7f789309baa24c39081fade19e77274fd3bfbe77"
+size = 13627163
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.5/carapace-bin_1.5.5_darwin_arm64.tar.gz"
 
 [[tools.cargo-binstall]]
 version = "1.16.0"
@@ -489,7 +484,7 @@ backend = "ubi:jdx/usage"
 checksum = "blake3:b58c11a3a3a17de627b3e754a293839f3a03cc028acd68bf916351a3ea613e4f"
 
 [[tools.uv]]
-version = "0.9.9"
+version = "0.9.10"
 backend = "asdf:uv"
 
 [[tools.xh]]
