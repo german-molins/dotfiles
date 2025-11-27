@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1763971290-ga6cc1d"
+version = "0.0.1764057683-g27ffc2"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -326,11 +326,11 @@ size = 12491104
 url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.78.2"
+version = "1.78.3"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:2012e34daca078067a51dd94f90cbb0b458a03a69cee05975ca6d828baf3eb87"
+checksum = "blake3:e1a4d367e891cdc0d9880fc18882db0dd53cfdc794820eef4a4b73f98bd08c67"
 
 [[tools.jj]]
 version = "0.35.0"
@@ -420,13 +420,13 @@ size = 52637633
 url = "https://nodejs.org/dist/v25.2.1/node-v25.2.1-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.106"
+version = "1.0.110"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:22d748830460928123ba30523f113d98a3c646ed72b825680af537b237242ac0"
-size = 29285672
-url = "https://github.com/sst/opencode/releases/download/v1.0.106/opencode-darwin-arm64.zip"
+checksum = "sha256:a0061183e1cee0b1d8cb653bfabb2b67f4d96fbc02e31709fecf0bedbbf23288"
+size = 30848246
+url = "https://github.com/sst/opencode/releases/download/v1.0.110/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -536,13 +536,13 @@ size = 7753495
 url = "https://github.com/sxyazi/yazi/releases/download/v25.5.31/yazi-aarch64-unknown-linux-musl.zip"
 
 [[tools.yq]]
-version = "4.49.1"
+version = "4.49.2"
 backend = "aqua:mikefarah/yq"
 
 [tools.yq.platforms.macos-arm64]
-checksum = "sha256:2798f0b76b78d8c2b6e3796d27145468c2ae094c76c9dfc0d6bb3c7031100714"
+checksum = "sha256:b0b70ede2b392ba02091b8137b42db819a7968cf232d595dd7394ac5668b4a0b"
 size = 10997522
-url = "https://github.com/mikefarah/yq/releases/download/v4.49.1/yq_darwin_arm64"
+url = "https://github.com/mikefarah/yq/releases/download/v4.49.2/yq_darwin_arm64"
 
 [[tools.zellij]]
 version = "0.43.1"
