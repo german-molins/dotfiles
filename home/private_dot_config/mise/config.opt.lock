@@ -16,7 +16,7 @@ version = "0.8.0"
 backend = "cargo:findutils"
 
 [[tools.claude]]
-version = "2.0.49"
+version = "2.0.50"
 backend = "npm:@anthropic-ai/claude-code"
 
 [[tools.ffmpeg]]

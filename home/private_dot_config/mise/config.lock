@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1763712078-g89acb5"
+version = "0.0.1763971290-ga6cc1d"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -93,18 +93,13 @@ size = 13627163
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.5/carapace-bin_1.5.5_darwin_arm64.tar.gz"
 
 [[tools.cargo-binstall]]
-version = "1.16.0"
+version = "1.16.2"
 backend = "aqua:cargo-bins/cargo-binstall"
 
-[tools.cargo-binstall.platforms.linux-x64]
-checksum = "sha256:d9f55ae6aff2ab7dbbd3f6478510a81d56dc700fdd1d2510c7ef6d074c2c94c9"
-size = 6768003
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.16.0/cargo-binstall-x86_64-unknown-linux-musl.tgz"
-
 [tools.cargo-binstall.platforms.macos-arm64]
-checksum = "sha256:cbf46daabf9f4e222c208d169c9ff0b890360ae95b2d2553b4baee8182882e45"
-size = 5973764
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.16.0/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "sha256:d51b7d2487a10abc395ccec7a2c9c79c83e44aac4b830e1694f8c8e10cad5e88"
+size = 5984545
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.16.2/cargo-binstall-aarch64-apple-darwin.zip"
 
 [[tools."cargo:diffutils"]]
 version = "0.4.2"
@@ -115,7 +110,7 @@ version = "0.5.0"
 backend = "cargo:lazyjj"
 
 [[tools."cargo:somo"]]
-version = "1.3.0"
+version = "1.3.1"
 backend = "cargo:somo"
 
 [[tools."cargo:tlrc"]]
@@ -331,11 +326,11 @@ size = 12491104
 url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarch64-macos.zip"
 
 [[tools.glab]]
-version = "1.77.0"
+version = "1.78.2"
 backend = "ubi:gitlab-org/cli[provider=gitlab,exe=glab]"
 
 [tools.glab.platforms.macos-arm64-glab-glab]
-checksum = "blake3:bf7935f661772a381ac45fc6c904c7e7448de64375ce4860624104bdfdefba99"
+checksum = "blake3:2012e34daca078067a51dd94f90cbb0b458a03a69cee05975ca6d828baf3eb87"
 
 [[tools.jj]]
 version = "0.35.0"
@@ -347,13 +342,13 @@ size = 9670601
 url = "https://github.com/jj-vcs/jj/releases/download/v0.35.0/jj-v0.35.0-x86_64-unknown-linux-musl.tar.gz"
 
 [[tools.jjui]]
-version = "0.9.5"
+version = "0.9.6"
 backend = "aqua:idursun/jjui"
 
 [tools.jjui.platforms.macos-arm64]
-checksum = "blake3:cf6757026bc6695fa647d4ed8bd014f68d97aaec3b6dc87c4eeb2be9879f03a3"
-size = 3681659
-url = "https://github.com/idursun/jjui/releases/download/v0.9.5/jjui-0.9.5-darwin-arm64.zip"
+checksum = "sha256:b6d272709ab9322284182b24e7c62a956515f195cf33df54824be53efa7b190b"
+size = 3723234
+url = "https://github.com/idursun/jjui/releases/download/v0.9.6/jjui-0.9.6-darwin-arm64.zip"
 
 [[tools.jq]]
 version = "1.8.1"
@@ -425,13 +420,13 @@ size = 52637633
 url = "https://nodejs.org/dist/v25.2.1/node-v25.2.1-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.83"
+version = "1.0.106"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:eda8e836d08ddd0281b657444dbbea8b207f990abd58264b548392dffca31e34"
-size = 29699814
-url = "https://github.com/sst/opencode/releases/download/v1.0.83/opencode-darwin-arm64.zip"
+checksum = "sha256:22d748830460928123ba30523f113d98a3c646ed72b825680af537b237242ac0"
+size = 29285672
+url = "https://github.com/sst/opencode/releases/download/v1.0.106/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -541,18 +536,13 @@ size = 7753495
 url = "https://github.com/sxyazi/yazi/releases/download/v25.5.31/yazi-aarch64-unknown-linux-musl.zip"
 
 [[tools.yq]]
-version = "4.48.2"
+version = "4.49.1"
 backend = "aqua:mikefarah/yq"
 
-[tools.yq.platforms.linux-x64]
-checksum = "sha256:0ffc35320180d4911bc3a772934da508715e08af444cb33d4d43660065e25bcc"
-size = 11501752
-url = "https://github.com/mikefarah/yq/releases/download/v4.48.2/yq_linux_amd64"
-
 [tools.yq.platforms.macos-arm64]
-checksum = "sha256:b3a77a428fda2daced121c937be7f5dfb8107fc62ec506064f1d23bc09415dcb"
+checksum = "sha256:2798f0b76b78d8c2b6e3796d27145468c2ae094c76c9dfc0d6bb3c7031100714"
 size = 10997522
-url = "https://github.com/mikefarah/yq/releases/download/v4.48.2/yq_darwin_arm64"
+url = "https://github.com/mikefarah/yq/releases/download/v4.49.1/yq_darwin_arm64"
 
 [[tools.zellij]]
 version = "0.43.1"
