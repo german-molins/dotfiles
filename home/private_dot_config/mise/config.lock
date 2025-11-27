@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1764144083-g1b882e"
+version = "0.0.1764230497-g3a9392"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -118,14 +118,11 @@ version = "1.12.0"
 backend = "cargo:tlrc"
 
 [[tools.chezmoi]]
-version = "2.67.0"
+version = "2.67.1"
 backend = "ubi:twpayne/chezmoi"
 
-[tools.chezmoi.platforms.linux-x64-chezmoi]
-checksum = "blake3:8d3f1e6baf72a247cb03dadd9f36bce2ef4b7771e7acd4e5e0c71ab4bc5c7e1b"
-
 [tools.chezmoi.platforms.macos-arm64-chezmoi]
-checksum = "blake3:02e5e7b0a1715b1c63020abf1430a29a7a131a6280c975a883416816d4b29ea5"
+checksum = "blake3:ae641563e2fb680eaeba36fdcd185f5d6dd6c9baf3ce0eb2dc92e4f01ce89748"
 
 [[tools.codebuff]]
 version = "1.0.511"
@@ -420,13 +417,13 @@ size = 52637633
 url = "https://nodejs.org/dist/v25.2.1/node-v25.2.1-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.114"
+version = "1.0.119"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:29c60997d7b17b07b9abbe6876bbe065ec922c9047b27d7a356703e6dcab1774"
-size = 30858977
-url = "https://github.com/sst/opencode/releases/download/v1.0.114/opencode-darwin-arm64.zip"
+checksum = "sha256:d28f420fbe8d313bb314c62523c7503b148853edcc2ff91f76453c085c37c274"
+size = 30879675
+url = "https://github.com/sst/opencode/releases/download/v1.0.119/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -509,7 +506,7 @@ backend = "ubi:jdx/usage"
 checksum = "blake3:b58c11a3a3a17de627b3e754a293839f3a03cc028acd68bf916351a3ea613e4f"
 
 [[tools.uv]]
-version = "0.9.12"
+version = "0.9.13"
 backend = "asdf:uv"
 
 [[tools.xh]]
