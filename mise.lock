@@ -1,16 +1,9 @@
 [[tools.bun]]
 version = "1.3.3"
 backend = "core:bun"
-
-[tools.bun.platforms.macos-arm64]
-checksum = "blake3:2b8fa453577fa737c9eaf42730791360c8a133397db28684c93e49f9dd5d501a"
-size = 22063538
+"platforms.macos-arm64" = { checksum = "blake3:2b8fa453577fa737c9eaf42730791360c8a133397db28684c93e49f9dd5d501a"}
 
 [[tools.jq]]
 version = "1.8.1"
 backend = "aqua:jqlang/jq"
-
-[tools.jq.platforms.macos-arm64]
-checksum = "sha256:a9fe3ea2f86dfc72f6728417521ec9067b343277152b114f4e98d8cb0e263603"
-size = 841408
-url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-macos-arm64"
+"platforms.macos-arm64" = { checksum = "sha256:a9fe3ea2f86dfc72f6728417521ec9067b343277152b114f4e98d8cb0e263603", url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-macos-arm64"}
