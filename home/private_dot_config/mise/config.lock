@@ -8,7 +8,7 @@ size = 5464580
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-aarch64-unknown-linux-musl.tar.gz"
 
 [[tools.amp]]
-version = "0.0.1764230497-g3a9392"
+version = "0.0.1764576096-g2b19df"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -417,13 +417,13 @@ size = 52637633
 url = "https://nodejs.org/dist/v25.2.1/node-v25.2.1-darwin-arm64.tar.gz"
 
 [[tools.opencode]]
-version = "1.0.119"
+version = "1.0.123"
 backend = "aqua:sst/opencode"
 
 [tools.opencode.platforms.macos-arm64]
-checksum = "sha256:d28f420fbe8d313bb314c62523c7503b148853edcc2ff91f76453c085c37c274"
-size = 30879675
-url = "https://github.com/sst/opencode/releases/download/v1.0.119/opencode-darwin-arm64.zip"
+checksum = "sha256:f7a26044f1b7b068ceae87aa02fc6144be1977a5cc2330ae132a7d3cf7eda5a0"
+size = 31166801
+url = "https://github.com/sst/opencode/releases/download/v1.0.123/opencode-darwin-arm64.zip"
 
 [[tools.pandoc]]
 version = "3.8.2.1"
@@ -451,13 +451,13 @@ size = 2749662
 url = "https://github.com/jdx/pitchfork/releases/download/v0.2.1/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [[tools.pnpm]]
-version = "10.23.0"
+version = "10.24.0"
 backend = "aqua:pnpm/pnpm"
 
 [tools.pnpm.platforms.macos-arm64]
-checksum = "sha256:aebc1cf4550d8ee3010a6cb42aeefc094ff2d1904fc0f59e9c906351a6b0f620"
-size = 62466000
-url = "https://github.com/pnpm/pnpm/releases/download/v10.23.0/pnpm-macos-arm64"
+checksum = "sha256:e3978826faa5fa7fdf63b752afc7a1bc4585ecd591b899fb956ebdd4e49f5db8"
+size = 62467360
+url = "https://github.com/pnpm/pnpm/releases/download/v10.24.0/pnpm-macos-arm64"
 
 [[tools.ripgrep]]
 version = "15.1.0"
