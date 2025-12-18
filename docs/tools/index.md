@@ -40,7 +40,7 @@ VCS:
 | [Lazygit](https://github.com/jesseduffield/lazygit) | `lazygit` | `git lazy` | Git manager |
 | [GitHub CLI](https://cli.github.com/) | `gh` | | GitHub CLI |
 | [GitHub Dashboard](https://dlvhdr.github.io/gh-dash/) | `gh-dash` | `gh dash` | Pull requests and issues manager |
-| [Jujutsu](https://jj-vcs.github.io) | `jj` | | Git-compatible VCS |
+| [Jujutsu](https://docs.jj-vcs.dev) | `jj` | | Git-compatible VCS |
 | [Jujutsu UI](https://idursun.github.io/jjui) | `jjui` | `jj ui` | Jujutsu manager |
 | [Lazyjj](https://github.com/Cretezy/lazyjj) | `lazyjj` | | Jujutsu manager |
 

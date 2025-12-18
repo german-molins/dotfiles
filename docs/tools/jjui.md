@@ -1,4 +1,4 @@
-# [Jujutsu UI](https://jj-vcs.github.io)
+# [Jujutsu UI](https://docs.jj-vcs.dev)
 
 Available themes are configured as chezmoi externals from
 [tinted-jjui](https://github.com/vic/tinted-jjui):
