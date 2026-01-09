@@ -53,7 +53,7 @@ Coding agents:
 | [Amp](https://ampcode.com/) | `amp` | | Amp subscription<br>Free mode (`/mode free`) | `AMP_API_KEY` |
 | [Claude Code](https://code.claude.com) | `claude` | | Anthropic subscription | |
 | [Opencode](https://opencode.ai) | `opencode` | `oc` | Opencode Zen<br>OpenRouter | `OPENCODE_API_KEY`<br>`OPENROUTER_API_KEY` |
-| [Codebuff](https://www.codebuff.com) | `codebuff` | | Free tier | |
+| [Codebuff](https://www.codebuff.com) | `codebuff` | | Claude Pro subscription (OAuth)<br>Free tier | |
 
 External LLM service providers:
 
