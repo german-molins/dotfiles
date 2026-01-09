@@ -2,8 +2,8 @@
   "lockfile_version": "1",
   "packages": {
     "gitflow@latest": {
-      "last_modified": "2025-11-23T21:50:36Z",
-      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#gitflow",
+      "last_modified": "2025-12-31T03:27:36Z",
+      "resolved": "github:NixOS/nixpkgs/f665af0cdb70ed27e1bd8f9fdfecaf451260fc55#gitflow",
       "source": "devbox-search",
       "version": "1.12.3",
       "systems": {
@@ -11,41 +11,41 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ysrkrql494a9l2b12kq6lyy76qk07svk-gitflow-1.12.3",
+              "path": "/nix/store/0jhvlg9rraglclsc6bzqai0hf17d3qn7-gitflow-1.12.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/ysrkrql494a9l2b12kq6lyy76qk07svk-gitflow-1.12.3"
+          "store_path": "/nix/store/0jhvlg9rraglclsc6bzqai0hf17d3qn7-gitflow-1.12.3"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mir9lcv93zl0djx6j5v6mhiv9qw9bbbj-gitflow-1.12.3",
+              "path": "/nix/store/hg4kw6rkac0vwvpmwbvv89qck7m8sgal-gitflow-1.12.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mir9lcv93zl0djx6j5v6mhiv9qw9bbbj-gitflow-1.12.3"
+          "store_path": "/nix/store/hg4kw6rkac0vwvpmwbvv89qck7m8sgal-gitflow-1.12.3"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/d1immysil95ja5j9bjj761221wngxkz1-gitflow-1.12.3",
+              "path": "/nix/store/n2cmkdmbyli6xpipxhby1lq1xl0ddcjd-gitflow-1.12.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/d1immysil95ja5j9bjj761221wngxkz1-gitflow-1.12.3"
+          "store_path": "/nix/store/n2cmkdmbyli6xpipxhby1lq1xl0ddcjd-gitflow-1.12.3"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/g4f1ic1ca2v54mdrmskhg15cz28dj1jm-gitflow-1.12.3",
+              "path": "/nix/store/a07klr8i372g0db39r8sqaifd35d14pr-gitflow-1.12.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/g4f1ic1ca2v54mdrmskhg15cz28dj1jm-gitflow-1.12.3"
+          "store_path": "/nix/store/a07klr8i372g0db39r8sqaifd35d14pr-gitflow-1.12.3"
         }
       }
     },
@@ -54,8 +54,8 @@
       "resolved": "github:NixOS/nixpkgs/16c7794d0a28b5a37904d55bcca36003b9109aaa?lastModified=1767364772&narHash=sha256-fFUnEYMla8b7UKjijLnMe%2BoVFOz6HjijGGNS1l7dYaQ%3D"
     },
     "nerd-fonts.inconsolata@latest": {
-      "last_modified": "2025-11-23T21:50:36Z",
-      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#nerd-fonts.inconsolata",
+      "last_modified": "2025-12-31T03:27:36Z",
+      "resolved": "github:NixOS/nixpkgs/f665af0cdb70ed27e1bd8f9fdfecaf451260fc55#nerd-fonts.inconsolata",
       "source": "devbox-search",
       "version": "3.4.0+3.000",
       "systems": {
@@ -63,47 +63,47 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/7h61x6a4vfjpiv9gp18cgzxv5w75b6c8-nerd-fonts-inconsolata-3.4.0+3.000",
+              "path": "/nix/store/5vylq6vfgniw6h2qbw3r8bijhwp5n4y0-nerd-fonts-inconsolata-3.4.0+3.000",
               "default": true
             }
           ],
-          "store_path": "/nix/store/7h61x6a4vfjpiv9gp18cgzxv5w75b6c8-nerd-fonts-inconsolata-3.4.0+3.000"
+          "store_path": "/nix/store/5vylq6vfgniw6h2qbw3r8bijhwp5n4y0-nerd-fonts-inconsolata-3.4.0+3.000"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mkbxx5544ph4c881jq608m2sp011gpl4-nerd-fonts-inconsolata-3.4.0+3.000",
+              "path": "/nix/store/pb9j5njc2gfbh6zkq5q5wbndw3n7ry90-nerd-fonts-inconsolata-3.4.0+3.000",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mkbxx5544ph4c881jq608m2sp011gpl4-nerd-fonts-inconsolata-3.4.0+3.000"
+          "store_path": "/nix/store/pb9j5njc2gfbh6zkq5q5wbndw3n7ry90-nerd-fonts-inconsolata-3.4.0+3.000"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/zayavhcz7i33zis9ms8ibq3nq39nxqa6-nerd-fonts-inconsolata-3.4.0+3.000",
+              "path": "/nix/store/nqj8gwjj18a2nc8fnlcsjc9mcrmm8ij3-nerd-fonts-inconsolata-3.4.0+3.000",
               "default": true
             }
           ],
-          "store_path": "/nix/store/zayavhcz7i33zis9ms8ibq3nq39nxqa6-nerd-fonts-inconsolata-3.4.0+3.000"
+          "store_path": "/nix/store/nqj8gwjj18a2nc8fnlcsjc9mcrmm8ij3-nerd-fonts-inconsolata-3.4.0+3.000"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/hnb9nxrrnhy2w8y15w15q76canl9q9kk-nerd-fonts-inconsolata-3.4.0+3.000",
+              "path": "/nix/store/2vv9v0akm0q54i55hd5p895fjr7a10sr-nerd-fonts-inconsolata-3.4.0+3.000",
               "default": true
             }
           ],
-          "store_path": "/nix/store/hnb9nxrrnhy2w8y15w15q76canl9q9kk-nerd-fonts-inconsolata-3.4.0+3.000"
+          "store_path": "/nix/store/2vv9v0akm0q54i55hd5p895fjr7a10sr-nerd-fonts-inconsolata-3.4.0+3.000"
         }
       }
     },
     "procps@latest": {
-      "last_modified": "2025-11-23T21:50:36Z",
-      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#procps",
+      "last_modified": "2025-12-31T03:27:36Z",
+      "resolved": "github:NixOS/nixpkgs/f665af0cdb70ed27e1bd8f9fdfecaf451260fc55#procps",
       "source": "devbox-search",
       "version": "4.0.4",
       "systems": {
@@ -111,7 +111,7 @@
           "outputs": [
             {
               "name": "2008",
-              "path": "/nix/store/wm039ipf2x9jl5d5c2hm6mv9crky671d-procps-1003.1-2008",
+              "path": "/nix/store/mlqjj5rnkpyij3vypj8l13q11ns904al-procps-1003.1-2008",
               "default": true
             }
           ]
@@ -120,21 +120,21 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/sdjaypqzkny1nvgmjwl55jywa6c7v7kw-procps-4.0.4",
+              "path": "/nix/store/5kyvs732ynjmkh06nngajjm3s59ybpfl-procps-4.0.4",
               "default": true
             }
           ],
-          "store_path": "/nix/store/sdjaypqzkny1nvgmjwl55jywa6c7v7kw-procps-4.0.4"
+          "store_path": "/nix/store/5kyvs732ynjmkh06nngajjm3s59ybpfl-procps-4.0.4"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/v5lx2zmgp754ci64ln3m9f4j8bhvbgps-procps-4.0.4",
+              "path": "/nix/store/2m5f7kh434zcfgj60s9gw22f37hs8c4k-procps-4.0.4",
               "default": true
             }
           ],
-          "store_path": "/nix/store/v5lx2zmgp754ci64ln3m9f4j8bhvbgps-procps-4.0.4"
+          "store_path": "/nix/store/2m5f7kh434zcfgj60s9gw22f37hs8c4k-procps-4.0.4"
         }
       }
     },
@@ -163,8 +163,8 @@
       }
     },
     "taskopen@latest": {
-      "last_modified": "2025-11-23T21:50:36Z",
-      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#taskopen",
+      "last_modified": "2025-12-31T03:27:36Z",
+      "resolved": "github:NixOS/nixpkgs/f665af0cdb70ed27e1bd8f9fdfecaf451260fc55#taskopen",
       "source": "devbox-search",
       "version": "1.1.5",
       "systems": {
@@ -172,21 +172,21 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/0f0c4yvgyxb4jvah9q3lfvr2yrq7qdkj-taskopen-1.1.5",
+              "path": "/nix/store/88ip0srlpxgnr107q1xkhqwglkq1qzgd-taskopen-1.1.5",
               "default": true
             }
           ],
-          "store_path": "/nix/store/0f0c4yvgyxb4jvah9q3lfvr2yrq7qdkj-taskopen-1.1.5"
+          "store_path": "/nix/store/88ip0srlpxgnr107q1xkhqwglkq1qzgd-taskopen-1.1.5"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/7swd1lyxw54xhq7ffhqk3dnjn29daf8g-taskopen-1.1.5",
+              "path": "/nix/store/mpip5bpl5zgwsjmwqhv0y3l23ifqkam6-taskopen-1.1.5",
               "default": true
             }
           ],
-          "store_path": "/nix/store/7swd1lyxw54xhq7ffhqk3dnjn29daf8g-taskopen-1.1.5"
+          "store_path": "/nix/store/mpip5bpl5zgwsjmwqhv0y3l23ifqkam6-taskopen-1.1.5"
         }
       }
     }
