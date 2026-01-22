@@ -132,11 +132,7 @@ run = "fc-list | grep Nerd"
 [tasks."mise:update"]
 alias = "mise:up"
 description = "Update Mise global packages"
-run = [
-  "mise upgrade",
-  "mise plugins upgrade",
-  { task = "bash:clear-mise-cache" },
-]
+run = ["mise upgrade", "mise plugins upgrade"]
 
 [tasks."mise:clean"]
 description = "Clean Mise cache"

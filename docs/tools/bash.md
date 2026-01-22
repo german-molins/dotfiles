@@ -4,23 +4,18 @@
 
 ## Startup Caching Optimizations
 
-To improve shell startup time, two types of caching are implemented for tool activation and completion scripts that generate static or semi-static output.
+To improve shell startup time, caching is implemented for tool activation and
+completion scripts that generate static or semi-static output.
 
-### Mise-Tailored Caching
+### Mise Caching
 
-Mise has specialized caching due to its per-directory environment hooks:
-
-#### Activation Script Caching
-
-The output of `mise activate bash` is cached to `~/.cache/mise/activate_bash.sh`, avoiding regeneration on every shell start. The cache invalidates when the Mise binary is updated.
-
-#### Hook Environment Caching
-
-`mise hook-env` output is cached per directory to reduce per-prompt latency. Cache keys include the current working directory, invalidating on Mise binary changes.
+Mise provides built-in environment caching via `mise activate bash`. See
+[mise#7761](https://github.com/jdx/mise/pull/7761) for details.
 
 ### General Purpose Caching
 
-Outputs from various tools' init and completion commands are cached to `~/.cache/bash/` using a generic caching function:
+Outputs from various tools' init and completion commands are cached to
+`~/.cache/dotfiles/bash/` using a generic caching function:
 
 - `zoxide init bash --cmd cd`
 - `atuin init bash`
@@ -34,9 +29,8 @@ Outputs from various tools' init and completion commands are cached to `~/.cache
 
 ### Cache Management
 
-- Mise caches stored in `~/.cache/mise/`
-- General caches stored in `~/.cache/bash/`
-- Manual clearing with `_mise_evalcache_clear` (Mise) and `_evalcache_clear` (general)
+- General caches stored in `~/.cache/dotfiles/bash/`
+- Manual clearing with `_evalcache_clear`
 - Automatic invalidation on tool binary changes
 
 ### Disabling Cache for Profiling
