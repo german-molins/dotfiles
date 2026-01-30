@@ -133,7 +133,7 @@ version = "2.1.25"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
 "platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-arm64/claude"}
-"platforms.linux-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-x64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:639130383b5a08f1e530a581c09cae7b2adf867b52dfe511d0cd3b2c1896f0db", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-x64/claude"}
 "platforms.macos-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/darwin-arm64/claude"}
 "platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/darwin-x64/claude"}
 
@@ -418,6 +418,7 @@ backend = "github:tstack/lnav"
 [[tools.glab]]
 version = "1.82.0"
 backend = "gitlab:gitlab-org/cli"
+"platforms.linux-x64" = { checksum = "sha256:6589bd77e3042b728f0918090eb95ae63f8e9993ddd5db64bdb2a04e2c38ade6", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_linux_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_linux_amd64%2Etar%2Egz"}
 "platforms.macos-arm64" = { checksum = "sha256:434dc43ac3148abbf46d56c679aa122abe570b7c02a81ab41d1d2fe2a218fe8d", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_darwin_arm64%2Etar%2Egz"}
 
 [[tools.hyperfine]]
@@ -584,7 +585,7 @@ env = ["opt"]
 version = "0.9.0"
 backend = "github:sigoden/upt"
 "platforms.linux-arm64" = { url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-aarch64-unknown-linux-musl.tar.gz", url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004682"}
-"platforms.linux-x64" = { url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64-unknown-linux-musl.tar.gz", url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004690"}
+"platforms.linux-x64" = { checksum = "blake3:9a66b2f132329974733de3e9625d84c361586a41d25f4dc08255b383bf2973f7", url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64-unknown-linux-musl.tar.gz", url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004690"}
 "platforms.macos-arm64" = { url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004755"}
 "platforms.macos-x64" = { url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004651"}
 "platforms.windows-x64" = { url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64-pc-windows-msvc.zip", url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004798"}
@@ -636,7 +637,7 @@ backend = "aqua:zellij-org/zellij"
 version = "0.9.8"
 backend = "aqua:ajeetdsouza/zoxide"
 "platforms.linux-arm64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-unknown-linux-musl.tar.gz"}
-"platforms.linux-x64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "blake3:4be202bd835503893ba42ee3cfc813af09cde93d28acf2f5a12ec06aa8bfade0", url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz"}
 "platforms.macos-arm64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-aarch64-apple-darwin.tar.gz"}
 "platforms.macos-x64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-apple-darwin.tar.gz"}
 "platforms.windows-x64" = { url = "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.8/zoxide-0.9.8-x86_64-pc-windows-msvc.zip"}
