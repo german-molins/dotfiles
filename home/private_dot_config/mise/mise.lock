@@ -32,6 +32,7 @@ backend = "aqua:gitui-org/gitui"
 [[tools."aqua:ip7z/7zip"]]
 version = "25.01"
 backend = "aqua:ip7z/7zip"
+env = ["opt"]
 "platforms.linux-arm64" = { checksum = "sha256:39c5140f02ce4436599303c59a149f654cb1bbc47cdc105a942120d747ae040d", url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-linux-arm64.tar.xz"}
 "platforms.linux-x64" = { checksum = "sha256:4ca3b7c6f2f67866b92622818b58233dc70367be2f36b498eb0bdeaaa44b53f4", url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-linux-x64.tar.xz"}
 "platforms.macos-arm64" = { checksum = "sha256:26aa75bc262bb10bf0805617b95569c3035c2c590a99f7db55c7e9607b2685e0", url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-mac.tar.xz"}
@@ -92,20 +93,14 @@ backend = "aqua:cargo-bins/cargo-binstall"
 "platforms.windows-x64" = { checksum = "sha256:9c6df6ed7e0eef153fdd6aa0fe0c873496431ea44e2b209331b2dbd29d0d3c06", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.4/cargo-binstall-x86_64-pc-windows-msvc.zip"}
 
 [[tools."cargo:aws/amazon-q-developer-cli"]]
-version = "ref:v1.19.7"
-backend = "cargo:aws/amazon-q-developer-cli"
-
-[[tools."cargo:aws/amazon-q-developer-cli"]]
 version = "tag:v1.19.7"
 backend = "cargo:aws/amazon-q-developer-cli"
-
-[[tools."cargo:diffutils"]]
-version = "0.5.0"
-backend = "cargo:diffutils"
+env = ["opt"]
 
 [[tools."cargo:findutils"]]
 version = "0.8.0"
 backend = "cargo:findutils"
+env = ["opt"]
 
 [[tools."cargo:lazyjj"]]
 version = "0.5.0"
@@ -131,6 +126,7 @@ backend = "aqua:twpayne/chezmoi"
 [[tools.claude]]
 version = "2.1.25"
 backend = "aqua:anthropics/claude-code"
+env = ["opt"]
 "platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-arm64/claude"}
 "platforms.linux-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-x64/claude"}
 "platforms.macos-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/darwin-arm64/claude"}
@@ -157,6 +153,131 @@ backend = "aqua:sigstore/cosign"
 "platforms.macos-arm64" = { checksum = "sha256:7098c46809c0818d970e63f7acd10f44c6919d3b4a261a63972a60694a9c9f66", url = "https://github.com/sigstore/cosign/releases/download/v3.0.4/cosign-darwin-arm64"}
 "platforms.macos-x64" = { checksum = "sha256:4dbafca16d29be06a6a740d517a9f63de67c78be3a64d048e42520401d88facc", url = "https://github.com/sigstore/cosign/releases/download/v3.0.4/cosign-darwin-amd64"}
 "platforms.windows-x64" = { checksum = "sha256:a3a0dc4e8c745f9bd855ec18db346538b78ab2c4d6d510ae4186bb4a03f35438", url = "https://github.com/sigstore/cosign/releases/download/v3.0.4/cosign-windows-amd64.exe"}
+
+[[tools."devbox:dash"]]
+version = "0.5.13.1"
+backend = "devbox:dash"
+env = ["devbox"]
+
+[[tools."devbox:dateutils"]]
+version = "0.4.11"
+backend = "devbox:dateutils"
+env = ["devbox"]
+
+[[tools."devbox:dos2unix"]]
+version = "7.5.2"
+backend = "devbox:dos2unix"
+env = ["devbox"]
+
+[[tools."devbox:exiftool"]]
+version = "13.39"
+backend = "devbox:exiftool"
+env = ["devbox"]
+
+[[tools."devbox:file"]]
+version = "5.46"
+backend = "devbox:file"
+env = ["devbox"]
+
+[[tools."devbox:gawk"]]
+version = "5.3.2"
+backend = "devbox:gawk"
+env = ["devbox"]
+
+[[tools."devbox:git"]]
+version = "2.52.0"
+backend = "devbox:git"
+env = ["devbox"]
+
+[[tools."devbox:git-extras"]]
+version = "7.4.0"
+backend = "devbox:git-extras"
+env = ["devbox"]
+
+[[tools."devbox:gnugrep"]]
+version = "3.12"
+backend = "devbox:gnugrep"
+env = ["devbox"]
+
+[[tools."devbox:gnused"]]
+version = "4.9"
+backend = "devbox:gnused"
+env = ["devbox"]
+
+[[tools."devbox:gpg-tui"]]
+version = "0.11.1"
+backend = "devbox:gpg-tui"
+env = ["devbox"]
+
+[[tools."devbox:htop"]]
+version = "3.4.1"
+backend = "devbox:htop"
+env = ["devbox"]
+
+[[tools."devbox:imagemagick"]]
+version = "7.1.2-8"
+backend = "devbox:imagemagick"
+env = ["devbox"]
+
+[[tools."devbox:poppler-utils"]]
+version = "25.10.0"
+backend = "devbox:poppler-utils"
+env = ["devbox"]
+
+[[tools."devbox:rcs"]]
+version = "5.10.1"
+backend = "devbox:rcs"
+env = ["devbox"]
+
+[[tools."devbox:readline"]]
+version = "8.3p3"
+backend = "devbox:readline"
+env = ["devbox"]
+
+[[tools."devbox:renameutils"]]
+version = "0.12.0"
+backend = "devbox:renameutils"
+env = ["devbox"]
+
+[[tools."devbox:resvg"]]
+version = "0.46.0"
+backend = "devbox:resvg"
+env = ["devbox"]
+
+[[tools."devbox:rsync"]]
+version = "3.4.1"
+backend = "devbox:rsync"
+env = ["devbox"]
+
+[[tools."devbox:taskwarrior"]]
+version = "2.6.2"
+backend = "devbox:taskwarrior"
+env = ["devbox"]
+
+[[tools."devbox:taskwarrior-tui"]]
+version = "0.26.5"
+backend = "devbox:taskwarrior-tui"
+env = ["devbox"]
+
+[[tools."devbox:timewarrior"]]
+version = "1.9.1"
+backend = "devbox:timewarrior"
+env = ["devbox"]
+
+[[tools."devbox:tzdata"]]
+version = "2025b"
+backend = "devbox:tzdata"
+env = ["devbox"]
+
+[[tools."devbox:xclip"]]
+version = "0.13"
+backend = "devbox:xclip"
+env = ["devbox"]
+
+[[tools."devbox:xsel"]]
+version = "2020-05-27"
+backend = "devbox:xsel"
+env = ["devbox"]
 
 [[tools.direnv]]
 version = "2.37.1"
@@ -206,6 +327,7 @@ backend = "aqua:sharkdp/fd"
 [[tools.ffmpeg]]
 version = "8.0.1"
 backend = "asdf:ffmpeg"
+env = ["opt"]
 
 [[tools.fzf]]
 version = "0.67.0"
@@ -263,6 +385,7 @@ backend = "github:ghetzel/mdnstool"
 [[tools."github:mat2cc/redis_tui"]]
 version = "0.2.4"
 backend = "github:mat2cc/redis_tui"
+env = ["opt"]
 "platforms.linux-arm64" = { checksum = "sha256:7db55fae20728eea5b2c37aed2de885fc539305b6a76ab5e9095bfce5a9ee6f2", url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Linux_arm64.tar.gz", url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948150"}
 "platforms.linux-x64" = { checksum = "sha256:5e1335b5bf0191892979c3a639fcd0492293b169b25c9ec2d43e3842be283b7f", url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Linux_x86_64.tar.gz", url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948148"}
 "platforms.macos-arm64" = { checksum = "sha256:889af2aa103aeff127544406e2ea5950f7092147168cc3da698ad662a350aa93", url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Darwin_arm64.tar.gz", url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948142"}
@@ -299,6 +422,7 @@ backend = "gitlab:gitlab-org/cli[exe=glab]"
 [[tools.hyperfine]]
 version = "1.20.0"
 backend = "aqua:sharkdp/hyperfine"
+env = ["opt"]
 "platforms.linux-arm64" = { checksum = "sha256:90875cb1db7a1d797c311174d061728361e58fc70e3b62262a00635ac3b1997c", url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-aarch64-unknown-linux-gnu.tar.gz"}
 "platforms.linux-x64" = { checksum = "sha256:3285ec7959285288137043dd81dce0dde056227018a8277532d9a364b4f03c2b", url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-unknown-linux-musl.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:f58d0b90993fadfa122a351428c469ce24afef3865f027f0e6e86f0830d088f1", url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-apple-darwin.tar.gz"}
@@ -380,6 +504,7 @@ backend = "core:node"
 [[tools.numbat]]
 version = "1.20.0"
 backend = "aqua:sharkdp/numbat"
+env = ["opt"]
 "platforms.linux-arm64" = { checksum = "sha256:488637668bb1107f935dd450d289ca3d2a301bf07921db463ddc400cea9634b1", url = "https://github.com/sharkdp/numbat/releases/download/v1.20.0/numbat-v1.20.0-arm-unknown-linux-musleabihf.tar.gz"}
 "platforms.linux-x64" = { checksum = "sha256:3d8da1d59a83d4eb7de078fcd077adfa69f1ccea3cc5b0052e88851cca085413", url = "https://github.com/sharkdp/numbat/releases/download/v1.20.0/numbat-v1.20.0-x86_64-unknown-linux-musl.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:87935356260a5227e54ac16b09d29ddc7eb868813d2d46a26c55c71aacb94704", url = "https://github.com/sharkdp/numbat/releases/download/v1.20.0/numbat-v1.20.0-aarch64-apple-darwin.tar.gz"}
@@ -450,6 +575,7 @@ backend = "aqua:tree-sitter/tree-sitter"
 [[tools.tssh]]
 version = "0.1.24"
 backend = "aqua:trzsz/trzsz-ssh"
+env = ["opt"]
 "platforms.linux-arm64" = { checksum = "sha256:c068f89b4051d7a0e87ddbb6fa6798e2d21d9acd71760cf3304997bb5a0b6554", url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.24/tssh_0.1.24_linux_aarch64.tar.gz"}
 "platforms.linux-x64" = { checksum = "sha256:bf2d1395e97feef3a09669a4cb7156c52f631843c273fdbf31ed50e94937c953", url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.24/tssh_0.1.24_linux_x86_64.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:38ecda5f01a238e3615a4ec8b927116f46bb16cac8bf8acf64cd021a812e197f", url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.24/tssh_0.1.24_macos_aarch64.tar.gz"}
