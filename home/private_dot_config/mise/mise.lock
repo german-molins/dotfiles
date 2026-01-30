@@ -503,6 +503,10 @@ backend = "core:node"
 "platforms.macos-x64" = { checksum = "sha256:c36d2db9afc900b2cfa45b60a9423b4991ad86976acd3fe5b500abda91f21243", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-darwin-x64.tar.gz"}
 "platforms.windows-x64" = { checksum = "sha256:4d2773e98d3f35d172478d5101de1f571d851053d2ed67bbe39a5bdeae87d804", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-win-x64.zip"}
 
+[[tools."npm:ctx7"]]
+version = "0.2.1"
+backend = "npm:ctx7"
+
 [[tools.numbat]]
 version = "1.20.0"
 backend = "aqua:sharkdp/numbat"
