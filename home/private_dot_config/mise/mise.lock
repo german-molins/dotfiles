@@ -52,6 +52,7 @@ backend = "aqua:jorgerojas26/lazysql"
 version = "0.15.2"
 backend = "aqua:zk-org/zk"
 "platforms.linux-arm64" = { checksum = "sha256:ec3b5545a614ad5d1c497774b4688ecdb2d5ed389e10a68bd937ec72f76839f6", url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-linux-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:2d3e71037dbadf2c05271eac0e9c00817e0583c80332ec74e77c8db6b3437f83", url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-linux-amd64.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:eaa81b46acf7a30f51af507110b50ac6ea1bdb3f1c3af70dd886dbc5aa9ecdc6", url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-macos-arm64.tar.gz"}
 "platforms.macos-x64" = { checksum = "sha256:304d9373b7d34a231be9ac770bf6f6faf0dac2a0274863df559c18149dad5d74", url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-macos-x86_64.tar.gz"}
 "platforms.windows-x64" = { checksum = "sha256:59b800070840de9e47e9f7991ea6c8b15638266882f624cd20299344609db5c4", url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-windows-x86_64.tar.gz"}
@@ -487,7 +488,7 @@ backend = "aqua:Adembc/lazyssh"
 version = "0.11.6"
 backend = "vfox:mise-plugins/vfox-neovim"
 "platforms.linux-arm64" = { url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-arm64.tar.gz"}
-"platforms.linux-x64" = { url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:2fc90b962327f73a78afbfb8203fd19db8db9cdf4ee5e2bef84704339add89cc", url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-linux-x86_64.tar.gz"}
 "platforms.macos-arm64" = { url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-arm64.tar.gz"}
 "platforms.macos-x64" = { url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-arm64.tar.gz"}
 "platforms.windows-x64" = { url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-macos-arm64.tar.gz"}
