@@ -98,6 +98,10 @@ version = "tag:v1.19.7"
 backend = "cargo:aws/amazon-q-developer-cli"
 env = ["opt"]
 
+[[tools."cargo:diffutils"]]
+version = "0.5.0"
+backend = "cargo:diffutils"
+
 [[tools."cargo:findutils"]]
 version = "0.8.0"
 backend = "cargo:findutils"
@@ -414,6 +418,7 @@ backend = "github:tstack/lnav"
 [[tools.glab]]
 version = "1.77.0"
 backend = "gitlab:gitlab-org/cli"
+"platforms.macos-arm64" = { checksum = "sha256:47906f4378c7d145a14dc45ebe234bef9bdd83267912009b14a6ee6b780aad42", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.77.0/downloads/glab_1.77.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E77%2E0/glab_1%2E77%2E0_darwin_arm64%2Etar%2Egz"}
 
 [[tools.hyperfine]]
 version = "1.20.0"
@@ -511,6 +516,7 @@ env = ["opt"]
 version = "1.1.45"
 backend = "aqua:anomalyco/opencode"
 "platforms.linux-x64" = { checksum = "sha256:ca919c8b64f4a63993df70a47f383751478e8e3985c275c5d49e46a217ab97f9", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.45/opencode-linux-x64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:e1deb94d7ded387c5b9be065c3df924f7890f3c66cf805207898188b8c15005f", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.45/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
 version = "3.8.3"
