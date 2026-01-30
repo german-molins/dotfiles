@@ -24,6 +24,19 @@ servers are configured to enhance coding assistants capabilities:
 | [Context7](https://context7.com) | remote | http | `CONTEXT7_API_KEY` | Up-to-date, version-specific documentation and code examples directly from source repositories |
 | [Mise MCP](https://mise.jdx.dev/mcp.html) | local | stdio | - | Exposes mise-managed development environment information |
 
+## Skills
+
+Use `ctx7` (Context7 Skills) to manage agents skills for the different agentic
+assistants:
+
+- `ctx7 skills install`
+- `ctx7 skills search`
+- `ctx7 skills generate`: Generate skills with the help of AI (requires `ctx7
+login`)
+
+Most assistant tools are compatible with Claude's path for storing skills,
+`~/.claude/skills/`, so my convention is to install them there.
+
 ## Amp
 
 [Amp](https://ampcode.com/) is an LLM coding agent with built-in support for
