@@ -56,6 +56,8 @@ pandoc = "latest"
 amp = "latest"
 "github:atuinsh/atuin" = "latest"
 "npm:ctx7" = "latest"
+"conda:dos2unix" = "7.5.2"
+"conda:dash" = "latest"
 
 [settings]
 experimental = true
