@@ -14,7 +14,5 @@ fi
 {{ end }}
 
 
-# mise packages: {{ include "private_dot_config/mise/config.lock" | sha256sum }}
-# mise nix packages: {{ include "private_dot_config/mise/config.devbox.lock" | sha256sum }}
-# mise opt packages: {{ include "private_dot_config/mise/config.opt.lock" | sha256sum }}
+# mise packages: {{ include "private_dot_config/mise/mise.lock" | sha256sum }}
 MISE_ENV=devbox,opt mise install
