@@ -8,7 +8,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1769774567-g3dfaea"
+version = "0.0.1769794004-gefe4d8"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -412,13 +412,8 @@ backend = "github:tstack/lnav"
 "platforms.windows-x64" = { checksum = "sha256:5d0e1a4b4f8ac00093e91749db20972780b2b874cde51640040ce65528923c31", url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-windows-x86_64.zip", url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294791140"}
 
 [[tools.glab]]
-version = "1.82.0"
-backend = "gitlab:gitlab-org/cli[exe=glab]"
-"platforms.linux-arm64" = { checksum = "sha256:dbbdfb3f52dbf317af6564957fb3d54cb2da453f2242f7e43135567148dfe326", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_linux_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_linux_arm64%2Etar%2Egz"}
-"platforms.linux-x64" = { checksum = "sha256:6589bd77e3042b728f0918090eb95ae63f8e9993ddd5db64bdb2a04e2c38ade6", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_linux_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_linux_amd64%2Etar%2Egz"}
-"platforms.macos-arm64" = { checksum = "sha256:434dc43ac3148abbf46d56c679aa122abe570b7c02a81ab41d1d2fe2a218fe8d", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_darwin_arm64%2Etar%2Egz"}
-"platforms.macos-x64" = { checksum = "sha256:30074cf012d97b1d0db8150fe9ec13dffe4404b735822fd0eae378cf512801ae", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_darwin_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_darwin_amd64%2Etar%2Egz"}
-"platforms.windows-x64" = { checksum = "sha256:7b55d2cfc47a84812bebc0d0f6ea099a0dc4bf5eb14aa0b1677c5774f3dec8a5", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_windows_amd64.zip", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_windows_amd64%2Ezip"}
+version = "1.77.0"
+backend = "gitlab:gitlab-org/cli"
 
 [[tools.hyperfine]]
 version = "1.20.0"
@@ -513,13 +508,9 @@ env = ["opt"]
 "platforms.windows-x64" = { checksum = "sha256:522fc07ea24fb57574253de276bd73baf0c141ef962713d60f532d17d0e4ea75", url = "https://github.com/sharkdp/numbat/releases/download/v1.20.0/numbat-v1.20.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.opencode]]
-version = "1.1.44"
+version = "1.1.45"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-arm64" = { checksum = "sha256:44a0eb12c7ee162c65e80172bf6c5d37409e09477facd5535fe9c0ad23deae8e", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.44/opencode-linux-arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:d946fd571e3f14c0146dd7f3f77019d8785840c35d9e316dfd42861e0e932f45", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.44/opencode-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:4b15c878ac02c1866706239ea4babaf7e16d0d457c1536a3fc4a2b1a354011cb", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.44/opencode-darwin-arm64.zip"}
-"platforms.macos-x64" = { checksum = "sha256:bd0cbe8aff63655b3462834205194c861dc085c2531caf85d59e9a233ded0ab9", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.44/opencode-darwin-x64.zip"}
-"platforms.windows-x64" = { checksum = "sha256:7c21a7dcd5c1a28a98bcf862b8277b2f40e39546c688d4484204ee63de37d728", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.44/opencode-windows-x64.zip"}
+"platforms.linux-x64" = { checksum = "sha256:ca919c8b64f4a63993df70a47f383751478e8e3985c275c5d49e46a217ab97f9", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.45/opencode-linux-x64.tar.gz"}
 
 [[tools.pandoc]]
 version = "3.8.3"
