@@ -220,7 +220,7 @@ backend = "devbox:htop"
 env = ["devbox"]
 
 [[tools."devbox:imagemagick"]]
-version = "7.1.2-8"
+version = "7.1.2-12"
 backend = "devbox:imagemagick"
 env = ["devbox"]
 
@@ -416,9 +416,9 @@ backend = "github:tstack/lnav"
 "platforms.windows-x64" = { checksum = "sha256:5d0e1a4b4f8ac00093e91749db20972780b2b874cde51640040ce65528923c31", url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-windows-x86_64.zip", url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294791140"}
 
 [[tools.glab]]
-version = "1.77.0"
+version = "1.82.0"
 backend = "gitlab:gitlab-org/cli"
-"platforms.macos-arm64" = { checksum = "sha256:47906f4378c7d145a14dc45ebe234bef9bdd83267912009b14a6ee6b780aad42", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.77.0/downloads/glab_1.77.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E77%2E0/glab_1%2E77%2E0_darwin_arm64%2Etar%2Egz"}
+"platforms.macos-arm64" = { checksum = "sha256:434dc43ac3148abbf46d56c679aa122abe570b7c02a81ab41d1d2fe2a218fe8d", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_darwin_arm64%2Etar%2Egz"}
 
 [[tools.hyperfine]]
 version = "1.20.0"
