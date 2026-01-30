@@ -2,8 +2,8 @@
 bun = "latest"
 jq = "latest"
 
-[hooks]
-postinstall = "bun install"
+[prepare.bun]
+auto = true
 
 [tasks.generate]
 alias = ["gen", "g"]
@@ -26,3 +26,6 @@ alias = "mise:update-docs"
 run = """
 mise generate task-docs --cd "$HOME" >docs/mise_global_tasks.md
 """
+
+[settings]
+experimental = true
