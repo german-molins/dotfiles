@@ -1597,6 +1597,7 @@ backend = "github:sigoden/upt"
 [[tools.usage]]
 version = "2.16.0"
 backend = "aqua:jdx/usage"
+"platforms.macos-arm64" = { checksum = "sha256:ef97498ab04739231d1b8ad974de77b57287be0d2004c497ef28fa921f5bd6b8", url = "https://github.com/jdx/usage/releases/download/v2.16.0/usage-universal-apple-darwin.tar.gz"}
 
 [[tools.uv]]
 version = "0.9.28"
