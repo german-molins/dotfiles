@@ -1254,6 +1254,11 @@ version = "25.10.0"
 backend = "devbox:poppler-utils"
 env = ["devbox"]
 
+[[tools."devbox:procps"]]
+version = "1003.1-2008"
+backend = "devbox:procps"
+env = ["devbox"]
+
 [[tools."devbox:rcs"]]
 version = "5.10.1"
 backend = "devbox:rcs"
