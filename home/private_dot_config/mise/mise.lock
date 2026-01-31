@@ -8,7 +8,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1769794004-gefe4d8"
+version = "0.0.1769806880-g4da85f"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -76,13 +76,9 @@ backend = "aqua:ClementTsang/bottom"
 "platforms.windows-x64" = { checksum = "sha256:567879fd7210f8a692cd2657b41eda43c7713bef74dd025b240247accdda14fb", url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_x86_64-pc-windows-msvc.zip"}
 
 [[tools.carapace]]
-version = "1.5.7"
+version = "1.6.1"
 backend = "aqua:carapace-sh/carapace-bin"
-"platforms.linux-arm64" = { checksum = "sha256:591d616f57b9d96de3925514ed95fede9fd754c7731278a50d8b1933619838c5", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.7/carapace-bin_1.5.7_linux_arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:5daf51d5867b0995aad94faa07c783fb083aa00723d2b9a31b177c21f197306f", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.7/carapace-bin_1.5.7_linux_amd64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:892151c15d6fcb823662ae779198af177ee4e4230028201860334a330b7973d9", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.7/carapace-bin_1.5.7_darwin_arm64.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:7dc2b39ac27a6cf3f00cee81262d56738e036497991a23dcf50d839a91b3b5a3", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.7/carapace-bin_1.5.7_darwin_amd64.tar.gz"}
-"platforms.windows-x64" = { checksum = "sha256:963f155a857c5ffa38fb0d6aafa1853e5b89c89f106a7e01ccc2cbb32ee14e2e", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.5.7/carapace-bin_1.5.7_windows_amd64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:f990e0f8048fa1cf739da017e7b27e6331cabdd80edd038a31fac6d38b0785e9", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.1/carapace-bin_1.6.1_darwin_arm64.tar.gz"}
 
 [[tools.cargo-binstall]]
 version = "1.17.4"
@@ -129,13 +125,10 @@ backend = "aqua:twpayne/chezmoi"
 "platforms.windows-x64" = { checksum = "sha256:6504c72d9e11c57217a6c62586b588bc506f604618d7660a86b848165584af45", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_windows_amd64.zip"}
 
 [[tools.claude]]
-version = "2.1.25"
+version = "2.1.27"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
-"platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-arm64/claude"}
-"platforms.linux-x64" = { checksum = "blake3:639130383b5a08f1e530a581c09cae7b2adf867b52dfe511d0cd3b2c1896f0db", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/linux-x64/claude"}
-"platforms.macos-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/darwin-arm64/claude"}
-"platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.25/darwin-x64/claude"}
+"platforms.macos-arm64" = { checksum = "blake3:9ad874669c944617dfde935f5d01c9d46a31c33d00d7df1c353c77660288b24f", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.27/darwin-arm64/claude"}
 
 [[tools.codebuff]]
 version = "1.0.603"
@@ -518,10 +511,9 @@ env = ["opt"]
 "platforms.windows-x64" = { checksum = "sha256:522fc07ea24fb57574253de276bd73baf0c141ef962713d60f532d17d0e4ea75", url = "https://github.com/sharkdp/numbat/releases/download/v1.20.0/numbat-v1.20.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.opencode]]
-version = "1.1.45"
+version = "1.1.47"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:ca919c8b64f4a63993df70a47f383751478e8e3985c275c5d49e46a217ab97f9", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.45/opencode-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:e1deb94d7ded387c5b9be065c3df924f7890f3c66cf805207898188b8c15005f", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.45/opencode-darwin-arm64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:d83d2bb356c7f9500e4124126c6b8df60c13c88669b66e3853823b741cde08b5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.47/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
 version = "3.8.3"
