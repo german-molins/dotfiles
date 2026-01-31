@@ -78,6 +78,7 @@ backend = "aqua:ClementTsang/bottom"
 [[tools.carapace]]
 version = "1.6.1"
 backend = "aqua:carapace-sh/carapace-bin"
+"platforms.linux-x64" = { checksum = "sha256:9a879fe75a387f8b0514d0e8591a272d08f433a69f9d04e1a0a2868d4c84b679", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.1/carapace-bin_1.6.1_linux_amd64.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:f990e0f8048fa1cf739da017e7b27e6331cabdd80edd038a31fac6d38b0785e9", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.1/carapace-bin_1.6.1_darwin_arm64.tar.gz"}
 
 [[tools.cargo-binstall]]
@@ -128,6 +129,7 @@ backend = "aqua:twpayne/chezmoi"
 version = "2.1.27"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
+"platforms.linux-x64" = { checksum = "blake3:e36f37c1cbb4100738f73a2abe9c3867c381b1028b1bdc138bbb49863c83c036", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.27/linux-x64/claude"}
 "platforms.macos-arm64" = { checksum = "blake3:9ad874669c944617dfde935f5d01c9d46a31c33d00d7df1c353c77660288b24f", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.27/darwin-arm64/claude"}
 
 [[tools.codebuff]]
@@ -513,6 +515,7 @@ env = ["opt"]
 [[tools.opencode]]
 version = "1.1.47"
 backend = "aqua:anomalyco/opencode"
+"platforms.linux-x64" = { checksum = "sha256:f87592cdbab12d0cc598876a36a573986e8d19dd59ba6b15d9d1fb039af5d57a", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.47/opencode-linux-x64.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:d83d2bb356c7f9500e4124126c6b8df60c13c88669b66e3853823b741cde08b5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.47/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
