@@ -4,6 +4,7 @@ name = {{ .name | quote }}
 
 [aliases]
 ui = ["util", "exec", "--", "jjui"]
+update-time = ["util", "exec", "--", "sh", "-c", "jj metaedit --update-author-timestamp --force-rewrite \"${1}@origin+::${1}\"", ""]
 
 [colors]
 "diff token" = { underline = false }
