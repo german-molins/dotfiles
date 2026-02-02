@@ -747,7 +747,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1769806880-g4da85f"
+version = "0.0.1770029152-gb71b57"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -865,11 +865,10 @@ backend = "aqua:twpayne/chezmoi"
 "platforms.windows-x64" = { checksum = "sha256:6504c72d9e11c57217a6c62586b588bc506f604618d7660a86b848165584af45", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_windows_amd64.zip"}
 
 [[tools.claude]]
-version = "2.1.27"
+version = "2.1.29"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
-"platforms.linux-x64" = { checksum = "blake3:e36f37c1cbb4100738f73a2abe9c3867c381b1028b1bdc138bbb49863c83c036", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.27/linux-x64/claude"}
-"platforms.macos-arm64" = { checksum = "blake3:9ad874669c944617dfde935f5d01c9d46a31c33d00d7df1c353c77660288b24f", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.27/darwin-arm64/claude"}
+"platforms.macos-arm64" = { checksum = "blake3:90a419b6149e22514943fd1892011e579a59f2aee145b737ca9741caa61e0952", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.29/darwin-arm64/claude"}
 
 [[tools.codebuff]]
 version = "1.0.603"
@@ -1494,10 +1493,9 @@ env = ["opt"]
 "platforms.windows-x64" = { checksum = "sha256:522fc07ea24fb57574253de276bd73baf0c141ef962713d60f532d17d0e4ea75", url = "https://github.com/sharkdp/numbat/releases/download/v1.20.0/numbat-v1.20.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.opencode]]
-version = "1.1.47"
+version = "1.1.48"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:f87592cdbab12d0cc598876a36a573986e8d19dd59ba6b15d9d1fb039af5d57a", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.47/opencode-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:d83d2bb356c7f9500e4124126c6b8df60c13c88669b66e3853823b741cde08b5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.47/opencode-darwin-arm64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:a84141379dd0c7a2b111bf96db6e8bcf6dc4382bcf58534813239dd362182aa5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
 version = "3.8.3"
