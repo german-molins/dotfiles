@@ -34,6 +34,7 @@ export default defineConfig({
               { text: "Zellij", link: '/tools/zellij' },
               { text: "Git", link: '/tools/git' },
               { text: "Lazygit", link: '/tools/lazygit' },
+              { text: "Jujutsu", link: '/tools/jj' },
               { text: "Jujutsu UI", link: '/tools/jjui' },
               { text: "Atuin", link: '/tools/atuin' },
               { text: "Neovim", link: '/tools/nvim' },
