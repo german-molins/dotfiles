@@ -70,6 +70,7 @@ amp = "latest"
 "conda:imagemagick" = "latest"
 "conda:readline" = "latest"
 "conda:resvg" = "latest"
+"npm:skills" = "latest"
 
 [settings]
 experimental = true
