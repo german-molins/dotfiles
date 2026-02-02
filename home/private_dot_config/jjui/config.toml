@@ -4,3 +4,8 @@ theme = "base16-solarized-dark"
 [custom_commands."push with created bookmark"]
 key = ["p"]
 args = ["git", "push", "-c", "$change_id"]
+
+[custom_commands."update time"]
+key = ["u"]
+run = ["util", "exec", "--", "sh", "-c", "jj update-time \"$(gum input --value \"$(jj log -r 'heads(ancestors($change_id) & bookmarks())' --no-graph -T 'local_bookmarks.map(|b| b.name()).join(\",\")' --limit 1)\" --placeholder 'Branch name')\""]
+show = "interactive"
