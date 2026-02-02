@@ -1019,30 +1019,6 @@ backend = "conda:gawk"
     "osx-arm64/readline-8.3-h46df422_0",
 ], url = "https://api.anaconda.org/download/conda-forge/gawk/5.3.1/osx-arm64/gawk-5.3.1-h8a92848_0.conda"}
 
-[[tools."conda:git"]]
-version = "2.52.0"
-backend = "conda:git"
-"platforms.macos-arm64" = { checksum = "sha256:2b813a507ea2ef556ae7413604c877871568cc72f77ed69e7fadc9fb297266b0", conda_deps = [
-    "osx-arm64/libssh2-1.11.1-h9cc3647_0",
-    "osx-arm64/zstd-1.5.7-h6491c7d_0",
-    "osx-arm64/pcre2-10.47-h30297fc_0",
-    "osx-arm64/bzip2-1.0.8-h93a5062_5",
-    "osx-arm64/ncurses-6.5-hb89a1cb_0",
-    "osx-arm64/libnghttp2-1.67.0-hc438710_0",
-    "osx-arm64/libedit-3.1.20250104-pl5321hafb1f1b_0",
-    "osx-arm64/libzlib-1.3.1-h0d3ecfb_0",
-    "osx-arm64/c-ares-1.34.6-hc919400_0",
-    "osx-arm64/libexpat-2.7.3-haf25636_0",
-    "osx-arm64/libintl-0.25.1-h493aca8_0",
-    "osx-arm64/krb5-1.21.3-h237132a_0",
-    "osx-arm64/libiconv-1.18-hfe07756_0",
-    "osx-arm64/libcxx-22.1.0.rc2-h919050e_0",
-    "osx-arm64/libev-4.33-h93a5062_2",
-    "osx-arm64/ca-certificates-2025.1.31-hf0a4a13_0",
-    "osx-arm64/openssl-3.6.1-hd24854e_0",
-    "osx-arm64/libcurl-8.18.0-he38603e_0",
-], url = "https://api.anaconda.org/download/conda-forge/git/2.52.0/osx-arm64/git-2.52.0-pl5321h729e19d_0.conda"}
-
 [[tools."conda:grep"]]
 version = "3.12"
 backend = "conda:grep"
@@ -1232,6 +1208,11 @@ backend = "aqua:sigstore/cosign"
 [[tools."devbox:exiftool"]]
 version = "13.39"
 backend = "devbox:exiftool"
+env = ["devbox"]
+
+[[tools."devbox:git"]]
+version = "2.52.0"
+backend = "devbox:git"
 env = ["devbox"]
 
 [[tools."devbox:git-extras"]]
