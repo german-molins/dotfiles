@@ -26,6 +26,8 @@ servers are configured to enhance coding assistants capabilities:
 
 ## Skills
 
+### Context7
+
 Use `ctx7` (Context7 Skills) to manage agents skills for the different agentic
 assistants:
 
@@ -36,6 +38,10 @@ login`)
 
 Most assistant tools are compatible with Claude's path for storing skills,
 `~/.claude/skills/`, so my convention is to install them there.
+
+### [Skills](https://skills.sh/) by Vercel
+
+Similarly, `skills` lets you manage skills across many agentic assistants.
 
 ## Amp
 
