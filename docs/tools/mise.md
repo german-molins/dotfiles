@@ -175,3 +175,18 @@ Requested Version:  latest
 Config Source:      ~/.config/mise/config.toml
 Tool Options:       [none]
 ```
+
+## Troubleshooting
+
+If installed tools that should be in `PATH` can't be correctly resolved,
+sometimes a re-shim is in order,
+
+```sh
+mise reshim nvim
+```
+
+or an incorrect version is installed and the tool needs to be re-installed,
+
+```sh
+mise uninstall --all nvim && mise install nvim
+```
