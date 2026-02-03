@@ -11,6 +11,7 @@ backends.
 | cosign | global | aqua | mise |
 | ffmpeg | opt | asdf | Yazi |
 | resvg | opt | devbox | Neovim, Yazi |
+| file | devbox | devbox | Yazi |
 | ImageMagick | devbox | devbox | Yazi |
 | Pandoc | global | ubi | `pdftoepub`, Neovim plugins |
 | `pdftotext` | devbox | devbox | `pdftoepub` |
