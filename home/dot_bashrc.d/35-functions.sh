@@ -12,7 +12,6 @@ where()
 
 	EOF
 }
-alias wh=where
 
 ###
 # List dir's contents (default wd) or view file's contents.
