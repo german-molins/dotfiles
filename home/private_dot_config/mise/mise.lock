@@ -406,10 +406,6 @@ url = "https://api.anaconda.org/download/conda-forge/giflib/5.2.2/osx-arm64/gifl
 checksum = "sha256:a4630914a543d7ae6bdce031f63da32af039d4d7d76b445b4f5d09f0b6e4ddcb"
 url = "https://api.anaconda.org/download/conda-forge/glib-tools/2.86.3/osx-arm64/glib-tools-2.86.3-hb9d6e3a_0.conda"
 
-[conda-packages.macos-arm64."osx-arm64/gmp-6.3.0-h965bd2d_0"]
-checksum = "sha256:d13f09ba46dc4732a3513da76da2352b9a6b71376dc3ba8210bbf1ca0c2e51e3"
-url = "https://api.anaconda.org/download/conda-forge/gmp/6.3.0/osx-arm64/gmp-6.3.0-h965bd2d_0.conda"
-
 [conda-packages.macos-arm64."osx-arm64/graphite2-1.3.14-h286801f_0"]
 checksum = "sha256:e1c431b66b0a632e8fcc2b886cccde4eb5ec5eb8a3d84e89b7639d603c174646"
 url = "https://api.anaconda.org/download/conda-forge/graphite2/1.3.14/osx-arm64/graphite2-1.3.14-h286801f_0.conda"
@@ -599,10 +595,6 @@ url = "https://api.anaconda.org/download/conda-forge/lz4-c/1.10.0/osx-arm64/lz4-
 checksum = "sha256:c6b20ca60d739f78525dff778292f7011454befda2cc3e1a725ded897fbf9b33"
 url = "https://api.anaconda.org/download/conda-forge/markupsafe/3.0.3/osx-arm64/markupsafe-3.0.3-py311ha9b3269_0.conda"
 
-[conda-packages.macos-arm64."osx-arm64/mpfr-4.2.1-h9546428_0"]
-checksum = "sha256:811ca63177cf638ac01442fc8d1148d3a0cef18dc1f870fceed1feb24be6fd8f"
-url = "https://api.anaconda.org/download/conda-forge/mpfr/4.2.1/osx-arm64/mpfr-4.2.1-h9546428_0.conda"
-
 [conda-packages.macos-arm64."osx-arm64/mpich-4.3.2-external_h4cf8c92_0"]
 checksum = "sha256:218029f2698cd83932ddeb2f2c6205e149d643e3a116e79dff8519b573ec60dd"
 url = "https://api.anaconda.org/download/conda-forge/mpich/4.3.2/osx-arm64/mpich-4.3.2-external_h4cf8c92_0.conda"
@@ -649,10 +641,6 @@ url = "https://api.anaconda.org/download/conda-forge/pysocks/1.7.1/osx-arm64/pys
 [conda-packages.macos-arm64."osx-arm64/rav1e-0.7.1-h0716509_3"]
 checksum = "sha256:65f862b2b31ef2b557990a82015cbd41e5a66041c2f79b4451dd14b4595d4c04"
 url = "https://api.anaconda.org/download/conda-forge/rav1e/0.7.1/osx-arm64/rav1e-0.7.1-h0716509_3.conda"
-
-[conda-packages.macos-arm64."osx-arm64/readline-8.3-h46df422_0"]
-checksum = "sha256:a77010528efb4b548ac2a4484eaf7e1c3907f2aec86123ed9c5212ae44502477"
-url = "https://api.anaconda.org/download/conda-forge/readline/8.3/osx-arm64/readline-8.3-h46df422_0.conda"
 
 [conda-packages.macos-arm64."osx-arm64/setuptools-65.3.0-py39h2804cbe_0"]
 url = "https://api.anaconda.org/download/conda-forge/setuptools/65.3.0/osx-arm64/setuptools-65.3.0-py39h2804cbe_0.tar.bz2"
@@ -975,21 +963,6 @@ backend = "conda:file"
     "osx-arm64/libmagic-5.46-h93a6450_0",
 ], url = "https://api.anaconda.org/download/conda-forge/file/5.46/osx-arm64/file-5.46-h93a6450_0.conda"}
 
-[[tools."conda:gawk"]]
-version = "5.3.1"
-backend = "conda:gawk"
-"platforms.macos-arm64" = { checksum = "sha256:d5423de17a56f40c8e091bd471c3a3f942f0d78e89e029a7398cdf3a9fda4447", conda_deps = [
-    "osx-arm64/ncurses-6.5-hb89a1cb_0",
-    "osx-arm64/libcxx-22.1.0.rc2-h919050e_0",
-    "osx-arm64/libiconv-1.18-hfe07756_0",
-    "osx-arm64/mpfr-4.2.1-h9546428_0",
-    "osx-arm64/libintl-0.25.1-h493aca8_0",
-    "osx-arm64/gmp-6.3.0-h965bd2d_0",
-    "osx-arm64/libasprintf-0.25.1-h493aca8_0",
-    "osx-arm64/libgettextpo-0.25.1-h493aca8_0",
-    "osx-arm64/readline-8.3-h46df422_0",
-], url = "https://api.anaconda.org/download/conda-forge/gawk/5.3.1/osx-arm64/gawk-5.3.1-h8a92848_0.conda"}
-
 [[tools."conda:grep"]]
 version = "3.12"
 backend = "conda:grep"
@@ -1179,6 +1152,11 @@ backend = "aqua:sigstore/cosign"
 [[tools."devbox:exiftool"]]
 version = "13.39"
 backend = "devbox:exiftool"
+env = ["devbox"]
+
+[[tools."devbox:gawk"]]
+version = "5.3.2"
+backend = "devbox:gawk"
 env = ["devbox"]
 
 [[tools."devbox:git"]]
