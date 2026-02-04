@@ -2095,15 +2095,6 @@ backend = "aqua:cargo-bins/cargo-binstall"
 "platforms.macos-x64" = { checksum = "sha256:278a12a049397b9f73df0c1e6c83c15fe184e3f5d824ee9a66460c41e519cfd6", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.4/cargo-binstall-x86_64-apple-darwin.zip"}
 "platforms.windows-x64" = { checksum = "sha256:9c6df6ed7e0eef153fdd6aa0fe0c873496431ea44e2b209331b2dbd29d0d3c06", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.4/cargo-binstall-x86_64-pc-windows-msvc.zip"}
 
-[[tools."cargo:aws/amazon-q-developer-cli"]]
-version = "ref:v1.19.7"
-backend = "cargo:aws/amazon-q-developer-cli"
-
-[[tools."cargo:aws/amazon-q-developer-cli"]]
-version = "tag:v1.19.7"
-backend = "cargo:aws/amazon-q-developer-cli"
-env = ["opt"]
-
 [[tools."cargo:diffutils"]]
 version = "0.5.0"
 backend = "cargo:diffutils"
