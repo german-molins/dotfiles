@@ -49,7 +49,6 @@ Coding agents:
 | Name | Commands | Aliases | LLM Providers | API Keys |
 |---|---|---|---|---|
 | [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | OpenRouter | `OPENROUTER_API_KEY` |
-| [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/) | `amazon-q` | `qchat`, `azq`, `q` | Paid subscription<br>Free tier subscription | |
 | [Amp](https://ampcode.com/) | `amp` | | Amp subscription<br>Free mode (`/mode free`) | `AMP_API_KEY` |
 | [Claude Code](https://code.claude.com) | `claude` | | Anthropic subscription | |
 | [Opencode](https://opencode.ai) | `opencode` | `oc` | Opencode Zen<br>OpenRouter | `OPENCODE_API_KEY`<br>`OPENROUTER_API_KEY` |

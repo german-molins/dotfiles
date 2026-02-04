@@ -92,22 +92,6 @@ Reference: [Amp Manual - AGENTS.md](https://ampcode.com/manual#AGENTS.md)
 Amp offers a [free tier](https://ampcode.com/manual#free) that can be activated
 with `/mode free`.
 
-## Amazon Q Developer
-
-References:
-
-- [Primary documentation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line.html)
-- [Technical documentation](https://aws.github.io/amazon-q-developer-cli/)
-
-AZQ is AWS's LLM coding agent with CLI interface.
-
-### Configuration
-
-- **Global Context**: `~/.aws/amazonq/global_context.json` - defines the
-standardized context file paths.
-- **Profiles**: `~/.aws/amazonq/profiles/`
-- **MCP Config**: `~/.aws/amazonq/mcp.json`
-
 ## Claude Code
 
 [Claude Code](https://code.claude.com) is Anthropic's official CLI coding agent.
