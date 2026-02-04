@@ -703,7 +703,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1770029152-gb71b57"
+version = "0.0.1770192470-g6ed19e"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -821,14 +821,13 @@ backend = "aqua:twpayne/chezmoi"
 "platforms.windows-x64" = { checksum = "sha256:6504c72d9e11c57217a6c62586b588bc506f604618d7660a86b848165584af45", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_windows_amd64.zip"}
 
 [[tools.claude]]
-version = "2.1.29"
+version = "2.1.31"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
-"platforms.linux-x64" = { checksum = "blake3:ed54056280904b680cbbece8365f90a16b2ad8ec615e181e35bce77d84590401", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.29/linux-x64/claude"}
-"platforms.macos-arm64" = { checksum = "blake3:90a419b6149e22514943fd1892011e579a59f2aee145b737ca9741caa61e0952", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.29/darwin-arm64/claude"}
+"platforms.macos-arm64" = { checksum = "blake3:5fc3f0df97c359d9ec5defcde0221293058978e4dfd51c7ec1d6eafa471bbe40", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.31/darwin-arm64/claude"}
 
 [[tools.codebuff]]
-version = "1.0.603"
+version = "1.0.606"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -1121,13 +1120,9 @@ backend = "conda:xsel"
 ], url = "https://api.anaconda.org/download/conda-forge/xsel/1.2.1/osx-arm64/xsel-1.2.1-h99b78c6_2.conda"}
 
 [[tools.coreutils]]
-version = "0.5.0"
+version = "0.6.0"
 backend = "aqua:uutils/coreutils"
-"platforms.linux-arm64" = { checksum = "sha256:a1ffa4faf1e1b6267edb58a5015fbc09dd6f787d80c4d59d781876374edb0f8e", url = "https://github.com/uutils/coreutils/releases/download/0.5.0/coreutils-0.5.0-aarch64-unknown-linux-musl.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:dc3ced6fa8ea63f20640b4cb610017c4afa8fdaf6318c998161bbaf5e7bfc830", url = "https://github.com/uutils/coreutils/releases/download/0.5.0/coreutils-0.5.0-x86_64-unknown-linux-musl.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:cb54ceebbd09936b2ee5167d5ff9318c3a9e28e2f154fddd3ec7febb7fc40624", url = "https://github.com/uutils/coreutils/releases/download/0.5.0/coreutils-0.5.0-aarch64-apple-darwin.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:9c6b68cb1e01619ed5ff2f9691e58d9e4035e6120e21030c4608f9a234a3089d", url = "https://github.com/uutils/coreutils/releases/download/0.5.0/coreutils-0.5.0-x86_64-apple-darwin.tar.gz"}
-"platforms.windows-x64" = { checksum = "sha256:ba0a319a2acf0ab2c1786fb75a246090d905f49762638e903b4f8ff3195b72be", url = "https://github.com/uutils/coreutils/releases/download/0.5.0/coreutils-0.5.0-x86_64-pc-windows-msvc.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:70319bbe063c015c8be25fd384478013f6f211fc7507282b6ed12f85eedb99dc", url = "https://github.com/uutils/coreutils/releases/download/0.6.0/coreutils-0.6.0-aarch64-apple-darwin.tar.gz"}
 
 [[tools.cosign]]
 version = "3.0.4"
@@ -1423,11 +1418,11 @@ backend = "core:node"
 "platforms.windows-x64" = { checksum = "sha256:4d2773e98d3f35d172478d5101de1f571d851053d2ed67bbe39a5bdeae87d804", url = "https://nodejs.org/dist/v25.5.0/node-v25.5.0-win-x64.zip"}
 
 [[tools."npm:ctx7"]]
-version = "0.2.2"
+version = "0.2.3"
 backend = "npm:ctx7"
 
 [[tools."npm:skills"]]
-version = "1.3.1"
+version = "1.3.4"
 backend = "npm:skills"
 
 [[tools.numbat]]
@@ -1441,10 +1436,9 @@ env = ["opt"]
 "platforms.windows-x64" = { checksum = "sha256:522fc07ea24fb57574253de276bd73baf0c141ef962713d60f532d17d0e4ea75", url = "https://github.com/sharkdp/numbat/releases/download/v1.20.0/numbat-v1.20.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.opencode]]
-version = "1.1.48"
+version = "1.1.51"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:7524880c32215434e08fc2ea1a5acabe3491745c8a8752236830d07fc81e80bc", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:a84141379dd0c7a2b111bf96db6e8bcf6dc4382bcf58534813239dd362182aa5", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.48/opencode-darwin-arm64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:c6688c38094976d3cece7497869cae78fd899f71eb9d2f45cfa752e604ab7be3", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.51/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
 version = "3.8.3"
@@ -1518,7 +1512,7 @@ backend = "aqua:jdx/usage"
 "platforms.macos-arm64" = { checksum = "sha256:3bba8d4916da22dbd4afe4ab6c59c988765d7e0374e1121b43ce8b1a282cfc78", url = "https://github.com/jdx/usage/releases/download/v2.16.1/usage-universal-apple-darwin.tar.gz"}
 
 [[tools.uv]]
-version = "0.9.28"
+version = "0.9.29"
 backend = "asdf:uv"
 
 [[tools.xh]]
