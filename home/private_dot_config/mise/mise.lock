@@ -2130,7 +2130,7 @@ version = "2.1.31"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
 "platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.31/linux-arm64/claude"}
-"platforms.linux-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.31/linux-x64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:d3343955d613a12b4839d3d674a3c3d2a72063974d02a4dc3838650bde9af5d2", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.31/linux-x64/claude"}
 "platforms.macos-arm64" = { checksum = "blake3:5fc3f0df97c359d9ec5defcde0221293058978e4dfd51c7ec1d6eafa471bbe40", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.31/darwin-arm64/claude"}
 "platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.31/darwin-x64/claude"}
 
@@ -3394,6 +3394,7 @@ backend = "vfox:mise-plugins/vfox-neovim"
 [[tools.node]]
 version = "25.6.0"
 backend = "core:node"
+"platforms.linux-x64" = { checksum = "sha256:a218fdaee14cb399f6b33925d4615a4046ba8db144f6e883c3b81e78937429eb", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-x64.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:5bfb537a913368152c5eba6aafe43ec834b23ee0ca4b96e5e18253937fe4103e", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-darwin-arm64.tar.gz"}
 
 [[tools."npm:ctx7"]]
