@@ -88,7 +88,7 @@ _.path = ["~/bin", "~/.local/bin"]
 PS1 = ": "
 PS2 = ".. "
 VISUAL = "nvim"
-EDITOR = "__nvim-bare"
+EDITOR = "nvim -u NONE"
 PAGER = "bat --plain"
 
 BROWSER = "firefox"
