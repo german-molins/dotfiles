@@ -1162,10 +1162,6 @@ url = "https://api.anaconda.org/download/conda-forge/markupsafe/3.0.3/osx-arm64/
 checksum = "sha256:218029f2698cd83932ddeb2f2c6205e149d643e3a116e79dff8519b573ec60dd"
 url = "https://api.anaconda.org/download/conda-forge/mpich/4.3.2/osx-arm64/mpich-4.3.2-external_h4cf8c92_0.conda"
 
-[conda-packages.macos-arm64."osx-arm64/ncurses-6.5-hb89a1cb_0"]
-checksum = "sha256:87d7cf716d9d930dab682cb57b3b8d3a61940b47d6703f3529a155c938a6990a"
-url = "https://api.anaconda.org/download/conda-forge/ncurses/6.5/osx-arm64/ncurses-6.5-hb89a1cb_0.conda"
-
 [conda-packages.macos-arm64."osx-arm64/openjpeg-2.5.4-hbfb3c88_0"]
 checksum = "sha256:dd73e8f1da7dd6a5494c5586b835cbe2ec68bace55610b1c4bf927400fe9c0d7"
 url = "https://api.anaconda.org/download/conda-forge/openjpeg/2.5.4/osx-arm64/openjpeg-2.5.4-hbfb3c88_0.conda"
@@ -1532,10 +1528,6 @@ url = "https://api.anaconda.org/download/conda-forge/lz4-c/1.10.0/osx-64/lz4-c-1
 [conda-packages.macos-x64."osx-64/mpich-4.3.2-external_h52efd50_0"]
 checksum = "sha256:5c4973f4b1cdf7223e55d6788776b26ef0d41b00b85529aec1559faad2d610ac"
 url = "https://api.anaconda.org/download/conda-forge/mpich/4.3.2/osx-64/mpich-4.3.2-external_h52efd50_0.conda"
-
-[conda-packages.macos-x64."osx-64/ncurses-6.5-h5846eda_0"]
-checksum = "sha256:6ecc73db0e49143092c0934355ac41583a5d5a48c6914c5f6ca48e562d3a4b79"
-url = "https://api.anaconda.org/download/conda-forge/ncurses/6.5/osx-64/ncurses-6.5-h5846eda_0.conda"
 
 [conda-packages.macos-x64."osx-64/openjpeg-2.5.4-h87e8dc5_0"]
 checksum = "sha256:fdf4708a4e45b5fd9868646dd0c0a78429f4c0b8be490196c975e06403a841d0"
@@ -2403,24 +2395,6 @@ backend = "conda:imagemagick"
     "osx-64/libtiff-4.7.1-haa3b502_0",
 ], url = "https://api.anaconda.org/download/conda-forge/imagemagick/7.1.2_13/osx-64/imagemagick-7.1.2_13-imagemagick_he12929c_0.conda"}
 
-[[tools."conda:readline"]]
-version = "8.3"
-backend = "conda:readline"
-"platforms.linux-arm64" = { checksum = "sha256:fe695f9d215e9a2e3dd0ca7f56435ab4df24f5504b83865e3d295df36e88d216", conda_deps = [
-    "linux-aarch64/libgcc-15.2.0-he277a41_5",
-    "linux-aarch64/_openmp_mutex-4.5-3_kmp_llvm",
-    "linux-aarch64/llvm-openmp-22.1.0.rc2-h89bea51_0",
-    "linux-aarch64/ncurses-6.5-h0425590_0",
-], url = "https://api.anaconda.org/download/conda-forge/readline/8.3/linux-aarch64/readline-8.3-hb682ff5_0.conda"}
-"platforms.linux-x64" = { checksum = "sha256:12ffde5a6f958e285aa22c191ca01bbd3d6e710aa852e00618fa6ddc59149002", conda_deps = [
-    "linux-64/libgcc-15.2.0-h767d61c_5",
-    "linux-64/ncurses-6.5-h59595ed_0",
-    "linux-64/_openmp_mutex-4.5-3_kmp_llvm",
-    "linux-64/llvm-openmp-22.1.0.rc2-h905f809_0",
-], url = "https://api.anaconda.org/download/conda-forge/readline/8.3/linux-64/readline-8.3-h853b02a_0.conda"}
-"platforms.macos-arm64" = { checksum = "sha256:a77010528efb4b548ac2a4484eaf7e1c3907f2aec86123ed9c5212ae44502477", conda_deps = ["osx-arm64/ncurses-6.5-hb89a1cb_0"], url = "https://api.anaconda.org/download/conda-forge/readline/8.3/osx-arm64/readline-8.3-h46df422_0.conda"}
-"platforms.macos-x64" = { checksum = "sha256:4614af680aa0920e82b953fece85a03007e0719c3399f13d7de64176874b80d5", conda_deps = ["osx-64/ncurses-6.5-h5846eda_0"], url = "https://api.anaconda.org/download/conda-forge/readline/8.3/osx-64/readline-8.3-h68b038d_0.conda"}
-
 [[tools."conda:resvg"]]
 version = "0.46.0"
 backend = "conda:resvg"
@@ -2682,6 +2656,11 @@ env = ["devbox"]
 [[tools."devbox:rcs"]]
 version = "5.10.1"
 backend = "devbox:rcs"
+env = ["devbox"]
+
+[[tools."devbox:readline"]]
+version = "8.3p3"
+backend = "devbox:readline"
 env = ["devbox"]
 
 [[tools."devbox:renameutils"]]
