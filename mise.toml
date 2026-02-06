@@ -1,5 +1,6 @@
 [tools]
 bun = "latest"
+jj = "latest"
 jq = "latest"
 
 [prepare.bun]
