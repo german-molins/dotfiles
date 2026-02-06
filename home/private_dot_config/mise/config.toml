@@ -1,3 +1,6 @@
+[plugins]
+devbox = "https://github.com/jbadeau/mise-nix.git"
+
 [tools]
 aichat = "latest"
 "aqua:dlvhdr/gh-dash" = "latest"
