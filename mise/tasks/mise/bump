@@ -5,8 +5,19 @@
 set -eu
 
 data_file="home/.chezmoidata/packages.yaml"
-current_version=$(yq '.packages.bootstrap.mise.version' "$data_file")
+current_version=$(yq -r '.packages.bootstrap.mise.version // ""' "$data_file")
+
+if [ -z "$current_version" ]; then
+    echo "Error: missing .packages.bootstrap.mise.version in $data_file" >&2
+    exit 1
+fi
+
 latest_version=$(curl -fsSL https://api.github.com/repos/jdx/mise/releases/latest | jq -r '.tag_name')
+
+if [ -z "$latest_version" ] || [ "$latest_version" = "null" ]; then
+    echo "Error: failed to fetch latest mise release tag" >&2
+    exit 1
+fi
 
 if [ "$current_version" = "$latest_version" ]; then
     echo "mise already at latest: $current_version"

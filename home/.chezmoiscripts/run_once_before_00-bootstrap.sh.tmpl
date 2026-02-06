@@ -1,8 +1,8 @@
 #!/bin/bash
 
-set -eu
+set -euo pipefail
 
-export MISE_VERSION={{ .packages.bootstrap.mise.version }}
+export MISE_VERSION={{ .packages.bootstrap.mise.version | quote }}
 echo "[dotfiles][mise] Bootstrapping mise..."
 curl https://mise.run | sh
 
