@@ -12,3 +12,7 @@ backend = "aqua:jj-vcs/jj"
 version = "1.8.1"
 backend = "aqua:jqlang/jq"
 "platforms.macos-arm64" = { checksum = "sha256:a9fe3ea2f86dfc72f6728417521ec9067b343277152b114f4e98d8cb0e263603", url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-macos-arm64"}
+
+[[tools.yq]]
+version = "4.52.2"
+backend = "aqua:mikefarah/yq"

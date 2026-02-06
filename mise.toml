@@ -2,6 +2,7 @@
 bun = "latest"
 jj = "latest"
 jq = "latest"
+yq = "latest"
 
 [prepare.bun]
 auto = true
