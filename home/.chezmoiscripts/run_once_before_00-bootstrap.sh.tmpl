@@ -2,7 +2,7 @@
 
 set -eu
 
-export MISE_VERSION=v2026.2.5
+export MISE_VERSION={{ .packages.bootstrap.mise.version }}
 echo "[dotfiles][mise] Bootstrapping mise..."
 curl https://mise.run | sh
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env sh
-#MISE description="Update MISE_VERSION in bootstrap script to latest release"
+#MISE description="Update mise version in chezmoi data to latest release"
 #USAGE flag "-c --commit" help="Commit the change with jj after bumping"
 
 set -eu
 
-bootstrap_script="home/.chezmoiscripts/run_once_before_00-bootstrap.sh.tmpl"
-current_version=$(grep 'MISE_VERSION=' "$bootstrap_script" | sed 's/.*MISE_VERSION=//')
+data_file="home/.chezmoidata/packages.yaml"
+current_version=$(yq '.packages.bootstrap.mise.version' "$data_file")
 latest_version=$(curl -fsSL https://api.github.com/repos/jdx/mise/releases/latest | jq -r '.tag_name')
 
 if [ "$current_version" = "$latest_version" ]; then
@@ -13,11 +13,9 @@ if [ "$current_version" = "$latest_version" ]; then
     exit 0
 fi
 
-tmp=$(mktemp)
-sed "s/MISE_VERSION=$current_version/MISE_VERSION=$latest_version/" "$bootstrap_script" >"$tmp"
-mv "$tmp" "$bootstrap_script"
+yq -i ".packages.bootstrap.mise.version = \"$latest_version\"" "$data_file"
 echo "mise bumped: $current_version -> $latest_version"
 
 if [ "${usage_commit:-false}" = "true" ]; then
-    jj commit --message "build(chezmoi): update bootstrapped package mise" "$bootstrap_script"
+    jj commit --message "build(chezmoi): update bootstrapped package mise" "$data_file"
 fi
