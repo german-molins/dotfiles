@@ -1,8 +1,7 @@
 [[tools.bun]]
-version = "1.3.8"
+version = "1.3.9"
 backend = "core:bun"
-"platforms.linux-x64" = { checksum = "blake3:8c77d1399200f47907b9b74909692a98a3dc8c62c953cf9ab778f0a8a0a828ac"}
-"platforms.macos-arm64" = { checksum = "blake3:167831b90e59f60eafdd5be230bd031885a0dcb7ce31fd9023a74634038b4900"}
+"platforms.macos-arm64" = { checksum = "blake3:46710b9d3a1448e8ce67c5571052f1f7a493d0c556a46924f2f07a0a67d004d5"}
 
 [[tools.jj]]
 version = "0.38.0"
