@@ -1764,6 +1764,7 @@ backend = "aqua:twpayne/chezmoi"
 version = "2.1.37"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
+"platforms.linux-x64" = { checksum = "blake3:3a0d6ae399925305ce88e5536da9b60f05bb627d6d0dff7c5f468371f16a00fa", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.37/linux-x64/claude"}
 "platforms.macos-arm64" = { checksum = "blake3:3f8b00251203b5b76040577551fbed4a32e3e7dd44d1ccbdee65176f184d8e15", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.37/darwin-arm64/claude"}
 
 [[tools.codebuff]]
@@ -2866,6 +2867,7 @@ backend = "aqua:jesseduffield/lazydocker"
 [[tools.lazygit]]
 version = "0.59.0"
 backend = "aqua:jesseduffield/lazygit"
+"platforms.linux-x64" = { checksum = "sha256:264283f40a40c899d702a338b20622f690221f753f03bac827c1f34e91f516c2", url = "https://github.com/jesseduffield/lazygit/releases/download/v0.59.0/lazygit_0.59.0_linux_x86_64.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:cdd42e86b16b3bc21ec5cbe4be92d688e39f3806b53b63c54d1af4f498302ed8", url = "https://github.com/jesseduffield/lazygit/releases/download/v0.59.0/lazygit_0.59.0_darwin_arm64.tar.gz"}
 
 [[tools.lazyssh]]
@@ -2904,6 +2906,7 @@ backend = "npm:skills"
 version = "1.23.0"
 backend = "aqua:sharkdp/numbat"
 env = ["opt"]
+"platforms.linux-x64" = { checksum = "sha256:09efa9dfbff4d983fb0484e2bfc126df9d0cbedede627d22ac61141457b5daa1", url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-unknown-linux-musl.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:58dabb8ca9476009d03f2a3d3993768fa2946657c6423eed8ed31d31cc6e35cf", url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-aarch64-apple-darwin.tar.gz"}
 
 [[tools.opencode]]
@@ -2933,6 +2936,7 @@ backend = "aqua:jdx/pitchfork"
 [[tools.pnpm]]
 version = "10.29.2"
 backend = "aqua:pnpm/pnpm"
+"platforms.linux-x64" = { checksum = "sha256:f9a8e1652b83884da6a3c174f504220015001144cee8733c07df68c598d4c43a", url = "https://github.com/pnpm/pnpm/releases/download/v10.29.2/pnpm-linux-x64"}
 "platforms.macos-arm64" = { checksum = "sha256:3f9ef4f665186181473db6e483d905e339259db30a33ee4f2093f04cf8e55991", url = "https://github.com/pnpm/pnpm/releases/download/v10.29.2/pnpm-macos-arm64"}
 
 [[tools.ripgrep]]
