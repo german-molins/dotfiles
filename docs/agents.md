@@ -26,22 +26,32 @@ servers are configured to enhance coding assistants capabilities:
 
 ## Skills
 
+Standard skills path is adopted as convention 
+
+- `~/.agents/skills/` - Global
+- `.agents/skills/` - Per project
+
+Symlinks to Claude equivalents are also created automatically by the skills
+manager upon installation:
+
+- `~/.claude/skills/` - Global
+- `.claude/skills/` - Per project
+
+All assistants I use are compatible with either or both.
+
+### [Skills](https://skills.sh/) by Vercel
+
+`skills` lets you manage skills across many agentic assistants. It is my
+default skills manager.
+
 ### Context7
 
-Use `ctx7` (Context7 Skills) to manage agents skills for the different agentic
-assistants:
+Similarly, use `ctx7` (Context7 Skills) to manage agents skills:
 
 - `ctx7 skills install`
 - `ctx7 skills search`
 - `ctx7 skills generate`: Generate skills with the help of AI (requires `ctx7
 login`)
-
-Most assistant tools are compatible with Claude's path for storing skills,
-`~/.claude/skills/`, so my convention is to install them there.
-
-### [Skills](https://skills.sh/) by Vercel
-
-Similarly, `skills` lets you manage skills across many agentic assistants.
 
 ## Amp
 
