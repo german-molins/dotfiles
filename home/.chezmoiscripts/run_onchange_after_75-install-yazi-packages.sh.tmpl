@@ -12,5 +12,5 @@ fi
 
 >&2 echo "[dotfiles][yazi] Installing yazi packages..."
 
-# packages hash: {{ include "private_dot_config/yazi/package.toml" | sha256sum }}
+# packages hash: {{ include "dot_config/yazi/package.toml" | sha256sum }}
 mise run yazi:install

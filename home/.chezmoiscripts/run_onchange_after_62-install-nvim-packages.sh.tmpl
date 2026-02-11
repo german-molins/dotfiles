@@ -10,5 +10,5 @@ fi
 
 >&2 echo "[dotfiles][nvim] Installing Neovim packages..."
 
-# packages hash: {{ include "private_dot_config/nvim/lazy-lock.json" | sha256sum }}
+# packages hash: {{ include "dot_config/nvim/lazy-lock.json" | sha256sum }}
 mise run nvim:install

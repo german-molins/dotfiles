@@ -14,5 +14,5 @@ fi
 {{ end }}
 
 
-# mise packages: {{ include "private_dot_config/mise/mise.lock" | sha256sum }}
+# mise packages: {{ include "dot_config/mise/mise.lock" | sha256sum }}
 MISE_ENV=devbox,opt mise install
