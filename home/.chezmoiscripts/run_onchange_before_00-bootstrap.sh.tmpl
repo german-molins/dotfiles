@@ -3,8 +3,12 @@
 set -euo pipefail
 
 export MISE_VERSION={{ .packages.bootstrap.mise.version | quote }}
-echo "[dotfiles][mise] Bootstrapping mise..."
-curl https://mise.run | sh
+if command -v mise >/dev/null && [[ "$(mise version)" == "${MISE_VERSION#v}"* ]]; then
+    echo "[dotfiles][mise] mise ${MISE_VERSION} already installed, skipping"
+else
+    echo "[dotfiles][mise] Bootstrapping mise ${MISE_VERSION}..."
+    curl https://mise.run | sh
+fi
 
 {{ if or (and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64")) (eq .chezmoi.os "darwin") -}}
 
