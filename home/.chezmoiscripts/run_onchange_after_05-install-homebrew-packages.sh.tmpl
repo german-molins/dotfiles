@@ -1,5 +1,5 @@
 {{ if or (and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64")) (eq .chezmoi.os "darwin") -}}
-#!/bin/bash
+#!/usr/bin/env bash
 
 brew bundle --file=/dev/stdin <<EOF
 {{ range .packages.homebrew.brews -}}
