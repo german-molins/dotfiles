@@ -51,11 +51,6 @@ layout {
         command "amp"
         start_suspended true
       }
-      pane name="Amazon Q" {
-        command "q"
-        args "chat" "--resume"
-        start_suspended true
-      }
       pane name="Claude" {
         command "claude"
         start_suspended true
