@@ -1,6 +1,8 @@
 {{ if or (and (eq .chezmoi.os "linux") (eq .chezmoi.arch "amd64")) (eq .chezmoi.os "darwin") -}}
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 brew bundle --file=/dev/stdin <<EOF
 {{ range .packages.homebrew.brews -}}
 brew {{ . | quote }}

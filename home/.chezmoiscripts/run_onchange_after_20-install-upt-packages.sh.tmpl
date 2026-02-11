@@ -1,11 +1,12 @@
 #!/usr/bin/env sh
 
+set -eu
+
 # Make mise available in the current shell.
 PATH="$HOME/.local/bin:$PATH"
 
 echo "[dotfiles][upt] Installing Upt packages..."
 
-# Update package indexes.
 mise run upt update
 {{ range .packages.upt -}}
 mise run upt install {{ . | quote }}
