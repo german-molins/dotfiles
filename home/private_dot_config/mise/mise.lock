@@ -2864,10 +2864,9 @@ backend = "vfox:mise-plugins/vfox-neovim"
 "platforms.windows-x64" = { url = "https://github.com/neovim/neovim/releases/download/v0.11.6/nvim-win64.zip"}
 
 [[tools.node]]
-version = "25.6.0"
+version = "25.6.1"
 backend = "core:node"
-"platforms.linux-x64" = { checksum = "sha256:a218fdaee14cb399f6b33925d4615a4046ba8db144f6e883c3b81e78937429eb", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:5bfb537a913368152c5eba6aafe43ec834b23ee0ca4b96e5e18253937fe4103e", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-darwin-arm64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:a80cb252d170a4730f78f5950cf19a46106f156e5886e5c1cc8c5602aea60243", url = "https://nodejs.org/dist/v25.6.1/node-v25.6.1-darwin-arm64.tar.gz"}
 
 [[tools."npm:ctx7"]]
 version = "0.2.4"
