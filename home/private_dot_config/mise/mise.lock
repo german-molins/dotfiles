@@ -1645,7 +1645,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1770649291-g440f57"
+version = "0.0.1770784921-gc1ce14"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1713,13 +1713,9 @@ backend = "aqua:ClementTsang/bottom"
 "platforms.windows-x64" = { checksum = "sha256:567879fd7210f8a692cd2657b41eda43c7713bef74dd025b240247accdda14fb", url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_x86_64-pc-windows-msvc.zip"}
 
 [[tools.carapace]]
-version = "1.6.1"
+version = "1.6.2"
 backend = "aqua:carapace-sh/carapace-bin"
-"platforms.linux-arm64" = { checksum = "sha256:24ed2faba9152fff22757f0a826ee335aecafc44afca3eb9ee57f473011a5b34", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.1/carapace-bin_1.6.1_linux_arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:9a879fe75a387f8b0514d0e8591a272d08f433a69f9d04e1a0a2868d4c84b679", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.1/carapace-bin_1.6.1_linux_amd64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:f990e0f8048fa1cf739da017e7b27e6331cabdd80edd038a31fac6d38b0785e9", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.1/carapace-bin_1.6.1_darwin_arm64.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:af83c688e8225c10869796c99d09fad81a0d2ca0ca7ffea508296bcb7ba77715", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.1/carapace-bin_1.6.1_darwin_amd64.tar.gz"}
-"platforms.windows-x64" = { checksum = "sha256:d976da9a0d49275467fe0980e50695e3f5f4fd2db36b9d31438700abe6083250", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.1/carapace-bin_1.6.1_windows_amd64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:28918fa21fab4055c270eb2035f778f83efadbde4411c36424062afe7115936d", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.2/carapace-bin_1.6.2_darwin_arm64.tar.gz"}
 
 [[tools.cargo-binstall]]
 version = "1.17.4"
@@ -1752,23 +1748,18 @@ version = "1.12.0"
 backend = "cargo:tlrc"
 
 [[tools.chezmoi]]
-version = "2.69.3"
+version = "2.69.4"
 backend = "aqua:twpayne/chezmoi"
-"platforms.linux-arm64" = { checksum = "sha256:0aef9ef75ee33cffb483a82c474b495d428e0f7941ab7898263c3519006e0662", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:9b9bf911efed8aba28bd6f5df1e780a6123dc3fb177004c1ca36ec2b9eca7628", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_linux_amd64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:c5717b0d4d84d2941c2582fec26854d316ee5d7c27ec73903f7840554f1baeda", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_darwin_arm64.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:9dd51eccb801d3557f61c8559f4f31e5ebb21c4a1d983940141383b9b5069458", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_darwin_amd64.tar.gz"}
-"platforms.windows-x64" = { checksum = "sha256:6504c72d9e11c57217a6c62586b588bc506f604618d7660a86b848165584af45", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.3/chezmoi_2.69.3_windows_amd64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:690ab2618e44e7a78b0ba2e541951ce3bde59c1cf9bc2d491850e8700607b9d4", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.4/chezmoi_2.69.4_darwin_arm64.tar.gz"}
 
 [[tools.claude]]
-version = "2.1.37"
+version = "2.1.39"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
-"platforms.linux-x64" = { checksum = "blake3:3a0d6ae399925305ce88e5536da9b60f05bb627d6d0dff7c5f468371f16a00fa", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.37/linux-x64/claude"}
-"platforms.macos-arm64" = { checksum = "blake3:3f8b00251203b5b76040577551fbed4a32e3e7dd44d1ccbdee65176f184d8e15", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.37/darwin-arm64/claude"}
+"platforms.macos-arm64" = { checksum = "blake3:933162014dfd54f3657043154eb62cbd39a30e8bea433693e6c77937c3e81b61", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.39/darwin-arm64/claude"}
 
 [[tools.codebuff]]
-version = "1.0.615"
+version = "1.0.617"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -2394,21 +2385,9 @@ backend = "conda:imagemagick"
 ], url = "https://api.anaconda.org/download/conda-forge/imagemagick/7.1.2_13/osx-64/imagemagick-7.1.2_13-imagemagick_he12929c_0.conda"}
 
 [[tools."conda:resvg"]]
-version = "0.46.0"
+version = "0.47.0"
 backend = "conda:resvg"
-"platforms.linux-arm64" = { checksum = "sha256:f32635c1188901f916222bfdf28529725b0db1bfc26706938288d93dc6327a34", conda_deps = [
-    "linux-aarch64/_openmp_mutex-4.5-3_kmp_llvm",
-    "linux-aarch64/llvm-openmp-22.1.0.rc2-h89bea51_0",
-    "linux-aarch64/libgcc-15.2.0-he277a41_5",
-], url = "https://api.anaconda.org/download/conda-forge/resvg/0.46.0/linux-aarch64/resvg-0.46.0-h1ebd7d5_0.conda"}
-"platforms.linux-x64" = { checksum = "sha256:03a40082cba5dce56e5dffd4697999f73c2d44c71251f1241b51f75fd77e14b8", conda_deps = [
-    "linux-64/_openmp_mutex-4.5-3_kmp_llvm",
-    "linux-64/llvm-openmp-22.1.0.rc2-h905f809_0",
-    "linux-64/libgcc-15.2.0-h767d61c_5",
-], url = "https://api.anaconda.org/download/conda-forge/resvg/0.46.0/linux-64/resvg-0.46.0-hdab8a38_0.conda"}
-"platforms.macos-arm64" = { checksum = "sha256:65a6d4e247a96138c201b4b88b2230e336a4aec11ad1968d9e26308385699abf", url = "https://api.anaconda.org/download/conda-forge/resvg/0.46.0/osx-arm64/resvg-0.46.0-h748bcf4_0.conda"}
-"platforms.macos-x64" = { checksum = "sha256:d0f77a6047fd4a904b6a1142bb28b54884946bd50681abaa9f18e9627807615f", url = "https://api.anaconda.org/download/conda-forge/resvg/0.46.0/osx-64/resvg-0.46.0-ha35cfd3_0.conda"}
-"platforms.windows-x64" = { checksum = "sha256:c5990371da70496298bc51420ab21c06902365c1cc5d6b5fdbd4bba799824685", url = "https://api.anaconda.org/download/conda-forge/resvg/0.46.0/win-64/resvg-0.46.0-h77a83cd_0.conda"}
+"platforms.macos-arm64" = { checksum = "sha256:ef311b0d63c2ae1043e1b13840b2dfc4444474abe58025ec4b7472da1555042d", conda_deps = [], url = "https://api.anaconda.org/download/conda-forge/resvg/0.47.0/osx-arm64/resvg-0.47.0-h748bcf4_0.conda"}
 
 [[tools."conda:rsync"]]
 version = "3.4.1"
@@ -2750,13 +2729,9 @@ backend = "aqua:cli/cli"
 "platforms.windows-x64" = { checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"}
 
 [[tools."github:atuinsh/atuin"]]
-version = "18.11.0"
+version = "18.12.0"
 backend = "github:atuinsh/atuin"
-"platforms.linux-arm64" = { checksum = "sha256:09ab168a1db71a22b906ab3497ce156b45b6d9a8274fc872c12d2fc365e99b0d", url = "https://github.com/atuinsh/atuin/releases/download/v18.11.0/atuin-aarch64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/339690020"}
-"platforms.linux-x64" = { checksum = "sha256:f473f73fe9d2a0378fe2435a96d9da9d114df1c0edbb6bff88408ac157955c9a", url = "https://github.com/atuinsh/atuin/releases/download/v18.11.0/atuin-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/339690041"}
-"platforms.macos-arm64" = { checksum = "sha256:b8c8f4584f801873b511ecf74dbfff1194dd9727745db9ee9ff6542eaf796aa1", url = "https://github.com/atuinsh/atuin/releases/download/v18.11.0/atuin-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/339690017"}
-"platforms.macos-x64" = { checksum = "sha256:9435d2dd2469e1eeab0c0dc80425b35c51b286ba4e4ed36914c9813c2a54f4e0", url = "https://github.com/atuinsh/atuin/releases/download/v18.11.0/source.tar.gz", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/339690050"}
-"platforms.windows-x64" = { checksum = "sha256:29ddb786f3e18964d3be7503d38293e60704e7e36e9a23b360311ee5fc092b1a", url = "https://github.com/atuinsh/atuin/releases/download/v18.11.0/atuin-x86_64-pc-windows-msvc.zip", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/339690038"}
+"platforms.macos-arm64" = { checksum = "sha256:1a27c5c30ad43bb7132f68df49d2c93549f16727693df7d9c5aa6d830fa6894a", url = "https://github.com/atuinsh/atuin/releases/download/v18.12.0/atuin-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/353321922"}
 
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
@@ -2895,11 +2870,11 @@ backend = "core:node"
 "platforms.macos-arm64" = { checksum = "sha256:5bfb537a913368152c5eba6aafe43ec834b23ee0ca4b96e5e18253937fe4103e", url = "https://nodejs.org/dist/v25.6.0/node-v25.6.0-darwin-arm64.tar.gz"}
 
 [[tools."npm:ctx7"]]
-version = "0.2.3"
+version = "0.2.4"
 backend = "npm:ctx7"
 
 [[tools."npm:skills"]]
-version = "1.3.7"
+version = "1.3.8"
 backend = "npm:skills"
 
 [[tools.numbat]]
@@ -2910,10 +2885,9 @@ env = ["opt"]
 "platforms.macos-arm64" = { checksum = "sha256:58dabb8ca9476009d03f2a3d3993768fa2946657c6423eed8ed31d31cc6e35cf", url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-aarch64-apple-darwin.tar.gz"}
 
 [[tools.opencode]]
-version = "1.1.53"
+version = "1.1.56"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:2c922540fb8e0a4cd7e15ae4b6eb7bc1f69dbe7683d45ac7056059ee832e2ad3", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.53/opencode-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:5e9cc90f4d84de145b4099c7666b0f0782b19e5196795181cac36be33dbc5da9", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.53/opencode-darwin-arm64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:e4ec650a9b792afb5964a24e2f6a6449db6739516c8b9c4dff3ef53378d01e14", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.56/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
 version = "3.9"
@@ -2989,7 +2963,7 @@ backend = "aqua:jdx/usage"
 "platforms.macos-x64" = { checksum = "sha256:3bba8d4916da22dbd4afe4ab6c59c988765d7e0374e1121b43ce8b1a282cfc78", url = "https://github.com/jdx/usage/releases/download/v2.16.1/usage-universal-apple-darwin.tar.gz"}
 
 [[tools.uv]]
-version = "0.10.0"
+version = "0.10.2"
 backend = "asdf:uv"
 
 [[tools.xh]]
