@@ -11,8 +11,8 @@
 if [ -n "$BASH_VERSION" ]
 then
     if [ -f "$HOME/.bashrc" ]
-	then
-		. "$HOME/.bashrc"
+    then
+        . "$HOME/.bashrc"
     fi
 fi
 
@@ -29,9 +29,9 @@ fi
 for f in $HOME/.profile.d/*.sh
 do
     if [ -r "$f" ]
-	then
+    then
         if [ "$PS1" ]
-		then
+        then
             . "$f"
         else
             . "$f" >/dev/null

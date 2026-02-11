@@ -1,31 +1,31 @@
 [core]
 	editor = nvim
-  excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 
 [user]
 	email = {{ .email }}
 	name = {{ .name }}
 
 [color]
-    diff = auto
-    status = auto
-    branch = auto
+	diff = auto
+	status = auto
+	branch = auto
 
 [diff]
-  tool = nvimdiff
+	tool = nvimdiff
 	submodule = log
 
 [difftool]
 	prompt = false
 
 [merge]
-  tool = nvimdiff
+	tool = nvimdiff
 
 [mergetool]
 	keepBackup = false
 
 [mergetool "nvimdiff"]
-  layout = "(LOCAL/BASE/REMOTE),MERGED"
+	layout = "(LOCAL/BASE/REMOTE),MERGED"
 
 [push]
 	default = simple
@@ -45,23 +45,23 @@
 	autoupdate = true
 
 [credential]
-        helper = cache --timeout=86400
+	helper = cache --timeout=86400
 
 [filter "lfs"]
-        smudge = git-lfs smudge --skip -- %f
-        process = git-lfs filter-process --skip
+	smudge = git-lfs smudge --skip -- %f
+	process = git-lfs filter-process --skip
 [gitsh]
 	defaultCommand = status --short --untracked-files=no
 [http]
-        postBuffer = 524288000
+	postBuffer = 524288000
 [https]
-        postBuffer = 524288000
+	postBuffer = 524288000
 
 [alias]
 	alias = !git config --get-regexp ^alias
 	sh = !gitsh
-   ui = !gitui
-  lazy = !lazygit
+	ui = !gitui
+	lazy = !lazygit
 	amend = commit --amend --verbose
 	unstage = reset
 	soft = reset --soft
@@ -85,16 +85,15 @@
 	l = log --pretty=oneline --abbrev-commit
 	lf = log --pretty=fuller --abbrev-commit
 	gg = log --graph --oneline --decorate
-  g = graph
+	g = graph
 	lfzf = log --oneline --color | fzf --ansi --no-sort --reverse --preview 'git show --color=always {+1}'
 	n = commit --amend --no-edit
 	s = status --short --untracked-files=no
 	r = rebase
 	ri = rebase -i
 	rr = rebase --reset-author
-  ra = rebase --exec 'git commit --amend --no-edit --reset-author'
+	ra = rebase --exec 'git commit --amend --no-edit --reset-author'
 	sw = switch
-	# pull merge
 	pm = pull
 	pr = pull --rebase
 	pop = reset HEAD^
