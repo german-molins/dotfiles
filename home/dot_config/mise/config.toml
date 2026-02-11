@@ -78,6 +78,7 @@ lockfile = true
 activate_aggressive = true
 always_keep_download = true
 idiomatic_version_file_enable_tools = []
+env_shell_expand = true
 
 [settings.cargo]
 binstall = true
@@ -95,7 +96,7 @@ PAGER = "bat --plain"
 
 BROWSER = "firefox"
 JULIA_PROJECT = "@."
-TLRC_CONFIG = "{{env.HOME}}/.config/tlrc/config.toml"
+TLRC_CONFIG = "$HOME/.config/tlrc/config.toml"
 
 [tasks.clean]
 description = "Clean up system packages and caches"
