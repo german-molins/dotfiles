@@ -18,6 +18,15 @@
       "skillFolderHash": "52eeafb7403d77d18e35242adcd01874d8b84cd2",
       "installedAt": "2026-02-11T15:49:21.917Z",
       "updatedAt": "2026-02-11T15:49:21.917Z"
+    },
+    "jujutsu": {
+      "source": "ahmedelgabri/dotfiles",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ahmedelgabri/dotfiles.git",
+      "skillPath": "config/claude/skills/jujutsu/SKILL.md",
+      "skillFolderHash": "316d0196a0ea77b1ddaa62ddb7650205cf72067f",
+      "installedAt": "2026-02-11T16:09:41.457Z",
+      "updatedAt": "2026-02-11T16:09:41.457Z"
     }
   },
   "dismissed": {
