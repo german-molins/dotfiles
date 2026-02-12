@@ -1645,7 +1645,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1770784921-gc1ce14"
+version = "0.0.1770883724-g6b8a77"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2729,9 +2729,9 @@ backend = "aqua:cli/cli"
 "platforms.windows-x64" = { checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"}
 
 [[tools."github:atuinsh/atuin"]]
-version = "18.12.0"
+version = "18.12.1"
 backend = "github:atuinsh/atuin"
-"platforms.macos-arm64" = { checksum = "sha256:1a27c5c30ad43bb7132f68df49d2c93549f16727693df7d9c5aa6d830fa6894a", url = "https://github.com/atuinsh/atuin/releases/download/v18.12.0/atuin-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/353321922"}
+"platforms.macos-arm64" = { checksum = "sha256:bc4935ea9bddb1fc63d86f5859ba3c00c9d834ac8e1c689508ffb71054d63231", url = "https://github.com/atuinsh/atuin/releases/download/v18.12.1/atuin-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/354457637"}
 
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
@@ -2813,13 +2813,9 @@ backend = "aqua:jj-vcs/jj"
 "platforms.macos-arm64" = { checksum = "sha256:a1e6d3d3818ab26652631964db4344288a6fe0dc4c077bdb366ff184aa1d8f27", url = "https://github.com/jj-vcs/jj/releases/download/v0.38.0/jj-v0.38.0-aarch64-apple-darwin.tar.gz"}
 
 [[tools.jjui]]
-version = "0.9.10"
+version = "0.9.11"
 backend = "aqua:idursun/jjui"
-"platforms.linux-arm64" = { checksum = "sha256:febde90c9b83c7a35498b707daaafd8b30ad183c201952eb941173b0c3a5dd06", url = "https://github.com/idursun/jjui/releases/download/v0.9.10/jjui-0.9.10-linux-arm64.zip"}
-"platforms.linux-x64" = { checksum = "sha256:957b38316c74cbb5497c96dd12c91e9ade0d0265c551886eca3fb13d8b7569b3", url = "https://github.com/idursun/jjui/releases/download/v0.9.10/jjui-0.9.10-linux-amd64.zip"}
-"platforms.macos-arm64" = { checksum = "sha256:7c59b153d67afe0c7c0da3d6247b507ae24e1266e4faed694c7e15b7ac00cd2a", url = "https://github.com/idursun/jjui/releases/download/v0.9.10/jjui-0.9.10-darwin-arm64.zip"}
-"platforms.macos-x64" = { checksum = "sha256:e8240c4295a12f66c13cc207dcf5203fa44bad0dde53f8e25fff455f51d95cd5", url = "https://github.com/idursun/jjui/releases/download/v0.9.10/jjui-0.9.10-darwin-amd64.zip"}
-"platforms.windows-x64" = { checksum = "sha256:6ed6b649fa648fff9994d8e1ed343685986b953f25e05a37822b58f050492a60", url = "https://github.com/idursun/jjui/releases/download/v0.9.10/jjui-0.9.10-windows-amd64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:cff7109da58a3f8e65347b7e05b363ee7e72213b24f2375e88c93e1874c38c9f", url = "https://github.com/idursun/jjui/releases/download/v0.9.11/jjui-0.9.11-darwin-arm64.zip"}
 
 [[tools.jq]]
 version = "1.8.1"
@@ -2884,9 +2880,9 @@ env = ["opt"]
 "platforms.macos-arm64" = { checksum = "sha256:58dabb8ca9476009d03f2a3d3993768fa2946657c6423eed8ed31d31cc6e35cf", url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-aarch64-apple-darwin.tar.gz"}
 
 [[tools.opencode]]
-version = "1.1.56"
+version = "1.1.60"
 backend = "aqua:anomalyco/opencode"
-"platforms.macos-arm64" = { checksum = "sha256:e4ec650a9b792afb5964a24e2f6a6449db6739516c8b9c4dff3ef53378d01e14", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.56/opencode-darwin-arm64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:dd9c487409d23302f6ec52042685a513207d8686b36e89a34388536ca6cf9409", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.60/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
 version = "3.9"
@@ -2899,18 +2895,14 @@ version = "3.2.4"
 backend = "pipx:httpie"
 
 [[tools.pitchfork]]
-version = "1.3.0"
+version = "1.4.3"
 backend = "aqua:jdx/pitchfork"
-"platforms.linux-arm64" = { checksum = "sha256:ee47ac995dc99562ee87becbfeefee1114372afa7ead6e47f5d11302a76b65e4", url = "https://github.com/jdx/pitchfork/releases/download/v1.3.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:20619bf3e4e0ac31d3a2fe5b8f26795d3b11b0444272212f2ae1d5b437690c25", url = "https://github.com/jdx/pitchfork/releases/download/v1.3.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:596521a6440a37b4f072cf6ec4f1638220b6898b58681041617f15e6f533ccf6", url = "https://github.com/jdx/pitchfork/releases/download/v1.3.0/pitchfork-aarch64-apple-darwin.tar.gz"}
-"platforms.windows-x64" = { checksum = "sha256:9c732f551537901f1d1177af489a8dbf2d299747646a13f87d32ee18877aa027", url = "https://github.com/jdx/pitchfork/releases/download/v1.3.0/pitchfork-x86_64-pc-windows-msvc.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:41447bff098ba499a9873834e126451826c96ebda81a49ce04600ac6ea2c4100", url = "https://github.com/jdx/pitchfork/releases/download/v1.4.3/pitchfork-aarch64-apple-darwin.tar.gz"}
 
 [[tools.pnpm]]
-version = "10.29.2"
+version = "10.29.3"
 backend = "aqua:pnpm/pnpm"
-"platforms.linux-x64" = { checksum = "sha256:f9a8e1652b83884da6a3c174f504220015001144cee8733c07df68c598d4c43a", url = "https://github.com/pnpm/pnpm/releases/download/v10.29.2/pnpm-linux-x64"}
-"platforms.macos-arm64" = { checksum = "sha256:3f9ef4f665186181473db6e483d905e339259db30a33ee4f2093f04cf8e55991", url = "https://github.com/pnpm/pnpm/releases/download/v10.29.2/pnpm-macos-arm64"}
+"platforms.macos-arm64" = { checksum = "sha256:a248c56b0ab20443e18d0c8ee3207c6c564ee342bd3fc8694b3569a060cecece", url = "https://github.com/pnpm/pnpm/releases/download/v10.29.3/pnpm-macos-arm64"}
 
 [[tools.ripgrep]]
 version = "15.1.0"
@@ -2954,12 +2946,9 @@ backend = "github:sigoden/upt"
 "platforms.windows-x64" = { url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64-pc-windows-msvc.zip", url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004798"}
 
 [[tools.usage]]
-version = "2.16.1"
+version = "2.16.2"
 backend = "aqua:jdx/usage"
-"platforms.linux-arm64" = { checksum = "sha256:29ab8f0cf07d94f4f852007413594714561de9d613fe4dbf12b287dfa1bee0ac", url = "https://github.com/jdx/usage/releases/download/v2.16.1/usage-aarch64-unknown-linux-musl.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:9ff23ebae8b3fc049b4ed4fec29c417063597c79739bab094c390ddfe56e9623", url = "https://github.com/jdx/usage/releases/download/v2.16.1/usage-x86_64-unknown-linux-musl.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:3bba8d4916da22dbd4afe4ab6c59c988765d7e0374e1121b43ce8b1a282cfc78", url = "https://github.com/jdx/usage/releases/download/v2.16.1/usage-universal-apple-darwin.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:3bba8d4916da22dbd4afe4ab6c59c988765d7e0374e1121b43ce8b1a282cfc78", url = "https://github.com/jdx/usage/releases/download/v2.16.1/usage-universal-apple-darwin.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:755140f1ffe41a58ca43fb5d96a06de8e5215b15f0f7b957a8033f91bedf7383", url = "https://github.com/jdx/usage/releases/download/v2.16.2/usage-universal-apple-darwin.tar.gz"}
 
 [[tools.uv]]
 version = "0.10.2"
