@@ -115,6 +115,7 @@ depends = [
   "nvim:update",
   "brew:update",
   "upt:update",
+  "skills update",
 ]
 run = { task = "bash:clear-cache" }
 
