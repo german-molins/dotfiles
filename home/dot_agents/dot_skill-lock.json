@@ -9,6 +9,15 @@
       "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
       "installedAt": "2026-02-11T11:58:13.327Z",
       "updatedAt": "2026-02-11T11:58:13.327Z"
+    },
+    "mise": {
+      "source": "zenobi-us/dotfiles",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/zenobi-us/dotfiles.git",
+      "skillPath": "ai/files/skills/devtools/mise/SKILL.md",
+      "skillFolderHash": "52eeafb7403d77d18e35242adcd01874d8b84cd2",
+      "installedAt": "2026-02-11T15:49:21.917Z",
+      "updatedAt": "2026-02-11T15:49:21.917Z"
     }
   },
   "dismissed": {
