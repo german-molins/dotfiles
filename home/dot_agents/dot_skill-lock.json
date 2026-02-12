@@ -27,6 +27,15 @@
       "skillFolderHash": "316d0196a0ea77b1ddaa62ddb7650205cf72067f",
       "installedAt": "2026-02-11T16:09:41.457Z",
       "updatedAt": "2026-02-11T16:09:41.457Z"
+    },
+    "documentation-lookup": {
+      "source": "upstash/context7",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/upstash/context7.git",
+      "skillPath": "plugins/claude/context7/skills/documentation-lookup/SKILL.md",
+      "skillFolderHash": "4aedd1bbd79f085458a06b097fbc8bba9194a310",
+      "installedAt": "2026-02-12T12:47:45.912Z",
+      "updatedAt": "2026-02-12T12:47:45.912Z"
     }
   },
   "dismissed": {
