@@ -1694,6 +1694,10 @@ backend = "aqua:zk-org/zk"
 "platforms.macos-x64" = { checksum = "sha256:304d9373b7d34a231be9ac770bf6f6faf0dac2a0274863df559c18149dad5d74", url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-macos-x86_64.tar.gz"}
 "platforms.windows-x64" = { checksum = "sha256:59b800070840de9e47e9f7991ea6c8b15638266882f624cd20299344609db5c4", url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-windows-x86_64.tar.gz"}
 
+[[tools.atuin]]
+version = "18.12.1"
+backend = "aqua:atuinsh/atuin"
+
 [[tools.bat]]
 version = "0.26.1"
 backend = "aqua:sharkdp/bat"
@@ -2727,11 +2731,6 @@ backend = "aqua:cli/cli"
 "platforms.macos-arm64" = { checksum = "sha256:bde753978a352c5ae6c4abec47334d516e82807af20c9dbbd45507a5a0aedaaa", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_arm64.zip"}
 "platforms.macos-x64" = { checksum = "sha256:ced7094d05702eb54a63542abd8a1dc570b7e5ae94951844eb1626ba74bc2c60", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_macOS_amd64.zip"}
 "platforms.windows-x64" = { checksum = "sha256:983c74a8c594366b198485187cd6d4d07638f0bf9a9948d51a2a81a5164d8bfd", url = "https://github.com/cli/cli/releases/download/v2.86.0/gh_2.86.0_windows_amd64.zip"}
-
-[[tools."github:atuinsh/atuin"]]
-version = "18.12.1"
-backend = "github:atuinsh/atuin"
-"platforms.macos-arm64" = { checksum = "sha256:bc4935ea9bddb1fc63d86f5859ba3c00c9d834ac8e1c689508ffb71054d63231", url = "https://github.com/atuinsh/atuin/releases/download/v18.12.1/atuin-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/atuinsh/atuin/releases/assets/354457637"}
 
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
