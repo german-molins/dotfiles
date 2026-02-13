@@ -1645,7 +1645,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1770883724-g6b8a77"
+version = "0.0.1770957338-g481fd6"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1667,14 +1667,10 @@ backend = "aqua:gitui-org/gitui"
 "platforms.windows-x64" = { checksum = "sha256:afdbf94ed3cc4c7b39ff9dd0796fb1aa8e7fd73aeaf84944753214dfb4e13844", url = "https://github.com/gitui-org/gitui/releases/download/v0.28.0/gitui-win.tar.gz"}
 
 [[tools."aqua:ip7z/7zip"]]
-version = "25.01"
+version = "26.00"
 backend = "aqua:ip7z/7zip"
 env = ["opt"]
-"platforms.linux-arm64" = { checksum = "sha256:39c5140f02ce4436599303c59a149f654cb1bbc47cdc105a942120d747ae040d", url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-linux-arm64.tar.xz"}
-"platforms.linux-x64" = { checksum = "sha256:4ca3b7c6f2f67866b92622818b58233dc70367be2f36b498eb0bdeaaa44b53f4", url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-linux-x64.tar.xz"}
-"platforms.macos-arm64" = { checksum = "sha256:26aa75bc262bb10bf0805617b95569c3035c2c590a99f7db55c7e9607b2685e0", url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-mac.tar.xz"}
-"platforms.macos-x64" = { checksum = "sha256:26aa75bc262bb10bf0805617b95569c3035c2c590a99f7db55c7e9607b2685e0", url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-mac.tar.xz"}
-"platforms.windows-x64" = { checksum = "sha256:cd3cf38085c2cc6839cf72716dafb3175ae425f4fd34faafc6c0b64d618d307f", url = "https://github.com/ip7z/7zip/releases/download/25.01/7z2501-extra.7z"}
+"platforms.macos-arm64" = { checksum = "sha256:8a2ea734b52b2cb7d568f5f13e0a137bea3004b221bdbee53197728a9051c849", url = "https://github.com/ip7z/7zip/releases/download/26.00/7z2600-mac.tar.xz"}
 
 [[tools."aqua:jorgerojas26/lazysql"]]
 version = "0.4.6"
@@ -1757,13 +1753,13 @@ backend = "aqua:twpayne/chezmoi"
 "platforms.macos-arm64" = { checksum = "sha256:690ab2618e44e7a78b0ba2e541951ce3bde59c1cf9bc2d491850e8700607b9d4", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.4/chezmoi_2.69.4_darwin_arm64.tar.gz"}
 
 [[tools.claude]]
-version = "2.1.39"
+version = "2.1.41"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
-"platforms.macos-arm64" = { checksum = "blake3:933162014dfd54f3657043154eb62cbd39a30e8bea433693e6c77937c3e81b61", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.39/darwin-arm64/claude"}
+"platforms.macos-arm64" = { checksum = "blake3:10db5731360dbece1081b76d5c17c96e09b201836651f3fd822b4058186ef36c", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.41/darwin-arm64/claude"}
 
 [[tools.codebuff]]
-version = "1.0.617"
+version = "1.0.618"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -2787,13 +2783,9 @@ backend = "github:tstack/lnav"
 "platforms.windows-x64" = { checksum = "sha256:5d0e1a4b4f8ac00093e91749db20972780b2b874cde51640040ce65528923c31", url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-windows-x86_64.zip", url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294791140"}
 
 [[tools.glab]]
-version = "1.82.0"
+version = "1.84.0"
 backend = "gitlab:gitlab-org/cli"
-"platforms.linux-arm64" = { checksum = "sha256:dbbdfb3f52dbf317af6564957fb3d54cb2da453f2242f7e43135567148dfe326", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_linux_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_linux_arm64%2Etar%2Egz"}
-"platforms.linux-x64" = { checksum = "sha256:6589bd77e3042b728f0918090eb95ae63f8e9993ddd5db64bdb2a04e2c38ade6", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_linux_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_linux_amd64%2Etar%2Egz"}
-"platforms.macos-arm64" = { checksum = "sha256:434dc43ac3148abbf46d56c679aa122abe570b7c02a81ab41d1d2fe2a218fe8d", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_darwin_arm64%2Etar%2Egz"}
-"platforms.macos-x64" = { checksum = "sha256:30074cf012d97b1d0db8150fe9ec13dffe4404b735822fd0eae378cf512801ae", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_darwin_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_darwin_amd64%2Etar%2Egz"}
-"platforms.windows-x64" = { checksum = "sha256:7b55d2cfc47a84812bebc0d0f6ea099a0dc4bf5eb14aa0b1677c5774f3dec8a5", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.82.0/downloads/glab_1.82.0_windows_amd64.zip", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E82%2E0/glab_1%2E82%2E0_windows_amd64%2Ezip"}
+"platforms.macos-arm64" = { checksum = "sha256:6e8553375f1cb89c2231cbb695d81f35d943e7dc8f677e7f7ce713ba61bb687d", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.84.0/downloads/glab_1.84.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E84%2E0/glab_1%2E84%2E0_darwin_arm64%2Etar%2Egz"}
 
 [[tools.hyperfine]]
 version = "1.20.0"
@@ -2879,9 +2871,9 @@ env = ["opt"]
 "platforms.macos-arm64" = { checksum = "sha256:58dabb8ca9476009d03f2a3d3993768fa2946657c6423eed8ed31d31cc6e35cf", url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-aarch64-apple-darwin.tar.gz"}
 
 [[tools.opencode]]
-version = "1.1.60"
+version = "1.1.64"
 backend = "aqua:anomalyco/opencode"
-"platforms.macos-arm64" = { checksum = "sha256:dd9c487409d23302f6ec52042685a513207d8686b36e89a34388536ca6cf9409", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.60/opencode-darwin-arm64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:7a007b196e69b533c3e6fe41d30cb6000b93b4cf77ca9dd6c51de6482b1c7776", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.64/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
 version = "3.9"
@@ -2913,7 +2905,7 @@ backend = "aqua:BurntSushi/ripgrep"
 "platforms.windows-x64" = { checksum = "sha256:124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d87493a", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.rust]]
-version = "1.93.0"
+version = "1.93.1"
 backend = "core:rust"
 
 [[tools.tree-sitter]]
