@@ -115,7 +115,7 @@ depends = [
   "nvim:update",
   "brew:update",
   "upt:update",
-  "skills update",
+  "agents:update",
 ]
 run = { task = "bash:clear-cache" }
 
@@ -187,6 +187,10 @@ run = "ya pkg upgrade"
 [tasks."bash:clean"]
 description = "Clean bash startup caches"
 run = ["rm -rf ~/.cache/dotfiles/bash ~/.local/share/bash"]
+
+[tasks."agents:update"]
+description = "Update agents resources"
+run = "skills update"
 
 [tasks."python:scaffold"]
 description = "Scaffold a Python project with uv and pytest"
