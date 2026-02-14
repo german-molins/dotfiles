@@ -1645,7 +1645,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1770957338-g481fd6"
+version = "0.0.1771056176-g5401f5"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1721,13 +1721,9 @@ backend = "aqua:carapace-sh/carapace-bin"
 "platforms.macos-arm64" = { checksum = "sha256:28918fa21fab4055c270eb2035f778f83efadbde4411c36424062afe7115936d", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.2/carapace-bin_1.6.2_darwin_arm64.tar.gz"}
 
 [[tools.cargo-binstall]]
-version = "1.17.4"
+version = "1.17.5"
 backend = "aqua:cargo-bins/cargo-binstall"
-"platforms.linux-arm64" = { checksum = "sha256:1410ec72b4f23fa6cf8ebb4b55fe03ebca63e14adadf4501d78e91fa004e9689", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.4/cargo-binstall-aarch64-unknown-linux-musl.tgz"}
-"platforms.linux-x64" = { checksum = "sha256:8822793dd22a1fcfba6d7581ed130ec935fb26a0db58fb9b0f01f0fae17d28f8", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.4/cargo-binstall-x86_64-unknown-linux-musl.tgz"}
-"platforms.macos-arm64" = { checksum = "sha256:c689061413598fa32b77b6fd2a7300c6392faf008137194ab8a4cdb93c12040a", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.4/cargo-binstall-aarch64-apple-darwin.zip"}
-"platforms.macos-x64" = { checksum = "sha256:278a12a049397b9f73df0c1e6c83c15fe184e3f5d824ee9a66460c41e519cfd6", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.4/cargo-binstall-x86_64-apple-darwin.zip"}
-"platforms.windows-x64" = { checksum = "sha256:9c6df6ed7e0eef153fdd6aa0fe0c873496431ea44e2b209331b2dbd29d0d3c06", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.4/cargo-binstall-x86_64-pc-windows-msvc.zip"}
+"platforms.linux-x64" = { checksum = "sha256:c0f247726165afc445076a9d58cf3795512b6e5787ae469297a39b8c9e30a51f", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.5/cargo-binstall-x86_64-unknown-linux-musl.tgz"}
 
 [[tools."cargo:diffutils"]]
 version = "0.5.0"
@@ -1757,14 +1753,13 @@ backend = "aqua:twpayne/chezmoi"
 "platforms.macos-arm64" = { checksum = "sha256:690ab2618e44e7a78b0ba2e541951ce3bde59c1cf9bc2d491850e8700607b9d4", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.4/chezmoi_2.69.4_darwin_arm64.tar.gz"}
 
 [[tools.claude]]
-version = "2.1.41"
+version = "2.1.42"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
-"platforms.linux-x64" = { checksum = "blake3:716e1584c1fe4d1bfbfdc08699af61e7ed44e0f37de53158f5f51b1efdc4a1df", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.41/linux-x64/claude"}
-"platforms.macos-arm64" = { checksum = "blake3:10db5731360dbece1081b76d5c17c96e09b201836651f3fd822b4058186ef36c", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.41/darwin-arm64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:7a5cce07ca8ce188f131ebf8f7c9c24f23866698a920a638a50e93c64e6555cd", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.42/linux-x64/claude"}
 
 [[tools.codebuff]]
-version = "1.0.618"
+version = "1.0.619"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -2793,10 +2788,9 @@ backend = "github:tstack/lnav"
 "platforms.windows-x64" = { checksum = "sha256:5d0e1a4b4f8ac00093e91749db20972780b2b874cde51640040ce65528923c31", url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-windows-x86_64.zip", url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294791140"}
 
 [[tools.glab]]
-version = "1.84.0"
+version = "1.85.1"
 backend = "gitlab:gitlab-org/cli"
-"platforms.linux-x64" = { checksum = "sha256:bf6dc60310a109b1df2d0f1f4ba5e588efe386c3207e6564b61c74568b60a0c3", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.84.0/downloads/glab_1.84.0_linux_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E84%2E0/glab_1%2E84%2E0_linux_amd64%2Etar%2Egz"}
-"platforms.macos-arm64" = { checksum = "sha256:6e8553375f1cb89c2231cbb695d81f35d943e7dc8f677e7f7ce713ba61bb687d", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.84.0/downloads/glab_1.84.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E84%2E0/glab_1%2E84%2E0_darwin_arm64%2Etar%2Egz"}
+"platforms.linux-x64" = { checksum = "sha256:9190fbdb09a93fa500004710b1c541482490e6e2498a5ed8d3b8a7a1b1c3d387", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.85.1/downloads/glab_1.85.1_linux_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E85%2E1/glab_1%2E85%2E1_linux_amd64%2Etar%2Egz"}
 
 [[tools.hyperfine]]
 version = "1.20.0"
@@ -2873,7 +2867,7 @@ version = "0.2.4"
 backend = "npm:ctx7"
 
 [[tools."npm:skills"]]
-version = "1.3.8"
+version = "1.3.9"
 backend = "npm:skills"
 
 [[tools.numbat]]
@@ -2884,10 +2878,9 @@ env = ["opt"]
 "platforms.macos-arm64" = { checksum = "sha256:58dabb8ca9476009d03f2a3d3993768fa2946657c6423eed8ed31d31cc6e35cf", url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-aarch64-apple-darwin.tar.gz"}
 
 [[tools.opencode]]
-version = "1.1.64"
+version = "1.2.1"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:448349097ce93d96e5d227940fde54f71fff0d476cb2b1672417efda92a57c1e", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.64/opencode-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:7a007b196e69b533c3e6fe41d30cb6000b93b4cf77ca9dd6c51de6482b1c7776", url = "https://github.com/anomalyco/opencode/releases/download/v1.1.64/opencode-darwin-arm64.zip"}
+"platforms.linux-x64" = { checksum = "sha256:87e0630728241ee6e21bb9660c928a3a0c53113b3aa4e4abdc77d6dbe3a0b0e9", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.1/opencode-linux-x64.tar.gz"}
 
 [[tools.pandoc]]
 version = "3.9"
@@ -2921,7 +2914,7 @@ backend = "aqua:BurntSushi/ripgrep"
 "platforms.windows-x64" = { checksum = "sha256:124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d87493a", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.rust]]
-version = "1.93.1"
+version = "1.93.0"
 backend = "core:rust"
 
 [[tools.tree-sitter]]
