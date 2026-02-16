@@ -1645,7 +1645,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1771056176-g5401f5"
+version = "0.0.1771229326-gd5b17a"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2790,10 +2790,9 @@ backend = "github:tstack/lnav"
 "platforms.windows-x64" = { checksum = "sha256:5d0e1a4b4f8ac00093e91749db20972780b2b874cde51640040ce65528923c31", url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-windows-x86_64.zip", url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294791140"}
 
 [[tools.glab]]
-version = "1.85.1"
+version = "1.85.2"
 backend = "gitlab:gitlab-org/cli"
-"platforms.linux-x64" = { checksum = "sha256:9190fbdb09a93fa500004710b1c541482490e6e2498a5ed8d3b8a7a1b1c3d387", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.85.1/downloads/glab_1.85.1_linux_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E85%2E1/glab_1%2E85%2E1_linux_amd64%2Etar%2Egz"}
-"platforms.macos-arm64" = { checksum = "sha256:66484734bd557297b4f9ebfc621e8c2e1aa6cad503993363b919de89bab1b02e", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.85.1/downloads/glab_1.85.1_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E85%2E1/glab_1%2E85%2E1_darwin_arm64%2Etar%2Egz"}
+"platforms.macos-arm64" = { checksum = "sha256:ea8ee94c128f3e02a863cedc33648f885e69b9717668ef78c93102211b2e5869", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.85.2/downloads/glab_1.85.2_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E85%2E2/glab_1%2E85%2E2_darwin_arm64%2Etar%2Egz"}
 
 [[tools.hyperfine]]
 version = "1.20.0"
@@ -2881,10 +2880,9 @@ env = ["opt"]
 "platforms.macos-arm64" = { checksum = "sha256:58dabb8ca9476009d03f2a3d3993768fa2946657c6423eed8ed31d31cc6e35cf", url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-aarch64-apple-darwin.tar.gz"}
 
 [[tools.opencode]]
-version = "1.2.1"
+version = "1.2.5"
 backend = "aqua:anomalyco/opencode"
-"platforms.linux-x64" = { checksum = "sha256:87e0630728241ee6e21bb9660c928a3a0c53113b3aa4e4abdc77d6dbe3a0b0e9", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.1/opencode-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:f8e4f6587a66b85278233a674e29d15096d8275b44bfcbbe1ca73aaad41af44f", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.1/opencode-darwin-arm64.zip"}
+"platforms.macos-arm64" = { checksum = "sha256:6e9bdb0490e58e750293fba0ce933ac62604da6f95b35adef41ea7c001c41660", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.5/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
 version = "3.9"
