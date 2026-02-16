@@ -39,6 +39,12 @@ manager upon installation:
 
 All assistants I use are compatible with either or both.
 
+### Authored Skills
+
+| Skill | Description |
+|-------|-------------|
+| scientific-calculator | High-precision scientific calculator with full support for physical units, powered by [Numbat](https://numbat.dev/docs/). Features unit-safe arithmetic, physical constants, unit conversions, date/time arithmetic, scientific functions, and chemical element lookups. Requires `numbat` CLI. |
+
 ### [Skills](https://skills.sh/) by Vercel
 
 `skills` lets you manage skills across many agentic assistants. It is my
