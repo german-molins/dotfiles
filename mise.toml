@@ -2,6 +2,7 @@
 bun = "latest"
 jj = "latest"
 jq = "latest"
+"npm:playbooks" = "latest"
 yq = "latest"
 
 [prepare.bun]
