@@ -6,7 +6,15 @@
   ],
   "model": "anthropic/claude-opus-4-6",
   "permission": {
-    "bash": "ask",
+    "bash": {
+      "*": "ask",
+      "git log*": "allow",
+      "git diff*": "allow",
+      "git show*": "allow",
+      "jj log*": "allow",
+      "jj diff*": "allow",
+      "jj show*": "allow",
+    },
     "skill": {
       "*": "allow"
     }
