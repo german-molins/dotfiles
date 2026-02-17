@@ -26,7 +26,7 @@ servers are configured to enhance coding assistants capabilities:
 
 ## Skills
 
-Standard skills path is adopted as convention 
+Standard skills path is adopted as convention
 
 - `~/.agents/skills/` - Global
 - `.agents/skills/` - Per project
@@ -46,12 +46,34 @@ All assistants I use are compatible with either or both.
 | numbat | [Numbat](https://numbat.dev/docs/) programming language reference for statically typed scientific computations with first-class support for physical dimensions and units. |
 | scientific-calculator | High-precision scientific calculator with full support for physical units, dimensional analysis, unit safety, and built-in physical constants. Wraps the `numbat` skill for language reference. Requires `numbat` CLI. |
 
-### [Skills](https://skills.sh/) by Vercel
+### Skills Managers
+
+These are the skills managers I use, in order of precedence.
+
+#### [Playbooks]()
+
+[Playbooks CLI](https://www.npmjs.com/package/playbooks) uses the
+[Playbooks](https://playbooks.com/) skills registry by default, but can fetch
+and manage skills from a variety of sources, and locks specific versions to
+`.skills-lock.json`, both per-project and globally.
+
+```sh
+npx playbooks find skill
+```
+
+Skills have to be updated manually since there is not a fully non-interactive
+command for it:
+
+```sh
+playbooks update skill
+```
+
+#### [Skills](https://skills.sh/) by Vercel
 
 `skills` lets you manage skills across many agentic assistants. It is my
 default skills manager.
 
-### Context7
+#### Context7
 
 Similarly, use `ctx7` (Context7 Skills) to manage agents skills:
 
