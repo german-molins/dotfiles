@@ -5,6 +5,11 @@
     "~/.config/AGENTS.md"
   ],
   "model": "anthropic/claude-opus-4-6",
+  "permission": {
+    "skill": {
+      "*": "allow"
+    }
+  },
   "mcp": {
     "context7": {
       "type": "remote",
