@@ -43,7 +43,8 @@ All assistants I use are compatible with either or both.
 
 | Skill | Description |
 |-------|-------------|
-| scientific-calculator | High-precision scientific calculator with full support for physical units, powered by [Numbat](https://numbat.dev/docs/). Features unit-safe arithmetic, physical constants, unit conversions, date/time arithmetic, scientific functions, and chemical element lookups. Requires `numbat` CLI. |
+| numbat | [Numbat](https://numbat.dev/docs/) programming language reference for statically typed scientific computations with first-class support for physical dimensions and units. |
+| scientific-calculator | High-precision scientific calculator with full support for physical units, dimensional analysis, unit safety, and built-in physical constants. Wraps the `numbat` skill for language reference. Requires `numbat` CLI. |
 
 ### [Skills](https://skills.sh/) by Vercel
 
