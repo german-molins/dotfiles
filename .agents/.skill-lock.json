@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "skills": {
+    "chezmoi": {
+      "source": "gwenwindflower/.charmschool",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/gwenwindflower/.charmschool.git",
+      "skillPath": "agents/claude/skills/chezmoi/SKILL.md",
+      "skillFolderHash": "a525f654c73b8b8cd676726dcb7bbd16e8aeac61",
+      "installedAt": "2026-02-17T17:07:23.012Z",
+      "updatedAt": "2026-02-17T17:07:23.012Z"
+    }
+  },
+  "dismissed": {}
+}
