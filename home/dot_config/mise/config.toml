@@ -71,6 +71,7 @@ amp = "latest"
 "conda:resvg" = "latest"
 "npm:skills" = "latest"
 atuin = "latest"
+"npm:playbooks" = "latest"
 
 [settings]
 experimental = true

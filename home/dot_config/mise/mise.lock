@@ -2846,6 +2846,10 @@ backend = "core:node"
 version = "0.3.1"
 backend = "npm:ctx7"
 
+[[tools."npm:playbooks"]]
+version = "0.1.20"
+backend = "npm:playbooks"
+
 [[tools."npm:skills"]]
 version = "1.4.0"
 backend = "npm:skills"
