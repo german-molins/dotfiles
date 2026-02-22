@@ -1753,6 +1753,7 @@ backend = "aqua:twpayne/chezmoi"
 version = "2.1.49"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
+"platforms.linux-x64" = { checksum = "blake3:15df11030aa99ccd987c4027786937c5c5c330dc36dc17fdfd1694a50d070b85", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.49/linux-x64/claude"}
 "platforms.macos-arm64" = { checksum = "blake3:f6c99c06ce8e4698045ab24b20348df9fd3a2fc1b0db19b081d2db151b3512bf", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.49/darwin-arm64/claude"}
 
 [[tools.codebuff]]
@@ -2586,6 +2587,7 @@ backend = "aqua:uutils/coreutils"
 [[tools.cosign]]
 version = "3.0.5"
 backend = "aqua:sigstore/cosign"
+"platforms.linux-x64" = { checksum = "sha256:db15cc99e6e4837daabab023742aaddc3841ce57f193d11b7c3e06c8003642b2", url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-amd64"}
 "platforms.macos-arm64" = { checksum = "sha256:4888c898e2901521a6bd4cf4f0383c9465588a6a46ecd2465ad34faf13f09eb7", url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-darwin-arm64"}
 
 [[tools."devbox:exiftool"]]
@@ -2771,6 +2773,7 @@ backend = "github:tstack/lnav"
 [[tools.glab]]
 version = "1.86.0"
 backend = "gitlab:gitlab-org/cli"
+"platforms.linux-x64" = { checksum = "sha256:ea2ab46b4eace60407edbea90c5bdb0c5b42400e8d047a20c6f6f0d3ec6fc281", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.86.0/downloads/glab_1.86.0_linux_amd64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E86%2E0/glab_1%2E86%2E0_linux_amd64%2Etar%2Egz"}
 "platforms.macos-arm64" = { checksum = "sha256:46594a78e41bdbaf8dcb51b40fc2f76f6b41b4df87c4dfeb65d8fe2a675fb8a3", url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.86.0/downloads/glab_1.86.0_darwin_arm64.tar.gz", url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E86%2E0/glab_1%2E86%2E0_darwin_arm64%2Etar%2Egz"}
 
 [[tools.hyperfine]]
@@ -2864,6 +2867,7 @@ env = ["opt"]
 [[tools.opencode]]
 version = "1.2.10"
 backend = "aqua:anomalyco/opencode"
+"platforms.linux-x64" = { checksum = "sha256:ebcc24012e8f067b10d7416430c88e9c429115ecfbccf8da9eb59db3b629a358", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.10/opencode-linux-x64.tar.gz"}
 "platforms.macos-arm64" = { checksum = "sha256:ad880664b6b012cdaefc4d175a96afef395c481b9328c8eb5db143a8644ad1d9", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.10/opencode-darwin-arm64.zip"}
 
 [[tools.pandoc]]
