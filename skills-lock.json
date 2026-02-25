@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "chezmoi": {
+      "source": "gwenwindflower/.charmschool",
+      "sourceType": "github",
+      "computedHash": "0c7d2433511e33469234958ec490698c73c51e91ceb2b9a871ec011f7ec720d0"
+    }
+  }
+}
