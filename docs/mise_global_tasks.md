@@ -60,12 +60,6 @@ Update Devbox global packages
 
 Clean Mise cache
 
-## `mise:lock`
-
-- **Usage**: `mise:lock`
-
-Lock mise dependencies
-
 ## `mise:update`
 
 - **Usage**: `mise:update`

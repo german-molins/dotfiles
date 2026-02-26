@@ -83,7 +83,7 @@ mise run mise:update
 Lock dependencies to specific versions:
 
 ```sh
-mise run mise:lock
+mise lock
 ```
 
 ### Project Environment

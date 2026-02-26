@@ -2,10 +2,9 @@
 #MISE description="Initialize a Python project with uv and pytest"
 #MISE dir="{{cwd}}"
 
-mise use usage
-mise use uv
+mise use usage uv
+mise lock
 uv init
 uv add pytest
-mise run mise:lock
 
 mise config set "settings.python.uv_venv_auto" "true"
