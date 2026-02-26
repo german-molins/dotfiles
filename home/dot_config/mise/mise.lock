@@ -1645,7 +1645,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1771761706-g90e036"
+version = "0.0.1771824912-g3d674e"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
