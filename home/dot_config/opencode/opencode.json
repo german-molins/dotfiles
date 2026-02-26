@@ -8,9 +8,11 @@
   "permission": {
     "bash": {
       "*": "ask",
+      "git status*": "allow",
       "git log*": "allow",
       "git diff*": "allow",
       "git show*": "allow",
+      "jj status*": "allow",
       "jj log*": "allow",
       "jj diff*": "allow",
       "jj show*": "allow",
