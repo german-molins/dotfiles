@@ -1753,7 +1753,10 @@ backend = "aqua:twpayne/chezmoi"
 version = "2.1.50"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
+"platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.50/linux-arm64/claude"}
 "platforms.linux-x64" = { checksum = "blake3:1e608dfb46259d191fd5fef3d776a42d5036a48e05756e9d101c8be6411a3b7e", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.50/linux-x64/claude"}
+"platforms.macos-arm64" = { checksum = "blake3:27988bf256535eafb4cf352dd188ebf1cb2109eb6556deee975a3c025ef3633c", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.50/darwin-arm64/claude"}
+"platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.50/darwin-x64/claude"}
 
 [[tools.codebuff]]
 version = "1.0.620"
@@ -2713,7 +2716,11 @@ backend = "aqua:junegunn/fzf"
 [[tools.gh]]
 version = "2.87.2"
 backend = "aqua:cli/cli"
+"platforms.linux-arm64" = { checksum = "sha256:e37efdd8ec98425f44175040b5037c767bbd49f192aed1de5aabc4b4ea9e22c5", url = "https://github.com/cli/cli/releases/download/v2.87.2/gh_2.87.2_linux_arm64.tar.gz"}
 "platforms.linux-x64" = { checksum = "sha256:18360b2243e3bf9c1457035db45f6400ae4cf957dcc2f674e69717b4e0b14d55", url = "https://github.com/cli/cli/releases/download/v2.87.2/gh_2.87.2_linux_amd64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:18d90c7ae5b462d47cc665d4c59de61af1e208edb81a9abee1b5a82c94e91d94", url = "https://github.com/cli/cli/releases/download/v2.87.2/gh_2.87.2_macOS_arm64.zip"}
+"platforms.macos-x64" = { checksum = "sha256:5ce4da6da0f29e6aa46e54ea6adb2528243d2bb517a7098e75cca16a5d983d28", url = "https://github.com/cli/cli/releases/download/v2.87.2/gh_2.87.2_macOS_amd64.zip"}
+"platforms.windows-x64" = { checksum = "sha256:8483c9f5e5f777e5d7994d5ba3562c5face6ea5046af142b208eb4d6713f7749", url = "https://github.com/cli/cli/releases/download/v2.87.2/gh_2.87.2_windows_amd64.zip"}
 
 [[tools."github:dalance/procs"]]
 version = "0.14.10"
@@ -2882,7 +2889,10 @@ backend = "pipx:httpie"
 [[tools.pitchfork]]
 version = "1.6.0"
 backend = "aqua:jdx/pitchfork"
+"platforms.linux-arm64" = { checksum = "sha256:c318b4a7fa373f9dfd3fb39c05f2db9c2e2e794dd6d44529d34fa52e8e707575", url = "https://github.com/jdx/pitchfork/releases/download/v1.6.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"}
 "platforms.linux-x64" = { checksum = "sha256:96858fdc9a01cc60fef0f81a184048b395419ee0bfa580d908da24ec2a725ae6", url = "https://github.com/jdx/pitchfork/releases/download/v1.6.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:00aa2ff774339256eaa4d7e24fb6bd0caf75a92750d35dccfd27c45f356af781", url = "https://github.com/jdx/pitchfork/releases/download/v1.6.0/pitchfork-aarch64-apple-darwin.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:cc4318c64ffddba0012324e1f29e3a116ac249bdbb004c50b0740c86c5818f84", url = "https://github.com/jdx/pitchfork/releases/download/v1.6.0/pitchfork-x86_64-pc-windows-msvc.zip"}
 
 [[tools.pnpm]]
 version = "10.30.1"
