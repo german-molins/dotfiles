@@ -1792,7 +1792,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1772107648-gbe4328"
+version = "0.0.1772175751-gc3b356"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1916,13 +1916,13 @@ backend = "aqua:twpayne/chezmoi"
 "platforms.windows-x64" = { checksum = "sha256:3c6f541f140eabb1a6818ee87c94e806193d2980bfbde94832055a49a7bba573", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.4/chezmoi_2.69.4_windows_amd64.zip"}
 
 [[tools.claude]]
-version = "2.1.59"
+version = "2.1.62"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
-"platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.59/linux-arm64/claude"}
-"platforms.linux-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.59/linux-x64/claude"}
-"platforms.macos-arm64" = { checksum = "blake3:eab1a3a81d628b3bbf4719db91a79ac5ad59eb4bb6155d40d6dc61fd34c97575", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.59/darwin-arm64/claude"}
-"platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.59/darwin-x64/claude"}
+"platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/linux-arm64/claude"}
+"platforms.linux-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/linux-x64/claude"}
+"platforms.macos-arm64" = { checksum = "blake3:b36121b39d3506e299e333099e7aae9b589937b75ecd2084a30e8bf61de47f69", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/darwin-arm64/claude"}
+"platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/darwin-x64/claude"}
 
 [[tools.codebuff]]
 version = "1.0.622"
@@ -3040,7 +3040,7 @@ version = "0.1.20"
 backend = "npm:playbooks"
 
 [[tools."npm:skills"]]
-version = "1.4.1"
+version = "1.4.2"
 backend = "npm:skills"
 
 [[tools.numbat]]
