@@ -1792,7 +1792,7 @@ backend = "aqua:sigoden/aichat"
 "platforms.windows-x64" = { checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4afd8f", url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.amp]]
-version = "0.0.1772175751-gc3b356"
+version = "0.0.1772265701-g032735"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1877,13 +1877,13 @@ backend = "aqua:carapace-sh/carapace-bin"
 "platforms.windows-x64" = { checksum = "sha256:74da06809744399003f6a3ad65449dcfcdce7b4c7c52967230770db93459cc7f", url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.3/carapace-bin_1.6.3_windows_amd64.zip"}
 
 [[tools.cargo-binstall]]
-version = "1.17.5"
+version = "1.17.6"
 backend = "aqua:cargo-bins/cargo-binstall"
-"platforms.linux-arm64" = { checksum = "sha256:6a82fd5207e0647fcb28fc8db30b0186a2e6223aaa5411a588f0573c77d620e3", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.5/cargo-binstall-aarch64-unknown-linux-musl.tgz"}
-"platforms.linux-x64" = { checksum = "sha256:c0f247726165afc445076a9d58cf3795512b6e5787ae469297a39b8c9e30a51f", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.5/cargo-binstall-x86_64-unknown-linux-musl.tgz"}
-"platforms.macos-arm64" = { checksum = "sha256:896e75a79773a11ad651649dce449a223ddd1dc718e687301988b46ee26fe58f", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.5/cargo-binstall-aarch64-apple-darwin.zip"}
-"platforms.macos-x64" = { checksum = "sha256:2471743078bbf1685e8493121b03c6555042690ea10661e0fddba647bceac13c", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.5/cargo-binstall-x86_64-apple-darwin.zip"}
-"platforms.windows-x64" = { checksum = "sha256:501697fe946b691d215600d144b53b696cc6fb03f3e1773f582b375672c26be6", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.5/cargo-binstall-x86_64-pc-windows-msvc.zip"}
+"platforms.linux-arm64" = { checksum = "sha256:e5f2c4b79b10370dff707b86a14e7a0ad399c5dc5853824e933432910741992c", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.6/cargo-binstall-aarch64-unknown-linux-musl.tgz"}
+"platforms.linux-x64" = { checksum = "sha256:f926d96e9f0822ded35c4ac2071ce190bd1311565695c49c45e295de0d685aaa", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.6/cargo-binstall-x86_64-unknown-linux-musl.tgz"}
+"platforms.macos-arm64" = { checksum = "sha256:101447fa30a723ca8e1a13cec11bb1350b7179331b2aa7054d27bef7a3e19021", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.6/cargo-binstall-aarch64-apple-darwin.zip"}
+"platforms.macos-x64" = { checksum = "sha256:cd07fd79e2848b13b994e3f83fa5377b631625b847f0734219f2706feb518258", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.6/cargo-binstall-x86_64-apple-darwin.zip"}
+"platforms.windows-x64" = { checksum = "sha256:5fcbddde2d415704d2432bbe606a5767ddaf1ef4ee2c16b7828f8be2ed1e5a5c", url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.6/cargo-binstall-x86_64-pc-windows-msvc.zip"}
 
 [[tools."cargo:diffutils"]]
 version = "0.5.0"
@@ -1916,13 +1916,13 @@ backend = "aqua:twpayne/chezmoi"
 "platforms.windows-x64" = { checksum = "sha256:3c6f541f140eabb1a6818ee87c94e806193d2980bfbde94832055a49a7bba573", url = "https://github.com/twpayne/chezmoi/releases/download/v2.69.4/chezmoi_2.69.4_windows_amd64.zip"}
 
 [[tools.claude]]
-version = "2.1.62"
+version = "2.1.63"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
-"platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/linux-arm64/claude"}
-"platforms.linux-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/linux-x64/claude"}
-"platforms.macos-arm64" = { checksum = "blake3:b36121b39d3506e299e333099e7aae9b589937b75ecd2084a30e8bf61de47f69", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/darwin-arm64/claude"}
-"platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.62/darwin-x64/claude"}
+"platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.63/linux-arm64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:70920ec7f2efc89a34fc41ef72de584093ca3366c44a1a1438e9778c5392f12d", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.63/linux-x64/claude"}
+"platforms.macos-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.63/darwin-arm64/claude"}
+"platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.63/darwin-x64/claude"}
 
 [[tools.codebuff]]
 version = "1.0.622"
@@ -2891,13 +2891,13 @@ backend = "aqua:cli/cli"
 "platforms.windows-x64" = { checksum = "sha256:c590bcb488f80a85c8febd5cde27edd68fdd481bd004aaf9adc50dcf1b21c09c", url = "https://github.com/cli/cli/releases/download/v2.87.3/gh_2.87.3_windows_amd64.zip"}
 
 [[tools."github:dalance/procs"]]
-version = "0.14.10"
+version = "0.14.11"
 backend = "github:dalance/procs"
-"platforms.linux-arm64" = { url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-aarch64-linux.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/241511725"}
-"platforms.linux-x64" = { url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-x86_64-linux.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/241511922"}
-"platforms.macos-arm64" = { url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-aarch64-mac.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/241511560"}
-"platforms.macos-x64" = { url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-x86_64-mac.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/241511554"}
-"platforms.windows-x64" = { url = "https://github.com/dalance/procs/releases/download/v0.14.10/procs-v0.14.10-x86_64-windows.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/241511643"}
+"platforms.linux-arm64" = { checksum = "sha256:891855dff3143fd3620c06eb68bd63e94114dd2e369107b455d48bf60cc1464c", url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-aarch64-linux.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235298"}
+"platforms.linux-x64" = { checksum = "sha256:9c4faecf85a3af4d3d39aae47d04fa31d0a6eb0a239039f68d3f55043f04f974", url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-linux.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235647"}
+"platforms.macos-arm64" = { checksum = "sha256:6650e7f354c07d0319d0f771ef8bb898ce8d0c841865a96c23281eebb033cac3", url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-aarch64-mac.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235808"}
+"platforms.macos-x64" = { checksum = "sha256:72e45a61660e1c586afff64b3a8a393fed06f3a133df8e716ade68b00190ea87", url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-mac.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235807"}
+"platforms.windows-x64" = { checksum = "sha256:1b1fef6dfc46ce2f2fe33a678cf865bea35234febe42c3921b06ab41024cda01", url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-windows.zip", url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235471"}
 
 [[tools."github:eza-community/eza"]]
 version = "0.23.4"
@@ -3044,7 +3044,7 @@ version = "0.1.20"
 backend = "npm:playbooks"
 
 [[tools."npm:skills"]]
-version = "1.4.2"
+version = "1.4.3"
 backend = "npm:skills"
 
 [[tools.numbat]]
@@ -3147,7 +3147,7 @@ backend = "aqua:jdx/usage"
 "platforms.windows-x64" = { checksum = "sha256:b095821eb3299e8a7a639557d49b5cd52dbf0c03cc4316c961ff70973906823d", url = "https://github.com/jdx/usage/releases/download/v2.18.1/usage-x86_64-pc-windows-msvc.zip"}
 
 [[tools.uv]]
-version = "0.10.6"
+version = "0.10.7"
 backend = "asdf:uv"
 
 [[tools.xh]]
