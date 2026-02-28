@@ -2783,6 +2783,10 @@ version = "3.4.1"
 backend = "devbox:htop"
 env = ["devbox"]
 
+[[tools."devbox:imagemagick"]]
+version = "7.1.2-13"
+backend = "devbox"
+
 [[tools."devbox:poppler-utils"]]
 version = "25.10.0"
 backend = "devbox:poppler-utils"
