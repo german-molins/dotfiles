@@ -1,21 +1,21 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "b224ddf"
-hash = "270915fa8282a19908449530ff66f7e2"
+rev = "1962818"
+hash = "26db011a778f261d730d4f5f8bf24b3f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-filter"
-rev = "b224ddf"
+rev = "1962818"
 hash = "c887903a63a2ff520081b6d90a4b3392"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:toggle-pane"
-rev = "b224ddf"
+rev = "1962818"
 hash = "4c0260feb50ea2437380690ffc241da7"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "b224ddf"
+rev = "1962818"
 hash = "6fa6a05a81c98dd000fbca3cca6e9682"
 
 [[flavor.deps]]
