@@ -7,7 +7,6 @@
       "excluded_platforms": ["aarch64-darwin"]
     },
     "sshfs-fuse": "latest",
-    "gitflow":    "latest",
     "procps":     "latest"
   }
 }

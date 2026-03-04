@@ -1,54 +1,6 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "gitflow@latest": {
-      "last_modified": "2026-02-23T15:40:43Z",
-      "resolved": "github:NixOS/nixpkgs/80d901ec0377e19ac3f7bb8c035201e2e098cc97#gitflow",
-      "source": "devbox-search",
-      "version": "1.12.3",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/yb7p5m8whv0qfs07skp81560fyxh2xlq-gitflow-1.12.3",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/yb7p5m8whv0qfs07skp81560fyxh2xlq-gitflow-1.12.3"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/5jn7y8p7whvngmabd60ma8h6b48va9ks-gitflow-1.12.3",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/5jn7y8p7whvngmabd60ma8h6b48va9ks-gitflow-1.12.3"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/9p1whamllx787zr9i4m27drakj5q198y-gitflow-1.12.3",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/9p1whamllx787zr9i4m27drakj5q198y-gitflow-1.12.3"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/lip44vllv5wlry1bdv5vbc07zi8c786c-gitflow-1.12.3",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/lip44vllv5wlry1bdv5vbc07zi8c786c-gitflow-1.12.3"
-        }
-      }
-    },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2026-02-27T06:27:13Z",
       "resolved": "github:NixOS/nixpkgs/c0f3d81a7ddbc2b1332be0d8481a672b4f6004d6?lastModified=1772173633&narHash=sha256-MOH58F4AIbCkh6qlQcwMycyk5SWvsqnS%2FTCfnqDlpj4%3D"
