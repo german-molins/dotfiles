@@ -23,10 +23,6 @@ layout {
       pane name="Lazygit" {
         command "lazygit"
       }
-      pane name="GitUI" {
-        command "bash"
-        args "-c" "gitui"
-      }
       pane name="GH Dash" {
         command "gh-dash"
         start_suspended true

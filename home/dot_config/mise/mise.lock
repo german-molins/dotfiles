@@ -1320,15 +1320,6 @@ backend = "aqua:dlvhdr/gh-dash"
 "platforms.macos-x64" = { checksum = "sha256:8598f7d92d4bf66a6023646acc7bd31ed936c34a378498b72635dbb34bf5a9d3", url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.22.0/gh-dash_v4.22.0_darwin-amd64"}
 "platforms.windows-x64" = { checksum = "sha256:576100877904987847952e5345cdc2eb3dc762d50ecc23505b9e4464d242fd14", url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.22.0/gh-dash_v4.22.0_windows-amd64.exe"}
 
-[[tools."aqua:gitui-org/gitui"]]
-version = "0.28.0"
-backend = "aqua:gitui-org/gitui"
-"platforms.linux-arm64" = { checksum = "sha256:4ce1f32528f79dfe118130e753900f6ea7ffc17eb72df3abcf22313ec771c131", url = "https://github.com/gitui-org/gitui/releases/download/v0.28.0/gitui-linux-aarch64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:4972695d5690001f5eaaecf709be52aa9dab424067bac539fd668c14afdd22c4", url = "https://github.com/gitui-org/gitui/releases/download/v0.28.0/gitui-linux-x86_64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:5366926b6d355dda413146c670e0207c056a325985f37a628fd2b06803cfa8ac", url = "https://github.com/gitui-org/gitui/releases/download/v0.28.0/gitui-mac.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:5366926b6d355dda413146c670e0207c056a325985f37a628fd2b06803cfa8ac", url = "https://github.com/gitui-org/gitui/releases/download/v0.28.0/gitui-mac.tar.gz"}
-"platforms.windows-x64" = { checksum = "sha256:afdbf94ed3cc4c7b39ff9dd0796fb1aa8e7fd73aeaf84944753214dfb4e13844", url = "https://github.com/gitui-org/gitui/releases/download/v0.28.0/gitui-win.tar.gz"}
-
 [[tools."aqua:ip7z/7zip"]]
 version = "26.00"
 backend = "aqua:ip7z/7zip"
