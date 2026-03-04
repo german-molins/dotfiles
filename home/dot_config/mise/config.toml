@@ -71,6 +71,7 @@ amp = "latest"
 atuin = "latest"
 "npm:playbooks" = "latest"
 "devbox:imagemagick" = "latest"
+python = "latest"
 
 [settings]
 experimental = true
