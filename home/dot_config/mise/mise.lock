@@ -1427,7 +1427,7 @@ version = "2.1.69"
 backend = "aqua:anthropics/claude-code"
 env = ["opt"]
 "platforms.linux-arm64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.69/linux-arm64/claude"}
-"platforms.linux-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.69/linux-x64/claude"}
+"platforms.linux-x64" = { checksum = "blake3:1b783db8d44d785c21dd55d739a5af649f0e01d77bf0412aab9eb637688608f0", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.69/linux-x64/claude"}
 "platforms.macos-arm64" = { checksum = "blake3:341ef90890f7414c7d36c97bb1a17b6ea33c8f0f882f52d7dd4248d25706b116", url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.69/darwin-arm64/claude"}
 "platforms.macos-x64" = { url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.69/darwin-x64/claude"}
 
