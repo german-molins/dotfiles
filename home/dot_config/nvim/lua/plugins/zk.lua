@@ -23,6 +23,10 @@ return {
       if title == "" then
         return
       end
+      local notebook = require("zk.util").notebook_root(vim.fn.expand("%:p"))
+      if notebook then
+        vim.fn.mkdir(notebook .. "/archive", "p")
+      end
       require("zk.api").new(nil, { title = title, dir = "archive" }, function(err, res)
         if err then
           vim.notify("Error creating note: " .. vim.inspect(err), vim.log.levels.ERROR)
@@ -42,6 +46,10 @@ return {
     end)
 
     commands.add("ZkNewJournal", function(options)
+      local notebook = require("zk.util").notebook_root(vim.fn.expand("%:p"))
+      if notebook then
+        vim.fn.mkdir(notebook .. "/journal", "p")
+      end
       require("zk.api").new(nil, { dir = "journal" }, function(err, res)
         if err then
           vim.notify("Error creating journal note: " .. vim.inspect(err), vim.log.levels.ERROR)
@@ -60,6 +68,10 @@ return {
       local title = vim.fn.input("Meeting title: ")
       if title == "" then
         return
+      end
+      local notebook = require("zk.util").notebook_root(vim.fn.expand("%:p"))
+      if notebook then
+        vim.fn.mkdir(notebook .. "/meetings", "p")
       end
       require("zk.api").new(nil, { title = title, dir = "meetings" }, function(err, res)
         if err then
