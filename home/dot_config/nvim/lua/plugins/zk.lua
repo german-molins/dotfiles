@@ -25,7 +25,7 @@ return {
       end
       require("zk.api").new(nil, { title = title, dir = "archive" }, function(err, res)
         if err then
-          vim.notify("Error creating note: " .. err, vim.log.levels.ERROR)
+          vim.notify("Error creating note: " .. vim.inspect(err), vim.log.levels.ERROR)
           return
         end
 
@@ -44,7 +44,7 @@ return {
     commands.add("ZkNewJournal", function(options)
       require("zk.api").new(nil, { dir = "journal" }, function(err, res)
         if err then
-          vim.notify("Error creating journal note: " .. err, vim.log.levels.ERROR)
+          vim.notify("Error creating journal note: " .. vim.inspect(err), vim.log.levels.ERROR)
           return
         end
 
@@ -63,7 +63,7 @@ return {
       end
       require("zk.api").new(nil, { title = title, dir = "meetings" }, function(err, res)
         if err then
-          vim.notify("Error creating meeting note: " .. err, vim.log.levels.ERROR)
+          vim.notify("Error creating meeting note: " .. vim.inspect(err), vim.log.levels.ERROR)
           return
         end
 
