@@ -61,11 +61,16 @@ mode. This relies on the `group.archive.note` configuration (ID-based filename,
 journal template with date-based title and filename), and opens the new buffer
 with the cursor positioned at the last line in insert mode. This relies on the
 `group.journal.note` configuration (date-time filename, `journal.md` template).
+- `:ZkNewMeeting`: Creates a new Zk note in the "meetings" directory, prompts
+for a meeting title, and opens the new buffer with the cursor positioned at the
+last line in insert mode. This relies on the `group.meetings.note` configuration
+(date-time filename, `meeting.md` template).
 
 #### Keymaps
 
 - `<leader>zn`: Run `:ZkNewLink` command.
 - `<leader>zj`: Run `:ZkNewJournal` command.
+- `<leader>zm`: Run `:ZkNewMeeting` command.
 
 ## Colorschemes
 

@@ -56,8 +56,28 @@ return {
       end)
     end)
 
+    commands.add("ZkNewMeeting", function(options)
+      local title = vim.fn.input("Meeting title: ")
+      if title == "" then
+        return
+      end
+      require("zk.api").new(nil, { title = title, dir = "meetings" }, function(err, res)
+        if err then
+          vim.notify("Error creating meeting note: " .. err, vim.log.levels.ERROR)
+          return
+        end
+
+        vim.cmd("edit " .. res.path)
+        local buf = vim.api.nvim_get_current_buf()
+        local line_count = vim.api.nvim_buf_line_count(buf)
+        vim.api.nvim_win_set_cursor(0, { line_count, 0 })
+        vim.cmd("startinsert")
+      end)
+    end)
+
     vim.keymap.set("n", "<leader>fz", ":ZkNotes<CR>", { desc = "Find Notes" })
     vim.keymap.set("n", "<leader>zn", ":ZkNewLink<CR>", { desc = "Create new Zk note with link" })
     vim.keymap.set("n", "<leader>zj", ":ZkNewJournal<CR>", { desc = "Create new Zk journal note" })
+    vim.keymap.set("n", "<leader>zm", ":ZkNewMeeting<CR>", { desc = "Create new Zk meeting note" })
   end,
 }
