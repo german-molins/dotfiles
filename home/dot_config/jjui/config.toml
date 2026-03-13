@@ -1,6 +1,15 @@
 [ui]
 theme = "base16-solarized-dark"
 
-[custom_commands."push with created bookmark"]
-key = ["p"]
-args = ["git", "push", "-c", "$change_id"]
+[[actions]]
+name = "push-with-created-bookmark"
+lua = '''
+jj_async("git", "push", "--change", context.change_id())
+revisions.refresh()  -- necessary?
+'''
+
+[[bindings]]
+action = "push-with-created-bookmark"
+key = "P"
+scope = "revisions"                        # ?
+description = "push with created bookmark"
