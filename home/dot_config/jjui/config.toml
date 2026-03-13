@@ -13,3 +13,16 @@ action = "push-with-created-bookmark"
 key = "P"
 scope = "revisions"                        # ?
 description = "push with created bookmark"
+
+[[actions]]
+name = "new-after"
+lua = '''
+jj_async("new", "--after", context.change_id())
+revisions.refresh()
+'''
+
+[[bindings]]
+action = "new-after"
+key = "N"
+scope = "revisions"
+desc = "new after"
