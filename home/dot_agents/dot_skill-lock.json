@@ -24,9 +24,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/ahmedelgabri/dotfiles.git",
       "skillPath": "config/claude/skills/jujutsu/SKILL.md",
-      "skillFolderHash": "316d0196a0ea77b1ddaa62ddb7650205cf72067f",
+      "skillFolderHash": "5a242e3291f202c536d8c4c322b2de50175f5635",
       "installedAt": "2026-02-11T16:09:41.457Z",
-      "updatedAt": "2026-02-11T16:09:41.457Z"
+      "updatedAt": "2026-03-13T17:33:26.482Z"
     },
     "documentation-lookup": {
       "source": "upstash/context7",
@@ -42,9 +42,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/skill-creator/SKILL.md",
-      "skillFolderHash": "5c26c1472b98de33a48074ba5d3efe3a727b8e37",
+      "skillFolderHash": "98a510d1cfef9f82c3b1eec200229ca68725e613",
       "installedAt": "2026-02-12T13:57:34.634Z",
-      "updatedAt": "2026-02-28T10:58:58.680Z"
+      "updatedAt": "2026-03-13T17:33:30.410Z"
     }
   },
   "dismissed": {
