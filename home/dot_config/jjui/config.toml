@@ -2,19 +2,6 @@
 theme = "base16-solarized-dark"
 
 [[actions]]
-name = "push-with-created-bookmark"
-lua = '''
-jj_async("git", "push", "--change", context.change_id())
-revisions.refresh()
-'''
-
-[[bindings]]
-action = "push-with-created-bookmark"
-key = "P"
-scope = "revisions"                        # ?
-description = "push with created bookmark"
-
-[[actions]]
 name = "new-after"
 lua = '''
 jj_async("new", "--after", context.change_id())

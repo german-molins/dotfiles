@@ -10,5 +10,4 @@ Available themes are configured as chezmoi externals from
 
 | Key | Description |
 | -------------- | --------------- |
-| `P` | Push revision with created bookmark |
 | `N` | New revision after focused and before descendants |
