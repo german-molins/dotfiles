@@ -2,8 +2,8 @@
   "lockfile_version": "1",
   "packages": {
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2026-03-11T12:14:37Z",
-      "resolved": "github:NixOS/nixpkgs/75690239f08f885ca9b0267580101f60d10fbe62?lastModified=1773231277&narHash=sha256-Xy3WEpUAbpsz8ydgvVAQAGGB%2FWB%2B8cNA5cshiL0McTI%3D"
+      "last_modified": "2026-03-15T17:58:12Z",
+      "resolved": "github:NixOS/nixpkgs/a07d4ce6bee67d7c838a8a5796e75dff9caa21ef?lastModified=1773597492&narHash=sha256-hQ284SkIeNaeyud%2BLS0WVLX%2BWL2rxcVZLFEaK0e03zg%3D"
     },
     "nerd-fonts.inconsolata@latest": {
       "last_modified": "2026-02-23T15:40:43Z",
