@@ -37,30 +37,30 @@ version = "0.8.0"
 backend = "cargo:findutils"
 
 [[tools.claude]]
-version = "2.1.76"
+version = "2.1.77"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.76/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.77/linux-arm64/claude"
 
 [tools.claude."platforms.linux-arm64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.76/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.77/linux-arm64/claude"
 
 [tools.claude."platforms.linux-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.76/linux-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.77/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.76/linux-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.77/linux-x64/claude"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "blake3:6ce77b9eba69a84d760013883f324cb92e7b9ed84a58bcaa084d0d1e7820b32c"
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.76/darwin-arm64/claude"
+checksum = "blake3:48174edaa1f10b4cb308dc81d2e922c7d61c9a8def84c7bde8f555c40a3751fc"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.77/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.76/darwin-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.77/darwin-x64/claude"
 
 [[tools.ffmpeg]]
-version = "8.0.1"
+version = "8.1"
 backend = "asdf:ffmpeg"
 
 [[tools."github:mat2cc/redis_tui"]]

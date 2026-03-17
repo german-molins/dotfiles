@@ -1909,7 +1909,7 @@ checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4af
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.amp]]
-version = "0.0.1773649032-gf6d352"
+version = "0.0.1773735023-g6a26c6"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2009,33 +2009,33 @@ checksum = "sha256:59b800070840de9e47e9f7991ea6c8b15638266882f624cd20299344609db
 url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-windows-x86_64.tar.gz"
 
 [[tools.atuin]]
-version = "18.13.2"
+version = "18.13.3"
 backend = "aqua:atuinsh/atuin"
 
 [tools.atuin."platforms.linux-arm64"]
-checksum = "sha256:15622692f1da3d5e1692552b86347dcedb710b05b21d80dadb1963d242b437ac"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.2/atuin-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:069dd4ba6313c6d4ab97fe8f98f57dfb63580e6818c418482d21737d5d94bfff"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.3/atuin-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.atuin."platforms.linux-arm64-musl"]
-checksum = "sha256:15622692f1da3d5e1692552b86347dcedb710b05b21d80dadb1963d242b437ac"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.2/atuin-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:069dd4ba6313c6d4ab97fe8f98f57dfb63580e6818c418482d21737d5d94bfff"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.3/atuin-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.atuin."platforms.linux-x64"]
-checksum = "sha256:2acde3dd596906e77a19b39394633a222014219d6a067d7d375329317fa626a3"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.2/atuin-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b9347f049eb75ef98bf8b21c307eb4fb04d4b917ee09b6848f159a3f6d252868"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.3/atuin-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.atuin."platforms.linux-x64-musl"]
-checksum = "sha256:2acde3dd596906e77a19b39394633a222014219d6a067d7d375329317fa626a3"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.2/atuin-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b9347f049eb75ef98bf8b21c307eb4fb04d4b917ee09b6848f159a3f6d252868"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.3/atuin-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.atuin."platforms.macos-arm64"]
-checksum = "sha256:900ef550a42345c9e3564c8485ffe43fe863deaca1948156e358aada7e794373"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.2/atuin-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:63361ed90ffba52849298997bad65ef3d95e9a605deadaae3e32d5e50fc4e588"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.3/atuin-aarch64-apple-darwin.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.windows-x64"]
-checksum = "sha256:2395a9d5fde665afccd409a344eb0151fe9b0b2dc6522624e0af339052c854c6"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.2/atuin-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:28bb4dc5bfe81b1bab0fb18855573aec0c07c1b89c7a6063ac900a05892b2b95"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.3/atuin-x86_64-pc-windows-msvc.zip"
 
 [[tools.bat]]
 version = "0.26.1"
@@ -3931,36 +3931,36 @@ checksum = "sha256:53be7e277e5f0396621ccdda509904e4f88fe8e517b78ce20176269b7e97d
 url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.jjui]]
-version = "0.10.1"
+version = "0.10.2"
 backend = "aqua:idursun/jjui"
 
 [tools.jjui."platforms.linux-arm64"]
-checksum = "sha256:69487da8aaba5cc2ca893037087a95e4cae01109eb66d7ad2056f1f84bf8dbdd"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.1/jjui-0.10.1-linux-arm64.zip"
+checksum = "sha256:0c0a3492661d63072e08072f12db3d772e6879735caac1120142464c075f11d9"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.2/jjui-0.10.2-linux-arm64.zip"
 
 [tools.jjui."platforms.linux-arm64-musl"]
-checksum = "sha256:69487da8aaba5cc2ca893037087a95e4cae01109eb66d7ad2056f1f84bf8dbdd"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.1/jjui-0.10.1-linux-arm64.zip"
+checksum = "sha256:0c0a3492661d63072e08072f12db3d772e6879735caac1120142464c075f11d9"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.2/jjui-0.10.2-linux-arm64.zip"
 
 [tools.jjui."platforms.linux-x64"]
-checksum = "sha256:71c19912f683316a6e20bfa8598d9b75bf2e042ec27e38d6fab2b29d060c4fc4"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.1/jjui-0.10.1-linux-amd64.zip"
+checksum = "sha256:24cacf80df3431189b3cf6a51a314520e95ac22ce171a8d278044370beb03487"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.2/jjui-0.10.2-linux-amd64.zip"
 
 [tools.jjui."platforms.linux-x64-musl"]
-checksum = "sha256:71c19912f683316a6e20bfa8598d9b75bf2e042ec27e38d6fab2b29d060c4fc4"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.1/jjui-0.10.1-linux-amd64.zip"
+checksum = "sha256:24cacf80df3431189b3cf6a51a314520e95ac22ce171a8d278044370beb03487"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.2/jjui-0.10.2-linux-amd64.zip"
 
 [tools.jjui."platforms.macos-arm64"]
-checksum = "sha256:dfa23ae88c22750a414d10f003ce6c44c9d425bd5bf56f05be552b033be5176c"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.1/jjui-0.10.1-darwin-arm64.zip"
+checksum = "sha256:bda9f2c147b2e872ed8cb685c6e13abfc2b502c8d55c3d1de81eb681a76bdb4e"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.2/jjui-0.10.2-darwin-arm64.zip"
 
 [tools.jjui."platforms.macos-x64"]
-checksum = "sha256:8c6464e50d46a8b401f12e57aaaf7b3163681cba296b76db04f599bd3a7c09a3"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.1/jjui-0.10.1-darwin-amd64.zip"
+checksum = "sha256:989deee6f85cf3b7544e5ee6916adc80a0865cbd18053c2c4ba03d759b5c1ee2"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.2/jjui-0.10.2-darwin-amd64.zip"
 
 [tools.jjui."platforms.windows-x64"]
-checksum = "sha256:b688bc39e7b94072c20beab363aa954f85bf1a83bba09c9491f332ce5c969f95"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.1/jjui-0.10.1-windows-amd64.zip"
+checksum = "sha256:ca5eec73fa145832a43854860a12b37c939dcfe3fd50f6e9a8805be0ac7e3d53"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.2/jjui-0.10.2-windows-amd64.zip"
 
 [[tools.jq]]
 version = "1.8.1"
@@ -4462,7 +4462,7 @@ checksum = "sha256:b0a8cb81f4a259f8eaee134d9d427ed8284177141d615669dce2bde184ab0
 url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-x86_64-pc-windows-msvc.zip"
 
 [[tools.uv]]
-version = "0.10.10"
+version = "0.10.11"
 backend = "asdf:uv"
 
 [[tools.xh]]
