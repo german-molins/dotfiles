@@ -13,3 +13,4 @@
 "devbox:gawk" = "latest"
 "devbox:file" = "latest"
 "devbox:readline" = "latest"
+"devbox:ffmpeg" = "latest"

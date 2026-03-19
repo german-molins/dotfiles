@@ -3,7 +3,6 @@
 "cargo:findutils" = "latest"
 hyperfine = "latest"
 tssh = "latest"
-ffmpeg = "latest"
 numbat = "latest"
 "github:mat2cc/redis_tui" = "latest"
 claude = "latest"
