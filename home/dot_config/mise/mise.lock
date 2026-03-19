@@ -2023,6 +2023,7 @@ url = "https://github.com/atuinsh/atuin/releases/download/v18.13.3/atuin-aarch64
 [tools.atuin."platforms.linux-x64"]
 checksum = "sha256:b9347f049eb75ef98bf8b21c307eb4fb04d4b917ee09b6848f159a3f6d252868"
 url = "https://github.com/atuinsh/atuin/releases/download/v18.13.3/atuin-x86_64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-x64-musl"]
 checksum = "sha256:b9347f049eb75ef98bf8b21c307eb4fb04d4b917ee09b6848f159a3f6d252868"
@@ -4378,6 +4379,7 @@ url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.7/tree
 [tools.tree-sitter."platforms.linux-x64"]
 checksum = "sha256:4367a46bc8abbb8328d6efbeb26e86807af0a3a7e462548a3924f87289ee1e9c"
 url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.7/tree-sitter-linux-x64.gz"
+provenance = "github-attestations"
 
 [tools.tree-sitter."platforms.linux-x64-musl"]
 checksum = "sha256:4367a46bc8abbb8328d6efbeb26e86807af0a3a7e462548a3924f87289ee1e9c"
