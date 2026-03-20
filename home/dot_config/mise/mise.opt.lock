@@ -47,6 +47,7 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.80/linux-arm64/claude"
 
 [tools.claude."platforms.linux-x64"]
+checksum = "blake3:1bbec7e68b4a2f49ddec2b526807ab77f1d8384b6c0db480fc79fc0bb3b83652"
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.80/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
@@ -58,10 +59,6 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 
 [tools.claude."platforms.macos-x64"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.80/darwin-x64/claude"
-
-[[tools.ffmpeg]]
-version = "8.1"
-backend = "asdf:ffmpeg"
 
 [[tools."github:mat2cc/redis_tui"]]
 version = "0.2.4"
