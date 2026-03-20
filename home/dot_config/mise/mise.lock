@@ -1909,7 +1909,7 @@ checksum = "sha256:89df8c4ccd6dad310ac713eb5d550494ae7fa14722cde346588fab38ff4af
 url = "https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.amp]]
-version = "0.0.1773735023-g6a26c6"
+version = "0.0.1773994045-ge5da52"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2103,36 +2103,36 @@ checksum = "sha256:567879fd7210f8a692cd2657b41eda43c7713bef74dd025b240247accdda1
 url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_x86_64-pc-windows-msvc.zip"
 
 [[tools.carapace]]
-version = "1.6.3"
+version = "1.6.4"
 backend = "aqua:carapace-sh/carapace-bin"
 
 [tools.carapace."platforms.linux-arm64"]
-checksum = "sha256:0e4884e0c933a3bea8771c85d5289045274aa981c131f7b1688d368753a9651a"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.3/carapace-bin_1.6.3_linux_arm64.tar.gz"
+checksum = "sha256:17293dcadaebb615984042019125ed2fe932af1bfb48fc2b916c1e67249e748b"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_linux_arm64.tar.gz"
 
 [tools.carapace."platforms.linux-arm64-musl"]
-checksum = "sha256:0e4884e0c933a3bea8771c85d5289045274aa981c131f7b1688d368753a9651a"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.3/carapace-bin_1.6.3_linux_arm64.tar.gz"
+checksum = "sha256:17293dcadaebb615984042019125ed2fe932af1bfb48fc2b916c1e67249e748b"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_linux_arm64.tar.gz"
 
 [tools.carapace."platforms.linux-x64"]
-checksum = "sha256:dc5b20eb980902c9bc184e90ce7dbb004edcd59437de52cf32234ee09bcb8abd"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.3/carapace-bin_1.6.3_linux_amd64.tar.gz"
+checksum = "sha256:885ee9f90ab759c60e50d8123966c4edabb426c5cac531253c8d75a30145eff2"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_linux_amd64.tar.gz"
 
 [tools.carapace."platforms.linux-x64-musl"]
-checksum = "sha256:dc5b20eb980902c9bc184e90ce7dbb004edcd59437de52cf32234ee09bcb8abd"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.3/carapace-bin_1.6.3_linux_amd64.tar.gz"
+checksum = "sha256:885ee9f90ab759c60e50d8123966c4edabb426c5cac531253c8d75a30145eff2"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_linux_amd64.tar.gz"
 
 [tools.carapace."platforms.macos-arm64"]
-checksum = "sha256:99ad588ae83fb976421578c35e2efd55db4c9e375f9d8a115e8c296c9e69367a"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.3/carapace-bin_1.6.3_darwin_arm64.tar.gz"
+checksum = "sha256:67689f9f14d8d99a87ac70e680ccfb98a702c16e4b1058ef6309a05834e68f09"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_darwin_arm64.tar.gz"
 
 [tools.carapace."platforms.macos-x64"]
-checksum = "sha256:777e7dd865774850cd0d66bb5be6c33253fdb5d423f05f125c5959526caf48f6"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.3/carapace-bin_1.6.3_darwin_amd64.tar.gz"
+checksum = "sha256:6c9b9cbe06fa58c81f888f2b2254eaac9c97ffc9ad53ed7e642695afd066d375"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_darwin_amd64.tar.gz"
 
 [tools.carapace."platforms.windows-x64"]
-checksum = "sha256:74da06809744399003f6a3ad65449dcfcdce7b4c7c52967230770db93459cc7f"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.3/carapace-bin_1.6.3_windows_amd64.zip"
+checksum = "sha256:b16a51bf02f99a37ca738b8292292b549675175a285921606efef711854d6fca"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_windows_amd64.zip"
 
 [[tools.cargo-binstall]]
 version = "1.17.7"
@@ -2215,7 +2215,7 @@ checksum = "sha256:bd75e4892ed22d5ab767c06242fc72c23c5848ad5b1aea27fd95aec03c10c
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_windows_amd64.zip"
 
 [[tools.codebuff]]
-version = "1.0.631"
+version = "1.0.633"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -4194,43 +4194,43 @@ checksum = "sha256:9e2e43568e6f952e8c7cb77b934fbff53f454f0213688f24f3c3769b69703
 url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-windows-x64.zip"
 
 [[tools.pandoc]]
-version = "3.9"
+version = "3.9.0.2"
 backend = "github:jgm/pandoc"
 
 [tools.pandoc."platforms.linux-arm64"]
-checksum = "sha256:e09b97d7313bd417a35bde6c747c458486ec84f696e1cfd0f8c527cd69c89433"
-url = "https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/350472687"
+checksum = "sha256:b6d21e8f9c3b15744f5a7ab40248019157ed7793875dbe0383d4c82ff572b528"
+url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165670"
 
 [tools.pandoc."platforms.linux-arm64-musl"]
-checksum = "sha256:e09b97d7313bd417a35bde6c747c458486ec84f696e1cfd0f8c527cd69c89433"
-url = "https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/350472687"
+checksum = "sha256:b6d21e8f9c3b15744f5a7ab40248019157ed7793875dbe0383d4c82ff572b528"
+url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165670"
 
 [tools.pandoc."platforms.linux-x64"]
-checksum = "sha256:872a10c7ec29d5278831d855b11bd4ade0df4d5ec9a089a3197bc63a37eb4003"
-url = "https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/350472451"
+checksum = "sha256:a69abfababda8a56969a254b09f9553a7be89ddec00d4e0fe9fd585d71a67508"
+url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165366"
 
 [tools.pandoc."platforms.linux-x64-musl"]
-checksum = "sha256:872a10c7ec29d5278831d855b11bd4ade0df4d5ec9a089a3197bc63a37eb4003"
-url = "https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/350472451"
+checksum = "sha256:a69abfababda8a56969a254b09f9553a7be89ddec00d4e0fe9fd585d71a67508"
+url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165366"
 
 [tools.pandoc."platforms.macos-arm64"]
-checksum = "sha256:7d56ac6fe6fad0a7407bcd776aa142f61ca41838f286165f79d0584fa57b24d1"
-url = "https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-arm64-macOS.zip"
-url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/350472393"
+checksum = "sha256:6e9eca844076bcbb599bbeebbba78a70f93b5307782b85c2c272872812c88875"
+url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-arm64-macOS.zip"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165034"
 
 [tools.pandoc."platforms.macos-x64"]
-checksum = "sha256:f1dfb5a433976b131818c2e69db70bb46874604367e8923412a5c2fa673f2526"
-url = "https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-x86_64-macOS.zip"
-url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/350473216"
+checksum = "sha256:b9fbceabccbc8f34ac021a50483fc32f8160568d0b4b2c22d81bb29e3054fd82"
+url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-x86_64-macOS.zip"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377167038"
 
 [tools.pandoc."platforms.windows-x64"]
-checksum = "sha256:edccdaa95b5a33b3320187f0e291d58a232e21318a8081750bd31f847e598d18"
-url = "https://github.com/jgm/pandoc/releases/download/3.9/pandoc-3.9-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/350472785"
+checksum = "sha256:c97542f2800f446e788d9f74237856d995421ad1bb3cc8324286840c5f272d3a"
+url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377166311"
 
 [[tools."pipx:httpie"]]
 version = "3.2.4"
@@ -4464,7 +4464,7 @@ checksum = "sha256:b0a8cb81f4a259f8eaee134d9d427ed8284177141d615669dce2bde184ab0
 url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-x86_64-pc-windows-msvc.zip"
 
 [[tools.uv]]
-version = "0.10.11"
+version = "0.10.12"
 backend = "asdf:uv"
 
 [[tools.xh]]
