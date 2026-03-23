@@ -1,3 +1,6 @@
+[settings.general]
+mise = true
+
 [daemons.greeting]
 description = "Example HTTP service — replace with real services"
 ready_http = "http://localhost:7777"
