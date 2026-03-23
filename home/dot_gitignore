@@ -1,3 +1,6 @@
 .mise/prepare-state.toml
 mise.local.*
+.agents/skills/
+.claude/skills/
+
 sandbox/
