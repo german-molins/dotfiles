@@ -2,7 +2,6 @@
 devbox = "https://github.com/jbadeau/mise-nix.git"
 
 [tools]
-aichat = "latest"
 "aqua:dlvhdr/gh-dash" = "latest"
 "aqua:jorgerojas26/lazysql" = "latest"
 "aqua:zk-org/zk" = "latest"
@@ -218,8 +217,7 @@ v = "{{env.VISUAL}}"
 
 wh = "where"
 
-ai = "aichat"
-llm = "aichat"
+ai = "pi"
 cc = "claude"
 oc = "opencode"
 calc = "numbat"

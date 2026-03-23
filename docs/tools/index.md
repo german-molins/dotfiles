@@ -47,7 +47,6 @@ Coding agents:
 
 | Name | Commands | Aliases | LLM Providers | API Keys |
 |---|---|---|---|---|
-| [AI Chat](https://github.com/sigoden/aichat) | `aichat` | `ai` | OpenRouter | `OPENROUTER_API_KEY` |
 | [Amp](https://ampcode.com/) | `amp` | | Amp subscription<br>Free mode (`/mode free`) | `AMP_API_KEY` |
 | [Claude Code](https://code.claude.com) | `claude` | | Anthropic subscription OAuth | |
 | [Opencode](https://opencode.ai) | `opencode` | `oc` | Opencode Zen<br>OpenRouter | `OPENCODE_API_KEY`<br>`OPENROUTER_API_KEY` |
