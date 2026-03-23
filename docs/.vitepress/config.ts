@@ -19,6 +19,7 @@ export default defineConfig({
         link: "dev_guide",
         items: [
           { text: 'Setup', link: '/setup' },
+          { text: 'Chezmoi', link: '/chezmoi' },
           { text: "Home Directory", link: '/home' },
           { text: 'Bash', link: '/bash' },
           { text: 'Agents', link: '/agents' },
