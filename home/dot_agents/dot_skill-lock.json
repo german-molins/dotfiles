@@ -24,9 +24,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/ahmedelgabri/dotfiles.git",
       "skillPath": "config/claude/skills/jujutsu/SKILL.md",
-      "skillFolderHash": "5a242e3291f202c536d8c4c322b2de50175f5635",
+      "skillFolderHash": "6385700e46652c15f2c5864b2018122f7c75b5e5",
       "installedAt": "2026-02-11T16:09:41.457Z",
-      "updatedAt": "2026-03-13T17:33:26.482Z"
+      "updatedAt": "2026-03-23T22:38:07.481Z"
     },
     "skill-creator": {
       "source": "anthropics/skills",
