@@ -16,7 +16,6 @@ These are my daily CLI drivers:
 | [Alacritty](https://alacritty.org/) | `alacritty` | | Terminal emulator |
 | [Bash](https://devdocs.io/bash/) | `bash` | | Interactive shell |
 | [Usage](https://usage.jdx.dev/) | `usage` | | Polyglot script CLI manager |
-| [Devpod](https://devpod.sh/) | `devpod` | | Devcontainer manager |
 | [Zellij](https://zellij.dev/) | `zellij` | `z{e,r}{,f,i}` | Terminal workspaces |
 | [Zoxide](https://github.com/ajeetdsouza/zoxide) | `zoxide` | `cd`, `cdi` | Smarter `cd` |
 | [Atuin](https://atuin.sh/) | `atuin` | | Shell history manager |
@@ -76,6 +75,13 @@ The following apps are not installed by default but have configuration available
 | App | Installed | Configuration |
 |-----|-----------|---------------|
 | tmux | No | Yes |
+
+### Virtualization
+
+| Name | Commands | Aliases | Description |
+|------|---------|-------|-------------|
+| [Devpod](https://devpod.sh/) | `devpod` | | Devcontainer manager |
+| [Colima](https://colima.run) | `colima` | `vm` | Containers runtimes |
 
 ## Package Registries
 
