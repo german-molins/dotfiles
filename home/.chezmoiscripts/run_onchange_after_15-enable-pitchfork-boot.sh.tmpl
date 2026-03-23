@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# Make mise-installed tools available in the current shell.
+PATH="$HOME/.local/share/mise/shims:$HOME/.local/bin:$PATH"
+
+if ! command -v pitchfork >/dev/null; then
+    >&2 echo "[dotfiles][pitchfork] WARN: 'pitchfork' command not found, skipping boot enable"
+    exit 0
+fi
+
+pitchfork boot enable
+# Start supervisor now — boot enable alone only takes effect on next login.
+pitchfork supervisor start
