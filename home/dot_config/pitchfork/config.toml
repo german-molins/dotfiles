@@ -1,18 +1,20 @@
-# Global pitchfork services
-# These start on login via `pitchfork boot enable`
-# Manage with: pitchfork start|stop|logs global/<name>
-
 [daemons.greeting]
 description = "Example HTTP service — replace with real services"
-run = """python3 -c "
+ready_http = "http://localhost:7777"
+boot_start = true
+run = '''
+#/usr/bin/env python
+
 from http.server import HTTPServer, BaseHTTPRequestHandler
+
 class H(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.end_headers()
         self.wfile.write(b'Hello from pitchfork!')
-    def log_message(self, *a): pass
+
+    def log_message(self, *a):
+        pass
+
 HTTPServer(('',7777), H).serve_forever()
-" """
-ready_http = "http://localhost:7777"
-boot_start = false
+'''
