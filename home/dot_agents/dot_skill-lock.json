@@ -28,15 +28,6 @@
       "installedAt": "2026-02-11T16:09:41.457Z",
       "updatedAt": "2026-03-13T17:33:26.482Z"
     },
-    "documentation-lookup": {
-      "source": "upstash/context7",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/upstash/context7.git",
-      "skillPath": "plugins/claude/context7/skills/documentation-lookup/SKILL.md",
-      "skillFolderHash": "4aedd1bbd79f085458a06b097fbc8bba9194a310",
-      "installedAt": "2026-02-12T12:47:45.912Z",
-      "updatedAt": "2026-02-12T12:47:45.912Z"
-    },
     "skill-creator": {
       "source": "anthropics/skills",
       "sourceType": "github",
@@ -45,6 +36,15 @@
       "skillFolderHash": "98a510d1cfef9f82c3b1eec200229ca68725e613",
       "installedAt": "2026-02-12T13:57:34.634Z",
       "updatedAt": "2026-03-13T17:33:30.410Z"
+    },
+    "find-docs": {
+      "source": "upstash/context7",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/upstash/context7.git",
+      "skillPath": "skills/find-docs/SKILL.md",
+      "skillFolderHash": "27c57bbef24bccd1f46463b398785b7c599f96a9",
+      "installedAt": "2026-03-23T17:10:18.668Z",
+      "updatedAt": "2026-03-23T17:10:18.668Z"
     }
   },
   "dismissed": {
@@ -52,11 +52,14 @@
   },
   "lastSelectedAgents": [
     "amp",
+    "cline",
     "codex",
+    "cursor",
     "gemini-cli",
     "github-copilot",
     "kimi-cli",
     "opencode",
+    "warp",
     "claude-code"
   ]
 }
