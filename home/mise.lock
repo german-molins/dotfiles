@@ -1877,7 +1877,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1773994045-ge5da52"
+version = "0.0.1774296528-gcbe74a6"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2103,36 +2103,36 @@ checksum = "sha256:b16a51bf02f99a37ca738b8292292b549675175a285921606efef711854d6
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_windows_amd64.zip"
 
 [[tools.cargo-binstall]]
-version = "1.17.7"
+version = "1.17.8"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall."platforms.linux-arm64"]
-checksum = "sha256:b0658b0a7f0959bc1dbb4ab665931c31c7dd1109ff01cb8772af17dfdc52a9af"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.7/cargo-binstall-aarch64-unknown-linux-musl.tgz"
+checksum = "sha256:81d6245bd1a7a89e914d29af81d82280540e94927e61492a0fc359820cd97abb"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-arm64-musl"]
-checksum = "sha256:b0658b0a7f0959bc1dbb4ab665931c31c7dd1109ff01cb8772af17dfdc52a9af"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.7/cargo-binstall-aarch64-unknown-linux-musl.tgz"
+checksum = "sha256:81d6245bd1a7a89e914d29af81d82280540e94927e61492a0fc359820cd97abb"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-x64"]
-checksum = "sha256:29b5ecfb6e03c2511a617c77d312b06df0c54717644fbfda3d465ec8240532f0"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.7/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+checksum = "sha256:1da1ef72448db667cc4ae6d48e37451087602c8c07dc61782a4a5e538303e015"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-x64-musl"]
-checksum = "sha256:29b5ecfb6e03c2511a617c77d312b06df0c54717644fbfda3d465ec8240532f0"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.7/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+checksum = "sha256:1da1ef72448db667cc4ae6d48e37451087602c8c07dc61782a4a5e538303e015"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.macos-arm64"]
-checksum = "sha256:1ad3c0c56fa3970634cce5009ed0ce61b943515f9115f8e480fd0e41d8d89085"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.7/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "sha256:af87346fdb186f0a2333bc0a30cfddd6faa98b31145ef1bb19c284aedea65972"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-aarch64-apple-darwin.zip"
 
 [tools.cargo-binstall."platforms.macos-x64"]
-checksum = "sha256:aa7174fb938e668dea4b4c3d22fe6cefed97642cc3a7a419ba96d63d63fd729b"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.7/cargo-binstall-x86_64-apple-darwin.zip"
+checksum = "sha256:db353e01b582c97382178db9b4dfe22d81109782e480a38f3db953e62f569952"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-x86_64-apple-darwin.zip"
 
 [tools.cargo-binstall."platforms.windows-x64"]
-checksum = "sha256:c5cb2444ee04480502a8ac73d96abd9f97af8300ec04ea1c1f2a9e959c02e4d6"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.7/cargo-binstall-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:fef07560d4e391812091bb30c6ed1bd5289f74403a0c947b47b8a8c7a597b51b"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.8/cargo-binstall-x86_64-pc-windows-msvc.zip"
 
 [[tools."cargo:diffutils"]]
 version = "0.5.0"
@@ -3829,43 +3829,43 @@ url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-wind
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294791140"
 
 [[tools.glab]]
-version = "1.89.0"
+version = "1.90.0"
 backend = "gitlab:gitlab-org/cli"
 
 [tools.glab."platforms.linux-arm64"]
-checksum = "sha256:54bd67ce51aff625de1c638f1cc1acb6198fd45d45208e8c44cd0f9ea5614ab4"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.89.0/downloads/glab_1.89.0_linux_arm64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E89%2E0/glab_1%2E89%2E0_linux_arm64%2Etar%2Egz"
+checksum = "sha256:70c5309db87dd5b6c5b9310ad2745b0f1fc9d1c5850969f72aabf1cd2e23aaec"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.90.0/downloads/glab_1.90.0_linux_arm64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E90%2E0/glab_1%2E90%2E0_linux_arm64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-arm64-musl"]
-checksum = "sha256:54bd67ce51aff625de1c638f1cc1acb6198fd45d45208e8c44cd0f9ea5614ab4"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.89.0/downloads/glab_1.89.0_linux_arm64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E89%2E0/glab_1%2E89%2E0_linux_arm64%2Etar%2Egz"
+checksum = "sha256:70c5309db87dd5b6c5b9310ad2745b0f1fc9d1c5850969f72aabf1cd2e23aaec"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.90.0/downloads/glab_1.90.0_linux_arm64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E90%2E0/glab_1%2E90%2E0_linux_arm64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-x64"]
-checksum = "sha256:941fdc97d80a88be858fee9f01cc82a7a2417e11f627689ab46f475141d0afc9"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.89.0/downloads/glab_1.89.0_linux_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E89%2E0/glab_1%2E89%2E0_linux_amd64%2Etar%2Egz"
+checksum = "sha256:e8bff003b36da2478cb34e047af6343fa031ca3b19c040b48752bde1227bd921"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.90.0/downloads/glab_1.90.0_linux_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E90%2E0/glab_1%2E90%2E0_linux_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-x64-musl"]
-checksum = "sha256:941fdc97d80a88be858fee9f01cc82a7a2417e11f627689ab46f475141d0afc9"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.89.0/downloads/glab_1.89.0_linux_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E89%2E0/glab_1%2E89%2E0_linux_amd64%2Etar%2Egz"
+checksum = "sha256:e8bff003b36da2478cb34e047af6343fa031ca3b19c040b48752bde1227bd921"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.90.0/downloads/glab_1.90.0_linux_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E90%2E0/glab_1%2E90%2E0_linux_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.macos-arm64"]
-checksum = "sha256:37489d7556d47424587d52edb8fa3fd588e369174097498f748bbb108106f42c"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.89.0/downloads/glab_1.89.0_darwin_arm64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E89%2E0/glab_1%2E89%2E0_darwin_arm64%2Etar%2Egz"
+checksum = "sha256:a61326e557ce767b60daea7874c0bbfb136c981b1f7cb5cc0c89d4caff91886a"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.90.0/downloads/glab_1.90.0_darwin_arm64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E90%2E0/glab_1%2E90%2E0_darwin_arm64%2Etar%2Egz"
 
 [tools.glab."platforms.macos-x64"]
-checksum = "sha256:0ff3e452f07a6384cbb261837c9ff3a051cfee737a401bea321a8f2d36094245"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.89.0/downloads/glab_1.89.0_darwin_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E89%2E0/glab_1%2E89%2E0_darwin_amd64%2Etar%2Egz"
+checksum = "sha256:7546661d5e60c5f563059ac28dd7089fab6bc132aa501d7ea216df88f99f8648"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.90.0/downloads/glab_1.90.0_darwin_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E90%2E0/glab_1%2E90%2E0_darwin_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.windows-x64"]
-checksum = "sha256:d5dc9879b447f1b28e58f4480da2901dd5302809efc65d62fab496da509f04cf"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.89.0/downloads/glab_1.89.0_windows_amd64.zip"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E89%2E0/glab_1%2E89%2E0_windows_amd64%2Ezip"
+checksum = "sha256:4f7631760609fbe1b3f56307e573a49b561b3b04fa89758b106c6433c27fd1e4"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.90.0/downloads/glab_1.90.0_windows_amd64.zip"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E90%2E0/glab_1%2E90%2E0_windows_amd64%2Ezip"
 
 [[tools.jj]]
 version = "0.39.0"
@@ -4126,40 +4126,40 @@ version = "0.1.20"
 backend = "npm:playbooks"
 
 [[tools."npm:skills"]]
-version = "1.4.5"
+version = "1.4.6"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.2.27"
+version = "1.3.0"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:bcd91a3ebe9480ffb1702e5c71168d451150421acc99c6d1abf5edc5e2cb39f5"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-arm64.tar.gz"
+checksum = "sha256:9edb4995cf38b76e1456cf1da3f4ced864249cc25683239e15e14302c173400c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:bcd91a3ebe9480ffb1702e5c71168d451150421acc99c6d1abf5edc5e2cb39f5"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-arm64.tar.gz"
+checksum = "sha256:9edb4995cf38b76e1456cf1da3f4ced864249cc25683239e15e14302c173400c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:6fe3820b145857f7ff507d2826058b7acf1fce8258def1498468dd43809e69e8"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-x64.tar.gz"
+checksum = "sha256:be5a2d1ff5a2799b0aee16efac924ddfa6d75f5374def8203e38bce792e98429"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:6fe3820b145857f7ff507d2826058b7acf1fce8258def1498468dd43809e69e8"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-linux-x64.tar.gz"
+checksum = "sha256:be5a2d1ff5a2799b0aee16efac924ddfa6d75f5374def8203e38bce792e98429"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:fa680fa79086c7509d3a2c21e49c9264b803da7c0f1b7807ed842b8e37325597"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-darwin-arm64.zip"
+checksum = "sha256:32ea91aa613e15ab3d15e4d294b34f349c048c528fc276e935f6ca38c3344b79"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:fc719db27acbc817ff2a4df2bbaa788e02976ddc26a96c84de4fdbe663714b8c"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-darwin-x64.zip"
+checksum = "sha256:ef54a86a1a1461b530dd3546f3f1da484ae4af8a3bf653c3e8f41f8535563561"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:9e2e43568e6f952e8c7cb77b934fbff53f454f0213688f24f3c3769b69703e84"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.2.27/opencode-windows-x64.zip"
+checksum = "sha256:d1064acabff90d22f701b39c87fe1718cc01f3ab6c6f6254fabe02d7a131fdfc"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.0/opencode-windows-x64.zip"
 
 [[tools.pandoc]]
 version = "3.9.0.2"
@@ -4400,39 +4400,15 @@ url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004798"
 
 [[tools.usage]]
-version = "3.0.0"
+version = "3.2.0"
 backend = "aqua:jdx/usage"
 
-[tools.usage."platforms.linux-arm64"]
-checksum = "sha256:6c32e248c2203d3d0b43bed07a9c6d25b05773e8443fb99b4c4a724f9c8fc64a"
-url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-aarch64-unknown-linux-musl.tar.gz"
-
-[tools.usage."platforms.linux-arm64-musl"]
-checksum = "sha256:6c32e248c2203d3d0b43bed07a9c6d25b05773e8443fb99b4c4a724f9c8fc64a"
-url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-aarch64-unknown-linux-musl.tar.gz"
-
-[tools.usage."platforms.linux-x64"]
-checksum = "sha256:e9d4c42cbc28668da0c1ee02eaea1948ab043ee1ef2637fa90737095da487e1c"
-url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-x86_64-unknown-linux-musl.tar.gz"
-
-[tools.usage."platforms.linux-x64-musl"]
-checksum = "sha256:e9d4c42cbc28668da0c1ee02eaea1948ab043ee1ef2637fa90737095da487e1c"
-url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-x86_64-unknown-linux-musl.tar.gz"
-
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:4de86e95923dd57d8171a5ae40ca65492ef84b69175fefd7ab14442ab3ea0fc2"
-url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-universal-apple-darwin.tar.gz"
-
-[tools.usage."platforms.macos-x64"]
-checksum = "sha256:4de86e95923dd57d8171a5ae40ca65492ef84b69175fefd7ab14442ab3ea0fc2"
-url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-universal-apple-darwin.tar.gz"
-
-[tools.usage."platforms.windows-x64"]
-checksum = "sha256:b0a8cb81f4a259f8eaee134d9d427ed8284177141d615669dce2bde184ab06b3"
-url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:f0a566bc05fc485b23a339abddbaef04225e7730574dbb603fdc021e084d26f9"
+url = "https://github.com/jdx/usage/releases/download/v3.2.0/usage-universal-apple-darwin.tar.gz"
 
 [[tools.uv]]
-version = "0.10.12"
+version = "0.11.0"
 backend = "asdf:uv"
 
 [[tools.xh]]
@@ -4532,32 +4508,32 @@ checksum = "sha256:b7c4186f8a3e32879ddf99389bf59a4b2861f0f1b41ef58647d903b0a11e8
 url = "https://github.com/mikefarah/yq/releases/download/v4.52.4/yq_windows_amd64.exe"
 
 [[tools.zellij]]
-version = "0.43.1"
+version = "0.44.0"
 backend = "aqua:zellij-org/zellij"
 
 [tools.zellij."platforms.linux-arm64"]
-checksum = "sha256:32321ad5f61c2c62d156162d1df95dc823666f84e4a0d7cd79b0fef02930b165"
-url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:dd60edef434b413529060ba46135c7ed2e4d41c92d640ce51558df031875bb2c"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.zellij."platforms.linux-arm64-musl"]
-checksum = "sha256:32321ad5f61c2c62d156162d1df95dc823666f84e4a0d7cd79b0fef02930b165"
-url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:dd60edef434b413529060ba46135c7ed2e4d41c92d640ce51558df031875bb2c"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.zellij."platforms.linux-x64"]
-checksum = "sha256:541d98efef5558293ef85ad9acd29e4d920b6e881513b9e77255d8207020d75a"
-url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:7e981d50c98ec13ad6cc882e8ca4da32544dd6b69fd0d1b2b753eb597847adb3"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.zellij."platforms.linux-x64-musl"]
-checksum = "sha256:541d98efef5558293ef85ad9acd29e4d920b6e881513b9e77255d8207020d75a"
-url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:7e981d50c98ec13ad6cc882e8ca4da32544dd6b69fd0d1b2b753eb597847adb3"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.zellij."platforms.macos-arm64"]
-checksum = "sha256:a09ea51f3d98427253de2b889bb04f1aa0850fbb034911c7a01b8f0194edba66"
-url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:b0b9f2b95e647e62684b33a469dcbb3e99bb10c84bd66bf907884ade7c1dbf29"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-aarch64-apple-darwin.tar.gz"
 
 [tools.zellij."platforms.macos-x64"]
-checksum = "sha256:7b0c1a9c2591eadf506ec58d62ef5f6d9c93d089a3603142af3dcca5fa575d44"
-url = "https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:2c2b0fde5862b3d82814a2dbcf620548b502bd8e843031401a2d7d7b67d9d0ca"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-x86_64-apple-darwin.tar.gz"
 
 [[tools.zoxide]]
 version = "0.9.9"
