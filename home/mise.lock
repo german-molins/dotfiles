@@ -1885,7 +1885,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1774512763-gf7364e"
+version = "0.0.1774613332-g28728c"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -3618,38 +3618,37 @@ checksum = "sha256:7465a6738e2c844742df973459c7509aed2d10d7a72bfd6de201b867b4eda
 url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-windows_amd64.zip"
 
 [[tools.gh]]
-version = "2.88.1"
+version = "2.89.0"
 backend = "aqua:cli/cli"
 
 [tools.gh."platforms.linux-arm64"]
-checksum = "sha256:039ce25aab0cfa0ea5160e3db75ed44699bde4b20ff63ec5991f82201f1b33b8"
-url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_linux_arm64.tar.gz"
+checksum = "sha256:9e64a623dfc242990aa5d9b3f507111149c4282f66b68eaad1dc79eeb13b9ce5"
+url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_arm64.tar.gz"
 
 [tools.gh."platforms.linux-arm64-musl"]
-checksum = "sha256:039ce25aab0cfa0ea5160e3db75ed44699bde4b20ff63ec5991f82201f1b33b8"
-url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_linux_arm64.tar.gz"
+checksum = "sha256:9e64a623dfc242990aa5d9b3f507111149c4282f66b68eaad1dc79eeb13b9ce5"
+url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_arm64.tar.gz"
 
 [tools.gh."platforms.linux-x64"]
-checksum = "sha256:36352a993b97e9758793cdb87f9ba674bd6d88c914488e122be78a1962203803"
-url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_linux_amd64.tar.gz"
-provenance = "github-attestations"
+checksum = "sha256:d0422caade520530e76c1c558da47daebaa8e1203d6b7ff10ad7d6faba3490d8"
+url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_amd64.tar.gz"
 
 [tools.gh."platforms.linux-x64-musl"]
-checksum = "sha256:36352a993b97e9758793cdb87f9ba674bd6d88c914488e122be78a1962203803"
-url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_linux_amd64.tar.gz"
+checksum = "sha256:d0422caade520530e76c1c558da47daebaa8e1203d6b7ff10ad7d6faba3490d8"
+url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_amd64.tar.gz"
 
 [tools.gh."platforms.macos-arm64"]
-checksum = "sha256:bdbeed4821d450ef0d14821d856c05b308ab449fbf60527f298d96fbf5d2447b"
-url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_macOS_arm64.zip"
+checksum = "sha256:2423d02ec0a2094898c378703a1b28a5846c08700f87461363857cb8cb3fda94"
+url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_macOS_arm64.zip"
 provenance = "github-attestations"
 
 [tools.gh."platforms.macos-x64"]
-checksum = "sha256:ff0fc4bdb9699f0c02e5bcdcbd09d0f8e4c4659aa5d30bcd39a3557ed7379b2e"
-url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_macOS_amd64.zip"
+checksum = "sha256:862e21cac6a71f81e7cd6e5127e3cd344f8537441ad2db94cd208319dd17b6e9"
+url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_macOS_amd64.zip"
 
 [tools.gh."platforms.windows-x64"]
-checksum = "sha256:8fdaac525d8919f9f8c265f99ffa26189e5f1fd3a35636adad4fd890a141a555"
-url = "https://github.com/cli/cli/releases/download/v2.88.1/gh_2.88.1_windows_amd64.zip"
+checksum = "sha256:f3326f6406c98c99701b257d77e2b040eedf83d0176c2c2e9809aa339ceb467e"
+url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_windows_amd64.zip"
 
 [[tools."github:dalance/procs"]]
 version = "0.14.11"
@@ -4137,36 +4136,36 @@ version = "1.4.6"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.3.2"
+version = "1.3.3"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:76eae5601ccb90454d90a9a0f9a6f5c189b84943a9081671f028e56e58c4dfc1"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-linux-arm64.tar.gz"
+checksum = "sha256:a1c571fc9041e1f1db174ac5eec4ff078f1cbab93927d85eda982f1bc93934a4"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.3/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:76eae5601ccb90454d90a9a0f9a6f5c189b84943a9081671f028e56e58c4dfc1"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-linux-arm64.tar.gz"
+checksum = "sha256:a1c571fc9041e1f1db174ac5eec4ff078f1cbab93927d85eda982f1bc93934a4"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.3/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:6d66c24f14742618f1d6248d2a8a9d9692d44e61ee15dcef70e8310920a2df70"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-linux-x64.tar.gz"
+checksum = "sha256:92bb36b16ed1dfb08697fd2b7d8f7d09fdfcbacd5e5bf6a67f4d157a7f533b13"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.3/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:6d66c24f14742618f1d6248d2a8a9d9692d44e61ee15dcef70e8310920a2df70"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-linux-x64.tar.gz"
+checksum = "sha256:92bb36b16ed1dfb08697fd2b7d8f7d09fdfcbacd5e5bf6a67f4d157a7f533b13"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.3/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:36073ae40f4d036beaf937e693e9407d616c15d5838acdb987600ede5fb50426"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-darwin-arm64.zip"
+checksum = "sha256:e7083f016214dd95c1442ba0f168e56c2e3a68e6721d04fa079e66ca85db17a5"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.3/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:1829f3de57b44ef97325ef9affe0e326ec961d2cb9c1a7e9b510973cea0df3d9"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-darwin-x64.zip"
+checksum = "sha256:86301d157b6c161bd0bc266ad5e28458e01e4c4c9544a73fe99f97aadbc35793"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.3/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:48caada0b5c3ce0e6b9763476955b4bb86387cf9dc600ab5203732ab760cb282"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.2/opencode-windows-x64.zip"
+checksum = "sha256:b3e8adc6a166db35fb32f9502152622979d9c9104f8a36421578d9eff2e0df6b"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.3/opencode-windows-x64.zip"
 
 [[tools.pandoc]]
 version = "3.9.0.2"
@@ -4336,7 +4335,7 @@ checksum = "sha256:124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d874
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.rust]]
-version = "1.94.0"
+version = "1.94.1"
 backend = "core:rust"
 
 [[tools.tree-sitter]]
@@ -4415,7 +4414,7 @@ checksum = "sha256:f0a566bc05fc485b23a339abddbaef04225e7730574dbb603fdc021e084d2
 url = "https://github.com/jdx/usage/releases/download/v3.2.0/usage-universal-apple-darwin.tar.gz"
 
 [[tools.uv]]
-version = "0.11.1"
+version = "0.11.2"
 backend = "asdf:uv"
 
 [[tools.xh]]
