@@ -69,6 +69,12 @@ external dependencies like Devbox does on Direnv. Mise centralizes the
 management of packages, environment variables and tasks. Mise environments
 activation, both global and per-project, is managed through a Bash init hook.
 
+Global Mise
+[environments](https://mise.jdx.dev/configuration/environments.html) are
+selected in `~/.miserc.toml` (`"devbox,opt"` by default). This file is
+generated on first `chezmoi apply` via `home/create_dot_miserc.toml` and never
+overwritten afterwards, allowing per-machine customization.
+
 #### With Direnv (deprecated)
 
 Shell hooks are set for `direnv` to auto-load and unload envvars found in the
