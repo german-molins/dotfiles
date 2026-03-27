@@ -57,4 +57,18 @@ layout {
       }
     }
   }
+
+  tab name="services" {
+    pane stacked=true {
+      pane name="Pitchfork" {
+        command "pitchfork tui"
+        start_suspended true
+        expanded true
+      }
+      pane name="Docker" {
+        command "lazydocker"
+        start_suspended true
+      }
+    }
+  }
 }
