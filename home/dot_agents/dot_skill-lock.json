@@ -42,9 +42,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/upstash/context7.git",
       "skillPath": "skills/find-docs/SKILL.md",
-      "skillFolderHash": "27c57bbef24bccd1f46463b398785b7c599f96a9",
+      "skillFolderHash": "ccd99a8580519fa9e65dcea938e92cb1c3a2f7a4",
       "installedAt": "2026-03-23T17:10:18.668Z",
-      "updatedAt": "2026-03-23T17:10:18.668Z"
+      "updatedAt": "2026-03-27T15:04:51.502Z"
     }
   },
   "dismissed": {
@@ -52,9 +52,11 @@
   },
   "lastSelectedAgents": [
     "amp",
+    "antigravity",
     "cline",
     "codex",
     "cursor",
+    "deepagents",
     "gemini-cli",
     "github-copilot",
     "kimi-cli",
