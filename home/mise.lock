@@ -1885,7 +1885,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1774621109-g7c1bd9"
+version = "0.0.1774685248-g5957b8"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1985,33 +1985,33 @@ checksum = "sha256:59b800070840de9e47e9f7991ea6c8b15638266882f624cd20299344609db
 url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-windows-x86_64.tar.gz"
 
 [[tools.atuin]]
-version = "18.13.5"
+version = "18.13.6"
 backend = "aqua:atuinsh/atuin"
 
 [tools.atuin."platforms.linux-arm64"]
-checksum = "sha256:67ccb068ef3d2d0fcf5bf1ae0842f69f2742dbcdc4e9c8e303e6ea0356a0c16a"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.5/atuin-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:77196100a8564a88867701307940b6159e3d2db32a8d7acbfb4db1caeee21201"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.atuin."platforms.linux-arm64-musl"]
-checksum = "sha256:67ccb068ef3d2d0fcf5bf1ae0842f69f2742dbcdc4e9c8e303e6ea0356a0c16a"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.5/atuin-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:77196100a8564a88867701307940b6159e3d2db32a8d7acbfb4db1caeee21201"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.atuin."platforms.linux-x64"]
-checksum = "sha256:a938da2622a4d52a0ffcf80a9d8436fd3fe50302bf8a838c682c07ee8c9fbe38"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.5/atuin-x86_64-unknown-linux-musl.tar.gz"
-
-[tools.atuin."platforms.linux-x64-musl"]
-checksum = "sha256:a938da2622a4d52a0ffcf80a9d8436fd3fe50302bf8a838c682c07ee8c9fbe38"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.5/atuin-x86_64-unknown-linux-musl.tar.gz"
-
-[tools.atuin."platforms.macos-arm64"]
-checksum = "sha256:cb9b3dac71dba78c6218db7dc583ce4114d112679a3ca8db34a2ed7fef08ed40"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.5/atuin-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:19712eadad816d328086553133f0933a9a4429d52dcf660e8feb8af9f7552f3e"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
+[tools.atuin."platforms.linux-x64-musl"]
+checksum = "sha256:19712eadad816d328086553133f0933a9a4429d52dcf660e8feb8af9f7552f3e"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.atuin."platforms.macos-arm64"]
+checksum = "sha256:5c321fe8544310cf4def1a423398795f8728180f8e18524bd66b6d72f3dfe86b"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-aarch64-apple-darwin.tar.gz"
+
 [tools.atuin."platforms.windows-x64"]
-checksum = "sha256:40e97ab45f8e80ea474692d3e55818a29015e2e39080ed83b9237b0a416a8fdd"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.13.5/atuin-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:c0fde67c1e83ca8e65fd62ba8b30518830a3eb0d3949739e5bc7282b56f97470"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-x86_64-pc-windows-msvc.zip"
 
 [[tools.bat]]
 version = "0.26.1"
@@ -4124,7 +4124,7 @@ checksum = "sha256:51815d5b0256b947d27d614de04060fcfdbdb830d2c86e63e6f33dbf7964c
 url = "https://nodejs.org/dist/v25.8.2/node-v25.8.2-win-x64.zip"
 
 [[tools."npm:ctx7"]]
-version = "0.3.8"
+version = "0.3.9"
 backend = "npm:ctx7"
 
 [[tools."npm:playbooks"]]
