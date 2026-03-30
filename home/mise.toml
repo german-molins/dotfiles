@@ -189,7 +189,7 @@ run = ["rm -rf ~/.cache/dotfiles/bash ~/.local/share/bash"]
 
 [tasks."agents:update"]
 description = "Update agents resources"
-run = "skills update"
+run = ["skills update", "pi update"]
 
 [tasks."python:scaffold"]
 description = "Scaffold a Python project with uv and pytest"
