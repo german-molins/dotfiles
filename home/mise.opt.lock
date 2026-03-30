@@ -37,28 +37,27 @@ version = "0.8.0"
 backend = "cargo:findutils"
 
 [[tools.claude]]
-version = "2.1.86"
+version = "2.1.87"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.86/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.87/linux-arm64/claude"
 
 [tools.claude."platforms.linux-arm64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.86/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.87/linux-arm64/claude"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "blake3:10a7db484760d5e435114e84010d60e447dd243114a4b4489aed148c79a35f49"
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.86/linux-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.87/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.86/linux-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.87/linux-x64/claude"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "blake3:ab3903b78bd63ec52314b16988c8a4101461c691b992737483c37f2bf1452c9c"
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.86/darwin-arm64/claude"
+checksum = "blake3:fbe78d6093ac977cc75e48fd713f15f8a533cdfa7e1c2a2a30a5ae6edbe63c0d"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.87/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.86/darwin-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.87/darwin-x64/claude"
 
 [[tools.colima]]
 version = "0.10.0"
@@ -192,43 +191,43 @@ checksum = "sha256:2945a728dd748f5bfb18685e89c94e267d96187f440d04d000e326aad88ed
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.pi]]
-version = "0.63.1"
+version = "0.64.0"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:879b1966394aef22d23fb542b553a4dfa8ae825ac2b5b36dccea253f33b9896c"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.63.1/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/382592756"
+checksum = "sha256:ca5c9269a7a3ca5d0d677b45338b163c5fba8f07ad11765b946b0e7b0e1c0d96"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.64.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/384184869"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:879b1966394aef22d23fb542b553a4dfa8ae825ac2b5b36dccea253f33b9896c"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.63.1/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/382592756"
+checksum = "sha256:ca5c9269a7a3ca5d0d677b45338b163c5fba8f07ad11765b946b0e7b0e1c0d96"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.64.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/384184869"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:a30d0a2fb6fc281857c88eabb13a3c2a57678d0c6f7598d64110cd5ead335f88"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.63.1/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/382592759"
+checksum = "sha256:65ff76b5f96bf6c7eea49f47b036fcf5e3a1de0c0d43735d7669e904833c3fc2"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.64.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/384184872"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:a30d0a2fb6fc281857c88eabb13a3c2a57678d0c6f7598d64110cd5ead335f88"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.63.1/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/382592759"
+checksum = "sha256:65ff76b5f96bf6c7eea49f47b036fcf5e3a1de0c0d43735d7669e904833c3fc2"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.64.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/384184872"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:656e547e758897209d3c8943f5e5132a59f1ec08b722f05d91c81e2d6d1bbe0a"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.63.1/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/382592755"
+checksum = "sha256:db9c3858c1c26cc05ce685404b52e60980e7850c0b8ea20865dafad3effa4754"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.64.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/384184873"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:90904d9b1a907cd164781f476fe463cc3248d1abf6fdb0708fba4ed7ac91c057"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.63.1/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/382592758"
+checksum = "sha256:35360535ccdf2403222483a6552e6400c5828994be10945bc6e43dae801c5eb6"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.64.0/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/384184871"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:37e0329ba67aa7af08759ca5b634ff5492d342a4375309cc3cbfc74a0e70212f"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.63.1/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/382592757"
+checksum = "sha256:36b6576bb4e7051112ed5af952536dd26222f3c9e3f27f3921910f26afdc040f"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.64.0/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/384184870"
 
 [[tools.tssh]]
 version = "0.1.24"
