@@ -1876,6 +1876,7 @@ url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-x86_64-
 [tools.atuin."platforms.macos-arm64"]
 checksum = "sha256:5c321fe8544310cf4def1a423398795f8728180f8e18524bd66b6d72f3dfe86b"
 url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-aarch64-apple-darwin.tar.gz"
+provenance = "github-attestations"
 
 [tools.atuin."platforms.windows-x64"]
 checksum = "sha256:c0fde67c1e83ca8e65fd62ba8b30518830a3eb0d3949739e5bc7282b56f97470"
