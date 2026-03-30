@@ -6,3 +6,8 @@ description = "Example HTTP service — replace with real services"
 run = "greeting"
 ready_http = "http://localhost:7777"
 boot_start = true
+
+[daemons.heartbeat]
+description = "Example cron job — replace with real scheduled tasks"
+run = "bash -c 'touch ~/.local/state/dotfiles/heartbeat'"
+cron = { schedule = "0 0 * * * *" }
