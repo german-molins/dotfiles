@@ -59,7 +59,7 @@ In `.chezmoiignore.tmpl`, ignore each platform directory on the *other* OS so
 chezmoi never tries to create `~/Library/` on Linux or `~/.config/mytool/` on
 macOS (when the tool doesn't also use that path on macOS).
 
-```gotmpl
+```text
 # home/.chezmoiignore.tmpl
 
 {{ if ne .chezmoi.os "darwin" -}}
@@ -77,13 +77,13 @@ template.
 
 **Linux** — `home/dot_config/mytool/config.yaml.tmpl`
 
-```gotmpl
+```text
 {{- template "mytool_config.yaml.tmpl" . -}}
 ```
 
 **macOS** — `home/Library/Application Support/mytool/config.yaml.tmpl`
 
-```gotmpl
+```text
 {{- template "mytool_config.yaml.tmpl" . -}}
 ```
 
