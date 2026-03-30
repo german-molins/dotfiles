@@ -1,0 +1,21 @@
+{
+  "lastChangelogVersion": "0.64.0",
+  "theme": "dark",
+  "packages": [
+    "npm:@codexstar/pi-listen"
+  ],
+  "voice": {
+    "version": 2,
+    "enabled": true,
+    "language": "en",
+    "scope": "global",
+    "backend": "local",
+    "localModel": "parakeet-v3",
+    "onboarding": {
+      "completed": true,
+      "schemaVersion": 2,
+      "completedAt": "2026-03-30T12:22:36.309Z",
+      "source": "migration"
+    }
+  }
+}
