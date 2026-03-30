@@ -112,6 +112,7 @@ depends = [
   "devbox:update",
   "yazi:update",
   "nvim:update",
+  "pi:update",
   "brew:update",
   "upt:update",
   "agents:update",
@@ -173,6 +174,10 @@ description = "Update Neovim plugins"
 alias = "nvim:up"
 run = "nvim --headless '+Lazy! update' +qa"
 
+[tasks."pi:update"]
+alias = "pi:up"
+run = "pi update"
+
 [tasks."yazi:install"]
 alias = "yazi:i"
 description = "Install Yazi packages"
@@ -189,7 +194,7 @@ run = ["rm -rf ~/.cache/dotfiles/bash ~/.local/share/bash"]
 
 [tasks."agents:update"]
 description = "Update agents resources"
-run = ["skills update", "pi update"]
+run = "skills update"
 
 [tasks."python:scaffold"]
 description = "Scaffold a Python project with uv and pytest"
