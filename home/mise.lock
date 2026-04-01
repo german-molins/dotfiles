@@ -84,6 +84,10 @@ checksum = "sha256:146be90c237cf3d8399e44afe5f5d21ef9a15a7983ccea90e72d4ae0362f9
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libexpat-2.7.4-hfae3067_0.conda"
 checksum = "sha256:995ce3ad96d0f4b5ed6296b051a0d7b6377718f325bc0e792fbb96b0e369dad7"
 
+[conda-packages.linux-arm64."libexpat-2.7.5-hfae3067_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libexpat-2.7.5-hfae3067_0.conda"
+checksum = "sha256:6d438fc0bfdb263c24654fe49c09b31f06ec78eb709eb386392d2499af105f85"
+
 [conda-packages.linux-arm64."libffi-3.5.2-h376a255_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libffi-3.5.2-h376a255_0.conda"
 checksum = "sha256:3df4c539449aabc3443bbe8c492c01d401eea894603087fca2917aa4e1c2dea9"
@@ -207,6 +211,10 @@ checksum = "sha256:fe695f9d215e9a2e3dd0ca7f56435ab4df24f5504b83865e3d295df36e88d
 [conda-packages.linux-arm64."requests-2.33.0-pyhcf101f3_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.0-pyhcf101f3_0.conda"
 checksum = "sha256:fbc7183778e1f9976ae7d812986c227f9d43f841326ac03b5f43f1ac93fa8f3b"
+
+[conda-packages.linux-arm64."requests-2.33.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda"
+checksum = "sha256:c0249bc4bf4c0e8e06d0e7b4d117a5d593cc4ab2144d5006d6d47c83cb0af18e"
 
 [conda-packages.linux-arm64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -368,6 +376,10 @@ checksum = "sha256:146be90c237cf3d8399e44afe5f5d21ef9a15a7983ccea90e72d4ae0362f9
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libexpat-2.7.4-hfae3067_0.conda"
 checksum = "sha256:995ce3ad96d0f4b5ed6296b051a0d7b6377718f325bc0e792fbb96b0e369dad7"
 
+[conda-packages.linux-arm64-musl."libexpat-2.7.5-hfae3067_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libexpat-2.7.5-hfae3067_0.conda"
+checksum = "sha256:6d438fc0bfdb263c24654fe49c09b31f06ec78eb709eb386392d2499af105f85"
+
 [conda-packages.linux-arm64-musl."libffi-3.5.2-h376a255_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libffi-3.5.2-h376a255_0.conda"
 checksum = "sha256:3df4c539449aabc3443bbe8c492c01d401eea894603087fca2917aa4e1c2dea9"
@@ -491,6 +503,10 @@ checksum = "sha256:fe695f9d215e9a2e3dd0ca7f56435ab4df24f5504b83865e3d295df36e88d
 [conda-packages.linux-arm64-musl."requests-2.33.0-pyhcf101f3_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.0-pyhcf101f3_0.conda"
 checksum = "sha256:fbc7183778e1f9976ae7d812986c227f9d43f841326ac03b5f43f1ac93fa8f3b"
+
+[conda-packages.linux-arm64-musl."requests-2.33.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda"
+checksum = "sha256:c0249bc4bf4c0e8e06d0e7b4d117a5d593cc4ab2144d5006d6d47c83cb0af18e"
 
 [conda-packages.linux-arm64-musl."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -652,6 +668,10 @@ checksum = "sha256:cb728a2a95557bb6a5184be2b8be83a6f2083000d0c7eff4ad5bbe5792133
 url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.7.4-hecca717_0.conda"
 checksum = "sha256:d78f1d3bea8c031d2f032b760f36676d87929b18146351c4464c66b0869df3f5"
 
+[conda-packages.linux-x64."libexpat-2.7.5-hecca717_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.7.5-hecca717_0.conda"
+checksum = "sha256:e8c2b57f6aacabdf2f1b0924bd4831ce5071ba080baa4a9e8c0d720588b6794c"
+
 [conda-packages.linux-x64."libffi-3.5.2-h3435931_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libffi-3.5.2-h3435931_0.conda"
 checksum = "sha256:31f19b6a88ce40ebc0d5a992c131f57d919f73c0b92cd1617a5bec83f6e961e6"
@@ -775,6 +795,10 @@ checksum = "sha256:12ffde5a6f958e285aa22c191ca01bbd3d6e710aa852e00618fa6ddc59149
 [conda-packages.linux-x64."requests-2.33.0-pyhcf101f3_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.0-pyhcf101f3_0.conda"
 checksum = "sha256:fbc7183778e1f9976ae7d812986c227f9d43f841326ac03b5f43f1ac93fa8f3b"
+
+[conda-packages.linux-x64."requests-2.33.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda"
+checksum = "sha256:c0249bc4bf4c0e8e06d0e7b4d117a5d593cc4ab2144d5006d6d47c83cb0af18e"
 
 [conda-packages.linux-x64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -936,6 +960,10 @@ checksum = "sha256:cb728a2a95557bb6a5184be2b8be83a6f2083000d0c7eff4ad5bbe5792133
 url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.7.4-hecca717_0.conda"
 checksum = "sha256:d78f1d3bea8c031d2f032b760f36676d87929b18146351c4464c66b0869df3f5"
 
+[conda-packages.linux-x64-musl."libexpat-2.7.5-hecca717_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libexpat-2.7.5-hecca717_0.conda"
+checksum = "sha256:e8c2b57f6aacabdf2f1b0924bd4831ce5071ba080baa4a9e8c0d720588b6794c"
+
 [conda-packages.linux-x64-musl."libffi-3.5.2-h3435931_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libffi-3.5.2-h3435931_0.conda"
 checksum = "sha256:31f19b6a88ce40ebc0d5a992c131f57d919f73c0b92cd1617a5bec83f6e961e6"
@@ -1059,6 +1087,10 @@ checksum = "sha256:12ffde5a6f958e285aa22c191ca01bbd3d6e710aa852e00618fa6ddc59149
 [conda-packages.linux-x64-musl."requests-2.33.0-pyhcf101f3_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.0-pyhcf101f3_0.conda"
 checksum = "sha256:fbc7183778e1f9976ae7d812986c227f9d43f841326ac03b5f43f1ac93fa8f3b"
+
+[conda-packages.linux-x64-musl."requests-2.33.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda"
+checksum = "sha256:c0249bc4bf4c0e8e06d0e7b4d117a5d593cc4ab2144d5006d6d47c83cb0af18e"
 
 [conda-packages.linux-x64-musl."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -1296,6 +1328,10 @@ checksum = "sha256:7db04684d3904f6151eff8673270922d31da1eea7fa73254d01c437f49702
 url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.0-pyhcf101f3_0.conda"
 checksum = "sha256:fbc7183778e1f9976ae7d812986c227f9d43f841326ac03b5f43f1ac93fa8f3b"
 
+[conda-packages.macos-arm64."requests-2.33.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda"
+checksum = "sha256:c0249bc4bf4c0e8e06d0e7b4d117a5d593cc4ab2144d5006d6d47c83cb0af18e"
+
 [conda-packages.macos-arm64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
 checksum = "sha256:7a10527962d2ca2cf936872ef58d4b622b1d1d1703e1d6396d0673fd9f883c7f"
@@ -1504,6 +1540,10 @@ checksum = "sha256:53017e80453c4c1d97aaf78369040418dea14cf8f46a2fa999f31bd70b36c
 url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.0-pyhcf101f3_0.conda"
 checksum = "sha256:fbc7183778e1f9976ae7d812986c227f9d43f841326ac03b5f43f1ac93fa8f3b"
 
+[conda-packages.macos-x64."requests-2.33.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda"
+checksum = "sha256:c0249bc4bf4c0e8e06d0e7b4d117a5d593cc4ab2144d5006d6d47c83cb0af18e"
+
 [conda-packages.macos-x64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
 checksum = "sha256:7a10527962d2ca2cf936872ef58d4b622b1d1d1703e1d6396d0673fd9f883c7f"
@@ -1624,6 +1664,10 @@ checksum = "sha256:fc9ca7348a4f25fed2079f2153ecdcf5f9cf2a0bc36c4172420ca09e1849d
 url = "https://conda.anaconda.org/conda-forge/win-64/libexpat-2.7.4-hac47afa_0.conda"
 checksum = "sha256:b31f6fb629c4e17885aaf2082fb30384156d16b48b264e454de4a06a313b533d"
 
+[conda-packages.windows-x64."libexpat-2.7.5-hac47afa_0"]
+url = "https://conda.anaconda.org/conda-forge/win-64/libexpat-2.7.5-hac47afa_0.conda"
+checksum = "sha256:6850c3a4d5dc215b86f58518cfb8752998533d6569b08da8df1da72e7c68e571"
+
 [conda-packages.windows-x64."libffi-3.5.2-h3d046cb_0"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libffi-3.5.2-h3d046cb_0.conda"
 checksum = "sha256:59d01f2dfa8b77491b5888a5ab88ff4e1574c9359f7e229da254cdfe27ddc190"
@@ -1691,6 +1735,10 @@ checksum = "sha256:d35c15c861d5635db1ba847a2e0e7de4c01994999602db1f82e41b5935a95
 [conda-packages.windows-x64."requests-2.33.0-pyhcf101f3_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.0-pyhcf101f3_0.conda"
 checksum = "sha256:fbc7183778e1f9976ae7d812986c227f9d43f841326ac03b5f43f1ac93fa8f3b"
+
+[conda-packages.windows-x64."requests-2.33.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.33.1-pyhcf101f3_0.conda"
+checksum = "sha256:c0249bc4bf4c0e8e06d0e7b4d117a5d593cc4ab2144d5006d6d47c83cb0af18e"
 
 [conda-packages.windows-x64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -2080,7 +2128,7 @@ conda_deps = [
     "python_abi-3.14-8_cp314",
     "libuuid-2.41.3-h1022ec0_0",
     "liblzma-5.8.2-he30d5cf_0",
-    "requests-2.33.0-pyhcf101f3_0",
+    "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2094,7 +2142,7 @@ conda_deps = [
     "packaging-26.0-pyhcf101f3_0",
     "bzip2-1.0.8-h4777abc_9",
     "ld_impl_linux-aarch64-2.45.1-default_h1979696_102",
-    "libexpat-2.7.4-hfae3067_0",
+    "libexpat-2.7.5-hfae3067_0",
     "libffi-3.5.2-h376a255_0",
     "libgcc-15.2.0-h8acb6b2_18",
     "libmpdec-4.0.0-he30d5cf_1",
@@ -2136,7 +2184,7 @@ conda_deps = [
     "python_abi-3.14-8_cp314",
     "libuuid-2.41.3-h1022ec0_0",
     "liblzma-5.8.2-he30d5cf_0",
-    "requests-2.33.0-pyhcf101f3_0",
+    "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2150,7 +2198,7 @@ conda_deps = [
     "packaging-26.0-pyhcf101f3_0",
     "bzip2-1.0.8-h4777abc_9",
     "ld_impl_linux-aarch64-2.45.1-default_h1979696_102",
-    "libexpat-2.7.4-hfae3067_0",
+    "libexpat-2.7.5-hfae3067_0",
     "libffi-3.5.2-h376a255_0",
     "libgcc-15.2.0-h8acb6b2_18",
     "libmpdec-4.0.0-he30d5cf_1",
@@ -2192,7 +2240,7 @@ conda_deps = [
     "python_abi-3.14-8_cp314",
     "libuuid-2.41.3-h5347b49_0",
     "liblzma-5.8.2-hb03c661_0",
-    "requests-2.33.0-pyhcf101f3_0",
+    "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2206,7 +2254,7 @@ conda_deps = [
     "packaging-26.0-pyhcf101f3_0",
     "bzip2-1.0.8-hda65f42_9",
     "ld_impl_linux-64-2.45.1-default_hbd61a6d_102",
-    "libexpat-2.7.4-hecca717_0",
+    "libexpat-2.7.5-hecca717_0",
     "libffi-3.5.2-h3435931_0",
     "libgcc-15.2.0-he0feb66_18",
     "libmpdec-4.0.0-hb03c661_1",
@@ -2248,7 +2296,7 @@ conda_deps = [
     "python_abi-3.14-8_cp314",
     "libuuid-2.41.3-h5347b49_0",
     "liblzma-5.8.2-hb03c661_0",
-    "requests-2.33.0-pyhcf101f3_0",
+    "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2262,7 +2310,7 @@ conda_deps = [
     "packaging-26.0-pyhcf101f3_0",
     "bzip2-1.0.8-hda65f42_9",
     "ld_impl_linux-64-2.45.1-default_hbd61a6d_102",
-    "libexpat-2.7.4-hecca717_0",
+    "libexpat-2.7.5-hecca717_0",
     "libffi-3.5.2-h3435931_0",
     "libgcc-15.2.0-he0feb66_18",
     "libmpdec-4.0.0-hb03c661_1",
@@ -2301,7 +2349,7 @@ conda_deps = [
     "plotly-6.6.0-pyhd8ed1ab_0",
     "python-3.12.2-hdf0ec26_0_cpython",
     "xz-5.2.6-h57fd34a_0",
-    "requests-2.33.0-pyhcf101f3_0",
+    "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2352,7 +2400,7 @@ conda_deps = [
     "plotly-6.6.0-pyhd8ed1ab_0",
     "python-3.12.2-h9f0c242_0_cpython",
     "xz-5.2.6-h775f41a_0",
-    "requests-2.33.0-pyhcf101f3_0",
+    "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2404,7 +2452,7 @@ conda_deps = [
     "python-3.14.3-h4b44e0e_101_cp314",
     "python_abi-3.14-8_cp314",
     "liblzma-5.8.2-hfd05255_0",
-    "requests-2.33.0-pyhcf101f3_0",
+    "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2417,7 +2465,7 @@ conda_deps = [
     "narwhals-2.18.1-pyhcf101f3_1",
     "packaging-26.0-pyhcf101f3_0",
     "bzip2-1.0.8-h0ad9c76_9",
-    "libexpat-2.7.4-hac47afa_0",
+    "libexpat-2.7.5-hac47afa_0",
     "libffi-3.5.2-h3d046cb_0",
     "libmpdec-4.0.0-hfd05255_1",
     "libsqlite-3.52.0-hf5d6505_0",
@@ -2462,7 +2510,7 @@ conda_deps = [
     "pytz-2026.1.post1-pyhcf101f3_0",
     "bzip2-1.0.8-h4777abc_9",
     "ld_impl_linux-aarch64-2.45.1-default_h1979696_102",
-    "libexpat-2.7.4-hfae3067_0",
+    "libexpat-2.7.5-hfae3067_0",
     "libffi-3.5.2-h376a255_0",
     "libgcc-15.2.0-h8acb6b2_18",
     "libmpdec-4.0.0-he30d5cf_1",
@@ -2494,7 +2542,7 @@ conda_deps = [
     "pytz-2026.1.post1-pyhcf101f3_0",
     "bzip2-1.0.8-h4777abc_9",
     "ld_impl_linux-aarch64-2.45.1-default_h1979696_102",
-    "libexpat-2.7.4-hfae3067_0",
+    "libexpat-2.7.5-hfae3067_0",
     "libffi-3.5.2-h376a255_0",
     "libgcc-15.2.0-h8acb6b2_18",
     "libmpdec-4.0.0-he30d5cf_1",
@@ -2526,7 +2574,7 @@ conda_deps = [
     "pytz-2026.1.post1-pyhcf101f3_0",
     "bzip2-1.0.8-hda65f42_9",
     "ld_impl_linux-64-2.45.1-default_hbd61a6d_102",
-    "libexpat-2.7.4-hecca717_0",
+    "libexpat-2.7.5-hecca717_0",
     "libffi-3.5.2-h3435931_0",
     "libgcc-15.2.0-he0feb66_18",
     "libmpdec-4.0.0-hb03c661_1",
@@ -2558,7 +2606,7 @@ conda_deps = [
     "pytz-2026.1.post1-pyhcf101f3_0",
     "bzip2-1.0.8-hda65f42_9",
     "ld_impl_linux-64-2.45.1-default_hbd61a6d_102",
-    "libexpat-2.7.4-hecca717_0",
+    "libexpat-2.7.5-hecca717_0",
     "libffi-3.5.2-h3435931_0",
     "libgcc-15.2.0-he0feb66_18",
     "libmpdec-4.0.0-hb03c661_1",
@@ -2631,7 +2679,7 @@ conda_deps = [
     "python-dateutil-2.9.0.post0-pyhe01879c_2",
     "pytz-2026.1.post1-pyhcf101f3_0",
     "bzip2-1.0.8-h0ad9c76_9",
-    "libexpat-2.7.4-hac47afa_0",
+    "libexpat-2.7.5-hac47afa_0",
     "libffi-3.5.2-h3d046cb_0",
     "libmpdec-4.0.0-hfd05255_1",
     "libsqlite-3.52.0-hf5d6505_0",
@@ -4097,30 +4145,37 @@ backend = "core:python"
 [tools.python."platforms.linux-arm64"]
 checksum = "sha256:53700338695e402a1a1fe22be4a41fbdacc70e22bb308a48eca8ed67cb7992be"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260324/cpython-3.14.3+20260324-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
+provenance = "github-attestations"
 
 [tools.python."platforms.linux-arm64-musl"]
 checksum = "sha256:53700338695e402a1a1fe22be4a41fbdacc70e22bb308a48eca8ed67cb7992be"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260324/cpython-3.14.3+20260324-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
+provenance = "github-attestations"
 
 [tools.python."platforms.linux-x64"]
 checksum = "sha256:d7a9f970914bb4c88756fe3bdcc186d4feb90e9500e54f1db47dae4dc9687e39"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260324/cpython-3.14.3+20260324-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
+provenance = "github-attestations"
 
 [tools.python."platforms.linux-x64-musl"]
 checksum = "sha256:d7a9f970914bb4c88756fe3bdcc186d4feb90e9500e54f1db47dae4dc9687e39"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260324/cpython-3.14.3+20260324-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
+provenance = "github-attestations"
 
 [tools.python."platforms.macos-arm64"]
 checksum = "sha256:c43aecde4a663aebff99b9b83da0efec506479f1c3f98331442f33d2c43501f9"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260324/cpython-3.14.3+20260324-aarch64-apple-darwin-install_only_stripped.tar.gz"
+provenance = "github-attestations"
 
 [tools.python."platforms.macos-x64"]
 checksum = "sha256:9ab41dbc2f100a2a45d1833b9c11165f51051c558b5213eda9a9731d5948a0c0"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260324/cpython-3.14.3+20260324-x86_64-apple-darwin-install_only_stripped.tar.gz"
+provenance = "github-attestations"
 
 [tools.python."platforms.windows-x64"]
 checksum = "sha256:bbe19034b35b0267176a7442575ae7dc6343480fd4d35598cb7700173d431e09"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260324/cpython-3.14.3+20260324-x86_64-pc-windows-msvc-install_only_stripped.tar.gz"
+provenance = "github-attestations"
 
 [[tools.ripgrep]]
 version = "15.1.0"
@@ -4173,6 +4228,7 @@ url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.8/tree
 [tools.tree-sitter."platforms.linux-x64"]
 checksum = "sha256:9754a32800f0b970152782df177b4a47c711e34e651a7aceb384d8bd29fa136e"
 url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.8/tree-sitter-linux-x64.gz"
+provenance = "github-attestations"
 
 [tools.tree-sitter."platforms.linux-x64-musl"]
 checksum = "sha256:9754a32800f0b970152782df177b4a47c711e34e651a7aceb384d8bd29fa136e"
