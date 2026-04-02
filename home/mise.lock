@@ -32,6 +32,10 @@ checksum = "sha256:a6b118fd1ed6099dc4fc03f9c492b88882a780fadaef4ed4f93dc70757713
 url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.6-pyhd8ed1ab_0.conda"
 checksum = "sha256:d86dfd428b2e3c364fa90e07437c8405d635aa4ef54b25ab51d9c712be4112a5"
 
+[conda-packages.linux-arm64."charset-normalizer-3.4.7-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.7-pyhd8ed1ab_0.conda"
+checksum = "sha256:3f9483d62ce24ecd063f8a5a714448445dc8d9e201147c46699fc0033e824457"
+
 [conda-packages.linux-arm64."click-8.3.1-pyh8f84b5b_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/click-8.3.1-pyh8f84b5b_1.conda"
 checksum = "sha256:38cfe1ee75b21a8361c8824f5544c3866f303af1762693a178266d7f198e8715"
@@ -127,6 +131,10 @@ checksum = "sha256:31fdb9ffafad106a213192d8319b9f810e05abca9c5436b60e507afb35a6b
 [conda-packages.linux-arm64."libuuid-2.41.3-h1022ec0_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libuuid-2.41.3-h1022ec0_0.conda"
 checksum = "sha256:c37a8e89b700646f3252608f8368e7eb8e2a44886b92776e57ad7601fc402a11"
+
+[conda-packages.linux-arm64."libuuid-2.42-h1022ec0_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libuuid-2.42-h1022ec0_0.conda"
+checksum = "sha256:7d427edf58c702c337bf62bc90f355b7fc374a65fd9f70ea7a490f13bb76b1b9"
 
 [conda-packages.linux-arm64."libxcb-1.17.0-h262b8f6_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxcb-1.17.0-h262b8f6_0.conda"
@@ -316,6 +324,10 @@ checksum = "sha256:a6b118fd1ed6099dc4fc03f9c492b88882a780fadaef4ed4f93dc70757713
 url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.6-pyhd8ed1ab_0.conda"
 checksum = "sha256:d86dfd428b2e3c364fa90e07437c8405d635aa4ef54b25ab51d9c712be4112a5"
 
+[conda-packages.linux-arm64-musl."charset-normalizer-3.4.7-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.7-pyhd8ed1ab_0.conda"
+checksum = "sha256:3f9483d62ce24ecd063f8a5a714448445dc8d9e201147c46699fc0033e824457"
+
 [conda-packages.linux-arm64-musl."click-8.3.1-pyh8f84b5b_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/click-8.3.1-pyh8f84b5b_1.conda"
 checksum = "sha256:38cfe1ee75b21a8361c8824f5544c3866f303af1762693a178266d7f198e8715"
@@ -411,6 +423,10 @@ checksum = "sha256:31fdb9ffafad106a213192d8319b9f810e05abca9c5436b60e507afb35a6b
 [conda-packages.linux-arm64-musl."libuuid-2.41.3-h1022ec0_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libuuid-2.41.3-h1022ec0_0.conda"
 checksum = "sha256:c37a8e89b700646f3252608f8368e7eb8e2a44886b92776e57ad7601fc402a11"
+
+[conda-packages.linux-arm64-musl."libuuid-2.42-h1022ec0_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libuuid-2.42-h1022ec0_0.conda"
+checksum = "sha256:7d427edf58c702c337bf62bc90f355b7fc374a65fd9f70ea7a490f13bb76b1b9"
 
 [conda-packages.linux-arm64-musl."libxcb-1.17.0-h262b8f6_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/libxcb-1.17.0-h262b8f6_0.conda"
@@ -600,6 +616,10 @@ checksum = "sha256:a6b118fd1ed6099dc4fc03f9c492b88882a780fadaef4ed4f93dc70757713
 url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.6-pyhd8ed1ab_0.conda"
 checksum = "sha256:d86dfd428b2e3c364fa90e07437c8405d635aa4ef54b25ab51d9c712be4112a5"
 
+[conda-packages.linux-x64."charset-normalizer-3.4.7-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.7-pyhd8ed1ab_0.conda"
+checksum = "sha256:3f9483d62ce24ecd063f8a5a714448445dc8d9e201147c46699fc0033e824457"
+
 [conda-packages.linux-x64."click-8.3.1-pyh8f84b5b_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/click-8.3.1-pyh8f84b5b_1.conda"
 checksum = "sha256:38cfe1ee75b21a8361c8824f5544c3866f303af1762693a178266d7f198e8715"
@@ -695,6 +715,10 @@ checksum = "sha256:78668020064fdaa27e9ab65cd2997e2c837b564ab26ce3bf0e58a2ce1a525
 [conda-packages.linux-x64."libuuid-2.41.3-h5347b49_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libuuid-2.41.3-h5347b49_0.conda"
 checksum = "sha256:1a7539cfa7df00714e8943e18de0b06cceef6778e420a5ee3a2a145773758aee"
+
+[conda-packages.linux-x64."libuuid-2.42-h5347b49_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libuuid-2.42-h5347b49_0.conda"
+checksum = "sha256:bc1b08c92626c91500fd9f26f2c797f3eb153b627d53e9c13cd167f1e12b2829"
 
 [conda-packages.linux-x64."libxcb-1.17.0-h8a09558_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.17.0-h8a09558_0.conda"
@@ -884,6 +908,10 @@ checksum = "sha256:a6b118fd1ed6099dc4fc03f9c492b88882a780fadaef4ed4f93dc70757713
 url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.6-pyhd8ed1ab_0.conda"
 checksum = "sha256:d86dfd428b2e3c364fa90e07437c8405d635aa4ef54b25ab51d9c712be4112a5"
 
+[conda-packages.linux-x64-musl."charset-normalizer-3.4.7-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.7-pyhd8ed1ab_0.conda"
+checksum = "sha256:3f9483d62ce24ecd063f8a5a714448445dc8d9e201147c46699fc0033e824457"
+
 [conda-packages.linux-x64-musl."click-8.3.1-pyh8f84b5b_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/click-8.3.1-pyh8f84b5b_1.conda"
 checksum = "sha256:38cfe1ee75b21a8361c8824f5544c3866f303af1762693a178266d7f198e8715"
@@ -979,6 +1007,10 @@ checksum = "sha256:78668020064fdaa27e9ab65cd2997e2c837b564ab26ce3bf0e58a2ce1a525
 [conda-packages.linux-x64-musl."libuuid-2.41.3-h5347b49_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libuuid-2.41.3-h5347b49_0.conda"
 checksum = "sha256:1a7539cfa7df00714e8943e18de0b06cceef6778e420a5ee3a2a145773758aee"
+
+[conda-packages.linux-x64-musl."libuuid-2.42-h5347b49_0"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/libuuid-2.42-h5347b49_0.conda"
+checksum = "sha256:bc1b08c92626c91500fd9f26f2c797f3eb153b627d53e9c13cd167f1e12b2829"
 
 [conda-packages.linux-x64-musl."libxcb-1.17.0-h8a09558_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.17.0-h8a09558_0.conda"
@@ -1163,6 +1195,10 @@ checksum = "sha256:1544403cb1a5ca2aeabf0dac86d9ce6066d6fb4363493643b33ffd1b78038
 [conda-packages.macos-arm64."charset-normalizer-3.4.6-pyhd8ed1ab_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.6-pyhd8ed1ab_0.conda"
 checksum = "sha256:d86dfd428b2e3c364fa90e07437c8405d635aa4ef54b25ab51d9c712be4112a5"
+
+[conda-packages.macos-arm64."charset-normalizer-3.4.7-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.7-pyhd8ed1ab_0.conda"
+checksum = "sha256:3f9483d62ce24ecd063f8a5a714448445dc8d9e201147c46699fc0033e824457"
 
 [conda-packages.macos-arm64."click-8.3.1-pyh8f84b5b_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/click-8.3.1-pyh8f84b5b_1.conda"
@@ -1372,6 +1408,10 @@ checksum = "sha256:8b856583b56fc30f064a7cb286f85e4b5725f2bd4fda8ba0c4e94bffe2587
 url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.6-pyhd8ed1ab_0.conda"
 checksum = "sha256:d86dfd428b2e3c364fa90e07437c8405d635aa4ef54b25ab51d9c712be4112a5"
 
+[conda-packages.macos-x64."charset-normalizer-3.4.7-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.7-pyhd8ed1ab_0.conda"
+checksum = "sha256:3f9483d62ce24ecd063f8a5a714448445dc8d9e201147c46699fc0033e824457"
+
 [conda-packages.macos-x64."click-8.3.1-pyh8f84b5b_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/click-8.3.1-pyh8f84b5b_1.conda"
 checksum = "sha256:38cfe1ee75b21a8361c8824f5544c3866f303af1762693a178266d7f198e8715"
@@ -1579,6 +1619,10 @@ checksum = "sha256:a6b118fd1ed6099dc4fc03f9c492b88882a780fadaef4ed4f93dc70757713
 [conda-packages.windows-x64."charset-normalizer-3.4.6-pyhd8ed1ab_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.6-pyhd8ed1ab_0.conda"
 checksum = "sha256:d86dfd428b2e3c364fa90e07437c8405d635aa4ef54b25ab51d9c712be4112a5"
+
+[conda-packages.windows-x64."charset-normalizer-3.4.7-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.7-pyhd8ed1ab_0.conda"
+checksum = "sha256:3f9483d62ce24ecd063f8a5a714448445dc8d9e201147c46699fc0033e824457"
 
 [conda-packages.windows-x64."click-8.3.1-pyha7b4d00_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/click-8.3.1-pyha7b4d00_1.conda"
@@ -2078,7 +2122,6 @@ conda_deps = [
     "python-3.14.3-hb06a95a_101_cp314",
     "readline-8.3-hb682ff5_0",
     "python_abi-3.14-8_cp314",
-    "libuuid-2.41.3-h1022ec0_0",
     "liblzma-5.8.2-he30d5cf_0",
     "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
@@ -2099,6 +2142,7 @@ conda_deps = [
     "libgcc-15.2.0-h8acb6b2_18",
     "libmpdec-4.0.0-he30d5cf_1",
     "libsqlite-3.52.0-h10b116e_0",
+    "libuuid-2.42-h1022ec0_0",
     "libzlib-1.3.2-hdc9db2a_2",
     "ncurses-6.5-ha32ae93_3",
     "openssl-3.6.1-h546c87b_1",
@@ -2106,7 +2150,7 @@ conda_deps = [
     "tzdata-2025c-hc9c84f9_1",
     "zstd-1.5.7-h85ac4a6_6",
     "certifi-2026.2.25-pyhd8ed1ab_0",
-    "charset-normalizer-3.4.6-pyhd8ed1ab_0",
+    "charset-normalizer-3.4.7-pyhd8ed1ab_0",
     "idna-3.11-pyhd8ed1ab_0",
     "urllib3-2.6.3-pyhd8ed1ab_0",
     "_openmp_mutex-4.5-20_gnu",
@@ -2134,7 +2178,6 @@ conda_deps = [
     "python-3.14.3-hb06a95a_101_cp314",
     "readline-8.3-hb682ff5_0",
     "python_abi-3.14-8_cp314",
-    "libuuid-2.41.3-h1022ec0_0",
     "liblzma-5.8.2-he30d5cf_0",
     "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
@@ -2155,6 +2198,7 @@ conda_deps = [
     "libgcc-15.2.0-h8acb6b2_18",
     "libmpdec-4.0.0-he30d5cf_1",
     "libsqlite-3.52.0-h10b116e_0",
+    "libuuid-2.42-h1022ec0_0",
     "libzlib-1.3.2-hdc9db2a_2",
     "ncurses-6.5-ha32ae93_3",
     "openssl-3.6.1-h546c87b_1",
@@ -2162,7 +2206,7 @@ conda_deps = [
     "tzdata-2025c-hc9c84f9_1",
     "zstd-1.5.7-h85ac4a6_6",
     "certifi-2026.2.25-pyhd8ed1ab_0",
-    "charset-normalizer-3.4.6-pyhd8ed1ab_0",
+    "charset-normalizer-3.4.7-pyhd8ed1ab_0",
     "idna-3.11-pyhd8ed1ab_0",
     "urllib3-2.6.3-pyhd8ed1ab_0",
     "_openmp_mutex-4.5-20_gnu",
@@ -2190,7 +2234,6 @@ conda_deps = [
     "python-3.14.3-h32b2ec7_101_cp314",
     "readline-8.3-h853b02a_0",
     "python_abi-3.14-8_cp314",
-    "libuuid-2.41.3-h5347b49_0",
     "liblzma-5.8.2-hb03c661_0",
     "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
@@ -2211,6 +2254,7 @@ conda_deps = [
     "libgcc-15.2.0-he0feb66_18",
     "libmpdec-4.0.0-hb03c661_1",
     "libsqlite-3.52.0-hf4e2dac_0",
+    "libuuid-2.42-h5347b49_0",
     "libzlib-1.3.2-h25fd6f3_2",
     "ncurses-6.5-h2d0b736_3",
     "openssl-3.6.1-h35e630c_1",
@@ -2218,7 +2262,7 @@ conda_deps = [
     "tzdata-2025c-hc9c84f9_1",
     "zstd-1.5.7-hb78ec9c_6",
     "certifi-2026.2.25-pyhd8ed1ab_0",
-    "charset-normalizer-3.4.6-pyhd8ed1ab_0",
+    "charset-normalizer-3.4.7-pyhd8ed1ab_0",
     "idna-3.11-pyhd8ed1ab_0",
     "urllib3-2.6.3-pyhd8ed1ab_0",
     "_openmp_mutex-4.5-20_gnu",
@@ -2246,7 +2290,6 @@ conda_deps = [
     "python-3.14.3-h32b2ec7_101_cp314",
     "readline-8.3-h853b02a_0",
     "python_abi-3.14-8_cp314",
-    "libuuid-2.41.3-h5347b49_0",
     "liblzma-5.8.2-hb03c661_0",
     "requests-2.33.1-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
@@ -2267,6 +2310,7 @@ conda_deps = [
     "libgcc-15.2.0-he0feb66_18",
     "libmpdec-4.0.0-hb03c661_1",
     "libsqlite-3.52.0-hf4e2dac_0",
+    "libuuid-2.42-h5347b49_0",
     "libzlib-1.3.2-h25fd6f3_2",
     "ncurses-6.5-h2d0b736_3",
     "openssl-3.6.1-h35e630c_1",
@@ -2274,7 +2318,7 @@ conda_deps = [
     "tzdata-2025c-hc9c84f9_1",
     "zstd-1.5.7-hb78ec9c_6",
     "certifi-2026.2.25-pyhd8ed1ab_0",
-    "charset-normalizer-3.4.6-pyhd8ed1ab_0",
+    "charset-normalizer-3.4.7-pyhd8ed1ab_0",
     "idna-3.11-pyhd8ed1ab_0",
     "urllib3-2.6.3-pyhd8ed1ab_0",
     "_openmp_mutex-4.5-20_gnu",
@@ -2324,7 +2368,7 @@ conda_deps = [
     "tk-8.6.13-h5083fa2_1",
     "tzdata-2025c-hc9c84f9_1",
     "certifi-2026.2.25-pyhd8ed1ab_0",
-    "charset-normalizer-3.4.6-pyhd8ed1ab_0",
+    "charset-normalizer-3.4.7-pyhd8ed1ab_0",
     "idna-3.11-pyhd8ed1ab_0",
     "urllib3-2.5.0-pyhd8ed1ab_0",
     "brotli-python-1.1.0-py312h9f69965_1",
@@ -2375,7 +2419,7 @@ conda_deps = [
     "tk-8.6.13-h1abcd95_1",
     "tzdata-2025c-hc9c84f9_1",
     "certifi-2026.2.25-pyhd8ed1ab_0",
-    "charset-normalizer-3.4.6-pyhd8ed1ab_0",
+    "charset-normalizer-3.4.7-pyhd8ed1ab_0",
     "idna-3.11-pyhd8ed1ab_0",
     "urllib3-2.5.0-pyhd8ed1ab_0",
     "brotli-python-1.1.0-py312heafc425_1",
@@ -2431,7 +2475,7 @@ conda_deps = [
     "vcomp14-14.44.35208-h818238b_34",
     "zstd-1.5.7-h534d264_6",
     "certifi-2026.2.25-pyhd8ed1ab_0",
-    "charset-normalizer-3.4.6-pyhd8ed1ab_0",
+    "charset-normalizer-3.4.7-pyhd8ed1ab_0",
     "idna-3.11-pyhd8ed1ab_0",
     "urllib3-2.6.3-pyhd8ed1ab_0",
     "colorama-0.4.6-pyhd8ed1ab_1",
@@ -2456,7 +2500,6 @@ conda_deps = [
     "python-3.14.3-hb06a95a_101_cp314",
     "readline-8.3-hb682ff5_0",
     "python_abi-3.14-8_cp314",
-    "libuuid-2.41.3-h1022ec0_0",
     "liblzma-5.8.2-he30d5cf_0",
     "python-dateutil-2.9.0.post0-pyhe01879c_2",
     "pytz-2026.1.post1-pyhcf101f3_0",
@@ -2467,6 +2510,7 @@ conda_deps = [
     "libgcc-15.2.0-h8acb6b2_18",
     "libmpdec-4.0.0-he30d5cf_1",
     "libsqlite-3.52.0-h10b116e_0",
+    "libuuid-2.42-h1022ec0_0",
     "libzlib-1.3.2-hdc9db2a_2",
     "ncurses-6.5-ha32ae93_3",
     "openssl-3.6.1-h546c87b_1",
@@ -2488,7 +2532,6 @@ conda_deps = [
     "python-3.14.3-hb06a95a_101_cp314",
     "readline-8.3-hb682ff5_0",
     "python_abi-3.14-8_cp314",
-    "libuuid-2.41.3-h1022ec0_0",
     "liblzma-5.8.2-he30d5cf_0",
     "python-dateutil-2.9.0.post0-pyhe01879c_2",
     "pytz-2026.1.post1-pyhcf101f3_0",
@@ -2499,6 +2542,7 @@ conda_deps = [
     "libgcc-15.2.0-h8acb6b2_18",
     "libmpdec-4.0.0-he30d5cf_1",
     "libsqlite-3.52.0-h10b116e_0",
+    "libuuid-2.42-h1022ec0_0",
     "libzlib-1.3.2-hdc9db2a_2",
     "ncurses-6.5-ha32ae93_3",
     "openssl-3.6.1-h546c87b_1",
@@ -2520,7 +2564,6 @@ conda_deps = [
     "python-3.14.3-h32b2ec7_101_cp314",
     "readline-8.3-h853b02a_0",
     "python_abi-3.14-8_cp314",
-    "libuuid-2.41.3-h5347b49_0",
     "liblzma-5.8.2-hb03c661_0",
     "python-dateutil-2.9.0.post0-pyhe01879c_2",
     "pytz-2026.1.post1-pyhcf101f3_0",
@@ -2531,6 +2574,7 @@ conda_deps = [
     "libgcc-15.2.0-he0feb66_18",
     "libmpdec-4.0.0-hb03c661_1",
     "libsqlite-3.52.0-hf4e2dac_0",
+    "libuuid-2.42-h5347b49_0",
     "libzlib-1.3.2-h25fd6f3_2",
     "ncurses-6.5-h2d0b736_3",
     "openssl-3.6.1-h35e630c_1",
@@ -2552,7 +2596,6 @@ conda_deps = [
     "python-3.14.3-h32b2ec7_101_cp314",
     "readline-8.3-h853b02a_0",
     "python_abi-3.14-8_cp314",
-    "libuuid-2.41.3-h5347b49_0",
     "liblzma-5.8.2-hb03c661_0",
     "python-dateutil-2.9.0.post0-pyhe01879c_2",
     "pytz-2026.1.post1-pyhcf101f3_0",
@@ -2563,6 +2606,7 @@ conda_deps = [
     "libgcc-15.2.0-he0feb66_18",
     "libmpdec-4.0.0-hb03c661_1",
     "libsqlite-3.52.0-hf4e2dac_0",
+    "libuuid-2.42-h5347b49_0",
     "libzlib-1.3.2-h25fd6f3_2",
     "ncurses-6.5-h2d0b736_3",
     "openssl-3.6.1-h35e630c_1",
@@ -3036,7 +3080,7 @@ conda_deps = [
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
     "xorg-libice-1.1.2-h86ecc28_0",
     "xorg-libsm-1.2.6-h0808dbd_0",
-    "libuuid-2.41.3-h1022ec0_0",
+    "libuuid-2.42-h1022ec0_0",
 ]
 
 [tools."conda:xclip"."platforms.linux-arm64-musl"]
@@ -3056,7 +3100,7 @@ conda_deps = [
     "xorg-libxdmcp-1.1.5-he30d5cf_1",
     "xorg-libice-1.1.2-h86ecc28_0",
     "xorg-libsm-1.2.6-h0808dbd_0",
-    "libuuid-2.41.3-h1022ec0_0",
+    "libuuid-2.42-h1022ec0_0",
 ]
 
 [tools."conda:xclip"."platforms.linux-x64"]
@@ -3076,7 +3120,7 @@ conda_deps = [
     "xorg-libxdmcp-1.1.5-hb03c661_1",
     "xorg-libice-1.1.2-hb9d3cd8_0",
     "xorg-libsm-1.2.6-he73a12e_0",
-    "libuuid-2.41.3-h5347b49_0",
+    "libuuid-2.42-h5347b49_0",
 ]
 
 [tools."conda:xclip"."platforms.linux-x64-musl"]
@@ -3096,7 +3140,7 @@ conda_deps = [
     "xorg-libxdmcp-1.1.5-hb03c661_1",
     "xorg-libice-1.1.2-hb9d3cd8_0",
     "xorg-libsm-1.2.6-he73a12e_0",
-    "libuuid-2.41.3-h5347b49_0",
+    "libuuid-2.42-h5347b49_0",
 ]
 
 [tools."conda:xclip"."platforms.macos-arm64"]
@@ -4391,6 +4435,10 @@ url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-aar
 [tools.zellij."platforms.macos-x64"]
 checksum = "sha256:2c2b0fde5862b3d82814a2dbcf620548b502bd8e843031401a2d7d7b67d9d0ca"
 url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-x86_64-apple-darwin.tar.gz"
+
+[tools.zellij."platforms.windows-x64"]
+checksum = "sha256:aeeb3e9befeac526a60cd0ff6cbec80d4a8335a3ff7ca00a69446e7181cbd424"
+url = "https://github.com/zellij-org/zellij/releases/download/v0.44.0/zellij-x86_64-pc-windows-msvc.zip"
 
 [[tools.zoxide]]
 version = "0.9.9"
