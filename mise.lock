@@ -49,52 +49,52 @@ checksum = "sha256:9d0e0f923e9626f3bc6044fc32e0d3ab29039aea753f5678ef8801cf26f75
 url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.11/bun-windows-x64-baseline.zip"
 
 [[tools.jj]]
-version = "0.39.0"
+version = "0.40.0"
 backend = "aqua:jj-vcs/jj"
 
 [tools.jj."platforms.linux-arm64"]
-checksum = "sha256:15bbb0199adf57929d1e3cd90ae0b47356858cbe374814769815a1fb87d5ad1d"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b26f24ff7a34838fbafe8788e6a94a9cdcf51601ef8c9af8fab4fa22c06ddbee"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.jj."platforms.linux-arm64-musl"]
-checksum = "sha256:15bbb0199adf57929d1e3cd90ae0b47356858cbe374814769815a1fb87d5ad1d"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b26f24ff7a34838fbafe8788e6a94a9cdcf51601ef8c9af8fab4fa22c06ddbee"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.jj."platforms.linux-x64"]
-checksum = "sha256:8da8d96e9c8696c21ad47847a63d533e249acb0449d9af0f0562b5ea7b024f04"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:5c8979f46873e052f59bdd9535636dca6e6f9f70571b73f6d63c3b92acfaa037"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.jj."platforms.linux-x64-baseline"]
-checksum = "sha256:8da8d96e9c8696c21ad47847a63d533e249acb0449d9af0f0562b5ea7b024f04"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:5c8979f46873e052f59bdd9535636dca6e6f9f70571b73f6d63c3b92acfaa037"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.jj."platforms.linux-x64-musl"]
-checksum = "sha256:8da8d96e9c8696c21ad47847a63d533e249acb0449d9af0f0562b5ea7b024f04"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:5c8979f46873e052f59bdd9535636dca6e6f9f70571b73f6d63c3b92acfaa037"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.jj."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:8da8d96e9c8696c21ad47847a63d533e249acb0449d9af0f0562b5ea7b024f04"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:5c8979f46873e052f59bdd9535636dca6e6f9f70571b73f6d63c3b92acfaa037"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.jj."platforms.macos-arm64"]
-checksum = "sha256:525ee96fd1eda1be925b3827a964c58a9f14bc2bae411bd7d8422fe1af40ea19"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:8a1d713103bb968c771617c9b2c48b0b5982193090ee74dec935bff710af2082"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-aarch64-apple-darwin.tar.gz"
 
 [tools.jj."platforms.macos-x64"]
-checksum = "sha256:cdf0eb6f457165bfe5edc3afc16a5d10b3ea89cd682ebe333dabdec626373104"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:ce62cf26e3c6c72a295f5917056e33cfa972874f882a2d15b5a3687b3ddce1e5"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-apple-darwin.tar.gz"
 
 [tools.jj."platforms.macos-x64-baseline"]
-checksum = "sha256:cdf0eb6f457165bfe5edc3afc16a5d10b3ea89cd682ebe333dabdec626373104"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:ce62cf26e3c6c72a295f5917056e33cfa972874f882a2d15b5a3687b3ddce1e5"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-apple-darwin.tar.gz"
 
 [tools.jj."platforms.windows-x64"]
-checksum = "sha256:53be7e277e5f0396621ccdda509904e4f88fe8e517b78ce20176269b7e97d378"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:63922bd257f9616553dec0869e2de99c1c0bf8d951c774d230af09eaeb2f5951"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-pc-windows-msvc.zip"
 
 [tools.jj."platforms.windows-x64-baseline"]
-checksum = "sha256:53be7e277e5f0396621ccdda509904e4f88fe8e517b78ce20176269b7e97d378"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.39.0/jj-v0.39.0-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:63922bd257f9616553dec0869e2de99c1c0bf8d951c774d230af09eaeb2f5951"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.jq]]
 version = "1.8.1"
