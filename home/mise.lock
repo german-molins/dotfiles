@@ -1753,7 +1753,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1775117804-g92fcd4"
+version = "0.0.1775232488-gb32f0f"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2059,7 +2059,7 @@ checksum = "sha256:bd75e4892ed22d5ab767c06242fc72c23c5848ad5b1aea27fd95aec03c10c
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_windows_amd64.zip"
 
 [[tools.codebuff]]
-version = "1.0.637"
+version = "1.0.638"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -3952,7 +3952,7 @@ version = "0.1.20"
 backend = "npm:playbooks"
 
 [[tools."npm:skills"]]
-version = "1.4.7"
+version = "1.4.8"
 backend = "npm:skills"
 
 [[tools.opencode]]
