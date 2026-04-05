@@ -1859,10 +1859,12 @@ backend = "aqua:atuinsh/atuin"
 [tools.atuin."platforms.linux-arm64"]
 checksum = "sha256:77196100a8564a88867701307940b6159e3d2db32a8d7acbfb4db1caeee21201"
 url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-aarch64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-arm64-musl"]
 checksum = "sha256:77196100a8564a88867701307940b6159e3d2db32a8d7acbfb4db1caeee21201"
 url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-aarch64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-x64"]
 checksum = "sha256:19712eadad816d328086553133f0933a9a4429d52dcf660e8feb8af9f7552f3e"
@@ -1872,6 +1874,7 @@ provenance = "github-attestations"
 [tools.atuin."platforms.linux-x64-musl"]
 checksum = "sha256:19712eadad816d328086553133f0933a9a4429d52dcf660e8feb8af9f7552f3e"
 url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-x86_64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
 
 [tools.atuin."platforms.macos-arm64"]
 checksum = "sha256:5c321fe8544310cf4def1a423398795f8728180f8e18524bd66b6d72f3dfe86b"
@@ -1881,6 +1884,7 @@ provenance = "github-attestations"
 [tools.atuin."platforms.windows-x64"]
 checksum = "sha256:c0fde67c1e83ca8e65fd62ba8b30518830a3eb0d3949739e5bc7282b56f97470"
 url = "https://github.com/atuinsh/atuin/releases/download/v18.13.6/atuin-x86_64-pc-windows-msvc.zip"
+provenance = "github-attestations"
 
 [[tools.bat]]
 version = "0.26.1"
@@ -1921,30 +1925,37 @@ backend = "aqua:ClementTsang/bottom"
 [tools.bottom."platforms.linux-arm64"]
 checksum = "sha256:944f372beeaac326cbe3eb4424d7bae600173cec2b0bba363557cd72cc98a3e2"
 url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_aarch64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
 
 [tools.bottom."platforms.linux-arm64-musl"]
 checksum = "sha256:944f372beeaac326cbe3eb4424d7bae600173cec2b0bba363557cd72cc98a3e2"
 url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_aarch64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
 
 [tools.bottom."platforms.linux-x64"]
 checksum = "sha256:0d6352079422fda8f4ee242eb849f45a6008db96d6c1cd35e8436babc51bc33f"
 url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_x86_64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
 
 [tools.bottom."platforms.linux-x64-musl"]
 checksum = "sha256:0d6352079422fda8f4ee242eb849f45a6008db96d6c1cd35e8436babc51bc33f"
 url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_x86_64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
 
 [tools.bottom."platforms.macos-arm64"]
 checksum = "sha256:106e9493d20192d18dbe46d4c99f680d817c796724103ee258567070fcd16429"
 url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_aarch64-apple-darwin.tar.gz"
+provenance = "github-attestations"
 
 [tools.bottom."platforms.macos-x64"]
 checksum = "sha256:5744b5c78db14b85e025c31ded93ba038041e6ff2e8c16ea1d2f9bdb6487316f"
 url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_x86_64-apple-darwin.tar.gz"
+provenance = "github-attestations"
 
 [tools.bottom."platforms.windows-x64"]
 checksum = "sha256:567879fd7210f8a692cd2657b41eda43c7713bef74dd025b240247accdda14fb"
 url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_x86_64-pc-windows-msvc.zip"
+provenance = "github-attestations"
 
 [[tools.carapace]]
 version = "1.6.4"
@@ -3445,18 +3456,22 @@ backend = "aqua:cli/cli"
 [tools.gh."platforms.linux-arm64"]
 checksum = "sha256:9e64a623dfc242990aa5d9b3f507111149c4282f66b68eaad1dc79eeb13b9ce5"
 url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_arm64.tar.gz"
+provenance = "github-attestations"
 
 [tools.gh."platforms.linux-arm64-musl"]
 checksum = "sha256:9e64a623dfc242990aa5d9b3f507111149c4282f66b68eaad1dc79eeb13b9ce5"
 url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_arm64.tar.gz"
+provenance = "github-attestations"
 
 [tools.gh."platforms.linux-x64"]
 checksum = "sha256:d0422caade520530e76c1c558da47daebaa8e1203d6b7ff10ad7d6faba3490d8"
 url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_amd64.tar.gz"
+provenance = "github-attestations"
 
 [tools.gh."platforms.linux-x64-musl"]
 checksum = "sha256:d0422caade520530e76c1c558da47daebaa8e1203d6b7ff10ad7d6faba3490d8"
 url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_amd64.tar.gz"
+provenance = "github-attestations"
 
 [tools.gh."platforms.macos-arm64"]
 checksum = "sha256:2423d02ec0a2094898c378703a1b28a5846c08700f87461363857cb8cb3fda94"
@@ -3466,10 +3481,12 @@ provenance = "github-attestations"
 [tools.gh."platforms.macos-x64"]
 checksum = "sha256:862e21cac6a71f81e7cd6e5127e3cd344f8537441ad2db94cd208319dd17b6e9"
 url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_macOS_amd64.zip"
+provenance = "github-attestations"
 
 [tools.gh."platforms.windows-x64"]
 checksum = "sha256:f3326f6406c98c99701b257d77e2b040eedf83d0176c2c2e9809aa339ceb467e"
 url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_windows_amd64.zip"
+provenance = "github-attestations"
 
 [[tools."github:dalance/procs"]]
 version = "0.14.11"
@@ -3765,30 +3782,37 @@ backend = "aqua:jqlang/jq"
 [tools.jq."platforms.linux-arm64"]
 checksum = "sha256:6bc62f25981328edd3cfcfe6fe51b073f2d7e7710d7ef7fcdac28d4e384fc3d4"
 url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-arm64"
+provenance = "github-attestations"
 
 [tools.jq."platforms.linux-arm64-musl"]
 checksum = "sha256:6bc62f25981328edd3cfcfe6fe51b073f2d7e7710d7ef7fcdac28d4e384fc3d4"
 url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-arm64"
+provenance = "github-attestations"
 
 [tools.jq."platforms.linux-x64"]
 checksum = "sha256:020468de7539ce70ef1bceaf7cde2e8c4f2ca6c3afb84642aabc5c97d9fc2a0d"
 url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-amd64"
+provenance = "github-attestations"
 
 [tools.jq."platforms.linux-x64-musl"]
 checksum = "sha256:020468de7539ce70ef1bceaf7cde2e8c4f2ca6c3afb84642aabc5c97d9fc2a0d"
 url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-amd64"
+provenance = "github-attestations"
 
 [tools.jq."platforms.macos-arm64"]
 checksum = "sha256:a9fe3ea2f86dfc72f6728417521ec9067b343277152b114f4e98d8cb0e263603"
 url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-macos-arm64"
+provenance = "github-attestations"
 
 [tools.jq."platforms.macos-x64"]
 checksum = "sha256:e80dbe0d2a2597e3c11c404f03337b981d74b4a8504b70586c354b7697a7c27f"
 url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-macos-amd64"
+provenance = "github-attestations"
 
 [tools.jq."platforms.windows-x64"]
 checksum = "sha256:23cb60a1354eed6bcc8d9b9735e8c7b388cd1fdcb75726b93bc299ef22dd9334"
 url = "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-windows-amd64.exe"
+provenance = "github-attestations"
 
 [[tools.lazydocker]]
 version = "0.25.0"
@@ -4172,10 +4196,12 @@ backend = "aqua:tree-sitter/tree-sitter"
 [tools.tree-sitter."platforms.linux-arm64"]
 checksum = "sha256:e339d6533b20830dd1666fe320aff85d301b3f59964a3836870b77f4827f9a17"
 url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.8/tree-sitter-linux-arm64.gz"
+provenance = "github-attestations"
 
 [tools.tree-sitter."platforms.linux-arm64-musl"]
 checksum = "sha256:e339d6533b20830dd1666fe320aff85d301b3f59964a3836870b77f4827f9a17"
 url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.8/tree-sitter-linux-arm64.gz"
+provenance = "github-attestations"
 
 [tools.tree-sitter."platforms.linux-x64"]
 checksum = "sha256:9754a32800f0b970152782df177b4a47c711e34e651a7aceb384d8bd29fa136e"
@@ -4185,6 +4211,7 @@ provenance = "github-attestations"
 [tools.tree-sitter."platforms.linux-x64-musl"]
 checksum = "sha256:9754a32800f0b970152782df177b4a47c711e34e651a7aceb384d8bd29fa136e"
 url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.8/tree-sitter-linux-x64.gz"
+provenance = "github-attestations"
 
 [tools.tree-sitter."platforms.macos-arm64"]
 checksum = "sha256:024e2cee34723524d62d41bde4d2b4af23c8bbe0236e116c79c0b37d9575889e"
@@ -4194,10 +4221,12 @@ provenance = "github-attestations"
 [tools.tree-sitter."platforms.macos-x64"]
 checksum = "sha256:d0daa279054c1d1cedb08f5ca784b451ceb1f0e6b083b112d07317958ae77fe0"
 url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.8/tree-sitter-macos-x64.gz"
+provenance = "github-attestations"
 
 [tools.tree-sitter."platforms.windows-x64"]
 checksum = "sha256:28301a969412066bf4818c30c71d9c313091a9b9dc24b53a14ddda3a8e2cc2bb"
 url = "https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.8/tree-sitter-windows-x64.gz"
+provenance = "github-attestations"
 
 [[tools.upt]]
 version = "0.9.0"
