@@ -71,6 +71,7 @@ atuin = "latest"
 "npm:playbooks" = "latest"
 "devbox:imagemagick" = "latest"
 python = "latest"
+sd = "latest"
 
 [settings]
 experimental = true
