@@ -56,6 +56,18 @@ External LLM service providers:
 
 - [OpenRouter](https://openrouter.ai)
 
+### Basic Shell Tools
+
+These modern tools offer a simple alternative to traditional Unix tools in most
+common cases:
+
+| Name | Command | Unix counterpart | Description |
+|------|---------|-------|-------------|
+| [bat](https://github.com/sharkdp/bat) | `bat` | `cat` | Concatenate and paginate files |
+| [fd](https://github.com/sharkdp/fd) | `fd` | `find` | Find entries in filesystem |
+| [ripgreg](https://github.com/BurntSushi/ripgrep) | `rg` | `grep` | Search for pattern in files |
+| [sd](https://github.com/chmln/sd) | `sd` | `sed` | Find and replace patterns in files|
+
 ### Other Tools
 
 | Name | Commands | Aliases | Description |
