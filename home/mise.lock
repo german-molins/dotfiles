@@ -1753,7 +1753,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1775232488-gb32f0f"
+version = "0.0.1775571702-gac76fb"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -3187,74 +3187,74 @@ checksum = "sha256:fe14efbd38eaa83517fd6b8093b77d9d0eb36ebb50e04db82b1065c771a4b
 url = "https://conda.anaconda.org/conda-forge/osx-64/xsel-1.2.1-h6e16a3a_6.conda"
 
 [[tools.coreutils]]
-version = "0.7.0"
+version = "0.8.0"
 backend = "aqua:uutils/coreutils"
 
 [tools.coreutils."platforms.linux-arm64"]
-checksum = "sha256:5a7cd25ffa0f3450848762c70862f6fcdc2e274bc6703f1bdcaa8ff888130595"
-url = "https://github.com/uutils/coreutils/releases/download/0.7.0/coreutils-0.7.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:e592200ef784deecc5ac2328b0617422c89f62b9bb841eb114528ed938ccb725"
+url = "https://github.com/uutils/coreutils/releases/download/0.8.0/coreutils-0.8.0-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.coreutils."platforms.linux-arm64-musl"]
-checksum = "sha256:5a7cd25ffa0f3450848762c70862f6fcdc2e274bc6703f1bdcaa8ff888130595"
-url = "https://github.com/uutils/coreutils/releases/download/0.7.0/coreutils-0.7.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:e592200ef784deecc5ac2328b0617422c89f62b9bb841eb114528ed938ccb725"
+url = "https://github.com/uutils/coreutils/releases/download/0.8.0/coreutils-0.8.0-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.coreutils."platforms.linux-x64"]
-checksum = "sha256:9f8f6039f162ace2d398b23fe989d74baeb108e8060aa58c0984b363175424ee"
-url = "https://github.com/uutils/coreutils/releases/download/0.7.0/coreutils-0.7.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b8977997a49b677169f7ce65bfc2ad658d4943c4f02f0493b1a802137202b0bf"
+url = "https://github.com/uutils/coreutils/releases/download/0.8.0/coreutils-0.8.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.coreutils."platforms.linux-x64-musl"]
-checksum = "sha256:9f8f6039f162ace2d398b23fe989d74baeb108e8060aa58c0984b363175424ee"
-url = "https://github.com/uutils/coreutils/releases/download/0.7.0/coreutils-0.7.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b8977997a49b677169f7ce65bfc2ad658d4943c4f02f0493b1a802137202b0bf"
+url = "https://github.com/uutils/coreutils/releases/download/0.8.0/coreutils-0.8.0-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.coreutils."platforms.macos-arm64"]
-checksum = "sha256:96cb272063a13551744ceba2efdbb3c92264abd8cec0aa90a637fad5cd2be208"
-url = "https://github.com/uutils/coreutils/releases/download/0.7.0/coreutils-0.7.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:add95b420f9f1b69a0a7cb7b2672648fc72cf1294384344791e8e064bdc5e8c2"
+url = "https://github.com/uutils/coreutils/releases/download/0.8.0/coreutils-0.8.0-aarch64-apple-darwin.tar.gz"
 
 [tools.coreutils."platforms.macos-x64"]
-checksum = "sha256:fd66dfbd5672eebdf5381a22d82c1b0bef6f5c3f6ebe9f90b59d4317f4435225"
-url = "https://github.com/uutils/coreutils/releases/download/0.7.0/coreutils-0.7.0-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:8ac6299b298eb3ba995973b42aece162578e19f9243425a5945d9c4bd8135b0a"
+url = "https://github.com/uutils/coreutils/releases/download/0.8.0/coreutils-0.8.0-x86_64-apple-darwin.tar.gz"
 
 [tools.coreutils."platforms.windows-x64"]
-checksum = "sha256:df878e29fc738bc4273e85c9d2c35ab898e31568021e6baf1c330c7961943c8f"
-url = "https://github.com/uutils/coreutils/releases/download/0.7.0/coreutils-0.7.0-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:db464cf2a6ecbfd42c85f46ed2d749be574df4df47feca1f08988fd760f324f3"
+url = "https://github.com/uutils/coreutils/releases/download/0.8.0/coreutils-0.8.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.cosign]]
-version = "3.0.5"
+version = "3.0.6"
 backend = "aqua:sigstore/cosign"
 
 [tools.cosign."platforms.linux-arm64"]
-checksum = "sha256:d098f3168ae4b3aa70b4ca78947329b953272b487727d1722cb3cb098a1a20ab"
-url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-arm64"
+checksum = "sha256:bedac92e8c3729864e13d4a17048007cfafa79d5deca993a43a90ffe018ef2b8"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-linux-arm64"
 provenance = "cosign"
 
 [tools.cosign."platforms.linux-arm64-musl"]
-checksum = "sha256:d098f3168ae4b3aa70b4ca78947329b953272b487727d1722cb3cb098a1a20ab"
-url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-arm64"
+checksum = "sha256:bedac92e8c3729864e13d4a17048007cfafa79d5deca993a43a90ffe018ef2b8"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-linux-arm64"
 provenance = "cosign"
 
 [tools.cosign."platforms.linux-x64"]
-checksum = "sha256:db15cc99e6e4837daabab023742aaddc3841ce57f193d11b7c3e06c8003642b2"
-url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-amd64"
+checksum = "sha256:c956e5dfcac53d52bcf058360d579472f0c1d2d9b69f55209e256fe7783f4c74"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-linux-amd64"
 provenance = "cosign"
 
 [tools.cosign."platforms.linux-x64-musl"]
-checksum = "sha256:db15cc99e6e4837daabab023742aaddc3841ce57f193d11b7c3e06c8003642b2"
-url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-amd64"
+checksum = "sha256:c956e5dfcac53d52bcf058360d579472f0c1d2d9b69f55209e256fe7783f4c74"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-linux-amd64"
 provenance = "cosign"
 
 [tools.cosign."platforms.macos-arm64"]
-checksum = "sha256:4888c898e2901521a6bd4cf4f0383c9465588a6a46ecd2465ad34faf13f09eb7"
-url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-darwin-arm64"
+checksum = "sha256:5fadd012ae6381a6a29ff86a7d39aa873878852f1073fc90b15995961ecfb084"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-darwin-arm64"
 provenance = "cosign"
 
 [tools.cosign."platforms.macos-x64"]
-checksum = "sha256:e032c44d3f7c247bbb2966b41239f88ffba002497a4516358d327ad5693c386f"
-url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-darwin-amd64"
+checksum = "sha256:4c3e7af8372d3ca3296e62fa56f23fcbb5721cc6ac1827900d398f110d7cd280"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-darwin-amd64"
 provenance = "cosign"
 
 [tools.cosign."platforms.windows-x64"]
-checksum = "sha256:44e9e44202b67ddfaaf5ea1234f5a265417960c4ae98c5b57c35bc40ba9dd714"
-url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-windows-amd64.exe"
+checksum = "sha256:9b85a88ebff2d9dd30ff4984a6f61f2cedc232dd87d81fa7f2ff3c0ed96c241c"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-windows-amd64.exe"
 provenance = "cosign"
 
 [[tools."devbox:imagemagick"]]
@@ -3418,36 +3418,36 @@ checksum = "sha256:b2816e506390a89941c63c9187d58a3cc10e9a55f2ef0685f9ea0eccaf7c9
 url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-pc-windows-msvc.zip"
 
 [[tools.fzf]]
-version = "0.70.0"
+version = "0.71.0"
 backend = "aqua:junegunn/fzf"
 
 [tools.fzf."platforms.linux-arm64"]
-checksum = "sha256:90a07a13b61f56dd59ccfd0f0bf05070e9cec067713d313fa2607aab2dc0e422"
-url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_arm64.tar.gz"
+checksum = "sha256:98b7d322efae9c37e4bfbbab1cbcd8722eb742d9399511f96375feb40cc35d1d"
+url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-linux_arm64.tar.gz"
 
 [tools.fzf."platforms.linux-arm64-musl"]
-checksum = "sha256:90a07a13b61f56dd59ccfd0f0bf05070e9cec067713d313fa2607aab2dc0e422"
-url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_arm64.tar.gz"
+checksum = "sha256:98b7d322efae9c37e4bfbbab1cbcd8722eb742d9399511f96375feb40cc35d1d"
+url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-linux_arm64.tar.gz"
 
 [tools.fzf."platforms.linux-x64"]
-checksum = "sha256:8fd0e0b93bdf64ba90081ffb6658d77ea5a024c122b36852b1de30f9d2733754"
-url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_amd64.tar.gz"
+checksum = "sha256:22639bb38489dbca8acef57850cbb50231ab714d0e8e855ac52fae8b41233df4"
+url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-linux_amd64.tar.gz"
 
 [tools.fzf."platforms.linux-x64-musl"]
-checksum = "sha256:8fd0e0b93bdf64ba90081ffb6658d77ea5a024c122b36852b1de30f9d2733754"
-url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-linux_amd64.tar.gz"
+checksum = "sha256:22639bb38489dbca8acef57850cbb50231ab714d0e8e855ac52fae8b41233df4"
+url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-linux_amd64.tar.gz"
 
 [tools.fzf."platforms.macos-arm64"]
-checksum = "sha256:75f4905c2e3d00666d81dffdd001bb2a9a8e0ad4e4ac8cecfc17a7401b99e6e4"
-url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-darwin_arm64.tar.gz"
+checksum = "sha256:02dfb11de8773cb79aa4fc5bfc77e75c6604ee14728bc849fc162dd91a9714c4"
+url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-darwin_arm64.tar.gz"
 
 [tools.fzf."platforms.macos-x64"]
-checksum = "sha256:46af74cfeb171c5e2eb936096a653061a0de0f5aeb70319bf9935d8d193e078f"
-url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-darwin_amd64.tar.gz"
+checksum = "sha256:144e98ee6bcffaf915366162768000561cd2db8fb53b119d73110391a8e5b5f0"
+url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-darwin_amd64.tar.gz"
 
 [tools.fzf."platforms.windows-x64"]
-checksum = "sha256:7465a6738e2c844742df973459c7509aed2d10d7a72bfd6de201b867b4eda4cd"
-url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-windows_amd64.zip"
+checksum = "sha256:15bf30fa658c596d740f0ce9a9a97b6b5d90566124903657d09fd109dd0973d2"
+url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-windows_amd64.zip"
 
 [[tools.gh]]
 version = "2.89.0"
@@ -3847,36 +3847,36 @@ checksum = "sha256:2af0b2516cd006b1849f2cdae4cd82abbf5d1c2d49b88563daffaa1fb4ac4
 url = "https://github.com/jesseduffield/lazydocker/releases/download/v0.25.0/lazydocker_0.25.0_Windows_x86_64.zip"
 
 [[tools.lazygit]]
-version = "0.60.0"
+version = "0.61.0"
 backend = "aqua:jesseduffield/lazygit"
 
 [tools.lazygit."platforms.linux-arm64"]
-checksum = "sha256:2c699579165416eede4d2cfaf7d76ccd8f3b20f20f2e8b4abff6b5a6350fcdd7"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_arm64.tar.gz"
+checksum = "sha256:7c3b1594fbb5ca29c17f875c0240849dd924f29bdeaf819ef26ae2107ccad84c"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.0/lazygit_0.61.0_linux_arm64.tar.gz"
 
 [tools.lazygit."platforms.linux-arm64-musl"]
-checksum = "sha256:2c699579165416eede4d2cfaf7d76ccd8f3b20f20f2e8b4abff6b5a6350fcdd7"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_arm64.tar.gz"
+checksum = "sha256:7c3b1594fbb5ca29c17f875c0240849dd924f29bdeaf819ef26ae2107ccad84c"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.0/lazygit_0.61.0_linux_arm64.tar.gz"
 
 [tools.lazygit."platforms.linux-x64"]
-checksum = "sha256:6252ca6cf98bc4fd3e0d927b54225910cfa57b065d0ad88263f14592f7f9ab15"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_x86_64.tar.gz"
+checksum = "sha256:4a9702b346283a23a6919c9424617e14788ac00e9cd3c9be266bac48cc6de8eb"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.0/lazygit_0.61.0_linux_x86_64.tar.gz"
 
 [tools.lazygit."platforms.linux-x64-musl"]
-checksum = "sha256:6252ca6cf98bc4fd3e0d927b54225910cfa57b065d0ad88263f14592f7f9ab15"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_x86_64.tar.gz"
+checksum = "sha256:4a9702b346283a23a6919c9424617e14788ac00e9cd3c9be266bac48cc6de8eb"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.0/lazygit_0.61.0_linux_x86_64.tar.gz"
 
 [tools.lazygit."platforms.macos-arm64"]
-checksum = "sha256:5045f0ff2117f12cb5232d65e01c054eb9ea6b8e2f0f0b80e99fbaa589b581b9"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_darwin_arm64.tar.gz"
+checksum = "sha256:7dc684c3c40812de72f7852222d415fecb1c4dae2058b23e5a3c4a5341dc6e9f"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.0/lazygit_0.61.0_darwin_arm64.tar.gz"
 
 [tools.lazygit."platforms.macos-x64"]
-checksum = "sha256:9210a8bd8bf18537f9d7747361c8eba62518e10e4d5fbfe915cf110635eaab78"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_darwin_x86_64.tar.gz"
+checksum = "sha256:196232de7647094bb51681afb3fc3076d5b4eb70ae99b9cec145462b13aab54f"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.0/lazygit_0.61.0_darwin_x86_64.tar.gz"
 
 [tools.lazygit."platforms.windows-x64"]
-checksum = "sha256:435b53165ff4604e201549b9317eb0b8bb5b3f6728be612656988e90c821a9b9"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_windows_x86_64.zip"
+checksum = "sha256:26bb374ee7f3c6e52627262c7f8cc96ab23f96dfd3ef95b3d485d2ef9b842764"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.0/lazygit_0.61.0_windows_x86_64.zip"
 
 [[tools.lazyssh]]
 version = "0.3.0"
@@ -3911,29 +3911,29 @@ checksum = "sha256:ca4353a910e453deb5de68c95d83aa8738ff0e52c4bff919f6d74dc27560a
 url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Windows_x86_64.zip"
 
 [[tools.neovim]]
-version = "0.12.0"
+version = "0.12.1"
 backend = "vfox:mise-plugins/vfox-neovim"
 
 [tools.neovim."platforms.linux-arm64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-linux-arm64.tar.gz"
+url = "https://github.com/neovim/neovim/releases/download/v0.12.1/nvim-linux-arm64.tar.gz"
 
 [tools.neovim."platforms.linux-arm64-musl"]
-url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-linux-arm64.tar.gz"
+url = "https://github.com/neovim/neovim/releases/download/v0.12.1/nvim-linux-arm64.tar.gz"
 
 [tools.neovim."platforms.linux-x64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-linux-x86_64.tar.gz"
+url = "https://github.com/neovim/neovim/releases/download/v0.12.1/nvim-linux-x86_64.tar.gz"
 
 [tools.neovim."platforms.linux-x64-musl"]
-url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-linux-x86_64.tar.gz"
+url = "https://github.com/neovim/neovim/releases/download/v0.12.1/nvim-linux-x86_64.tar.gz"
 
 [tools.neovim."platforms.macos-arm64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-macos-arm64.tar.gz"
+url = "https://github.com/neovim/neovim/releases/download/v0.12.1/nvim-macos-arm64.tar.gz"
 
 [tools.neovim."platforms.macos-x64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-macos-x86_64.tar.gz"
+url = "https://github.com/neovim/neovim/releases/download/v0.12.1/nvim-macos-x86_64.tar.gz"
 
 [tools.neovim."platforms.windows-x64"]
-url = "https://github.com/neovim/neovim/releases/download/v0.12.0/nvim-win64.zip"
+url = "https://github.com/neovim/neovim/releases/download/v0.12.1/nvim-win64.zip"
 
 [[tools.node]]
 version = "25.9.0"
@@ -3968,7 +3968,7 @@ checksum = "sha256:929552b8305effac843ba7b4270c437aefb702fc3fbd73fcd1bffd35d4ac2
 url = "https://nodejs.org/dist/v25.9.0/node-v25.9.0-win-x64.zip"
 
 [[tools."npm:ctx7"]]
-version = "0.3.9"
+version = "0.3.10"
 backend = "npm:ctx7"
 
 [[tools."npm:playbooks"]]
@@ -3976,40 +3976,40 @@ version = "0.1.20"
 backend = "npm:playbooks"
 
 [[tools."npm:skills"]]
-version = "1.4.8"
+version = "1.4.9"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.3.13"
+version = "1.3.17"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:af9133ceb5d9957265d730456554aa7c38aabc8ff3827394a23d3feac8fe7ef2"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.13/opencode-linux-arm64.tar.gz"
+checksum = "sha256:345293ed29c703cf3c4b0e696db50c3586c973a4d4ff90f1db5b6cbbbb2cee4b"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.17/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:af9133ceb5d9957265d730456554aa7c38aabc8ff3827394a23d3feac8fe7ef2"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.13/opencode-linux-arm64.tar.gz"
+checksum = "sha256:345293ed29c703cf3c4b0e696db50c3586c973a4d4ff90f1db5b6cbbbb2cee4b"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.17/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:08ac2a91d8f071b0e5bb7ec08665c7f944bcba00a6fe02bb66338d74ad067ac5"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.13/opencode-linux-x64.tar.gz"
+checksum = "sha256:19e540840cfd04afebed92cfe67dce0cd6c425ed5f729ef946e8071f776205a9"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.17/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:08ac2a91d8f071b0e5bb7ec08665c7f944bcba00a6fe02bb66338d74ad067ac5"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.13/opencode-linux-x64.tar.gz"
+checksum = "sha256:19e540840cfd04afebed92cfe67dce0cd6c425ed5f729ef946e8071f776205a9"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.17/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:cbbdbfa19d19f95538909b0af2a49f8bae70ba4f5b6f40d17c6ebb9d19f23f33"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.13/opencode-darwin-arm64.zip"
+checksum = "sha256:144bed914e8cc004ba4f79fd01d61f1ad121a6417e13ef97dc6fe8665c8903bb"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.17/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:8fd84abb682ac0ece726e65a3db6bdd7baa0143c968425294283bee1f058bb37"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.13/opencode-darwin-x64.zip"
+checksum = "sha256:554b6101026c640c4e5f6d4f4f7738d8b2840155eca75b93ac0bad9d5c756c0f"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.17/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:c0271e20a95fdd740764bddd4838ee31ef9a87b7a129b3335c959118f4528ce2"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.3.13/opencode-windows-x64.zip"
+checksum = "sha256:6993eeeeb2744a9ac35e8d8154e982234e3808b84ac21a82e3cf64f685ff7d1f"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.3.17/opencode-windows-x64.zip"
 
 [[tools.pandoc]]
 version = "3.9.0.2"
