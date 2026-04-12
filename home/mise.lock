@@ -1877,7 +1877,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1775729936-ge4676e"
+version = "0.0.1775995534-g3f79eb"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2194,7 +2194,7 @@ checksum = "sha256:dfd54ea02f4290dd7d072c2c932efcbdbe3af01035f22315986654711c6d9
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_windows_amd64.zip"
 
 [[tools.codebuff]]
-version = "1.0.638"
+version = "1.0.640"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -3845,43 +3845,43 @@ url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-wind
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294791140"
 
 [[tools.glab]]
-version = "1.91.0"
+version = "1.92.1"
 backend = "gitlab:gitlab-org/cli"
 
 [tools.glab."platforms.linux-arm64"]
-checksum = "sha256:29fef489f40fefb615881de55d3b229fc909aaf730de700abe1f448945c5bfc2"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.91.0/downloads/glab_1.91.0_linux_arm64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E91%2E0/glab_1%2E91%2E0_linux_arm64%2Etar%2Egz"
+checksum = "sha256:659caf3b74950d0d1b7f8d59d55d4b08b5b43f0960dd46863def43ed0f9f2006"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.92.1/downloads/glab_1.92.1_linux_arm64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E92%2E1/glab_1%2E92%2E1_linux_arm64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-arm64-musl"]
-checksum = "sha256:29fef489f40fefb615881de55d3b229fc909aaf730de700abe1f448945c5bfc2"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.91.0/downloads/glab_1.91.0_linux_arm64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E91%2E0/glab_1%2E91%2E0_linux_arm64%2Etar%2Egz"
+checksum = "sha256:659caf3b74950d0d1b7f8d59d55d4b08b5b43f0960dd46863def43ed0f9f2006"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.92.1/downloads/glab_1.92.1_linux_arm64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E92%2E1/glab_1%2E92%2E1_linux_arm64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-x64"]
-checksum = "sha256:31c5dd4b6f5752e4355997b3c4742c9245a7abbb60f39e58bcc4e582843e4869"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.91.0/downloads/glab_1.91.0_linux_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E91%2E0/glab_1%2E91%2E0_linux_amd64%2Etar%2Egz"
+checksum = "sha256:b95eba8934bb202d868c92c8b1b0806beccb456edaf096f02e2ac99e98a66b52"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.92.1/downloads/glab_1.92.1_linux_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E92%2E1/glab_1%2E92%2E1_linux_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-x64-musl"]
-checksum = "sha256:31c5dd4b6f5752e4355997b3c4742c9245a7abbb60f39e58bcc4e582843e4869"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.91.0/downloads/glab_1.91.0_linux_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E91%2E0/glab_1%2E91%2E0_linux_amd64%2Etar%2Egz"
+checksum = "sha256:b95eba8934bb202d868c92c8b1b0806beccb456edaf096f02e2ac99e98a66b52"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.92.1/downloads/glab_1.92.1_linux_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E92%2E1/glab_1%2E92%2E1_linux_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.macos-arm64"]
-checksum = "sha256:1c5dbb89f5ee0d39f28b3b5bad87947af6d327ecc238cf65a5e75fe9e87bf352"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.91.0/downloads/glab_1.91.0_darwin_arm64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E91%2E0/glab_1%2E91%2E0_darwin_arm64%2Etar%2Egz"
+checksum = "sha256:e909efe5c67ad5063944d89e13a293b69081a2d0750c4752ef7b9377e23a6d5a"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.92.1/downloads/glab_1.92.1_darwin_arm64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E92%2E1/glab_1%2E92%2E1_darwin_arm64%2Etar%2Egz"
 
 [tools.glab."platforms.macos-x64"]
-checksum = "sha256:db2f16e038b53fa7187015ccac99fc5b38da348d9932321557fe605a9d4f71bf"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.91.0/downloads/glab_1.91.0_darwin_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E91%2E0/glab_1%2E91%2E0_darwin_amd64%2Etar%2Egz"
+checksum = "sha256:96bbc89ec9435e35f78eb4d492ad43648419f7a851304bcd0f1a7d34aba538cb"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.92.1/downloads/glab_1.92.1_darwin_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E92%2E1/glab_1%2E92%2E1_darwin_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.windows-x64"]
-checksum = "sha256:6ba4a481fef7aad0fbe87e184e81dfb18bdcb1e3abb4a5978e33187ed14083c5"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.91.0/downloads/glab_1.91.0_windows_amd64.zip"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E91%2E0/glab_1%2E91%2E0_windows_amd64%2Ezip"
+checksum = "sha256:24012ce4a456d6d5603096e15ea5ed51952d499afeafaaa6d58819ae89aa9cd8"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.92.1/downloads/glab_1.92.1_windows_amd64.zip"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E92%2E1/glab_1%2E92%2E1_windows_amd64%2Ezip"
 
 [[tools.jj]]
 version = "0.40.0"
@@ -4148,40 +4148,40 @@ version = "0.1.20"
 backend = "npm:playbooks"
 
 [[tools."npm:skills"]]
-version = "1.4.9"
+version = "1.5.0"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.4.1"
+version = "1.4.3"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:041ffe46f451afdd48722e1697fa45dd5d80f235902c63859fdaaf8c7b1f4c89"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-linux-arm64.tar.gz"
+checksum = "sha256:4cbf32f4c31da7dae14712b65aadbce6acfa1a7a85bee986a2ce4eaaed4eb5c8"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.3/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:041ffe46f451afdd48722e1697fa45dd5d80f235902c63859fdaaf8c7b1f4c89"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-linux-arm64.tar.gz"
+checksum = "sha256:4cbf32f4c31da7dae14712b65aadbce6acfa1a7a85bee986a2ce4eaaed4eb5c8"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.3/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:6b27023380d06847c1a5d824f8327e4483b5a388aa0ef7a1c76785651446d6c3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-linux-x64.tar.gz"
+checksum = "sha256:34d503ebb029853293be6fd4d441bbb2dbb03919bfa4525e88b1ca55d68f3e17"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.3/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:6b27023380d06847c1a5d824f8327e4483b5a388aa0ef7a1c76785651446d6c3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-linux-x64.tar.gz"
+checksum = "sha256:34d503ebb029853293be6fd4d441bbb2dbb03919bfa4525e88b1ca55d68f3e17"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.3/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:d69896dd5ffd669e5a9227dcacac2061ead0aad7d50815500bcacb4a2d2464cc"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-darwin-arm64.zip"
+checksum = "sha256:d085c072087fa1cf076058ae28785a31a9368e0f3c42985ea8c558036fcb9b0c"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.3/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:9e901e9e778bde8aa66dc8489d8aad10c9666f82ffbf8b5e0dacf3d5f791e5f3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-darwin-x64.zip"
+checksum = "sha256:1431028e324dcdd2322e5aa710444a52c6de74d1a382f8082a4ad12fdae0768f"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.3/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:65a7601a5f45c30ca9a4d3ba2a7cc35b74e2b33807a78379222f1836f26256d0"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-windows-x64.zip"
+checksum = "sha256:a0efc8a0028083104d2e68bb23721395700f20e83e6018c38043a2d7e0e9897a"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.3/opencode-windows-x64.zip"
 
 [[tools.pandoc]]
 version = "3.9.0.2"
@@ -4227,32 +4227,32 @@ version = "3.2.4"
 backend = "pipx:httpie"
 
 [[tools.pitchfork]]
-version = "2.3.0"
+version = "2.6.0"
 backend = "aqua:jdx/pitchfork"
 
 [tools.pitchfork."platforms.linux-arm64"]
-checksum = "sha256:918254b8b489437b412e21db6391d6b98aeeb05dca5009c0c124504a5e926185"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.3.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:ca2545ac31176a2163a1f4b995bdae79a90d4002b080b080c44d579de1e3fd49"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.6.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.linux-arm64-musl"]
-checksum = "sha256:918254b8b489437b412e21db6391d6b98aeeb05dca5009c0c124504a5e926185"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.3.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:ca2545ac31176a2163a1f4b995bdae79a90d4002b080b080c44d579de1e3fd49"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.6.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.linux-x64"]
-checksum = "sha256:341ffa5050ef02b71123270bc6f3df102b72611d128ff628c6001f14ba91c99d"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.3.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:32b8af9a1a2d33468658207fffa29d2c43a525bfd4713860f88f24c3baa7a486"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.6.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.linux-x64-musl"]
-checksum = "sha256:341ffa5050ef02b71123270bc6f3df102b72611d128ff628c6001f14ba91c99d"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.3.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:32b8af9a1a2d33468658207fffa29d2c43a525bfd4713860f88f24c3baa7a486"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.6.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.macos-arm64"]
-checksum = "sha256:dbe17406c87fd040b7cdd1fc3b07cfe4b3f532fe75ab617db57f10f8d6b29ec9"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.3.0/pitchfork-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:46c576534ea3c9f26547fe90cd49a739dfae7e7847fd1e4d4d3cb8447823b53a"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.6.0/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [tools.pitchfork."platforms.windows-x64"]
-checksum = "sha256:d3d88f4d1314597a3548c56204a7746bb248500209f2fd8721f87a00a1e0131d"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.3.0/pitchfork-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:0985e00aefae1a89b7c9bf372d8346199f77be89508fd68661c88f65eccb63bb"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.6.0/pitchfork-x86_64-pc-windows-msvc.zip"
 
 [[tools.pnpm]]
 version = "10.33.0"
@@ -4498,7 +4498,7 @@ checksum = "sha256:9aba23a5d549695cfb5f034849e143205ccf972e5b5d42c24acd32e084d7a
 url = "https://github.com/jdx/usage/releases/download/v3.2.0/usage-x86_64-pc-windows-msvc.zip"
 
 [[tools.uv]]
-version = "0.11.5"
+version = "0.11.6"
 backend = "asdf:uv"
 
 [[tools.xh]]
