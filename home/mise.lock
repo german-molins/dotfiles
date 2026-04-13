@@ -3244,7 +3244,7 @@ url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-window
 provenance = "cosign"
 
 [[tools."devbox:imagemagick"]]
-version = "7.1.2-13"
+version = "7.1.2-17"
 backend = "devbox"
 
 [[tools.direnv]]
