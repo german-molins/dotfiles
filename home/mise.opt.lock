@@ -54,6 +54,7 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.101/linux-x64/claude"
 
 [tools.claude."platforms.macos-arm64"]
+checksum = "blake3:3ab65931f308916ac38a5a4b5f83eb077634ddbc2a67b618ec7ae3a89842cfe3"
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.101/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
