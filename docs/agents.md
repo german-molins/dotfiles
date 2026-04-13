@@ -135,6 +135,10 @@ with `/mode free`.
 
 [Claude Code](https://code.claude.com) is Anthropic's official CLI coding agent.
 
+### Plugins
+
+- [Superpowers](https://github.com/obra/superpowers): Complete software development workflow
+
 ### Configuration
 
 - **User Settings**: `~/.claude/settings.json` - defines MCP servers and user preferences
