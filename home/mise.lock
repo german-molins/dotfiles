@@ -1869,7 +1869,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1775995534-g3f79eb"
+version = "0.0.1776069373-g44b7c3"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2106,36 +2106,36 @@ checksum = "sha256:b16a51bf02f99a37ca738b8292292b549675175a285921606efef711854d6
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_windows_amd64.zip"
 
 [[tools.cargo-binstall]]
-version = "1.17.9"
+version = "1.18.0"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall."platforms.linux-arm64"]
-checksum = "sha256:89df253cc00a307209daee7648272bba4d8a342fce084d5922f6b3f4e4db0e25"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.9/cargo-binstall-aarch64-unknown-linux-musl.tgz"
+checksum = "sha256:a59b465665e3a4ce54d2039f858217b68b2d972cb6bd189995f56a76f43418fd"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.0/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-arm64-musl"]
-checksum = "sha256:89df253cc00a307209daee7648272bba4d8a342fce084d5922f6b3f4e4db0e25"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.9/cargo-binstall-aarch64-unknown-linux-musl.tgz"
+checksum = "sha256:a59b465665e3a4ce54d2039f858217b68b2d972cb6bd189995f56a76f43418fd"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.0/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-x64"]
-checksum = "sha256:bdea3fd820b118576316bf69c8240f454857287717809e6ecef010faace901ff"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.9/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+checksum = "sha256:7ca2de024161eb95b0207475e931cca7ffa8aae1567811b2dc5e18581f2fe216"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.0/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-x64-musl"]
-checksum = "sha256:bdea3fd820b118576316bf69c8240f454857287717809e6ecef010faace901ff"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.9/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+checksum = "sha256:7ca2de024161eb95b0207475e931cca7ffa8aae1567811b2dc5e18581f2fe216"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.0/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.macos-arm64"]
-checksum = "sha256:021d537caa2071bbcd8ec50b210ea45af68a6983cca7780918b3603ef68d2585"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.9/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "sha256:2e5196f9039089f7df6f20443ce430fd91c3795725911fcc59847ea8cccb6b3d"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.0/cargo-binstall-aarch64-apple-darwin.zip"
 
 [tools.cargo-binstall."platforms.macos-x64"]
-checksum = "sha256:1d4fbd74c15274a029dd92e19a0ead8e1831b6e6b60f0f5c3690ef517022c41c"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.9/cargo-binstall-x86_64-apple-darwin.zip"
+checksum = "sha256:f6014ff3c1fd2c2a744005b370ee3e271ef7d2b7d5c68fa49da17d66de3d714d"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.0/cargo-binstall-x86_64-apple-darwin.zip"
 
 [tools.cargo-binstall."platforms.windows-x64"]
-checksum = "sha256:d17b413a19592af2cf57f9f742d49bef8837099e1407d73e79de5bc7834c4fd6"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.17.9/cargo-binstall-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:0458444c42221fd6d89785ea438cab9bedebdfe93425f0ea31e6bb53b7b9db9f"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.0/cargo-binstall-x86_64-pc-windows-msvc.zip"
 
 [[tools."cargo:diffutils"]]
 version = "0.5.0"
@@ -2186,7 +2186,7 @@ checksum = "sha256:dfd54ea02f4290dd7d072c2c932efcbdbe3af01035f22315986654711c6d9
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_windows_amd64.zip"
 
 [[tools.codebuff]]
-version = "1.0.640"
+version = "1.0.641"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -3792,43 +3792,43 @@ url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272864"
 
 [[tools."github:tstack/lnav"]]
-version = "0.13.2"
+version = "0.14.0"
 backend = "github:tstack/lnav"
 
 [tools."github:tstack/lnav"."platforms.linux-arm64"]
-checksum = "sha256:3ea79a910fc642126625ea92484becbf4aaf4cc24e0feaf2822c4481d4fddfa0"
-url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-linux-musl-arm64.zip"
-url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294788677"
+checksum = "sha256:027e9f540567cd0e9ba00335ab9be0275a414b14608e10d49dc2d6a2633aa546"
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-arm64.zip"
+url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881009"
 
 [tools."github:tstack/lnav"."platforms.linux-arm64-musl"]
-checksum = "sha256:3ea79a910fc642126625ea92484becbf4aaf4cc24e0feaf2822c4481d4fddfa0"
-url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-linux-musl-arm64.zip"
-url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294788677"
+checksum = "sha256:027e9f540567cd0e9ba00335ab9be0275a414b14608e10d49dc2d6a2633aa546"
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-arm64.zip"
+url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881009"
 
 [tools."github:tstack/lnav"."platforms.linux-x64"]
-checksum = "sha256:95ad9b72e2fb437db788682658d84fd2a42f1e615f006904dec3b217aa05d876"
-url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-linux-musl-x86_64.zip"
-url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294788939"
+checksum = "sha256:9d146d1da2af005a77920afff5da96d2ae0771ee25450b0954b27de95e7f0f57"
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-x86_64.zip"
+url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881335"
 
 [tools."github:tstack/lnav"."platforms.linux-x64-musl"]
-checksum = "sha256:95ad9b72e2fb437db788682658d84fd2a42f1e615f006904dec3b217aa05d876"
-url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-linux-musl-x86_64.zip"
-url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294788939"
+checksum = "sha256:9d146d1da2af005a77920afff5da96d2ae0771ee25450b0954b27de95e7f0f57"
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-x86_64.zip"
+url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881335"
 
 [tools."github:tstack/lnav"."platforms.macos-arm64"]
-checksum = "sha256:493f4050fd5a6e29682e13080db4910cc4632cebeab1444f7a89cf70c5569bb0"
-url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-aarch64-macos.zip"
-url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294787158"
+checksum = "sha256:f282d567e1bdb2c3e54d9502671b8011c0d4e3700b2616cf72778602f8ee0371"
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-aarch64-macos.zip"
+url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394875547"
 
 [tools."github:tstack/lnav"."platforms.macos-x64"]
-checksum = "sha256:fdd9a65b8b8ff80eb053fbedc177a3eee736a37e287de47112f76b3b0f4e37f9"
-url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-x86_64-macos.zip"
-url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294792058"
+checksum = "sha256:ee434b40acc8ed40ff7f12219245707518953ba13734a19151d9373eef83895b"
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0.tar.bz2"
+url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394872592"
 
 [tools."github:tstack/lnav"."platforms.windows-x64"]
-checksum = "sha256:5d0e1a4b4f8ac00093e91749db20972780b2b874cde51640040ce65528923c31"
-url = "https://github.com/tstack/lnav/releases/download/v0.13.2/lnav-0.13.2-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/294791140"
+checksum = "sha256:62e35078b0ba6ff94cb38a3e31df0197b372a96e3e516a0bfc740061729be023"
+url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-windows-x86_64.zip"
+url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394884727"
 
 [[tools.glab]]
 version = "1.92.1"
@@ -4126,7 +4126,7 @@ checksum = "sha256:929552b8305effac843ba7b4270c437aefb702fc3fbd73fcd1bffd35d4ac2
 url = "https://nodejs.org/dist/v25.9.0/node-v25.9.0-win-x64.zip"
 
 [[tools."npm:ctx7"]]
-version = "0.3.11"
+version = "0.3.12"
 backend = "npm:ctx7"
 
 [[tools."npm:playbooks"]]
