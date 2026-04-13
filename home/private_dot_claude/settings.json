@@ -3,13 +3,20 @@
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": false,
     "beads@beads-marketplace": false,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true,
+    "caveman@caveman": true
   },
   "extraKnownMarketplaces": {
     "superpowers-marketplace": {
       "source": {
         "source": "github",
         "repo": "obra/superpowers-marketplace"
+      }
+    },
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
       }
     }
   },

@@ -137,7 +137,9 @@ with `/mode free`.
 
 ### Plugins
 
-- [Superpowers](https://github.com/obra/superpowers): Complete software development workflow
+- [Superpowers](https://github.com/obra/superpowers): Complete software
+development workflow
+- [Caveman](https://github.com/JuliusBrussee/caveman)
 
 ### Configuration
 
