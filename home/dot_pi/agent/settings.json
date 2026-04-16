@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.64.0",
+  "lastChangelogVersion": "0.67.3",
   "theme": "dark",
   "packages": [
     "npm:@codexstar/pi-listen"
