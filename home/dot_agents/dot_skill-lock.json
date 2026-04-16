@@ -45,6 +45,15 @@
       "skillFolderHash": "ccd99a8580519fa9e65dcea938e92cb1c3a2f7a4",
       "installedAt": "2026-03-23T17:10:18.668Z",
       "updatedAt": "2026-03-27T15:04:51.502Z"
+    },
+    "gh-cli": {
+      "source": "tenequm/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/tenequm/skills.git",
+      "skillPath": "skills/gh-cli/SKILL.md",
+      "skillFolderHash": "075febd3569466db9242286d3136a36812ec0d7f",
+      "installedAt": "2026-04-15T09:05:48.935Z",
+      "updatedAt": "2026-04-15T09:05:48.935Z"
     }
   },
   "dismissed": {
