@@ -2893,14 +2893,6 @@ conda_deps = [
     "libzlib-1.3.2-hdc9db2a_2",
 ]
 
-[tools."conda:grep"."platforms.linux-x64"]
-checksum = "sha256:0891ab53fa987a8264a84894303ec848d35d33c8b2b7de83e81aadf4c3999536"
-url = "https://conda.anaconda.org/conda-forge/linux-64/grep-3.12-hbe4e646_1.conda"
-
-[tools."conda:grep"."platforms.linux-x64-musl"]
-checksum = "sha256:0891ab53fa987a8264a84894303ec848d35d33c8b2b7de83e81aadf4c3999536"
-url = "https://conda.anaconda.org/conda-forge/linux-64/grep-3.12-hbe4e646_1.conda"
-
 [tools."conda:grep"."platforms.macos-arm64"]
 checksum = "sha256:4da07e43785c18bbeb331913cd46ed0db6a5d0f8c629a1633e093444dcf17388"
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/grep-3.12-h8dcd326_1.conda"
@@ -2926,22 +2918,6 @@ conda_deps = [
 [[tools."conda:resvg"]]
 version = "0.47.0"
 backend = "conda:resvg"
-
-[tools."conda:resvg"."platforms.linux-arm64"]
-checksum = "sha256:48cf2747cd2bd33cd6a9063fb0f4cd51ace63ce83ecb64642ed88acd6ab62a2f"
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/resvg-0.47.0-h1ebd7d5_0.conda"
-
-[tools."conda:resvg"."platforms.linux-arm64-musl"]
-checksum = "sha256:48cf2747cd2bd33cd6a9063fb0f4cd51ace63ce83ecb64642ed88acd6ab62a2f"
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/resvg-0.47.0-h1ebd7d5_0.conda"
-
-[tools."conda:resvg"."platforms.linux-x64"]
-checksum = "sha256:1223401ae2af67015e4d29d3fce863113e8df13afb2a5604d978607c93c10b98"
-url = "https://conda.anaconda.org/conda-forge/linux-64/resvg-0.47.0-hdab8a38_0.conda"
-
-[tools."conda:resvg"."platforms.linux-x64-musl"]
-checksum = "sha256:1223401ae2af67015e4d29d3fce863113e8df13afb2a5604d978607c93c10b98"
-url = "https://conda.anaconda.org/conda-forge/linux-64/resvg-0.47.0-hdab8a38_0.conda"
 
 [tools."conda:resvg"."platforms.macos-arm64"]
 checksum = "sha256:ef311b0d63c2ae1043e1b13840b2dfc4444474abe58025ec4b7472da1555042d"
@@ -3003,14 +2979,6 @@ conda_deps = [
     "ca-certificates-2026.2.25-hbd8a1cb_0",
 ]
 
-[tools."conda:rsync"."platforms.linux-x64"]
-checksum = "sha256:e5afc1a2f018e1092abdfe0edc73971849e30b57a65abc41cb48c41c1c35a52a"
-url = "https://conda.anaconda.org/conda-forge/linux-64/rsync-3.4.1-h078a6ae_3.conda"
-
-[tools."conda:rsync"."platforms.linux-x64-musl"]
-checksum = "sha256:e5afc1a2f018e1092abdfe0edc73971849e30b57a65abc41cb48c41c1c35a52a"
-url = "https://conda.anaconda.org/conda-forge/linux-64/rsync-3.4.1-h078a6ae_3.conda"
-
 [tools."conda:rsync"."platforms.macos-arm64"]
 checksum = "sha256:212d213e0faf9f57f8c3a3957d4160345a764bd3e566743958b13d95debf0322"
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/rsync-3.4.1-h6a2b517_3.conda"
@@ -3062,14 +3030,6 @@ conda_deps = [
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-15.2.0-h8acb6b2_18",
 ]
-
-[tools."conda:sed"."platforms.linux-x64"]
-checksum = "sha256:ee826aa0c6157d4a947722b1205964482ff8e88136bd3161864f8cefdca85b5b"
-url = "https://conda.anaconda.org/conda-forge/linux-64/sed-4.9-h6688a6e_0.conda"
-
-[tools."conda:sed"."platforms.linux-x64-musl"]
-checksum = "sha256:ee826aa0c6157d4a947722b1205964482ff8e88136bd3161864f8cefdca85b5b"
-url = "https://conda.anaconda.org/conda-forge/linux-64/sed-4.9-h6688a6e_0.conda"
 
 [tools."conda:sed"."platforms.macos-arm64"]
 checksum = "sha256:8c95129762d26d5e0c1513d5ff0c79cd436357da96aa2a23b1d21a4da847beed"
@@ -4459,7 +4419,6 @@ url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-aarch6
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004682"
 
 [tools.upt."platforms.linux-x64"]
-checksum = "blake3:9a66b2f132329974733de3e9625d84c361586a41d25f4dc08255b383bf2973f7"
 url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004690"
 
