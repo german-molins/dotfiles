@@ -1869,7 +1869,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1776319575-g26c751"
+version = "0.0.1776405786-g16bcf9"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1969,37 +1969,37 @@ checksum = "sha256:59b800070840de9e47e9f7991ea6c8b15638266882f624cd20299344609db
 url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-windows-x86_64.tar.gz"
 
 [[tools.atuin]]
-version = "18.15.1"
+version = "18.15.2"
 backend = "aqua:atuinsh/atuin"
 
 [tools.atuin."platforms.linux-arm64"]
-checksum = "sha256:b7c203455553927442881f364a8c9ba5d27c1869b0671fe1b236be09b11aba52"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:fe28ceb65bf382f987634d5cafc12f2fd323d4f4d0cafc765e0d111815799e87"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.2/atuin-aarch64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-arm64-musl"]
-checksum = "sha256:b7c203455553927442881f364a8c9ba5d27c1869b0671fe1b236be09b11aba52"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:fe28ceb65bf382f987634d5cafc12f2fd323d4f4d0cafc765e0d111815799e87"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.2/atuin-aarch64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-x64"]
-checksum = "sha256:454bd558795c8072d5eb50cc0ea667adaa876a1cba600305f88618f7041d4a1d"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:84c76ad3e61cb0a3cdbdcc768374d4bcc400e4a8f376d1302c37059d0d9affb1"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.2/atuin-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-x64-musl"]
-checksum = "sha256:454bd558795c8072d5eb50cc0ea667adaa876a1cba600305f88618f7041d4a1d"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:84c76ad3e61cb0a3cdbdcc768374d4bcc400e4a8f376d1302c37059d0d9affb1"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.2/atuin-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.macos-arm64"]
-checksum = "sha256:f0377e667dead37d627d946581284dde7ff094955bd858df88223ec2e4b21086"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:d73608ade168b24a29ddfed119896eb95ff7f5addcd01cab3bfff3c93deeeee1"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.2/atuin-aarch64-apple-darwin.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.windows-x64"]
-checksum = "sha256:342bf71e411557f79fb5c4374a3c2a9b91a32b112f5b611244588494f1eaf2b7"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:24e0586a5ab477aa7154fb297786c4c9ab4dd1a9d6a873d88692b6e8f981ded7"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.2/atuin-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
 
 [[tools.bat]]
@@ -2154,36 +2154,36 @@ version = "1.13.0"
 backend = "cargo:tlrc"
 
 [[tools.chezmoi]]
-version = "2.70.1"
+version = "2.70.2"
 backend = "aqua:twpayne/chezmoi"
 
 [tools.chezmoi."platforms.linux-arm64"]
-checksum = "sha256:7f8307cef8aade159cdee372a10871a606a50c6239284c0860fb463a174faba0"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_linux_arm64.tar.gz"
+checksum = "sha256:99e402af70f457dbf3ad545f62f78892375f2d9361db1c9c354e6d924a3b4fae"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_linux_arm64.tar.gz"
 
 [tools.chezmoi."platforms.linux-arm64-musl"]
-checksum = "sha256:7f8307cef8aade159cdee372a10871a606a50c6239284c0860fb463a174faba0"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_linux_arm64.tar.gz"
+checksum = "sha256:99e402af70f457dbf3ad545f62f78892375f2d9361db1c9c354e6d924a3b4fae"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_linux_arm64.tar.gz"
 
 [tools.chezmoi."platforms.linux-x64"]
-checksum = "sha256:3bd054238e2a95548eee62a6c5b4d9d1352f2c6c69c6d32f3d1964878398f91a"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_linux_amd64.tar.gz"
+checksum = "sha256:dda79928bf8428c1bb3d48497be00237a6ecc95a2bef7ded573608436ec7270b"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_linux_amd64.tar.gz"
 
 [tools.chezmoi."platforms.linux-x64-musl"]
-checksum = "sha256:3bd054238e2a95548eee62a6c5b4d9d1352f2c6c69c6d32f3d1964878398f91a"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_linux_amd64.tar.gz"
+checksum = "sha256:dda79928bf8428c1bb3d48497be00237a6ecc95a2bef7ded573608436ec7270b"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_linux_amd64.tar.gz"
 
 [tools.chezmoi."platforms.macos-arm64"]
-checksum = "sha256:814fd391b755046d9dbe17c1a7e93d7dd725b2842bf9663c08645771f4a92cf1"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_darwin_arm64.tar.gz"
+checksum = "sha256:30dd21291a9d623fd334d83d97313660beea86f0053f483a30dbbb7a0d5b78ba"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_darwin_arm64.tar.gz"
 
 [tools.chezmoi."platforms.macos-x64"]
-checksum = "sha256:36b9b41dd88485afd30c7940398edef3b4757c19e36689f9324012391ea7dbff"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_darwin_amd64.tar.gz"
+checksum = "sha256:e421d3941db71242350afe5759e2cc12036b3edc14b9370b51df9109f4065ac5"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_darwin_amd64.tar.gz"
 
 [tools.chezmoi."platforms.windows-x64"]
-checksum = "sha256:dfd54ea02f4290dd7d072c2c932efcbdbe3af01035f22315986654711c6d97bd"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_windows_amd64.zip"
+checksum = "sha256:0dec4f62a04c203da809c670b11c4271315ba1dc3f5d5571883c9d7a6f45bec6"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_windows_amd64.zip"
 
 [[tools.codebuff]]
 version = "1.0.641"
@@ -3608,42 +3608,42 @@ checksum = "sha256:15bf30fa658c596d740f0ce9a9a97b6b5d90566124903657d09fd109dd097
 url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-windows_amd64.zip"
 
 [[tools.gh]]
-version = "2.89.0"
+version = "2.90.0"
 backend = "aqua:cli/cli"
 
 [tools.gh."platforms.linux-arm64"]
-checksum = "sha256:9e64a623dfc242990aa5d9b3f507111149c4282f66b68eaad1dc79eeb13b9ce5"
-url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_arm64.tar.gz"
+checksum = "sha256:1139e1ad912fcddb5ef4b957530184c2c30d9937ff65ff4e641fbf6ca5f28c7c"
+url = "https://github.com/cli/cli/releases/download/v2.90.0/gh_2.90.0_linux_arm64.tar.gz"
 provenance = "github-attestations"
 
 [tools.gh."platforms.linux-arm64-musl"]
-checksum = "sha256:9e64a623dfc242990aa5d9b3f507111149c4282f66b68eaad1dc79eeb13b9ce5"
-url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_arm64.tar.gz"
+checksum = "sha256:1139e1ad912fcddb5ef4b957530184c2c30d9937ff65ff4e641fbf6ca5f28c7c"
+url = "https://github.com/cli/cli/releases/download/v2.90.0/gh_2.90.0_linux_arm64.tar.gz"
 provenance = "github-attestations"
 
 [tools.gh."platforms.linux-x64"]
-checksum = "sha256:d0422caade520530e76c1c558da47daebaa8e1203d6b7ff10ad7d6faba3490d8"
-url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_amd64.tar.gz"
+checksum = "sha256:b2aef7b23ec6899bf27f37a32c57a7935d0a178568ac33dc9bb03842f724195a"
+url = "https://github.com/cli/cli/releases/download/v2.90.0/gh_2.90.0_linux_amd64.tar.gz"
 provenance = "github-attestations"
 
 [tools.gh."platforms.linux-x64-musl"]
-checksum = "sha256:d0422caade520530e76c1c558da47daebaa8e1203d6b7ff10ad7d6faba3490d8"
-url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_linux_amd64.tar.gz"
+checksum = "sha256:b2aef7b23ec6899bf27f37a32c57a7935d0a178568ac33dc9bb03842f724195a"
+url = "https://github.com/cli/cli/releases/download/v2.90.0/gh_2.90.0_linux_amd64.tar.gz"
 provenance = "github-attestations"
 
 [tools.gh."platforms.macos-arm64"]
-checksum = "sha256:2423d02ec0a2094898c378703a1b28a5846c08700f87461363857cb8cb3fda94"
-url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_macOS_arm64.zip"
+checksum = "sha256:82a6acdc3f445dc316b70e1bc15b9b7c4b4e26fd30b04de461a7829ad6c6e97f"
+url = "https://github.com/cli/cli/releases/download/v2.90.0/gh_2.90.0_macOS_arm64.zip"
 provenance = "github-attestations"
 
 [tools.gh."platforms.macos-x64"]
-checksum = "sha256:862e21cac6a71f81e7cd6e5127e3cd344f8537441ad2db94cd208319dd17b6e9"
-url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_macOS_amd64.zip"
+checksum = "sha256:e44d23dd5f0f8534d7a9989177f2c60ac8ffbcdfc6a0a6e5d1f23c4a3b83a9e0"
+url = "https://github.com/cli/cli/releases/download/v2.90.0/gh_2.90.0_macOS_amd64.zip"
 provenance = "github-attestations"
 
 [tools.gh."platforms.windows-x64"]
-checksum = "sha256:f3326f6406c98c99701b257d77e2b040eedf83d0176c2c2e9809aa339ceb467e"
-url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_windows_amd64.zip"
+checksum = "sha256:73fcae688eb64ae67828536c9be90db1e5be3f11691a6fa1c1e5418fd24ee10b"
+url = "https://github.com/cli/cli/releases/download/v2.90.0/gh_2.90.0_windows_amd64.zip"
 provenance = "github-attestations"
 
 [[tools."github:dalance/procs"]]
@@ -4138,36 +4138,36 @@ version = "1.5.0"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.4.6"
+version = "1.4.7"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:4cbab9cf91280b9443daa27e54bcb8a030ef579857ef2cdd3a8e6521422c3d0d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.6/opencode-linux-arm64.tar.gz"
+checksum = "sha256:17e358932f603fd3e028c57dd73483f387e63276aef5dac6ffb7dc29b8ab2fa1"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.7/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:4cbab9cf91280b9443daa27e54bcb8a030ef579857ef2cdd3a8e6521422c3d0d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.6/opencode-linux-arm64.tar.gz"
+checksum = "sha256:17e358932f603fd3e028c57dd73483f387e63276aef5dac6ffb7dc29b8ab2fa1"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.7/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:8ebadcc751be642208257d3de4e4574199ab66e8ebe3f9983e63d784896afc26"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.6/opencode-linux-x64.tar.gz"
+checksum = "sha256:57aaa94595f5074dccada1713f53a0a055e720a4a34aa93026e62cd869e50b6a"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.7/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:8ebadcc751be642208257d3de4e4574199ab66e8ebe3f9983e63d784896afc26"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.6/opencode-linux-x64.tar.gz"
+checksum = "sha256:57aaa94595f5074dccada1713f53a0a055e720a4a34aa93026e62cd869e50b6a"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.7/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:16d781944994eaa98a1037b2c367a4ffb9133ae449b15c48984f339ea2c782a5"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.6/opencode-darwin-arm64.zip"
+checksum = "sha256:ad8fb2c86e7d538e3dd9d8ae079a7f215d944655ee7d9dbe6b75b135a53176de"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.7/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:963a0edd24dee19d7af0db88fc9cfd2675d33e6fd20d0046aa52d5aebe724361"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.6/opencode-darwin-x64.zip"
+checksum = "sha256:ca99fb3e108cc5415ba14c05a31fb44ab5b18eeeb31956c6c77f56b956596c99"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.7/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:822a7d31af7cca972801213583bdb3033fdaa508c530c25fa39b7e04979d2da5"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.6/opencode-windows-x64.zip"
+checksum = "sha256:626e0d01d8c551709e67a089352a8f2d9cbe82300cd36ae1bce614d0cd5bbd09"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.7/opencode-windows-x64.zip"
 
 [[tools.pandoc]]
 version = "3.9.0.2"
