@@ -55,8 +55,8 @@ Mise:
 
 Some packages may need to remain in Devbox due to platform limitations:
 
-- `eza`, `aichat`, and `pnpm` are examples of packages not available for macOS
-in the Mise registry
+- `eza` is an example of a package not available for macOS in the Mise
+registry.
 
 Devbox scripts can be migrated to Mise tasks by:
 

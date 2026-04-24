@@ -32,8 +32,7 @@ Their priority order is:
 2. `devbox`: Fallback for dependencies not found in `mise` registry
    (deprecated). Nixhub, the Devbox's registry, is way larger than any other,
 so it's kept as a fallback option for packages not available in Mise,
-particularly for macOS (darwin) where some packages like `eza`, `aichat`, and
-`pnpm` are not supported by the Mise backends.
+particularly for macOS (darwin) where some packages like `eza` are not supported by the Mise backends.
 3. `brew` and `nix`: Used to install some user-level dependencies.
    Bootstrapping them requires sudo permissions, but once installed, the user
 can use them to install packages without sudo.
@@ -127,9 +126,7 @@ mise run
 ## Devbox
 
 `devbox` is now deprecated but kept as a fallback for packages not available in
-the Mise registry, particularly for macOS (darwin) where some packages like
-`eza`, `aichat`, and `pnpm` are not available for macOS in the Mise registry
-backends.
+the Mise registry, particularly for macOS (darwin).
 
 ### Devbox Global Environment
 
