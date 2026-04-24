@@ -1,0 +1,1 @@
+eval "$(aube completion bash)"
