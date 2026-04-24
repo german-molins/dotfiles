@@ -1,4 +1,5 @@
 [tools]
+aube = "latest"
 bun = "latest"
 jj = "latest"
 jq = "latest"
