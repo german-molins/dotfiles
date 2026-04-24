@@ -5,9 +5,6 @@ jj = "latest"
 jq = "latest"
 yq = "latest"
 
-[deps.bun]
-auto = true
-
 [tasks.generate]
 alias = ["gen", "g"]
 depends = ["docs:generate", "mise:generate-docs", "coreutils:generate"]
@@ -29,6 +26,3 @@ alias = "mise:update-docs"
 run = """
 mise generate task-docs --cd "$HOME" >docs/mise_global_tasks.md
 """
-
-[settings]
-experimental = true
