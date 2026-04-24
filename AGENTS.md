@@ -2,10 +2,10 @@
 
 ## Build/Test/Lint Commands
 
-- **Documentation dev server**: `mise docs:dev` or `bun run docs:dev`
-- **Build documentation**: `mise docs:build` or `bun run docs:build`
+- **Documentation dev server**: `mise docs:dev` or `aube run docs:dev`
+- **Build documentation**: `mise docs:build` or `aube run docs:build`
 - **Generate docs**: `mise docs:generate` (generates both mise and devbox docs)
-- **Preview built docs**: `bun run docs:preview`
+- **Preview built docs**: `aube run docs:preview`
 - **Check health**: `mise check-health` (system health checks)
 
 ## Architecture & Structure

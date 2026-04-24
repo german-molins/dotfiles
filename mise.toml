@@ -14,11 +14,11 @@ depends = ["docs:generate", "mise:generate-docs", "coreutils:generate"]
 
 [tasks."docs:dev"]
 alias = "docs:b"
-run = "bun run docs:dev"
+run = "aube run docs:dev"
 
 [tasks."docs:build"]
 alias = "docs:b"
-run = "bun run docs:build"
+run = "aube run docs:build"
 
 [tasks."docs:generate"]
 alias = ["docs:g", "docs:update", "docs:up"]
