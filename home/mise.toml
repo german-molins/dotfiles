@@ -73,6 +73,7 @@ atuin = "latest"
 python = "latest"
 sd = "latest"
 tmux = "latest"
+aube = "latest"
 
 [settings]
 experimental = true
