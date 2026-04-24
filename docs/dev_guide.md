@@ -2,10 +2,11 @@
 
 ## Documentation
 
-Stack used to build this static site:
+JS stack used to build this static site:
 
+- Runtime: [Bun](https://bun.com/)
+- Package manager: [Aube](https://aube.en.dev/)
 - Framework: [VitePress](https://vitepress.dev/)
-- Build runtime: [Bun](https://bun.com/)
 
 ## Devpod
 
