@@ -4,7 +4,7 @@ jj = "latest"
 jq = "latest"
 yq = "latest"
 
-[prepare.bun]
+[deps.bun]
 auto = true
 
 [tasks.generate]

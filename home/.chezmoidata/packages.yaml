@@ -1,7 +1,7 @@
 packages:
   bootstrap:
     mise:
-      version: v2026.4.16
+      version: v2026.4.20
   upt:
     - zsh
   homebrew:
