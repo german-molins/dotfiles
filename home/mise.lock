@@ -2020,6 +2020,7 @@ url_api = "https://api.github.com/repos/endevco/aube/releases/assets/404655144"
 checksum = "sha256:7ba3551a7b63f82d9aa4734791db66167b3905e940e749db297372422c82933a"
 url = "https://github.com/endevco/aube/releases/download/v1.1.0/aube-v1.1.0-x86_64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/endevco/aube/releases/assets/404654853"
+provenance = "github-attestations"
 
 [tools.aube."platforms.linux-x64-musl"]
 checksum = "sha256:447f14e9edad5f212ad029758c5ea416437d225592ca8d716b8d1933b020cf4c"
