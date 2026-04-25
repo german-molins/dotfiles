@@ -1,5 +1,9 @@
 {
   "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh"
+  },
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": false,
     "beads@beads-marketplace": false,
@@ -21,8 +25,5 @@
     }
   },
   "alwaysThinkingEnabled": true,
-  "statusLine": {
-    "type": "command",
-    "command": "bash ~/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh"
-  }
+  "effortLevel": "medium"
 }
