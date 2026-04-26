@@ -1869,7 +1869,7 @@ url = "https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-h534d264_6.conda
 checksum = "sha256:368d8628424966fd8f9c8018326a9c779e06913dd39e646cf331226acc90e5b2"
 
 [[tools.amp]]
-version = "0.0.1777147716-gff4795"
+version = "0.0.1777234127-g973bfa"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -3616,36 +3616,36 @@ checksum = "sha256:b2816e506390a89941c63c9187d58a3cc10e9a55f2ef0685f9ea0eccaf7c9
 url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-pc-windows-msvc.zip"
 
 [[tools.fzf]]
-version = "0.71.0"
+version = "0.72.0"
 backend = "aqua:junegunn/fzf"
 
 [tools.fzf."platforms.linux-arm64"]
-checksum = "sha256:98b7d322efae9c37e4bfbbab1cbcd8722eb742d9399511f96375feb40cc35d1d"
-url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-linux_arm64.tar.gz"
+checksum = "sha256:a0a5b50730f568c5f08b8dbba1e6e598db253e1856d371290086786b889b996b"
+url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-linux_arm64.tar.gz"
 
 [tools.fzf."platforms.linux-arm64-musl"]
-checksum = "sha256:98b7d322efae9c37e4bfbbab1cbcd8722eb742d9399511f96375feb40cc35d1d"
-url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-linux_arm64.tar.gz"
+checksum = "sha256:a0a5b50730f568c5f08b8dbba1e6e598db253e1856d371290086786b889b996b"
+url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-linux_arm64.tar.gz"
 
 [tools.fzf."platforms.linux-x64"]
-checksum = "sha256:22639bb38489dbca8acef57850cbb50231ab714d0e8e855ac52fae8b41233df4"
-url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-linux_amd64.tar.gz"
+checksum = "sha256:0e58e4bd0b3c5d68c56b54c460a6863d0de79633ed18d388575a960ab447b006"
+url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-linux_amd64.tar.gz"
 
 [tools.fzf."platforms.linux-x64-musl"]
-checksum = "sha256:22639bb38489dbca8acef57850cbb50231ab714d0e8e855ac52fae8b41233df4"
-url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-linux_amd64.tar.gz"
+checksum = "sha256:0e58e4bd0b3c5d68c56b54c460a6863d0de79633ed18d388575a960ab447b006"
+url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-linux_amd64.tar.gz"
 
 [tools.fzf."platforms.macos-arm64"]
-checksum = "sha256:02dfb11de8773cb79aa4fc5bfc77e75c6604ee14728bc849fc162dd91a9714c4"
-url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-darwin_arm64.tar.gz"
+checksum = "sha256:4cbf87e8e8a342614c1e3e74670ceb18c2af998c4d4d0c379cfee9b520774e90"
+url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-darwin_arm64.tar.gz"
 
 [tools.fzf."platforms.macos-x64"]
-checksum = "sha256:144e98ee6bcffaf915366162768000561cd2db8fb53b119d73110391a8e5b5f0"
-url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-darwin_amd64.tar.gz"
+checksum = "sha256:561c9db95cc1f75c8ad7e1d4461b2da0c8461189041f610ff1205f6303b84634"
+url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-darwin_amd64.tar.gz"
 
 [tools.fzf."platforms.windows-x64"]
-checksum = "sha256:15bf30fa658c596d740f0ce9a9a97b6b5d90566124903657d09fd109dd0973d2"
-url = "https://github.com/junegunn/fzf/releases/download/v0.71.0/fzf-0.71.0-windows_amd64.zip"
+checksum = "sha256:cce66ae7e442030334927bfbfd917690713e63d215aba93027f99807828fe239"
+url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-windows_amd64.zip"
 
 [[tools.gh]]
 version = "2.91.0"
@@ -3942,36 +3942,36 @@ checksum = "sha256:63922bd257f9616553dec0869e2de99c1c0bf8d951c774d230af09eaeb2f5
 url = "https://github.com/jj-vcs/jj/releases/download/v0.40.0/jj-v0.40.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.jjui]]
-version = "0.10.3"
+version = "0.10.4"
 backend = "aqua:idursun/jjui"
 
 [tools.jjui."platforms.linux-arm64"]
-checksum = "sha256:e4073cdee94f8247eb01e0c8d628e488dcf776ac89734a08599a500daf3c7b53"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.3/jjui-0.10.3-linux-arm64.zip"
+checksum = "sha256:34ff750e2525e6a34f199e507ecec93c8e2d2a2019c707591be4cabe7b40bd2d"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.4/jjui-0.10.4-linux-arm64.zip"
 
 [tools.jjui."platforms.linux-arm64-musl"]
-checksum = "sha256:e4073cdee94f8247eb01e0c8d628e488dcf776ac89734a08599a500daf3c7b53"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.3/jjui-0.10.3-linux-arm64.zip"
+checksum = "sha256:34ff750e2525e6a34f199e507ecec93c8e2d2a2019c707591be4cabe7b40bd2d"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.4/jjui-0.10.4-linux-arm64.zip"
 
 [tools.jjui."platforms.linux-x64"]
-checksum = "sha256:9d5487bce8ce1d6b8c63b36f89f1ed3602dca637e856f8dc8ec7b1dffcea066e"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.3/jjui-0.10.3-linux-amd64.zip"
+checksum = "sha256:9dbcfd624e9ec59d69d156c9d1d5c4da2a0f55c6c95dfec7f4ef7de2c8abd1a1"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.4/jjui-0.10.4-linux-amd64.zip"
 
 [tools.jjui."platforms.linux-x64-musl"]
-checksum = "sha256:9d5487bce8ce1d6b8c63b36f89f1ed3602dca637e856f8dc8ec7b1dffcea066e"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.3/jjui-0.10.3-linux-amd64.zip"
+checksum = "sha256:9dbcfd624e9ec59d69d156c9d1d5c4da2a0f55c6c95dfec7f4ef7de2c8abd1a1"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.4/jjui-0.10.4-linux-amd64.zip"
 
 [tools.jjui."platforms.macos-arm64"]
-checksum = "sha256:c9325283bbdcfab8e6b4e2dbdc93174ac6c30f50f71b161909d251dc3b8b0c5e"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.3/jjui-0.10.3-darwin-arm64.zip"
+checksum = "sha256:2c1df5a3ceeb77404b15e9e9148d95d85ef041ff7c8aec473713878747455b08"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.4/jjui-0.10.4-darwin-arm64.zip"
 
 [tools.jjui."platforms.macos-x64"]
-checksum = "sha256:db3b059aa33e52bc442da1eac647c7d8e7af75c01a4ce3bcce63e7e49fd9ca97"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.3/jjui-0.10.3-darwin-amd64.zip"
+checksum = "sha256:176c409f2ca22045532430318e2c138a8afff366f22c33b6c0df2348057adf31"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.4/jjui-0.10.4-darwin-amd64.zip"
 
 [tools.jjui."platforms.windows-x64"]
-checksum = "sha256:9cdc8bea5756e15dc4cc4b1ba7e7e0d21276bb2d55b1631fb549e290f2193c58"
-url = "https://github.com/idursun/jjui/releases/download/v0.10.3/jjui-0.10.3-windows-amd64.zip"
+checksum = "sha256:dd3930c4612ec1b5ce0e9ef846a22f8227dd0bc6d6d5b71c4a36d47c76552680"
+url = "https://github.com/idursun/jjui/releases/download/v0.10.4/jjui-0.10.4-windows-amd64.zip"
 
 [[tools.jq]]
 version = "1.8.1"
@@ -4253,32 +4253,32 @@ version = "3.2.4"
 backend = "pipx:httpie"
 
 [[tools.pitchfork]]
-version = "2.6.0"
+version = "2.7.0"
 backend = "aqua:jdx/pitchfork"
 
 [tools.pitchfork."platforms.linux-arm64"]
-checksum = "sha256:ca2545ac31176a2163a1f4b995bdae79a90d4002b080b080c44d579de1e3fd49"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.6.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:3748bafbf2ffc70b8edd10a026f32d432129f090faf5585e108b25be872802d8"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.7.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.linux-arm64-musl"]
-checksum = "sha256:ca2545ac31176a2163a1f4b995bdae79a90d4002b080b080c44d579de1e3fd49"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.6.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:3748bafbf2ffc70b8edd10a026f32d432129f090faf5585e108b25be872802d8"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.7.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.linux-x64"]
-checksum = "sha256:32b8af9a1a2d33468658207fffa29d2c43a525bfd4713860f88f24c3baa7a486"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.6.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:5b168f82086d09c6900c154716badd0021c6eac3718d026c20ced56d6cdb369c"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.7.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.linux-x64-musl"]
-checksum = "sha256:32b8af9a1a2d33468658207fffa29d2c43a525bfd4713860f88f24c3baa7a486"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.6.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:5b168f82086d09c6900c154716badd0021c6eac3718d026c20ced56d6cdb369c"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.7.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.macos-arm64"]
-checksum = "sha256:46c576534ea3c9f26547fe90cd49a739dfae7e7847fd1e4d4d3cb8447823b53a"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.6.0/pitchfork-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:981cc0eb6f2574f58644462b7d87484cd4a59f5028a75319ab97ea01fd7d821f"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.7.0/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [tools.pitchfork."platforms.windows-x64"]
-checksum = "sha256:0985e00aefae1a89b7c9bf372d8346199f77be89508fd68661c88f65eccb63bb"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.6.0/pitchfork-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:2f85133c470f01c3489736abb5651721eac338727305f67cceca6da91243b2a5"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.7.0/pitchfork-x86_64-pc-windows-msvc.zip"
 
 [[tools.python]]
 version = "3.14.4"
@@ -4352,7 +4352,7 @@ checksum = "sha256:124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d874
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.rust]]
-version = "1.94.1"
+version = "1.95.0"
 backend = "core:rust"
 
 [[tools.sd]]
