@@ -9,7 +9,7 @@ These are my daily CLI drivers:
 | Name | Commands | Aliases | Description |
 |------|---------|-------|-------------|
 | [Chezmoi](https://www.chezmoi.io/) | `chezmoi` | | Dotfiles manager |
-| [Mise](https://mise.jdx.dev/) | `mise` | | Global and project package manager |
+| [Mise](https://mise.en.dev/) | `mise` | | Global and project package manager |
 | [Devbox](https://www.jetpack.io/devbox/) | `devbox` | | Global and project package manager |
 | [UPT](https://github.com/sigoden/upt) | `upt` | `mise run upt` | Cross-platform system package manager|
 | [Kitty](https://sw.kovidgoyal.net/kitty/) | `kitty` | | Terminal emulator |
@@ -24,7 +24,7 @@ These are my daily CLI drivers:
 | [Neovim](https://neovim.io/) | `nvim` | | Text editor and IDE |
 | [bottom](https://github.com/ClementTsang/bottom) | `btm` | | System monitor |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker) | `lazydocker` | | Docker and docker-compose manager |
-| [Pitchfork](https://pitchfork.jdx.dev/) | `pitchfork` | | Daemons manager |
+| [Pitchfork](https://pitchfork.en.dev/) | `pitchfork` | | Daemons manager |
 | [Taskwarrior](https://taskwarrior.org/) | `task` | | Task manager |
 | [Timewarrior](https://timewarrior.net/) | `timew` | | Time manager |
 | [Zk](https://zk-org.github.io/zk/) | `zk` | | Notebook manager |
