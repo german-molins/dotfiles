@@ -1216,9 +1216,17 @@ checksum = "sha256:c3f5580e172c3fc03d33e8994024f08b709a239bd599792e51435fa7a06be
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libiconv-1.17-h0d3ecfb_2.conda"
 checksum = "sha256:bc7de5097b97bcafcf7deaaed505f7ce02f648aac8eccc0d5a47cc599a1d0304"
 
+[conda-packages.macos-arm64."libiconv-1.18-h23cfdf5_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libiconv-1.18-h23cfdf5_2.conda"
+checksum = "sha256:de0336e800b2af9a40bdd694b03870ac4a848161b35c8a2325704f123f185f03"
+
 [conda-packages.macos-arm64."libintl-0.22.5-h8fbad5d_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.22.5-h8fbad5d_2.conda"
 checksum = "sha256:21bc79bdf34ffd20cb84d2a8bd82d7d0e2a1b94b9e72773f0fb207e5b4f1ff63"
+
+[conda-packages.macos-arm64."libintl-0.25.1-h493aca8_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.25.1-h493aca8_0.conda"
+checksum = "sha256:99d2cebcd8f84961b86784451b010f5f0a795ed1c08f1e7c76fbb3c22abf021a"
 
 [conda-packages.macos-arm64."libsqlite-3.45.3-h091b4b1_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.45.3-h091b4b1_0.conda"
@@ -1424,9 +1432,17 @@ checksum = "sha256:139d1861e21c41b950ebf9e395db2492839337a3b481ad2901a4a6800c555
 url = "https://conda.anaconda.org/conda-forge/osx-64/libiconv-1.17-hd75f5a5_2.conda"
 checksum = "sha256:23d4923baeca359423a7347c2ed7aaf48c68603df0cf8b87cc94a10b0d4e9a23"
 
+[conda-packages.macos-x64."libiconv-1.18-h57a12c2_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libiconv-1.18-h57a12c2_2.conda"
+checksum = "sha256:a1c8cecdf9966921e13f0ae921309a1f415dfbd2b791f2117cf7e8f5e61a48b6"
+
 [conda-packages.macos-x64."libintl-0.22.5-h5ff76d1_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libintl-0.22.5-h5ff76d1_2.conda"
 checksum = "sha256:280aaef0ed84637ee869012ad9ad9ed208e068dd9b8cf010dafeea717dad7203"
+
+[conda-packages.macos-x64."libintl-0.25.1-h3184127_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libintl-0.25.1-h3184127_1.conda"
+checksum = "sha256:8c352744517bc62d24539d1ecc813b9fdc8a785c780197c5f0b84ec5b0dfe122"
 
 [conda-packages.macos-x64."libsqlite-3.45.3-h92b6c6a_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libsqlite-3.45.3-h92b6c6a_0.conda"
@@ -3005,6 +3021,22 @@ conda_deps = [
     "libgomp-15.2.0-he0feb66_18",
 ]
 
+[tools."conda:sed"."platforms.macos-arm64"]
+checksum = "sha256:28a7b25698cb20d4184d08fd4a84275b5f7522a0261d5de0037829d6a9b0f69d"
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/sed-4.10-h5c09db4_0.conda"
+conda_deps = [
+    "libintl-0.25.1-h493aca8_0",
+    "libiconv-1.18-h23cfdf5_2",
+]
+
+[tools."conda:sed"."platforms.macos-x64"]
+checksum = "sha256:82b9463d838f08fb89aa3b914ebc5b97313c4d6d9a2697fdb24c27403c0780f6"
+url = "https://conda.anaconda.org/conda-forge/osx-64/sed-4.10-hb63749c_0.conda"
+conda_deps = [
+    "libintl-0.25.1-h3184127_1",
+    "libiconv-1.18-h57a12c2_2",
+]
+
 [[tools."conda:tzdata"]]
 version = "2025b"
 backend = "conda:tzdata"
@@ -4172,7 +4204,7 @@ checksum = "sha256:124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d874
 url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.rust]]
-version = "1.95.0"
+version = "1.94.1"
 backend = "core:rust"
 
 [[tools.sd]]
