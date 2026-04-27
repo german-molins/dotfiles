@@ -16,6 +16,7 @@ These are my daily CLI drivers:
 | [Alacritty](https://alacritty.org/) | `alacritty` | | Terminal emulator |
 | [Bash](https://devdocs.io/bash/) | `bash` | | Interactive shell |
 | [Usage](https://usage.jdx.dev/) | `usage` | | Polyglot script CLI manager |
+| [Fnox](https://fnox.jdx.dev/) | `fnox` | | Secret manager |
 | [Zellij](https://zellij.dev/) | `zellij` | `z{e,r}{,f,i}` | Terminal workspaces |
 | [Zoxide](https://github.com/ajeetdsouza/zoxide) | `zoxide` | `cd`, `cdi` | Smarter `cd` |
 | [Atuin](https://atuin.sh/) | `atuin` | | Shell history manager |

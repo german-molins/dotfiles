@@ -3615,6 +3615,45 @@ url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-aarch6
 checksum = "sha256:b2816e506390a89941c63c9187d58a3cc10e9a55f2ef0685f9ea0eccaf7c98c8"
 url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-pc-windows-msvc.zip"
 
+[[tools.fnox]]
+version = "1.23.0"
+backend = "github:jdx/fnox"
+
+[tools.fnox."platforms.linux-arm64"]
+checksum = "sha256:5875b1d5e915a7cfb40b052e3c330912c7cd74021b6a1a8e9ca2b6692834595f"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084769"
+
+[tools.fnox."platforms.linux-arm64-musl"]
+checksum = "sha256:5875b1d5e915a7cfb40b052e3c330912c7cd74021b6a1a8e9ca2b6692834595f"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084769"
+
+[tools.fnox."platforms.linux-x64"]
+checksum = "sha256:4b716fac7f03b0d652ab77cec489394728ac32246f17acb667a9f93b6d137c25"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084780"
+
+[tools.fnox."platforms.linux-x64-musl"]
+checksum = "sha256:4b716fac7f03b0d652ab77cec489394728ac32246f17acb667a9f93b6d137c25"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084780"
+
+[tools.fnox."platforms.macos-arm64"]
+checksum = "sha256:98cc2767dac9be1eb61e659ca888e951d4bc9862980c3ddc9838ac049f26ff1f"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084771"
+
+[tools.fnox."platforms.macos-x64"]
+checksum = "sha256:fc838d0ed2145853b711c838b5ab76e709ab5092c8c3b98dbd2ffdc02be8687d"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084770"
+
+[tools.fnox."platforms.windows-x64"]
+checksum = "sha256:d862245fac003ca121ebc81e5a7ae3a9d4b9f5f1d4d4d2728438185bb8e429db"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084772"
+
 [[tools.fzf]]
 version = "0.72.0"
 backend = "aqua:junegunn/fzf"

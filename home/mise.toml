@@ -73,6 +73,7 @@ python = "latest"
 sd = "latest"
 tmux = "latest"
 aube = "latest"
+fnox = "latest"
 
 [settings]
 experimental = true
