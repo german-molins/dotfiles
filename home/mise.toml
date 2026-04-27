@@ -1,5 +1,6 @@
 [plugins]
 devbox = "https://github.com/jbadeau/mise-nix.git"
+fnox-env = "https://github.com/jdx/mise-env-fnox"
 
 [tools]
 "aqua:dlvhdr/gh-dash" = "latest"
@@ -89,6 +90,7 @@ binstall = true
 [env]
 _.file = ["~/.dotfiles.env", "~/.env", "~/.config/user-dirs.dirs"]
 _.path = ["~/bin", "~/.local/bin"]
+_.fnox-env = { tools = true }
 
 PS1 = ": "
 PS2 = ".. "
