@@ -1,5 +1,6 @@
 .mise/prepare-state.toml
 mise.local.*
+fnox.local.toml
 .agents/skills/
 .claude/skills/
 
