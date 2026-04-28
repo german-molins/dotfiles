@@ -1903,7 +1903,7 @@ url = "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-wi
 provenance = "github-attestations"
 
 [[tools.amp]]
-version = "0.0.1777234127-g973bfa"
+version = "0.0.1777379234-g9faea3"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1971,36 +1971,36 @@ checksum = "sha256:b77e950796700af7fe0f5029f1dcf3e763cf9665afd3b15211e000bb50245
 url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.8/lazysql_Windows_x86_64.zip"
 
 [[tools."aqua:zk-org/zk"]]
-version = "0.15.2"
+version = "0.15.3"
 backend = "aqua:zk-org/zk"
 
 [tools."aqua:zk-org/zk"."platforms.linux-arm64"]
-checksum = "sha256:ec3b5545a614ad5d1c497774b4688ecdb2d5ed389e10a68bd937ec72f76839f6"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-linux-arm64.tar.gz"
+checksum = "sha256:5cdd9f29aa3f68f8c7efd8f72d726d8e001e2dc97b4724ef853e0ad5d5d32052"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.3/zk-v0.15.3-linux-arm64.tar.gz"
 
 [tools."aqua:zk-org/zk"."platforms.linux-arm64-musl"]
-checksum = "sha256:ec3b5545a614ad5d1c497774b4688ecdb2d5ed389e10a68bd937ec72f76839f6"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-linux-arm64.tar.gz"
+checksum = "sha256:5cdd9f29aa3f68f8c7efd8f72d726d8e001e2dc97b4724ef853e0ad5d5d32052"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.3/zk-v0.15.3-linux-arm64.tar.gz"
 
 [tools."aqua:zk-org/zk"."platforms.linux-x64"]
-checksum = "sha256:2d3e71037dbadf2c05271eac0e9c00817e0583c80332ec74e77c8db6b3437f83"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-linux-amd64.tar.gz"
+checksum = "sha256:ccc982149afab176220ddcb4e49821e221c201e6773a508df8c615356816f1e9"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.3/zk-v0.15.3-linux-amd64.tar.gz"
 
 [tools."aqua:zk-org/zk"."platforms.linux-x64-musl"]
-checksum = "sha256:2d3e71037dbadf2c05271eac0e9c00817e0583c80332ec74e77c8db6b3437f83"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-linux-amd64.tar.gz"
+checksum = "sha256:ccc982149afab176220ddcb4e49821e221c201e6773a508df8c615356816f1e9"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.3/zk-v0.15.3-linux-amd64.tar.gz"
 
 [tools."aqua:zk-org/zk"."platforms.macos-arm64"]
-checksum = "sha256:eaa81b46acf7a30f51af507110b50ac6ea1bdb3f1c3af70dd886dbc5aa9ecdc6"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-macos-arm64.tar.gz"
+checksum = "sha256:3856bb33feae1ab44da70a58af538ebf72b28e8e7fc420a8a35e055ce0115a1c"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.3/zk-v0.15.3-macos-arm64.tar.gz"
 
 [tools."aqua:zk-org/zk"."platforms.macos-x64"]
-checksum = "sha256:304d9373b7d34a231be9ac770bf6f6faf0dac2a0274863df559c18149dad5d74"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-macos-x86_64.tar.gz"
+checksum = "sha256:77a129a65cdd2145ccb7a2b82d367b6bef1a842bc8c5892e70a322b05749a7a2"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.3/zk-v0.15.3-macos-x86_64.tar.gz"
 
 [tools."aqua:zk-org/zk"."platforms.windows-x64"]
-checksum = "sha256:59b800070840de9e47e9f7991ea6c8b15638266882f624cd20299344609db5c4"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.2/zk-v0.15.2-windows-x86_64.tar.gz"
+checksum = "sha256:de3ca541d2d8bc9f4965f6e0e0c6f435038f928b617fe1c5fe2d1e9d9a669305"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.3/zk-v0.15.3-windows-x86_64.tar.gz"
 
 [[tools.atuin]]
 version = "18.15.2"
@@ -3721,42 +3721,42 @@ checksum = "sha256:cce66ae7e442030334927bfbfd917690713e63d215aba93027f99807828fe
 url = "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-windows_amd64.zip"
 
 [[tools.gh]]
-version = "2.91.0"
+version = "2.92.0"
 backend = "aqua:cli/cli"
 
 [tools.gh."platforms.linux-arm64"]
-checksum = "sha256:ccbed39c472d3dc1c501d1e164a9cffd934c5f6fce1012811a1a59d24cb7d7c6"
-url = "https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_linux_arm64.tar.gz"
+checksum = "sha256:c2248526dd0160c08d3fccca2332c3c1a07c15a78b23978e77735f1b5a18cfee"
+url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_linux_arm64.tar.gz"
 provenance = "github-attestations"
 
 [tools.gh."platforms.linux-arm64-musl"]
-checksum = "sha256:ccbed39c472d3dc1c501d1e164a9cffd934c5f6fce1012811a1a59d24cb7d7c6"
-url = "https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_linux_arm64.tar.gz"
+checksum = "sha256:c2248526dd0160c08d3fccca2332c3c1a07c15a78b23978e77735f1b5a18cfee"
+url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_linux_arm64.tar.gz"
 provenance = "github-attestations"
 
 [tools.gh."platforms.linux-x64"]
-checksum = "sha256:304a0d2460f4a8847d2f192bad4e2a32cd9420d28716e7ae32198181b65b5f9c"
-url = "https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_linux_amd64.tar.gz"
+checksum = "sha256:b57848131bdf0c229cd35e1f2a51aa718199858b2e728410b37e89a428943ec4"
+url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_linux_amd64.tar.gz"
 provenance = "github-attestations"
 
 [tools.gh."platforms.linux-x64-musl"]
-checksum = "sha256:304a0d2460f4a8847d2f192bad4e2a32cd9420d28716e7ae32198181b65b5f9c"
-url = "https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_linux_amd64.tar.gz"
+checksum = "sha256:b57848131bdf0c229cd35e1f2a51aa718199858b2e728410b37e89a428943ec4"
+url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_linux_amd64.tar.gz"
 provenance = "github-attestations"
 
 [tools.gh."platforms.macos-arm64"]
-checksum = "sha256:20446cd714d9fa1b69fbd410deade3731f38fe09a2b980c8488aa388dd320ada"
-url = "https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_macOS_arm64.zip"
+checksum = "sha256:b11c54f6bd7d15ed6590475079e5b2fcf36f45d3991a80041b29c9d0cc1f1d07"
+url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_macOS_arm64.zip"
 provenance = "github-attestations"
 
 [tools.gh."platforms.macos-x64"]
-checksum = "sha256:8806784f93603fe6d3f95c3583a08df38f175df9ebc123dc8b15f919329980e2"
-url = "https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_macOS_amd64.zip"
+checksum = "sha256:ae9bb327ab0d91071bdada79f8f14034a2a0f19b0e001835a782eafa519d2af0"
+url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_macOS_amd64.zip"
 provenance = "github-attestations"
 
 [tools.gh."platforms.windows-x64"]
-checksum = "sha256:ced3e6f4bb5a9865056b594b7ad0cf42137dc92c494346f1ca705b5dbf14c88e"
-url = "https://github.com/cli/cli/releases/download/v2.91.0/gh_2.91.0_windows_amd64.zip"
+checksum = "sha256:b6a8df3c8c6b9c80f290906387673bc4d272840f3789c5650e0e4e6e75522785"
+url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_windows_amd64.zip"
 provenance = "github-attestations"
 
 [[tools."github:dalance/procs"]]
@@ -4251,36 +4251,36 @@ version = "1.5.1"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.14.25"
+version = "1.14.28"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:0cee21589d4936619bcd6131342121c0d20ef245fbec314009c89b3f9338348d"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-linux-arm64.tar.gz"
+checksum = "sha256:3c26ac279049b1343296f127c56b77e70178186d21bba003610d493ee8209f15"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:26a9cdb8e48fd36a976c37c6614cfc2f371669f726b0486daf0cada72a92e1d3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-linux-arm64-musl.tar.gz"
+checksum = "sha256:373efc416878a76b5ac80f5732a0e5edaa44e8b1e679f1e6696c9ff053dfbdfe"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-linux-arm64-musl.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:6542db973fbf404707d275d824fcd7eef20a8003788114eb85067402daf730db"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-linux-x64.tar.gz"
+checksum = "sha256:3f9a7139612d4421a46408d46eeed27bd958bdbe7f43514cd5e5a10ad1540e5b"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:2d18008f1f3ae0b718608ba7790870a9d882eaf84fa6934d698571c9fceab926"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-linux-x64-musl.tar.gz"
+checksum = "sha256:2da4deb64e20d567069925dc1c89dd080aea64d1ae4fcd3a6874b0c503496fbf"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-linux-x64-musl.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:dafff66a6d87307871385410ba4196eecf2847220e35b052c3914614c6915b4e"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-darwin-arm64.zip"
+checksum = "sha256:a0a97741cd6b27fb5558942b2d56460c85b76d3a03ad39690a3f928545c31cc3"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:94f73ae369df2cb2fbe8def3b5de51f9840d82abcdc226c95d347981811e9696"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-darwin-x64.zip"
+checksum = "sha256:06c2c3098f8332a82c1c1e1e9df56d145a6df3438e41e2ded4ea548467ae5813"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:8eada3506f0e22071de5d28d5f82df198d4c39f941c2bbf74d6c5de639f8e05b"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.25/opencode-windows-x64.zip"
+checksum = "sha256:6a597867a69dbabba2209b5ca4a1497be2d9e0742a630d230bc7a5718821e74a"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.28/opencode-windows-x64.zip"
 
 [[tools.pandoc]]
 version = "3.9.0.2"
@@ -4592,7 +4592,7 @@ checksum = "sha256:9ac550ddcb67c1bb30e76fbf04126d50704004fc7850e7fa1aaa6994ce460
 url = "https://github.com/jdx/usage/releases/download/v3.2.1/usage-x86_64-pc-windows-msvc.zip"
 
 [[tools.uv]]
-version = "0.11.7"
+version = "0.11.8"
 backend = "asdf:uv"
 
 [[tools.xh]]
