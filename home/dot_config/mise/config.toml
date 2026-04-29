@@ -1,0 +1,159 @@
+[settings]
+experimental = true
+lockfile = true
+activate_aggressive = true
+always_keep_download = true
+idiomatic_version_file_enable_tools = []
+env_shell_expand = true
+
+[settings.cargo]
+binstall = true
+
+[env]
+_.file = ["~/.dotfiles.env", "~/.env", "~/.config/user-dirs.dirs"]
+_.path = ["~/bin", "~/.local/bin"]
+
+PS1 = ": "
+PS2 = ".. "
+VISUAL = "nvim"
+EDITOR = "nvim -u NONE"
+PAGER = "bat --plain"
+BROWSER = "firefox"
+
+FNOX_AGE_KEY_FILE = "~/.config/fnox/age.txt"
+JULIA_PROJECT = "@."
+TLRC_CONFIG = "$HOME/.config/tlrc/config.toml"
+AUBE_TRUST_POLICY_EXCLUDE = "skills"
+
+[shell_alias]
+c = "clear"
+h = "head"
+t = "tail"
+p = "pwd"
+u = "df -H $HOME"
+e = "{{env.EDITOR}}"
+v = "{{env.VISUAL}}"
+
+wh = "where"
+
+ai = "pi"
+cc = "claude"
+oc = "opencode"
+calc = "numbat"
+num = "numbat"
+mdns = "mdnstool"
+jl = "jupyter-lab --no-browser --ip=0.0.0.0"
+vm = "colima"
+
+[tasks.clean]
+description = "Clean up system packages and caches"
+depends = ["mise:clean", "nix:clean", "brew:clean"]
+
+[tasks.self-update]
+depends = ["devbox:self-update", "brew:self-update"]
+
+[tasks.update]
+description = "Update all tools and packages"
+depends = [
+  "chezmoi:update",
+  "mise:update",
+  "devbox:update",
+  "yazi:update",
+  "nvim:update",
+  "pi:update",
+  "brew:update",
+  "upt:update",
+  "agents:update",
+]
+run = { task = "bash:clear-cache" }
+
+[tasks."brew:update"]
+description = "Update Homebrew global packages"
+run = "command -v brew >/dev/null && brew upgrade || exit 0"
+
+[tasks."brew:self-update"]
+description = "Update Homebrew"
+run = "command -v brew >/dev/null && brew update || exit 0"
+
+[tasks."chezmoi:update"]
+description = "Update Chezmoi"
+run = "chezmoi upgrade"
+
+[tasks."devbox:self-update"]
+description = "Update Devbox"
+run = "devbox version update"
+
+[tasks."devbox:update"]
+description = "Update Devbox global packages"
+run = "devbox global update"
+
+[tasks."upt:update"]
+description = "Update system packages"
+run = [{ task = "upt update" }, { task = "upt upgrade --yes" }]
+
+[tasks."nerd-fonts:list"]
+description = "List installed Nerd Fonts"
+run = "fc-list | grep Nerd"
+
+[tasks."mise:update"]
+alias = "mise:up"
+description = "Update Mise global packages and plugins"
+run = ["mise upgrade", "mise plugins upgrade"]
+
+[tasks."mise:clean"]
+description = "Clean Mise cache"
+run = "mise prune"
+
+[tasks."nvim:clean"]
+description = "Clean Neovim plugins"
+run = "nvim --headless '+Lazy! clean' +qa"
+
+[tasks."nvim:install"]
+description = "Install Neovim plugins"
+alias = "nvim:i"
+run = "nvim --headless '+Lazy! install' +qa"
+
+[tasks."nvim:sync"]
+description = "Sync Neovim plugins"
+run = "nvim --headless '+Lazy! sync' +qa"
+
+[tasks."nvim:update"]
+description = "Update Neovim plugins"
+alias = "nvim:up"
+run = "nvim --headless '+Lazy! update' +qa"
+
+[tasks."pi:update"]
+alias = "pi:up"
+run = "pi update --extensions"
+
+[tasks."yazi:install"]
+alias = "yazi:i"
+description = "Install Yazi packages"
+run = "ya pkg install"
+
+[tasks."yazi:update"]
+alias = "yazi:up"
+description = "Update Yazi packages"
+run = "ya pkg upgrade"
+
+[tasks."bash:clean"]
+description = "Clean bash startup caches"
+run = ["rm -rf ~/.cache/dotfiles/bash ~/.local/share/bash"]
+
+[tasks."agents:update"]
+description = "Update agents resources"
+run = "skills update"
+
+[tasks."python:scaffold"]
+description = "Scaffold a Python project with uv and pytest"
+dir = "{{cwd}}"
+run = [{ task = "python:init" }, { task = "python:tasks-add" }]
+
+[tasks.random-hex]
+description = "Generate a 32-bit random hex number"
+alias = "rhex"
+run = "openssl rand -hex 32| cut -c -7"
+
+[tasks.zippdf]
+description = "Compress PDF files in the current directory recursively"
+run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
