@@ -24,7 +24,6 @@ Outputs from various tools' init and completion commands are cached to
 - `carapace _carapace`
 - `devbox global shellenv --init-hook` (if enabled)
 - `devbox completion bash` (if enabled)
-- `direnv hook bash` (if enabled)
 - Homebrew bash completion script
 
 ### Cache Management

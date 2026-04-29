@@ -25,8 +25,7 @@ Mise has been configured with some specific settings:
 
 ## Shell Integration
 
-Mise is integrated with the shell through activation and completion hooks. This
-replaces the previous direnv-based approach used with Devbox.
+Mise is integrated with the shell through activation and completion hooks.
 
 For activation performance optimizations during Bash startup, see [Mise Caching
 Optimization](../bash.md#mise-caching-optimization).
@@ -37,8 +36,8 @@ Mise manages shell-independent aliases
 
 ## Environment Variables
 
-Mise handles environment variables that were previously managed by direnv. This
-is more efficient and centralizes the management of the environment.
+Mise handles environment variables, which centralizes the management of the
+shell environment.
 
 ## Migration from Devbox
 

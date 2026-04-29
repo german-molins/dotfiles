@@ -140,8 +140,9 @@ devbox global add <package>
 devbox global update
 ```
 
-The Devbox environment is automatically activated via direnv integration, so
-there's no need to run `devbox shell` manually.
+The Devbox environment is not automatically activated (would require direnv
+integration), so either run commands inside the Devbox environment with `devbox
+run` or enter a `devbox shell`.
 
 ### Devbox Project Environment
 

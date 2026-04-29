@@ -16,7 +16,7 @@ Environment variables that determine the templating environment:
 | `DOTFILES_PROFILE` | Profile name | "personal", "quantica" | "personal" | Use default |
 | `DOTFILES_APPLY` | Controls if the `--apply` flag is passed during initialization | "true", "false" | "true" | WARNING; Use default |
 | `DOTFILES_GIT_BRANCH` | Git branch or ref to checkout | Any valid git ref | "HEAD" | WARNING; Disable chezmoi apply |
-| `DOTFILES_DEVBOX_ENABLED` | Enable or disable Devbox and Direnv | "true", "false" | "true" | ERROR |
+| `DOTFILES_DEVBOX_ENABLED` | Enable or disable Devbox | "true", "false" | "true" | ERROR |
 
 They are used once during `chezmoi` initialization to set template data
 dynamically in `.chezmoi.yaml.tmpl`, which results in the final
@@ -34,7 +34,7 @@ export DOTFILES_PROFILE=personal
 chezmoi init
 ```
 
-or simply using envrar auto-loading (`direnv`) as
+or simply using envrar auto-loading (Mise) as
 
 ```sh
 chezmoi init
@@ -60,6 +60,18 @@ or
 devpod up . --dotfiles-script-env-file path/to/env/file
 ```
 
+`~/.dotfiles.env` file is to contain envars used to configure the `chezmoi`
+dynamic template initialization. As a conventional dotenv file (`KEY=VALUE`
+pairs), it can be passed to `devpod` as
+
+```sh
+devpod up path/to/repo/ --dotfiles-script-env-file=~/.dotfiles.env
+```
+
+Additionally it is made available by Mise in the home environment so that
+`chezmoi init` uses its current config without having to pass envvars
+explicitly.
+
 ### Auto-Loading Environment Variables
 
 #### With Mise
@@ -74,32 +86,6 @@ Global Mise
 selected in `~/.miserc.toml` (`"devbox,opt"` by default). This file is
 generated on first `chezmoi apply` via `home/create_dot_miserc.toml` and never
 overwritten afterwards, allowing per-machine customization.
-
-#### With Direnv (deprecated)
-
-Shell hooks are set for `direnv` to auto-load and unload envvars found in the
-first found `.envrc` file up the `PWD` path.
-
-Particularly, `~/.envrc` is tracked and includes templating config envvars.
-This allows to re-initialize as `chezmoi init` from home directory without the
-need to pass or export templating envvars explicitly, as they are auto-loaded
-and exported.
-
-During `chezmoi`` initialization, and especially during non-interactive
-installation by`devpod`,`~/.envrc` will be allowed implicitly by `direnv`,
-since it is in the`direnv` whitelist.
-
-`~/.dotfiles.env` file is to contain envars used to configure the `chezmoi`
-dynamic template initialization. As a conventional dotenv file (`KEY=VALUE`
-pairs), it can be passed to `devpod` as
-
-```sh
-devpod up path/to/repo/ --dotfiles-script-env-file=~/.dotfiles.env
-```
-
-Additionally it is made available by `direnv` in the home environment
-(`~/.envrc`) so that `chezmoi init` uses its current config without having to
-pass envvars explicitly.
 
 ## Installation Script
 

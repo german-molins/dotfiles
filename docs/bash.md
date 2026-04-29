@@ -167,7 +167,7 @@ startup.
 The `~/.bashrc.d/` directory contains modular configuration files:
 
 - Shell options and settings
-- Tool integrations (mise, direnv, etc.)
+- Tool integrations (mise, pitchfork, etc.)
 - Aliases and functions
 - Completion configurations
 
