@@ -180,7 +180,7 @@ run = "nvim --headless '+Lazy! update' +qa"
 
 [tasks."pi:update"]
 alias = "pi:up"
-run = "pi update"
+run = "pi update --extensions"
 
 [tasks."yazi:install"]
 alias = "yazi:i"
