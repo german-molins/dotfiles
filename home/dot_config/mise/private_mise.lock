@@ -1779,7 +1779,7 @@ url = "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-wi
 provenance = "github-attestations"
 
 [[tools.amp]]
-version = "0.0.1777147716-gff4795"
+version = "0.0.1777480150-gfba48c"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -2024,36 +2024,36 @@ url = "https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_x8
 provenance = "github-attestations"
 
 [[tools.carapace]]
-version = "1.6.4"
+version = "1.6.5"
 backend = "aqua:carapace-sh/carapace-bin"
 
 [tools.carapace."platforms.linux-arm64"]
-checksum = "sha256:17293dcadaebb615984042019125ed2fe932af1bfb48fc2b916c1e67249e748b"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_linux_arm64.tar.gz"
+checksum = "sha256:6cd10d6b41322a7f3bc1688ed25ebcdee9849a293efaedf36523a1df2d81b1d0"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.5/carapace-bin_1.6.5_linux_arm64.tar.gz"
 
 [tools.carapace."platforms.linux-arm64-musl"]
-checksum = "sha256:17293dcadaebb615984042019125ed2fe932af1bfb48fc2b916c1e67249e748b"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_linux_arm64.tar.gz"
+checksum = "sha256:6cd10d6b41322a7f3bc1688ed25ebcdee9849a293efaedf36523a1df2d81b1d0"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.5/carapace-bin_1.6.5_linux_arm64.tar.gz"
 
 [tools.carapace."platforms.linux-x64"]
-checksum = "sha256:885ee9f90ab759c60e50d8123966c4edabb426c5cac531253c8d75a30145eff2"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_linux_amd64.tar.gz"
+checksum = "sha256:02bd7c8975d590c04fdea1fe0ae918f616c53b1c5e0b723deb798efa8504d812"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.5/carapace-bin_1.6.5_linux_amd64.tar.gz"
 
 [tools.carapace."platforms.linux-x64-musl"]
-checksum = "sha256:885ee9f90ab759c60e50d8123966c4edabb426c5cac531253c8d75a30145eff2"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_linux_amd64.tar.gz"
+checksum = "sha256:02bd7c8975d590c04fdea1fe0ae918f616c53b1c5e0b723deb798efa8504d812"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.5/carapace-bin_1.6.5_linux_amd64.tar.gz"
 
 [tools.carapace."platforms.macos-arm64"]
-checksum = "sha256:67689f9f14d8d99a87ac70e680ccfb98a702c16e4b1058ef6309a05834e68f09"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_darwin_arm64.tar.gz"
+checksum = "sha256:9715c3c0898e25b544dbb8768cc6727f82fc9e7d3ef35225dbaa9d6363452a53"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.5/carapace-bin_1.6.5_darwin_arm64.tar.gz"
 
 [tools.carapace."platforms.macos-x64"]
-checksum = "sha256:6c9b9cbe06fa58c81f888f2b2254eaac9c97ffc9ad53ed7e642695afd066d375"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_darwin_amd64.tar.gz"
+checksum = "sha256:e014371c670ff9e18d6e93ac0b0a97455a2999a40d8eb1784e8778a6e66b4ed1"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.5/carapace-bin_1.6.5_darwin_amd64.tar.gz"
 
 [tools.carapace."platforms.windows-x64"]
-checksum = "sha256:b16a51bf02f99a37ca738b8292292b549675175a285921606efef711854d6fca"
-url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.4/carapace-bin_1.6.4_windows_amd64.zip"
+checksum = "sha256:b165847e4da484cbf97b1629c72f9701f952c06be0cd5080dfff5ffa4f8c9b19"
+url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.5/carapace-bin_1.6.5_windows_amd64.zip"
 
 [[tools.cargo-binstall]]
 version = "1.18.1"
