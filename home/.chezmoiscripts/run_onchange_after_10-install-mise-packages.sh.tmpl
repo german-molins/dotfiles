@@ -15,7 +15,7 @@ fi
 
 
 # checksum of mise environment lockfiles
-# {{ include "mise.lock" | sha256sum }}
+# {{ include "dot_config/mise/mise.lock" | sha256sum }}
 # {{ include "mise.devbox.lock" | sha256sum }}
 # {{ include "mise.opt.lock" | sha256sum }}
 mise install
