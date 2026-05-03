@@ -80,6 +80,7 @@ common cases:
 | [somo](https://github.com/theopfr/somo/) | `somo` | | Socket and port monitoring |
 | [cosign](https://github.com/sigstore/cosign) | `cosign` | | Signing and verifying packages |
 | [Numbat](https://numbat.dev) | `numbat` | `num`, `calc` | Scientific calculator with physical units |
+| [systemctl-tui](https://github.com/rgwood/systemctl-tui) | `systemctl-tui` | | systemd TUI |
 
 ### Fallback Apps
 

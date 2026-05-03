@@ -4196,6 +4196,26 @@ url = "https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-app
 checksum = "sha256:59837c2e7c911099aca1cc46b663bcdc5a949fd3e9fbbaf34fc73e5d5d71007c"
 url = "https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-pc-windows-msvc.zip"
 
+[[tools.systemctl-tui]]
+version = "0.5.2"
+backend = "aqua:rgwood/systemctl-tui"
+
+[tools.systemctl-tui."platforms.linux-arm64"]
+checksum = "sha256:6bba6f5af669ec9c0a2653963c45978f1ecbdeedc364906415cced02e1656430"
+url = "https://github.com/rgwood/systemctl-tui/releases/download/v0.5.2/systemctl-tui-aarch64-unknown-linux-musl.tar.gz"
+
+[tools.systemctl-tui."platforms.linux-arm64-musl"]
+checksum = "sha256:6bba6f5af669ec9c0a2653963c45978f1ecbdeedc364906415cced02e1656430"
+url = "https://github.com/rgwood/systemctl-tui/releases/download/v0.5.2/systemctl-tui-aarch64-unknown-linux-musl.tar.gz"
+
+[tools.systemctl-tui."platforms.linux-x64"]
+checksum = "sha256:c7d66fc166f4768b7d3a9f185831689399137bbc7d1410b57dd7d28672b7de16"
+url = "https://github.com/rgwood/systemctl-tui/releases/download/v0.5.2/systemctl-tui-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.systemctl-tui."platforms.linux-x64-musl"]
+checksum = "sha256:c7d66fc166f4768b7d3a9f185831689399137bbc7d1410b57dd7d28672b7de16"
+url = "https://github.com/rgwood/systemctl-tui/releases/download/v0.5.2/systemctl-tui-x86_64-unknown-linux-musl.tar.gz"
+
 [[tools.tmux]]
 version = "3.6a"
 backend = "aqua:tmux/tmux-builds"

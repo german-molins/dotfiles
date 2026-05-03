@@ -74,6 +74,7 @@ tmux = "latest"
 aube = "latest"
 fnox = "latest"
 age = "latest"
+systemctl-tui = "latest"
 
 [settings]
 experimental = true
