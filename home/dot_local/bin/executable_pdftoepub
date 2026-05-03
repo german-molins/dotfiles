@@ -1,6 +1,7 @@
 #!/usr/bin/env -S usage bash
 #USAGE about "Convert a PDF file to EPUB format using pdftotext and pandoc"
 #USAGE arg "<input_pdf>" help="The PDF file to convert"
+#USAGE complete "input_pdf" run="ls *.pdf"
 
 set -euo pipefail
 
