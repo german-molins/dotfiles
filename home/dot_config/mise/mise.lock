@@ -1779,7 +1779,7 @@ url = "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-wi
 provenance = "github-attestations"
 
 [[tools.amp]]
-version = "0.0.1777480150-gfba48c"
+version = "0.0.1777879744-g2d678a"
 backend = "npm:@sourcegraph/amp"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
@@ -1815,36 +1815,36 @@ checksum = "sha256:9bece54605342288bc24d9d0b73a8378109af787db0985283f40fc638d292
 url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.23.2/gh-dash_v4.23.2_windows-amd64.exe"
 
 [[tools."aqua:jorgerojas26/lazysql"]]
-version = "0.4.8"
+version = "0.4.9"
 backend = "aqua:jorgerojas26/lazysql"
 
 [tools."aqua:jorgerojas26/lazysql"."platforms.linux-arm64"]
-checksum = "sha256:c70307715a8bb23cc9d1218589bd5c992e1c86772549179acb0cfd10de64154d"
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.8/lazysql_Linux_arm64.tar.gz"
+checksum = "sha256:92e75a7f97ac2a5a48ac878e64a0663929695d6c68e25c76e4d7370fc5328c9d"
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.9/lazysql_Linux_arm64.tar.gz"
 
 [tools."aqua:jorgerojas26/lazysql"."platforms.linux-arm64-musl"]
-checksum = "sha256:c70307715a8bb23cc9d1218589bd5c992e1c86772549179acb0cfd10de64154d"
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.8/lazysql_Linux_arm64.tar.gz"
+checksum = "sha256:92e75a7f97ac2a5a48ac878e64a0663929695d6c68e25c76e4d7370fc5328c9d"
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.9/lazysql_Linux_arm64.tar.gz"
 
 [tools."aqua:jorgerojas26/lazysql"."platforms.linux-x64"]
-checksum = "sha256:47521cc216f1bb80ea7dc6b1f488485f69e1127fab2be61b3ffdb108d9b038f7"
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.8/lazysql_Linux_x86_64.tar.gz"
+checksum = "sha256:8808905ed4a76ed79bf5a458b7da4c23c780f35dd2d869281ce0acb0d829f41c"
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.9/lazysql_Linux_x86_64.tar.gz"
 
 [tools."aqua:jorgerojas26/lazysql"."platforms.linux-x64-musl"]
-checksum = "sha256:47521cc216f1bb80ea7dc6b1f488485f69e1127fab2be61b3ffdb108d9b038f7"
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.8/lazysql_Linux_x86_64.tar.gz"
+checksum = "sha256:8808905ed4a76ed79bf5a458b7da4c23c780f35dd2d869281ce0acb0d829f41c"
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.9/lazysql_Linux_x86_64.tar.gz"
 
 [tools."aqua:jorgerojas26/lazysql"."platforms.macos-arm64"]
-checksum = "sha256:ae51c8e1aa0f510765d6949f69779ee24ab020116599a5329a197feff5973343"
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.8/lazysql_Darwin_arm64.tar.gz"
+checksum = "sha256:6815a66bb770534ff7a1859331dad9559b6a65b9b6807b99e9fe528bfb98a914"
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.9/lazysql_Darwin_arm64.tar.gz"
 
 [tools."aqua:jorgerojas26/lazysql"."platforms.macos-x64"]
-checksum = "sha256:7d4333f866ac17728a9ed5ce9f0b345bc25cbf5a6fb469a098ab4561d39b489e"
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.8/lazysql_Darwin_x86_64.tar.gz"
+checksum = "sha256:4209d622574cd42acd44e928b3b097e9a19a30ef34621a8f362f9126d49050c2"
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.9/lazysql_Darwin_x86_64.tar.gz"
 
 [tools."aqua:jorgerojas26/lazysql"."platforms.windows-x64"]
-checksum = "sha256:b77e950796700af7fe0f5029f1dcf3e763cf9665afd3b15211e000bb50245f30"
-url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.8/lazysql_Windows_x86_64.zip"
+checksum = "sha256:d593a5da2b12a8834b58d62a92a336307e7bfca72603477d268bf888d361ba2e"
+url = "https://github.com/jorgerojas26/lazysql/releases/download/v0.4.9/lazysql_Windows_x86_64.zip"
 
 [[tools."aqua:zk-org/zk"]]
 version = "0.15.3"
@@ -2056,36 +2056,36 @@ checksum = "sha256:b165847e4da484cbf97b1629c72f9701f952c06be0cd5080dfff5ffa4f8c9
 url = "https://github.com/carapace-sh/carapace-bin/releases/download/v1.6.5/carapace-bin_1.6.5_windows_amd64.zip"
 
 [[tools.cargo-binstall]]
-version = "1.18.1"
+version = "1.19.0"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall."platforms.linux-arm64"]
-checksum = "sha256:c55962a0115f9716b709216de7f8bdd59d6ba8738779e60b051b4593f677717a"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-aarch64-unknown-linux-musl.tgz"
+checksum = "sha256:57148539e6160789715745e6f50e0aac9193636df42bd9b4554cd9012195866c"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-arm64-musl"]
-checksum = "sha256:c55962a0115f9716b709216de7f8bdd59d6ba8738779e60b051b4593f677717a"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-aarch64-unknown-linux-musl.tgz"
+checksum = "sha256:57148539e6160789715745e6f50e0aac9193636df42bd9b4554cd9012195866c"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-x64"]
-checksum = "sha256:cf2a4b54494ea8555d6349685e9a301efc1051d9fba6308c76914b2486f8700f"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+checksum = "sha256:a7a4271099ce891368bc544d3f89315f12547df653ba16de2030461e8867edd6"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-x64-musl"]
-checksum = "sha256:cf2a4b54494ea8555d6349685e9a301efc1051d9fba6308c76914b2486f8700f"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+checksum = "sha256:a7a4271099ce891368bc544d3f89315f12547df653ba16de2030461e8867edd6"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.macos-arm64"]
-checksum = "sha256:955abf167994c90f3547e233edace4c0f794465dd4aa408249b38999aa5ca3cf"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "sha256:1208282e0719ae33fc1db20fe533a50827673d017fb85ed5dec0cb9b0c7ca569"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-aarch64-apple-darwin.zip"
 
 [tools.cargo-binstall."platforms.macos-x64"]
-checksum = "sha256:e06370bec7143668653bb7c09d0b8b689fc703dd4fa58ec5847c4b571d8a490d"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-x86_64-apple-darwin.zip"
+checksum = "sha256:289007dce39f181188b620c19783d3a0e8f37fb9e5d7c3ff1da9cfb9a2d8ecc3"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-x86_64-apple-darwin.zip"
 
 [tools.cargo-binstall."platforms.windows-x64"]
-checksum = "sha256:89706aa5215c164d8d091597a470fee72308ac87e8553af395ea77db844a888c"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:1113c92eb53160c4e0c12dc803f582a266d26b26ca529520e104806cce8d0204"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-x86_64-pc-windows-msvc.zip"
 
 [[tools."cargo:diffutils"]]
 version = "0.5.0"
@@ -2096,7 +2096,7 @@ version = "0.5.0"
 backend = "cargo:lazyjj"
 
 [[tools."cargo:somo"]]
-version = "1.3.2"
+version = "1.3.3"
 backend = "cargo:somo"
 
 [[tools."cargo:tlrc"]]
@@ -2136,7 +2136,7 @@ checksum = "sha256:0dec4f62a04c203da809c670b11c4271315ba1dc3f5d5571883c9d7a6f45b
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_windows_amd64.zip"
 
 [[tools.codebuff]]
-version = "1.0.645"
+version = "1.0.654"
 backend = "npm:codebuff"
 
 [[tools."conda:dash"]]
@@ -3270,7 +3270,7 @@ url = "https://github.com/sigstore/cosign/releases/download/v3.0.6/cosign-window
 provenance = "cosign"
 
 [[tools."devbox:imagemagick"]]
-version = "7.1.2-13"
+version = "7.1.2-19"
 backend = "devbox"
 
 [[tools.dua]]
@@ -3398,43 +3398,44 @@ checksum = "sha256:b2816e506390a89941c63c9187d58a3cc10e9a55f2ef0685f9ea0eccaf7c9
 url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-pc-windows-msvc.zip"
 
 [[tools.fnox]]
-version = "1.23.0"
+version = "1.23.1"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.linux-arm64"]
-checksum = "sha256:5875b1d5e915a7cfb40b052e3c330912c7cd74021b6a1a8e9ca2b6692834595f"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084769"
+checksum = "sha256:de4c06fc8851ad4be8109d077d0362ee8603ae0aac0cbffb715ac89e2238f2c4"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690612"
 
 [tools.fnox."platforms.linux-arm64-musl"]
-checksum = "sha256:5875b1d5e915a7cfb40b052e3c330912c7cd74021b6a1a8e9ca2b6692834595f"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084769"
+checksum = "sha256:c7a9c2e80346e7ebb175a033856549c3bbefe7fafda3d34fca3f5cd33dc2a9f3"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690611"
 
 [tools.fnox."platforms.linux-x64"]
-checksum = "sha256:4b716fac7f03b0d652ab77cec489394728ac32246f17acb667a9f93b6d137c25"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084780"
+checksum = "sha256:021c4fe683e109b616a4b936117c60e63f351b4000bd0999f0110f3088fc7f58"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690622"
 
 [tools.fnox."platforms.linux-x64-musl"]
-checksum = "sha256:4b716fac7f03b0d652ab77cec489394728ac32246f17acb667a9f93b6d137c25"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084780"
+checksum = "sha256:8c78f965d5e655c3ea025551baf8d19c2e588ed9911b706deb6a7211bfbc7b9a"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690624"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:98cc2767dac9be1eb61e659ca888e951d4bc9862980c3ddc9838ac049f26ff1f"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084771"
+checksum = "sha256:f92d60ee4bb669b97a500f000fe053f92f7cbf0817ed4678e5b0f506d1357dd6"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690610"
+provenance = "github-attestations"
 
 [tools.fnox."platforms.macos-x64"]
-checksum = "sha256:fc838d0ed2145853b711c838b5ab76e709ab5092c8c3b98dbd2ffdc02be8687d"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084770"
+checksum = "sha256:0b09405d648387a163d3f21be3e88972332d3fa04e5db55955726890a3f22877"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690609"
 
 [tools.fnox."platforms.windows-x64"]
-checksum = "sha256:d862245fac003ca121ebc81e5a7ae3a9d4b9f5f1d4d4d2728438185bb8e429db"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084772"
+checksum = "sha256:ea8b2569d8667c7644a25efd22546aff9dc1ac4eeb62c9c1dd4469e5f2bb34ff"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690623"
 
 [[tools.fzf]]
 version = "0.72.0"
@@ -3999,36 +4000,36 @@ version = "1.5.3"
 backend = "npm:skills"
 
 [[tools.opencode]]
-version = "1.14.29"
+version = "1.14.33"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:faedc954ab549235a32f1bf10cb92206dbac58327a85530554e5e02feb28060e"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-linux-arm64.tar.gz"
+checksum = "sha256:3cfa593defe2b8fbfb55f05f1671a64666aeca2cec1be81a9db7d3bb1694b4ed"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:cf89c85ade8c9bdfcd46ab15bd4782d3b8c59d57666020afa1f54963f9a10a9b"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-linux-arm64-musl.tar.gz"
+checksum = "sha256:121202811d5554c217775af8943b250df54b656bccf9019cd29c293de3ea9698"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-linux-arm64-musl.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:d985e99d7e22446b78fc78a35cfa0ef8b0feff05be5288c4a0e1c6837b7a29f8"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-linux-x64.tar.gz"
+checksum = "sha256:ab3de3d40a67573419ec74916210cf90dcf8c180dc9d8052db71ac9f55c28810"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:05215042fa53aa7c46f9550bea9a6e4e3e1369c55dcc9b51d023f7f088c41a66"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-linux-x64-musl.tar.gz"
+checksum = "sha256:d231d87a8edb71eb760db8d9ead5b76fd774a97a7d58c8f9d75d4a0225153771"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-linux-x64-musl.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:39c483fe12cffe07bfc050d59df534ca1b5d29d9232da237586f1b6a2ef1c7e1"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-darwin-arm64.zip"
+checksum = "sha256:ae9142115ca1998941ce41ee379e502c13a7b4861c80fd5c1a70477a5f85dba3"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:60d1c577998e5171183d55bf91e3bc699d5d91ab9998985d82240c87e2f30fec"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-darwin-x64.zip"
+checksum = "sha256:56c252b0bd20a430e8b3d39e31763af717540d07a14963fb36421f3abdfe7f86"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:87eb937a420708d2e424af2f8afaf3e4005ce0b95eb9d2e85be26c015d94591a"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.14.29/opencode-windows-x64.zip"
+checksum = "sha256:d2173c38bb7be4a51da4495cc726e5733e4af9a19a45f1c376c409530b8981b0"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.14.33/opencode-windows-x64.zip"
 
 [[tools.pandoc]]
 version = "3.9.0.2"
@@ -4074,24 +4075,24 @@ version = "3.2.4"
 backend = "pipx:httpie"
 
 [[tools.pitchfork]]
-version = "2.8.0"
+version = "2.9.1"
 backend = "aqua:jdx/pitchfork"
 
 [tools.pitchfork."platforms.linux-arm64"]
-checksum = "sha256:982281c482f6de7f65dd5c3f96725a88198c6c69887d88406ec8a3c36861768a"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.8.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:012a59c30cee94d82a2d2d5c3adffa63940d76576a3975b4d6da75550dabe301"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.9.1/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.linux-x64"]
-checksum = "sha256:172df18d336d137ed5e22076b39c374451ca4c81375a0d2fb78121c261c92913"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.8.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:dbc4262e3ab6c7973eeeea5f303fd5b01dca01dcaa3efb26383ed5276220df6e"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.9.1/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.macos-arm64"]
-checksum = "sha256:deb1781d058ab723093ad335869068b3be5638703c0441454ad17bc96095fbe6"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.8.0/pitchfork-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:7f5efc5f8cf386fb93fbc4e90b1b73c09a9c6e9c158364722c332cfdf5e38059"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.9.1/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [tools.pitchfork."platforms.windows-x64"]
-checksum = "sha256:ce9b4aa97a12f62304d22ebe99c81c57d620fcc6109654c7355302dafe49cc03"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.8.0/pitchfork-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:671986539a5f63d672f8db322dac72dffbc47af6c1926256211351f7b4d28754"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.9.1/pitchfork-x86_64-pc-windows-msvc.zip"
 
 [[tools.python]]
 version = "3.14.4"
