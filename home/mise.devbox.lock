@@ -29,7 +29,7 @@ version = "0.11.2"
 backend = "devbox:gpg-tui"
 
 [[tools."devbox:htop"]]
-version = "3.5.0"
+version = "3.5.1"
 backend = "devbox:htop"
 
 [[tools."devbox:poppler-utils"]]
