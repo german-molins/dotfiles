@@ -4,6 +4,7 @@ packages:
       version: v2026.5.3
   upt:
     - zsh
+    - rcs
   homebrew:
     brews:
       - bash-completion@2

@@ -1,5 +1,4 @@
 [tools]
-"devbox:rcs" = "latest"
 "devbox:exiftool" = "latest"
 "devbox:htop" = "latest"
 "devbox:taskwarrior" = "latest"

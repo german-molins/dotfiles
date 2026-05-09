@@ -36,10 +36,6 @@ backend = "devbox:htop"
 version = "25.10.0"
 backend = "devbox:poppler-utils"
 
-[[tools."devbox:rcs"]]
-version = "5.10.1"
-backend = "devbox:rcs"
-
 [[tools."devbox:readline"]]
 version = "8.3p3"
 backend = "devbox:readline"
