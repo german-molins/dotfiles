@@ -5,6 +5,7 @@ packages:
   upt:
     - zsh
     - rcs
+    - htop
   homebrew:
     brews:
       - bash-completion@2

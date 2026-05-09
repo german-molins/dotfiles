@@ -1,6 +1,5 @@
 [tools]
 "devbox:exiftool" = "latest"
-"devbox:htop" = "latest"
 "devbox:taskwarrior" = "latest"
 "devbox:timewarrior" = "latest"
 "devbox:gpg-tui" = "latest"
