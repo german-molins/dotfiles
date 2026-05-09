@@ -7,7 +7,6 @@
 "devbox:poppler-utils" = "latest"
 "devbox:git-extras" = "latest"
 "devbox:git" = "latest"
-"devbox:gawk" = "latest"
 "devbox:file" = "latest"
 "devbox:readline" = "latest"
 "devbox:ffmpeg" = "latest"

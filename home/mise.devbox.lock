@@ -12,10 +12,6 @@ backend = "devbox"
 version = "5.46"
 backend = "devbox:file"
 
-[[tools."devbox:gawk"]]
-version = "5.4.0"
-backend = "devbox:gawk"
-
 [[tools."devbox:git"]]
 version = "2.53.0"
 backend = "devbox:git"
