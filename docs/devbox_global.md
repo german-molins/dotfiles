@@ -25,10 +25,8 @@ on `devbox shell` and on `devbox run`.
 
 ## Packages
 
-* [procps@latest](https://www.nixhub.io/packages/procps)
 * [nerd-fonts.inconsolata@latest](https://www.nixhub.io/packages/nerd-fonts.inconsolata)
 * [taskopen@latest](https://www.nixhub.io/packages/taskopen)
-* [sshfs-fuse@latest](https://www.nixhub.io/packages/sshfs-fuse)
 
 
 <!-- gen-readme end -->

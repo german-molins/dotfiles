@@ -1,8 +1,26 @@
+## `agents:update`
+
+- **Usage**: `agents:update`
+
+Update agents resources
+
 ## `bash:clean`
 
 - **Usage**: `bash:clean`
 
 Clean bash startup caches
+
+## `bash:clear-cache`
+
+- **Usage**: `bash:clear-cache`
+
+Clear bash startup caches
+
+## `bash:clear-mise-cache`
+
+- **Usage**: `bash:clear-mise-cache`
+
+Clear mise-related bash caches
 
 ## `bash:profile`
 
@@ -65,7 +83,7 @@ Clean Mise cache
 - **Usage**: `mise:update`
 - **Aliases**: `mise:up`
 
-Update Mise global packages
+Update Mise global packages and plugins
 
 ## `nerd-fonts:list`
 
@@ -111,17 +129,16 @@ Sync Neovim plugins
 
 Update Neovim plugins
 
+## `pi:update`
+
+- **Usage**: `pi:update`
+- **Aliases**: `pi:up`
+
 ## `python:init`
 
 - **Usage**: `python:init`
 
 Initialize a Python project with uv and pytest
-
-## `python:scaffold`
-
-- **Usage**: `python:scaffold`
-
-Scaffold a Python project with uv and pytest
 
 ## `python:scaffold`
 
@@ -172,7 +189,7 @@ Commit changes after scaffolding
 
 ## `update`
 
-- Depends: chezmoi:update, mise:update, devbox:update, yazi:update, nvim:update, brew:update, upt:update
+- Depends: chezmoi:update, mise:update, devbox:update, yazi:update, nvim:update, pi:update, brew:update, upt:update, agents:update
 
 - **Usage**: `update`
 
@@ -189,6 +206,8 @@ Install system packages with upt
 #### `[cmd]…`
 
 Command to run with upt
+
+**Default:** ``
 
 ## `upt:update`
 
