@@ -32,10 +32,6 @@ backend = "devbox:poppler-utils"
 version = "8.3p3"
 backend = "devbox:readline"
 
-[[tools."devbox:renameutils"]]
-version = "0.12.0"
-backend = "devbox:renameutils"
-
 [[tools."devbox:taskwarrior"]]
 version = "2.6.2"
 backend = "devbox:taskwarrior"

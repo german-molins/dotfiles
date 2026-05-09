@@ -3,7 +3,6 @@
 "devbox:taskwarrior" = "latest"
 "devbox:timewarrior" = "latest"
 "devbox:gpg-tui" = "latest"
-"devbox:renameutils" = "latest"
 "devbox:poppler-utils" = "latest"
 "devbox:git-extras" = "latest"
 "devbox:git" = "latest"
