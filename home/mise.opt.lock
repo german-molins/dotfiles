@@ -87,6 +87,35 @@ url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Darwi
 checksum = "sha256:c927d411f70b7b40aced1caeef36cf3b19e0318cfad3606a0292cd488e9c4a0f"
 url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Darwin-x86_64"
 
+[[tools."github:kdheepak/taskwarrior-tui"]]
+version = "0.27.0"
+backend = "github:kdheepak/taskwarrior-tui"
+
+[tools."github:kdheepak/taskwarrior-tui"."platforms.linux-x64"]
+checksum = "sha256:11656a6c250eb3feaba35133987405ad0e3bc7b48f1b716ab59b70b6f7911974"
+url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369203"
+
+[tools."github:kdheepak/taskwarrior-tui"."platforms.linux-x64-musl"]
+checksum = "sha256:b10a64a977b9b289d79cc292af8b05bc9e8e2efd2b6dd64f0f449337c9c3d530"
+url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369199"
+
+[tools."github:kdheepak/taskwarrior-tui"."platforms.macos-arm64"]
+checksum = "sha256:7498df3d3a9562c81edf45df83fa33aa02e3684b06a9e992647444b2ba94280d"
+url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369195"
+
+[tools."github:kdheepak/taskwarrior-tui"."platforms.macos-x64"]
+checksum = "sha256:8ac868100d5141ed533f1716b4b7232e5ecaeb6756d148ea4d3bb9b259dddf91"
+url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369201"
+
+[tools."github:kdheepak/taskwarrior-tui"."platforms.windows-x64"]
+checksum = "sha256:3bbbfc9f381df38cf1754057960bbe51030eaa52bf471a24ff4ec0f9553d38ed"
+url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-pc-windows-msvc.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369196"
+
 [[tools."github:mat2cc/redis_tui"]]
 version = "0.2.4"
 backend = "github:mat2cc/redis_tui"

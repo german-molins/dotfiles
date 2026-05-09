@@ -52,10 +52,6 @@ backend = "devbox:renameutils"
 version = "2.6.2"
 backend = "devbox:taskwarrior"
 
-[[tools."devbox:taskwarrior-tui"]]
-version = "0.27.0"
-backend = "devbox:taskwarrior-tui"
-
 [[tools."devbox:timewarrior"]]
 version = "1.9.1"
 backend = "devbox:timewarrior"
