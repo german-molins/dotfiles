@@ -19,7 +19,7 @@ run = "aube run docs:build"
 
 [tasks."docs:generate"]
 alias = ["docs:g", "docs:update", "docs:up"]
-depends = ["mise:generate-docs", "devbox:generate-docs"]
+depends = ["mise:generate-docs"]
 
 [tasks."mise:generate-docs"]
 alias = "mise:update-docs"

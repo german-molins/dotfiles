@@ -10,7 +10,6 @@ These are my daily CLI drivers:
 |------|---------|-------|-------------|
 | [Chezmoi](https://www.chezmoi.io/) | `chezmoi` | | Dotfiles manager |
 | [Mise](https://mise.en.dev/) | `mise` | | Global and project package manager |
-| [Devbox](https://www.jetpack.io/devbox/) | `devbox` | | Global and project package manager |
 | [UPT](https://github.com/sigoden/upt) | `upt` | `mise run upt` | Cross-platform system package manager|
 | [Kitty](https://sw.kovidgoyal.net/kitty/) | `kitty` | | Terminal emulator |
 | [Alacritty](https://alacritty.org/) | `alacritty` | | Terminal emulator |

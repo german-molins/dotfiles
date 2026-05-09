@@ -4,7 +4,7 @@
 
 - **Documentation dev server**: `mise docs:dev` or `aube run docs:dev`
 - **Build documentation**: `mise docs:build` or `aube run docs:build`
-- **Generate docs**: `mise docs:generate` (generates both mise and devbox docs)
+- **Generate docs**: `mise docs:generate`
 - **Preview built docs**: `aube run docs:preview`
 - **Check health**: `mise check-health` (system health checks)
 
@@ -14,7 +14,7 @@
 prefix
 - **VitePress documentation**: `docs/` directory with auto-generated content
 - **Mise tasks**: `mise/` directory for automation and build tasks
-- **Package managers**: Mise (primary), Devbox, Homebrew, Nix for different use
+- **Package managers**: Mise (primary), Homebrew, Nix for different use
 cases
 - **Profile-based config**: Uses `DOTFILES_PROFILE` for personal or work
 environments

@@ -22,8 +22,6 @@ Outputs from various tools' init and completion commands are cached to
 - `usage --completions bash`
 - `zellij setup --generate-completion bash`
 - `carapace _carapace`
-- `devbox global shellenv --init-hook` (if enabled)
-- `devbox completion bash` (if enabled)
 - Homebrew bash completion script
 
 ### Cache Management

@@ -135,7 +135,6 @@ description = "Update all tools and packages"
 depends = [
   "chezmoi:update",
   "mise:update",
-  "devbox:update",
   "yazi:update",
   "nvim:update",
   "pi:update",
@@ -160,10 +159,6 @@ run = "chezmoi upgrade"
 [tasks."devbox:self-update"]
 description = "Update Devbox"
 run = "devbox version update"
-
-[tasks."devbox:update"]
-description = "Update Devbox global packages"
-run = "devbox global update"
 
 [tasks."upt:update"]
 description = "Update system packages"

@@ -39,53 +39,6 @@ Mise manages shell-independent aliases
 Mise handles environment variables, which centralizes the management of the
 shell environment.
 
-## Migration from Devbox
-
-### Aproach 1: Direct Migration
-
-Packages can be migrated from Devbox to Mise using the following approach,
-which works for packages from Nixhub registry (backend used by Devbox) that are
-also in the Mise registry or in some of the backend registries supported by
-Mise:
-
-1. Check if the package is available in Mise registry or Aqua registry
-2. Use `mise use -g package@version` to add it to Mise
-3. Remove it from Devbox with `devbox global remove package`
-
-Some packages may need to remain in Devbox due to platform limitations:
-
-- `eza` is an example of a package not available for macOS in the Mise
-registry.
-
-Devbox scripts can be migrated to Mise tasks by:
-
-1. Converting single-line scripts to entries in `config.toml`
-2. Converting multi-line scripts to task files with appropriate grouping
-3. Replacing any references to `devbox global run` with `mise run`
-
-### Approach 2: Using Mise Backend Plugin `mise-nix`
-
-[`mise-nix`](https://github.com/jbadeau/mise-nix) is a [backend
-plugin](https://mise.jdx.dev/plugin-usage.html#backend-plugins) that provides
-support for installing packages from [Nixhub](https://www.nixhub.io/) registry
-("built for devbox by [jetify](https://www.jetify.com/)") or from flakes as
-git links. It provides the same packaging source as Devbox, with the benefits
-of managing them with Mise, except for these current limitations:
-
-- `mise upgrade` not supported for these packages. See [the issue I
-opened](https://github.com/jbadeau/mise-nix/issues/7), which the author found
-out to be actually a Mise bug, for which he opened a
-[discussion](https://github.com/jdx/mise/discussions/5909).
-
-### Migration Scripts
-
-Helper scripts available for migration:
-
-- `migrate-devbox-to-mise.sh`: Migrates packages from Devbox to Mise, checking
-compatibility and availability
-- `migrate-devbox-scripts-to-mise.sh`: Converts Devbox scripts to Mise tasks,
-handling both simple and complex scripts
-
 ## Environments
 
 Activated environments are managed by env var `MISE_ENV` as a comma-separated

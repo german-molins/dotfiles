@@ -28,14 +28,14 @@ Package Managers by operating system:
 Their priority order is:
 
 1. `mise`: Primary package and project environment manager (tasks/scripts and
-   environment variables)
-2. `devbox`: Fallback for dependencies not found in `mise` registry
-   (deprecated). Nixhub, the Devbox's registry, is way larger than any other,
-so it's kept as a fallback option for packages not available in Mise,
-particularly for macOS (darwin) where some packages like `eza` are not supported by the Mise backends.
-3. `brew` and `nix`: Used to install some user-level dependencies.
-   Bootstrapping them requires sudo permissions, but once installed, the user
-can use them to install packages without sudo.
+   environment variables). Packages installed from the Mise registry or using
+backends `aqua`, `github`, `gitlab`, `npm`.
+2. `mise-nix` (aliased `devbox`) Mise backend plugin: Nixhub, the Devbox's
+   registry, is way larger than any other, so it's kept as a fallback option
+for packages not available in Mise, particularly for macOS (darwin) where some
+packages like `eza` are not supported by the Mise backends.
+3. `brew` and `upt`: Used to install system dependencies. Bootstrapping them
+   requires sudo permissions.
 
 ## Mise
 
@@ -125,43 +125,10 @@ mise run
 
 ## Devbox
 
-`devbox` is now deprecated but kept as a fallback for packages not available in
-the Mise registry, particularly for macOS (darwin).
-
-### Devbox Global Environment
-
-For managing packages globally:
-
-```sh
-# Add a global package
-devbox global add <package>
-
-# Update global packages
-devbox global update
-```
-
-The Devbox environment is not automatically activated (would require direnv
-integration), so either run commands inside the Devbox environment with `devbox
-run` or enter a `devbox shell`.
-
-### Devbox Project Environment
-
-For managing a project with Devbox:
-
-```sh
-# Initialize a new project
-cd your-project
-devbox init
-
-# Add project dependencies
-devbox add <package>
-
-# Install project dependencies
-devbox install
-
-# Update project dependencies
-devbox update
-```
+[Devbox](https://www.jetpack.io/devbox/) integration has been removed but its installation has been temporarily kept as an
+working entry point for installing Nix indirectly in macOS. Mise backend plugin
+`mise-nix` (aliased `devbox`) is then used to install packages from the Nixhub
+registry, which requires Nix as a system dependency.
 
 ## UPT
 
