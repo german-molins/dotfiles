@@ -1,9 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
-  "packages": {
-    "taskopen": {
-      "version":            "latest",
-      "excluded_platforms": ["aarch64-darwin"]
-    }
-  }
+  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+  "packages": {}
 }

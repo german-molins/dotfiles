@@ -25,7 +25,4 @@ on `devbox shell` and on `devbox run`.
 
 ## Packages
 
-* [taskopen@latest](https://www.nixhub.io/packages/taskopen)
-
-
 <!-- gen-readme end -->
