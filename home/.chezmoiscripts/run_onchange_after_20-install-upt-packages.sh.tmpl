@@ -9,5 +9,5 @@ echo "[dotfiles][upt] Installing Upt packages..."
 
 mise run upt update
 {{ range .packages.upt -}}
-mise run upt install {{ . | quote }}
+mise run upt -- install {{ . | quote }} --yes
 {{ end -}}
