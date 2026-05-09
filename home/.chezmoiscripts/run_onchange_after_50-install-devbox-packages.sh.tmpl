@@ -10,19 +10,4 @@ set -euo pipefail
 
 # devbox packages hash: {{ include "dot_local/share/devbox/global/default/devbox.lock" | sha256sum }}
 devbox global install
-
-fonts_dir_dest="$HOME"/.local/share/fonts
-devbox_venv_dir="$(devbox global path)"/.devbox
-devbox_fonts_dir="$devbox_venv_dir"/nix/profile/default/share/fonts
-
->&2 echo "[dotfiles][devbox] Copying newly installed fonts to '$fonts_dir_dest'"
-mkdir -p "$fonts_dir_dest"
-cp -rn "$devbox_fonts_dir"/* "$fonts_dir_dest" || true
->&2 echo "[dotfiles][devbox] Refreshing fontconfig cache"
-if command -v fc-cache >/dev/null; then
-  fc-cache --force --verbose "$fonts_dir_dest"
-else
-  >&2 echo "[dotfiles][devbox] fc-cache command not found, skipping font cache refresh"
-  exit 0
-fi
 {{ end -}}
