@@ -53,43 +53,6 @@
         }
       }
     },
-    "procps@latest": {
-      "last_modified": "2026-03-21T07:29:51Z",
-      "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#procps",
-      "source": "devbox-search",
-      "version": "4.0.6",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "2008",
-              "path": "/nix/store/bv9rlaz93ldvsczb6zsk7ylsrcqhyhq1-procps-1003.1-2008",
-              "default": true
-            }
-          ]
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/fa95zw8pjvc017vk2c93sjf894jbrxz3-procps-4.0.6",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/fa95zw8pjvc017vk2c93sjf894jbrxz3-procps-4.0.6"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/z5k847cqpcblp2y5vlvyr6vrddapj03h-procps-4.0.6",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/z5k847cqpcblp2y5vlvyr6vrddapj03h-procps-4.0.6"
-        }
-      }
-    },
     "sshfs-fuse@latest": {
       "last_modified": "2023-02-24T09:01:09Z",
       "resolved": "github:NixOS/nixpkgs/7d0ed7f2e5aea07ab22ccb338d27fbe347ed2f11#sshfs-fuse",

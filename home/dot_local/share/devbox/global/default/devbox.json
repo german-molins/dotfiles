@@ -6,7 +6,6 @@
       "version":            "latest",
       "excluded_platforms": ["aarch64-darwin"]
     },
-    "sshfs-fuse": "latest",
-    "procps":     "latest"
+    "sshfs-fuse": "latest"
   }
 }
