@@ -9,7 +9,6 @@ Exacutables provided by package `poppler-utils`, a set of CLI tools using
 - `pdfdetach`
 - `pdffonts`
 - `pdfimages`
-- `pdffonts`
 - `pdfseparate`
 - `pdfsig`
 - `pdftocairo`
