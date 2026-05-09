@@ -4,7 +4,6 @@
 "devbox:timewarrior" = "latest"
 "devbox:gpg-tui" = "latest"
 "devbox:poppler-utils" = "latest"
-"devbox:git-extras" = "latest"
 "devbox:git" = "latest"
 "devbox:file" = "latest"
 "devbox:readline" = "latest"
