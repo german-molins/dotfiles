@@ -9,6 +9,7 @@ packages:
     - gawk
     - renameutils
     - procps
+    - sshfs
   homebrew:
     brews:
       - bash-completion@2

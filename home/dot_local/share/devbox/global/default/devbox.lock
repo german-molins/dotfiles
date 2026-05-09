@@ -53,30 +53,6 @@
         }
       }
     },
-    "sshfs-fuse@latest": {
-      "last_modified": "2023-02-24T09:01:09Z",
-      "resolved": "github:NixOS/nixpkgs/7d0ed7f2e5aea07ab22ccb338d27fbe347ed2f11#sshfs-fuse",
-      "source": "devbox-search",
-      "version": "3.7.3",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "path": "/nix/store/3rzs2bif6f9ghih1zxy3yvwgc6vnxv06-sshfs-fuse-2.10",
-              "default": true
-            }
-          ]
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "path": "/nix/store/36pj7qpc7l35vhxa1qgipaddrr8qldps-sshfs-fuse-3.7.3",
-              "default": true
-            }
-          ]
-        }
-      }
-    },
     "taskopen@latest": {
       "last_modified": "2026-03-21T07:29:51Z",
       "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#taskopen",
