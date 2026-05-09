@@ -5,54 +5,6 @@
       "last_modified": "2026-04-27T06:11:55Z",
       "resolved": "github:NixOS/nixpkgs/6368eda62c9775c38ef7f714b2555a741c20c72d?lastModified=1777270315&narHash=sha256-yKB4G6cKsQsWN7M6rZGk6gkJPDNPIzT05y4qzRyCDlI%3D"
     },
-    "nerd-fonts.inconsolata@latest": {
-      "last_modified": "2026-03-21T07:29:51Z",
-      "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#nerd-fonts.inconsolata",
-      "source": "devbox-search",
-      "version": "3.4.0+3.000",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/5mc0sj5y4ba075d8vqzhsr3nqzwr66f7-nerd-fonts-inconsolata-3.4.0+3.000",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/5mc0sj5y4ba075d8vqzhsr3nqzwr66f7-nerd-fonts-inconsolata-3.4.0+3.000"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/cdpqs9mzq85wy8k71mkzprl8qgw6r4ng-nerd-fonts-inconsolata-3.4.0+3.000",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/cdpqs9mzq85wy8k71mkzprl8qgw6r4ng-nerd-fonts-inconsolata-3.4.0+3.000"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/pzycfmp2xcnbnp7qbirnh191k1d9daav-nerd-fonts-inconsolata-3.4.0+3.000",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/pzycfmp2xcnbnp7qbirnh191k1d9daav-nerd-fonts-inconsolata-3.4.0+3.000"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/3dlvr4nbrbfqs38adk6hf83zgqdckg6w-nerd-fonts-inconsolata-3.4.0+3.000",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/3dlvr4nbrbfqs38adk6hf83zgqdckg6w-nerd-fonts-inconsolata-3.4.0+3.000"
-        }
-      }
-    },
     "taskopen@latest": {
       "last_modified": "2026-03-21T07:29:51Z",
       "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#taskopen",

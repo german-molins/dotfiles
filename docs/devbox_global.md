@@ -25,7 +25,6 @@ on `devbox shell` and on `devbox run`.
 
 ## Packages
 
-* [nerd-fonts.inconsolata@latest](https://www.nixhub.io/packages/nerd-fonts.inconsolata)
 * [taskopen@latest](https://www.nixhub.io/packages/taskopen)
 
 
