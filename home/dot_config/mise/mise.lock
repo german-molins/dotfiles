@@ -4417,6 +4417,10 @@ url = "https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-app
 checksum = "sha256:59837c2e7c911099aca1cc46b663bcdc5a949fd3e9fbbaf34fc73e5d5d71007c"
 url = "https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-pc-windows-msvc.zip"
 
+[[tools.systemctl-tui]]
+version = "0.5.2"
+backend = "aqua:rgwood/systemctl-tui"
+
 [[tools.tmux]]
 version = "3.6a"
 backend = "aqua:tmux/tmux-builds"
