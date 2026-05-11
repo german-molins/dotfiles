@@ -11,3 +11,8 @@ mise run upt update
 {{ range .packages.upt -}}
 mise run upt -- install {{ . | quote }} --yes
 {{ end -}}
+{{ if eq .chezmoi.os "linux" -}}
+{{   range .packages.upt_linux -}}
+mise run upt -- install {{ . | quote }} --yes
+{{   end -}}
+{{ end -}}

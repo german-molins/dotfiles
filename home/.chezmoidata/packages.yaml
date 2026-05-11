@@ -8,6 +8,7 @@ packages:
     - htop
     - gawk
     - renameutils
+  upt_linux:
     - procps
     - sshfs
   homebrew:
