@@ -8,3 +8,4 @@
 "devbox:file" = "latest"
 "devbox:readline" = "latest"
 "devbox:ffmpeg" = "latest"
+"devbox:git-extras" = "latest"
