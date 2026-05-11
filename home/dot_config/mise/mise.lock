@@ -3625,21 +3625,25 @@ backend = "github:jdx/fnox"
 checksum = "sha256:a07a192c4aeb015db3a83b8ea3cfef95df776c2d5a9dddb992f99c6c1c182082"
 url = "https://github.com/jdx/fnox/releases/download/v1.24.0/fnox-aarch64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/413778320"
+github_attestations = "unavailable"
 
 [tools.fnox."platforms.linux-arm64-musl"]
 checksum = "sha256:7d448e03ed12c38ed5c353420939e1062e02a6d537cae1d1d80878039fec3c08"
 url = "https://github.com/jdx/fnox/releases/download/v1.24.0/fnox-aarch64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/413778322"
+github_attestations = "unavailable"
 
 [tools.fnox."platforms.linux-x64"]
 checksum = "sha256:5d15ce680a673c7ae54db706aa5d59f847b78ad70178a8d4c24e7e70d94f5774"
 url = "https://github.com/jdx/fnox/releases/download/v1.24.0/fnox-x86_64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/413778338"
+github_attestations = "unavailable"
 
 [tools.fnox."platforms.linux-x64-musl"]
 checksum = "sha256:bb5a51ea8123b46a872c803ce36e7719376a9b8b9556d71ca5244cc45f9f35f6"
 url = "https://github.com/jdx/fnox/releases/download/v1.24.0/fnox-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/413778341"
+github_attestations = "unavailable"
 
 [tools.fnox."platforms.macos-arm64"]
 checksum = "sha256:5ac3f14fb7dd34d1d30c148dabfcaceddd9780bba720d226b34381eb71313155"
@@ -3651,11 +3655,13 @@ provenance = "github-attestations"
 checksum = "sha256:e17c4eeb885c7d740a8e14b0f1c12051f1ecaba97c1981a7800d87d4b936f0b4"
 url = "https://github.com/jdx/fnox/releases/download/v1.24.0/fnox-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/413778321"
+github_attestations = "unavailable"
 
 [tools.fnox."platforms.windows-x64"]
 checksum = "sha256:b5c47933cdf03615507e58916174413a15692820e5616ab8e05a8a204f0faa2a"
 url = "https://github.com/jdx/fnox/releases/download/v1.24.0/fnox-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/413778333"
+github_attestations = "unavailable"
 
 [[tools.fzf]]
 version = "0.72.0"
@@ -3736,36 +3742,43 @@ backend = "github:dalance/procs"
 checksum = "sha256:891855dff3143fd3620c06eb68bd63e94114dd2e369107b455d48bf60cc1464c"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-aarch64-linux.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235298"
+github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.linux-arm64-musl"]
 checksum = "sha256:891855dff3143fd3620c06eb68bd63e94114dd2e369107b455d48bf60cc1464c"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-aarch64-linux.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235298"
+github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.linux-x64"]
 checksum = "sha256:9c4faecf85a3af4d3d39aae47d04fa31d0a6eb0a239039f68d3f55043f04f974"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-linux.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235647"
+github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.linux-x64-musl"]
 checksum = "sha256:9c4faecf85a3af4d3d39aae47d04fa31d0a6eb0a239039f68d3f55043f04f974"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-linux.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235647"
+github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.macos-arm64"]
 checksum = "sha256:6650e7f354c07d0319d0f771ef8bb898ce8d0c841865a96c23281eebb033cac3"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-aarch64-mac.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235808"
+github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.macos-x64"]
 checksum = "sha256:72e45a61660e1c586afff64b3a8a393fed06f3a133df8e716ade68b00190ea87"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-mac.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235807"
+github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.windows-x64"]
 checksum = "sha256:1b1fef6dfc46ce2f2fe33a678cf865bea35234febe42c3921b06ab41024cda01"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-windows.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235471"
+github_attestations = "unavailable"
 
 [[tools."github:eza-community/eza"]]
 version = "0.23.4"
@@ -3775,36 +3788,43 @@ backend = "github:eza-community/eza"
 checksum = "sha256:366e8430225f9955c3dc659b452150c169894833ccfef455e01765e265a3edda"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_aarch64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249822"
+github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.linux-arm64-musl"]
 checksum = "sha256:366e8430225f9955c3dc659b452150c169894833ccfef455e01765e265a3edda"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_aarch64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249822"
+github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.linux-x64"]
 checksum = "sha256:0c38665440226cd8bef5d1d4f3bc6ff77c927fb0d68b752739105db7ab5b358d"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249830"
+github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.linux-x64-musl"]
 checksum = "sha256:d231bb3ee33b08c76279b5888845dceb7034d055c42bb9be46dbe0dae39394df"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249833"
+github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.macos-arm64"]
 checksum = "sha256:afcf804979ba03df7545e8b02d41576ab5e15bd090dfc51a052f41df3a65b264"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/man-0.23.4.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249834"
+github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.macos-x64"]
 checksum = "sha256:afcf804979ba03df7545e8b02d41576ab5e15bd090dfc51a052f41df3a65b264"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/man-0.23.4.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249834"
+github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.windows-x64"]
 checksum = "sha256:05677fd7c2d1b69ce71df53db74c29f6331ea0b2be5aa3a0fce6976200ee06fc"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza.exe_x86_64-pc-windows-gnu.zip"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249827"
+github_attestations = "unavailable"
 
 [[tools."github:ghetzel/mdnstool"]]
 version = "0.0.3"
@@ -3842,36 +3862,43 @@ backend = "github:peteretelej/tree"
 checksum = "sha256:7df0c79985dcd2d0c3eeea3751356b7ae56fb428ef7e4178e4aa653e6e2fdf30"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272496"
+github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.linux-arm64-musl"]
 checksum = "sha256:7df0c79985dcd2d0c3eeea3751356b7ae56fb428ef7e4178e4aa653e6e2fdf30"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272496"
+github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.linux-x64"]
 checksum = "sha256:c425527c46095b425f192be4bf725861339125ccb9460184ef490ef4a05aab1a"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272375"
+github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.linux-x64-musl"]
 checksum = "sha256:c425527c46095b425f192be4bf725861339125ccb9460184ef490ef4a05aab1a"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272375"
+github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.macos-arm64"]
 checksum = "sha256:dd11cd1bf0fe6ae06e4a624a3b4084c0fe503ae473c9fb3ab1ac53ed4e25a5c3"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-macOS-arm64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272391"
+github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.macos-x64"]
 checksum = "sha256:80637807d628a3d57fabc2fb56db3c341c26ced3fdc5f429429f21424be29f3b"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-macOS-amd64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272415"
+github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.windows-x64"]
 checksum = "sha256:1d8f094d3c600407530ebd257d69ca1682848878b4ec58466cc92d7374277d28"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Windows-32bit.zip"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272864"
+github_attestations = "unavailable"
 
 [[tools."github:tstack/lnav"]]
 version = "0.14.0"
@@ -3881,36 +3908,43 @@ backend = "github:tstack/lnav"
 checksum = "sha256:027e9f540567cd0e9ba00335ab9be0275a414b14608e10d49dc2d6a2633aa546"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-arm64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881009"
+github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.linux-arm64-musl"]
 checksum = "sha256:027e9f540567cd0e9ba00335ab9be0275a414b14608e10d49dc2d6a2633aa546"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-arm64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881009"
+github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.linux-x64"]
 checksum = "sha256:9d146d1da2af005a77920afff5da96d2ae0771ee25450b0954b27de95e7f0f57"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-x86_64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881335"
+github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.linux-x64-musl"]
 checksum = "sha256:9d146d1da2af005a77920afff5da96d2ae0771ee25450b0954b27de95e7f0f57"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-x86_64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881335"
+github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.macos-arm64"]
 checksum = "sha256:f282d567e1bdb2c3e54d9502671b8011c0d4e3700b2616cf72778602f8ee0371"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-aarch64-macos.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394875547"
+github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.macos-x64"]
 checksum = "sha256:0fd591a2e0488a06b3b44d7b384d3d7c6852d68607efc16ef4dec7a6ed054eea"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0.tar.gz"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394872587"
+github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.windows-x64"]
 checksum = "sha256:62e35078b0ba6ff94cb38a3e31df0197b372a96e3e516a0bfc740061729be023"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394884727"
+github_attestations = "unavailable"
 
 [[tools.glab]]
 version = "1.94.0"
@@ -4259,36 +4293,43 @@ backend = "github:jgm/pandoc"
 checksum = "sha256:b6d21e8f9c3b15744f5a7ab40248019157ed7793875dbe0383d4c82ff572b528"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165670"
+github_attestations = "unavailable"
 
 [tools.pandoc."platforms.linux-arm64-musl"]
 checksum = "sha256:b6d21e8f9c3b15744f5a7ab40248019157ed7793875dbe0383d4c82ff572b528"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165670"
+github_attestations = "unavailable"
 
 [tools.pandoc."platforms.linux-x64"]
 checksum = "sha256:a69abfababda8a56969a254b09f9553a7be89ddec00d4e0fe9fd585d71a67508"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165366"
+github_attestations = "unavailable"
 
 [tools.pandoc."platforms.linux-x64-musl"]
 checksum = "sha256:a69abfababda8a56969a254b09f9553a7be89ddec00d4e0fe9fd585d71a67508"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165366"
+github_attestations = "unavailable"
 
 [tools.pandoc."platforms.macos-arm64"]
 checksum = "sha256:6e9eca844076bcbb599bbeebbba78a70f93b5307782b85c2c272872812c88875"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-arm64-macOS.zip"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165034"
+github_attestations = "unavailable"
 
 [tools.pandoc."platforms.macos-x64"]
 checksum = "sha256:b9fbceabccbc8f34ac021a50483fc32f8160568d0b4b2c22d81bb29e3054fd82"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-x86_64-macOS.zip"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377167038"
+github_attestations = "unavailable"
 
 [tools.pandoc."platforms.windows-x64"]
 checksum = "sha256:c97542f2800f446e788d9f74237856d995421ad1bb3cc8324286840c5f272d3a"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377166311"
+github_attestations = "unavailable"
 
 [[tools."pipx:httpie"]]
 version = "3.2.4"
@@ -4416,6 +4457,26 @@ url = "https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-app
 [tools.sd."platforms.windows-x64"]
 checksum = "sha256:59837c2e7c911099aca1cc46b663bcdc5a949fd3e9fbbaf34fc73e5d5d71007c"
 url = "https://github.com/chmln/sd/releases/download/v1.1.0/sd-v1.1.0-x86_64-pc-windows-msvc.zip"
+
+[[tools.systemctl-tui]]
+version = "0.5.2"
+backend = "aqua:rgwood/systemctl-tui"
+
+[tools.systemctl-tui."platforms.linux-arm64"]
+checksum = "sha256:6bba6f5af669ec9c0a2653963c45978f1ecbdeedc364906415cced02e1656430"
+url = "https://github.com/rgwood/systemctl-tui/releases/download/v0.5.2/systemctl-tui-aarch64-unknown-linux-musl.tar.gz"
+
+[tools.systemctl-tui."platforms.linux-arm64-musl"]
+checksum = "sha256:6bba6f5af669ec9c0a2653963c45978f1ecbdeedc364906415cced02e1656430"
+url = "https://github.com/rgwood/systemctl-tui/releases/download/v0.5.2/systemctl-tui-aarch64-unknown-linux-musl.tar.gz"
+
+[tools.systemctl-tui."platforms.linux-x64"]
+checksum = "sha256:c7d66fc166f4768b7d3a9f185831689399137bbc7d1410b57dd7d28672b7de16"
+url = "https://github.com/rgwood/systemctl-tui/releases/download/v0.5.2/systemctl-tui-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.systemctl-tui."platforms.linux-x64-musl"]
+checksum = "sha256:c7d66fc166f4768b7d3a9f185831689399137bbc7d1410b57dd7d28672b7de16"
+url = "https://github.com/rgwood/systemctl-tui/releases/download/v0.5.2/systemctl-tui-x86_64-unknown-linux-musl.tar.gz"
 
 [[tools.tmux]]
 version = "3.6a"
