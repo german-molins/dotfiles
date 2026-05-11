@@ -144,3 +144,23 @@ omits the `sudo` prefix on MacOS, and is used like
 ```sh
 mise run upt install my-tool
 ```
+
+## Platform Gates for Package Lists
+
+Package lists in `home/.chezmoidata/packages.yaml` are gated per-platform by
+suffixing the list key. The install scripts iterate the common list
+unconditionally, then iterate any platform-specific siblings inside a
+`{{ if eq .chezmoi.os "<os>" }}` guard.
+
+Conventions:
+
+- `<manager>`: common to all platforms.
+- `<manager>_darwin`: macOS-only.
+- `<manager>_linux`: Linux-only.
+
+Current gated lists:
+
+- `packages.homebrew.brews_darwin` and `packages.homebrew.casks` — macOS-only
+  (gated in `home/.chezmoiscripts/run_onchange_after_05-install-homebrew-packages.sh.tmpl`).
+- `packages.upt_linux` — Linux-only (gated in
+  `home/.chezmoiscripts/run_onchange_after_20-install-upt-packages.sh.tmpl`).
