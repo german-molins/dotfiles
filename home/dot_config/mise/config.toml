@@ -121,6 +121,7 @@ calc = "numbat"
 num = "numbat"
 mdns = "mdnstool"
 jl = "jupyter-lab --no-browser --ip=0.0.0.0"
+services = "pitchfork"
 vm = "colima"
 
 [tasks.clean]
