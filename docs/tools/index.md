@@ -50,7 +50,7 @@ Coding agents:
 | [Claude Code](https://code.claude.com) | `claude` | | Anthropic subscription OAuth | |
 | [Opencode](https://opencode.ai) | `opencode` | `oc` | Opencode Zen<br>OpenRouter | `OPENCODE_API_KEY`<br>`OPENROUTER_API_KEY` |
 | [Pi](https://pi.dev/) | `pi` | | Anthropic subscription OAuth | |
-| [Codebuff](https://www.codebuff.com) | `codebuff` | | Anthropic subscription OAuth<br>Free tier | |
+| [Codebuff](https://www.codebuff.com) | `codebuff` | | Free tier | |
 
 External LLM service providers:
 
