@@ -55,6 +55,10 @@ layout {
         command "codebuff"
         start_suspended true
       }
+      pane name="Freebuff" {
+        command "freebuff"
+        start_suspended true
+      }
     }
   }
 

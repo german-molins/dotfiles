@@ -51,6 +51,7 @@ Coding agents:
 | [Opencode](https://opencode.ai) | `opencode` | `oc` | Opencode Zen<br>OpenRouter | `OPENCODE_API_KEY`<br>`OPENROUTER_API_KEY` |
 | [Pi](https://pi.dev/) | `pi` | | Anthropic subscription OAuth | |
 | [Codebuff](https://www.codebuff.com) | `codebuff` | | Free tier | |
+| [Freebuff](https://freebuff.com) | `freebuff` | | Free tier | |
 
 External LLM service providers:
 

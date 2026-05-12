@@ -789,6 +789,10 @@ url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-
 checksum = "sha256:2508c549b049b1d4342d08edc1cb42bfac169082b6e3069431b5bab9822dbb32"
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-pc-windows-msvc.zip"
 
+[[tools."npm:freebuff"]]
+version = "0.0.84"
+backend = "npm:freebuff"
+
 [[tools.numbat]]
 version = "1.23.0"
 backend = "aqua:sharkdp/numbat"
