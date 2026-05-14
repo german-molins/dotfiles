@@ -5,4 +5,5 @@ fnox.local.toml
 .agents/skills/
 .claude/skills/
 
-sandbox/
+playground/
+ignore*/

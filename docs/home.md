@@ -30,7 +30,8 @@ Additional conventions:
 
 - `repos/${owner}/${repo}`: Repositories are to be cloned in this directory
 hierarchy, where the owner may refer to a user or an organization.
-- `sandbox/*/`: Playground for any kind of bounded trial or draft.
+- `playground/*/`: Playground for any kind of bounded trial or draft. No cloud
+backup or pushed to any remote.
 - `~/.cache/dotfiles/`: Custom dotfiles caches for performance optimizations
 (see e.g. [Bash caching](tools/bash.md#startup-caching-optimizations)).
 
