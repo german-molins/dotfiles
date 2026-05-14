@@ -3780,6 +3780,46 @@ url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.1
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235471"
 github_attestations = "unavailable"
 
+[[tools."github:daptify14/chezit"]]
+version = "0.2.2"
+backend = "github:daptify14/chezit"
+
+[tools."github:daptify14/chezit"."platforms.linux-arm64"]
+checksum = "sha256:e044ef343c551c7b2a47fced848e010dc34ff33a3a39d0f436648cfa81ebe923"
+url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488895"
+github_attestations = "unavailable"
+
+[tools."github:daptify14/chezit"."platforms.linux-arm64-musl"]
+checksum = "sha256:e044ef343c551c7b2a47fced848e010dc34ff33a3a39d0f436648cfa81ebe923"
+url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488895"
+github_attestations = "unavailable"
+
+[tools."github:daptify14/chezit"."platforms.linux-x64"]
+checksum = "sha256:6eba52dbc5555290371a784822d02bcda96880b410fd5dbfccab457488c4a5a9"
+url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488893"
+github_attestations = "unavailable"
+
+[tools."github:daptify14/chezit"."platforms.linux-x64-musl"]
+checksum = "sha256:6eba52dbc5555290371a784822d02bcda96880b410fd5dbfccab457488c4a5a9"
+url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488893"
+github_attestations = "unavailable"
+
+[tools."github:daptify14/chezit"."platforms.macos-arm64"]
+checksum = "sha256:28165ea1304f7adf2d19c9ba0fc2c2155d552cbc9aca09ec60a626835ce75dd7"
+url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488891"
+github_attestations = "unavailable"
+
+[tools."github:daptify14/chezit"."platforms.macos-x64"]
+checksum = "sha256:38a26db50d7527e37109bcd3f325af0858f0ad25a5c5e734a5ca75102330ac53"
+url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488892"
+github_attestations = "unavailable"
+
 [[tools."github:eza-community/eza"]]
 version = "0.23.4"
 backend = "github:eza-community/eza"

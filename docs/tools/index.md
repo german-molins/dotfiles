@@ -22,6 +22,7 @@ These are my daily CLI drivers:
 | [Carapace](https://carapace-sh.github.io/carapace-bin/) | `carapace` | | Shell completion |
 | [Yazi](https://yazi-rs.github.io/) | `yazi`, `ya` | `y` | File manager |
 | [Neovim](https://neovim.io/) | `nvim` | | Text editor and IDE |
+| [Chezit](https://github.com/daptify14/chezit) | `chezit` | | Chezmoi TUI |
 | [bottom](https://github.com/ClementTsang/bottom) | `btm` | | System monitor |
 | [Lazydocker](https://github.com/jesseduffield/lazydocker) | `lazydocker` | | Docker and docker-compose manager |
 | [Pitchfork](https://pitchfork.en.dev/) | `pitchfork` | | Daemons manager |

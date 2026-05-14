@@ -75,6 +75,7 @@ aube = "latest"
 fnox = "latest"
 age = "latest"
 systemctl-tui = "latest"
+"github:daptify14/chezit" = "latest"
 
 [settings]
 experimental = true
