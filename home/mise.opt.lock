@@ -119,43 +119,36 @@ backend = "github:mat2cc/redis_tui"
 checksum = "sha256:7db55fae20728eea5b2c37aed2de885fc539305b6a76ab5e9095bfce5a9ee6f2"
 url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948150"
-github_attestations = "unavailable"
 
 [tools."github:mat2cc/redis_tui"."platforms.linux-arm64-musl"]
 checksum = "sha256:7db55fae20728eea5b2c37aed2de885fc539305b6a76ab5e9095bfce5a9ee6f2"
 url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948150"
-github_attestations = "unavailable"
 
 [tools."github:mat2cc/redis_tui"."platforms.linux-x64"]
 checksum = "sha256:5e1335b5bf0191892979c3a639fcd0492293b169b25c9ec2d43e3842be283b7f"
 url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948148"
-github_attestations = "unavailable"
 
 [tools."github:mat2cc/redis_tui"."platforms.linux-x64-musl"]
 checksum = "sha256:5e1335b5bf0191892979c3a639fcd0492293b169b25c9ec2d43e3842be283b7f"
 url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Linux_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948148"
-github_attestations = "unavailable"
 
 [tools."github:mat2cc/redis_tui"."platforms.macos-arm64"]
 checksum = "sha256:889af2aa103aeff127544406e2ea5950f7092147168cc3da698ad662a350aa93"
 url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948142"
-github_attestations = "unavailable"
 
 [tools."github:mat2cc/redis_tui"."platforms.macos-x64"]
 checksum = "sha256:f86b8150599eb51c6a5f8974fbd27d60ebb290950b04ce5f9a72a61f41242806"
 url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Darwin_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948145"
-github_attestations = "unavailable"
 
 [tools."github:mat2cc/redis_tui"."platforms.windows-x64"]
 checksum = "sha256:6c63711ddf17865f0c4d45abe3eaa73873702a8697537980c5e2aa231bc15801"
 url = "https://github.com/mat2cc/redis_tui/releases/download/v0.2.4/redis_tui_Windows_x86_64.zip"
 url_api = "https://api.github.com/repos/mat2cc/redis_tui/releases/assets/247948146"
-github_attestations = "unavailable"
 
 [[tools.hyperfine]]
 version = "1.20.0"
@@ -233,43 +226,36 @@ backend = "github:badlogic/pi-mono"
 checksum = "sha256:261aa912878ca983c903d9c4a0408310dd8637b583085651d9b5ddb70c9df572"
 url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593863"
-github_attestations = "unavailable"
 
 [tools.pi."platforms.linux-arm64-musl"]
 checksum = "sha256:261aa912878ca983c903d9c4a0408310dd8637b583085651d9b5ddb70c9df572"
 url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593863"
-github_attestations = "unavailable"
 
 [tools.pi."platforms.linux-x64"]
 checksum = "sha256:d67657a30d49c9faca80868d2a4bdba4dfcac04702893f45a6d14b249345eb8d"
 url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593861"
-github_attestations = "unavailable"
 
 [tools.pi."platforms.linux-x64-musl"]
 checksum = "sha256:d67657a30d49c9faca80868d2a4bdba4dfcac04702893f45a6d14b249345eb8d"
 url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593861"
-github_attestations = "unavailable"
 
 [tools.pi."platforms.macos-arm64"]
 checksum = "sha256:3063179823c6a985634312240c57015024316f7fe6661edd41f14c77d8b15e10"
 url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-darwin-arm64.tar.gz"
 url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593862"
-github_attestations = "unavailable"
 
 [tools.pi."platforms.macos-x64"]
 checksum = "sha256:fa65c98f2c651ec2f89fb1a8a3dc9b987947bc9b102361a2f178862abacc7560"
 url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593859"
-github_attestations = "unavailable"
 
 [tools.pi."platforms.windows-x64"]
 checksum = "sha256:0cbfb81e31b0fea0a4f88f95d05f3a32a782a686d54771ede30042ae42e9931f"
 url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-windows-x64.zip"
 url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593860"
-github_attestations = "unavailable"
 
 [[tools.tssh]]
 version = "0.1.25"

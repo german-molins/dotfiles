@@ -140,9 +140,9 @@ checksum = "sha256:67e55058d275beea76c1882399640c37b5be8be4eb39354c94b610928e9a0
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/markupsafe-3.0.3-py314hb76de3f_1.conda"
 checksum = "sha256:383c188496d13a55658c06e61e7d4cdff2c9f9d5a0648769fca8250bece7e0ef"
 
-[conda-packages.linux-arm64."narwhals-2.21.0-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.0-pyhcf101f3_0.conda"
-checksum = "sha256:41e391ec624b67586e1d2d5ae1651f88b283fa0b68cce998c281e69e2e5d7573"
+[conda-packages.linux-arm64."narwhals-2.21.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.2-pyhcf101f3_0.conda"
+checksum = "sha256:70f43d62450927d51673eecd8823e14f5b3cfebdb43cda1d502eba97162bab42"
 
 [conda-packages.linux-arm64."ncurses-6.6-hf8d1292_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ncurses-6.6-hf8d1292_0.conda"
@@ -200,9 +200,9 @@ checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5a
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/readline-8.3-hb682ff5_0.conda"
 checksum = "sha256:fe695f9d215e9a2e3dd0ca7f56435ab4df24f5504b83865e3d295df36e88d216"
 
-[conda-packages.linux-arm64."requests-2.34.1-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.1-pyhcf101f3_0.conda"
-checksum = "sha256:22ffa6f214829b9fb2daac5b25886cca73bd8de1fb9523791ce39478d60a58f7"
+[conda-packages.linux-arm64."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
 
 [conda-packages.linux-arm64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -420,9 +420,9 @@ checksum = "sha256:67e55058d275beea76c1882399640c37b5be8be4eb39354c94b610928e9a0
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/markupsafe-3.0.3-py314hb76de3f_1.conda"
 checksum = "sha256:383c188496d13a55658c06e61e7d4cdff2c9f9d5a0648769fca8250bece7e0ef"
 
-[conda-packages.linux-arm64-musl."narwhals-2.21.0-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.0-pyhcf101f3_0.conda"
-checksum = "sha256:41e391ec624b67586e1d2d5ae1651f88b283fa0b68cce998c281e69e2e5d7573"
+[conda-packages.linux-arm64-musl."narwhals-2.21.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.2-pyhcf101f3_0.conda"
+checksum = "sha256:70f43d62450927d51673eecd8823e14f5b3cfebdb43cda1d502eba97162bab42"
 
 [conda-packages.linux-arm64-musl."ncurses-6.6-hf8d1292_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/ncurses-6.6-hf8d1292_0.conda"
@@ -480,9 +480,9 @@ checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5a
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/readline-8.3-hb682ff5_0.conda"
 checksum = "sha256:fe695f9d215e9a2e3dd0ca7f56435ab4df24f5504b83865e3d295df36e88d216"
 
-[conda-packages.linux-arm64-musl."requests-2.34.1-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.1-pyhcf101f3_0.conda"
-checksum = "sha256:22ffa6f214829b9fb2daac5b25886cca73bd8de1fb9523791ce39478d60a58f7"
+[conda-packages.linux-arm64-musl."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
 
 [conda-packages.linux-arm64-musl."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -700,9 +700,9 @@ checksum = "sha256:adf6096f98b537a11ae3729eaa642b0811478f0ea0402ca67b5108fe2cb00
 url = "https://conda.anaconda.org/conda-forge/linux-64/markupsafe-2.1.5-py312h98912ed_0.conda"
 checksum = "sha256:273d8efd6c089c534ccbede566394c0ac1e265bfe5d89fe76e80332f3d75a636"
 
-[conda-packages.linux-x64."narwhals-2.21.0-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.0-pyhcf101f3_0.conda"
-checksum = "sha256:41e391ec624b67586e1d2d5ae1651f88b283fa0b68cce998c281e69e2e5d7573"
+[conda-packages.linux-x64."narwhals-2.21.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.2-pyhcf101f3_0.conda"
+checksum = "sha256:70f43d62450927d51673eecd8823e14f5b3cfebdb43cda1d502eba97162bab42"
 
 [conda-packages.linux-x64."ncurses-6.5-h59595ed_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.5-h59595ed_0.conda"
@@ -756,9 +756,9 @@ checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5a
 url = "https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8c095d6_2.conda"
 checksum = "sha256:2d6d0c026902561ed77cd646b5021aef2d4db22e57a5b0178dfc669231e06d2c"
 
-[conda-packages.linux-x64."requests-2.34.1-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.1-pyhcf101f3_0.conda"
-checksum = "sha256:22ffa6f214829b9fb2daac5b25886cca73bd8de1fb9523791ce39478d60a58f7"
+[conda-packages.linux-x64."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
 
 [conda-packages.linux-x64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -992,9 +992,9 @@ checksum = "sha256:adf6096f98b537a11ae3729eaa642b0811478f0ea0402ca67b5108fe2cb00
 url = "https://conda.anaconda.org/conda-forge/linux-64/markupsafe-2.1.5-py312h98912ed_0.conda"
 checksum = "sha256:273d8efd6c089c534ccbede566394c0ac1e265bfe5d89fe76e80332f3d75a636"
 
-[conda-packages.linux-x64-musl."narwhals-2.21.0-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.0-pyhcf101f3_0.conda"
-checksum = "sha256:41e391ec624b67586e1d2d5ae1651f88b283fa0b68cce998c281e69e2e5d7573"
+[conda-packages.linux-x64-musl."narwhals-2.21.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.2-pyhcf101f3_0.conda"
+checksum = "sha256:70f43d62450927d51673eecd8823e14f5b3cfebdb43cda1d502eba97162bab42"
 
 [conda-packages.linux-x64-musl."ncurses-6.5-h59595ed_0"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.5-h59595ed_0.conda"
@@ -1048,9 +1048,9 @@ checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5a
 url = "https://conda.anaconda.org/conda-forge/linux-64/readline-8.2-h8c095d6_2.conda"
 checksum = "sha256:2d6d0c026902561ed77cd646b5021aef2d4db22e57a5b0178dfc669231e06d2c"
 
-[conda-packages.linux-x64-musl."requests-2.34.1-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.1-pyhcf101f3_0.conda"
-checksum = "sha256:22ffa6f214829b9fb2daac5b25886cca73bd8de1fb9523791ce39478d60a58f7"
+[conda-packages.linux-x64-musl."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
 
 [conda-packages.linux-x64-musl."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -1264,9 +1264,9 @@ checksum = "sha256:94d3e2a485dab8bdfdd4837880bde3dd0d701e2b97d6134b8806b7c8e69c8
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/markupsafe-3.0.3-py314h6e9b3f0_1.conda"
 checksum = "sha256:411153d14ee0d98be6e3751cf5cc0502db17bce2deebebb8779e33d29d0e525f"
 
-[conda-packages.macos-arm64."narwhals-2.21.0-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.0-pyhcf101f3_0.conda"
-checksum = "sha256:41e391ec624b67586e1d2d5ae1651f88b283fa0b68cce998c281e69e2e5d7573"
+[conda-packages.macos-arm64."narwhals-2.21.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.2-pyhcf101f3_0.conda"
+checksum = "sha256:70f43d62450927d51673eecd8823e14f5b3cfebdb43cda1d502eba97162bab42"
 
 [conda-packages.macos-arm64."ncurses-6.6-h1d4f5a5_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.6-h1d4f5a5_0.conda"
@@ -1324,9 +1324,9 @@ checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5a
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/readline-8.3-h46df422_0.conda"
 checksum = "sha256:a77010528efb4b548ac2a4484eaf7e1c3907f2aec86123ed9c5212ae44502477"
 
-[conda-packages.macos-arm64."requests-2.34.1-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.1-pyhcf101f3_0.conda"
-checksum = "sha256:22ffa6f214829b9fb2daac5b25886cca73bd8de1fb9523791ce39478d60a58f7"
+[conda-packages.macos-arm64."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
 
 [conda-packages.macos-arm64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -1528,9 +1528,9 @@ checksum = "sha256:8da3c9d4b596e481750440c0250a7e18521e7f69a47e1c8415d568c847c08
 url = "https://conda.anaconda.org/conda-forge/osx-64/markupsafe-3.0.3-py314h77fa6c7_1.conda"
 checksum = "sha256:74507b481299c3d35dc7d1c35f9c92e2e94e0eda819b264f5f25b7552f8a7d64"
 
-[conda-packages.macos-x64."narwhals-2.21.0-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.0-pyhcf101f3_0.conda"
-checksum = "sha256:41e391ec624b67586e1d2d5ae1651f88b283fa0b68cce998c281e69e2e5d7573"
+[conda-packages.macos-x64."narwhals-2.21.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.2-pyhcf101f3_0.conda"
+checksum = "sha256:70f43d62450927d51673eecd8823e14f5b3cfebdb43cda1d502eba97162bab42"
 
 [conda-packages.macos-x64."ncurses-6.6-hcc0dc9a_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/ncurses-6.6-hcc0dc9a_0.conda"
@@ -1588,9 +1588,9 @@ checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5a
 url = "https://conda.anaconda.org/conda-forge/osx-64/readline-8.3-h68b038d_0.conda"
 checksum = "sha256:4614af680aa0920e82b953fece85a03007e0719c3399f13d7de64176874b80d5"
 
-[conda-packages.macos-x64."requests-2.34.1-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.1-pyhcf101f3_0.conda"
-checksum = "sha256:22ffa6f214829b9fb2daac5b25886cca73bd8de1fb9523791ce39478d60a58f7"
+[conda-packages.macos-x64."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
 
 [conda-packages.macos-x64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -1764,9 +1764,9 @@ checksum = "sha256:88609816e0cc7452bac637aaf65783e5edf4fee8a9f8e22bdc3a75882c536
 url = "https://conda.anaconda.org/conda-forge/win-64/markupsafe-3.0.3-py314h2359020_1.conda"
 checksum = "sha256:02805a0f3cd168dbf13afc5e4aed75cc00fe538ce143527a6471485b36f5887c"
 
-[conda-packages.windows-x64."narwhals-2.21.0-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.0-pyhcf101f3_0.conda"
-checksum = "sha256:41e391ec624b67586e1d2d5ae1651f88b283fa0b68cce998c281e69e2e5d7573"
+[conda-packages.windows-x64."narwhals-2.21.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.21.2-pyhcf101f3_0.conda"
+checksum = "sha256:70f43d62450927d51673eecd8823e14f5b3cfebdb43cda1d502eba97162bab42"
 
 [conda-packages.windows-x64."nest-asyncio-1.6.0-pyhd8ed1ab_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_1.conda"
@@ -1804,9 +1804,9 @@ checksum = "sha256:ad6d2e9ac39751cc0529dd1566a26751a0bf2542adb0c232533d32e176e21
 url = "https://conda.anaconda.org/conda-forge/noarch/pytz-2026.2-pyhcf101f3_0.conda"
 checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5aff6"
 
-[conda-packages.windows-x64."requests-2.34.1-pyhcf101f3_0"]
-url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.1-pyhcf101f3_0.conda"
-checksum = "sha256:22ffa6f214829b9fb2daac5b25886cca73bd8de1fb9523791ce39478d60a58f7"
+[conda-packages.windows-x64."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
 
 [conda-packages.windows-x64."retrying-1.4.2-pyhe01879c_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
@@ -1840,17 +1840,17 @@ checksum = "sha256:3005729dce6f3d3f5ec91dfc49fc75a0095f9cd23bab49efb899657297ac9
 url = "https://conda.anaconda.org/conda-forge/noarch/urllib3-2.7.0-pyhd8ed1ab_0.conda"
 checksum = "sha256:feff959a816f7988a0893201aa9727bbb7ee1e9cec2c4f0428269b489eb93fb4"
 
-[conda-packages.windows-x64."vc-14.3-h41ae7f8_36"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h41ae7f8_36.conda"
-checksum = "sha256:7c86d8ed3ac473c3e4dde0dd05aeb1f3189a26ad66c0e250f6cf4018e73358f2"
+[conda-packages.windows-x64."vc-14.5-h1b7c187_36"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vc-14.5-h1b7c187_36.conda"
+checksum = "sha256:dbcbad366e38979ac8ca9efb0ec48e5fedf9ce76f9485120c131cab7315c681c"
 
-[conda-packages.windows-x64."vc14_runtime-14.44.35208-h818238b_36"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.44.35208-h818238b_36.conda"
-checksum = "sha256:902984f2282859a76d764d80d74f873df7c7749117cfac15c5106e086fb2b772"
+[conda-packages.windows-x64."vc14_runtime-14.51.36231-h1b9f54f_36"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vc14_runtime-14.51.36231-h1b9f54f_36.conda"
+checksum = "sha256:e6f48954124c4f9419e50b3de7cb4b88f3a6078bf3616e997ea60144d499aa30"
 
-[conda-packages.windows-x64."vcomp14-14.44.35208-h818238b_36"]
-url = "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.44.35208-h818238b_36.conda"
-checksum = "sha256:0cd5b905ab2b5e9fcb170fe8801b64917effef8e3a73ffd9b2cc4c3ee387f09c"
+[conda-packages.windows-x64."vcomp14-14.51.36231-h1b9f54f_36"]
+url = "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36231-h1b9f54f_36.conda"
+checksum = "sha256:bba3bcaf805eefd0aa14beb3d08a34a81d5d36e6890bd6ce33fcb968429a3bc7"
 
 [conda-packages.windows-x64."werkzeug-3.1.8-pyhcf101f3_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/werkzeug-3.1.8-pyhcf101f3_0.conda"
@@ -2288,7 +2288,7 @@ conda_deps = [
     "python_abi-3.14-8_cp314",
     "libzlib-1.3.2-hdc9db2a_2",
     "libuuid-2.42-h1022ec0_0",
-    "requests-2.34.1-pyhcf101f3_0",
+    "requests-2.34.2-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2298,7 +2298,7 @@ conda_deps = [
     "jinja2-3.1.6-pyhcf101f3_1",
     "markupsafe-3.0.3-py314hb76de3f_1",
     "zipp-3.23.1-pyhcf101f3_0",
-    "narwhals-2.21.0-pyhcf101f3_0",
+    "narwhals-2.21.2-pyhcf101f3_0",
     "packaging-26.2-pyhc364b38_0",
     "bzip2-1.0.8-h4777abc_9",
     "ld_impl_linux-aarch64-2.45.1-default_h1979696_102",
@@ -2343,7 +2343,7 @@ conda_deps = [
     "python_abi-3.14-8_cp314",
     "libzlib-1.3.2-hdc9db2a_2",
     "libuuid-2.42-h1022ec0_0",
-    "requests-2.34.1-pyhcf101f3_0",
+    "requests-2.34.2-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2353,7 +2353,7 @@ conda_deps = [
     "jinja2-3.1.6-pyhcf101f3_1",
     "markupsafe-3.0.3-py314hb76de3f_1",
     "zipp-3.23.1-pyhcf101f3_0",
-    "narwhals-2.21.0-pyhcf101f3_0",
+    "narwhals-2.21.2-pyhcf101f3_0",
     "packaging-26.2-pyhc364b38_0",
     "bzip2-1.0.8-h4777abc_9",
     "ld_impl_linux-aarch64-2.45.1-default_h1979696_102",
@@ -2400,7 +2400,7 @@ conda_deps = [
     "libsqlite-3.46.0-hde9e2c9_0",
     "libnsl-2.0.1-hd590300_0",
     "libexpat-2.6.2-h59595ed_0",
-    "requests-2.34.1-pyhcf101f3_0",
+    "requests-2.34.2-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2410,7 +2410,7 @@ conda_deps = [
     "jinja2-3.1.6-pyhcf101f3_1",
     "markupsafe-2.1.5-py312h98912ed_0",
     "zipp-3.23.1-pyhcf101f3_0",
-    "narwhals-2.21.0-pyhcf101f3_0",
+    "narwhals-2.21.2-pyhcf101f3_0",
     "packaging-26.2-pyhc364b38_0",
     "bzip2-1.0.8-hd590300_5",
     "ld_impl_linux-64-2.40-hf3520f5_7",
@@ -2461,7 +2461,7 @@ conda_deps = [
     "libsqlite-3.46.0-hde9e2c9_0",
     "libnsl-2.0.1-hd590300_0",
     "libexpat-2.6.2-h59595ed_0",
-    "requests-2.34.1-pyhcf101f3_0",
+    "requests-2.34.2-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2471,7 +2471,7 @@ conda_deps = [
     "jinja2-3.1.6-pyhcf101f3_1",
     "markupsafe-2.1.5-py312h98912ed_0",
     "zipp-3.23.1-pyhcf101f3_0",
-    "narwhals-2.21.0-pyhcf101f3_0",
+    "narwhals-2.21.2-pyhcf101f3_0",
     "packaging-26.2-pyhc364b38_0",
     "bzip2-1.0.8-hd590300_5",
     "ld_impl_linux-64-2.40-hf3520f5_7",
@@ -2519,7 +2519,7 @@ conda_deps = [
     "readline-8.3-h46df422_0",
     "python_abi-3.14-8_cp314",
     "libzlib-1.3.2-h8088a28_2",
-    "requests-2.34.1-pyhcf101f3_0",
+    "requests-2.34.2-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2529,7 +2529,7 @@ conda_deps = [
     "jinja2-3.1.6-pyhcf101f3_1",
     "markupsafe-3.0.3-py314h6e9b3f0_1",
     "zipp-3.23.1-pyhcf101f3_0",
-    "narwhals-2.21.0-pyhcf101f3_0",
+    "narwhals-2.21.2-pyhcf101f3_0",
     "packaging-26.2-pyhc364b38_0",
     "bzip2-1.0.8-hd037594_9",
     "libexpat-2.8.0-hf6b4638_0",
@@ -2569,7 +2569,7 @@ conda_deps = [
     "readline-8.3-h68b038d_0",
     "python_abi-3.14-8_cp314",
     "libzlib-1.3.2-hbb4bfdb_2",
-    "requests-2.34.1-pyhcf101f3_0",
+    "requests-2.34.2-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2579,7 +2579,7 @@ conda_deps = [
     "jinja2-3.1.6-pyhcf101f3_1",
     "markupsafe-3.0.3-py314h77fa6c7_1",
     "zipp-3.23.1-pyhcf101f3_0",
-    "narwhals-2.21.0-pyhcf101f3_0",
+    "narwhals-2.21.2-pyhcf101f3_0",
     "packaging-26.2-pyhc364b38_0",
     "bzip2-1.0.8-h500dc9f_9",
     "libexpat-2.8.0-hcc62823_0",
@@ -2619,7 +2619,7 @@ conda_deps = [
     "python-3.14.4-h4b44e0e_100_cp314",
     "python_abi-3.14-8_cp314",
     "libzlib-1.3.2-hfd05255_2",
-    "requests-2.34.1-pyhcf101f3_0",
+    "requests-2.34.2-pyhcf101f3_0",
     "retrying-1.4.2-pyhe01879c_0",
     "setuptools-82.0.1-pyh332efcf_0",
     "typing_extensions-4.15.0-pyhcf101f3_0",
@@ -2629,7 +2629,7 @@ conda_deps = [
     "jinja2-3.1.6-pyhcf101f3_1",
     "markupsafe-3.0.3-py314h2359020_1",
     "zipp-3.23.1-pyhcf101f3_0",
-    "narwhals-2.21.0-pyhcf101f3_0",
+    "narwhals-2.21.2-pyhcf101f3_0",
     "packaging-26.2-pyhc364b38_0",
     "bzip2-1.0.8-h0ad9c76_9",
     "libexpat-2.8.0-hac47afa_0",
@@ -2641,9 +2641,9 @@ conda_deps = [
     "tk-8.6.13-h6ed50ae_3",
     "tzdata-2025c-hc9c84f9_1",
     "ucrt-10.0.26100.0-h57928b3_0",
-    "vc-14.3-h41ae7f8_36",
-    "vc14_runtime-14.44.35208-h818238b_36",
-    "vcomp14-14.44.35208-h818238b_36",
+    "vc-14.5-h1b7c187_36",
+    "vc14_runtime-14.51.36231-h1b9f54f_36",
+    "vcomp14-14.51.36231-h1b9f54f_36",
     "zstd-1.5.7-h534d264_6",
     "certifi-2026.4.22-pyhd8ed1ab_0",
     "charset-normalizer-3.4.7-pyhd8ed1ab_0",
@@ -2856,9 +2856,9 @@ conda_deps = [
     "tk-8.6.13-h6ed50ae_3",
     "tzdata-2025c-hc9c84f9_1",
     "ucrt-10.0.26100.0-h57928b3_0",
-    "vc-14.3-h41ae7f8_36",
-    "vc14_runtime-14.44.35208-h818238b_36",
-    "vcomp14-14.44.35208-h818238b_36",
+    "vc-14.5-h1b7c187_36",
+    "vc14_runtime-14.51.36231-h1b9f54f_36",
+    "vcomp14-14.51.36231-h1b9f54f_36",
     "zstd-1.5.7-h534d264_6",
     "six-1.17.0-pyhe01879c_1",
     "ca-certificates-2026.4.22-h4c7d964_0",
@@ -3039,9 +3039,9 @@ checksum = "sha256:d2fd034cff018e148c2bb51e10cfe1c370e60b7fd3f5c189ab5d151fb957c
 url = "https://conda.anaconda.org/conda-forge/win-64/resvg-0.47.0-h77a83cd_0.conda"
 conda_deps = [
     "ucrt-10.0.26100.0-h57928b3_0",
-    "vc-14.3-h41ae7f8_36",
-    "vc14_runtime-14.44.35208-h818238b_36",
-    "vcomp14-14.44.35208-h818238b_36",
+    "vc-14.5-h1b7c187_36",
+    "vc14_runtime-14.51.36231-h1b9f54f_36",
+    "vcomp14-14.51.36231-h1b9f54f_36",
 ]
 
 [[tools."conda:rsync"]]
@@ -3749,43 +3749,36 @@ backend = "github:dalance/procs"
 checksum = "sha256:891855dff3143fd3620c06eb68bd63e94114dd2e369107b455d48bf60cc1464c"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-aarch64-linux.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235298"
-github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.linux-arm64-musl"]
 checksum = "sha256:891855dff3143fd3620c06eb68bd63e94114dd2e369107b455d48bf60cc1464c"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-aarch64-linux.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235298"
-github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.linux-x64"]
 checksum = "sha256:9c4faecf85a3af4d3d39aae47d04fa31d0a6eb0a239039f68d3f55043f04f974"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-linux.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235647"
-github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.linux-x64-musl"]
 checksum = "sha256:9c4faecf85a3af4d3d39aae47d04fa31d0a6eb0a239039f68d3f55043f04f974"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-linux.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235647"
-github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.macos-arm64"]
 checksum = "sha256:6650e7f354c07d0319d0f771ef8bb898ce8d0c841865a96c23281eebb033cac3"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-aarch64-mac.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235808"
-github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.macos-x64"]
 checksum = "sha256:72e45a61660e1c586afff64b3a8a393fed06f3a133df8e716ade68b00190ea87"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-mac.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235807"
-github_attestations = "unavailable"
 
 [tools."github:dalance/procs"."platforms.windows-x64"]
 checksum = "sha256:1b1fef6dfc46ce2f2fe33a678cf865bea35234febe42c3921b06ab41024cda01"
 url = "https://github.com/dalance/procs/releases/download/v0.14.11/procs-v0.14.11-x86_64-windows.zip"
 url_api = "https://api.github.com/repos/dalance/procs/releases/assets/363235471"
-github_attestations = "unavailable"
 
 [[tools."github:daptify14/chezit"]]
 version = "0.2.2"
@@ -3795,37 +3788,31 @@ backend = "github:daptify14/chezit"
 checksum = "sha256:e044ef343c551c7b2a47fced848e010dc34ff33a3a39d0f436648cfa81ebe923"
 url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488895"
-github_attestations = "unavailable"
 
 [tools."github:daptify14/chezit"."platforms.linux-arm64-musl"]
 checksum = "sha256:e044ef343c551c7b2a47fced848e010dc34ff33a3a39d0f436648cfa81ebe923"
 url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_linux_arm64.tar.gz"
 url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488895"
-github_attestations = "unavailable"
 
 [tools."github:daptify14/chezit"."platforms.linux-x64"]
 checksum = "sha256:6eba52dbc5555290371a784822d02bcda96880b410fd5dbfccab457488c4a5a9"
 url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488893"
-github_attestations = "unavailable"
 
 [tools."github:daptify14/chezit"."platforms.linux-x64-musl"]
 checksum = "sha256:6eba52dbc5555290371a784822d02bcda96880b410fd5dbfccab457488c4a5a9"
 url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488893"
-github_attestations = "unavailable"
 
 [tools."github:daptify14/chezit"."platforms.macos-arm64"]
 checksum = "sha256:28165ea1304f7adf2d19c9ba0fc2c2155d552cbc9aca09ec60a626835ce75dd7"
 url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_darwin_arm64.tar.gz"
 url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488891"
-github_attestations = "unavailable"
 
 [tools."github:daptify14/chezit"."platforms.macos-x64"]
 checksum = "sha256:38a26db50d7527e37109bcd3f325af0858f0ad25a5c5e734a5ca75102330ac53"
 url = "https://github.com/daptify14/chezit/releases/download/v0.2.2/chezit_0.2.2_darwin_amd64.tar.gz"
 url_api = "https://api.github.com/repos/daptify14/chezit/releases/assets/418488892"
-github_attestations = "unavailable"
 
 [[tools."github:eza-community/eza"]]
 version = "0.23.4"
@@ -3835,43 +3822,36 @@ backend = "github:eza-community/eza"
 checksum = "sha256:366e8430225f9955c3dc659b452150c169894833ccfef455e01765e265a3edda"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_aarch64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249822"
-github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.linux-arm64-musl"]
 checksum = "sha256:366e8430225f9955c3dc659b452150c169894833ccfef455e01765e265a3edda"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_aarch64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249822"
-github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.linux-x64"]
 checksum = "sha256:0c38665440226cd8bef5d1d4f3bc6ff77c927fb0d68b752739105db7ab5b358d"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249830"
-github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.linux-x64-musl"]
 checksum = "sha256:d231bb3ee33b08c76279b5888845dceb7034d055c42bb9be46dbe0dae39394df"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249833"
-github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.macos-arm64"]
 checksum = "sha256:afcf804979ba03df7545e8b02d41576ab5e15bd090dfc51a052f41df3a65b264"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/man-0.23.4.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249834"
-github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.macos-x64"]
 checksum = "sha256:afcf804979ba03df7545e8b02d41576ab5e15bd090dfc51a052f41df3a65b264"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/man-0.23.4.tar.gz"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249834"
-github_attestations = "unavailable"
 
 [tools."github:eza-community/eza"."platforms.windows-x64"]
 checksum = "sha256:05677fd7c2d1b69ce71df53db74c29f6331ea0b2be5aa3a0fce6976200ee06fc"
 url = "https://github.com/eza-community/eza/releases/download/v0.23.4/eza.exe_x86_64-pc-windows-gnu.zip"
 url_api = "https://api.github.com/repos/eza-community/eza/releases/assets/300249827"
-github_attestations = "unavailable"
 
 [[tools."github:ghetzel/mdnstool"]]
 version = "0.0.3"
@@ -3909,43 +3889,36 @@ backend = "github:peteretelej/tree"
 checksum = "sha256:7df0c79985dcd2d0c3eeea3751356b7ae56fb428ef7e4178e4aa653e6e2fdf30"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272496"
-github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.linux-arm64-musl"]
 checksum = "sha256:7df0c79985dcd2d0c3eeea3751356b7ae56fb428ef7e4178e4aa653e6e2fdf30"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272496"
-github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.linux-x64"]
 checksum = "sha256:c425527c46095b425f192be4bf725861339125ccb9460184ef490ef4a05aab1a"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272375"
-github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.linux-x64-musl"]
 checksum = "sha256:c425527c46095b425f192be4bf725861339125ccb9460184ef490ef4a05aab1a"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272375"
-github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.macos-arm64"]
 checksum = "sha256:dd11cd1bf0fe6ae06e4a624a3b4084c0fe503ae473c9fb3ab1ac53ed4e25a5c3"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-macOS-arm64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272391"
-github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.macos-x64"]
 checksum = "sha256:80637807d628a3d57fabc2fb56db3c341c26ced3fdc5f429429f21424be29f3b"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-macOS-amd64.tar.gz"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272415"
-github_attestations = "unavailable"
 
 [tools."github:peteretelej/tree"."platforms.windows-x64"]
 checksum = "sha256:1d8f094d3c600407530ebd257d69ca1682848878b4ec58466cc92d7374277d28"
 url = "https://github.com/peteretelej/tree/releases/download/v1.3.0/tree-v1.3.0-Windows-32bit.zip"
 url_api = "https://api.github.com/repos/peteretelej/tree/releases/assets/336272864"
-github_attestations = "unavailable"
 
 [[tools."github:tstack/lnav"]]
 version = "0.14.0"
@@ -3955,43 +3928,36 @@ backend = "github:tstack/lnav"
 checksum = "sha256:027e9f540567cd0e9ba00335ab9be0275a414b14608e10d49dc2d6a2633aa546"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-arm64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881009"
-github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.linux-arm64-musl"]
 checksum = "sha256:027e9f540567cd0e9ba00335ab9be0275a414b14608e10d49dc2d6a2633aa546"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-arm64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881009"
-github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.linux-x64"]
 checksum = "sha256:9d146d1da2af005a77920afff5da96d2ae0771ee25450b0954b27de95e7f0f57"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-x86_64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881335"
-github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.linux-x64-musl"]
 checksum = "sha256:9d146d1da2af005a77920afff5da96d2ae0771ee25450b0954b27de95e7f0f57"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-linux-musl-x86_64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394881335"
-github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.macos-arm64"]
 checksum = "sha256:f282d567e1bdb2c3e54d9502671b8011c0d4e3700b2616cf72778602f8ee0371"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-aarch64-macos.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394875547"
-github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.macos-x64"]
 checksum = "sha256:0fd591a2e0488a06b3b44d7b384d3d7c6852d68607efc16ef4dec7a6ed054eea"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0.tar.gz"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394872587"
-github_attestations = "unavailable"
 
 [tools."github:tstack/lnav"."platforms.windows-x64"]
 checksum = "sha256:62e35078b0ba6ff94cb38a3e31df0197b372a96e3e516a0bfc740061729be023"
 url = "https://github.com/tstack/lnav/releases/download/v0.14.0/lnav-0.14.0-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/394884727"
-github_attestations = "unavailable"
 
 [[tools.glab]]
 version = "1.97.0"
@@ -4340,43 +4306,36 @@ backend = "github:jgm/pandoc"
 checksum = "sha256:b6d21e8f9c3b15744f5a7ab40248019157ed7793875dbe0383d4c82ff572b528"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165670"
-github_attestations = "unavailable"
 
 [tools.pandoc."platforms.linux-arm64-musl"]
 checksum = "sha256:b6d21e8f9c3b15744f5a7ab40248019157ed7793875dbe0383d4c82ff572b528"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-arm64.tar.gz"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165670"
-github_attestations = "unavailable"
 
 [tools.pandoc."platforms.linux-x64"]
 checksum = "sha256:a69abfababda8a56969a254b09f9553a7be89ddec00d4e0fe9fd585d71a67508"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165366"
-github_attestations = "unavailable"
 
 [tools.pandoc."platforms.linux-x64-musl"]
 checksum = "sha256:a69abfababda8a56969a254b09f9553a7be89ddec00d4e0fe9fd585d71a67508"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165366"
-github_attestations = "unavailable"
 
 [tools.pandoc."platforms.macos-arm64"]
 checksum = "sha256:6e9eca844076bcbb599bbeebbba78a70f93b5307782b85c2c272872812c88875"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-arm64-macOS.zip"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377165034"
-github_attestations = "unavailable"
 
 [tools.pandoc."platforms.macos-x64"]
 checksum = "sha256:b9fbceabccbc8f34ac021a50483fc32f8160568d0b4b2c22d81bb29e3054fd82"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-x86_64-macOS.zip"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377167038"
-github_attestations = "unavailable"
 
 [tools.pandoc."platforms.windows-x64"]
 checksum = "sha256:c97542f2800f446e788d9f74237856d995421ad1bb3cc8324286840c5f272d3a"
 url = "https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-windows-x86_64.zip"
 url_api = "https://api.github.com/repos/jgm/pandoc/releases/assets/377166311"
-github_attestations = "unavailable"
 
 [[tools."pipx:httpie"]]
 version = "3.2.4"
