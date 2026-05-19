@@ -1,0 +1,62 @@
+    tab name="vcs" focus=true {
+        pane stacked=true {
+            pane name="Jujutsu UI" {
+                command "jjui"
+                start_suspended true
+                expanded true
+            }
+            pane name="Lazygit" {
+                command "lazygit"
+            }
+            pane name="GH Dash" {
+                command "gh-dash"
+                start_suspended true
+            }
+        }
+    }
+
+    tab name="edit" {
+        pane {
+            command "nvim"
+        }
+    }
+
+    tab name="ai" {
+        pane stacked=true {
+            pane name="OpenCode" {
+                command "opencode"
+                start_suspended true
+                expanded true
+            }
+            pane name="Amp" {
+                command "amp"
+                start_suspended true
+            }
+            pane name="Claude" {
+                command "claude"
+                start_suspended true
+            }
+            pane name="Codebuff" {
+                command "codebuff"
+                start_suspended true
+            }
+            pane name="Freebuff" {
+                command "freebuff"
+                start_suspended true
+            }
+        }
+    }
+
+    tab name="services" {
+        pane stacked=true {
+            pane name="Pitchfork" {
+                command "pitchfork tui"
+                start_suspended true
+                expanded true
+            }
+            pane name="Docker" {
+                command "lazydocker"
+                start_suspended true
+            }
+        }
+    }

@@ -1,0 +1,10 @@
+layout {
+{{ template "zellij-default-tab.kdl" . }}
+    tab name="chezmoi" focus=false {
+        pane {
+            command "chezit"
+        }
+    }
+
+{{ template "zellij-dev-tabs.kdl" . -}}
+}
