@@ -4,6 +4,8 @@ mise.*.local.*
 fnox.local.toml
 .agents/skills/
 .claude/skills/
+AGENTS.local.md
+CLAUDE.local.md
 
 playground/
 ignore*/
