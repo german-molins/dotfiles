@@ -53,6 +53,7 @@ Coding agents:
 | [Pi](https://pi.dev/) | `pi` | | Anthropic subscription OAuth | |
 | [Codebuff](https://www.codebuff.com) | `codebuff` | | Free tier | |
 | [Freebuff](https://freebuff.com) | `freebuff` | | Free tier | |
+| [Antigravity CLI](https://antigravity.google/product/antigravity-cli) | `agy` | | Gemini free tier | Google OAuth |
 
 External LLM service providers:
 

@@ -31,3 +31,4 @@ packages:
       - wireshark-app
       - windows-app
       - balenaetcher
+      - antigravity-cli

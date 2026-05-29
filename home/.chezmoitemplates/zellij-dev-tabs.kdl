@@ -36,6 +36,10 @@
                 command "claude"
                 start_suspended true
             }
+            pane name="Antigravity" {
+                command "agy"
+                start_suspended true
+            }
             pane name="Codebuff" {
                 command "codebuff"
                 start_suspended true
