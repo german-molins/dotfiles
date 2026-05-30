@@ -1,7 +1,7 @@
 packages:
   bootstrap:
     mise:
-      version: v2026.5.15
+      version: v2026.5.16
   upt:
     - zsh
     - rcs
