@@ -52,7 +52,7 @@ jj = "latest"
 lazyssh = "latest"
 "cargo:lazyjj" = "latest"
 pandoc = "latest"
-amp = "latest"
+amp = { version = "latest", allow_builds = true }
 "npm:ctx7" = "latest"
 "conda:dos2unix" = "7.5.2"
 "conda:dash" = "latest"

@@ -1771,8 +1771,11 @@ url = "https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-wi
 provenance = "github-attestations"
 
 [[tools.amp]]
-version = "0.0.1780130685-gfdac38"
+version = "0.0.1780306933-g944f6c"
 backend = "npm:@sourcegraph/amp"
+
+[tools.amp.options]
+allow_builds = '["esbuild"]'
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.24.1"
