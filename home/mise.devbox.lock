@@ -5,15 +5,15 @@ version = "13.58"
 backend = "devbox:exiftool"
 
 [[tools."devbox:ffmpeg"]]
-version = "8.0.1"
+version = "8.1"
 backend = "devbox"
 
 [[tools."devbox:file"]]
-version = "5.46"
+version = "5.47"
 backend = "devbox:file"
 
 [[tools."devbox:git"]]
-version = "2.53.0"
+version = "2.54.0"
 backend = "devbox:git"
 
 [[tools."devbox:git-extras"]]
