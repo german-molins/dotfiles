@@ -10,6 +10,58 @@ The bash configuration is organized as follows:
 - `~/.bashrc.d/*.sh`: Modular bash configuration files
 - `~/.profile`: Login shell profile
 
+## Non-Interactive Short-Circuit
+
+`~/.bashrc` aborts on its first line for non-interactive shells, so **none** of
+`~/.bashrc.d/*.sh` runs.
+
+### Interactive vs non-interactive
+
+These describe whether the shell reads commands from a prompt, independently of
+whether it sources `~/.bashrc`:
+
+- **Interactive** — a prompt you type at (`$-` contains `i`). E.g. `ssh host`
+  with no command.
+- **Non-interactive** — handed a one-off command and exits (no `i`). E.g.
+  `ssh host '<cmd>'`, or the remote shells that `rsync`/`scp` spawn.
+
+The guard keys off this property (`$-`), not off whether `~/.bashrc` was
+sourced.
+
+### The sshd abnormality
+
+Normally a non-interactive bash does **not** read `~/.bashrc` at all. The
+exception: when bash detects it was started by `sshd` it sources `~/.bashrc`
+*even though it is non-interactive* (a compile-time feature enabled in
+practically every build). So `rsync`/`scp`/`ssh host '<cmd>'` are
+non-interactive — line editing is off, so `bind` warns — yet they abnormally
+run `~/.bashrc`. Any stdout written during that sourcing corrupts the program's
+stream; Atuin's init emitting a `bind` warning broke `rsync`:
+
+```text
+$ rsync -av some_file.txt remote-dotfiles-host:/home/user/dir
+.bashrc.d/30-atuin.sh: line 747: bind: warning: line editing not enabled
+protocol version mismatch -- is your shell clean?
+```
+
+The guard keeps the stream clean and makes these one-off shells start instantly.
+
+### Limitation
+
+Skipping `~/.bashrc.d/` means tooling activated there (`mise`, `nix`,
+`homebrew`) is unavailable to non-interactive remote commands, so
+`ssh host 'mise-managed-tool …'` won't find those tools. Anything that must
+survive into non-interactive sessions belongs in `~/.profile` /
+`~/.profile.d/*.sh`; interactive-only setup stays in `~/.bashrc.d/`.
+
+This is an acceptable trade-off because the common non-interactive path
+(`rsync`/`scp`) is pure file transfer and needs no tooling. If the limitation
+ever becomes a blocker — e.g. you routinely run `ssh host '<managed-tool> …'` —
+drop the top-of-file guard and instead gate only the offenders per-script (the
+`bind` calls in `30-atuin.sh`, the bare `where` at the end of `~/.bashrc`).
+Tooling then loads non-interactively, at the cost of full startup on every
+remote command and ongoing vigilance against new stdout offenders.
+
 ## Bash Startup Profiling
 
 This feature allows you to measure the startup time of individual files sourced
