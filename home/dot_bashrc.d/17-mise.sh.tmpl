@@ -1,4 +1,4 @@
-export PATH="$HOME/.local/bin:$PATH"
+{{ template "mise-shellenv" . }}
 
 if command -v mise >/dev/null 2>&1; then
     eval "$(mise activate bash)"

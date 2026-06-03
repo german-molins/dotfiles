@@ -1,17 +1,15 @@
 #!/usr/bin/env sh
 
 # Make mise available in the current shell.
-PATH="$HOME/.local/bin:$PATH"
+{{ template "mise-shellenv" . }}
 
 if ! command -v mise >/dev/null; then
     >&2 echo "[dotfiles][mise] ERROR: 'mise' command not found, skipping package installation"
     exit 1
 fi
 
-{{ if eq .chezmoi.os "linux" -}}
-# Make nix available in current shell.
-. "$HOME"/.nix-profile/etc/profile.d/nix.sh
-{{ end }}
+# Make nix available in the current shell.
+{{ template "nix-profile" . }}
 
 
 # checksum of mise environment lockfiles

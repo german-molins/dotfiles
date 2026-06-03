@@ -1,0 +1,11 @@
+{{- /*
+Source the nix profile for non-interactive chezmoi run scripts, which never
+source ~/.bashrc. OS-aware: macOS uses the multi-user daemon profile, Linux the
+single-user per-user profile. Guarded so it is a no-op (exit 0) when nix is
+absent, safe under `set -e`. See docs/bash.md "Non-Interactive Short-Circuit".
+*/ -}}
+{{- if eq .chezmoi.os "darwin" -}}
+if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh; fi
+{{- else -}}
+if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then . "$HOME/.nix-profile/etc/profile.d/nix.sh"; fi
+{{- end -}}

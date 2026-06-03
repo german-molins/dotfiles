@@ -26,7 +26,7 @@ if [[ ! $(command -v nix)  ]]
 then
   # Install Nix package manager in single-user mode.
   sh <(curl -L https://nixos.org/nix/install) --no-daemon
-  . "$HOME"/.nix-profile/etc/profile.d/nix.sh
+  {{ template "nix-profile" . }}
 fi
 if [[ ! $(command -v devbox) ]]
 then

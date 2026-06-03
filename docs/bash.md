@@ -62,6 +62,34 @@ drop the top-of-file guard and instead gate only the offenders per-script (the
 Tooling then loads non-interactively, at the cost of full startup on every
 remote command and ongoing vigilance against new stdout offenders.
 
+### chezmoi run scripts: re-establish PATH yourself
+
+The same short-circuit hits chezmoi's `run_*` scripts under
+`home/.chezmoiscripts/`: they execute as non-interactive shells and **never**
+source `~/.bashrc.d/`, so tools installed by the bootstrap (`mise`, `brew`,
+`nix`) are not on `PATH` just because the interactive config would put them
+there. A script that calls such a tool without first putting it on `PATH` dies
+with `command not found` — even though the tool is installed.
+
+Each run script must therefore re-establish `PATH` itself, at the top, before
+invoking the tool. To keep this uniform and in one place, the setup lives in
+shared `.chezmoitemplates` partials, included with `{{ template "<name>" . }}`:
+
+- **`mise-shellenv`** — prepends `~/.local/bin` (the mise entry binary) and the
+  mise shims dir. Include it in any script that calls `mise` directly, or a
+  mise-managed tool directly (e.g. `pitchfork`). Note `mise run <task>` already
+  exposes that task's managed tools, so for `mise run …` only the `mise` binary
+  itself needs to be reachable.
+- **`nix-profile`** — sources the OS-correct nix profile (macOS multi-user
+  daemon vs Linux single-user), guarded so it is a no-op when nix is absent
+  (safe under `set -e`).
+- **`brew-shellenv`** — `eval`s `brew shellenv` for the OS/arch-correct prefix.
+
+The interactive `~/.bashrc.d/` files (`10-nix`, `17-mise`, `08-homebrew`) use the
+same partials, so interactive and non-interactive setup share one source of
+truth. After installing a new bootstrap tool, add a partial for it and include
+it in both the relevant run script and its `~/.bashrc.d/` file.
+
 ## Bash Startup Profiling
 
 This feature allows you to measure the startup time of individual files sourced

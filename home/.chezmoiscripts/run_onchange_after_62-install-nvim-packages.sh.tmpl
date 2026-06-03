@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Make mise available in the current shell.
-PATH="$HOME/.local/bin:$PATH"
+{{ template "mise-shellenv" . }}
 
 if ! command -v mise >/dev/null; then
   >&2 echo "[dotfiles][nvim] ERROR: 'mise' command not found, skipping package installation"

@@ -1,0 +1,7 @@
+{{- /*
+Put mise (and its shims) on PATH for non-interactive chezmoi run scripts,
+which never source ~/.bashrc. ~/.local/bin holds the mise entry binary;
+the shims dir is needed by scripts that call mise-managed tools directly
+(not via `mise run`). See docs/bash.md "Non-Interactive Short-Circuit".
+*/ -}}
+export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$PATH"

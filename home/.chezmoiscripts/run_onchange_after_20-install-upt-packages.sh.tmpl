@@ -3,7 +3,12 @@
 set -eu
 
 # Make mise available in the current shell.
-PATH="$HOME/.local/bin:$PATH"
+{{ template "mise-shellenv" . }}
+
+if ! command -v mise >/dev/null; then
+    >&2 echo "[dotfiles][upt] ERROR: 'mise' command not found, skipping package installation"
+    exit 1
+fi
 
 echo "[dotfiles][upt] Installing Upt packages..."
 
