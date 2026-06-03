@@ -1,11 +1,5 @@
 # Set shell env.
-{{- if eq .chezmoi.os "linux" }}
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv 2>/dev/null)"
-{{- else if and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64") }}
-eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null)"
-{{- else if eq .chezmoi.os "darwin" }}
-eval "$(/usr/local/bin/brew shellenv 2>/dev/null)"
-{{- end }}
+{{ template "brew-shellenv" . }}
 
 if [ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]; then
   eval "$(_evalcache source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh")"

@@ -3,6 +3,8 @@
 
 set -euo pipefail
 
+{{ template "brew-shellenv" . }}
+
 brew bundle --file=/dev/stdin <<EOF
 {{ range .packages.homebrew.brews -}}
 brew {{ . | quote }}
