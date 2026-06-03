@@ -1,6 +1,8 @@
 .mise/prepare-state.toml
 mise.local.*
 mise.*.local.*
+.miserc.toml
+.config/miserc.toml
 fnox.local.toml
 .agents/skills/
 .claude/skills/
