@@ -11,6 +11,7 @@
     "beads@beads-marketplace": true,
     "superpowers@claude-plugins-official": false,
     "caveman@caveman": true,
+    "context7@claude-plugins-official": true,
     "context-mode@context-mode": true
   },
   "extraKnownMarketplaces": {
