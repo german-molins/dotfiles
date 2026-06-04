@@ -2,6 +2,7 @@
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
   },
+  "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "bash ~/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh"
@@ -35,6 +36,6 @@
     }
   },
   "alwaysThinkingEnabled": true,
-  "effortLevel": "medium",
+  "effortLevel": "high",
   "editorMode": "vim"
 }
