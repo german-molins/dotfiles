@@ -14,6 +14,7 @@ packages:
   homebrew:
     brews:
       - bash-completion@2
+      - beads
     brews_darwin:
       - taskopen
     casks:
