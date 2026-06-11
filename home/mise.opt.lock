@@ -57,59 +57,59 @@ checksum = "sha256:3bbbfc9f381df38cf1754057960bbe51030eaa52bf471a24ff4ec0f9553d3
 url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-pc-windows-msvc.tar.gz"
 
 [[tools."cargo:findutils"]]
-version = "0.8.0"
+version = "0.9.0"
 backend = "cargo:findutils"
 
 [[tools.claude]]
-version = "2.1.160"
+version = "2.1.170"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.160/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.170/linux-arm64/claude"
 
 [tools.claude."platforms.linux-arm64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.160/linux-arm64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.170/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.160/linux-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.170/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.160/linux-x64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.170/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "blake3:e349b8e785d87cef0ef899401adfc9e291dcf19a58e3c2b57d199957cb7b35ad"
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.160/darwin-arm64/claude"
+checksum = "blake3:84f8d5071a8c03996ca4ea621c1ca35745886ad16c805235333e43409be2b761"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.170/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.160/darwin-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.170/darwin-x64/claude"
 
 [[tools.colima]]
-version = "0.10.1"
+version = "0.10.3"
 backend = "aqua:abiosoft/colima"
 
 [tools.colima."platforms.linux-arm64"]
-checksum = "sha256:9d89f1fc10d15eb214e9ab7b30b70bc1524df33bcd7d6828082132e09e33e8ef"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Linux-aarch64"
+checksum = "sha256:ebb69208007484ac36b8a6ba72a797189b0daa88f8b31bc2b563e82b9c91cb70"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-aarch64"
 
 [tools.colima."platforms.linux-arm64-musl"]
-checksum = "sha256:9d89f1fc10d15eb214e9ab7b30b70bc1524df33bcd7d6828082132e09e33e8ef"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Linux-aarch64"
+checksum = "sha256:ebb69208007484ac36b8a6ba72a797189b0daa88f8b31bc2b563e82b9c91cb70"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-aarch64"
 
 [tools.colima."platforms.linux-x64"]
-checksum = "sha256:71293b94c725e26b35dcd00dfbc4713436237e76d99e768f5b14cebc4e7bfe8e"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Linux-x86_64"
+checksum = "sha256:54ea35f4847815d0a1445dbc2bc3dd6469518a38a9e960449e96b044d248d00d"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-x86_64"
 
 [tools.colima."platforms.linux-x64-musl"]
-checksum = "sha256:71293b94c725e26b35dcd00dfbc4713436237e76d99e768f5b14cebc4e7bfe8e"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Linux-x86_64"
+checksum = "sha256:54ea35f4847815d0a1445dbc2bc3dd6469518a38a9e960449e96b044d248d00d"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-x86_64"
 
 [tools.colima."platforms.macos-arm64"]
-checksum = "sha256:cff716570125444d9560e735d8a23ea50e9f70ca722bb9f44ab456c548425ea3"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Darwin-arm64"
+checksum = "sha256:980ad8bf61a4ca370243f4cb41401a61276dcd2c2502bee7b9b86f9250169f34"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-arm64"
 
 [tools.colima."platforms.macos-x64"]
-checksum = "sha256:c927d411f70b7b40aced1caeef36cf3b19e0318cfad3606a0292cd488e9c4a0f"
-url = "https://github.com/abiosoft/colima/releases/download/v0.10.1/colima-Darwin-x86_64"
+checksum = "sha256:3082737fe8a98afda11cba7d9a20b6e56fe80c6153464beda04bec630758770b"
+url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-x86_64"
 
 [[tools."github:mat2cc/redis_tui"]]
 version = "0.2.4"
@@ -183,7 +183,7 @@ checksum = "sha256:2508c549b049b1d4342d08edc1cb42bfac169082b6e3069431b5bab9822db
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-pc-windows-msvc.zip"
 
 [[tools."npm:freebuff"]]
-version = "0.0.100"
+version = "0.0.105"
 backend = "npm:freebuff"
 
 [[tools.numbat]]
@@ -219,43 +219,43 @@ checksum = "sha256:2945a728dd748f5bfb18685e89c94e267d96187f440d04d000e326aad88ed
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.pi]]
-version = "0.78.0"
+version = "0.79.1"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:49155173682473720d9decf4deecbed754fae84925ef003c0b66aac31d5f9005"
-url = "https://github.com/earendil-works/pi/releases/download/v0.78.0/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/433424438"
+checksum = "sha256:a191a0c8d57abf1424c560f53981c2a070f74d2863a47a7958eb16c556c4bc04"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.1/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/443075247"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:49155173682473720d9decf4deecbed754fae84925ef003c0b66aac31d5f9005"
-url = "https://github.com/earendil-works/pi/releases/download/v0.78.0/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/433424438"
+checksum = "sha256:a191a0c8d57abf1424c560f53981c2a070f74d2863a47a7958eb16c556c4bc04"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.1/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/443075247"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:8ac03343d1e1228106e8172157f32d6b882829e46b34feaf577f171a5f1387cc"
-url = "https://github.com/earendil-works/pi/releases/download/v0.78.0/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/433424437"
+checksum = "sha256:dc19d2b24d15c76951fe440a47a8212cedb437a25696ebf27a55481156de9e86"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.1/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/443075250"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:8ac03343d1e1228106e8172157f32d6b882829e46b34feaf577f171a5f1387cc"
-url = "https://github.com/earendil-works/pi/releases/download/v0.78.0/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/433424437"
+checksum = "sha256:dc19d2b24d15c76951fe440a47a8212cedb437a25696ebf27a55481156de9e86"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.1/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/443075250"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:68ebbe4f56a136a1c7bace3393eca4ad0aa1fd9f253b797fd370058bd39fe070"
-url = "https://github.com/earendil-works/pi/releases/download/v0.78.0/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/433424440"
+checksum = "sha256:763894f9e560b7eb30f287b2115a52bffae3d6f3453a6d51be525840591f6575"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.1/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/443075248"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:66074b271260068199f47738a172397f1e0b5a3334697dd2acea35bbd3470b1c"
-url = "https://github.com/earendil-works/pi/releases/download/v0.78.0/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/433424439"
+checksum = "sha256:7db13fe8d3c65823d6efb1f98136bf26289842c2e6a66fc893d20c334c0bbbb3"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.1/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/443075249"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:8718379ba6b2957fc2f5761165cc4ba2bc9e23579c40a2418d4950347b714fde"
-url = "https://github.com/earendil-works/pi/releases/download/v0.78.0/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/433424441"
+checksum = "sha256:4ce3382dc57127e66167e9d210ba4474404968116971e556aa34058f27cc4b92"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.1/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/443075246"
 
 [[tools.tssh]]
 version = "0.1.25"
