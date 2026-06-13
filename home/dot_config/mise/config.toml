@@ -232,3 +232,14 @@ run = "openssl rand -hex 32| cut -c -7"
 [tasks.zippdf]
 description = "Compress PDF files in the current directory recursively"
 run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
+
+[system.packages]
+"brew:exiftool" = "latest"
+"brew:task" = "latest"
+"brew:timewarrior" = "latest"
+"brew:gpg-tui" = "latest"
+"brew:poppler" = "latest"
+"brew:git" = "latest"
+"brew:readline" = "latest"
+"brew:git-extras" = "latest"
+"brew:file-formula" = "latest"

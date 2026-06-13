@@ -1,11 +1,4 @@
 [tools]
-"devbox:exiftool" = "latest"
-"devbox:taskwarrior" = "latest"
-"devbox:timewarrior" = "latest"
 "devbox:gpg-tui" = "latest"
 "devbox:poppler-utils" = "latest"
 "devbox:git" = "latest"
-"devbox:file" = "latest"
-"devbox:readline" = "latest"
-"devbox:ffmpeg" = "latest"
-"devbox:git-extras" = "latest"
