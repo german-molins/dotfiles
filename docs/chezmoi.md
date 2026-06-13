@@ -37,7 +37,7 @@ The example below shows a hypothetical tool **mytool** whose config lives at
 #### ① Create the shared template
 
 Place the actual config content in `.chezmoitemplates/`. The filename
-(without `.tmpl`) becomes the template name used by `{{ template }}`.
+(without `.tmpl`) becomes the template name used by <span v-pre>`{{ template }}`</span>.
 
 ```yaml
 # home/.chezmoitemplates/mytool_config.yaml.tmpl

@@ -73,7 +73,8 @@ with `command not found` — even though the tool is installed.
 
 Each run script must therefore re-establish `PATH` itself, at the top, before
 invoking the tool. To keep this uniform and in one place, the setup lives in
-shared `.chezmoitemplates` partials, included with `{{ template "<name>" . }}`:
+shared `.chezmoitemplates` partials, included with
+<span v-pre>`{{ template "<name>" . }}`</span>:
 
 - **`mise-shellenv`** — prepends `~/.local/bin` (the mise entry binary) and the
   mise shims dir. Include it in any script that calls `mise` directly, or a

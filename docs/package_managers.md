@@ -150,7 +150,7 @@ mise run upt install my-tool
 Package lists in `home/.chezmoidata/packages.yaml` are gated per-platform by
 suffixing the list key. The install scripts iterate the common list
 unconditionally, then iterate any platform-specific siblings inside a
-`{{ if eq .chezmoi.os "<os>" }}` guard.
+<span v-pre>`{{ if eq .chezmoi.os "<os>" }}`</span> guard.
 
 Conventions:
 
