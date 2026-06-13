@@ -67,7 +67,6 @@ amp = { version = "latest", allow_builds = true }
 "npm:skills" = "latest"
 atuin = "latest"
 "npm:playbooks" = "latest"
-"devbox:imagemagick" = "latest"
 python = "latest"
 sd = "latest"
 tmux = "latest"
@@ -76,6 +75,7 @@ fnox = "latest"
 age = "latest"
 systemctl-tui = "latest"
 "github:daptify14/chezit" = "latest"
+imagemagick = "latest"
 
 [settings]
 experimental = true
