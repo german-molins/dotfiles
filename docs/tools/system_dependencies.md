@@ -13,7 +13,7 @@ backends.
 | resvg | opt | devbox | Neovim, Yazi |
 | file | devbox | devbox | Yazi |
 | ImageMagick | global | default | Yazi |
-| Pandoc | global | ubi | `pdftoepub`, Neovim plugins |
+| Pandoc | global | default | `pdftoepub`, Neovim plugins |
 | `pdftotext` | devbox | devbox | `pdftoepub` |
 | `md5sum` (uutils/coreutils) | global | aqua | Bash caching |
 
