@@ -43,7 +43,7 @@ VCS:
 | [Jujutsu UI](https://idursun.github.io/jjui) | `jjui` | `jj ui` | Jujutsu manager |
 | [Lazyjj](https://github.com/Cretezy/lazyjj) | `lazyjj` | | Jujutsu manager |
 
-Coding agents:
+Agent harnesses:
 
 | Name | Commands | Aliases | LLM Providers | API Keys |
 |---|---|---|---|---|
