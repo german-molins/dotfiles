@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/skill-creator/SKILL.md",
-      "skillFolderHash": "98a510d1cfef9f82c3b1eec200229ca68725e613",
+      "skillFolderHash": "3cf9a8db32597ba3e24b584a3d696f4e11c7d7b6",
       "installedAt": "2026-02-12T13:57:34.634Z",
-      "updatedAt": "2026-03-13T17:33:30.410Z"
+      "updatedAt": "2026-06-15T12:07:30.004Z"
     },
     "find-docs": {
       "source": "upstash/context7",
@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tenequm/skills.git",
       "skillPath": "skills/gh-cli/SKILL.md",
-      "skillFolderHash": "075febd3569466db9242286d3136a36812ec0d7f",
+      "skillFolderHash": "85c61e4de045c7d64b5753681499ecb1857acae5",
       "installedAt": "2026-04-15T09:05:48.935Z",
-      "updatedAt": "2026-04-15T09:05:48.935Z"
+      "updatedAt": "2026-06-15T12:07:32.197Z"
     }
   },
   "dismissed": {
