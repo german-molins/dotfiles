@@ -83,6 +83,38 @@ url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d
 [tools.claude."platforms.macos-x64"]
 url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/darwin-x64/claude"
 
+[[tools.codex]]
+version = "0.140.0"
+backend = "aqua:openai/codex"
+
+[tools.codex."platforms.linux-arm64"]
+checksum = "sha256:b2774098060a9d0c4b9ada6c901c2fa50f208cd2a1c3f13687a95e64df288220"
+url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-aarch64-unknown-linux-musl.zst"
+
+[tools.codex."platforms.linux-arm64-musl"]
+checksum = "sha256:b2774098060a9d0c4b9ada6c901c2fa50f208cd2a1c3f13687a95e64df288220"
+url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-aarch64-unknown-linux-musl.zst"
+
+[tools.codex."platforms.linux-x64"]
+checksum = "sha256:a3c1eccb71e0f8f6c093c31dab6c22f9267350401b9f1becfcd32ed109b95bec"
+url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-x86_64-unknown-linux-musl.zst"
+
+[tools.codex."platforms.linux-x64-musl"]
+checksum = "sha256:a3c1eccb71e0f8f6c093c31dab6c22f9267350401b9f1becfcd32ed109b95bec"
+url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-x86_64-unknown-linux-musl.zst"
+
+[tools.codex."platforms.macos-arm64"]
+checksum = "sha256:5e38113f213d0ba1982a04ba2d4f19fa2f1971e3493639b2c61905d764b7548e"
+url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-aarch64-apple-darwin.zst"
+
+[tools.codex."platforms.macos-x64"]
+checksum = "sha256:b27369db4e307dfc6cbf1a7b904cf9bfb0199e13be062ced807f8213915663f8"
+url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-x86_64-apple-darwin.zst"
+
+[tools.codex."platforms.windows-x64"]
+checksum = "sha256:b3a62f22d4dcbe3c5f57fb738c448d1796996dc880cf820e58706d2b4b9606f8"
+url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-x86_64-pc-windows-msvc.exe.zst"
+
 [[tools.colima]]
 version = "0.10.3"
 backend = "aqua:abiosoft/colima"

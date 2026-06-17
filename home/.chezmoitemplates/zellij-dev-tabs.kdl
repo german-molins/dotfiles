@@ -48,6 +48,10 @@
                 command "freebuff"
                 start_suspended true
             }
+            pane name="Codex" {
+                command "codex"
+                start_suspended true
+            }
         }
     }
 
