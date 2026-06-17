@@ -4,8 +4,8 @@
 # initializes it with the current script directory as the source, and applies
 # the dotfiles by default. It supports switching to a specified git branch if it
 # exists in the remote repository. If no branch is specified, or if the branch
-# does not exist, the script defaults to not applying the dotfiles. The coned
-# git repo is configured with the personal profile email address.
+# does not exist, the script defaults to not applying the dotfiles. The cloned
+# git and colocated jj repos are configured with the personal profile email.
 
 # Environment variables:
 : ${DOTFILES_APPLY:-}
@@ -64,4 +64,13 @@ if [ "${DOTFILES_APPLY:-}" != "false" ]; then
     "$chezmoi" apply
 else
     echo "[dotfiles][install] INFO: Not applying chezmoi after init." >&2
+fi
+
+# Configure the colocated jj repo with the personal email (see docs/setup.md
+# "Installation Script"). mise installed jj during apply; put shims on PATH.
+export PATH="$HOME/.local/bin:$HOME/.local/share/mise/shims:$PATH"
+if command -v jj >/dev/null 2>&1; then
+    jj -R "${script_dir}" root >/dev/null 2>&1 \
+        || jj -R "${script_dir}" git init --colocate
+    jj -R "${script_dir}" config set --repo user.email "${personal_email}"
 fi

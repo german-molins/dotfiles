@@ -89,5 +89,21 @@ overwritten afterwards, allowing per-machine customization.
 
 ## Installation Script
 
-The cloned dotfiles Git repository will be configured with the personal profile
-email address, even in an environment with another profile.
+The cloned dotfiles repository is always configured with the **personal**
+profile email address, even when installed under another profile. This keeps
+commits to the dotfiles repo attributed to the personal identity regardless of
+the active machine profile.
+
+`install.sh` applies it to both VCS layers:
+
+- **Git** — `git config user.email` is set right after `chezmoi init`, before
+  `chezmoi apply`. Git is always present, so no extra setup is needed.
+- **Jujutsu (jj)** — set at the end of the script, after `chezmoi apply`, since
+  jj is installed by `mise` during apply. The script puts the mise shims on
+  `PATH` (mirroring the `mise-shellenv` template, inlined because the bootstrap
+  script is not templated), colocates the source repo if it is not already a jj
+  repo, then writes the email to the out-of-repo **repo config** via
+  `jj config set --repo`. This is jj's recommended mechanism — jj deliberately
+  does not load config tracked inside the repository.
+
+Both reads of the personal email come from `chezmoi data` (`personal_email`).
