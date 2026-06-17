@@ -16,4 +16,5 @@ fi
 # {{ include "dot_config/mise/mise.lock" | sha256sum }}
 # {{ include "mise.devbox.lock" | sha256sum }}
 # {{ include "mise.opt.lock" | sha256sum }}
+mise bootstrap packages install --yes
 mise install
