@@ -21,7 +21,9 @@ servers are configured to enhance coding assistants capabilities:
 
 | Name | Type | Protocol | API Key | Description |
 |------|------|----------|---------|-------------|
-| [Context7](https://context7.com) | remote | http | `CONTEXT7_API_KEY` | Up-to-date, version-specific documentation and code examples directly from source repositories |
+| [Context7] | remote | http | `CONTEXT7_API_KEY` | Up-to-date, version-specific documentation and code examples directly from source repositories |
+
+[Context7]: https://context7.com
 
 ## Skills
 
@@ -42,8 +44,10 @@ All assistants I use are compatible with either or both.
 
 | Skill | Description |
 |-------|-------------|
-| numbat | [Numbat](https://numbat.dev/docs/) programming language reference for statically typed scientific computations with first-class support for physical dimensions and units. |
+| numbat | [Numbat] programming language reference for statically typed scientific computations with first-class support for physical dimensions and units. |
 | scientific-calculator | High-precision scientific calculator with full support for physical units, dimensional analysis, unit safety, and built-in physical constants. Wraps the `numbat` skill for language reference. Requires `numbat` CLI. |
+
+[Numbat]: https://numbat.dev/docs/
 
 ### Skills Managers
 
