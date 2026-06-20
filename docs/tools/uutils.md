@@ -13,5 +13,5 @@ command line utilities, inspired by the original GNU counterparts:
 [`coreutils`]: https://www.gnu.org/software/coreutils/
 [`uutils/findutils`]: https://uutils.github.io/findutils/
 [`findutils`]: https://www.gnu.org/software/findutils/
-[`uutils/diffutils`]: https://uutils.github.io/findutils/
+[`uutils/diffutils`]: https://uutils.github.io/diffutils/
 [`diffutils`]: https://www.gnu.org/software/diffutils/
