@@ -61,59 +61,59 @@ version = "0.9.0"
 backend = "cargo:findutils"
 
 [[tools.claude]]
-version = "2.1.178"
+version = "2.1.185"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.185/linux-arm64/claude"
 
 [tools.claude."platforms.linux-arm64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/linux-arm64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.185/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "blake3:a3caae4554924548690166f80310ca45a288f19511bc7d438249b9c353f7f036"
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/linux-x64/claude"
+checksum = "blake3:6eade51436c37e89adb609aaef16f4e33887aa57fa1b55b93e7efb1e609be6a9"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.185/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/linux-x64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.185/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/darwin-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.185/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.178/darwin-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.185/darwin-x64/claude"
 
 [[tools.codex]]
-version = "0.140.0"
+version = "0.141.0"
 backend = "aqua:openai/codex"
 
 [tools.codex."platforms.linux-arm64"]
-checksum = "sha256:b2774098060a9d0c4b9ada6c901c2fa50f208cd2a1c3f13687a95e64df288220"
-url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-aarch64-unknown-linux-musl.zst"
+checksum = "sha256:13a4b806da5d2a1b4ba636ba082149e9e878ecc141cb582f2dee8321dae50789"
+url = "https://github.com/openai/codex/releases/download/rust-v0.141.0/codex-aarch64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.linux-arm64-musl"]
-checksum = "sha256:b2774098060a9d0c4b9ada6c901c2fa50f208cd2a1c3f13687a95e64df288220"
-url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-aarch64-unknown-linux-musl.zst"
+checksum = "sha256:13a4b806da5d2a1b4ba636ba082149e9e878ecc141cb582f2dee8321dae50789"
+url = "https://github.com/openai/codex/releases/download/rust-v0.141.0/codex-aarch64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.linux-x64"]
-checksum = "sha256:a3c1eccb71e0f8f6c093c31dab6c22f9267350401b9f1becfcd32ed109b95bec"
-url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-x86_64-unknown-linux-musl.zst"
+checksum = "sha256:be64df1b99f9ea8eacc3b09e53fb98e0bcb939e479c7fcbf2862929ea47b0c53"
+url = "https://github.com/openai/codex/releases/download/rust-v0.141.0/codex-x86_64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.linux-x64-musl"]
-checksum = "sha256:a3c1eccb71e0f8f6c093c31dab6c22f9267350401b9f1becfcd32ed109b95bec"
-url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-x86_64-unknown-linux-musl.zst"
+checksum = "sha256:be64df1b99f9ea8eacc3b09e53fb98e0bcb939e479c7fcbf2862929ea47b0c53"
+url = "https://github.com/openai/codex/releases/download/rust-v0.141.0/codex-x86_64-unknown-linux-musl.zst"
 
 [tools.codex."platforms.macos-arm64"]
-checksum = "sha256:5e38113f213d0ba1982a04ba2d4f19fa2f1971e3493639b2c61905d764b7548e"
-url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-aarch64-apple-darwin.zst"
+checksum = "sha256:2ede2523d50fcaf7fe716b19871e1c96c271f7e8051ebc6e51d93c7be02fa03b"
+url = "https://github.com/openai/codex/releases/download/rust-v0.141.0/codex-aarch64-apple-darwin.zst"
 
 [tools.codex."platforms.macos-x64"]
-checksum = "sha256:b27369db4e307dfc6cbf1a7b904cf9bfb0199e13be062ced807f8213915663f8"
-url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-x86_64-apple-darwin.zst"
+checksum = "sha256:5e5b4988c7d541e59c4091f78d5ffd14b6e176936d3fb8e666093720ff43b813"
+url = "https://github.com/openai/codex/releases/download/rust-v0.141.0/codex-x86_64-apple-darwin.zst"
 
 [tools.codex."platforms.windows-x64"]
-checksum = "sha256:b3a62f22d4dcbe3c5f57fb738c448d1796996dc880cf820e58706d2b4b9606f8"
-url = "https://github.com/openai/codex/releases/download/rust-v0.140.0/codex-x86_64-pc-windows-msvc.exe.zst"
+checksum = "sha256:f78f7038f9f6426f642834aa2f32d2e950863b02b627cdfe6161168b49a9554e"
+url = "https://github.com/openai/codex/releases/download/rust-v0.141.0/codex-x86_64-pc-windows-msvc.exe.zst"
 
 [[tools.colima]]
 version = "0.10.3"
@@ -215,7 +215,7 @@ checksum = "sha256:2508c549b049b1d4342d08edc1cb42bfac169082b6e3069431b5bab9822db
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-pc-windows-msvc.zip"
 
 [[tools."npm:freebuff"]]
-version = "0.0.107"
+version = "0.0.112"
 backend = "npm:freebuff"
 
 [[tools.numbat]]
@@ -251,43 +251,43 @@ checksum = "sha256:2945a728dd748f5bfb18685e89c94e267d96187f440d04d000e326aad88ed
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-pc-windows-msvc.zip"
 
 [[tools.pi]]
-version = "0.79.4"
+version = "0.79.9"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:f78a5145ad849fbc581dee768b370dae36cdb4f444fca6444a8d7e1463bbbcb5"
-url = "https://github.com/earendil-works/pi/releases/download/v0.79.4/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/447980415"
+checksum = "sha256:19647b8530c686cc2a65c1a0df93b1e8b411189b0dc8d5ee5a8ffa447a5cdd6e"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.9/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/453208129"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:f78a5145ad849fbc581dee768b370dae36cdb4f444fca6444a8d7e1463bbbcb5"
-url = "https://github.com/earendil-works/pi/releases/download/v0.79.4/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/447980415"
+checksum = "sha256:19647b8530c686cc2a65c1a0df93b1e8b411189b0dc8d5ee5a8ffa447a5cdd6e"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.9/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/453208129"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:8af9213b92c040589bb62f402c6b84d0f5dd5ce0728586b71556d81061977daa"
-url = "https://github.com/earendil-works/pi/releases/download/v0.79.4/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/447980412"
+checksum = "sha256:d4df2d41b9a50d1cfc1ec3bf750d53256461bac6d62ece431b8208c1504fc894"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.9/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/453208133"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:8af9213b92c040589bb62f402c6b84d0f5dd5ce0728586b71556d81061977daa"
-url = "https://github.com/earendil-works/pi/releases/download/v0.79.4/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/447980412"
+checksum = "sha256:d4df2d41b9a50d1cfc1ec3bf750d53256461bac6d62ece431b8208c1504fc894"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.9/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/453208133"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:8fb94015b367c3bf2e77a5b58bcc4328c0a487ad830e1eaea9195c665bb4c2c9"
-url = "https://github.com/earendil-works/pi/releases/download/v0.79.4/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/447980416"
+checksum = "sha256:9632bf30c89a87e2dc674e2450156806187311d293b0fffbc15077ac51e46d48"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.9/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/453208131"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:ac1155f337c197d4ad8b2adc0c78299e17e40735e582bf01b562c2d86bbf38d9"
-url = "https://github.com/earendil-works/pi/releases/download/v0.79.4/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/447980413"
+checksum = "sha256:4cdc3990b8091854c97ff4a1792b78c9a2303e6090df6760b5252008d63d61f9"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.9/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/453208132"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:d81659e6590d180b4bc61196733a64dbbcfa0cfba0ec388039ac529cc9910bc4"
-url = "https://github.com/earendil-works/pi/releases/download/v0.79.4/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/447980414"
+checksum = "sha256:0743428b8a44ce3de33f7d50f7fdac0caaecb0468f066808f1095b1a0cc99711"
+url = "https://github.com/earendil-works/pi/releases/download/v0.79.9/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/453208130"
 
 [[tools.tssh]]
 version = "0.1.25"
