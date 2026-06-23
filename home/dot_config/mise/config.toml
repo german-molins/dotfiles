@@ -76,6 +76,7 @@ age = "latest"
 systemctl-tui = "latest"
 "github:daptify14/chezit" = "latest"
 imagemagick = "latest"
+rust-analyzer = "latest"
 
 [settings]
 experimental = true
