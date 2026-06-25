@@ -6587,6 +6587,10 @@ url = "https://nodejs.org/dist/v26.3.1/node-v26.3.1-darwin-x64.tar.gz"
 checksum = "sha256:45001b289ebffe7b22260898f3750059183d8246042b88e8ffa4337e65e6763e"
 url = "https://nodejs.org/dist/v26.3.1/node-v26.3.1-win-x64.zip"
 
+[[tools."npm:codeburn"]]
+version = "0.9.14"
+backend = "npm:codeburn"
+
 [[tools."npm:ctx7"]]
 version = "0.5.3"
 backend = "npm:ctx7"

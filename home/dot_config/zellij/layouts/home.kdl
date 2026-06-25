@@ -19,6 +19,7 @@ layout {
       pane name="docker" command="lazydocker" start_suspended=true
       pane name="system" command="btm" start_suspended=true
       pane name="systemd" command="systemctl-tui" start_suspended=true
+      pane name="tokens" command="codeburn" start_suspended=true
     }
   }
 

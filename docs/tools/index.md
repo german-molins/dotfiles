@@ -129,6 +129,7 @@ common cases:
 | [cosign] | `cosign` | | Signing and verifying packages |
 | [Numbat] | `numbat` | `num`, `calc` | Scientific calculator with physical units |
 | [systemctl-tui] | `systemctl-tui` | | systemd TUI |
+| [CodeBurn] | `codeburn` | | systemd TUI |
 
 [Git Extras]: https://github.com/tj/git-extras
 [full list]: https://github.com/tj/git-extras/blob/main/Commands.md
@@ -140,6 +141,7 @@ common cases:
 [cosign]: https://github.com/sigstore/cosign
 [Numbat]: https://numbat.dev
 [systemctl-tui]: https://github.com/rgwood/systemctl-tui
+[CodeBurn]: https://codeburn.app
 
 ### Fallback Apps
 
