@@ -3684,7 +3684,7 @@ version = "0.0.1780405472-g1bcd89"
 backend = "npm:@sourcegraph/amp"
 
 [tools.amp.options]
-allow_builds = '["true"]'
+allow_builds = "true"
 
 [[tools."aqua:dlvhdr/gh-dash"]]
 version = "4.24.1"

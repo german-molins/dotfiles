@@ -7,30 +7,37 @@ backend = "aqua:ip7z/7zip"
 [tools."aqua:ip7z/7zip"."platforms.linux-arm64"]
 checksum = "sha256:70ea6cc737ae1495ea2d7eb20ef3120fe579bd3f1a83a9d2362b62ec5bde2bba"
 url = "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-linux-arm64.tar.xz"
+url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/458363897"
 
 [tools."aqua:ip7z/7zip"."platforms.linux-arm64-musl"]
 checksum = "sha256:70ea6cc737ae1495ea2d7eb20ef3120fe579bd3f1a83a9d2362b62ec5bde2bba"
 url = "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-linux-arm64.tar.xz"
+url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/458363897"
 
 [tools."aqua:ip7z/7zip"."platforms.linux-x64"]
 checksum = "sha256:41aaba7b1235304ab5aa0624530c67ae829496cd29e875925271efdccc28c03e"
 url = "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-linux-x64.tar.xz"
+url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/458363910"
 
 [tools."aqua:ip7z/7zip"."platforms.linux-x64-musl"]
 checksum = "sha256:41aaba7b1235304ab5aa0624530c67ae829496cd29e875925271efdccc28c03e"
 url = "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-linux-x64.tar.xz"
+url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/458363910"
 
 [tools."aqua:ip7z/7zip"."platforms.macos-arm64"]
 checksum = "sha256:1cf6760579502f87e591ff5c73a005ec50b3e4d6f507e8b038382d563c3175b9"
 url = "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-mac.tar.xz"
+url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/458364002"
 
 [tools."aqua:ip7z/7zip"."platforms.macos-x64"]
 checksum = "sha256:1cf6760579502f87e591ff5c73a005ec50b3e4d6f507e8b038382d563c3175b9"
 url = "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-mac.tar.xz"
+url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/458364002"
 
 [tools."aqua:ip7z/7zip"."platforms.windows-x64"]
 checksum = "sha256:081df9e9311dfd9c9e0e98c1c80180b99bb51e4cb24156b5f3057fe3c259d70a"
 url = "https://github.com/ip7z/7zip/releases/download/26.02/7z2602-extra.7z"
+url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/458363818"
 
 [[tools."aqua:kdheepak/taskwarrior-tui"]]
 version = "0.27.0"
@@ -39,22 +46,27 @@ backend = "aqua:kdheepak/taskwarrior-tui"
 [tools."aqua:kdheepak/taskwarrior-tui"."platforms.linux-x64"]
 checksum = "sha256:b10a64a977b9b289d79cc292af8b05bc9e8e2efd2b6dd64f0f449337c9c3d530"
 url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369199"
 
 [tools."aqua:kdheepak/taskwarrior-tui"."platforms.linux-x64-musl"]
 checksum = "sha256:b10a64a977b9b289d79cc292af8b05bc9e8e2efd2b6dd64f0f449337c9c3d530"
 url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369199"
 
 [tools."aqua:kdheepak/taskwarrior-tui"."platforms.macos-arm64"]
 checksum = "sha256:8ac868100d5141ed533f1716b4b7232e5ecaeb6756d148ea4d3bb9b259dddf91"
 url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369201"
 
 [tools."aqua:kdheepak/taskwarrior-tui"."platforms.macos-x64"]
 checksum = "sha256:8ac868100d5141ed533f1716b4b7232e5ecaeb6756d148ea4d3bb9b259dddf91"
 url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369201"
 
 [tools."aqua:kdheepak/taskwarrior-tui"."platforms.windows-x64"]
 checksum = "sha256:3bbbfc9f381df38cf1754057960bbe51030eaa52bf471a24ff4ec0f9553d38ed"
 url = "https://github.com/kdheepak/taskwarrior-tui/releases/download/v0.27.0/taskwarrior-tui-x86_64-pc-windows-msvc.tar.gz"
+url_api = "https://api.github.com/repos/kdheepak/taskwarrior-tui/releases/assets/392369196"
 
 [[tools."cargo:findutils"]]
 version = "0.9.0"
@@ -90,30 +102,37 @@ backend = "aqua:openai/codex"
 [tools.codex."platforms.linux-arm64"]
 checksum = "sha256:95eec2b0445c4f51b399e54215dd90651bcb1a1f6411c10a9af83149df0e8f08"
 url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-aarch64-unknown-linux-musl.zst"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785604"
 
 [tools.codex."platforms.linux-arm64-musl"]
 checksum = "sha256:95eec2b0445c4f51b399e54215dd90651bcb1a1f6411c10a9af83149df0e8f08"
 url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-aarch64-unknown-linux-musl.zst"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785604"
 
 [tools.codex."platforms.linux-x64"]
 checksum = "sha256:0f9241afd52819eea56950ebd42fd731c4ea40ccd069cce6feeef7af05a52aa1"
 url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-unknown-linux-musl.zst"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785516"
 
 [tools.codex."platforms.linux-x64-musl"]
 checksum = "sha256:0f9241afd52819eea56950ebd42fd731c4ea40ccd069cce6feeef7af05a52aa1"
 url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-unknown-linux-musl.zst"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785516"
 
 [tools.codex."platforms.macos-arm64"]
 checksum = "sha256:259b55d03565decff6196f0bc6df49b9b775d95d97249953cba312ddabb2c73f"
 url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-aarch64-apple-darwin.zst"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785646"
 
 [tools.codex."platforms.macos-x64"]
 checksum = "sha256:e8619ef913278e870d8672bda97da184cb6753c454fa438ddeab0813c5debeed"
 url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-apple-darwin.zst"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785579"
 
 [tools.codex."platforms.windows-x64"]
 checksum = "sha256:36a946b1c9f4ef30021caf2ac64a4021202205952bb87c86163849e168302b16"
 url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-pc-windows-msvc.exe.zst"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785522"
 
 [[tools.colima]]
 version = "0.10.3"
@@ -122,26 +141,32 @@ backend = "aqua:abiosoft/colima"
 [tools.colima."platforms.linux-arm64"]
 checksum = "sha256:ebb69208007484ac36b8a6ba72a797189b0daa88f8b31bc2b563e82b9c91cb70"
 url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-aarch64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456730"
 
 [tools.colima."platforms.linux-arm64-musl"]
 checksum = "sha256:ebb69208007484ac36b8a6ba72a797189b0daa88f8b31bc2b563e82b9c91cb70"
 url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-aarch64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456730"
 
 [tools.colima."platforms.linux-x64"]
 checksum = "sha256:54ea35f4847815d0a1445dbc2bc3dd6469518a38a9e960449e96b044d248d00d"
 url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456720"
 
 [tools.colima."platforms.linux-x64-musl"]
 checksum = "sha256:54ea35f4847815d0a1445dbc2bc3dd6469518a38a9e960449e96b044d248d00d"
 url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Linux-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456720"
 
 [tools.colima."platforms.macos-arm64"]
 checksum = "sha256:980ad8bf61a4ca370243f4cb41401a61276dcd2c2502bee7b9b86f9250169f34"
 url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-arm64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456725"
 
 [tools.colima."platforms.macos-x64"]
 checksum = "sha256:3082737fe8a98afda11cba7d9a20b6e56fe80c6153464beda04bec630758770b"
 url = "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-x86_64"
+url_api = "https://api.github.com/repos/abiosoft/colima/releases/assets/438456722"
 
 [[tools."github:mat2cc/redis_tui"]]
 version = "0.2.4"
@@ -189,6 +214,7 @@ backend = "aqua:sharkdp/hyperfine"
 [tools.hyperfine."platforms.linux-arm64"]
 checksum = "sha256:90875cb1db7a1d797c311174d061728361e58fc70e3b62262a00635ac3b1997c"
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/hyperfine/releases/assets/317832112"
 
 [tools.hyperfine."platforms.linux-arm64-musl"]
 checksum = "sha256:90875cb1db7a1d797c311174d061728361e58fc70e3b62262a00635ac3b1997c"
@@ -197,22 +223,27 @@ url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-
 [tools.hyperfine."platforms.linux-x64"]
 checksum = "sha256:3285ec7959285288137043dd81dce0dde056227018a8277532d9a364b4f03c2b"
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/hyperfine/releases/assets/317832008"
 
 [tools.hyperfine."platforms.linux-x64-musl"]
 checksum = "sha256:3285ec7959285288137043dd81dce0dde056227018a8277532d9a364b4f03c2b"
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/hyperfine/releases/assets/317832008"
 
 [tools.hyperfine."platforms.macos-arm64"]
 checksum = "sha256:f58d0b90993fadfa122a351428c469ce24afef3865f027f0e6e86f0830d088f1"
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/hyperfine/releases/assets/317832526"
 
 [tools.hyperfine."platforms.macos-x64"]
 checksum = "sha256:f58d0b90993fadfa122a351428c469ce24afef3865f027f0e6e86f0830d088f1"
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/hyperfine/releases/assets/317832526"
 
 [tools.hyperfine."platforms.windows-x64"]
 checksum = "sha256:2508c549b049b1d4342d08edc1cb42bfac169082b6e3069431b5bab9822dbb32"
 url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-v1.20.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/sharkdp/hyperfine/releases/assets/317832313"
 
 [[tools."npm:freebuff"]]
 version = "0.0.117"
@@ -225,30 +256,37 @@ backend = "aqua:sharkdp/numbat"
 [tools.numbat."platforms.linux-arm64"]
 checksum = "sha256:693e03ed8cdc8dbd7dc1d916504ea1fb9bcf253caff85058bdc01e8b2e099eaa"
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-arm-unknown-linux-musleabihf.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726163"
 
 [tools.numbat."platforms.linux-arm64-musl"]
 checksum = "sha256:693e03ed8cdc8dbd7dc1d916504ea1fb9bcf253caff85058bdc01e8b2e099eaa"
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-arm-unknown-linux-musleabihf.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726163"
 
 [tools.numbat."platforms.linux-x64"]
 checksum = "sha256:09efa9dfbff4d983fb0484e2bfc126df9d0cbedede627d22ac61141457b5daa1"
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726109"
 
 [tools.numbat."platforms.linux-x64-musl"]
 checksum = "sha256:09efa9dfbff4d983fb0484e2bfc126df9d0cbedede627d22ac61141457b5daa1"
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726109"
 
 [tools.numbat."platforms.macos-arm64"]
 checksum = "sha256:58dabb8ca9476009d03f2a3d3993768fa2946657c6423eed8ed31d31cc6e35cf"
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352725593"
 
 [tools.numbat."platforms.macos-x64"]
 checksum = "sha256:e50d7fc908d56f97b9de1e509039cf9d9ae31a5d4280dd2b58f201c17f194de5"
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352725761"
 
 [tools.numbat."platforms.windows-x64"]
 checksum = "sha256:2945a728dd748f5bfb18685e89c94e267d96187f440d04d000e326aad88ede21"
 url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726071"
 
 [[tools.pi]]
 version = "0.80.3"
@@ -296,27 +334,34 @@ backend = "aqua:trzsz/trzsz-ssh"
 [tools.tssh."platforms.linux-arm64"]
 checksum = "sha256:90dd14290ddcd47b4681708ebc1964b37fcd4a1df0c3728beaf4fc06896b7a14"
 url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_linux_aarch64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843315"
 
 [tools.tssh."platforms.linux-arm64-musl"]
 checksum = "sha256:90dd14290ddcd47b4681708ebc1964b37fcd4a1df0c3728beaf4fc06896b7a14"
 url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_linux_aarch64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843315"
 
 [tools.tssh."platforms.linux-x64"]
 checksum = "sha256:f1bcb660eae4ed20d098bc8c6192f4cdcfa2cab3d1908da0fdeb8c4da5604dcc"
 url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843311"
 
 [tools.tssh."platforms.linux-x64-musl"]
 checksum = "sha256:f1bcb660eae4ed20d098bc8c6192f4cdcfa2cab3d1908da0fdeb8c4da5604dcc"
 url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843311"
 
 [tools.tssh."platforms.macos-arm64"]
 checksum = "sha256:44f4e8359f731144bd1392701a04934aef7e97868212c4fec281751a4fe5ea2f"
 url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_macos_aarch64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843306"
 
 [tools.tssh."platforms.macos-x64"]
 checksum = "sha256:84558671b4f2550edfab76c6e57015f8cdc74ba3363b7b33e87fff07aa9b2f0d"
 url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_macos_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843307"
 
 [tools.tssh."platforms.windows-x64"]
 checksum = "sha256:a1ac7631ed567c3fb8edd4c66114aa0620aaca525980a689d341ec78060f5a29"
 url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_windows_x86_64.zip"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843316"
