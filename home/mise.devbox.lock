@@ -5,7 +5,7 @@ version = "13.59"
 backend = "devbox:exiftool"
 
 [[tools."devbox:ffmpeg"]]
-version = "8.1.1"
+version = "8.1"
 backend = "devbox"
 
 [[tools."devbox:file"]]
