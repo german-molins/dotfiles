@@ -22,7 +22,7 @@
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": false,
     "beads@beads-marketplace": true,
-    "superpowers@claude-plugins-official": false,
+    "superpowers@claude-plugins-official": true,
     "caveman@caveman": true,
     "context7@claude-plugins-official": false,
     "context-mode@context-mode": true
