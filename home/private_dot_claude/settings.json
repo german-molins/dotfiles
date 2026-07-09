@@ -49,5 +49,10 @@
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
-  "editorMode": "vim"
+  "editorMode": "vim",
+  "permissions": {
+    "allow": [
+      "mcp__plugin_context-mode_context-mode__ctx_search"
+    ]
+  }
 }
