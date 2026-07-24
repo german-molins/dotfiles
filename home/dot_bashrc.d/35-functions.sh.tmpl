@@ -8,6 +8,13 @@ where()
 	host  : $HOSTNAME
 	user  : $USER
 	shell : bash $BASH_VERSION
+	{{- if eq .chezmoi.os "darwin" }}
+	os    : macOS {{ output "sw_vers" "-productVersion" | trim }} (darwin/{{ .chezmoi.arch }})
+	{{- else if .chezmoi.osRelease.prettyName }}
+	os    : {{ .chezmoi.osRelease.prettyName }} (linux/{{ .chezmoi.arch }})
+	{{- else }}
+	os    : {{ .chezmoi.os }}/{{ .chezmoi.arch }}
+	{{- end }}
 	wd    : $PWD
 
 	EOF
