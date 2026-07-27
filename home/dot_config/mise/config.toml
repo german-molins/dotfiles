@@ -79,6 +79,7 @@ imagemagick = "latest"
 rust-analyzer = "latest"
 "npm:codeburn" = "latest"
 oh-my-pi = { version = "latest", rename_exe = "omp" }
+sccache = "latest"
 
 [settings]
 experimental = true
