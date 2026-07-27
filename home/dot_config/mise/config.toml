@@ -104,6 +104,8 @@ PAGER = "bat --plain"
 BROWSER = "firefox"
 
 FNOX_AGE_KEY_FILE = "~/.config/fnox/age.txt"
+RUSTC_WRAPPER = "sccache"
+SCCACHE_BASEDIRS = "$HOME"
 JULIA_PROJECT = "@."
 TLRC_CONFIG = "$HOME/.config/tlrc/config.toml"
 AUBE_TRUST_POLICY_EXCLUDE = "skills"
