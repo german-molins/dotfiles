@@ -73,66 +73,66 @@ version = "0.9.0"
 backend = "cargo:findutils"
 
 [[tools.claude]]
-version = "2.1.204"
+version = "2.1.220"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.204/linux-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.220/linux-arm64/claude"
 
 [tools.claude."platforms.linux-arm64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.204/linux-arm64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.220/linux-arm64-musl/claude"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "blake3:269b052cf1e9dc07bb4ae09254ac602d5a833580bd986d7183f1ea7e551d4a8f"
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.204/linux-x64/claude"
+checksum = "blake3:075b59b77f21fd5cf4dff6cc515467b1a26b960bc063393a80375a390ad2bfe7"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.220/linux-x64/claude"
 
 [tools.claude."platforms.linux-x64-musl"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.204/linux-x64-musl/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.220/linux-x64-musl/claude"
 
 [tools.claude."platforms.macos-arm64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.204/darwin-arm64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.220/darwin-arm64/claude"
 
 [tools.claude."platforms.macos-x64"]
-url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.204/darwin-x64/claude"
+url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.220/darwin-x64/claude"
 
 [[tools.codex]]
-version = "0.142.4"
+version = "0.145.0"
 backend = "aqua:openai/codex"
 
 [tools.codex."platforms.linux-arm64"]
-checksum = "sha256:95eec2b0445c4f51b399e54215dd90651bcb1a1f6411c10a9af83149df0e8f08"
-url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-aarch64-unknown-linux-musl.zst"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785604"
+checksum = "sha256:54f79a05aba6f9abf8ef988abcae8bf2fcefba20beb549b4ff2b3acdb2cb6f54"
+url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/485000960"
 
 [tools.codex."platforms.linux-arm64-musl"]
-checksum = "sha256:95eec2b0445c4f51b399e54215dd90651bcb1a1f6411c10a9af83149df0e8f08"
-url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-aarch64-unknown-linux-musl.zst"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785604"
+checksum = "sha256:54f79a05aba6f9abf8ef988abcae8bf2fcefba20beb549b4ff2b3acdb2cb6f54"
+url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/485000960"
 
 [tools.codex."platforms.linux-x64"]
-checksum = "sha256:0f9241afd52819eea56950ebd42fd731c4ea40ccd069cce6feeef7af05a52aa1"
-url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-unknown-linux-musl.zst"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785516"
+checksum = "sha256:71a28d362c96ac9829bf8203a2c71be451aeb726adb843167fdaf0eae8fe7dd9"
+url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/485000878"
 
 [tools.codex."platforms.linux-x64-musl"]
-checksum = "sha256:0f9241afd52819eea56950ebd42fd731c4ea40ccd069cce6feeef7af05a52aa1"
-url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-unknown-linux-musl.zst"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785516"
+checksum = "sha256:71a28d362c96ac9829bf8203a2c71be451aeb726adb843167fdaf0eae8fe7dd9"
+url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/485000878"
 
 [tools.codex."platforms.macos-arm64"]
-checksum = "sha256:259b55d03565decff6196f0bc6df49b9b775d95d97249953cba312ddabb2c73f"
-url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-aarch64-apple-darwin.zst"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785646"
+checksum = "sha256:ece937169d4c9e910d60826a6ea4ae7848a16c089403d122e70e7da4ac41ba34"
+url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-package-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/485000998"
 
 [tools.codex."platforms.macos-x64"]
-checksum = "sha256:e8619ef913278e870d8672bda97da184cb6753c454fa438ddeab0813c5debeed"
-url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-apple-darwin.zst"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785579"
+checksum = "sha256:9d402c9ca814655fddc07b548d7086491c0afcebe1f746cdeba1045fd6f62646"
+url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-package-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/485000909"
 
 [tools.codex."platforms.windows-x64"]
-checksum = "sha256:36a946b1c9f4ef30021caf2ac64a4021202205952bb87c86163849e168302b16"
-url = "https://github.com/openai/codex/releases/download/rust-v0.142.4/codex-x86_64-pc-windows-msvc.exe.zst"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/460785522"
+checksum = "sha256:8d0d281346aedf63c4cc3922997df822fbb8881f7ffb2b57416f48e8c52a734e"
+url = "https://github.com/openai/codex/releases/download/rust-v0.145.0/codex-package-x86_64-pc-windows-msvc.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/485000896"
 
 [[tools.colima]]
 version = "0.10.3"
@@ -246,7 +246,7 @@ url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-
 url_api = "https://api.github.com/repos/sharkdp/hyperfine/releases/assets/317832313"
 
 [[tools."npm:freebuff"]]
-version = "0.0.119"
+version = "0.0.128"
 backend = "npm:freebuff"
 
 [[tools.numbat]]
@@ -289,79 +289,79 @@ url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.
 url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726071"
 
 [[tools.pi]]
-version = "0.80.3"
+version = "0.82.1"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:c544ab2a0953a9bda358cab9bc328b1ef6892d4a824d8693880977e4b23c6168"
-url = "https://github.com/earendil-works/pi/releases/download/v0.80.3/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/462498372"
+checksum = "sha256:9e7036f89370c443235a2a0a8ccc91a9cc2b7f4af5ec20b2dad1c6f72aa916e6"
+url = "https://github.com/earendil-works/pi/releases/download/v0.82.1/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/489434433"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:c544ab2a0953a9bda358cab9bc328b1ef6892d4a824d8693880977e4b23c6168"
-url = "https://github.com/earendil-works/pi/releases/download/v0.80.3/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/462498372"
+checksum = "sha256:9e7036f89370c443235a2a0a8ccc91a9cc2b7f4af5ec20b2dad1c6f72aa916e6"
+url = "https://github.com/earendil-works/pi/releases/download/v0.82.1/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/489434433"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:e74a34ac2505556164144d8e39a64d6d5276f092166dad914319edc30c48abee"
-url = "https://github.com/earendil-works/pi/releases/download/v0.80.3/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/462498373"
+checksum = "sha256:884a9dec7e0b75a54c4d1933c93a7d45af1fbb81c32964c1dd45d67fac1f6544"
+url = "https://github.com/earendil-works/pi/releases/download/v0.82.1/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/489434437"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:e74a34ac2505556164144d8e39a64d6d5276f092166dad914319edc30c48abee"
-url = "https://github.com/earendil-works/pi/releases/download/v0.80.3/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/462498373"
+checksum = "sha256:884a9dec7e0b75a54c4d1933c93a7d45af1fbb81c32964c1dd45d67fac1f6544"
+url = "https://github.com/earendil-works/pi/releases/download/v0.82.1/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/489434437"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:072789f5f5571198bd2d856f1ac4bbc980eecce1d02e7d0acf896e2387e3ee8f"
-url = "https://github.com/earendil-works/pi/releases/download/v0.80.3/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/462498374"
+checksum = "sha256:ca5b660ee0dbf2b4169f69753cf60f4e0edddff4a49427cdd34660e41280249f"
+url = "https://github.com/earendil-works/pi/releases/download/v0.82.1/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/489434434"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:c1e007bd68cf3779f09476f9c06de5fc93a00733d4ae34a36a96180156ff1e7f"
-url = "https://github.com/earendil-works/pi/releases/download/v0.80.3/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/462498370"
+checksum = "sha256:a28cd67f9397a5ad99f9387713bf1c134b747d4b6cb25e00db4f7d009ee9f8c2"
+url = "https://github.com/earendil-works/pi/releases/download/v0.82.1/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/489434436"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:ca36266c726214fc351b9a6fcc5093cee8ae73c0ea4cf8ec292b8fa646d334df"
-url = "https://github.com/earendil-works/pi/releases/download/v0.80.3/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/462498371"
+checksum = "sha256:bf097296fe05654bd1c212a47f86895899e5edf5b706008e2223914fbf12a95b"
+url = "https://github.com/earendil-works/pi/releases/download/v0.82.1/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/489434441"
 
 [[tools.tssh]]
-version = "0.1.25"
+version = "0.1.26"
 backend = "aqua:trzsz/trzsz-ssh"
 
 [tools.tssh."platforms.linux-arm64"]
-checksum = "sha256:90dd14290ddcd47b4681708ebc1964b37fcd4a1df0c3728beaf4fc06896b7a14"
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_linux_aarch64.tar.gz"
-url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843315"
+checksum = "sha256:aa87c3022096b1ac6f583e1af04675419ec777ec3336a34d353efce73b75a0a9"
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.26/tssh_0.1.26_linux_aarch64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/489891253"
 
 [tools.tssh."platforms.linux-arm64-musl"]
-checksum = "sha256:90dd14290ddcd47b4681708ebc1964b37fcd4a1df0c3728beaf4fc06896b7a14"
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_linux_aarch64.tar.gz"
-url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843315"
+checksum = "sha256:aa87c3022096b1ac6f583e1af04675419ec777ec3336a34d353efce73b75a0a9"
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.26/tssh_0.1.26_linux_aarch64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/489891253"
 
 [tools.tssh."platforms.linux-x64"]
-checksum = "sha256:f1bcb660eae4ed20d098bc8c6192f4cdcfa2cab3d1908da0fdeb8c4da5604dcc"
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843311"
+checksum = "sha256:e01cfacb5fef97b4eb2b5521ad2c9c27ec4892088ae75d329bcef9e290723301"
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.26/tssh_0.1.26_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/489891254"
 
 [tools.tssh."platforms.linux-x64-musl"]
-checksum = "sha256:f1bcb660eae4ed20d098bc8c6192f4cdcfa2cab3d1908da0fdeb8c4da5604dcc"
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843311"
+checksum = "sha256:e01cfacb5fef97b4eb2b5521ad2c9c27ec4892088ae75d329bcef9e290723301"
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.26/tssh_0.1.26_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/489891254"
 
 [tools.tssh."platforms.macos-arm64"]
-checksum = "sha256:44f4e8359f731144bd1392701a04934aef7e97868212c4fec281751a4fe5ea2f"
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_macos_aarch64.tar.gz"
-url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843306"
+checksum = "sha256:12747b324134c41dd6a7c3780914703742ad0f0c2faa39560f8cd03608a15d88"
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.26/tssh_0.1.26_macos_aarch64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/489891260"
 
 [tools.tssh."platforms.macos-x64"]
-checksum = "sha256:84558671b4f2550edfab76c6e57015f8cdc74ba3363b7b33e87fff07aa9b2f0d"
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_macos_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843307"
+checksum = "sha256:04ef663f1ef9f1c46298264b04d51a9f6920e5df460a5f3e1bacdb68c3ac58cb"
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.26/tssh_0.1.26_macos_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/489891252"
 
 [tools.tssh."platforms.windows-x64"]
-checksum = "sha256:a1ac7631ed567c3fb8edd4c66114aa0620aaca525980a689d341ec78060f5a29"
-url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.25/tssh_0.1.25_windows_x86_64.zip"
-url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/410843316"
+checksum = "sha256:15f788e31d08176028d179aa6c9ad0c89b995d6986ce280a50c66fd0c91397da"
+url = "https://github.com/trzsz/trzsz-ssh/releases/download/v0.1.26/tssh_0.1.26_windows_x86_64.zip"
+url_api = "https://api.github.com/repos/trzsz/trzsz-ssh/releases/assets/489891264"
