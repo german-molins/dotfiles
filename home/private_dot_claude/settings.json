@@ -2,6 +2,11 @@
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
   },
+  "permissions": {
+    "allow": [
+      "mcp__plugin_context-mode_context-mode__ctx_search"
+    ]
+  },
   "model": "opus",
   "hooks": {
     "SessionStart": [
@@ -49,10 +54,5 @@
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
-  "editorMode": "vim",
-  "permissions": {
-    "allow": [
-      "mcp__plugin_context-mode_context-mode__ctx_search"
-    ]
-  }
+  "editorMode": "vim"
 }
