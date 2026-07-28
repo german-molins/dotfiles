@@ -82,6 +82,7 @@ Agent harnesses:
 | [Claude Code] | `claude` | | Anthropic subscription OAuth | |
 | [Opencode] | `opencode` | `oc` | Opencode Zen<br>OpenRouter | `OPENCODE_API_KEY`<br>`OPENROUTER_API_KEY` |
 | [Pi] | `pi` | | Anthropic subscription OAuth | |
+| [OMP] | `omp` | | Many third-party OAuth | Many third-party |
 | [Codebuff] | `codebuff` | | Free tier | |
 | [Freebuff] | `freebuff` | | Free tier | |
 | [Antigravity CLI] | `agy` | | Gemini free tier | Google OAuth |
@@ -91,6 +92,7 @@ Agent harnesses:
 [Claude Code]: https://code.claude.com
 [Opencode]: https://opencode.ai
 [Pi]: https://pi.dev/
+[OMP]: https://omp.sh/
 [Codebuff]: https://www.codebuff.com
 [Freebuff]: https://freebuff.com
 [Antigravity CLI]: https://antigravity.google/product/antigravity-cli
