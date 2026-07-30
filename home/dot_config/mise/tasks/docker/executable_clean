@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+#MISE description="Clean up Docker containers, images, networks and build cache"
+
+if ! command -v docker >/dev/null; then
+    >&2 echo "WARNING: Docker not installed"
+    exit 0
+fi
+
+echo '[dotfiles] Pruning Docker...'
+docker system prune --all --force
+
+echo '[dotfiles] Remaining usage:'
+docker system df

@@ -54,7 +54,7 @@ Update Chezmoi
 
 ## `clean`
 
-- Depends: mise:clean, nix:clean, brew:clean
+- Depends: mise:clean, nix:clean, brew:clean, docker:clean
 
 - **Usage**: `clean`
 
@@ -66,11 +66,11 @@ Clean up system packages and caches
 
 Update Devbox
 
-## `devbox:update`
+## `docker:clean`
 
-- **Usage**: `devbox:update`
+- **Usage**: `docker:clean`
 
-Update Devbox global packages
+Clean up Docker containers, images, networks and build cache
 
 ## `mise:clean`
 
@@ -161,9 +161,10 @@ Generate a 32-bit random hex number
 
 ## `scaffold`
 
-- **Usage**: `scaffold [--commit] <project>`
-
 Scaffold a project
+
+
+- **Usage**: `scaffold [--commit] <project>`
 
 ### Arguments
 
@@ -189,7 +190,7 @@ Commit changes after scaffolding
 
 ## `update`
 
-- Depends: chezmoi:update, mise:update, devbox:update, yazi:update, nvim:update, pi:update, brew:update, upt:update, agents:update
+- Depends: chezmoi:update, mise:update, yazi:update, nvim:update, pi:update, brew:update, upt:update, agents:update
 
 - **Usage**: `update`
 
@@ -197,9 +198,10 @@ Update all tools and packages
 
 ## `upt`
 
-- **Usage**: `upt [cmd]…`
-
 Install system packages with upt
+
+
+- **Usage**: `upt [cmd]…`
 
 ### Arguments
 
