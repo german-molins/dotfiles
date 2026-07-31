@@ -7323,6 +7323,45 @@ url_api = "https://api.github.com/repos/jdx/usage/releases/assets/489801502"
 version = "0.11.32"
 backend = "asdf:uv"
 
+[[tools.witr]]
+version = "0.3.3"
+backend = "aqua:pranshuparmar/witr"
+
+[tools.witr."platforms.linux-arm64"]
+checksum = "sha256:dca2be6cf56a5274de0a036b83345d055b8e94f7f4fd23dc54dd102d7669e2d8"
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-linux-arm64"
+url_api = "https://api.github.com/repos/pranshuparmar/witr/releases/assets/456364348"
+
+[tools.witr."platforms.linux-arm64-musl"]
+checksum = "sha256:dca2be6cf56a5274de0a036b83345d055b8e94f7f4fd23dc54dd102d7669e2d8"
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-linux-arm64"
+url_api = "https://api.github.com/repos/pranshuparmar/witr/releases/assets/456364348"
+
+[tools.witr."platforms.linux-x64"]
+checksum = "sha256:08fc46e3f80a374476f71d0d6e6579477cd98c6df5cc59d98224adf948f5ebf5"
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-linux-amd64"
+url_api = "https://api.github.com/repos/pranshuparmar/witr/releases/assets/456364356"
+
+[tools.witr."platforms.linux-x64-musl"]
+checksum = "sha256:08fc46e3f80a374476f71d0d6e6579477cd98c6df5cc59d98224adf948f5ebf5"
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-linux-amd64"
+url_api = "https://api.github.com/repos/pranshuparmar/witr/releases/assets/456364356"
+
+[tools.witr."platforms.macos-arm64"]
+checksum = "sha256:d05b51825604d608da8757e549a1f5322549a350f8336c593429f3f2cd507927"
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-darwin-arm64"
+url_api = "https://api.github.com/repos/pranshuparmar/witr/releases/assets/456364357"
+
+[tools.witr."platforms.macos-x64"]
+checksum = "sha256:39934f6a8d6a0413c52324ccdbd3a0867371785b6c066005ea063a78279487ef"
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-darwin-amd64"
+url_api = "https://api.github.com/repos/pranshuparmar/witr/releases/assets/456364351"
+
+[tools.witr."platforms.windows-x64"]
+checksum = "sha256:1ae95a354fa7f767828ad7942497f3801e5299f8afad5844ec6d1819703a6b28"
+url = "https://github.com/pranshuparmar/witr/releases/download/v0.3.3/witr-windows-amd64.zip"
+url_api = "https://api.github.com/repos/pranshuparmar/witr/releases/assets/456364359"
+
 [[tools.xh]]
 version = "0.26.1"
 backend = "aqua:ducaale/xh"

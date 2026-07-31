@@ -23,7 +23,8 @@ These are my daily CLI drivers:
 | [Yazi] | `yazi`, `ya` | `y` | File manager |
 | [Neovim] | `nvim` | | Text editor and IDE |
 | [Chezit] | `chezit` | | Chezmoi TUI |
-| [bottom] | `btm` | | System monitor |
+| [bottom] | `btm` | | Resources monitor and process manager |
+| [witr] | `witr` | | Process origins explorer and manager |
 | [Lazydocker] | `lazydocker` | | Docker and docker-compose manager |
 | [Pitchfork] | `pitchfork` | | Daemons manager |
 | [Taskwarrior] | `task` | | Task manager |
@@ -47,6 +48,7 @@ These are my daily CLI drivers:
 [Neovim]: https://neovim.io/
 [Chezit]: https://github.com/daptify14/chezit
 [bottom]: https://github.com/ClementTsang/bottom
+[witr]: https://github.com/pranshuparmar/witr
 [Lazydocker]: https://github.com/jesseduffield/lazydocker
 [Pitchfork]: https://pitchfork.en.dev/
 [Taskwarrior]: https://taskwarrior.org/

@@ -80,6 +80,7 @@ rust-analyzer = "latest"
 "npm:codeburn" = "latest"
 oh-my-pi = { version = "latest", rename_exe = "omp" }
 sccache = "latest"
+witr = "latest"
 
 [settings]
 experimental = true
