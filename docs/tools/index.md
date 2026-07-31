@@ -133,7 +133,7 @@ common cases:
 | [cosign] | `cosign` | | Signing and verifying packages |
 | [Numbat] | `numbat` | `num`, `calc` | Scientific calculator with physical units |
 | [systemctl-tui] | `systemctl-tui` | | systemd TUI |
-| [CodeBurn] | `codeburn` | | systemd TUI |
+| [CodeBurn] | `codeburn` | | AI coding tokens and cost tracker |
 
 [Git Extras]: https://github.com/tj/git-extras
 [full list]: https://github.com/tj/git-extras/blob/main/Commands.md
