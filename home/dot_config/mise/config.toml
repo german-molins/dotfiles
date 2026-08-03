@@ -82,6 +82,7 @@ oh-my-pi = { version = "latest", rename_exe = "omp" }
 sccache = "latest"
 witr = "latest"
 nono = "latest"
+herdr = "latest"
 
 [settings]
 experimental = true

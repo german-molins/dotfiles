@@ -17,6 +17,7 @@ These are my daily CLI drivers:
 | [Usage] | `usage` | | Polyglot script CLI manager |
 | [Fnox] | `fnox` | | Secret manager |
 | [Zellij] | `zellij` | `z{e,r}{,f,i}` | Terminal workspaces |
+| [Herdr] | `herdr` | | Agent-aware terminal workspaces |
 | [Zoxide] | `zoxide` | `cd`, `cdi` | Smarter `cd` |
 | [Atuin] | `atuin` | | Shell history manager |
 | [Carapace] | `carapace` | | Shell completion |
@@ -41,6 +42,7 @@ These are my daily CLI drivers:
 [Usage]: https://usage.jdx.dev/
 [Fnox]: https://fnox.jdx.dev/
 [Zellij]: https://zellij.dev/
+[Herdr]: https://herdr.dev/
 [Zoxide]: https://github.com/ajeetdsouza/zoxide
 [Atuin]: https://atuin.sh/
 [Carapace]: https://carapace-sh.github.io/carapace-bin/
