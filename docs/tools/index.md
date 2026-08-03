@@ -155,15 +155,17 @@ The following apps are not installed by default but have configuration available
 |-----|-----------|---------------|
 | tmux | No | Yes |
 
-### Virtualization
+### Virtualization And Sandboxing
 
 | Name | Commands | Aliases | Description |
 |------|---------|-------|-------------|
 | [Devpod] | `devpod` | | Devcontainer manager |
 | [Colima] | `colima` | `vm` | Containers runtimes |
+| [nono] | `nono` | | Kernel sandboxing for AI agents |
 
 [Devpod]: https://devpod.sh/
 [Colima]: https://colima.run
+[nono]: https://nono.sh
 
 ## Package Registries
 
