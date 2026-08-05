@@ -5,3 +5,7 @@ delivery = "herdr"
 
 [ui]
 show_agent_labels_on_pane_borders = true
+
+[keys]
+previous_tab = ["prefix+p", "alt+left"]
+next_tab = ["prefix+n", "alt+right"]
