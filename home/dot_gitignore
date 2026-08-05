@@ -11,3 +11,5 @@ CLAUDE.local.md
 
 playground/
 ignore*/
+
+**/.claude/settings.local.json
