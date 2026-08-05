@@ -13,3 +13,6 @@ previous_tab = ["prefix+p", "alt+left"]
 next_tab = ["prefix+n", "alt+right"]
 split_vertical = "prefix+v"
 split_horizontal = "prefix+s"
+focus_agent = "prefix+alt+1..9"
+previous_agent = "prefix+shift+k"
+next_agent = "prefix+shift+j"
