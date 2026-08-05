@@ -1,65 +1,75 @@
 {
+  "alwaysThinkingEnabled": true,
+  "editorMode": "vim",
+  "effortLevel": "high",
+  "enabledPlugins": {
+    "beads@beads-marketplace": true,
+    "caveman@caveman": true,
+    "context-mode@context-mode": true,
+    "context7@claude-plugins-official": false,
+    "ponytail@ponytail": true,
+    "rust-analyzer-lsp@claude-plugins-official": false,
+    "superpowers@claude-plugins-official": true
+  },
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
   },
-  "permissions": {
-    "allow": [
-      "mcp__plugin_context-mode_context-mode__ctx_search"
-    ]
+  "extraKnownMarketplaces": {
+    "caveman": {
+      "source": {
+        "repo": "JuliusBrussee/caveman",
+        "source": "github"
+      }
+    },
+    "context-mode": {
+      "source": {
+        "repo": "mksglu/context-mode",
+        "source": "github"
+      }
+    },
+    "ponytail": {
+      "source": {
+        "repo": "DietrichGebert/ponytail",
+        "source": "github"
+      }
+    },
+    "superpowers-marketplace": {
+      "source": {
+        "repo": "obra/superpowers-marketplace",
+        "source": "github"
+      }
+    }
   },
-  "model": "opus",
   "hooks": {
     "SessionStart": [
       {
         "hooks": [
           {
-            "type": "command",
-            "command": "\"$HOME/.claude/hooks/context-mode-cache-heal.mjs\""
+            "command": "\"$HOME/.claude/hooks/context-mode-cache-heal.mjs\"",
+            "type": "command"
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "command": "bash '/home/german-molins/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
       }
     ]
   },
+  "model": "opus",
+  "permissions": {
+    "allow": [
+      "mcp__plugin_context-mode_context-mode__ctx_search"
+    ]
+  },
   "statusLine": {
-    "type": "command",
-    "command": "bash ~/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh"
-  },
-  "enabledPlugins": {
-    "rust-analyzer-lsp@claude-plugins-official": false,
-    "beads@beads-marketplace": true,
-    "superpowers@claude-plugins-official": true,
-    "caveman@caveman": true,
-    "context7@claude-plugins-official": false,
-    "context-mode@context-mode": true,
-    "ponytail@ponytail": true
-  },
-  "extraKnownMarketplaces": {
-    "superpowers-marketplace": {
-      "source": {
-        "source": "github",
-        "repo": "obra/superpowers-marketplace"
-      }
-    },
-    "caveman": {
-      "source": {
-        "source": "github",
-        "repo": "JuliusBrussee/caveman"
-      }
-    },
-    "context-mode": {
-      "source": {
-        "source": "github",
-        "repo": "mksglu/context-mode"
-      }
-    },
-    "ponytail": {
-      "source": {
-        "source": "github",
-        "repo": "DietrichGebert/ponytail"
-      }
-    }
-  },
-  "alwaysThinkingEnabled": true,
-  "effortLevel": "high",
-  "editorMode": "vim"
+    "command": "bash ~/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh",
+    "type": "command"
+  }
 }
