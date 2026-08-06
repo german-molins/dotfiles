@@ -9,7 +9,8 @@
     "context7@claude-plugins-official": false,
     "ponytail@ponytail": true,
     "rust-analyzer-lsp@claude-plugins-official": false,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true,
+    "nono@nolabs-ai": true
   },
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
