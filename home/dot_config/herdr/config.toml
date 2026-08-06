@@ -9,12 +9,12 @@ show_agent_labels_on_pane_borders = true
 [keys]
 settings = "prefix+shift+s"
 detach = ["prefix+q", "prefix+d"]
-previous_workspace = "alt+up"
-next_workspace = "alt+down"
+previous_workspace = "alt+shift+up"
+next_workspace = "alt+shift+down"
 previous_tab = ["prefix+p", "alt+left"]
 next_tab = ["prefix+n", "alt+right"]
 split_vertical = "prefix+v"
 split_horizontal = "prefix+s"
 focus_agent = "prefix+alt+1..9"
-previous_agent = "prefix+shift+k"
-next_agent = "prefix+shift+j"
+previous_agent = ["alt+up", "prefix+shift+k"]
+next_agent = ["alt+down", "prefix+shift+j"]
