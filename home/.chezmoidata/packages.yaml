@@ -33,3 +33,5 @@ packages:
       - windows-app
       - balenaetcher
       - antigravity-cli
+  nono:
+    - nolabs-ai/claude
