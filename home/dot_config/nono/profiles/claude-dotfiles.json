@@ -1,5 +1,5 @@
 {
-  "extends": "always-further/claude",
+  "extends": "nolabs-ai/claude",
   "meta": {
     "name": "claude-dotfiles"
   },
