@@ -1,0 +1,18 @@
+{
+  "extends": "always-further/claude",
+  "meta": {
+    "name": "claude-dotfiles"
+  },
+  "groups": {
+    "include": []
+  },
+  "workdir": {
+    "access": "readwrite"
+  },
+  "filesystem": {
+    "allow": [],
+    "read": [
+      "~/.local/share/mise/installs"
+    ]
+  }
+}
