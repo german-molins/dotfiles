@@ -126,6 +126,7 @@ wh = "where"
 
 ai = "pi"
 cc = "claude"
+claude-nono = "HERDR_AGENT=claude nono run --profile claude-dotfiles --allow-cwd -- claude"
 oc = "opencode"
 calc = "numbat"
 num = "numbat"
