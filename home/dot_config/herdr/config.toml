@@ -9,8 +9,10 @@ show_agent_labels_on_pane_borders = true
 [keys]
 settings = "prefix+shift+s"
 detach = ["prefix+q", "prefix+d"]
+new_workspace = "prefix+shift+c"
 previous_workspace = "alt+shift+up"
 next_workspace = "alt+shift+down"
+new_tab = "prefix+c"
 previous_tab = ["prefix+p", "alt+left"]
 next_tab = ["prefix+n", "alt+right"]
 split_vertical = "prefix+v"
