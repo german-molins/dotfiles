@@ -4,7 +4,6 @@ devbox = "https://github.com/jbadeau/mise-nix.git"
 [tools]
 "aqua:dlvhdr/gh-dash" = "latest"
 "aqua:jorgerojas26/lazysql" = "latest"
-"aqua:zk-org/zk" = "latest"
 bat = "latest"
 bottom = "latest"
 cargo-binstall = "latest"
@@ -83,6 +82,7 @@ sccache = "latest"
 witr = "latest"
 nono = "latest"
 herdr = "latest"
+zk = "latest"
 
 [settings]
 experimental = true
