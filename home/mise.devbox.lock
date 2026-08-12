@@ -9,11 +9,11 @@ version = "8.1"
 backend = "devbox"
 
 [[tools."devbox:file"]]
-version = "5.47"
+version = "5.48"
 backend = "devbox:file"
 
 [[tools."devbox:git"]]
-version = "2.54.0"
+version = "2.55.0"
 backend = "devbox:git"
 
 [[tools."devbox:git-extras"]]
@@ -25,7 +25,7 @@ version = "0.11.2"
 backend = "devbox:gpg-tui"
 
 [[tools."devbox:poppler-utils"]]
-version = "25.10.0"
+version = "26.06.0"
 backend = "devbox:poppler-utils"
 
 [[tools."devbox:readline"]]
@@ -37,5 +37,5 @@ version = "2.6.2"
 backend = "devbox:taskwarrior"
 
 [[tools."devbox:timewarrior"]]
-version = "1.9.1"
+version = "1.10.0"
 backend = "devbox:timewarrior"
