@@ -76,7 +76,9 @@ systemctl-tui = "latest"
 "github:daptify14/chezit" = "latest"
 imagemagick = "latest"
 rust-analyzer = "latest"
-"npm:codeburn" = "latest"
+"npm:codeburn" = { version = "latest", trust_policy_excludes = [
+  "@peculiar/asn1-cms@2.9.0",
+] }
 oh-my-pi = { version = "latest", rename_exe = "omp" }
 sccache = "latest"
 witr = "latest"
