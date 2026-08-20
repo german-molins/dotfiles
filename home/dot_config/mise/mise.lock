@@ -6862,9 +6862,19 @@ provenance = "github-attestations"
 version = "0.9.20"
 backend = "npm:codeburn"
 
+[tools."npm:codeburn".options]
+trust_policy_excludes = '["@peculiar/asn1-cms@2.9.0"]'
+
 [[tools."npm:ctx7"]]
 version = "0.5.7"
 backend = "npm:ctx7"
+
+[[tools."npm:hunkdiff"]]
+version = "0.19.0"
+backend = "npm:hunkdiff"
+
+[tools."npm:hunkdiff".options]
+allow_builds = '["bun"]'
 
 [[tools."npm:playbooks"]]
 version = "0.1.20"
