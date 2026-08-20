@@ -53,24 +53,6 @@ All assistants I use are compatible with either or both.
 
 These are the skills managers I use, in order of precedence.
 
-#### [Playbooks]()
-
-[Playbooks CLI](https://www.npmjs.com/package/playbooks) uses the
-[Playbooks](https://playbooks.com/) skills registry by default, but can fetch
-and manage skills from a variety of sources, and locks specific versions to
-`.skills-lock.json`, both per-project and globally.
-
-```sh
-npx playbooks find skill
-```
-
-Skills have to be updated manually since there is not a fully non-interactive
-command for it:
-
-```sh
-playbooks update skill
-```
-
 #### [Skills](https://skills.sh/) by Vercel
 
 `skills` lets you manage skills across many agentic assistants. It is my

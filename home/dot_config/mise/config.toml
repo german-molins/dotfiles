@@ -65,7 +65,6 @@ amp = { version = "latest", allow_builds = true }
 "conda:resvg" = "latest"
 "npm:skills" = "latest"
 atuin = "latest"
-"npm:playbooks" = "latest"
 python = "latest"
 sd = "latest"
 tmux = "latest"
