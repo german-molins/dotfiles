@@ -67,55 +67,6 @@ Similarly, use `ctx7` (Context7 Skills) to manage agents skills:
 - `ctx7 skills generate`: Generate skills with the help of AI (requires `ctx7
 login`)
 
-## Amp
-
-[Amp](https://ampcode.com/) is an LLM coding agent with built-in support for
-context files.
-
-### Configuration
-
-- **Settings**: `~/.config/amp/settings.json`
-- **Context Support**: Built-in support for `AGENTS.md` files and `@` file
-prefix syntax to read other files
-
-### Context File Usage
-
-Amp reads context through:
-
-1. Local `AGENTS.md` file in project root
-2. Global `~/.config/AGENTS.md` file
-3. Subdir `AGENTS.md` files in path of files referenced in thread.
-4. Referenced files using `@` syntax.
-
-Reference: [Amp Manual - AGENTS.md](https://ampcode.com/manual#AGENTS.md)
-
-## Amp
-
-[Amp](https://ampcode.com/) is an LLM coding agent with built-in support for
-context files.
-
-### Configuration
-
-- **Settings**: `~/.config/amp/settings.json`
-- **Context Support**: Built-in support for `AGENTS.md` files and `@` file
-prefix syntax to read other files
-
-### Context File Usage
-
-Amp reads context through:
-
-1. Local `AGENTS.md` file in project root
-2. Global `~/.config/AGENTS.md` file
-3. Subdir `AGENTS.md` files in path of files referenced in thread.
-4. Referenced files using `@` syntax.
-
-Reference: [Amp Manual - AGENTS.md](https://ampcode.com/manual#AGENTS.md)
-
-### Free Mode
-
-Amp offers a [free tier](https://ampcode.com/manual#free) that can be activated
-with `/mode free`.
-
 ## Claude Code
 
 [Claude Code](https://code.claude.com) is Anthropic's official CLI coding agent.
