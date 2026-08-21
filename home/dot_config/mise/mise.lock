@@ -2968,6 +2968,42 @@ checksum = "sha256:210bd31c22bb88f5e2a167df24c95bb5f152b2ada7502f9b8c49d1f5366db
 url = "https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb78ec9c_6.conda"
 checksum = "sha256:68f0206ca6e98fea941e5717cec780ed2873ffabc0e1ed34428c061e2c6268c7"
 
+[conda-packages.macos-arm64."_openmp_mutex-4.5-7_kmp_llvm"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/_openmp_mutex-4.5-7_kmp_llvm.conda"
+checksum = "sha256:7acaa2e0782cad032bdaf756b536874346ac1375745fb250e9bdd6a48a7ab3cd"
+
+[conda-packages.macos-arm64."adwaita-icon-theme-49.0-unix_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
+checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
+
+[conda-packages.macos-arm64."annotated-types-0.8.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.8.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:b8fcb994134d3918d1c64a9d62f4168ff85d5bfb89e698102fe4ed679fe0df24"
+
+[conda-packages.macos-arm64."aom-3.14.1-pl5321hf79ea98_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/aom-3.14.1-pl5321hf79ea98_2.conda"
+checksum = "sha256:292b3cfab77d5db222b53add0ec3b5e7e5c04ce2cb8cf8a7237cbe0643b3e6c1"
+
+[conda-packages.macos-arm64."atk-1.0-2.38.0-hd03087b_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/atk-1.0-2.38.0-hd03087b_2.conda"
+checksum = "sha256:b0747f9b1bc03d1932b4d8c586f39a35ac97e7e72fe6e63f2b2a2472d466f3c1"
+
+[conda-packages.macos-arm64."backports.zstd-1.7.0-py314h680f03e_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.7.0-py314h680f03e_0.conda"
+checksum = "sha256:19514d89d1e725e44b0650d31a4d43da8e070e4e93e4131e3b16bd139404f2b2"
+
+[conda-packages.macos-arm64."blinker-1.9.0-pyhff2d567_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/blinker-1.9.0-pyhff2d567_0.conda"
+checksum = "sha256:f7efd22b5c15b400ed84a996d777b6327e5c402e79e3c534a7e086236f1eb2dc"
+
+[conda-packages.macos-arm64."brotli-python-1.2.0-py314hee34562_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/brotli-python-1.2.0-py314hee34562_3.conda"
+checksum = "sha256:3cdfc0a96de4717fc309e39133e2a192f4e1df96680577e1d48804021d1726eb"
+
+[conda-packages.macos-arm64."bzip2-1.0.8-h4e30115_10"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h4e30115_10.conda"
+checksum = "sha256:8ec22f0ba25cbfc2e64d70cf29459eccd7ffdf6436f6a6ff15bbfef799f7d4f6"
+
 [conda-packages.macos-arm64."bzip2-1.0.8-h93a5062_5"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/bzip2-1.0.8-h93a5062_5.conda"
 checksum = "sha256:bfa84296a638bea78a8bb29abc493ee95f2a0218775642474a840411b950fe5f"
@@ -2976,157 +3012,1185 @@ checksum = "sha256:bfa84296a638bea78a8bb29abc493ee95f2a0218775642474a840411b950f
 url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
 checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
 
+[conda-packages.macos-arm64."ca-certificates-2026.7.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-hbd8a1cb_0.conda"
+checksum = "sha256:0a0544cf95f64394fe4959286f5c71f5444ad58feb0602e53becb27448d24da6"
+
+[conda-packages.macos-arm64."cairo-1.18.4-he0f2337_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/cairo-1.18.4-he0f2337_1.conda"
+checksum = "sha256:cde9b79ee206fe3ba6ca2dc5906593fb7a1350515f85b2a1135a4ce8ec1539e3"
+
+[conda-packages.macos-arm64."certifi-2026.7.22-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/certifi-2026.7.22-pyhd8ed1ab_0.conda"
+checksum = "sha256:fb167de4388e64e52aa3907ed099afab944c1fa6e5f74b281a312dae1bcf7f3b"
+
+[conda-packages.macos-arm64."charset-normalizer-3.5.1-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.5.1-pyhd8ed1ab_0.conda"
+checksum = "sha256:cb60ef3e0631c8bacb4f7057196dee4496091a22baa3bb4b9bccb12c7e1c921b"
+
+[conda-packages.macos-arm64."click-8.4.2-pyhc90fa1f_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/click-8.4.2-pyhc90fa1f_0.conda"
+checksum = "sha256:ccc4787f511964f9a1f2d2d2859c91c5d571fb60f7f09d4c4e092c9b7a94e671"
+
+[conda-packages.macos-arm64."comm-0.2.3-pyhe01879c_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/comm-0.2.3-pyhe01879c_0.conda"
+checksum = "sha256:576a44729314ad9e4e5ebe055fbf48beb8116b60e58f9070278985b2b634f212"
+
+[conda-packages.macos-arm64."dav1d-1.2.1-hb547adb_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/dav1d-1.2.1-hb547adb_0.conda"
+checksum = "sha256:93e077b880a85baec8227e8c72199220c7f87849ad32d02c14fb3807368260b8"
+
+[conda-packages.macos-arm64."epoxy-1.5.10-hc919400_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/epoxy-1.5.10-hc919400_2.conda"
+checksum = "sha256:ba685b87529c95a4bf9de140a33d703d57dc46b036e9586ed26890de65c1c0d5"
+
+[conda-packages.macos-arm64."fftw-3.3.11-nompi_haf1500d_100"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/fftw-3.3.11-nompi_haf1500d_100.conda"
+checksum = "sha256:fc6c507d7c68db156d6c8c5f6a79ca6b34c2a4c0c6222d8d4ecd0e4b97d3fd5e"
+
+[conda-packages.macos-arm64."flask-3.1.3-pyhcf101f3_1"]
+url = "https://conda.anaconda.org/conda-forge/noarch/flask-3.1.3-pyhcf101f3_1.conda"
+checksum = "sha256:3980dfba1e3900106cc3e6210294e73f50d02a67fdfe7b3bb36b2721ba9379cb"
+
+[conda-packages.macos-arm64."font-ttf-dejavu-sans-mono-2.37-hab24e00_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2"
+checksum = "sha256:58d7f40d2940dd0a8aa28651239adbf5613254df0f75789919c4e6762054403b"
+
+[conda-packages.macos-arm64."font-ttf-inconsolata-3.000-h77eed37_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2"
+checksum = "sha256:c52a29fdac682c20d252facc50f01e7c2e7ceac52aa9817aaf0bb83f7559ec5c"
+
+[conda-packages.macos-arm64."font-ttf-source-code-pro-2.038-h77eed37_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2"
+checksum = "sha256:00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b139"
+
+[conda-packages.macos-arm64."font-ttf-ubuntu-0.83-h77eed37_3"]
+url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda"
+checksum = "sha256:2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14"
+
+[conda-packages.macos-arm64."fontconfig-2.18.3-h81aa574_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/fontconfig-2.18.3-h81aa574_1.conda"
+checksum = "sha256:004570d35fb0eff73ce3ae49b209a47622d0c2e580dd0dc4c61d59626b386a09"
+
+[conda-packages.macos-arm64.fonts-conda-ecosystem-1-0]
+url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2"
+checksum = "sha256:a997f2f1921bb9c9d76e6fa2f6b408b7fa549edd349a77639c9fe7a23ea93e61"
+
+[conda-packages.macos-arm64.fonts-conda-forge-1-hc364b38_1]
+url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-forge-1-hc364b38_1.conda"
+checksum = "sha256:54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98333"
+
+[conda-packages.macos-arm64."freetype-2.14.3-hce30654_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/freetype-2.14.3-hce30654_2.conda"
+checksum = "sha256:90681f1d0658cb2fd49a074f644eb4774272499290487a4bebb1c4df01d6997b"
+
+[conda-packages.macos-arm64."fribidi-1.0.16-h84a0fba_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/fribidi-1.0.16-h84a0fba_1.conda"
+checksum = "sha256:6dd18694340b84290bb1906cc1359502b974aada6a8476cfe6dec3ce0e860af8"
+
+[conda-packages.macos-arm64."gdk-pixbuf-2.44.8-h5867e2c_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/gdk-pixbuf-2.44.8-h5867e2c_0.conda"
+checksum = "sha256:0e91dc3531a3a7c4938abc115d7a49be61284a9a8650b404a37b2123fe5cf7dd"
+
+[conda-packages.macos-arm64."ghostscript-10.04.0-hf9b8971_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/ghostscript-10.04.0-hf9b8971_0.conda"
+checksum = "sha256:14ffaf8c8b2c9f1f6ce5d6e2ba812c823e45263d85420b817a441b97c5ff2efd"
+
+[conda-packages.macos-arm64."giflib-5.2.2-hd20048c_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/giflib-5.2.2-hd20048c_1.conda"
+checksum = "sha256:be9b4cf253c7d3bf20ccc9ff278ea7ec6f144ebbe8fdc9a131d18c35ff49692f"
+
+[conda-packages.macos-arm64."glib-tools-2.88.3-hd03a632_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/glib-tools-2.88.3-hd03a632_1.conda"
+checksum = "sha256:200aec53216f3323b2072fb994b10fbee018ff3b894162a37222f1f316c3e476"
+
+[conda-packages.macos-arm64."graphite2-1.3.15-h784d473_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/graphite2-1.3.15-h784d473_1.conda"
+checksum = "sha256:471f34a187fdb4f2df33e26f2e471b16c239a5b277903f643d9c3a8c9a9f44ec"
+
+[conda-packages.macos-arm64."graphviz-14.1.2-hec8c438_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/graphviz-14.1.2-hec8c438_0.conda"
+checksum = "sha256:755c72d469330265f80a615912a3b522aef6f26cbc52763862b6a3c492fbf97c"
+
+[conda-packages.macos-arm64."gtk3-3.24.52-hc0f3e19_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/gtk3-3.24.52-hc0f3e19_0.conda"
+checksum = "sha256:26862a9898054b8552e55e609e5ce73c7ef1eb28bbe6fb87f0b9109d73cd09df"
+
+[conda-packages.macos-arm64."gts-0.7.6-he42f4ea_4"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/gts-0.7.6-he42f4ea_4.conda"
+checksum = "sha256:e0f8c7bc1b9ea62ded78ffa848e37771eeaaaf55b3146580513c7266862043ba"
+
+[conda-packages.macos-arm64."h2-4.4.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/h2-4.4.1-pyhcf101f3_0.conda"
+checksum = "sha256:307dd6ec90140c3cf4171071b0e5e870abec314f4565c1edd5bc433e942cdcc0"
+
+[conda-packages.macos-arm64."harfbuzz-14.3.1-hce30654_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/harfbuzz-14.3.1-hce30654_0.conda"
+checksum = "sha256:1120c57b917fb0bb8fef770d56f308564c94daea0eb29a643c9f5cf73195de78"
+
+[conda-packages.macos-arm64."hicolor-icon-theme-0.17-hce30654_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/hicolor-icon-theme-0.17-hce30654_3.conda"
+checksum = "sha256:46a4958f2f916c5938f2a6dc0709f78b175ece42f601d79a04e0276d55d25d07"
+
+[conda-packages.macos-arm64."hpack-4.2.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/hpack-4.2.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:fdcea5d7cb314485d3907192ef024c704311548c5b0cbeb390cd1951051e29d2"
+
+[conda-packages.macos-arm64."hyperframe-6.1.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:77af6f5fe8b62ca07d09ac60127a30d9069fdc3c68d6b256754d0ffb1f7779f8"
+
+[conda-packages.macos-arm64."icu-78.3-py310h579977c_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/icu-78.3-py310h579977c_2.conda"
+checksum = "sha256:6cdb5dee54c72e56ab189fb3ad33cb28533553d42590e7e831160248f4416a43"
+
+[conda-packages.macos-arm64."idna-3.19-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/idna-3.19-pyhcf101f3_0.conda"
+checksum = "sha256:1c35a59c1545ad0fdaddf1fbde7bcfa6ef41a8d68c3a2b0b4a291be00676163e"
+
+[conda-packages.macos-arm64."imath-3.2.2-h13e8271_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/imath-3.2.2-h13e8271_0.conda"
+checksum = "sha256:18986a94213497b9e60880fbbb71c54ac4f34adf948373d8298af8316fab17fc"
+
+[conda-packages.macos-arm64."importlib-metadata-9.0.0-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-9.0.0-pyhcf101f3_0.conda"
+checksum = "sha256:43e2a5497cad1598ff88a3e69f69bc88b7b8f141fa63c60eab5db296317318b8"
+
+[conda-packages.macos-arm64."itsdangerous-2.2.0-pyhd8ed1ab_1"]
+url = "https://conda.anaconda.org/conda-forge/noarch/itsdangerous-2.2.0-pyhd8ed1ab_1.conda"
+checksum = "sha256:1684b7b16eec08efef5302ce298c606b163c18272b69a62b666fbaa61516f170"
+
+[conda-packages.macos-arm64."janus-2.0.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/janus-2.0.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:25b76ed3b81a0fb57d5b30da0219d07375f43d44c6912ed32b164f0146c52cad"
+
+[conda-packages.macos-arm64."jasper-4.2.9-h7543a42_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/jasper-4.2.9-h7543a42_1.conda"
+checksum = "sha256:58bfd15b7426f99ca2b1854535d4ede1ca2a35be4f8c43c5e34b6ffdcfd7a5c8"
+
+[conda-packages.macos-arm64."jinja2-3.1.6-pyhcf101f3_1"]
+url = "https://conda.anaconda.org/conda-forge/noarch/jinja2-3.1.6-pyhcf101f3_1.conda"
+checksum = "sha256:fc9ca7348a4f25fed2079f2153ecdcf5f9cf2a0bc36c4172420ca09e1849df7b"
+
+[conda-packages.macos-arm64."lcms2-2.19.1-hdfa7624_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/lcms2-2.19.1-hdfa7624_1.conda"
+checksum = "sha256:ccb5598fad3694e79bf54f0eb812e3b3c3dd63d1497e631f5978800eadb9bcc4"
+
+[conda-packages.macos-arm64."lerc-4.2.0-h1eee2c3_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/lerc-4.2.0-h1eee2c3_0.conda"
+checksum = "sha256:c97aa17d16d2ac332ba9f184e82ce8f72dcb10e9a10c5f299030be2d44e191b9"
+
 [conda-packages.macos-arm64."libasprintf-0.22.5-h8fbad5d_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libasprintf-0.22.5-h8fbad5d_2.conda"
 checksum = "sha256:04bbe4374719906cd08b639a3f34828030f405c33b47c757b47fd55aa7310179"
+
+[conda-packages.macos-arm64."libavif16-1.4.2-h84013e8_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libavif16-1.4.2-h84013e8_3.conda"
+checksum = "sha256:4ca37f5e0a48348578914f707bd45efef08d42a081d30a8471125f059be82d8b"
+
+[conda-packages.macos-arm64."libbrotlicommon-1.2.0-h1dcdb26_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlicommon-1.2.0-h1dcdb26_3.conda"
+checksum = "sha256:5e62b856b2e77ce98db44133bacab1281b42c1040dcbd69dbacfb80890cff5b0"
+
+[conda-packages.macos-arm64."libbrotlidec-1.2.0-h5295a6a_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlidec-1.2.0-h5295a6a_3.conda"
+checksum = "sha256:510c9fce0d9ffcf41741dd96fc05db381672109d5665ef002c2e58f0d4ca0118"
+
+[conda-packages.macos-arm64."libbrotlienc-1.2.0-h2ddc9cb_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libbrotlienc-1.2.0-h2ddc9cb_3.conda"
+checksum = "sha256:eac412417eee2e93c62e9d53559f1f9c14f40b6c41e2c432af8b517596898dd1"
+
+[conda-packages.macos-arm64."libcxx-22.1.8-h55c6f16_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libcxx-22.1.8-h55c6f16_0.conda"
+checksum = "sha256:a2e7abab5add9750fab064c024394de48e49f97631c605ad5db5c8ac3fc769ef"
+
+[conda-packages.macos-arm64."libde265-1.1.1-h3feff0a_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libde265-1.1.1-h3feff0a_0.conda"
+checksum = "sha256:38bdf17d4da3e913ace05dc3890363dc85cb39fcfd3aea746e9ad3270763cf69"
+
+[conda-packages.macos-arm64."libdeflate-1.25-he7e0567_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libdeflate-1.25-he7e0567_1.conda"
+checksum = "sha256:d896f4aa4ce4c590c2838678cb1917356fdb461d2a189991c0280c818c362172"
 
 [conda-packages.macos-arm64."libexpat-2.6.2-hebf3989_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libexpat-2.6.2-hebf3989_0.conda"
 checksum = "sha256:ba7173ac30064ea901a4c9fb5a51846dcc25512ceb565759be7d18cbf3e5415e"
 
+[conda-packages.macos-arm64."libexpat-2.8.1-hf6b4638_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libexpat-2.8.1-hf6b4638_1.conda"
+checksum = "sha256:5af74261101e3c777399c6294b2b5d290e508153268eb2e9ff99c4d69834612f"
+
 [conda-packages.macos-arm64."libffi-3.4.2-h3422bc3_5"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libffi-3.4.2-h3422bc3_5.tar.bz2"
 checksum = "sha256:41b3d13efb775e340e4dba549ab5c029611ea6918703096b2eaa9c015c0750ca"
+
+[conda-packages.macos-arm64."libffi-3.7.0-hcf2aa1b_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libffi-3.7.0-hcf2aa1b_0.conda"
+checksum = "sha256:2c6ac9a6cd65af89b2bd448518bb1e13b44a2e48c0d469398e37bcfc0092e832"
+
+[conda-packages.macos-arm64."libfreetype-2.14.3-hce30654_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libfreetype-2.14.3-hce30654_2.conda"
+checksum = "sha256:19ce8bd320414cb6b9889ecbf48a3ded848b0d1068b76ff6bea099bd7387d6f3"
+
+[conda-packages.macos-arm64."libfreetype6-2.14.3-h2ed5691_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libfreetype6-2.14.3-h2ed5691_2.conda"
+checksum = "sha256:d9b203d6484ad491b5b5f33d49a9d7a91189d776a9adae53d2b63af18ec11e6a"
+
+[conda-packages.macos-arm64."libgcc-16.1.0-h3cf6597_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgcc-16.1.0-h3cf6597_2.conda"
+checksum = "sha256:72ad51807f267a409ed4ef82b701b23e8dc13989a873c0b9ae4995ca41365a12"
+
+[conda-packages.macos-arm64."libgd-2.3.3-h05bcc79_12"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgd-2.3.3-h05bcc79_12.conda"
+checksum = "sha256:269edce527e204a80d3d05673301e0207efcd0dbeebc036a118ceb52690d6341"
 
 [conda-packages.macos-arm64."libgettextpo-0.22.5-h8fbad5d_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgettextpo-0.22.5-h8fbad5d_2.conda"
 checksum = "sha256:c3f5580e172c3fc03d33e8994024f08b709a239bd599792e51435fa7a06beb64"
 
+[conda-packages.macos-arm64."libgfortran-16.1.0-h07b0088_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran-16.1.0-h07b0088_2.conda"
+checksum = "sha256:31d471423a1d09727778756e0846c2ec928d2cf38d3801be35d5c2487808549c"
+
+[conda-packages.macos-arm64."libgfortran5-16.1.0-h32cdfcc_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran5-16.1.0-h32cdfcc_2.conda"
+checksum = "sha256:a55a80209042b8d052cca044ba0a65b100af4f757bdb2eec249d5813b8e456e6"
+
+[conda-packages.macos-arm64."libglib-2.88.3-ha531971_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libglib-2.88.3-ha531971_1.conda"
+checksum = "sha256:c9f7273bbe06d1693ff3a2b6f8b49b74e2ef6cbac2cead7aae767f2f5191b7aa"
+
+[conda-packages.macos-arm64."libharfbuzz-14.3.1-hcda0f7c_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libharfbuzz-14.3.1-hcda0f7c_0.conda"
+checksum = "sha256:67af14f8fbf9b9725890f728179d933ac35a95a6b50f37b7b568a11bfa8a4c1d"
+
+[conda-packages.macos-arm64."libharfbuzz-devel-14.3.1-hcda0f7c_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libharfbuzz-devel-14.3.1-hcda0f7c_0.conda"
+checksum = "sha256:076db9dac1b7ab31383ffd35da5f5b9ab9e56987b7751a5ec767c330f0e3c359"
+
+[conda-packages.macos-arm64."libheif-1.23.1-gpl_h800d22d_100"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libheif-1.23.1-gpl_h800d22d_100.conda"
+checksum = "sha256:925a24f4cda9dd3b6abd05799b6b908be6845aa9c7608f2fca4bf5c749f5c745"
+
+[conda-packages.macos-arm64."libhwy-1.4.0-hd2bdd19_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libhwy-1.4.0-hd2bdd19_1.conda"
+checksum = "sha256:d965f815878a176fb75329d02718f449230e687e100a081762688f763990abf2"
+
 [conda-packages.macos-arm64."libiconv-1.17-h0d3ecfb_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libiconv-1.17-h0d3ecfb_2.conda"
 checksum = "sha256:bc7de5097b97bcafcf7deaaed505f7ce02f648aac8eccc0d5a47cc599a1d0304"
+
+[conda-packages.macos-arm64."libiconv-1.18-he4c29f2_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libiconv-1.18-he4c29f2_3.conda"
+checksum = "sha256:689a14968267f2f97c07112fca5636e7d756036b9aee969911267c20bd3eea1f"
 
 [conda-packages.macos-arm64."libintl-0.22.5-h8fbad5d_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.22.5-h8fbad5d_2.conda"
 checksum = "sha256:21bc79bdf34ffd20cb84d2a8bd82d7d0e2a1b94b9e72773f0fb207e5b4f1ff63"
 
+[conda-packages.macos-arm64."libintl-0.25.1-h493aca8_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libintl-0.25.1-h493aca8_0.conda"
+checksum = "sha256:99d2cebcd8f84961b86784451b010f5f0a795ed1c08f1e7c76fbb3c22abf021a"
+
+[conda-packages.macos-arm64."libjpeg-turbo-3.2.0-h84a0fba_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libjpeg-turbo-3.2.0-h84a0fba_1.conda"
+checksum = "sha256:05006418f9392c9b723e8428808db106de0350a497832f95f921b85ff1072310"
+
+[conda-packages.macos-arm64."libjxl-0.12.0-hb71b141_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libjxl-0.12.0-hb71b141_2.conda"
+checksum = "sha256:1f02661543be1722b619548b5207d6eaceab5bf95983fd6c9487f52bd8246a7a"
+
+[conda-packages.macos-arm64."liblzma-5.8.3-h8088a28_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/liblzma-5.8.3-h8088a28_1.conda"
+checksum = "sha256:23d0630046a3e8b164d8f80f2b74ed2605af2e7050ab9913018056402fae4311"
+
+[conda-packages.macos-arm64."libmpdec-4.0.0-h84a0fba_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libmpdec-4.0.0-h84a0fba_2.conda"
+checksum = "sha256:04cc136c5a956a73aa14e0a160b5822b0b29714e67b299fa1b1fd16dbcba5366"
+
+[conda-packages.macos-arm64."libpng-1.6.58-hf5e6511_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libpng-1.6.58-hf5e6511_1.conda"
+checksum = "sha256:f88da60b348ee1f3e1a9c20fe02142fdafe889f08da0b1cc33c1f3f14460239d"
+
+[conda-packages.macos-arm64."libraw-0.22.2-h2d05ff4_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libraw-0.22.2-h2d05ff4_0.conda"
+checksum = "sha256:e3e654527f10346ca39fe628bb6f81dadf946647e5c081f84703ab654ae15a45"
+
+[conda-packages.macos-arm64."librsvg-2.62.3-he8aa2a2_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/librsvg-2.62.3-he8aa2a2_0.conda"
+checksum = "sha256:f5b4fb7b6f13bbfca59613bff2e70b5a398e80727b9d0f814837ffcbc34185e1"
+
 [conda-packages.macos-arm64."libsqlite-3.45.3-h091b4b1_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.45.3-h091b4b1_0.conda"
 checksum = "sha256:4337f466eb55bbdc74e168b52ec8c38f598e3664244ec7a2536009036e2066cc"
+
+[conda-packages.macos-arm64."libsqlite-3.53.4-hca69786_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.53.4-hca69786_1.conda"
+checksum = "sha256:839b31d4830e896b4d315b551d27f2bb08026bc946df04bcc360d8627c3ba2cd"
+
+[conda-packages.macos-arm64."libtiff-4.7.2-h282da08_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libtiff-4.7.2-h282da08_0.conda"
+checksum = "sha256:253153cabf9469170e02b21a6bc9aa598048e7c34966b1103af52d27d2a708a4"
+
+[conda-packages.macos-arm64."libwebp-base-1.6.0-h202fb40_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libwebp-base-1.6.0-h202fb40_1.conda"
+checksum = "sha256:0ff54650d470c7e54cbeffdd53a8c063e055a7bcf784388c0385ce5c4741b0f4"
+
+[conda-packages.macos-arm64."libxcb-1.17.0-hbffa61f_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libxcb-1.17.0-hbffa61f_1.conda"
+checksum = "sha256:81f9b4fb64d977c19474d1b5616974757aaac21d55401ea105f21022b386bd28"
+
+[conda-packages.macos-arm64."libxml2-16-2.15.3-h5ef1a60_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libxml2-16-2.15.3-h5ef1a60_1.conda"
+checksum = "sha256:2ca61d8287339c726b151fa612e83d2afa1418b89fa17694c873dc231bc9b077"
+
+[conda-packages.macos-arm64."libxml2-2.15.3-h5654f7c_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libxml2-2.15.3-h5654f7c_1.conda"
+checksum = "sha256:ff1b70683ccb82f8aa7f3eda53405a2036d849daba4e4e622f330dcd49d37700"
+
+[conda-packages.macos-arm64."libzip-1.11.2-h1336266_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libzip-1.11.2-h1336266_0.conda"
+checksum = "sha256:507599a77c1ce823c2d3acaefaae4ead0686f183f3980467a4c4b8ba209eff40"
 
 [conda-packages.macos-arm64."libzlib-1.3.1-h0d3ecfb_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.1-h0d3ecfb_0.conda"
 checksum = "sha256:9c59bd3f3e3e1900620e3a85c04d3a3699cb93c714333d06cb8afdd7addaae9d"
 
+[conda-packages.macos-arm64."libzlib-1.3.2-h8088a28_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.2-h8088a28_3.conda"
+checksum = "sha256:a18fa5d5bac452401459f966cf0d872224e8080c4ff93c77e168d43ab42ef9d7"
+
+[conda-packages.macos-arm64."llvm-openmp-22.1.8-hc225544_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/llvm-openmp-22.1.8-hc225544_1.conda"
+checksum = "sha256:aa95fe355ec9fbf5d9816e155b9678cc98b749d3245bff56ca02f2a01239f5ac"
+
+[conda-packages.macos-arm64."markupsafe-3.0.3-py314h6e9b3f0_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/markupsafe-3.0.3-py314h6e9b3f0_1.conda"
+checksum = "sha256:411153d14ee0d98be6e3751cf5cc0502db17bce2deebebb8779e33d29d0e525f"
+
+[conda-packages.macos-arm64."narwhals-2.25.0-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.25.0-pyhcf101f3_0.conda"
+checksum = "sha256:e48d972fae8e32ca43eefd1a9649afa3a82b4dda5fe12caa441f0bc9e8d1938d"
+
 [conda-packages.macos-arm64."ncurses-6.5-hb89a1cb_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.5-hb89a1cb_0.conda"
 checksum = "sha256:87d7cf716d9d930dab682cb57b3b8d3a61940b47d6703f3529a155c938a6990a"
+
+[conda-packages.macos-arm64."ncurses-6.6-he64c551_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.6-he64c551_1.conda"
+checksum = "sha256:7024a48c8c0d0114ed4ab53c76bf9275d50e91ba7cea367a9aead638d3c29c68"
+
+[conda-packages.macos-arm64."nest-asyncio-1.6.0-pyhd8ed1ab_1"]
+url = "https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_1.conda"
+checksum = "sha256:bb7b21d7fd0445ddc0631f64e66d91a179de4ba920b8381f29b9d006a42788c0"
+
+[conda-packages.macos-arm64."openexr-3.4.14-he09da85_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/openexr-3.4.14-he09da85_0.conda"
+checksum = "sha256:6bcd834a38a21cdd08026bb17ab4a8f323633aa1ffcb8bd43e9c41d2688edd45"
+
+[conda-packages.macos-arm64."openjpeg-2.5.4-hd9e9057_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/openjpeg-2.5.4-hd9e9057_0.conda"
+checksum = "sha256:60aca8b9f94d06b852b296c276b3cf0efba5a6eb9f25feb8708570d3a74f00e4"
+
+[conda-packages.macos-arm64."openjph-0.31.0-h2a4d681_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/openjph-0.31.0-h2a4d681_0.conda"
+checksum = "sha256:853c41f0e041a5c1acce60490ec065e4ca1b43d7b63fbad504980de3a822f719"
 
 [conda-packages.macos-arm64."openssl-3.3.0-h0d3ecfb_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.3.0-h0d3ecfb_0.conda"
 checksum = "sha256:51f9be8fe929c2bb3243cd0707b6dfcec27541f8284b4bd9b063c288fc46f482"
 
+[conda-packages.macos-arm64."openssl-3.6.3-hd24854e_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.6.3-hd24854e_1.conda"
+checksum = "sha256:66be2283b5b37dcda1332b5e74c1782a8cb14fd2e62e0d38017c2d35bf73c119"
+
+[conda-packages.macos-arm64."packaging-26.3-pyhc364b38_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/packaging-26.3-pyhc364b38_0.conda"
+checksum = "sha256:c432626b16768b8dab228bfb706f7060c2d462a21c516d240f68f2f902b5a044"
+
+[conda-packages.macos-arm64."pango-1.58.2-hf80efc4_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/pango-1.58.2-hf80efc4_0.conda"
+checksum = "sha256:c300fba11c4cd7cdd7609b6f165981af24d2181d40280ca6af420710c4c7d42e"
+
+[conda-packages.macos-arm64."pcre2-10.47-he63d830_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/pcre2-10.47-he63d830_1.conda"
+checksum = "sha256:f8c415329b542e1fca1ff2917b80e687c18302dfa0353530668b90cb225b494f"
+
+[conda-packages.macos-arm64."pixman-0.46.4-h784d473_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/pixman-0.46.4-h784d473_3.conda"
+checksum = "sha256:4779cd57231ce2e96fac643fcbdd4a6f51a57986264545445574e9c4acf526d3"
+
+[conda-packages.macos-arm64."plotly-6.9.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/plotly-6.9.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:b92b10adbeff5c539c130a4d171338404b3618e15f1154b3afb9dba15441e611"
+
+[conda-packages.macos-arm64."pthread-stubs-0.4-h84a0fba_1003"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/pthread-stubs-0.4-h84a0fba_1003.conda"
+checksum = "sha256:1c2338b9b0486af86883b9593d2f3e2845bbf216ea453dfe5d9a228e8dbe4057"
+
+[conda-packages.macos-arm64."pydantic-2.13.4-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/pydantic-2.13.4-pyhcf101f3_0.conda"
+checksum = "sha256:69700e31165df070e9716315e042196aa92525dae5deb5107785847ab9f4189f"
+
+[conda-packages.macos-arm64."pydantic-core-2.46.4-py314h54f3292_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/pydantic-core-2.46.4-py314h54f3292_0.conda"
+checksum = "sha256:c034a7cc16f279c260d3456fcfc625838495a7f9f55aa79408a629a427769bb2"
+
+[conda-packages.macos-arm64."pysocks-1.7.1-pyha55dd90_7"]
+url = "https://conda.anaconda.org/conda-forge/noarch/pysocks-1.7.1-pyha55dd90_7.conda"
+checksum = "sha256:ba3b032fa52709ce0d9fd388f63d330a026754587a2f461117cac9ab73d8d0d8"
+
 [conda-packages.macos-arm64."python-3.12.2-hdf0ec26_0_cpython"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/python-3.12.2-hdf0ec26_0_cpython.conda"
 checksum = "sha256:ccd6c55a286d51d907c878ed2bfa7d1becce0fee71374a9386c5eb90d803ac72"
+
+[conda-packages.macos-arm64."python-3.14.7-hf4d206d_100_cp314"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/python-3.14.7-hf4d206d_100_cp314.conda"
+checksum = "sha256:2f07838e44942236471d84e2a99b603badde96e58f86cf78c38488d4da64353a"
 
 [conda-packages.macos-arm64."python-dateutil-2.9.0.post0-pyhe01879c_2"]
 url = "https://conda.anaconda.org/conda-forge/noarch/python-dateutil-2.9.0.post0-pyhe01879c_2.conda"
 checksum = "sha256:d6a17ece93bbd5139e02d2bd7dbfa80bee1a4261dced63f65f679121686bf664"
 
+[conda-packages.macos-arm64."python_abi-3.14-8_cp314"]
+url = "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.14-8_cp314.conda"
+checksum = "sha256:ad6d2e9ac39751cc0529dd1566a26751a0bf2542adb0c232533d32e176e21db5"
+
 [conda-packages.macos-arm64."pytz-2026.2-pyhcf101f3_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/pytz-2026.2-pyhcf101f3_0.conda"
 checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5aff6"
+
+[conda-packages.macos-arm64."rav1e-0.8.1-h8246384_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/rav1e-0.8.1-h8246384_0.conda"
+checksum = "sha256:925e35b71fe513e0380ecd2fe137e3f4f248bf7ce4bad96946c7c704b7a50d26"
 
 [conda-packages.macos-arm64."readline-8.2-h1d1bf99_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/readline-8.2-h1d1bf99_2.conda"
 checksum = "sha256:7db04684d3904f6151eff8673270922d31da1eea7fa73254d01c437f49702e34"
 
+[conda-packages.macos-arm64."readline-8.3-h8b90a29_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/readline-8.3-h8b90a29_1.conda"
+checksum = "sha256:d6782b430e6dce4fe8c7ac118cd988d5a193eb4a7f60741edfaede58016b6110"
+
+[conda-packages.macos-arm64."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
+
+[conda-packages.macos-arm64."retrying-1.4.2-pyhe01879c_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
+checksum = "sha256:7a10527962d2ca2cf936872ef58d4b622b1d1d1703e1d6396d0673fd9f883c7f"
+
+[conda-packages.macos-arm64."setuptools-84.0.0-pyh332efcf_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/setuptools-84.0.0-pyh332efcf_0.conda"
+checksum = "sha256:9e200ee5f9ff19a4d94e4b51c4856d53dec849f91032f345cf0c6bc3d51a7183"
+
 [conda-packages.macos-arm64."six-1.17.0-pyhe01879c_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/six-1.17.0-pyhe01879c_1.conda"
 checksum = "sha256:458227f759d5e3fcec5d9b7acce54e10c9e1f4f4b7ec978f3bfd54ce4ee9853d"
+
+[conda-packages.macos-arm64."svt-av1-4.2.0-h484c67d_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/svt-av1-4.2.0-h484c67d_1.conda"
+checksum = "sha256:9122d11ed85053b1223ea0645aeac0ca583adc7482e60e3266c37e70d5242195"
 
 [conda-packages.macos-arm64."tk-8.6.13-h5083fa2_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/tk-8.6.13-h5083fa2_1.conda"
 checksum = "sha256:72457ad031b4c048e5891f3f6cb27a53cb479db68a52d965f796910e71a403a8"
 
+[conda-packages.macos-arm64."tk-8.6.13-hbeba79b_4"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/tk-8.6.13-hbeba79b_4.conda"
+checksum = "sha256:857d89087ae7f2c328cf256728affcb7343031a148b4af847334d248a9cf564c"
+
+[conda-packages.macos-arm64."typing-extensions-4.16.0-h69aa097_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.16.0-h69aa097_0.conda"
+checksum = "sha256:b141933ece3518f6d7b75dfb59451e2f26b405a44c18e2518a83e9a02e09315c"
+
+[conda-packages.macos-arm64."typing-inspection-0.4.4-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/typing-inspection-0.4.4-pyhcf101f3_0.conda"
+checksum = "sha256:293c66b208468d186a94ff486c2ffbf67859a2bde8c88e965fc9d06c517191b2"
+
+[conda-packages.macos-arm64."typing_extensions-4.16.0-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.16.0-pyhcf101f3_0.conda"
+checksum = "sha256:2d888f90af0686044882c74193ec80a90ec1943145d94a7b1b048958acda1848"
+
 [conda-packages.macos-arm64.tzdata-2025c-hc9c84f9_1]
 url = "https://conda.anaconda.org/conda-forge/noarch/tzdata-2025c-hc9c84f9_1.conda"
 checksum = "sha256:1d30098909076af33a35017eed6f2953af1c769e273a0626a04722ac4acaba3c"
+
+[conda-packages.macos-arm64.tzdata-2026c-h151e31d_0]
+url = "https://conda.anaconda.org/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda"
+checksum = "sha256:b928c30ddcb0e3f544c6eade8352737e6e610e263276b90232db6a578ef899d8"
+
+[conda-packages.macos-arm64."urllib3-2.7.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/urllib3-2.7.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:feff959a816f7988a0893201aa9727bbb7ee1e9cec2c4f0428269b489eb93fb4"
+
+[conda-packages.macos-arm64."werkzeug-3.1.8-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/werkzeug-3.1.8-pyhcf101f3_0.conda"
+checksum = "sha256:5108c1bf2f0512e5c9dc8191e31b144c23b7cf0e73423a246173006002368d79"
+
+[conda-packages.macos-arm64."x265-3.5-hbc6ce65_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/x265-3.5-hbc6ce65_3.tar.bz2"
+checksum = "sha256:2fed6987dba7dee07bd9adc1a6f8e6c699efb851431bcb6ebad7de196e87841d"
+
+[conda-packages.macos-arm64."xorg-libice-1.1.2-h1a92334_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libice-1.1.2-h1a92334_0.conda"
+checksum = "sha256:be24e2ec7ba805fa4cee908ea102b828049f542b6471ec1d8325e17d9c7c89ca"
+
+[conda-packages.macos-arm64."xorg-libsm-1.2.6-h1a92334_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libsm-1.2.6-h1a92334_1.conda"
+checksum = "sha256:d0dfde0622631aeb7bf875bc601b66a953a3644ff887076d55cebdcf16a6e061"
+
+[conda-packages.macos-arm64."xorg-libx11-1.8.13-hf948f5a_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libx11-1.8.13-hf948f5a_1.conda"
+checksum = "sha256:a21effeec4dfcc195c44001261c26b51631ca80abfce87059a1f19680f434ba6"
+
+[conda-packages.macos-arm64."xorg-libxau-1.0.12-h84a0fba_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libxau-1.0.12-h84a0fba_2.conda"
+checksum = "sha256:5c5ea38ceec008e4ff40111fc166b04086fca310b0aa9e5bd46f65e6b0dcb71d"
+
+[conda-packages.macos-arm64."xorg-libxdmcp-1.1.5-h84a0fba_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libxdmcp-1.1.5-h84a0fba_2.conda"
+checksum = "sha256:2f6915f0897ace4a1b5d66d0463079f7bc9819b0048c03677e47764f0a743499"
+
+[conda-packages.macos-arm64."xorg-libxext-1.3.7-hb001647_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libxext-1.3.7-hb001647_1.conda"
+checksum = "sha256:17df0f498ae9018958faa52f8b4c171fd01711d25c8ee6a72671741b8047feea"
+
+[conda-packages.macos-arm64."xorg-libxmu-1.3.1-h84a0fba_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libxmu-1.3.1-h84a0fba_0.conda"
+checksum = "sha256:874124de66e50d83ff7966ce121e3d5d88211aae7db44f7c843e0c67f265f224"
+
+[conda-packages.macos-arm64."xorg-libxrender-0.9.12-h84a0fba_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libxrender-0.9.12-h84a0fba_1.conda"
+checksum = "sha256:8a53eecadf1822ad032a86bd6930aac095f5024cceec3c38580d724c89827488"
+
+[conda-packages.macos-arm64."xorg-libxt-1.3.1-hb001647_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xorg-libxt-1.3.1-hb001647_1.conda"
+checksum = "sha256:cf896717611de9608a000664b7020bb56d2ac1298b2222c356756f7f76c5e4fb"
 
 [conda-packages.macos-arm64."xz-5.2.6-h57fd34a_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/xz-5.2.6-h57fd34a_0.tar.bz2"
 checksum = "sha256:59d78af0c3e071021cfe82dc40134c19dab8cdf804324b62940f5c8cd71803ec"
 
+[conda-packages.macos-arm64."zipp-4.1.0-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda"
+checksum = "sha256:210bd31c22bb88f5e2a167df24c95bb5f152b2ada7502f9b8c49d1f5366db423"
+
+[conda-packages.macos-arm64."zstd-1.5.7-hf451053_7"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.7-hf451053_7.conda"
+checksum = "sha256:da867f5092eb0cb746d353694f0098031fd9817a4ce7d5743121209ae0f406ca"
+
+[conda-packages.macos-x64."_openmp_mutex-4.5-7_kmp_llvm"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/_openmp_mutex-4.5-7_kmp_llvm.conda"
+checksum = "sha256:30006902a9274de8abdad5a9f02ef7c8bb3d69a503486af0c1faee30b023e5b7"
+
+[conda-packages.macos-x64."adwaita-icon-theme-49.0-unix_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/adwaita-icon-theme-49.0-unix_0.conda"
+checksum = "sha256:a362b4f5c96a0bf4def96be1a77317e2730af38915eb9bec85e2a92836501ed7"
+
+[conda-packages.macos-x64."annotated-types-0.8.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.8.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:b8fcb994134d3918d1c64a9d62f4168ff85d5bfb89e698102fe4ed679fe0df24"
+
+[conda-packages.macos-x64."aom-3.14.1-pl5321hf898372_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/aom-3.14.1-pl5321hf898372_2.conda"
+checksum = "sha256:292a3e7c196a4cdacba61a45f66fa01ebfdd261f83cb192aa5e2350bfb075386"
+
+[conda-packages.macos-x64."atk-1.0-2.38.0-h4bec284_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/atk-1.0-2.38.0-h4bec284_2.conda"
+checksum = "sha256:a5972a943764e46478c966b26be61de70dcd7d0cfda4bd0b0c46916ae32e0492"
+
+[conda-packages.macos-x64."backports.zstd-1.7.0-py314h680f03e_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/backports.zstd-1.7.0-py314h680f03e_0.conda"
+checksum = "sha256:19514d89d1e725e44b0650d31a4d43da8e070e4e93e4131e3b16bd139404f2b2"
+
+[conda-packages.macos-x64."blinker-1.9.0-pyhff2d567_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/blinker-1.9.0-pyhff2d567_0.conda"
+checksum = "sha256:f7efd22b5c15b400ed84a996d777b6327e5c402e79e3c534a7e086236f1eb2dc"
+
+[conda-packages.macos-x64."brotli-python-1.2.0-py314h21a1a37_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/brotli-python-1.2.0-py314h21a1a37_3.conda"
+checksum = "sha256:f903029a057f2283164d5bc02aaabdb9e0beceb2f4104a183b9224cd26e43377"
+
 [conda-packages.macos-x64."bzip2-1.0.8-h10d778d_5"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/bzip2-1.0.8-h10d778d_5.conda"
 checksum = "sha256:61fb2b488928a54d9472113e1280b468a309561caa54f33825a3593da390b242"
+
+[conda-packages.macos-x64."bzip2-1.0.8-h374f1ed_10"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/bzip2-1.0.8-h374f1ed_10.conda"
+checksum = "sha256:4ed83961876dc8844a6f0df49c07b408efbaea275ffb0b37133e24c006990b3a"
 
 [conda-packages.macos-x64."ca-certificates-2026.6.17-hbd8a1cb_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.6.17-hbd8a1cb_0.conda"
 checksum = "sha256:f8e3c730fa14ee3f170493779f06522c4acf89169f43db4f039727709b6419cf"
 
+[conda-packages.macos-x64."ca-certificates-2026.7.22-hbd8a1cb_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-hbd8a1cb_0.conda"
+checksum = "sha256:0a0544cf95f64394fe4959286f5c71f5444ad58feb0602e53becb27448d24da6"
+
+[conda-packages.macos-x64."cairo-1.18.4-h7656bdc_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/cairo-1.18.4-h7656bdc_1.conda"
+checksum = "sha256:88e7e1efb6a0f6b1477e617338e0ed3d27d4572a3283f8341ce6143b7118e31a"
+
+[conda-packages.macos-x64."certifi-2026.7.22-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/certifi-2026.7.22-pyhd8ed1ab_0.conda"
+checksum = "sha256:fb167de4388e64e52aa3907ed099afab944c1fa6e5f74b281a312dae1bcf7f3b"
+
+[conda-packages.macos-x64."charset-normalizer-3.5.1-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.5.1-pyhd8ed1ab_0.conda"
+checksum = "sha256:cb60ef3e0631c8bacb4f7057196dee4496091a22baa3bb4b9bccb12c7e1c921b"
+
+[conda-packages.macos-x64."click-8.4.2-pyhc90fa1f_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/click-8.4.2-pyhc90fa1f_0.conda"
+checksum = "sha256:ccc4787f511964f9a1f2d2d2859c91c5d571fb60f7f09d4c4e092c9b7a94e671"
+
+[conda-packages.macos-x64."comm-0.2.3-pyhe01879c_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/comm-0.2.3-pyhe01879c_0.conda"
+checksum = "sha256:576a44729314ad9e4e5ebe055fbf48beb8116b60e58f9070278985b2b634f212"
+
+[conda-packages.macos-x64."dav1d-1.2.1-h0dc2134_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/dav1d-1.2.1-h0dc2134_0.conda"
+checksum = "sha256:ec71a835866b42e946cd2039a5f7a6458851a21890d315476f5e66790ac11c96"
+
+[conda-packages.macos-x64."epoxy-1.5.10-h8616949_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/epoxy-1.5.10-h8616949_2.conda"
+checksum = "sha256:d5c466bddf423a788ce5c39af20af41ebaf3de9dc9e807098fc9bf45c3c7db45"
+
+[conda-packages.macos-x64."fftw-3.3.11-nompi_h54214ab_100"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/fftw-3.3.11-nompi_h54214ab_100.conda"
+checksum = "sha256:c234b8f1be5b630236675a006172edd768ca2685fbf0713ec007f3d373f5ee27"
+
+[conda-packages.macos-x64."flask-3.1.3-pyhcf101f3_1"]
+url = "https://conda.anaconda.org/conda-forge/noarch/flask-3.1.3-pyhcf101f3_1.conda"
+checksum = "sha256:3980dfba1e3900106cc3e6210294e73f50d02a67fdfe7b3bb36b2721ba9379cb"
+
+[conda-packages.macos-x64."font-ttf-dejavu-sans-mono-2.37-hab24e00_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2"
+checksum = "sha256:58d7f40d2940dd0a8aa28651239adbf5613254df0f75789919c4e6762054403b"
+
+[conda-packages.macos-x64."font-ttf-inconsolata-3.000-h77eed37_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2"
+checksum = "sha256:c52a29fdac682c20d252facc50f01e7c2e7ceac52aa9817aaf0bb83f7559ec5c"
+
+[conda-packages.macos-x64."font-ttf-source-code-pro-2.038-h77eed37_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2"
+checksum = "sha256:00925c8c055a2275614b4d983e1df637245e19058d79fc7dd1a93b8d9fb4b139"
+
+[conda-packages.macos-x64."font-ttf-ubuntu-0.83-h77eed37_3"]
+url = "https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda"
+checksum = "sha256:2821ec1dc454bd8b9a31d0ed22a7ce22422c0aef163c59f49dfdf915d0f0ca14"
+
+[conda-packages.macos-x64."fontconfig-2.18.3-h7f3b9c9_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/fontconfig-2.18.3-h7f3b9c9_1.conda"
+checksum = "sha256:4637141fa4f3a0f9b58afe4bda831adcb6964495600e97e7e2ed9763cd4f7eda"
+
+[conda-packages.macos-x64.fonts-conda-ecosystem-1-0]
+url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2"
+checksum = "sha256:a997f2f1921bb9c9d76e6fa2f6b408b7fa549edd349a77639c9fe7a23ea93e61"
+
+[conda-packages.macos-x64.fonts-conda-forge-1-hc364b38_1]
+url = "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-forge-1-hc364b38_1.conda"
+checksum = "sha256:54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98333"
+
+[conda-packages.macos-x64."freetype-2.14.3-h694c41f_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/freetype-2.14.3-h694c41f_2.conda"
+checksum = "sha256:a9f6d77b27b67e681d4b3e214a0861a9d4aa87e0e824d8ef6c5bbfcf0cbb556e"
+
+[conda-packages.macos-x64."fribidi-1.0.16-ha1e9b39_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/fribidi-1.0.16-ha1e9b39_1.conda"
+checksum = "sha256:18edba1f97165527d25e4929f502dc67ca6095abf6fe35b33ed3a9bbe6025428"
+
+[conda-packages.macos-x64."gdk-pixbuf-2.44.8-ha3e70bd_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/gdk-pixbuf-2.44.8-ha3e70bd_0.conda"
+checksum = "sha256:3bc52b1ca2e95e736d8a935b5210be30a404a0e076c3ab13156a42ee723c417f"
+
+[conda-packages.macos-x64."ghostscript-10.07.1-hcc62823_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/ghostscript-10.07.1-hcc62823_0.conda"
+checksum = "sha256:d1d87208fdf59dc170da670d53ca80af13497c64c946508338a8c6856aa65ac0"
+
+[conda-packages.macos-x64."giflib-5.2.2-h0f9f378_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/giflib-5.2.2-h0f9f378_1.conda"
+checksum = "sha256:7042b7399ea78f2558699002c09f8e9fd54ed5345836443bcbe942966552e332"
+
+[conda-packages.macos-x64."glib-tools-2.88.3-h899c5e0_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/glib-tools-2.88.3-h899c5e0_1.conda"
+checksum = "sha256:88505ee09bb525b41a1f17be1739775817a966587f2f9bff030c00b69f0a6cfa"
+
+[conda-packages.macos-x64."graphite2-1.3.15-h2fb4741_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/graphite2-1.3.15-h2fb4741_1.conda"
+checksum = "sha256:8cc44569368289870f3cfe4a56f543ec15468398133545eae8d8c3ca4ef87774"
+
+[conda-packages.macos-x64."graphviz-14.1.2-h44fc223_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/graphviz-14.1.2-h44fc223_0.conda"
+checksum = "sha256:dd6a5e3599a2e07c04f4d33e61ecd5c26738eee9e88b9faa1da0f8b062ac9ca3"
+
+[conda-packages.macos-x64."gtk3-3.24.52-hf2d442a_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/gtk3-3.24.52-hf2d442a_0.conda"
+checksum = "sha256:c69a03b1eec71c0a764658d67f81eaf9a316276ae900b107cd8d77766bc13cf8"
+
+[conda-packages.macos-x64."gts-0.7.6-h53e17e3_4"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/gts-0.7.6-h53e17e3_4.conda"
+checksum = "sha256:d5b82a36f7e9d7636b854e56d1b4fe01c4d895128a7b73e2ec6945b691ff3314"
+
+[conda-packages.macos-x64."h2-4.4.1-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/h2-4.4.1-pyhcf101f3_0.conda"
+checksum = "sha256:307dd6ec90140c3cf4171071b0e5e870abec314f4565c1edd5bc433e942cdcc0"
+
+[conda-packages.macos-x64."harfbuzz-14.3.1-h694c41f_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/harfbuzz-14.3.1-h694c41f_0.conda"
+checksum = "sha256:6cada13435cc181f42c3b3dce9777a30eeed2dfa1ad066acb07288f775272576"
+
+[conda-packages.macos-x64."hicolor-icon-theme-0.17-h694c41f_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/hicolor-icon-theme-0.17-h694c41f_3.conda"
+checksum = "sha256:3321e8d2c2198ac796b0ae800473173ade528b49f84b6c6e4e112a9704698b41"
+
+[conda-packages.macos-x64."hpack-4.2.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/hpack-4.2.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:fdcea5d7cb314485d3907192ef024c704311548c5b0cbeb390cd1951051e29d2"
+
+[conda-packages.macos-x64."hyperframe-6.1.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:77af6f5fe8b62ca07d09ac60127a30d9069fdc3c68d6b256754d0ffb1f7779f8"
+
+[conda-packages.macos-x64."icu-78.3-py313hbf1d544_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/icu-78.3-py313hbf1d544_2.conda"
+checksum = "sha256:3abd86f3441f143b6b3203c92ae0d88dd8396a8857940af468f1fab854cdae57"
+
+[conda-packages.macos-x64."idna-3.19-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/idna-3.19-pyhcf101f3_0.conda"
+checksum = "sha256:1c35a59c1545ad0fdaddf1fbde7bcfa6ef41a8d68c3a2b0b4a291be00676163e"
+
+[conda-packages.macos-x64."imath-3.2.2-h6337977_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/imath-3.2.2-h6337977_0.conda"
+checksum = "sha256:d1fb13e40349261077c9fbd91c848513cf3e130ced9141496329f0f31d5e54d1"
+
+[conda-packages.macos-x64."importlib-metadata-9.0.0-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-9.0.0-pyhcf101f3_0.conda"
+checksum = "sha256:43e2a5497cad1598ff88a3e69f69bc88b7b8f141fa63c60eab5db296317318b8"
+
+[conda-packages.macos-x64."itsdangerous-2.2.0-pyhd8ed1ab_1"]
+url = "https://conda.anaconda.org/conda-forge/noarch/itsdangerous-2.2.0-pyhd8ed1ab_1.conda"
+checksum = "sha256:1684b7b16eec08efef5302ce298c606b163c18272b69a62b666fbaa61516f170"
+
+[conda-packages.macos-x64."janus-2.0.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/janus-2.0.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:25b76ed3b81a0fb57d5b30da0219d07375f43d44c6912ed32b164f0146c52cad"
+
+[conda-packages.macos-x64."jasper-4.2.9-hbeb4536_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/jasper-4.2.9-hbeb4536_1.conda"
+checksum = "sha256:dc013823ea75791ec93889455bf64680db4f756111f9ea791f4336f002973dd2"
+
+[conda-packages.macos-x64."jinja2-3.1.6-pyhcf101f3_1"]
+url = "https://conda.anaconda.org/conda-forge/noarch/jinja2-3.1.6-pyhcf101f3_1.conda"
+checksum = "sha256:fc9ca7348a4f25fed2079f2153ecdcf5f9cf2a0bc36c4172420ca09e1849df7b"
+
+[conda-packages.macos-x64."lcms2-2.19.1-h5ea7634_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/lcms2-2.19.1-h5ea7634_1.conda"
+checksum = "sha256:8bae1207dc7cf0e670ae920a549b1d55486514213ca808b8119067cbad0db43a"
+
+[conda-packages.macos-x64."lerc-4.2.0-h35c7297_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/lerc-4.2.0-h35c7297_0.conda"
+checksum = "sha256:5ae9e18ec7f8134a009765bd1454687d5057482fbe9a4c661a672746d4a29b0b"
+
 [conda-packages.macos-x64."libasprintf-0.22.5-h5ff76d1_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libasprintf-0.22.5-h5ff76d1_2.conda"
 checksum = "sha256:4babb29b8d39ae8b341c094c134a1917c595846e5f974c9d0cb64d3f734b46b1"
+
+[conda-packages.macos-x64."libavif16-1.4.2-h951a2eb_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libavif16-1.4.2-h951a2eb_3.conda"
+checksum = "sha256:f0c0a465fa9b412ea891e18a57b15d5efdb41dc0c6492340a44390de70fb90ed"
+
+[conda-packages.macos-x64."libbrotlicommon-1.2.0-he0616a4_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libbrotlicommon-1.2.0-he0616a4_3.conda"
+checksum = "sha256:27632d5818e3bcf6528ac76b91119229194f8f324d0fabed5853ba04eb4ad171"
+
+[conda-packages.macos-x64."libbrotlidec-1.2.0-h4a2f56c_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libbrotlidec-1.2.0-h4a2f56c_3.conda"
+checksum = "sha256:6ac58bbd3c7203a928e11952be240b8b80d3e27d276350c89bdc3c0d08b3db1e"
+
+[conda-packages.macos-x64."libbrotlienc-1.2.0-h3d41943_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libbrotlienc-1.2.0-h3d41943_3.conda"
+checksum = "sha256:e9436747cd5383311c8c3498aac016f5a238f688047f2feca0bf1908166fb4e5"
+
+[conda-packages.macos-x64."libcxx-22.1.8-h19cb2f5_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libcxx-22.1.8-h19cb2f5_0.conda"
+checksum = "sha256:57ee997f1f800cf38abc743c0f0a9ddfe6a101c697c35510452ce6f4ddf96361"
+
+[conda-packages.macos-x64."libde265-1.1.1-hebe015c_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libde265-1.1.1-hebe015c_0.conda"
+checksum = "sha256:a68aa41c2a9ce9a95feeb0148445c7060b49af919693b199fd380935af87fd07"
+
+[conda-packages.macos-x64."libdeflate-1.25-h7ad9622_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libdeflate-1.25-h7ad9622_1.conda"
+checksum = "sha256:210ee1d6a5aa201cf6d02b10edd02738cc35a4e8fb0866e4fb425010d6dd2c49"
 
 [conda-packages.macos-x64."libexpat-2.6.2-h73e2aa4_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.6.2-h73e2aa4_0.conda"
 checksum = "sha256:a188a77b275d61159a32ab547f7d17892226e7dac4518d2c6ac3ac8fc8dfde92"
 
+[conda-packages.macos-x64."libexpat-2.8.1-hcc62823_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libexpat-2.8.1-hcc62823_1.conda"
+checksum = "sha256:9c96cc05e056e1bba5b545cbbd57b6e01db622dc2c82934caaaa25cfb22fe666"
+
 [conda-packages.macos-x64."libffi-3.4.2-h0d85af4_5"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libffi-3.4.2-h0d85af4_5.tar.bz2"
 checksum = "sha256:7a2d27a936ceee6942ea4d397f9c7d136f12549d86f7617e8b6bad51e01a941f"
+
+[conda-packages.macos-x64."libffi-3.7.0-h8c408c4_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libffi-3.7.0-h8c408c4_0.conda"
+checksum = "sha256:525e9b574d6a62b73ccd4cb616495fccd11e80c7e6f4fd7e97a9dd5804bf4c0e"
+
+[conda-packages.macos-x64."libfreetype-2.14.3-h694c41f_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libfreetype-2.14.3-h694c41f_2.conda"
+checksum = "sha256:cabaa404fde84dcf154c3394f7a86cbaa7cff1ce32e3951b0b6aad567c457e3f"
+
+[conda-packages.macos-x64."libfreetype6-2.14.3-h8afe040_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libfreetype6-2.14.3-h8afe040_2.conda"
+checksum = "sha256:9c81d42ca311a1283fb8f79d05dae5659d86cf20f4e5d146a97836456537ccff"
+
+[conda-packages.macos-x64."libgcc-16.1.0-h13771c8_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libgcc-16.1.0-h13771c8_2.conda"
+checksum = "sha256:88e373662ddcc97f1be8f9ccac9e7f6e1c939e7d0b5e4e9744107e43d8a09f3f"
+
+[conda-packages.macos-x64."libgd-2.3.3-hb2c11ec_12"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libgd-2.3.3-hb2c11ec_12.conda"
+checksum = "sha256:bf7b0c25b6cca5808f4da46c5c363fa1192088b0b46efb730af43f28d52b8f04"
 
 [conda-packages.macos-x64."libgettextpo-0.22.5-h5ff76d1_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libgettextpo-0.22.5-h5ff76d1_2.conda"
 checksum = "sha256:139d1861e21c41b950ebf9e395db2492839337a3b481ad2901a4a6800c555e37"
 
+[conda-packages.macos-x64."libgfortran-16.1.0-h7e5c614_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libgfortran-16.1.0-h7e5c614_2.conda"
+checksum = "sha256:2cb425ed093f125a2812b128be49a777f7a1e4c9c1ec6871c411bbd694e342a4"
+
+[conda-packages.macos-x64."libgfortran5-16.1.0-h70d9f54_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libgfortran5-16.1.0-h70d9f54_2.conda"
+checksum = "sha256:3fbe1dd14ccc751e9cb097e96683cb68efd53e95f39912d5c2270efa1942fd61"
+
+[conda-packages.macos-x64."libglib-2.88.3-hbc23256_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libglib-2.88.3-hbc23256_1.conda"
+checksum = "sha256:acac0e92a5b1e53eb9a129ab384351a1d0fbcb9a0eccf53adbdd949c1a00e423"
+
+[conda-packages.macos-x64."libharfbuzz-14.3.1-h2974713_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libharfbuzz-14.3.1-h2974713_0.conda"
+checksum = "sha256:30fe9e0595b74a036d55cd305c68b5319455b28c4acc74f0a7e7b12342aff0ae"
+
+[conda-packages.macos-x64."libharfbuzz-devel-14.3.1-h2974713_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libharfbuzz-devel-14.3.1-h2974713_0.conda"
+checksum = "sha256:1c116ce0256c448396715ae8889521de7caac0103142be33e829dfc212c79cd6"
+
+[conda-packages.macos-x64."libheif-1.23.1-gpl_h0335271_100"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libheif-1.23.1-gpl_h0335271_100.conda"
+checksum = "sha256:c90b9271a861fef28070fefec4c2b72e68db3cec98d35e8e11424aa8167ac928"
+
+[conda-packages.macos-x64."libhwy-1.4.0-ha8ee8a1_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libhwy-1.4.0-ha8ee8a1_1.conda"
+checksum = "sha256:c832e70cf8a30f7225582b8cf57b7382829fbc4a45de15956bbc25569231dbc2"
+
 [conda-packages.macos-x64."libiconv-1.17-hd75f5a5_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libiconv-1.17-hd75f5a5_2.conda"
 checksum = "sha256:23d4923baeca359423a7347c2ed7aaf48c68603df0cf8b87cc94a10b0d4e9a23"
+
+[conda-packages.macos-x64."libiconv-1.18-h4ae439b_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libiconv-1.18-h4ae439b_3.conda"
+checksum = "sha256:2389e03a58ed0f5e8f2469eb4d4ba80d0af378b38854ae5eee65e5b641244082"
 
 [conda-packages.macos-x64."libintl-0.22.5-h5ff76d1_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libintl-0.22.5-h5ff76d1_2.conda"
 checksum = "sha256:280aaef0ed84637ee869012ad9ad9ed208e068dd9b8cf010dafeea717dad7203"
 
+[conda-packages.macos-x64."libintl-0.25.1-h3184127_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libintl-0.25.1-h3184127_1.conda"
+checksum = "sha256:8c352744517bc62d24539d1ecc813b9fdc8a785c780197c5f0b84ec5b0dfe122"
+
+[conda-packages.macos-x64."libjpeg-turbo-3.2.0-ha1e9b39_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libjpeg-turbo-3.2.0-ha1e9b39_1.conda"
+checksum = "sha256:0792824360a9e59802c9464157c1098c3d84330dcab5dbde762abaca16f580a8"
+
+[conda-packages.macos-x64."libjxl-0.12.0-h5564675_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libjxl-0.12.0-h5564675_2.conda"
+checksum = "sha256:f2e6f80c8b8be08d5f384696f9a32b940cbdae11bfd75d465cfffa3ec9a83ff0"
+
+[conda-packages.macos-x64."liblzma-5.8.3-hbb4bfdb_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/liblzma-5.8.3-hbb4bfdb_1.conda"
+checksum = "sha256:7915dac7c71c208e40e716e2f6d3eff41a8d5584e0e7c2d46f9bf9bd5f9aa739"
+
+[conda-packages.macos-x64."libmpdec-4.0.0-ha1e9b39_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libmpdec-4.0.0-ha1e9b39_2.conda"
+checksum = "sha256:6438d0ef76e81f2b75ad7599685a525407c1d9fb2d6a7c18f360614ae6807970"
+
+[conda-packages.macos-x64."libpng-1.6.58-h4382c61_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libpng-1.6.58-h4382c61_1.conda"
+checksum = "sha256:4677159f77da07eba37618f2e0c9887233dacf5e23290bb6d978732d0f5f896d"
+
+[conda-packages.macos-x64."libraw-0.22.2-h3650196_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libraw-0.22.2-h3650196_0.conda"
+checksum = "sha256:a39f49ab1c0f7fbb7598e573e14ce72214d8bc5805fc92888d9702633971e3fe"
+
+[conda-packages.macos-x64."librsvg-2.62.3-h7321050_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/librsvg-2.62.3-h7321050_0.conda"
+checksum = "sha256:4e6ceb25dcc7b67d550e2b6ce98da585b49dd4590f21a709dd6ec626df3b8c19"
+
 [conda-packages.macos-x64."libsqlite-3.45.3-h92b6c6a_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libsqlite-3.45.3-h92b6c6a_0.conda"
 checksum = "sha256:4d44b68fb29dcbc2216a8cae0b274b02ef9b4ae05d1d0f785362ed30b91c9b52"
+
+[conda-packages.macos-x64."libsqlite-3.53.4-ha5db789_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libsqlite-3.53.4-ha5db789_1.conda"
+checksum = "sha256:78afe0bf88da66d7df62d39632aa69cb73eb32d923cd1175230ce2978618d9c8"
+
+[conda-packages.macos-x64."libtiff-4.7.2-h95d6d7f_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libtiff-4.7.2-h95d6d7f_0.conda"
+checksum = "sha256:8e43d2a3538f45848c61cdda4baa6728ce0a48bc665b306de5a31dd3464a30c1"
+
+[conda-packages.macos-x64."libwebp-base-1.6.0-hb276fe9_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libwebp-base-1.6.0-hb276fe9_1.conda"
+checksum = "sha256:96263e9134164b6ca015a8cfba3a4cac9ca2429ddfebd25c120817fa608d2fdc"
+
+[conda-packages.macos-x64."libxcb-1.17.0-h2478c6c_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libxcb-1.17.0-h2478c6c_1.conda"
+checksum = "sha256:f19550d311365ea8541424daafcad13a5d0259e905a1faad3caeae1eb659d271"
+
+[conda-packages.macos-x64."libxml2-16-2.15.3-h7a90416_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libxml2-16-2.15.3-h7a90416_1.conda"
+checksum = "sha256:55b340cca3892dc95bf0944036a426e357ae72c3555d75f51487560722e64c0e"
+
+[conda-packages.macos-x64."libxml2-2.15.3-h953d39d_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libxml2-2.15.3-h953d39d_1.conda"
+checksum = "sha256:86b163d690ddba6a2c7e74a0dc520da4715f638e3f51770070ec784a813d7145"
+
+[conda-packages.macos-x64."libzip-1.11.2-h31df5bb_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libzip-1.11.2-h31df5bb_0.conda"
+checksum = "sha256:434a4d1ad23c1c8deb7ec2da94aca05e22bc29dee445b4f7642e1c2f20fc0b0b"
 
 [conda-packages.macos-x64."libzlib-1.3.1-hd75f5a5_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/libzlib-1.3.1-hd75f5a5_0.conda"
 checksum = "sha256:49fd2bde256952ab6a8265f3b2978ae624db1f096e3340253699e2534426244a"
 
+[conda-packages.macos-x64."libzlib-1.3.2-hbb4bfdb_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/libzlib-1.3.2-hbb4bfdb_3.conda"
+checksum = "sha256:b2dba286dd6632292b12296e761193b5ef9fb0eaeecaa481f5ba9af72c0c18e1"
+
+[conda-packages.macos-x64."llvm-openmp-22.1.8-h8e721bf_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/llvm-openmp-22.1.8-h8e721bf_1.conda"
+checksum = "sha256:8a784d93dacc9fa78392f33f8be833d5056358611c4cb6a60ed3929c64d3a61d"
+
+[conda-packages.macos-x64."markupsafe-3.0.3-py314h77fa6c7_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/markupsafe-3.0.3-py314h77fa6c7_1.conda"
+checksum = "sha256:74507b481299c3d35dc7d1c35f9c92e2e94e0eda819b264f5f25b7552f8a7d64"
+
+[conda-packages.macos-x64."narwhals-2.25.0-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/narwhals-2.25.0-pyhcf101f3_0.conda"
+checksum = "sha256:e48d972fae8e32ca43eefd1a9649afa3a82b4dda5fe12caa441f0bc9e8d1938d"
+
 [conda-packages.macos-x64."ncurses-6.5-h5846eda_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/ncurses-6.5-h5846eda_0.conda"
 checksum = "sha256:6ecc73db0e49143092c0934355ac41583a5d5a48c6914c5f6ca48e562d3a4b79"
+
+[conda-packages.macos-x64."ncurses-6.6-hcc0dc9a_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/ncurses-6.6-hcc0dc9a_1.conda"
+checksum = "sha256:12c1d676b9a0e8109b576672519312c5428308f3f3d7706f8717e2f536d5d9e7"
+
+[conda-packages.macos-x64."nest-asyncio-1.6.0-pyhd8ed1ab_1"]
+url = "https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_1.conda"
+checksum = "sha256:bb7b21d7fd0445ddc0631f64e66d91a179de4ba920b8381f29b9d006a42788c0"
+
+[conda-packages.macos-x64."openexr-3.4.14-hc0c9beb_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/openexr-3.4.14-hc0c9beb_0.conda"
+checksum = "sha256:4b01c0244ecb8cc577c50a0f6c615b9768d29c64f5a4ce1fb56b25ad38540217"
+
+[conda-packages.macos-x64."openjpeg-2.5.4-h52bb76a_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/openjpeg-2.5.4-h52bb76a_0.conda"
+checksum = "sha256:9a37ecf9c086f3a50d0132e6087dcbe7ea978d80e2da267fa3199c486529b311"
+
+[conda-packages.macos-x64."openjph-0.31.0-h2c0e27e_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/openjph-0.31.0-h2c0e27e_0.conda"
+checksum = "sha256:aa1a9be70abca41b4e94ddd9e29e30c53252c2a2160b7dd44282f3c01fb0b06d"
 
 [conda-packages.macos-x64."openssl-3.3.0-hd75f5a5_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/openssl-3.3.0-hd75f5a5_0.conda"
 checksum = "sha256:d3889b0c89c2742e92e20f01e8f298b64c221df5d577c639b823a0bfe314e2e3"
 
+[conda-packages.macos-x64."openssl-3.6.3-hc881268_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/openssl-3.6.3-hc881268_1.conda"
+checksum = "sha256:d43abd09a455847108fc821e81cf4e36dba31755263a1313b6f1b538ac218998"
+
+[conda-packages.macos-x64."packaging-26.3-pyhc364b38_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/packaging-26.3-pyhc364b38_0.conda"
+checksum = "sha256:c432626b16768b8dab228bfb706f7060c2d462a21c516d240f68f2f902b5a044"
+
+[conda-packages.macos-x64."pango-1.58.2-hf280016_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/pango-1.58.2-hf280016_0.conda"
+checksum = "sha256:3aafce903004fcd745f3ccedbb4d39afcdbee06352be1d7286fcbafa2e7e1dd1"
+
+[conda-packages.macos-x64."pcre2-10.47-h13923f0_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/pcre2-10.47-h13923f0_0.conda"
+checksum = "sha256:8d64a9d36073346542e5ea042ef8207a45a0069a2e65ce3323ee3146db78134c"
+
+[conda-packages.macos-x64."pixman-0.46.4-h2fb4741_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/pixman-0.46.4-h2fb4741_3.conda"
+checksum = "sha256:261a3af8cb2d08d206b6661abcd44ea234afd72cea52fe78ad5262cf26e86065"
+
+[conda-packages.macos-x64."plotly-6.9.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/plotly-6.9.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:b92b10adbeff5c539c130a4d171338404b3618e15f1154b3afb9dba15441e611"
+
+[conda-packages.macos-x64."pthread-stubs-0.4-ha1e9b39_1003"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/pthread-stubs-0.4-ha1e9b39_1003.conda"
+checksum = "sha256:aab86cc4162d4b42d79e2edb17120bc1b95565571697c6179c95b99d0034a024"
+
+[conda-packages.macos-x64."pydantic-2.13.4-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/pydantic-2.13.4-pyhcf101f3_0.conda"
+checksum = "sha256:69700e31165df070e9716315e042196aa92525dae5deb5107785847ab9f4189f"
+
+[conda-packages.macos-x64."pydantic-core-2.46.4-py314h8916c15_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/pydantic-core-2.46.4-py314h8916c15_0.conda"
+checksum = "sha256:555021648575077c62d429feb4530c724915af6f92e3d77f2accb4789c071778"
+
+[conda-packages.macos-x64."pysocks-1.7.1-pyha55dd90_7"]
+url = "https://conda.anaconda.org/conda-forge/noarch/pysocks-1.7.1-pyha55dd90_7.conda"
+checksum = "sha256:ba3b032fa52709ce0d9fd388f63d330a026754587a2f461117cac9ab73d8d0d8"
+
 [conda-packages.macos-x64."python-3.12.2-h9f0c242_0_cpython"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/python-3.12.2-h9f0c242_0_cpython.conda"
 checksum = "sha256:7647ac06c3798a182a4bcb1ff58864f1ef81eb3acea6971295304c23e43252fb"
+
+[conda-packages.macos-x64."python-3.14.7-hb933c43_100_cp314"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/python-3.14.7-hb933c43_100_cp314.conda"
+checksum = "sha256:4305cf3d9f5e78ae16a364fb7f0fdb092868526ba80b7cdf5794b2fc077df660"
 
 [conda-packages.macos-x64."python-dateutil-2.9.0.post0-pyhe01879c_2"]
 url = "https://conda.anaconda.org/conda-forge/noarch/python-dateutil-2.9.0.post0-pyhe01879c_2.conda"
 checksum = "sha256:d6a17ece93bbd5139e02d2bd7dbfa80bee1a4261dced63f65f679121686bf664"
 
+[conda-packages.macos-x64."python_abi-3.14-8_cp314"]
+url = "https://conda.anaconda.org/conda-forge/noarch/python_abi-3.14-8_cp314.conda"
+checksum = "sha256:ad6d2e9ac39751cc0529dd1566a26751a0bf2542adb0c232533d32e176e21db5"
+
 [conda-packages.macos-x64."pytz-2026.2-pyhcf101f3_0"]
 url = "https://conda.anaconda.org/conda-forge/noarch/pytz-2026.2-pyhcf101f3_0.conda"
 checksum = "sha256:5020863d629f584b5c057333a67a7aed43e3ed013ba15dd70f353501ccb5aff6"
+
+[conda-packages.macos-x64."rav1e-0.8.1-h618d828_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/rav1e-0.8.1-h618d828_0.conda"
+checksum = "sha256:4286abee88102b8889d2d20e79a51424fcee2aa24aba3d0ea3c5c7ee251d48ca"
 
 [conda-packages.macos-x64."readline-8.2-h7cca4af_2"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/readline-8.2-h7cca4af_2.conda"
 checksum = "sha256:53017e80453c4c1d97aaf78369040418dea14cf8f46a2fa999f31bd70b36c877"
 
+[conda-packages.macos-x64."readline-8.3-h000c2f7_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/readline-8.3-h000c2f7_1.conda"
+checksum = "sha256:feb9248a062b7a0738e56339d8c9e87bc9adf8e8c76549fb55b0b2456bec3a57"
+
+[conda-packages.macos-x64."requests-2.34.2-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/requests-2.34.2-pyhcf101f3_0.conda"
+checksum = "sha256:1715246b19c9f85ee022933b4845f2fc14ac9184981b7b7d9b728bec8e9588da"
+
+[conda-packages.macos-x64."retrying-1.4.2-pyhe01879c_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/retrying-1.4.2-pyhe01879c_0.conda"
+checksum = "sha256:7a10527962d2ca2cf936872ef58d4b622b1d1d1703e1d6396d0673fd9f883c7f"
+
+[conda-packages.macos-x64."setuptools-84.0.0-pyh332efcf_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/setuptools-84.0.0-pyh332efcf_0.conda"
+checksum = "sha256:9e200ee5f9ff19a4d94e4b51c4856d53dec849f91032f345cf0c6bc3d51a7183"
+
 [conda-packages.macos-x64."six-1.17.0-pyhe01879c_1"]
 url = "https://conda.anaconda.org/conda-forge/noarch/six-1.17.0-pyhe01879c_1.conda"
 checksum = "sha256:458227f759d5e3fcec5d9b7acce54e10c9e1f4f4b7ec978f3bfd54ce4ee9853d"
+
+[conda-packages.macos-x64."svt-av1-4.2.0-h6e061ac_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/svt-av1-4.2.0-h6e061ac_1.conda"
+checksum = "sha256:0cee2fa5ca683695272147cc1bfd386a94965bd23cb7715b47381393ea08e6d2"
 
 [conda-packages.macos-x64."tk-8.6.13-h1abcd95_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/tk-8.6.13-h1abcd95_1.conda"
 checksum = "sha256:30412b2e9de4ff82d8c2a7e5d06a15f4f4fef1809a72138b6ccb53a33b26faf5"
 
+[conda-packages.macos-x64."tk-8.6.13-ha6c374e_4"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/tk-8.6.13-ha6c374e_4.conda"
+checksum = "sha256:74e5fabcaf6ca0db052c645646ea04ded98a5eb7540483217f8101a819eb3107"
+
+[conda-packages.macos-x64."typing-extensions-4.16.0-h69aa097_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.16.0-h69aa097_0.conda"
+checksum = "sha256:b141933ece3518f6d7b75dfb59451e2f26b405a44c18e2518a83e9a02e09315c"
+
+[conda-packages.macos-x64."typing-inspection-0.4.4-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/typing-inspection-0.4.4-pyhcf101f3_0.conda"
+checksum = "sha256:293c66b208468d186a94ff486c2ffbf67859a2bde8c88e965fc9d06c517191b2"
+
+[conda-packages.macos-x64."typing_extensions-4.16.0-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.16.0-pyhcf101f3_0.conda"
+checksum = "sha256:2d888f90af0686044882c74193ec80a90ec1943145d94a7b1b048958acda1848"
+
 [conda-packages.macos-x64.tzdata-2025c-hc9c84f9_1]
 url = "https://conda.anaconda.org/conda-forge/noarch/tzdata-2025c-hc9c84f9_1.conda"
 checksum = "sha256:1d30098909076af33a35017eed6f2953af1c769e273a0626a04722ac4acaba3c"
 
+[conda-packages.macos-x64.tzdata-2026c-h151e31d_0]
+url = "https://conda.anaconda.org/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda"
+checksum = "sha256:b928c30ddcb0e3f544c6eade8352737e6e610e263276b90232db6a578ef899d8"
+
+[conda-packages.macos-x64."urllib3-2.7.0-pyhd8ed1ab_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/urllib3-2.7.0-pyhd8ed1ab_0.conda"
+checksum = "sha256:feff959a816f7988a0893201aa9727bbb7ee1e9cec2c4f0428269b489eb93fb4"
+
+[conda-packages.macos-x64."werkzeug-3.1.8-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/werkzeug-3.1.8-pyhcf101f3_0.conda"
+checksum = "sha256:5108c1bf2f0512e5c9dc8191e31b144c23b7cf0e73423a246173006002368d79"
+
+[conda-packages.macos-x64."x265-3.5-hbb4e6a2_3"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/x265-3.5-hbb4e6a2_3.tar.bz2"
+checksum = "sha256:6b6a57710192764d0538f72ea1ccecf2c6174a092e0bc76d790f8ca36bbe90e4"
+
+[conda-packages.macos-x64."xorg-libice-1.1.2-ha3d0635_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libice-1.1.2-ha3d0635_0.conda"
+checksum = "sha256:8d7c510a5e0495075e30dbac584591c78824ab4ea041c927ae12b844a3e1dc76"
+
+[conda-packages.macos-x64."xorg-libsm-1.2.6-ha3d0635_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libsm-1.2.6-ha3d0635_1.conda"
+checksum = "sha256:52ef59c629fcc4ff2b1213d16c660b878e9665c6210efbce2c56968d66f9d6bf"
+
+[conda-packages.macos-x64."xorg-libx11-1.8.13-hd3cc91f_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libx11-1.8.13-hd3cc91f_1.conda"
+checksum = "sha256:529350d74099e96a46ed402db95bf2ae662bb6169e9b752954462659d7faa856"
+
+[conda-packages.macos-x64."xorg-libxau-1.0.12-ha1e9b39_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libxau-1.0.12-ha1e9b39_2.conda"
+checksum = "sha256:fe36f1b32e12cbc47a863c7c82c17df42f39291d60d6865a7368391596d88294"
+
+[conda-packages.macos-x64."xorg-libxdmcp-1.1.5-ha1e9b39_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libxdmcp-1.1.5-ha1e9b39_2.conda"
+checksum = "sha256:cd933c34e183044b16fab430a194595da3df96c248d1338e9ae064cb462a5563"
+
+[conda-packages.macos-x64."xorg-libxext-1.3.7-hd115831_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libxext-1.3.7-hd115831_1.conda"
+checksum = "sha256:8b5ae560465e0ae80170b614498c42e8a2c82eab5beceaf2f47b906174290d5c"
+
+[conda-packages.macos-x64."xorg-libxmu-1.3.1-hf3981d6_0"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libxmu-1.3.1-hf3981d6_0.conda"
+checksum = "sha256:041f04b6b617e557562aa83692654919ef013451d4795b3eeedaefd3448c5033"
+
+[conda-packages.macos-x64."xorg-libxrender-0.9.12-ha1e9b39_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libxrender-0.9.12-ha1e9b39_1.conda"
+checksum = "sha256:8036280e91f33d1f2fcd03fed6acefc4211890327ae1225091328058ef0be5fe"
+
+[conda-packages.macos-x64."xorg-libxt-1.3.1-hd115831_1"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/xorg-libxt-1.3.1-hd115831_1.conda"
+checksum = "sha256:2c1e97499961a940efe440086248b45e1910eba581e85dc71bf3fdb3655549dd"
+
 [conda-packages.macos-x64."xz-5.2.6-h775f41a_0"]
 url = "https://conda.anaconda.org/conda-forge/osx-64/xz-5.2.6-h775f41a_0.tar.bz2"
 checksum = "sha256:eb09823f34cc2dd663c0ec4ab13f246f45dcd52e5b8c47b9864361de5204a1c8"
+
+[conda-packages.macos-x64."zipp-4.1.0-pyhcf101f3_0"]
+url = "https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda"
+checksum = "sha256:210bd31c22bb88f5e2a167df24c95bb5f152b2ada7502f9b8c49d1f5366db423"
+
+[conda-packages.macos-x64."zstd-1.5.7-hbc1a06c_7"]
+url = "https://conda.anaconda.org/conda-forge/osx-64/zstd-1.5.7-hbc1a06c_7.conda"
+checksum = "sha256:5277886d9704a624dc9b79ac985861e1e431bdb39a57c082507ab577a138ec6c"
 
 [conda-packages.windows-x64."_libavif_api-1.4.2-h11686cb_2"]
 url = "https://conda.anaconda.org/conda-forge/win-64/_libavif_api-1.4.2-h11686cb_2.conda"
@@ -4454,6 +5518,121 @@ conda_deps = [
     "pysocks-1.7.1-pyha55dd90_7",
 ]
 
+[tools."conda:dash"."platforms.macos-arm64"]
+checksum = "sha256:ab3afddf6726a05f1460dbf8f0e27448830fa2556229e3e724c9f875d0f7ecd4"
+url = "https://conda.anaconda.org/conda-forge/noarch/dash-4.4.1-pyhd8ed1ab_0.conda"
+conda_deps = [
+    "comm-0.2.3-pyhe01879c_0",
+    "flask-3.1.3-pyhcf101f3_1",
+    "blinker-1.9.0-pyhff2d567_0",
+    "importlib-metadata-9.0.0-pyhcf101f3_0",
+    "janus-2.0.0-pyhd8ed1ab_0",
+    "nest-asyncio-1.6.0-pyhd8ed1ab_1",
+    "plotly-6.9.0-pyhd8ed1ab_0",
+    "pydantic-2.13.4-pyhcf101f3_0",
+    "python-3.14.7-hf4d206d_100_cp314",
+    "python_abi-3.14-8_cp314",
+    "libffi-3.7.0-hcf2aa1b_0",
+    "pydantic-core-2.46.4-py314h54f3292_0",
+    "requests-2.34.2-pyhcf101f3_0",
+    "retrying-1.4.2-pyhe01879c_0",
+    "setuptools-84.0.0-pyh332efcf_0",
+    "typing_extensions-4.16.0-pyhcf101f3_0",
+    "typing-extensions-4.16.0-h69aa097_0",
+    "werkzeug-3.1.8-pyhcf101f3_0",
+    "itsdangerous-2.2.0-pyhd8ed1ab_1",
+    "click-8.4.2-pyhc90fa1f_0",
+    "jinja2-3.1.6-pyhcf101f3_1",
+    "markupsafe-3.0.3-py314h6e9b3f0_1",
+    "zipp-4.1.0-pyhcf101f3_0",
+    "narwhals-2.25.0-pyhcf101f3_0",
+    "packaging-26.3-pyhc364b38_0",
+    "typing-inspection-0.4.4-pyhcf101f3_0",
+    "annotated-types-0.8.0-pyhd8ed1ab_0",
+    "libexpat-2.8.1-hf6b4638_1",
+    "liblzma-5.8.3-h8088a28_1",
+    "libzlib-1.3.2-h8088a28_3",
+    "ncurses-6.6-he64c551_1",
+    "readline-8.3-h8b90a29_1",
+    "bzip2-1.0.8-h4e30115_10",
+    "libmpdec-4.0.0-h84a0fba_2",
+    "libsqlite-3.53.4-hca69786_1",
+    "openssl-3.6.3-hd24854e_1",
+    "tk-8.6.13-hbeba79b_4",
+    "tzdata-2026c-h151e31d_0",
+    "zstd-1.5.7-hf451053_7",
+    "certifi-2026.7.22-pyhd8ed1ab_0",
+    "charset-normalizer-3.5.1-pyhd8ed1ab_0",
+    "idna-3.19-pyhcf101f3_0",
+    "urllib3-2.7.0-pyhd8ed1ab_0",
+    "icu-78.3-py310h579977c_2",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
+    "backports.zstd-1.7.0-py314h680f03e_0",
+    "brotli-python-1.2.0-py314hee34562_3",
+    "h2-4.4.1-pyhcf101f3_0",
+    "hpack-4.2.0-pyhd8ed1ab_0",
+    "hyperframe-6.1.0-pyhd8ed1ab_0",
+    "pysocks-1.7.1-pyha55dd90_7",
+    "libcxx-22.1.8-h55c6f16_0",
+]
+
+[tools."conda:dash"."platforms.macos-x64"]
+checksum = "sha256:ab3afddf6726a05f1460dbf8f0e27448830fa2556229e3e724c9f875d0f7ecd4"
+url = "https://conda.anaconda.org/conda-forge/noarch/dash-4.4.1-pyhd8ed1ab_0.conda"
+conda_deps = [
+    "comm-0.2.3-pyhe01879c_0",
+    "flask-3.1.3-pyhcf101f3_1",
+    "blinker-1.9.0-pyhff2d567_0",
+    "importlib-metadata-9.0.0-pyhcf101f3_0",
+    "janus-2.0.0-pyhd8ed1ab_0",
+    "nest-asyncio-1.6.0-pyhd8ed1ab_1",
+    "plotly-6.9.0-pyhd8ed1ab_0",
+    "pydantic-2.13.4-pyhcf101f3_0",
+    "python-3.14.7-hb933c43_100_cp314",
+    "python_abi-3.14-8_cp314",
+    "libffi-3.7.0-h8c408c4_0",
+    "pydantic-core-2.46.4-py314h8916c15_0",
+    "requests-2.34.2-pyhcf101f3_0",
+    "retrying-1.4.2-pyhe01879c_0",
+    "setuptools-84.0.0-pyh332efcf_0",
+    "typing_extensions-4.16.0-pyhcf101f3_0",
+    "typing-extensions-4.16.0-h69aa097_0",
+    "werkzeug-3.1.8-pyhcf101f3_0",
+    "itsdangerous-2.2.0-pyhd8ed1ab_1",
+    "click-8.4.2-pyhc90fa1f_0",
+    "jinja2-3.1.6-pyhcf101f3_1",
+    "markupsafe-3.0.3-py314h77fa6c7_1",
+    "zipp-4.1.0-pyhcf101f3_0",
+    "narwhals-2.25.0-pyhcf101f3_0",
+    "packaging-26.3-pyhc364b38_0",
+    "typing-inspection-0.4.4-pyhcf101f3_0",
+    "annotated-types-0.8.0-pyhd8ed1ab_0",
+    "libexpat-2.8.1-hcc62823_1",
+    "liblzma-5.8.3-hbb4bfdb_1",
+    "libzlib-1.3.2-hbb4bfdb_3",
+    "ncurses-6.6-hcc0dc9a_1",
+    "readline-8.3-h000c2f7_1",
+    "bzip2-1.0.8-h374f1ed_10",
+    "libmpdec-4.0.0-ha1e9b39_2",
+    "libsqlite-3.53.4-ha5db789_1",
+    "openssl-3.6.3-hc881268_1",
+    "tk-8.6.13-ha6c374e_4",
+    "tzdata-2026c-h151e31d_0",
+    "zstd-1.5.7-hbc1a06c_7",
+    "certifi-2026.7.22-pyhd8ed1ab_0",
+    "charset-normalizer-3.5.1-pyhd8ed1ab_0",
+    "idna-3.19-pyhcf101f3_0",
+    "urllib3-2.7.0-pyhd8ed1ab_0",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
+    "backports.zstd-1.7.0-py314h680f03e_0",
+    "brotli-python-1.2.0-py314h21a1a37_3",
+    "h2-4.4.1-pyhcf101f3_0",
+    "hpack-4.2.0-pyhd8ed1ab_0",
+    "hyperframe-6.1.0-pyhd8ed1ab_0",
+    "pysocks-1.7.1-pyha55dd90_7",
+    "libcxx-22.1.8-h19cb2f5_0",
+]
+
 [tools."conda:dash"."platforms.windows-x64"]
 checksum = "sha256:ab3afddf6726a05f1460dbf8f0e27448830fa2556229e3e724c9f875d0f7ecd4"
 url = "https://conda.anaconda.org/conda-forge/noarch/dash-4.4.1-pyhd8ed1ab_0.conda"
@@ -4852,6 +6031,28 @@ conda_deps = [
     "libzlib-1.3.2-h25fd6f3_2",
 ]
 
+[tools."conda:grep"."platforms.macos-arm64"]
+checksum = "sha256:4da07e43785c18bbeb331913cd46ed0db6a5d0f8c629a1633e093444dcf17388"
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/grep-3.12-h8dcd326_1.conda"
+conda_deps = [
+    "libintl-0.25.1-h493aca8_0",
+    "pcre2-10.47-he63d830_1",
+    "libiconv-1.18-he4c29f2_3",
+    "libzlib-1.3.2-h8088a28_3",
+    "bzip2-1.0.8-h4e30115_10",
+]
+
+[tools."conda:grep"."platforms.macos-x64"]
+checksum = "sha256:984b0f51b04cadd4a4f15f6626f94f53214039b9cdef5c302fce222c4f2af9ff"
+url = "https://conda.anaconda.org/conda-forge/osx-64/grep-3.12-hab9fb4a_1.conda"
+conda_deps = [
+    "pcre2-10.47-h13923f0_0",
+    "libintl-0.25.1-h3184127_1",
+    "bzip2-1.0.8-h374f1ed_10",
+    "libzlib-1.3.2-hbb4bfdb_3",
+    "libiconv-1.18-h4ae439b_3",
+]
+
 [[tools."conda:resvg"]]
 version = "0.47.0"
 backend = "conda:resvg"
@@ -4894,6 +6095,16 @@ conda_deps = [
     "_openmp_mutex-4.5-20_gnu",
     "libgomp-15.2.0-he0feb66_19",
 ]
+
+[tools."conda:resvg"."platforms.macos-arm64"]
+checksum = "sha256:ef311b0d63c2ae1043e1b13840b2dfc4444474abe58025ec4b7472da1555042d"
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/resvg-0.47.0-h748bcf4_0.conda"
+conda_deps = []
+
+[tools."conda:resvg"."platforms.macos-x64"]
+checksum = "sha256:9ce2173a9520e19864c3ebed6676f98d7ba7eb4adc2eac6970067e29de89a13a"
+url = "https://conda.anaconda.org/conda-forge/osx-64/resvg-0.47.0-ha35cfd3_0.conda"
+conda_deps = []
 
 [tools."conda:resvg"."platforms.windows-x64"]
 checksum = "sha256:d2fd034cff018e148c2bb51e10cfe1c370e60b7fd3f5c189ab5d151fb957cd5d"
@@ -5027,6 +6238,22 @@ conda_deps = [
     "libgomp-15.2.0-he0feb66_19",
 ]
 
+[tools."conda:sed"."platforms.macos-arm64"]
+checksum = "sha256:28a7b25698cb20d4184d08fd4a84275b5f7522a0261d5de0037829d6a9b0f69d"
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/sed-4.10-h5c09db4_0.conda"
+conda_deps = [
+    "libintl-0.25.1-h493aca8_0",
+    "libiconv-1.18-he4c29f2_3",
+]
+
+[tools."conda:sed"."platforms.macos-x64"]
+checksum = "sha256:82b9463d838f08fb89aa3b914ebc5b97313c4d6d9a2697fdb24c27403c0780f6"
+url = "https://conda.anaconda.org/conda-forge/osx-64/sed-4.10-hb63749c_0.conda"
+conda_deps = [
+    "libintl-0.25.1-h3184127_1",
+    "libiconv-1.18-h4ae439b_3",
+]
+
 [[tools."conda:tzdata"]]
 version = "2026c"
 backend = "conda:tzdata"
@@ -5156,6 +6383,38 @@ conda_deps = [
     "libuuid-2.42.2-h5347b49_0",
 ]
 
+[tools."conda:xclip"."platforms.macos-arm64"]
+checksum = "sha256:9f3eb9bf042b6ead40ed090282ff4f63a211f3a175acfa3cea6505406a680140"
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xclip-0.13-h5505292_4.conda"
+conda_deps = [
+    "xorg-libx11-1.8.13-hf948f5a_1",
+    "xorg-libxmu-1.3.1-h84a0fba_0",
+    "libxcb-1.17.0-hbffa61f_1",
+    "xorg-libxext-1.3.7-hb001647_1",
+    "xorg-libxt-1.3.1-hb001647_1",
+    "pthread-stubs-0.4-h84a0fba_1003",
+    "xorg-libxau-1.0.12-h84a0fba_2",
+    "xorg-libxdmcp-1.1.5-h84a0fba_2",
+    "xorg-libice-1.1.2-h1a92334_0",
+    "xorg-libsm-1.2.6-h1a92334_1",
+]
+
+[tools."conda:xclip"."platforms.macos-x64"]
+checksum = "sha256:1bad66693af7984c547e793769586cf73cc3a29ec897ca7ce697ca99a9f0791e"
+url = "https://conda.anaconda.org/conda-forge/osx-64/xclip-0.13-h6e16a3a_4.conda"
+conda_deps = [
+    "xorg-libx11-1.8.13-hd3cc91f_1",
+    "xorg-libxmu-1.3.1-hf3981d6_0",
+    "libxcb-1.17.0-h2478c6c_1",
+    "xorg-libxext-1.3.7-hd115831_1",
+    "xorg-libxt-1.3.1-hd115831_1",
+    "xorg-libxau-1.0.12-ha1e9b39_2",
+    "xorg-libxdmcp-1.1.5-ha1e9b39_2",
+    "pthread-stubs-0.4-ha1e9b39_1003",
+    "xorg-libice-1.1.2-ha3d0635_0",
+    "xorg-libsm-1.2.6-ha3d0635_1",
+]
+
 [[tools."conda:xsel"]]
 version = "1.2.1"
 backend = "conda:xsel"
@@ -5217,6 +6476,28 @@ conda_deps = [
     "pthread-stubs-0.4-hb9d3cd8_1002",
     "xorg-libxau-1.0.12-hb03c661_1",
     "xorg-libxdmcp-1.1.5-hb03c661_1",
+]
+
+[tools."conda:xsel"."platforms.macos-arm64"]
+checksum = "sha256:82f5b25d7389737871bfe9b6d54a3cc1e82b0a4cc6acd0b57bfc74564be916c6"
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/xsel-1.2.1-h5505292_6.conda"
+conda_deps = [
+    "xorg-libx11-1.8.13-hf948f5a_1",
+    "libxcb-1.17.0-hbffa61f_1",
+    "pthread-stubs-0.4-h84a0fba_1003",
+    "xorg-libxau-1.0.12-h84a0fba_2",
+    "xorg-libxdmcp-1.1.5-h84a0fba_2",
+]
+
+[tools."conda:xsel"."platforms.macos-x64"]
+checksum = "sha256:fe14efbd38eaa83517fd6b8093b77d9d0eb36ebb50e04db82b1065c771a4b177"
+url = "https://conda.anaconda.org/conda-forge/osx-64/xsel-1.2.1-h6e16a3a_6.conda"
+conda_deps = [
+    "xorg-libx11-1.8.13-hd3cc91f_1",
+    "libxcb-1.17.0-h2478c6c_1",
+    "xorg-libxau-1.0.12-ha1e9b39_2",
+    "xorg-libxdmcp-1.1.5-ha1e9b39_2",
+    "pthread-stubs-0.4-ha1e9b39_1003",
 ]
 
 [[tools.coreutils]]
@@ -6409,6 +7690,198 @@ conda_deps = [
     "xkeyboard-config-2.48-h280c20c_0",
     "ncurses-6.6-hdb14827_0",
     "xorg-libxtst-1.2.5-hb9d3cd8_3",
+]
+
+[tools.imagemagick."platforms.macos-arm64"]
+checksum = "sha256:6d9f24543a53a2e655a9258f81fefbf97000f39272e29726a690590cf5ef5c57"
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/imagemagick-7.1.2_27-agpl_h29d87d9_101.conda"
+conda_deps = [
+    "pango-1.58.2-hf80efc4_0",
+    "openexr-3.4.14-he09da85_0",
+    "libzip-1.11.2-h1336266_0",
+    "libtiff-4.7.2-h282da08_0",
+    "librsvg-2.62.3-he8aa2a2_0",
+    "libraw-0.22.2-h2d05ff4_0",
+    "graphviz-14.1.2-hec8c438_0",
+    "fonts-conda-ecosystem-1-0",
+    "openjph-0.31.0-h2a4d681_0",
+    "fftw-3.3.11-nompi_haf1500d_100",
+    "fontconfig-2.18.3-h81aa574_1",
+    "libintl-0.25.1-h493aca8_0",
+    "fonts-conda-forge-1-hc364b38_1",
+    "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
+    "giflib-5.2.2-hd20048c_1",
+    "lcms2-2.19.1-hdfa7624_1",
+    "libglib-2.88.3-ha531971_1",
+    "libffi-3.7.0-hcf2aa1b_0",
+    "libheif-1.23.1-gpl_h800d22d_100",
+    "libde265-1.1.1-h3feff0a_0",
+    "dav1d-1.2.1-hb547adb_0",
+    "libjpeg-turbo-3.2.0-h84a0fba_1",
+    "libjxl-0.12.0-hb71b141_2",
+    "liblzma-5.8.3-h8088a28_1",
+    "libpng-1.6.58-hf5e6511_1",
+    "libwebp-base-1.6.0-h202fb40_1",
+    "libzlib-1.3.2-h8088a28_3",
+    "openjpeg-2.5.4-hd9e9057_0",
+    "xorg-libx11-1.8.13-hf948f5a_1",
+    "xorg-libxext-1.3.7-hb001647_1",
+    "xorg-libxrender-0.9.12-h84a0fba_1",
+    "xorg-libxt-1.3.1-hb001647_1",
+    "libgd-2.3.3-h05bcc79_12",
+    "bzip2-1.0.8-h4e30115_10",
+    "ghostscript-10.04.0-hf9b8971_0",
+    "libcxx-22.1.8-h55c6f16_0",
+    "libxml2-2.15.3-h5654f7c_1",
+    "libxml2-16-2.15.3-h5ef1a60_1",
+    "libgfortran-16.1.0-h07b0088_2",
+    "libgfortran5-16.1.0-h32cdfcc_2",
+    "llvm-openmp-22.1.8-hc225544_1",
+    "libexpat-2.8.1-hf6b4638_1",
+    "libfreetype-2.14.3-hce30654_2",
+    "libfreetype6-2.14.3-h2ed5691_2",
+    "font-ttf-ubuntu-0.83-h77eed37_3",
+    "font-ttf-inconsolata-3.000-h77eed37_0",
+    "font-ttf-source-code-pro-2.038-h77eed37_0",
+    "cairo-1.18.4-he0f2337_1",
+    "gts-0.7.6-he42f4ea_4",
+    "adwaita-icon-theme-49.0-unix_0",
+    "gdk-pixbuf-2.44.8-h5867e2c_0",
+    "gtk3-3.24.52-hc0f3e19_0",
+    "glib-tools-2.88.3-hd03a632_1",
+    "pcre2-10.47-he63d830_1",
+    "libiconv-1.18-he4c29f2_3",
+    "aom-3.14.1-pl5321hf79ea98_2",
+    "libavif16-1.4.2-h84013e8_3",
+    "rav1e-0.8.1-h8246384_0",
+    "x265-3.5-hbc6ce65_3",
+    "libhwy-1.4.0-hd2bdd19_1",
+    "libbrotlienc-1.2.0-h2ddc9cb_3",
+    "libbrotlicommon-1.2.0-h1dcdb26_3",
+    "libbrotlidec-1.2.0-h5295a6a_3",
+    "jasper-4.2.9-h7543a42_1",
+    "harfbuzz-14.3.1-hce30654_0",
+    "libharfbuzz-devel-14.3.1-hcda0f7c_0",
+    "libharfbuzz-14.3.1-hcda0f7c_0",
+    "freetype-2.14.3-hce30654_2",
+    "lerc-4.2.0-h1eee2c3_0",
+    "libdeflate-1.25-he7e0567_1",
+    "zstd-1.5.7-hf451053_7",
+    "icu-78.3-py310h579977c_2",
+    "openssl-3.6.3-hd24854e_1",
+    "imath-3.2.2-h13e8271_0",
+    "fribidi-1.0.16-h84a0fba_1",
+    "libxcb-1.17.0-hbffa61f_1",
+    "xorg-libice-1.1.2-h1a92334_0",
+    "xorg-libsm-1.2.6-h1a92334_1",
+    "libgcc-16.1.0-h3cf6597_2",
+    "hicolor-icon-theme-0.17-hce30654_3",
+    "pixman-0.46.4-h784d473_3",
+    "atk-1.0-2.38.0-hd03087b_2",
+    "epoxy-1.5.10-hc919400_2",
+    "svt-av1-4.2.0-h484c67d_1",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
+    "graphite2-1.3.15-h784d473_1",
+    "pthread-stubs-0.4-h84a0fba_1003",
+    "xorg-libxau-1.0.12-h84a0fba_2",
+    "xorg-libxdmcp-1.1.5-h84a0fba_2",
+    "_openmp_mutex-4.5-7_kmp_llvm",
+]
+
+[tools.imagemagick."platforms.macos-x64"]
+checksum = "sha256:8ef5787d0e774c00a74bff05fc8d5d585a865718b31335b32f0048d9792d79c3"
+url = "https://conda.anaconda.org/conda-forge/osx-64/imagemagick-7.1.2_27-agpl_h906e7a1_101.conda"
+conda_deps = [
+    "pango-1.58.2-hf280016_0",
+    "openexr-3.4.14-hc0c9beb_0",
+    "libzip-1.11.2-h31df5bb_0",
+    "libtiff-4.7.2-h95d6d7f_0",
+    "librsvg-2.62.3-h7321050_0",
+    "libraw-0.22.2-h3650196_0",
+    "graphviz-14.1.2-h44fc223_0",
+    "fonts-conda-ecosystem-1-0",
+    "openjph-0.31.0-h2c0e27e_0",
+    "fftw-3.3.11-nompi_h54214ab_100",
+    "fontconfig-2.18.3-h7f3b9c9_1",
+    "fonts-conda-forge-1-hc364b38_1",
+    "font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
+    "giflib-5.2.2-h0f9f378_1",
+    "lcms2-2.19.1-h5ea7634_1",
+    "libglib-2.88.3-hbc23256_1",
+    "pcre2-10.47-h13923f0_0",
+    "libffi-3.7.0-h8c408c4_0",
+    "libheif-1.23.1-gpl_h0335271_100",
+    "libde265-1.1.1-hebe015c_0",
+    "dav1d-1.2.1-h0dc2134_0",
+    "libjpeg-turbo-3.2.0-ha1e9b39_1",
+    "libjxl-0.12.0-h5564675_2",
+    "liblzma-5.8.3-hbb4bfdb_1",
+    "libpng-1.6.58-h4382c61_1",
+    "libwebp-base-1.6.0-hb276fe9_1",
+    "libzlib-1.3.2-hbb4bfdb_3",
+    "openjpeg-2.5.4-h52bb76a_0",
+    "xorg-libx11-1.8.13-hd3cc91f_1",
+    "xorg-libxext-1.3.7-hd115831_1",
+    "xorg-libxrender-0.9.12-ha1e9b39_1",
+    "xorg-libxt-1.3.1-hd115831_1",
+    "libgd-2.3.3-hb2c11ec_12",
+    "bzip2-1.0.8-h374f1ed_10",
+    "ghostscript-10.07.1-hcc62823_0",
+    "libcxx-22.1.8-h19cb2f5_0",
+    "libxml2-2.15.3-h953d39d_1",
+    "libxml2-16-2.15.3-h7a90416_1",
+    "libgfortran-16.1.0-h7e5c614_2",
+    "libgfortran5-16.1.0-h70d9f54_2",
+    "llvm-openmp-22.1.8-h8e721bf_1",
+    "libexpat-2.8.1-hcc62823_1",
+    "libfreetype-2.14.3-h694c41f_2",
+    "libfreetype6-2.14.3-h8afe040_2",
+    "libintl-0.25.1-h3184127_1",
+    "font-ttf-ubuntu-0.83-h77eed37_3",
+    "font-ttf-inconsolata-3.000-h77eed37_0",
+    "font-ttf-source-code-pro-2.038-h77eed37_0",
+    "cairo-1.18.4-h7656bdc_1",
+    "adwaita-icon-theme-49.0-unix_0",
+    "gdk-pixbuf-2.44.8-ha3e70bd_0",
+    "gtk3-3.24.52-hf2d442a_0",
+    "glib-tools-2.88.3-h899c5e0_1",
+    "gts-0.7.6-h53e17e3_4",
+    "libiconv-1.18-h4ae439b_3",
+    "aom-3.14.1-pl5321hf898372_2",
+    "libavif16-1.4.2-h951a2eb_3",
+    "rav1e-0.8.1-h618d828_0",
+    "x265-3.5-hbb4e6a2_3",
+    "libhwy-1.4.0-ha8ee8a1_1",
+    "libbrotlienc-1.2.0-h3d41943_3",
+    "libbrotlicommon-1.2.0-he0616a4_3",
+    "libbrotlidec-1.2.0-h4a2f56c_3",
+    "jasper-4.2.9-hbeb4536_1",
+    "harfbuzz-14.3.1-h694c41f_0",
+    "libharfbuzz-devel-14.3.1-h2974713_0",
+    "libharfbuzz-14.3.1-h2974713_0",
+    "freetype-2.14.3-h694c41f_2",
+    "lerc-4.2.0-h35c7297_0",
+    "libdeflate-1.25-h7ad9622_1",
+    "zstd-1.5.7-hbc1a06c_7",
+    "icu-78.3-py313hbf1d544_2",
+    "openssl-3.6.3-hc881268_1",
+    "imath-3.2.2-h6337977_0",
+    "fribidi-1.0.16-ha1e9b39_1",
+    "libxcb-1.17.0-h2478c6c_1",
+    "xorg-libice-1.1.2-ha3d0635_0",
+    "xorg-libsm-1.2.6-ha3d0635_1",
+    "libgcc-16.1.0-h13771c8_2",
+    "hicolor-icon-theme-0.17-h694c41f_3",
+    "pixman-0.46.4-h2fb4741_3",
+    "atk-1.0-2.38.0-h4bec284_2",
+    "epoxy-1.5.10-h8616949_2",
+    "svt-av1-4.2.0-h6e061ac_1",
+    "ca-certificates-2026.7.22-hbd8a1cb_0",
+    "graphite2-1.3.15-h2fb4741_1",
+    "xorg-libxau-1.0.12-ha1e9b39_2",
+    "xorg-libxdmcp-1.1.5-ha1e9b39_2",
+    "pthread-stubs-0.4-ha1e9b39_1003",
+    "_openmp_mutex-4.5-7_kmp_llvm",
 ]
 
 [tools.imagemagick."platforms.windows-x64"]
