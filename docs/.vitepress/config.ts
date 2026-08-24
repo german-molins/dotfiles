@@ -71,6 +71,7 @@ export default defineConfig({
         theme: Theme.NEUTRAL_DEFAULT,
         darkTheme: Theme.DARK_MUAVE,
         fileType: FileType.SVG,
+        padding: 30,
       })
     }
   }
