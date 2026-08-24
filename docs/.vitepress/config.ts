@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import d2 from 'vitepress-plugin-d2'
+import { Layout, Theme, FileType } from 'vitepress-plugin-d2/dist/config'
 
 export default defineConfig({
   title: "Dotfiles",
@@ -60,5 +62,16 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/german-molins/dotfiles' }
     ]
+  },
+
+  markdown: {
+    config: (md) => {
+      md.use(d2, {
+        layout: Layout.ELK,
+        theme: Theme.NEUTRAL_DEFAULT,
+        darkTheme: Theme.DARK_MUAVE,
+        fileType: FileType.SVG,
+      })
+    }
   }
 })

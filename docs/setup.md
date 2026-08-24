@@ -6,6 +6,31 @@ The chosen configuration controls the behavior during these sequential steps:
 - `chezmoi` initialization
 - `chezmoi` application of dotfiles from the source directory on the target directory.
 
+```d2
+:::config
+scale: 0.65
+:::
+
+direction: down
+
+env: |md
+  **Environment**
+  `DOTFILES_*`
+| {shape: page}
+
+clone: Clone repo
+init: chezmoi init
+cfg: chezmoi.yaml {shape: document}
+apply: chezmoi apply
+target: Dotfiles in home {shape: cylinder}
+
+clone -> init
+env -> init: template data
+init -> cfg: renders
+cfg -> apply
+apply -> target
+```
+
 ## Environment Variables
 
 Environment variables that determine the templating environment:

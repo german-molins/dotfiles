@@ -1,6 +1,7 @@
 [tools]
 aube = "latest"
 bun = "latest"
+d2 = "latest"
 jj = "latest"
 jq = "latest"
 yq = "latest"
