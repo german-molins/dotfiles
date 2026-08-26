@@ -5254,6 +5254,55 @@ url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.0/chezmoi_2.72
 url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/499173933"
 provenance = "cosign"
 
+[[tools.cloc]]
+version = "2.10"
+backend = "github:AlDanial/cloc"
+
+[tools.cloc.options]
+asset_pattern = "cloc-{{ version }}.pl"
+
+[tools.cloc."platforms.linux-arm64"]
+checksum = "sha256:bf59272455172108072a0a106379f7509fd4349bdcfd85203bac038ccd286d83"
+url = "https://github.com/AlDanial/cloc/releases/download/v2.10/cloc-2.10.pl"
+url_api = "https://api.github.com/repos/AlDanial/cloc/releases/assets/466555197"
+
+[tools.cloc."platforms.linux-arm64-musl"]
+checksum = "sha256:bf59272455172108072a0a106379f7509fd4349bdcfd85203bac038ccd286d83"
+url = "https://github.com/AlDanial/cloc/releases/download/v2.10/cloc-2.10.pl"
+url_api = "https://api.github.com/repos/AlDanial/cloc/releases/assets/466555197"
+
+[tools.cloc."platforms.linux-x64"]
+checksum = "sha256:bf59272455172108072a0a106379f7509fd4349bdcfd85203bac038ccd286d83"
+url = "https://github.com/AlDanial/cloc/releases/download/v2.10/cloc-2.10.pl"
+url_api = "https://api.github.com/repos/AlDanial/cloc/releases/assets/466555197"
+
+[tools.cloc."platforms.linux-x64-musl"]
+checksum = "sha256:bf59272455172108072a0a106379f7509fd4349bdcfd85203bac038ccd286d83"
+url = "https://github.com/AlDanial/cloc/releases/download/v2.10/cloc-2.10.pl"
+url_api = "https://api.github.com/repos/AlDanial/cloc/releases/assets/466555197"
+
+[tools.cloc."platforms.macos-arm64"]
+checksum = "sha256:bf59272455172108072a0a106379f7509fd4349bdcfd85203bac038ccd286d83"
+url = "https://github.com/AlDanial/cloc/releases/download/v2.10/cloc-2.10.pl"
+url_api = "https://api.github.com/repos/AlDanial/cloc/releases/assets/466555197"
+
+[tools.cloc."platforms.macos-x64"]
+checksum = "sha256:bf59272455172108072a0a106379f7509fd4349bdcfd85203bac038ccd286d83"
+url = "https://github.com/AlDanial/cloc/releases/download/v2.10/cloc-2.10.pl"
+url_api = "https://api.github.com/repos/AlDanial/cloc/releases/assets/466555197"
+
+[[tools.cloc]]
+version = "2.10"
+backend = "github:AlDanial/cloc"
+
+[tools.cloc.options]
+asset_pattern = "cloc-{{ version }}.exe"
+
+[tools.cloc."platforms.windows-x64"]
+checksum = "sha256:97786c4b5bb71d2be67e42061a2f5d03db73bbf88228f8710001d770e867bbef"
+url = "https://github.com/AlDanial/cloc/releases/download/v2.10/cloc-2.10.exe"
+url_api = "https://api.github.com/repos/AlDanial/cloc/releases/assets/466555271"
+
 [[tools.codebuff]]
 version = "1.0.685"
 backend = "npm:codebuff"

@@ -94,6 +94,7 @@ witr = "latest"
 nono = "latest"
 herdr = "latest"
 zk = "latest"
+cloc = { version = "latest", bin = "cloc", depends = ["perl"], platforms = { linux-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, linux-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, windows-x64 = { asset_pattern = "cloc-{{ version }}.exe" } } }
 
 [settings]
 experimental = true
