@@ -26,6 +26,7 @@ ripgrep = "latest"
 rust = "latest"
 tree-sitter = "latest"
 "github:dalance/procs" = "latest"
+"github:github/gh-stack" = { version = "latest", bin = "gh-stack" }
 "github:peteretelej/tree" = "latest"
 upt = "latest"
 usage = "latest"

@@ -7059,6 +7059,53 @@ url_api = "https://api.github.com/repos/ghetzel/mdnstool/releases/assets/1476332
 url = "https://github.com/ghetzel/mdnstool/releases/download/v0.0.3/mdnstool-freebsd-amd64"
 url_api = "https://api.github.com/repos/ghetzel/mdnstool/releases/assets/14763324"
 
+[[tools."github:github/gh-stack"]]
+version = "0.1.0"
+backend = "github:github/gh-stack"
+
+[tools."github:github/gh-stack"."platforms.linux-arm64"]
+checksum = "sha256:a79649e121845b7404109de21d65601c09c8c6d021d93738a3428d23986a8841"
+url = "https://github.com/github/gh-stack/releases/download/v0.1.0/linux-arm64"
+url_api = "https://api.github.com/repos/github/gh-stack/releases/assets/494339470"
+provenance = "github-attestations"
+
+[tools."github:github/gh-stack"."platforms.linux-arm64-musl"]
+checksum = "sha256:a79649e121845b7404109de21d65601c09c8c6d021d93738a3428d23986a8841"
+url = "https://github.com/github/gh-stack/releases/download/v0.1.0/linux-arm64"
+url_api = "https://api.github.com/repos/github/gh-stack/releases/assets/494339470"
+provenance = "github-attestations"
+
+[tools."github:github/gh-stack"."platforms.linux-x64"]
+checksum = "sha256:358552dd7dce0a46ce153fe196270cec482b84f080947890aad4061a8d44bc0b"
+url = "https://github.com/github/gh-stack/releases/download/v0.1.0/linux-amd64"
+url_api = "https://api.github.com/repos/github/gh-stack/releases/assets/494339465"
+provenance = "github-attestations"
+provenance_verified = true
+
+[tools."github:github/gh-stack"."platforms.linux-x64-musl"]
+checksum = "sha256:358552dd7dce0a46ce153fe196270cec482b84f080947890aad4061a8d44bc0b"
+url = "https://github.com/github/gh-stack/releases/download/v0.1.0/linux-amd64"
+url_api = "https://api.github.com/repos/github/gh-stack/releases/assets/494339465"
+provenance = "github-attestations"
+
+[tools."github:github/gh-stack"."platforms.macos-arm64"]
+checksum = "sha256:5ca98241a265d6de018095cdae5f3c40da5ca782450eec0ea91aa8e3eb183103"
+url = "https://github.com/github/gh-stack/releases/download/v0.1.0/darwin-arm64"
+url_api = "https://api.github.com/repos/github/gh-stack/releases/assets/494339447"
+provenance = "github-attestations"
+
+[tools."github:github/gh-stack"."platforms.macos-x64"]
+checksum = "sha256:712266939bf40349dce6c8893037b88e0453334d30d06750b61ce1a6c8640bb9"
+url = "https://github.com/github/gh-stack/releases/download/v0.1.0/darwin-amd64"
+url_api = "https://api.github.com/repos/github/gh-stack/releases/assets/494339445"
+provenance = "github-attestations"
+
+[tools."github:github/gh-stack"."platforms.windows-x64"]
+checksum = "sha256:6ddbb230c9467d7bcca8a2175244ddeee7951c00365d2d557d44dd797f362304"
+url = "https://github.com/github/gh-stack/releases/download/v0.1.0/windows-amd64.exe"
+url_api = "https://api.github.com/repos/github/gh-stack/releases/assets/494339492"
+provenance = "github-attestations"
+
 [[tools."github:peteretelej/tree"]]
 version = "1.3.0"
 backend = "github:peteretelej/tree"
