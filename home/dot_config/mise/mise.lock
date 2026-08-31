@@ -8502,6 +8502,35 @@ checksum = "sha256:c21a8921ca26c6c6341a067f0f384184d92ac3cf221a26a90cfdd60ceb71f
 url = "https://github.com/can1357/oh-my-pi/releases/download/v17.2.12/omp-windows-x64.exe"
 url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/506969034"
 
+[[tools.onefetch]]
+version = "2.27.1"
+backend = "aqua:o2sh/onefetch"
+
+[tools.onefetch."platforms.linux-x64"]
+checksum = "sha256:51d6d1d2f7a85bd29dfca2aa3df390616cce322970f7f3cc1840a2295454b0f5"
+url = "https://github.com/o2sh/onefetch/releases/download/2.27.1/onefetch-linux.tar.gz"
+url_api = "https://api.github.com/repos/o2sh/onefetch/releases/assets/377086358"
+
+[tools.onefetch."platforms.linux-x64-musl"]
+checksum = "sha256:51d6d1d2f7a85bd29dfca2aa3df390616cce322970f7f3cc1840a2295454b0f5"
+url = "https://github.com/o2sh/onefetch/releases/download/2.27.1/onefetch-linux.tar.gz"
+url_api = "https://api.github.com/repos/o2sh/onefetch/releases/assets/377086358"
+
+[tools.onefetch."platforms.macos-arm64"]
+checksum = "sha256:5597e2df7cf4bc56d8755c35da8071b0906878ea945147848bb1ba2b91b3ea3a"
+url = "https://github.com/o2sh/onefetch/releases/download/2.27.1/onefetch-mac.tar.gz"
+url_api = "https://api.github.com/repos/o2sh/onefetch/releases/assets/377086335"
+
+[tools.onefetch."platforms.macos-x64"]
+checksum = "sha256:5597e2df7cf4bc56d8755c35da8071b0906878ea945147848bb1ba2b91b3ea3a"
+url = "https://github.com/o2sh/onefetch/releases/download/2.27.1/onefetch-mac.tar.gz"
+url_api = "https://api.github.com/repos/o2sh/onefetch/releases/assets/377086335"
+
+[tools.onefetch."platforms.windows-x64"]
+checksum = "sha256:5f63d2e4b0e8e591706a1e7bc8af8fb5f129fb0f55b98abce05555f7669cba5d"
+url = "https://github.com/o2sh/onefetch/releases/download/2.27.1/onefetch-win.tar.gz"
+url_api = "https://api.github.com/repos/o2sh/onefetch/releases/assets/377088366"
+
 [[tools.opencode]]
 version = "1.18.16"
 backend = "aqua:anomalyco/opencode"
