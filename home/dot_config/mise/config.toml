@@ -89,6 +89,25 @@ esac
 { command -v sysctl >/dev/null 2>&1 && sysctl -a 2>/dev/null | grep -qiw avx2; } && exit 0
 find "$MISE_TOOL_INSTALL_PATH" \( -name hunkdiff-linux-x64 -o -name hunkdiff-darwin-x64 \) -prune -exec rm -rf {} +
 ''' }
+# prebuilt is an AVX2-only bun --compile binary with no baseline fallback;
+# postinstall rebuilds it with the baseline bun target on non-AVX2 x86 CPUs
+"npm:@kitlangton/ghui" = { version = "latest", postinstall = '''
+case "$(uname -m)" in x86_64 | amd64) ;; *) exit 0 ;; esac
+{ [ -r /proc/cpuinfo ] && grep -qw avx2 /proc/cpuinfo; } && exit 0
+{ command -v sysctl >/dev/null 2>&1 && sysctl -a 2>/dev/null | grep -qiw avx2; } && exit 0
+bin=$(find "$MISE_TOOL_INSTALL_PATH" -path "*ghui-linux-x64/bin/ghui" 2>/dev/null | head -1)
+[ -n "$bin" ] || exit 0
+bin=$(readlink -f "$bin")
+ver=$(basename "$MISE_TOOL_INSTALL_PATH")
+work=$(mktemp -d)
+git clone --depth 1 --branch "v$ver" https://github.com/kitlangton/ghui.git "$work" 2>/dev/null ||
+  git clone --depth 1 https://github.com/kitlangton/ghui.git "$work" || exit 1
+cd "$work" || exit 1
+bun install >/dev/null 2>&1 || exit 1
+bun build --compile --bytecode --format=esm --target=bun-linux-x64-baseline --outfile="$bin" src/standalone.ts >/dev/null 2>&1 || exit 1
+chmod 755 "$bin"
+rm -rf "$work"
+''' }
 oh-my-pi = { version = "latest", rename_exe = "omp" }
 sccache = "latest"
 witr = "latest"

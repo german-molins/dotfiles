@@ -38,6 +38,7 @@ export default defineConfig({
               { text: "Zellij", link: '/tools/zellij' },
               { text: "Git", link: '/tools/git' },
               { text: "GitHub CLI", link: '/tools/gh' },
+              { text: "ghui", link: '/tools/ghui' },
               { text: "Lazygit", link: '/tools/lazygit' },
               { text: "Jujutsu", link: '/tools/jj' },
               { text: "Jujutsu UI", link: '/tools/jjui' },

@@ -66,6 +66,7 @@ VCS:
 | [Lazygit] | `lazygit` | `git ui` | Git manager |
 | [GitHub CLI] | `gh` | | GitHub CLI |
 | [GitHub Dashboard] | `gh-dash` | `gh dash` | Pull requests and issues manager |
+| [ghui] | `ghui` | | Pull requests TUI |
 | [Jujutsu] | `jj` | | Git-compatible VCS |
 | [Jujutsu UI] | `jjui` | `jj ui` | Jujutsu manager |
 | [Lazyjj] | `lazyjj` | | Jujutsu manager |
@@ -74,6 +75,7 @@ VCS:
 [Lazygit]: https://github.com/jesseduffield/lazygit
 [GitHub CLI]: https://cli.github.com/
 [GitHub Dashboard]: https://www.gh-dash.dev
+[ghui]: https://github.com/kitlangton/ghui
 [Jujutsu]: https://docs.jj-vcs.dev
 [Jujutsu UI]: https://idursun.github.io/jjui
 [Lazyjj]: https://github.com/Cretezy/lazyjj
