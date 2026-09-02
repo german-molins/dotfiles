@@ -73,82 +73,82 @@ version = "0.10.0"
 backend = "cargo:findutils"
 
 [[tools.claude]]
-version = "2.1.227"
+version = "2.1.252"
 backend = "aqua:anthropics/claude-code"
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:e998df163821c7c2be66139f0b5411e26928b9bc18326edb95576b7bc94168b3"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246732"
+checksum = "sha256:fb9db286c4ff00d1d17e139ead18ef17ba6f0ad9ae1dd29f6f568dac23206220"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.252/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/538283200"
 
 [tools.claude."platforms.linux-arm64-musl"]
-checksum = "sha256:ff698ec9a027fefca54ddecdb2b190ff0a2df49ad216559e35dd53707aaa476f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246725"
+checksum = "sha256:0b0094ede6db35003ef0daede16e9408e610d41a72f41f7dafbe27d1a133b8b6"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.252/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/538283201"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:ee91648d1c54b978594d43ac1b2c4a83083215c6f609a437cd9cb4da3811ee55"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246774"
+checksum = "sha256:ec803faf88d1e9087c2b59e6833150d1c09dc9dda5c5b7941c50e1482e81b909"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.252/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/538283255"
 
 [tools.claude."platforms.linux-x64-musl"]
-checksum = "sha256:af5def3e1cb7ace2de3114c0003a728fb5ec92d1402aa793cb7a552bb5882474"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246721"
+checksum = "sha256:48d19a978f9271c6ca00e8ec0ef282f2d9ef0864e3eafcca723d91ac4f4f1b2c"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.252/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/538283204"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:e030ca0636f72b89e65dc918ea860960a60a7a63632e68550b9fd5b0af8dabab"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246724"
+checksum = "sha256:5ec54c876c2088052e78a04205543a33c7c232ad5b075d46f639955f963432f8"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.252/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/538283203"
 
 [tools.claude."platforms.macos-x64"]
-checksum = "sha256:7126f4f4e211f349ab00315430557dbdb1f2dab58fff9691351d9d9597ecbe65"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246722"
+checksum = "sha256:550fb44377f72e6b2eb3deb8631402c68174f563dfb3fe1c0f6482ccdd6f9f11"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.252/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/538283202"
 
 [tools.claude."platforms.windows-x64"]
-checksum = "sha256:5010518cf76386384754e16a196e72daa91fddd8fccd4c576bca07a45167260f"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.227/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/509246778"
+checksum = "sha256:51c8e2e20e7a1e594ebba6f4ab855a71797a86ca396dcf77dc32745684c49407"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.252/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/538283274"
 
 [[tools.codex]]
-version = "0.147.0"
+version = "0.152.0"
 backend = "aqua:openai/codex"
 
 [tools.codex."platforms.linux-arm64"]
-checksum = "sha256:89cbf79bd5ae6f9c58da47e8079f311c84219350c9c43c070d42f3e9b2a81401"
-url = "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/504450495"
+checksum = "sha256:af9777a8d62edeea31adfecbaa2a5b296bc57a4a0c3ed69c02e39c23744f5feb"
+url = "https://github.com/openai/codex/releases/download/rust-v0.152.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/538792584"
 
 [tools.codex."platforms.linux-arm64-musl"]
-checksum = "sha256:89cbf79bd5ae6f9c58da47e8079f311c84219350c9c43c070d42f3e9b2a81401"
-url = "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/504450495"
+checksum = "sha256:af9777a8d62edeea31adfecbaa2a5b296bc57a4a0c3ed69c02e39c23744f5feb"
+url = "https://github.com/openai/codex/releases/download/rust-v0.152.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/538792584"
 
 [tools.codex."platforms.linux-x64"]
-checksum = "sha256:bd758d53d56e41dc65e045f4589df79a038ed197a011adcb52a258e6ad64cfda"
-url = "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/504450439"
+checksum = "sha256:352c24fbdc5aefaffde9c1df991b534b6bc72a06e49708794fc685fc3556c855"
+url = "https://github.com/openai/codex/releases/download/rust-v0.152.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/538792457"
 
 [tools.codex."platforms.linux-x64-musl"]
-checksum = "sha256:bd758d53d56e41dc65e045f4589df79a038ed197a011adcb52a258e6ad64cfda"
-url = "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/504450439"
+checksum = "sha256:352c24fbdc5aefaffde9c1df991b534b6bc72a06e49708794fc685fc3556c855"
+url = "https://github.com/openai/codex/releases/download/rust-v0.152.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/538792457"
 
 [tools.codex."platforms.macos-arm64"]
-checksum = "sha256:17b2984eb22b607e3d0c25728252fc90f510e476bad39a6d9f45cdb1aa685432"
-url = "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-package-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/504450535"
+checksum = "sha256:5287a514213f8134210677cce51b23e2eaeaff1925362f18318e4268a5ab1d1b"
+url = "https://github.com/openai/codex/releases/download/rust-v0.152.0/codex-package-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/538792593"
 
 [tools.codex."platforms.macos-x64"]
-checksum = "sha256:d91e59133daf923bc45d76e3da4af8ae9ef62a0231da18488da0cd573b6e9d63"
-url = "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-package-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/504450463"
+checksum = "sha256:161d9da66a0f97a93294d006f8066e6d5fad71cc9fe00f7d4ae111daf692b308"
+url = "https://github.com/openai/codex/releases/download/rust-v0.152.0/codex-package-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/538792508"
 
 [tools.codex."platforms.windows-x64"]
-checksum = "sha256:c156c8feb8cb20197bf74d2c6daffed1fec0a8c21a03bc2ca90d7ff81927b0c5"
-url = "https://github.com/openai/codex/releases/download/rust-v0.147.0/codex-package-x86_64-pc-windows-msvc.tar.gz"
-url_api = "https://api.github.com/repos/openai/codex/releases/assets/504450421"
+checksum = "sha256:29aaa55bcc3573c9f5d6cc59c16a461c514179161af00c43c5b49857e3d31962"
+url = "https://github.com/openai/codex/releases/download/rust-v0.152.0/codex-package-x86_64-pc-windows-msvc.tar.gz"
+url_api = "https://api.github.com/repos/openai/codex/releases/assets/538792472"
 
 [[tools.colima]]
 version = "0.10.3"
@@ -262,86 +262,86 @@ url = "https://github.com/sharkdp/hyperfine/releases/download/v1.20.0/hyperfine-
 url_api = "https://api.github.com/repos/sharkdp/hyperfine/releases/assets/317832313"
 
 [[tools."npm:freebuff"]]
-version = "0.0.142"
+version = "0.0.163"
 backend = "npm:freebuff"
 
 [[tools.numbat]]
-version = "1.23.0"
+version = "1.24.0"
 backend = "aqua:sharkdp/numbat"
 
 [tools.numbat."platforms.linux-arm64"]
-checksum = "sha256:693e03ed8cdc8dbd7dc1d916504ea1fb9bcf253caff85058bdc01e8b2e099eaa"
-url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-arm-unknown-linux-musleabihf.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726163"
+checksum = "sha256:8839d44db5b1b1cf805f8ff2a4335af6cdd9e9df96eebcf2ef11571e5fecab31"
+url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.0-arm-unknown-linux-musleabihf.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/526573508"
 
 [tools.numbat."platforms.linux-arm64-musl"]
-checksum = "sha256:693e03ed8cdc8dbd7dc1d916504ea1fb9bcf253caff85058bdc01e8b2e099eaa"
-url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-arm-unknown-linux-musleabihf.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726163"
+checksum = "sha256:8839d44db5b1b1cf805f8ff2a4335af6cdd9e9df96eebcf2ef11571e5fecab31"
+url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.0-arm-unknown-linux-musleabihf.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/526573508"
 
 [tools.numbat."platforms.linux-x64"]
-checksum = "sha256:09efa9dfbff4d983fb0484e2bfc126df9d0cbedede627d22ac61141457b5daa1"
-url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726109"
+checksum = "sha256:ed45b8bce7b1b92d68ef8685ddeb17d5378749f34148d8ecc1384cdfeebc8620"
+url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.0-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/526573044"
 
 [tools.numbat."platforms.linux-x64-musl"]
-checksum = "sha256:09efa9dfbff4d983fb0484e2bfc126df9d0cbedede627d22ac61141457b5daa1"
-url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726109"
+checksum = "sha256:2025bc4196774336b774c1f7a9c6f45a003b9b2cbac62e577809ddd3a431c9ca"
+url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/526573070"
 
 [tools.numbat."platforms.macos-arm64"]
-checksum = "sha256:58dabb8ca9476009d03f2a3d3993768fa2946657c6423eed8ed31d31cc6e35cf"
-url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352725593"
+checksum = "sha256:947e0d6e2dbff56a3d6c85282787b62013502a6d35d317d919e09f620433d177"
+url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/526572313"
 
 [tools.numbat."platforms.macos-x64"]
-checksum = "sha256:e50d7fc908d56f97b9de1e509039cf9d9ae31a5d4280dd2b58f201c17f194de5"
-url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352725761"
+checksum = "sha256:5894c60d674732a4fccfdc248539f101c8e2944805505f3f7591ed588cd84ef1"
+url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.0-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/526573130"
 
 [tools.numbat."platforms.windows-x64"]
-checksum = "sha256:2945a728dd748f5bfb18685e89c94e267d96187f440d04d000e326aad88ede21"
-url = "https://github.com/sharkdp/numbat/releases/download/v1.23.0/numbat-v1.23.0-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/352726071"
+checksum = "sha256:450027111a5df0dd3ee4ce97a557c4847fc76b05851fccb9e26e875433084049"
+url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/526574895"
 
 [[tools.pi]]
-version = "0.84.1"
+version = "0.84.4"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:ab95c058a4651b5ff5d8c878e524edfb776263c7a444f325505f247c056eecfc"
-url = "https://github.com/earendil-works/pi/releases/download/v0.84.1/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/504727596"
+checksum = "sha256:135580f6b942151646e67b8b866d987d28ce3cff5a497030775ddd29659f943d"
+url = "https://github.com/earendil-works/pi/releases/download/v0.84.4/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/534389947"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:ab95c058a4651b5ff5d8c878e524edfb776263c7a444f325505f247c056eecfc"
-url = "https://github.com/earendil-works/pi/releases/download/v0.84.1/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/504727596"
+checksum = "sha256:135580f6b942151646e67b8b866d987d28ce3cff5a497030775ddd29659f943d"
+url = "https://github.com/earendil-works/pi/releases/download/v0.84.4/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/534389947"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:5634d7ebd18274b63af3371e942f342d74bea012389575c1d1ff15ce6ca80c2f"
-url = "https://github.com/earendil-works/pi/releases/download/v0.84.1/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/504727598"
+checksum = "sha256:c2f3c3e6a1850bd87654cc3ca8811013272397c3d042a4e2a64c43ee1b423972"
+url = "https://github.com/earendil-works/pi/releases/download/v0.84.4/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/534389946"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:5634d7ebd18274b63af3371e942f342d74bea012389575c1d1ff15ce6ca80c2f"
-url = "https://github.com/earendil-works/pi/releases/download/v0.84.1/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/504727598"
+checksum = "sha256:c2f3c3e6a1850bd87654cc3ca8811013272397c3d042a4e2a64c43ee1b423972"
+url = "https://github.com/earendil-works/pi/releases/download/v0.84.4/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/534389946"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:683c84261f40b870b4a7ccf181a48ad6ecd71853b0112d1bb617539530c6121d"
-url = "https://github.com/earendil-works/pi/releases/download/v0.84.1/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/504727600"
+checksum = "sha256:c68e3ac4d05b4e282aaab2e6c76f161d3e9e68f19a22e38913cbfaadb6c800f0"
+url = "https://github.com/earendil-works/pi/releases/download/v0.84.4/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/534389952"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:f9060962b9cca5438d7fb97b60adae9c9302503d39b68d8aea8b891e2eb3e786"
-url = "https://github.com/earendil-works/pi/releases/download/v0.84.1/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/504727599"
+checksum = "sha256:7a042d6413065421387001a4986190a1a03186c95a695f4dee0bdc76e60de8f7"
+url = "https://github.com/earendil-works/pi/releases/download/v0.84.4/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/534389948"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:20dd3a07cfe0bdc6919dfbc479c694798ec5ea88a9c60f6e12678cecae1e5dfa"
-url = "https://github.com/earendil-works/pi/releases/download/v0.84.1/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/504727619"
+checksum = "sha256:03b2318774f18721e959d9f8f3340a9f942e7aa516fb7030d3007a12a40a4a97"
+url = "https://github.com/earendil-works/pi/releases/download/v0.84.4/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/534389959"
 
 [[tools.tssh]]
 version = "0.1.26"
