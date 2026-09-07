@@ -80,7 +80,7 @@ rust-analyzer = "latest"
 ] }
 # allow_builds runs bundled bun's postinstall; postinstall drops the AVX2-only
 # prebuilt on non-AVX2 x86 CPUs so hunk falls back to its baseline bun runtime
-"npm:hunkdiff" = { version = "latest", allow_builds = ["bun"], postinstall = '''
+"npm:hunkdiff" = { version = "latest", allow_builds = ["bun"], trust_policy_excludes = ["@pierre/theme@2.0.0"], postinstall = '''
 case "$(uname -m)" in
     x86_64 | amd64) ;;
     *) exit 0 ;;
@@ -144,8 +144,6 @@ RUSTC_WRAPPER = "sccache"
 SCCACHE_BASEDIRS = "$HOME"
 JULIA_PROJECT = "@."
 TLRC_CONFIG = "$HOME/.config/tlrc/config.toml"
-# @pierre/theme@2.0.0: hunkdiff dep lost provenance attestation (no-downgrade)
-AUBE_TRUST_POLICY_EXCLUDE = "skills,@pierre/theme@2.0.0"
 
 [shell_alias]
 c = "clear"
