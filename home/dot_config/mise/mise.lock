@@ -4982,6 +4982,40 @@ url = "https://github.com/twpayne/chezmoi/releases/download/v2.72.1/chezmoi_2.72
 url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/536653691"
 provenance = "cosign"
 
+[[tools.clipboard]]
+version = "0.10.0"
+backend = "github:Slackadays/Clipboard"
+
+[tools.clipboard."platforms.linux-arm64"]
+url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-linux-arm64.zip"
+url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996173"
+
+[tools.clipboard."platforms.linux-arm64-musl"]
+url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-linux-arm64.zip"
+url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996173"
+
+[tools.clipboard."platforms.linux-x64"]
+checksum = "blake3:7dabcbe109f9ae7132d45381256760cc9b95918e7d8f6fd6db340f2cf0ded88b"
+url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-linux-amd64.zip"
+url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996182"
+
+[tools.clipboard."platforms.linux-x64-musl"]
+url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-linux-amd64.zip"
+url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996182"
+
+[tools.clipboard."platforms.macos-arm64"]
+url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-macos-arm64.zip"
+url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996166"
+
+[tools.clipboard."platforms.macos-x64"]
+url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-macos-amd64.zip"
+url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996167"
+
+[tools.clipboard."platforms.windows-x64"]
+checksum = "sha256:ec40414e692b4ee69a98f7ee89d5ce5ca4bbbf44211823726531da82815fa2ab"
+url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-windows-amd64.zip"
+url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/262701655"
+
 [[tools.cloc]]
 version = "2.10"
 backend = "github:AlDanial/cloc"
