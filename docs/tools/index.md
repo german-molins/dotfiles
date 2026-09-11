@@ -118,12 +118,14 @@ common cases:
 | [bat] | `bat` | `cat` | Concatenate and paginate files |
 | [fd] | `fd` | `find` | Find entries in filesystem |
 | [ripgreg] | `rg` | `grep` | Search for pattern in files |
-| [sd] | `sd` | `sed` | Find and replace patterns in files|
+| [sd] | `sd` | `sed` | Find and replace patterns in files |
+| [clipboard] | `cb` | `xclip`, `xsel` | Clipboard |
 
 [bat]: https://github.com/sharkdp/bat
 [fd]: https://github.com/sharkdp/fd
 [ripgreg]: https://github.com/BurntSushi/ripgrep
 [sd]: https://github.com/chmln/sd
+[clipboard]: https://getclipboard.app
 
 ### Other Tools
 
