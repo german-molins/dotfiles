@@ -324,7 +324,7 @@ url_api = "https://api.github.com/repos/mikefarah/yq/releases/assets/522028007"
 provenance = "cosign"
 
 [tools.yq."platforms.linux-x64"]
-checksum = "sha512:508f4ee34c6d093d136ff3c1b36db4105e686c3d68d435c064448ba16e2616d528efafb2cb0a1890b7724890373a226a38b7da27e6796396ee759bed39a8c671"
+checksum = "sha256:c5f056448f973ae7d39b5401949648a78f2dc1947d6a8eb65be60d5c504b9385"
 url = "https://github.com/mikefarah/yq/releases/download/v4.53.6/yq_linux_amd64"
 url_api = "https://api.github.com/repos/mikefarah/yq/releases/assets/522028022"
 provenance = "cosign"
