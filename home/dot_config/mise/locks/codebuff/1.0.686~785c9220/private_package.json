@@ -1,0 +1,12 @@
+{
+  "name": "mise-npm-install",
+  "private": true,
+  "aube": {
+    "allowBuilds": {
+      "codebuff": true
+    }
+  },
+  "dependencies": {
+    "codebuff": "1.0.686"
+  }
+}
