@@ -146,6 +146,9 @@ Because the prefix is shared, `prune` removes *any* undeclared formula in it,
 so every formula to keep must be declared (`brew-cask` prune is conservative —
 only Mise-owned cask artifacts).
 
+Upgrading installed bootstrap packages (analogous to `brew upgrade`) is `mise
+bootstrap packages upgrade`, wired into the `mise:update` task.
+
 The mise install script
 (`run_onchange_after_10-install-mise-packages.sh.tmpl`) applies them, so
 `chezmoi apply` installs them.
