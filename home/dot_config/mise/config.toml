@@ -276,7 +276,6 @@ run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
 "brew:rsync" = "latest"
 "brew:wget" = "latest"
 "brew:taskopen" = { os = "macos" }
-# Casks (macOS only; skipped on Linux by the os selector).
 "brew-cask:firefox" = { os = "macos" }
 "brew-cask:devpod" = { os = "macos" }              # Then install the CLI with the GUI button.
 "brew-cask:kitty" = { os = "macos" }
