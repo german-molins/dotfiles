@@ -93,6 +93,26 @@ Lock dependencies to specific versions:
 mise lock
 ```
 
+### Troubleshooting: mise.lock drift on apply
+
+`chezmoi apply` may abort with `mise.lock has changed since chezmoi last
+wrote it` (and, when unattended, `could not open a new TTY`). Cause: the
+install script runs `mise install`, which rewrites `mise.lock` to the
+versions actually installed on disk. When a `latest`-pinned tool has been
+upgraded locally, the installed version diverges from the committed lock, so
+the source lockfile changes underneath chezmoi mid-apply.
+
+Reconcile *forward* (do not pin back to the stale version):
+
+```sh
+mise upgrade            # bring installed tools up to newest latest
+chezmoi re-add          # rewrite source mise.lock to match disk
+```
+
+Then commit the updated `mise.lock`. `mise run mise:update` does the upgrade
+step as part of the normal update flow, so running it before committing keeps
+the lock from drifting again.
+
 ### Mise Backends
 
 When a tool is not in the [registry](https://mise.jdx.dev/registry.html), an
