@@ -264,6 +264,5 @@ Linux (x64) unless its own section says otherwise.
 
 | Issue | Platform | Notes |
 |-------|----------|-------|
-| `mise WARN Error listing bin paths for aqua:earendil-works/pi@<ver>: Not a directory (os error 20)` printed on `mise install` / `chezmoi apply` | macOS (arm64) | Cosmetic. Stale versioned install dir under the aqua backend; apply still exits 0 and `pi` works. Clears on `mise prune` / `mise run mise:clean`. |
 | `brew-cask` for non-font casks | Linux | Unsupported by design — only font casks install on Linux; the darwin casks carry an `os = "macos"` selector and are skipped. |
 | `mise bootstrap packages prune` for `brew-cask` | macOS | Conservative: removes only Mise-owned cask artifacts, not casks installed by the Homebrew CLI. |
