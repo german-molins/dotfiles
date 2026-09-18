@@ -28,14 +28,22 @@ Package Managers by operating system:
 Their priority order is:
 
 1. `mise`: Primary package and project environment manager (tasks/scripts and
-   environment variables). Packages installed from the Mise registry or using
-backends `aqua`, `github`, `gitlab`, `npm`.
-2. `mise-nix` (aliased `devbox`) Mise backend plugin: Nixhub, the Devbox's
+   environment variables). Tools are installed from the [Mise
+registry](https://mise.jdx.dev/registry.html) or an explicit [Mise
+backend](https://mise.jdx.dev/dev-tools/backends/) (`aqua`, `github`,
+`gitlab`, `cargo`, `npm`, `pypi`, `conda`, `packslip`, …).
+2. `mise` bootstrap packages: shared system packages declared under
+   `[bootstrap.packages]` and installed with any of Mise's [bootstrap package
+managers](https://mise.jdx.dev/bootstrap/packages/) (`brew`, `brew-cask`,
+`apt`, `nix`, …). Used here for Homebrew formulae.
+3. `mise-nix` (aliased `devbox`) Mise backend plugin: Nixhub, the Devbox's
    registry, is way larger than any other, so it's kept as a fallback option
 for packages not available in Mise, particularly for macOS (darwin) where some
 packages like `eza` are not supported by the Mise backends.
-3. `brew` and `upt`: Used to install system dependencies. Bootstrapping them
-   requires sudo permissions.
+4. `brew` and `upt`: Used to install system dependencies. Bootstrapping them
+   requires sudo permissions. `brew` casks and darwin-only formulae are still
+installed by a custom `brew bundle` mechanism (see below) pending migration to
+`mise` bootstrap packages.
 
 ## Mise
 
@@ -49,7 +57,7 @@ For managing packages globally, e.g.
 ```sh
 # Installs package globally
 mise use -g fd
-# Add ~/.local/config/config.{toml,lock}
+# Updates ~/.config/mise/config.toml (and mise.lock)
 chezmoi re-add
 ```
 
@@ -84,6 +92,50 @@ Lock dependencies to specific versions:
 ```sh
 mise lock
 ```
+
+### Mise Backends
+
+When a tool is not in the [registry](https://mise.jdx.dev/registry.html), an
+explicit [backend](https://mise.jdx.dev/dev-tools/backends/) is used as the
+installation source, spelled `backend:tool` in `mise use`/`config.toml`.
+Backends in use here:
+
+- `aqua` — curated binary recipes (no aqua CLI required)
+- `github` / `gitlab` — release assets
+- `cargo` — Rust crates
+- `npm` — npm packages
+- `pypi` — Python packages
+- `conda` — conda-forge binaries
+- `packslip` — signed publisher manifests
+
+### Mise Bootstrap Packages
+
+Shared, machine-wide system packages are declared under `[bootstrap.packages]`
+in the global config and installed with a [bootstrap package
+manager](https://mise.jdx.dev/bootstrap/packages/), spelled `manager:package`.
+Homebrew formulae use the `brew:` manager, which Mise installs directly into
+the canonical Homebrew prefix (`/home/linuxbrew/.linuxbrew` on Linux) — pouring
+bottles itself, **without requiring the Homebrew CLI**. Mise and Homebrew share
+that one prefix.
+
+```sh
+# Declare + install a formula globally
+mise bootstrap packages use -g brew:rsync
+# Install everything declared (idempotent; installs only what is missing)
+mise bootstrap packages apply --manager brew --yes
+# Status
+mise bootstrap packages status
+```
+
+`apply` never removes packages. Declarative removal (uninstall what is no
+longer declared) is `mise bootstrap packages prune`, wired into the `mise:clean`
+task rather than the `chezmoi apply` path so applying is never destructive.
+Because the prefix is shared, `prune` removes *any* undeclared formula in it,
+so every formula to keep must be declared.
+
+The mise install script
+(`run_onchange_after_10-install-mise-packages.sh.tmpl`) applies them, so
+`chezmoi apply` installs them.
 
 ### Project Environment
 
@@ -164,3 +216,8 @@ Current gated lists:
   (gated in `home/.chezmoiscripts/run_onchange_after_05-install-homebrew-packages.sh.tmpl`).
 - `packages.upt_linux` — Linux-only (gated in
   `home/.chezmoiscripts/run_onchange_after_20-install-upt-packages.sh.tmpl`).
+
+Homebrew formulae common to all platforms are no longer a gated list here; they
+moved to `[bootstrap.packages]` (see [Mise Bootstrap
+Packages](#mise-bootstrap-packages)). Only darwin casks and formulae remain on
+this custom `brew bundle` mechanism, pending their migration too.
