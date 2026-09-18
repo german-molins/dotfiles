@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       codeburn:
-        specifier: 0.9.23
-        version: 0.9.23
+        specifier: 0.9.24
+        version: 0.9.24
 
 packages:
 
@@ -167,8 +167,8 @@ packages:
     resolution: {integrity: sha512-xxodCmBen3iy2i0WtAK8FlFNrRzjUqjRsMfho58xT/wvZU1YTM3fCnRjcy1gJPMepaRlgm/0e6w8SpWHpn3/cA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  codeburn@0.9.23:
-    resolution: {integrity: sha512-0/u52Lg8hjGy18vDEZrQgPT91EyOsVa8LkLCLOkYiM+YbuWITgon2Qsrt2i9A4JEuw2gyz0YLD6w8NwNdPBaJA==}
+  codeburn@0.9.24:
+    resolution: {integrity: sha512-jK5T46Mh1TSEns6mABZFdYh96oZH6QukZ+ueYYzUk8YuMF8dzLNDeHnIAlE3AlaI0QiSq0E9Dl8IPW2H+EkU2Q==}
     engines: {node: '>=22.13.0'}
     hasBin: true
 
@@ -305,8 +305,8 @@ packages:
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
-  get-east-asian-width@1.6.0:
-    resolution: {integrity: sha512-QRbvDIbx6YklUe6RxeTeleMR0yv3cYH6PsPZHcnVn7xv7zO1BHN8r0XETu8n6Ye3Q+ahtSarc3WgtNWmehIBfA==}
+  get-east-asian-width@1.7.0:
+    resolution: {integrity: sha512-XjH1AECxf0giL2V1aU8vKyRR2ppRUb5c0EvT7zuJTokQ74bNo52zOtghqdWIqrhUD79fo3x0WfKZdOqxF6LG1Q==}
     engines: {node: '>=18'}
 
   get-intrinsic@1.3.0:
@@ -883,7 +883,7 @@ snapshots:
     dependencies:
       convert-to-spaces: 2.0.1
 
-  codeburn@0.9.23:
+  codeburn@0.9.24:
     dependencies:
       '@modelcontextprotocol/sdk': 1.30.0(zod@3.25.76)
       bonjour-service: 1.4.4
@@ -1034,7 +1034,7 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  get-east-asian-width@1.6.0: {}
+  get-east-asian-width@1.7.0: {}
 
   get-intrinsic@1.3.0:
     dependencies:
@@ -1118,7 +1118,7 @@ snapshots:
 
   is-fullwidth-code-point@5.1.0:
     dependencies:
-      get-east-asian-width: 1.6.0
+      get-east-asian-width: 1.7.0
 
   is-in-ci@2.0.0: {}
 
@@ -1328,7 +1328,7 @@ snapshots:
 
   string-width@8.2.2:
     dependencies:
-      get-east-asian-width: 1.6.0
+      get-east-asian-width: 1.7.0
       strip-ansi: 7.2.0
 
   strip-ansi@7.2.0:

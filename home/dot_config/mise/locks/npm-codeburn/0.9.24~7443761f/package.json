@@ -2,6 +2,6 @@
   "name": "mise-npm-install",
   "private": true,
   "dependencies": {
-    "codeburn": "0.9.23"
+    "codeburn": "0.9.24"
   }
 }

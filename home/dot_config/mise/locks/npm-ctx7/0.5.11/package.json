@@ -2,6 +2,6 @@
   "name": "mise-npm-install",
   "private": true,
   "dependencies": {
-    "skills": "1.5.23"
+    "ctx7": "0.5.11"
   }
 }

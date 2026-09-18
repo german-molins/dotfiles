@@ -3,10 +3,10 @@
   "private": true,
   "aube": {
     "allowBuilds": {
-      "bun": true
+      "codebuff": true
     }
   },
   "dependencies": {
-    "hunkdiff": "0.21.1"
+    "codebuff": "1.0.688"
   }
 }

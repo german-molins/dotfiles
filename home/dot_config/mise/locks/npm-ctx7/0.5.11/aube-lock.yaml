@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       ctx7:
-        specifier: 0.5.9
-        version: 0.5.9
+        specifier: 0.5.11
+        version: 0.5.11
 
 packages:
 
@@ -215,8 +215,8 @@ packages:
     resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
     engines: {node: '>=22.12.0'}
 
-  ctx7@0.5.9:
-    resolution: {integrity: sha512-+Am0W9/b305+TVXMzH0ByD3kB6tWzoTf8lgSHEjvrdE9dUDgEI1a9fidn6WYO8CT1NjNEJSWSmRRUEfw/WIZFg==}
+  ctx7@0.5.11:
+    resolution: {integrity: sha512-Zbwzh50YgXclro88UQVyEZJLzINyCCOxqSeCINXMl06kTAl4wI4VmMTboDbPoxzWkPiZ31eEnu80oc/E4ur6Ag==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -252,8 +252,8 @@ packages:
     engines: {node: '>= 17.0.0'}
     hasBin: true
 
-  get-east-asian-width@1.6.0:
-    resolution: {integrity: sha512-QRbvDIbx6YklUe6RxeTeleMR0yv3cYH6PsPZHcnVn7xv7zO1BHN8r0XETu8n6Ye3Q+ahtSarc3WgtNWmehIBfA==}
+  get-east-asian-width@1.7.0:
+    resolution: {integrity: sha512-XjH1AECxf0giL2V1aU8vKyRR2ppRUb5c0EvT7zuJTokQ74bNo52zOtghqdWIqrhUD79fo3x0WfKZdOqxF6LG1Q==}
     engines: {node: '>=18'}
 
   iconv-lite@0.7.3:
@@ -546,7 +546,7 @@ snapshots:
 
   commander@15.0.0: {}
 
-  ctx7@0.5.9:
+  ctx7@0.5.11:
     dependencies:
       '@inquirer/core': 11.2.1
       '@inquirer/prompts': 8.7.2
@@ -586,7 +586,7 @@ snapshots:
     dependencies:
       commander: 14.0.3
 
-  get-east-asian-width@1.6.0: {}
+  get-east-asian-width@1.7.0: {}
 
   iconv-lite@0.7.3:
     dependencies:
@@ -663,12 +663,12 @@ snapshots:
   string-width@7.2.0:
     dependencies:
       emoji-regex: 10.6.0
-      get-east-asian-width: 1.6.0
+      get-east-asian-width: 1.7.0
       strip-ansi: 7.2.0
 
   string-width@8.2.2:
     dependencies:
-      get-east-asian-width: 1.6.0
+      get-east-asian-width: 1.7.0
       strip-ansi: 7.2.0
 
   strip-ansi@6.0.1:

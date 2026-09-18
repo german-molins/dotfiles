@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      codebuff:
-        specifier: 1.0.686
-        version: 1.0.686
+      skills:
+        specifier: 1.6.0
+        version: 1.6.0
 
 packages:
 
@@ -22,13 +22,6 @@ packages:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
     engines: {node: '>=18'}
 
-  codebuff@1.0.686:
-    resolution: {integrity: sha512-oEJUT/bz+DnxQlgVX+MVfSOl3uVh/Cem+7K7zs4ePH1J4macsvW4VL9ghJBKI7gmObbYiv2uli1pcMyHbEWMMA==}
-    engines: {node: '>=16'}
-    cpu: [x64, arm64]
-    os: [darwin, linux, win32]
-    hasBin: true
-
   minipass@7.1.3:
     resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
     engines: {node: '>=16 || 14 >=14.17'}
@@ -36,6 +29,11 @@ packages:
   minizlib@3.1.0:
     resolution: {integrity: sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw==}
     engines: {node: '>= 18'}
+
+  skills@1.6.0:
+    resolution: {integrity: sha512-E2tN8PM2ReYtt8xxXFLTIm/4OWjLeuhudgAejN0N/g5Yr6BYdv+YP2PK5Vg9L3Oz3aRgu67ovWzAO3Y6Z3JJWQ==}
+    engines: {node: '>=22.20.0'}
+    hasBin: true
 
   tar@7.5.22:
     resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
@@ -45,6 +43,11 @@ packages:
     resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
     engines: {node: '>=18'}
 
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
 snapshots:
 
   '@isaacs/fs-minipass@4.0.1':
@@ -53,15 +56,16 @@ snapshots:
 
   chownr@3.0.0: {}
 
-  codebuff@1.0.686:
-    dependencies:
-      tar: 7.5.22
-
   minipass@7.1.3: {}
 
   minizlib@3.1.0:
     dependencies:
       minipass: 7.1.3
+
+  skills@1.6.0:
+    dependencies:
+      tar: 7.5.22
+      yaml: 2.9.1
 
   tar@7.5.22:
     dependencies:
@@ -72,3 +76,5 @@ snapshots:
       yallist: 5.0.0
 
   yallist@5.0.0: {}
+
+  yaml@2.9.1: {}
