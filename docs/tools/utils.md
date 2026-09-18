@@ -2,8 +2,8 @@
 
 ## Poppler Utils
 
-Exacutables provided by package `poppler-utils`, a set of CLI tools using
-[Poppler](https://poppler.freedesktop.org/):
+Executables provided by the mise `poppler` package (`conda` backend), a set
+of CLI tools using [Poppler](https://poppler.freedesktop.org/):
 
 - `pdfattach`
 - `pdfdetach`
