@@ -3,6 +3,12 @@
 LLM-powered coding and shell assistants that use tools to help with development
 tasks.
 
+> [!NOTE]
+> [Freebuff](https://freebuff.com) is listed among the agent harnesses but is
+> currently uninstallable: its aube package's stale content hash is rejected by
+> the registry at every published version. Parked pending an upstream fix or an
+> alternative install path.
+
 ## Context Files
 
 Agents use standardized context file paths for providing additional context and

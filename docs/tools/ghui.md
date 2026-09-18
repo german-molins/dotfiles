@@ -3,6 +3,12 @@
 Terminal UI for GitHub pull requests. Installed via the npm backend as
 `npm:@kitlangton/ghui`.
 
+> [!NOTE]
+> Currently removed from the active tool set. The non-AVX2 `postinstall`
+> rebuild below works when run by hand but fails reproducibly under mise: the
+> installed version string carries a `~aube~<hash>` suffix that breaks the
+> `git clone --branch v$ver` the hook relies on. Parked pending a robust fix.
+
 ## Non-AVX2 build
 
 ghui ships as a [Bun](https://bun.sh) standalone binary compiled with the
