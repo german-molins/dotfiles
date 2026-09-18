@@ -11235,6 +11235,46 @@ checksum = "sha256:8c06b27ddb51939570066682e4fcd55d2453cc6b6c6ca226cb617371f6a51
 url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Darwin_x86_64.tar.gz"
 url_api = "https://api.github.com/repos/Adembc/lazyssh/releases/assets/302058549"
 
+[[tools.mr-boxington]]
+version = "1.13.0"
+backend = "packslip:github.com/jdx/mr-boxington"
+specifiers = ["latest"]
+
+[tools.mr-boxington."platforms.linux-arm64"]
+checksum = "sha256:6c4bee161029996b55d9f99fc7136729e6e7c8834ff0c79060c30945c7f8e472"
+url = "https://github.com/jdx/mr-boxington/releases/download/v1.13.0/mbx-aarch64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+
+[tools.mr-boxington."platforms.linux-arm64-musl"]
+checksum = "sha256:5dbb951a995a5e1c796a283f047871ad747efa4220ff82138adb3e27561044d9"
+url = "https://github.com/jdx/mr-boxington/releases/download/v1.13.0/mbx-aarch64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+
+[tools.mr-boxington."platforms.linux-x64"]
+checksum = "sha256:51469ae93c9b6a01b2458188d798f9a2103e619145396bfe348834b2ae6ee672"
+url = "https://github.com/jdx/mr-boxington/releases/download/v1.13.0/mbx-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+
+[tools.mr-boxington."platforms.linux-x64-baseline"]
+checksum = "sha256:51469ae93c9b6a01b2458188d798f9a2103e619145396bfe348834b2ae6ee672"
+url = "https://github.com/jdx/mr-boxington/releases/download/v1.13.0/mbx-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+
+[tools.mr-boxington."platforms.linux-x64-musl"]
+checksum = "sha256:e35165b4acf19e953f61dbd5f3df5e7d111d1920a4b2da6177f79a9437e24b8a"
+url = "https://github.com/jdx/mr-boxington/releases/download/v1.13.0/mbx-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+
+[tools.mr-boxington."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:e35165b4acf19e953f61dbd5f3df5e7d111d1920a4b2da6177f79a9437e24b8a"
+url = "https://github.com/jdx/mr-boxington/releases/download/v1.13.0/mbx-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+
+[tools.mr-boxington."platforms.macos-arm64"]
+checksum = "sha256:690fe9a52398eb816c416c7573c9f847cdfcab5aacf03bc60f6c00f1ef596d2f"
+url = "https://github.com/jdx/mr-boxington/releases/download/v1.13.0/mbx-aarch64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+
 [[tools.neovim]]
 version = "0.12.5"
 backend = "vfox:mise-plugins/vfox-neovim"
@@ -11394,6 +11434,7 @@ trust_policy_excludes = '["@pierre/theme@2.0.0"]'
 
 [[tools."npm:skills"]]
 version = "1.7.0"
+aube = { path = "locks/npm-skills/1.7.0", digest = "sha256:5e1165c56e5de749970266d1a30e7fc0c22a36480eab6c505c7d6748076654bc" }
 backend = "npm:skills"
 specifiers = ["latest"]
 
@@ -12636,56 +12677,6 @@ url_api = "https://api.github.com/repos/rust-lang/rust-analyzer/releases/assets/
 checksum = "sha256:58d827adc7bde3b8986ff52795484f462564a2beed3ba4f4b2cbc3cfd58ae05e"
 url = "https://github.com/rust-lang/rust-analyzer/releases/download/2026-09-14/rust-analyzer-x86_64-apple-darwin.gz"
 url_api = "https://api.github.com/repos/rust-lang/rust-analyzer/releases/assets/562709803"
-
-[[tools.sccache]]
-version = "0.17.0"
-backend = "aqua:mozilla/sccache"
-specifiers = ["latest"]
-
-[tools.sccache."platforms.linux-arm64"]
-checksum = "sha256:821a86343191aa1cbab74bd42f9e93c9a63bf85e4742945f40d3ae84193c1c77"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493678924"
-
-[tools.sccache."platforms.linux-arm64-musl"]
-checksum = "sha256:821a86343191aa1cbab74bd42f9e93c9a63bf85e4742945f40d3ae84193c1c77"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493678924"
-
-[tools.sccache."platforms.linux-x64"]
-checksum = "sha256:67c4a96dd237c1f518f6b36083f270f9976d516f1e57fce891755ea782e50006"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493679099"
-
-[tools.sccache."platforms.linux-x64-baseline"]
-checksum = "sha256:67c4a96dd237c1f518f6b36083f270f9976d516f1e57fce891755ea782e50006"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493679099"
-
-[tools.sccache."platforms.linux-x64-musl"]
-checksum = "sha256:67c4a96dd237c1f518f6b36083f270f9976d516f1e57fce891755ea782e50006"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493679099"
-
-[tools.sccache."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:67c4a96dd237c1f518f6b36083f270f9976d516f1e57fce891755ea782e50006"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493679099"
-
-[tools.sccache."platforms.macos-arm64"]
-checksum = "sha256:0c560bfba31aef5bdfb4fb3d2677f6e61d71c5c00952f2a83344f47aa31f00f1"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493678886"
-
-[tools.sccache."platforms.macos-x64"]
-checksum = "sha256:c2144cafbfe3d22e34ae637f9974ce53613543ac19477fdb287df22ea3668261"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493679070"
-
-[tools.sccache."platforms.macos-x64-baseline"]
-checksum = "sha256:c2144cafbfe3d22e34ae637f9974ce53613543ac19477fdb287df22ea3668261"
-url = "https://github.com/mozilla/sccache/releases/download/v0.17.0/sccache-v0.17.0-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/mozilla/sccache/releases/assets/493679070"
 
 [[tools.sd]]
 version = "1.1.0"

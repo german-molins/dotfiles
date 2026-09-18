@@ -24,6 +24,7 @@ export default defineConfig({
           { text: 'Chezmoi', link: '/chezmoi' },
           { text: "Home Directory", link: '/home' },
           { text: 'Bash', link: '/bash' },
+          { text: 'Rust', link: '/rust_workflow' },
           { text: 'Agents', link: '/agents' },
           {
             text: 'Tools',

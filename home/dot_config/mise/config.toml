@@ -21,6 +21,7 @@ node = "latest"
 "pypi:httpie" = "latest"
 ripgrep = "latest"
 rust = "latest"
+mr-boxington = "latest"
 tree-sitter = "latest"
 "github:dalance/procs" = "latest"
 "github:github/gh-stack" = { version = "latest", bin = "gh-stack" }
@@ -86,7 +87,6 @@ esac
 find "$MISE_TOOL_INSTALL_PATH" \( -name hunkdiff-linux-x64 -o -name hunkdiff-darwin-x64 \) -prune -exec rm -rf {} +
 ''' }
 oh-my-pi = { version = "latest", rename_exe = "omp" }
-sccache = "latest"
 witr = "latest"
 nono = "latest"
 herdr = "latest"
@@ -119,6 +119,10 @@ env_shell_expand = true
 [settings.cargo]
 binstall = true
 
+[wrappers.cargo]
+command = "mbx"
+env = { MBX_CARGO_SHIM_MODE = "1" }
+
 [env]
 _.file = ["~/.dotfiles.env", "~/.env", "~/.config/user-dirs.dirs"]
 _.path = ["~/bin", "~/.local/bin"]
@@ -131,8 +135,6 @@ PAGER = "bat --plain"
 BROWSER = "firefox"
 
 FNOX_AGE_KEY_FILE = "~/.config/fnox/age.txt"
-RUSTC_WRAPPER = "sccache"
-SCCACHE_BASEDIRS = "$HOME"
 JULIA_PROJECT = "@."
 TLRC_CONFIG = "$HOME/.config/tlrc/config.toml"
 
