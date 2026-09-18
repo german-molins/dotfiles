@@ -255,3 +255,15 @@ Homebrew formulae and casks are no longer gated lists here; they moved to
 `[bootstrap.packages]` (see [Mise Bootstrap Packages](#mise-bootstrap-packages)),
 with an `os = "macos"` selector on the darwin-only casks and formulae in place of
 the retired `brew bundle` mechanism.
+
+## Known Limitations and Issues
+
+Package-manager behaviours confirmed on the platforms noted. A tool or flow
+**not** listed here is validated (installs and runs) on both macOS (arm64) and
+Linux (x64) unless its own section says otherwise.
+
+| Issue | Platform | Notes |
+|-------|----------|-------|
+| `mise WARN Error listing bin paths for aqua:earendil-works/pi@<ver>: Not a directory (os error 20)` printed on `mise install` / `chezmoi apply` | macOS (arm64) | Cosmetic. Stale versioned install dir under the aqua backend; apply still exits 0 and `pi` works. Clears on `mise prune` / `mise run mise:clean`. |
+| `brew-cask` for non-font casks | Linux | Unsupported by design — only font casks install on Linux; the darwin casks carry an `os = "macos"` selector and are skipped. |
+| `mise bootstrap packages prune` for `brew-cask` | macOS | Conservative: removes only Mise-owned cask artifacts, not casks installed by the Homebrew CLI. |
