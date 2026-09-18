@@ -1,46 +1,58 @@
 # Package and Project Managers
 
-These package managers are used to install the tools and apps at the user
-level ("global"), depending on system and architecture:
+Every user-level ("global") tool and app is installed through **Mise**, which
+drives all package sources from one config (`~/.config/mise/config.toml`). The
+sources differ in how they are declared, whether they are version-locked, and
+where they install to:
 
-- `mise`: primary global and project package manager
-- `nix`: user package manager, driven through Mise's native `nix` bootstrap
-  manager (no third-party plugin)
-- `brew`: system package manager, driven through Mise's `brew`/`brew-cask`
-  bootstrap managers
-- `devbox`: retained only as a macOS entry point for installing Nix
+| Source | Spelled | Declared in | Version-locked | Installs into |
+|--------|---------|-------------|:--------------:|---------------|
+| Mise registry | `tool` | `[tools]` | `mise.lock` | Mise shims |
+| Mise backend | `backend:tool` | `[tools]` | `mise.lock` | Mise shims |
+| Bootstrap `brew` | `brew:formula` | `[bootstrap.packages]` | — | shared Homebrew prefix |
+| Bootstrap `brew-cask` | `brew-cask:cask` | `[bootstrap.packages]` | — | shared Homebrew prefix |
+| Bootstrap `nix` | `nix:attr` | `[bootstrap.packages]` | — | user Nix profile |
+| System deps | native name | `packages.yaml` / ad-hoc | — | OS package database |
 
-Package Managers by operating system:
+Only `[tools]` are recorded in `mise.lock`; bootstrap packages and system deps
+track *latest* at install time (see [Mise Bootstrap
+Packages](#mise-bootstrap-packages)).
 
-- macOS (ARM and AMD):
-  - `mise`: tracked lock file; multi-user
-  - `nix`: no tracked lock file; multi-user
-  - `brew`: no tracked lock file; multi-user
-- Linux AMD:
-  - `mise`: tracked lock file; multi-user
-  - `nix`: no tracked lock file; single-user
-  - `brew`: no tracked lock file; multi-user
-- Linux ARM:
-  - `mise`: tracked lock file; multi-user
-  - `nix`: no tracked lock file; single-user
+### Source precedence
 
-Their priority order is:
+Prefer sources top-down; drop to the next only when a tool is unavailable:
 
-1. `mise`: Primary package and project environment manager (tasks/scripts and
-   environment variables). Tools are installed from the [Mise
-registry](https://mise.jdx.dev/registry.html) or an explicit [Mise
-backend](https://mise.jdx.dev/dev-tools/backends/) (`aqua`, `github`,
-`gitlab`, `cargo`, `npm`, `pypi`, `conda`, `packslip`, …).
-2. `mise` bootstrap packages: shared system/user packages declared under
-   `[bootstrap.packages]` and installed with any of Mise's [bootstrap package
-managers](https://mise.jdx.dev/bootstrap/packages/) (`brew`, `brew-cask`,
-`nix`, `apt`, …). Used here for Homebrew formulae and casks (`brew:` /
-`brew-cask:`) and for nixpkgs attributes (`nix:`) not packaged for the Mise
-backends.
-3. `brew` and `upt`: Used to install system dependencies. Bootstrapping them
-   requires sudo permissions. The Homebrew CLI is kept for ad-hoc, *untracked*
-installs; every *tracked* formula and cask is declared under
-`[bootstrap.packages]` and installed by Mise (which needs no Homebrew CLI).
+1. **Mise registry / backend** (`[tools]`) — first choice: cross-platform,
+   version-locked in `mise.lock`, and shimmed. Covers almost everything, from
+   the [registry](https://mise.jdx.dev/registry.html) or an explicit
+   [backend](https://mise.jdx.dev/dev-tools/backends/) (`aqua`, `github`,
+   `gitlab`, `cargo`, `npm`, `pypi`, `conda`, `packslip`, …).
+2. **Mise bootstrap packages** (`[bootstrap.packages]`) — shared system/user
+   packages Mise installs *without* their native CLI, via a [bootstrap package
+   manager](https://mise.jdx.dev/bootstrap/packages/):
+   - `brew:` / `brew-cask:` — Homebrew formulae and casks, poured into the
+     shared Homebrew prefix (no Homebrew CLI needed).
+   - `nix:` — nixpkgs attributes into the user's Nix profile (needs Nix on
+     `PATH`), for tools not packaged for the Mise backends.
+3. **System package managers** (`brew`, `upt`) — OS-level dependencies that
+   must be bootstrapped with sudo (Homebrew excepted). The Homebrew CLI is
+   kept only for ad-hoc, *untracked* installs.
+
+### Platform coverage
+
+Rows apply to both `arm64` and `x64` unless noted.
+
+| Capability | macOS | Linux |
+|------------|:-----:|:-----:|
+| Mise registry + backends | ✓ | ✓ |
+| Bootstrap `brew` formulae | ✓ | ✓ |
+| Bootstrap `brew-cask` casks | ✓ | fonts only |
+| Bootstrap `nix` (nixpkgs) | ✓ | ✓ |
+| Nix profile scope | multi-user | single-user |
+| Homebrew prefix | `/opt/homebrew` | `/home/linuxbrew/.linuxbrew` |
+
+The Devbox CLI is retained on macOS only, purely as an entry point for
+installing Nix (see [Devbox](#devbox)).
 
 ## Mise
 
