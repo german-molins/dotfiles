@@ -15,3 +15,7 @@ fi
 # checksum of mise lockfile
 # {{ include "dot_config/mise/mise.lock" | sha256sum }}
 mise install
+
+# checksum of mise config for bootstrap packages
+# {{ include "dot_config/mise/config.toml" | sha256sum }}
+mise bootstrap packages apply --manager brew --yes

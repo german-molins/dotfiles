@@ -221,7 +221,7 @@ run = ["mise upgrade", "mise plugins upgrade"]
 
 [tasks."mise:clean"]
 description = "Clean Mise cache"
-run = "mise prune"
+run = ["mise prune", "mise bootstrap packages prune --yes"]
 
 [tasks."nvim:clean"]
 description = "Clean Neovim plugins"
@@ -276,3 +276,8 @@ run = "openssl rand -hex 32| cut -c -7"
 [tasks.zippdf]
 description = "Compress PDF files in the current directory recursively"
 run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
+
+[bootstrap.packages]
+"brew:bash-completion@2" = "latest"
+"brew:beads" = "latest"
+"brew:rsync" = "latest"

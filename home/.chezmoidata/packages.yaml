@@ -12,10 +12,6 @@ packages:
     - procps
     - sshfs
   homebrew:
-    brews:
-      - bash-completion@2
-      - beads
-      - rsync
     brews_darwin:
       - taskopen
     casks:
