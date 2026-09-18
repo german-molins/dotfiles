@@ -201,11 +201,17 @@ mise bootstrap packages status
 
 `apply` installs only what is missing and **never removes or upgrades**
 already-installed packages (the `chezmoi apply` path). Declarative removal
-(uninstall what is no longer declared) is `mise bootstrap packages prune`,
-wired into the `mise:clean` task rather than the `chezmoi apply` path so
-applying is never destructive. Because the Homebrew prefix is shared, `prune`
-removes *any* undeclared formula in it, so every formula to keep must be
-declared (`brew-cask` prune is conservative — only Mise-owned cask artifacts).
+(uninstall what is no longer declared) is `mise bootstrap packages prune`.
+
+Only the **`brew-cask`** prune is wired into the `mise:clean` task
+(`--manager brew-cask`); it is conservative — it removes only Mise-owned cask
+artifacts. The **`brew`** (formula) prune is deliberately *not* wired into any
+task: because the Homebrew prefix is shared, a formula prune removes *any*
+undeclared formula in it, which would wipe ad-hoc, *untracked* `brew install`s
+(the workflow the Homebrew CLI is kept for). Run it by hand
+(`mise bootstrap packages prune --manager brew`) only if you truly want
+declarative formula removal, and know every formula to keep must first be
+declared.
 
 `prune` does **not** cover the `nix:` manager: removing a `nix:` declaration
 does not uninstall it, and there is no Mise prune for the Nix profile — remove

@@ -214,7 +214,7 @@ run = [
 
 [tasks."mise:clean"]
 description = "Clean Mise cache"
-run = ["mise prune -y", "mise bootstrap packages prune --yes"]
+run = ["mise prune -y", "mise bootstrap packages prune --manager brew-cask --yes"]
 
 [tasks."nvim:clean"]
 description = "Clean Neovim plugins"
