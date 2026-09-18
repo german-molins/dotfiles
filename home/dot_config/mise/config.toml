@@ -274,6 +274,7 @@ run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
 "brew:bash-completion@2" = "latest"
 "brew:beads" = "latest"
 "brew:rsync" = "latest"
+"brew:wget" = "latest"
 "brew:taskopen" = { os = "macos" }
 # Casks (macOS only; skipped on Linux by the os selector).
 "brew-cask:firefox" = { os = "macos" }
