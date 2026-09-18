@@ -35,15 +35,15 @@ backend](https://mise.jdx.dev/dev-tools/backends/) (`aqua`, `github`,
 2. `mise` bootstrap packages: shared system packages declared under
    `[bootstrap.packages]` and installed with any of Mise's [bootstrap package
 managers](https://mise.jdx.dev/bootstrap/packages/) (`brew`, `brew-cask`,
-`apt`, `nix`, …). Used here for Homebrew formulae.
+`apt`, `nix`, …). Used here for Homebrew formulae and casks.
 3. `mise-nix` (aliased `devbox`) Mise backend plugin: Nixhub, the Devbox's
    registry, is way larger than any other, so it's kept as a fallback option
 for packages not available in Mise, particularly for macOS (darwin) where some
 packages like `eza` are not supported by the Mise backends.
 4. `brew` and `upt`: Used to install system dependencies. Bootstrapping them
-   requires sudo permissions. `brew` casks and darwin-only formulae are still
-installed by a custom `brew bundle` mechanism (see below) pending migration to
-`mise` bootstrap packages.
+   requires sudo permissions. The Homebrew CLI is kept for ad-hoc, *untracked*
+installs; every *tracked* formula and cask is declared under
+`[bootstrap.packages]` and installed by Mise (which needs no Homebrew CLI).
 
 ## Mise
 
@@ -113,16 +113,28 @@ Backends in use here:
 Shared, machine-wide system packages are declared under `[bootstrap.packages]`
 in the global config and installed with a [bootstrap package
 manager](https://mise.jdx.dev/bootstrap/packages/), spelled `manager:package`.
-Homebrew formulae use the `brew:` manager, which Mise installs directly into
-the canonical Homebrew prefix (`/home/linuxbrew/.linuxbrew` on Linux) — pouring
-bottles itself, **without requiring the Homebrew CLI**. Mise and Homebrew share
-that one prefix.
+Homebrew formulae use the `brew:` manager and casks the `brew-cask:` manager;
+Mise installs both directly into the canonical Homebrew prefix (`/opt/homebrew`
+on macOS ARM, `/home/linuxbrew/.linuxbrew` on Linux) — pouring bottles and casks
+itself, **without requiring the Homebrew CLI** ([brew manager
+docs](https://mise.jdx.dev/bootstrap/packages/brew.html#casks)). Mise and
+Homebrew share that one prefix.
+
+macOS-only entries carry an `os` selector, so a single global declaration stays
+cross-platform; nonmatching entries are skipped on apply (and `brew-cask` is
+macOS-only for non-font casks regardless):
+
+```toml
+"brew:rsync" = "latest"
+"brew-cask:firefox" = { os = "macos" }
+```
 
 ```sh
 # Declare + install a formula globally
 mise bootstrap packages use -g brew:rsync
-# Install everything declared (idempotent; installs only what is missing)
-mise bootstrap packages apply --manager brew --yes
+# Install everything declared, for every manager available on the host
+# (idempotent; installs only what is missing)
+mise bootstrap packages apply --yes
 # Status
 mise bootstrap packages status
 ```
@@ -131,7 +143,8 @@ mise bootstrap packages status
 longer declared) is `mise bootstrap packages prune`, wired into the `mise:clean`
 task rather than the `chezmoi apply` path so applying is never destructive.
 Because the prefix is shared, `prune` removes *any* undeclared formula in it,
-so every formula to keep must be declared.
+so every formula to keep must be declared (`brew-cask` prune is conservative —
+only Mise-owned cask artifacts).
 
 The mise install script
 (`run_onchange_after_10-install-mise-packages.sh.tmpl`) applies them, so
@@ -212,12 +225,10 @@ Conventions:
 
 Current gated lists:
 
-- `packages.homebrew.brews_darwin` and `packages.homebrew.casks` — macOS-only
-  (gated in `home/.chezmoiscripts/run_onchange_after_05-install-homebrew-packages.sh.tmpl`).
 - `packages.upt_linux` — Linux-only (gated in
   `home/.chezmoiscripts/run_onchange_after_20-install-upt-packages.sh.tmpl`).
 
-Homebrew formulae common to all platforms are no longer a gated list here; they
-moved to `[bootstrap.packages]` (see [Mise Bootstrap
-Packages](#mise-bootstrap-packages)). Only darwin casks and formulae remain on
-this custom `brew bundle` mechanism, pending their migration too.
+Homebrew formulae and casks are no longer gated lists here; they moved to
+`[bootstrap.packages]` (see [Mise Bootstrap Packages](#mise-bootstrap-packages)),
+with an `os = "macos"` selector on the darwin-only casks and formulae in place of
+the retired `brew bundle` mechanism.
