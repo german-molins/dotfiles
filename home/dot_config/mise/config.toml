@@ -281,3 +281,20 @@ run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
 "brew:bash-completion@2" = "latest"
 "brew:beads" = "latest"
 "brew:rsync" = "latest"
+"brew:taskopen" = { os = "macos" }
+# Casks (macOS only; skipped on Linux by the os selector).
+"brew-cask:firefox" = { os = "macos" }
+"brew-cask:devpod" = { os = "macos" }              # Then install the CLI with the GUI button.
+"brew-cask:kitty" = { os = "macos" }
+"brew-cask:visual-studio-code" = { os = "macos" }
+"brew-cask:programmer-dvorak" = { os = "macos" }   # Reboot; then available among keeb layouts.
+"brew-cask:obsidian" = { os = "macos" }
+# Desktop app needed because it ships with a Linux VM, since macOS can't
+# virtualise Linux kernel otherwise.
+# "brew-cask:docker" = { os = "macos" }
+"brew-cask:db-browser-for-sqlite" = { os = "macos" }
+"brew-cask:another-redis-desktop-manager" = { os = "macos" }
+"brew-cask:wireshark-app" = { os = "macos" }
+"brew-cask:windows-app" = { os = "macos" }
+"brew-cask:balenaetcher" = { os = "macos" }
+"brew-cask:antigravity-cli" = { os = "macos" }
