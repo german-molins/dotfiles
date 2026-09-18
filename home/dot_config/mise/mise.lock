@@ -8896,56 +8896,6 @@ url = "https://github.com/sigstore/cosign/releases/download/v3.1.3/cosign-darwin
 url_api = "https://api.github.com/repos/sigstore/cosign/releases/assets/503286177"
 provenance = "cosign"
 
-[[tools."devbox:exiftool"]]
-version = "13.59"
-backend = "devbox:exiftool"
-specifiers = ["latest"]
-
-[[tools."devbox:ffmpeg"]]
-version = "9.0.1"
-backend = "devbox"
-specifiers = ["latest"]
-
-[[tools."devbox:file"]]
-version = "5.48"
-backend = "devbox:file"
-specifiers = ["latest"]
-
-[[tools."devbox:git"]]
-version = "2.55.0"
-backend = "devbox:git"
-specifiers = ["latest"]
-
-[[tools."devbox:git-extras"]]
-version = "7.5.0"
-backend = "devbox:git-extras"
-specifiers = ["latest"]
-
-[[tools."devbox:gpg-tui"]]
-version = "0.11.2"
-backend = "devbox:gpg-tui"
-specifiers = ["latest"]
-
-[[tools."devbox:poppler-utils"]]
-version = "26.06.0"
-backend = "devbox:poppler-utils"
-specifiers = ["latest"]
-
-[[tools."devbox:readline"]]
-version = "8.3p3"
-backend = "devbox:readline"
-specifiers = ["latest"]
-
-[[tools."devbox:taskwarrior"]]
-version = "2.6.2"
-backend = "devbox:taskwarrior"
-specifiers = ["latest"]
-
-[[tools."devbox:timewarrior"]]
-version = "1.10.0"
-backend = "devbox:timewarrior"
-specifiers = ["latest"]
-
 [[tools.dua]]
 version = "2.44.0"
 backend = "aqua:Byron/dua-cli"

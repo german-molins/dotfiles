@@ -1,6 +1,3 @@
-[plugins]
-devbox = "https://github.com/jbadeau/mise-nix.git"
-
 [tools]
 "aqua:dlvhdr/gh-dash" = "latest"
 "aqua:jorgerojas26/lazysql" = "latest"
@@ -109,15 +106,7 @@ colima = "latest"
 "aqua:kdheepak/taskwarrior-tui" = "latest"
 codex = "latest"
 exiftool = "latest"
-"devbox:taskwarrior" = "latest"
-"devbox:timewarrior" = "latest"
-"devbox:gpg-tui" = "latest"
 poppler = "latest"
-"devbox:git" = "latest"
-"devbox:file" = "latest"
-"devbox:readline" = "latest"
-"devbox:ffmpeg" = "latest"
-"devbox:git-extras" = "latest"
 
 [settings]
 experimental = true
@@ -302,3 +291,11 @@ run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
 "brew-cask:windows-app" = { os = "macos" }
 "brew-cask:balenaetcher" = { os = "macos" }
 "brew-cask:antigravity-cli" = { os = "macos" }
+"nix:taskwarrior3" = "latest"
+"nix:timewarrior" = "latest"
+"nix:gpg-tui" = "latest"
+"nix:git" = "latest"
+"nix:file" = "latest"
+"nix:readline" = "latest"
+"nix:ffmpeg" = "latest"
+"nix:git-extras" = "latest"

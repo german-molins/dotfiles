@@ -4,25 +4,24 @@ These package managers are used to install the tools and apps at the user
 level ("global"), depending on system and architecture:
 
 - `mise`: primary global and project package manager
-- `devbox`: fallback global and project package manager
-- `nix`: system and user package manager
-- `brew`: system package manager
+- `nix`: user package manager, driven through Mise's native `nix` bootstrap
+  manager (no third-party plugin)
+- `brew`: system package manager, driven through Mise's `brew`/`brew-cask`
+  bootstrap managers
+- `devbox`: retained only as a macOS entry point for installing Nix
 
 Package Managers by operating system:
 
 - macOS (ARM and AMD):
   - `mise`: tracked lock file; multi-user
-  - `devbox`: tracked lock file; multi-user
   - `nix`: no tracked lock file; multi-user
   - `brew`: no tracked lock file; multi-user
 - Linux AMD:
   - `mise`: tracked lock file; multi-user
-  - `devbox`: tracked lock file; single-user
   - `nix`: no tracked lock file; single-user
   - `brew`: no tracked lock file; multi-user
 - Linux ARM:
   - `mise`: tracked lock file; multi-user
-  - `devbox`: tracked lock file; single-user
   - `nix`: no tracked lock file; single-user
 
 Their priority order is:
@@ -32,15 +31,13 @@ Their priority order is:
 registry](https://mise.jdx.dev/registry.html) or an explicit [Mise
 backend](https://mise.jdx.dev/dev-tools/backends/) (`aqua`, `github`,
 `gitlab`, `cargo`, `npm`, `pypi`, `conda`, `packslip`, …).
-2. `mise` bootstrap packages: shared system packages declared under
+2. `mise` bootstrap packages: shared system/user packages declared under
    `[bootstrap.packages]` and installed with any of Mise's [bootstrap package
 managers](https://mise.jdx.dev/bootstrap/packages/) (`brew`, `brew-cask`,
-`apt`, `nix`, …). Used here for Homebrew formulae and casks.
-3. `mise-nix` (aliased `devbox`) Mise backend plugin: Nixhub, the Devbox's
-   registry, is way larger than any other, so it's kept as a fallback option
-for packages not available in Mise, particularly for macOS (darwin) where some
-packages like `eza` are not supported by the Mise backends.
-4. `brew` and `upt`: Used to install system dependencies. Bootstrapping them
+`nix`, `apt`, …). Used here for Homebrew formulae and casks (`brew:` /
+`brew-cask:`) and for nixpkgs attributes (`nix:`) not packaged for the Mise
+backends.
+3. `brew` and `upt`: Used to install system dependencies. Bootstrapping them
    requires sudo permissions. The Homebrew CLI is kept for ad-hoc, *untracked*
 installs; every *tracked* formula and cask is declared under
 `[bootstrap.packages]` and installed by Mise (which needs no Homebrew CLI).
@@ -130,15 +127,45 @@ Backends in use here:
 
 ### Mise Bootstrap Packages
 
-Shared, machine-wide system packages are declared under `[bootstrap.packages]`
-in the global config and installed with a [bootstrap package
-manager](https://mise.jdx.dev/bootstrap/packages/), spelled `manager:package`.
-Homebrew formulae use the `brew:` manager and casks the `brew-cask:` manager;
-Mise installs both directly into the canonical Homebrew prefix (`/opt/homebrew`
-on macOS ARM, `/home/linuxbrew/.linuxbrew` on Linux) — pouring bottles and casks
-itself, **without requiring the Homebrew CLI** ([brew manager
-docs](https://mise.jdx.dev/bootstrap/packages/brew.html#casks)). Mise and
-Homebrew share that one prefix.
+Shared, machine-wide system and user packages are declared under
+`[bootstrap.packages]` in the global config and installed with a [bootstrap
+package manager](https://mise.jdx.dev/bootstrap/packages/), spelled
+`manager:package`.
+
+Managers used here:
+
+- `brew:` (formulae) and `brew-cask:` (casks) — Mise installs both directly
+  into the canonical Homebrew prefix (`/opt/homebrew` on macOS ARM,
+  `/home/linuxbrew/.linuxbrew` on Linux), pouring bottles and casks itself
+  **without requiring the Homebrew CLI** ([brew manager
+  docs](https://mise.jdx.dev/bootstrap/packages/brew.html#casks)). Mise and
+  Homebrew share that one prefix.
+- `nix:` — Mise installs the given nixpkgs attribute into the user's Nix
+  profile (`~/.nix-profile/bin`), with **no shims and no sudo** ([nix manager
+  docs](https://mise.jdx.dev/bootstrap/packages/nix.html)). Requires Nix 2.24+
+  with the `nix-command` and `flakes` features and the modern `nix profile`
+  CLI. Used for tools not packaged for the Mise backends (e.g. `taskwarrior3`,
+  `gpg-tui`, `git-extras`). The shorthand resolves against the machine's
+  nixpkgs registry.
+
+#### Versioning: not lockfile-tracked
+
+Unlike `[tools]` (recorded in `mise.lock`), bootstrap packages are **not
+lockfile-tracked**. `"latest"` means *whatever the manager provides at apply
+time*, and there is no version pinning in the lockfile sense:
+
+- **`brew:` / `brew-cask:`** — `"latest"` tracks the current homebrew-core
+  formula/cask. Explicit versions are not carried in a lockfile; a package may
+  be upgraded on any `upgrade` run.
+- **`nix:`** — version pins are **unsupported** (`nix:pkg@1.2` is skipped).
+  A major version is selected only through the nixpkgs *attribute name*
+  (`nix:taskwarrior2` vs `nix:taskwarrior3`), not a pin. `"latest"` is bounded
+  by the machine's nixpkgs registry — Mise does not update flake registries
+  itself, so the resolved version is whatever that registry currently points
+  at.
+
+So a tool **may be upgraded** during install/upgrade, and it stays declared as
+`"latest"` (or its pinned attribute) — it never gains a lockfile entry.
 
 macOS-only entries carry an `os` selector, so a single global declaration stays
 cross-platform; nonmatching entries are skipped on apply (and `brew-cask` is
@@ -147,6 +174,7 @@ macOS-only for non-font casks regardless):
 ```toml
 "brew:rsync" = "latest"
 "brew-cask:firefox" = { os = "macos" }
+"nix:taskwarrior3" = "latest"
 ```
 
 ```sh
@@ -159,15 +187,22 @@ mise bootstrap packages apply --yes
 mise bootstrap packages status
 ```
 
-`apply` never removes packages. Declarative removal (uninstall what is no
-longer declared) is `mise bootstrap packages prune`, wired into the `mise:clean`
-task rather than the `chezmoi apply` path so applying is never destructive.
-Because the prefix is shared, `prune` removes *any* undeclared formula in it,
-so every formula to keep must be declared (`brew-cask` prune is conservative —
-only Mise-owned cask artifacts).
+`apply` installs only what is missing and **never removes or upgrades**
+already-installed packages (the `chezmoi apply` path). Declarative removal
+(uninstall what is no longer declared) is `mise bootstrap packages prune`,
+wired into the `mise:clean` task rather than the `chezmoi apply` path so
+applying is never destructive. Because the Homebrew prefix is shared, `prune`
+removes *any* undeclared formula in it, so every formula to keep must be
+declared (`brew-cask` prune is conservative — only Mise-owned cask artifacts).
+
+`prune` does **not** cover the `nix:` manager: removing a `nix:` declaration
+does not uninstall it, and there is no Mise prune for the Nix profile — remove
+it natively with `nix profile remove` if needed.
 
 Upgrading installed bootstrap packages (analogous to `brew upgrade`) is `mise
-bootstrap packages upgrade`, wired into the `mise:update` task.
+bootstrap packages upgrade`, wired into the `mise:update` task. This is the
+only step that bumps installed versions; `apply` never does. For `nix:`, an
+upgrade is bounded by the machine's nixpkgs registry (see above).
 
 The mise install script
 (`run_onchange_after_10-install-mise-packages.sh.tmpl`) applies them, so
@@ -213,10 +248,15 @@ mise run
 
 ## Devbox
 
-[Devbox](https://www.jetpack.io/devbox/) integration has been removed but its installation has been temporarily kept as an
-working entry point for installing Nix indirectly in macOS. Mise backend plugin
-`mise-nix` (aliased `devbox`) is then used to install packages from the Nixhub
-registry, which requires Nix as a system dependency.
+The `mise-nix` (aliased `devbox`) Mise backend plugin has been **removed**;
+its packages migrated to Mise's native `nix:` bootstrap manager (see [Mise
+Bootstrap Packages](#mise-bootstrap-packages)) or, where possible, to a Mise
+backend (`conda`, `aqua`).
+
+The [Devbox](https://www.jetpack.io/devbox/) CLI binary
+(`~/.nix-profile/bin/devbox`) is kept **only** as a convenient entry point for
+installing Nix on macOS; it is unrelated to the removed plugin. The
+`devbox:self-update` task (`devbox version update`) keeps that CLI current.
 
 ## UPT
 
