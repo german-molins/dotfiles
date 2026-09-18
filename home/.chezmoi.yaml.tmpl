@@ -18,13 +18,3 @@ data:
   dotfiles_url: https://github.com/german-molins/dotfiles.git
   devbox:
     enabled: {{ env "DOTFILES_DEVBOX_ENABLED" | default "true" }}
-  packages:
-    homebrew:
-      brews_extra:
-{{- if eq $profile "quantica" }}
-        - lastpass-cli
-{{- end }}
-    nix_extra:
-{{- if eq $profile "quantica" }}
-        - lastpass-cli
-{{- end }}
