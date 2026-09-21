@@ -1,18 +1,14 @@
 #!/usr/bin/env sh
-#MISE description="Process bash startup profiling logs and generate timing reports"
+#MISE description="Process an existing bash startup profiling log into a timing report"
 
 LOG_FILE="$HOME/.local/share/dotfiles/bash/profile_timing.log"
 
 # Check if the source log file exists
 if [ ! -f "$LOG_FILE" ]; then
     echo "ERROR: Bash profile timing log not found at $LOG_FILE"
-    echo "To generate this log, you need to add profiling instrumentation to your bash startup files."
     echo ""
-    echo "The profile_source function is already defined in ~/.bashrc."
-    echo "It automatically profiles when BASH_PROFILE_TIMING=1 is set."
-    echo ""
-    echo "To profile your bash startup:"
-    echo "BASH_PROFILE_TIMING=1 bash -l"
+    echo "Run 'mise run bash:profile' to capture a profile and print the report"
+    echo "in one step, or generate a log yourself with 'BASH_PROFILE_TIMING=1 bash -l'."
     exit 1
 fi
 

@@ -117,48 +117,60 @@ Bash startup is instrumented so the time spent sourcing each
 
 ### Usage
 
-1. **Enable profiling** by setting the environment variable:
+Profile startup and print the report in one step:
 
-   ```bash
-   export BASH_PROFILE_TIMING=1
-   ```
+```bash
+mise run bash:profile
+```
 
-2. **Start a new bash session** to generate the timing log:
+This runs a login shell with `BASH_PROFILE_TIMING=1` set, in the current
+directory, then processes the resulting timing log into the report below. Run
+it from inside a project directory to measure startup as experienced there —
+`mise` resolves that project's toolset, which is usually the dominant cost.
 
-   ```bash
-   bash -l
-   ```
+To process a log captured some other way — e.g. from a real interactive
+session started with `BASH_PROFILE_TIMING=1 exec bash` — run the processing
+step on its own:
 
-3. **Process the timing data** using the mise task:
-
-   ```bash
-   mise run bash:profile
-   ```
+```bash
+mise run bash:profile-process
+```
 
 ### Output
 
-The task processes the timing data in a pipeline and prints a formatted summary
-with rankings and percentages. No intermediate files are created.
+The report is produced by an awk pipeline over the timing log and printed as a
+formatted summary with rankings and percentages.
 
-Example output:
+Example output (illustrative — your numbers will differ by machine, run and
+cache warmth; re-run the steps above to refresh):
 
 ```text
 === Bash Startup Timing Summary ===
 Rank  Sourced File                                        Time (ms)   Relative   Cumulative
 ----- -----------------------------------------           ---------   --------  -----------
-1     ~/.bashrc.d/17-mise.sh                                627.363     51.65%       51.65%
-2     ~/.bashrc.d/15-devbox.sh                              337.218     27.76%       79.41%
-3     ~/.bashrc.d/27-chezmoi.sh                              66.921      5.51%       84.92%
-4     ~/.bashrc.d/82-carapace.sh                             42.791      3.52%       88.44%
-5     ~/.bashrc.d/30-atuin.sh                                19.015      1.57%       90.01%
-6     ~/.bashrc.d/75-zellij.sh                               16.325      1.34%       91.35%
-7     ~/.bashrc.d/25-zoxide.sh                                7.302      0.60%       91.95%
-8     ~/.bashrc.d/18-usage.sh                                 4.817      0.40%       92.35%
-      TOTAL                                                1214.708       100%         100%
+1     ~/.bashrc.d/17-mise.sh                                105.787     46.35%       46.35%
+2     ~/.bashrc.d/27-chezmoi.sh                              28.827     12.63%       58.98%
+3     ~/.bashrc.d/08-homebrew.sh                             25.396     11.13%       70.11%
+4     ~/.bashrc.d/75-zellij.sh                               20.581      9.02%       79.13%
+5     ~/.bashrc.d/19-fnox.sh                                  8.617      3.78%       82.90%
+6     ~/.bashrc.d/82-carapace.sh                              5.556      2.43%       85.34%
+7     ~/.bashrc.d/21-aube.sh                                  4.281      1.88%       87.21%
+8     ~/.bashrc.d/18-usage.sh                                 4.119      1.80%       89.02%
+9     /etc/bash_completion                                    3.818      1.67%       90.69%
+10    ~/.bashrc.d/25-zoxide.sh                                2.281      1.00%       91.69%
+11    ~/.bashrc.d/10-nix.sh                                   0.245      0.11%       91.80%
+12    ~/.bashrc.d/35-functions.sh                             0.097      0.04%       91.84%
+13    ~/.bashrc.d/55-task.sh                                  0.050      0.02%       91.86%
+14    ~/.bashrc.d/45-julia.sh                                 0.025      0.01%       91.87%
+15    ~/.bashrc.d/57-yazi.sh                                  0.024      0.01%       91.88%
+16    ~/.bashrc.d/60-tmux.sh                                  0.022      0.01%       91.89%
+17    ~/.bashrc.d/32-nvim.sh                                  0.021      0.01%       91.90%
+      TOTAL SOURCED                                         209.747     91.90%       91.90%
+      TOTAL                                                 228.228       100%         100%
 ```
 
 The report makes it easy to spot the slowest contributors; `mise` activation
-typically dominates.
+dominates (~46% here), which is why startup caching is left to mise itself.
 
 ### Notes
 

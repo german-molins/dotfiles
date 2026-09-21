@@ -253,6 +253,13 @@ run = "ya pkg upgrade"
 description = "Update agents resources"
 run = "skills update"
 
+[tasks."bash:profile"]
+description = "Profile bash startup in the current directory and print the timing report"
+dir = "{{cwd}}"
+env.BASH_PROFILE_TIMING = "1"
+run = "bash -ilc true >/dev/null 2>&1"
+depends_post = ["bash:profile-process"]
+
 [tasks."python:scaffold"]
 description = "Scaffold a Python project with uv and pytest"
 dir = "{{cwd}}"
