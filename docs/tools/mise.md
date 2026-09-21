@@ -27,8 +27,8 @@ Mise has been configured with some specific settings:
 
 Mise is integrated with the shell through activation and completion hooks.
 
-For activation performance optimizations during Bash startup, see [Mise Caching
-Optimization](../bash.md#mise-caching-optimization).
+For activation performance optimizations during Bash startup, see [Startup
+Caching](../bash.md#startup-caching).
 
 ## Shell Aliases
 

@@ -179,7 +179,6 @@ depends = [
   "upt:update",
   "agents:update",
 ]
-run = { task = "bash:clear-cache" }
 
 [tasks."brew:update"]
 description = "Update Homebrew global packages"
@@ -249,10 +248,6 @@ run = "ya pkg install"
 alias = "yazi:up"
 description = "Update Yazi packages"
 run = "ya pkg upgrade"
-
-[tasks."bash:clean"]
-description = "Clean bash startup caches"
-run = ["rm -rf ~/.cache/dotfiles/bash ~/.local/share/bash"]
 
 [tasks."agents:update"]
 description = "Update agents resources"

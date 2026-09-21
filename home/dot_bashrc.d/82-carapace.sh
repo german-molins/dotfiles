@@ -1,1 +1,1 @@
-eval "$(_evalcache carapace _carapace)"
+eval "$(carapace _carapace)"

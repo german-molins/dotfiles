@@ -1,1 +1,1 @@
-eval "$(_evalcache zellij setup --generate-completion bash)"
+eval "$(zellij setup --generate-completion bash)"

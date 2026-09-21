@@ -31,7 +31,6 @@ export default defineConfig({
             link: "/tools",
             collapsed: true,
             items: [
-              { text: "Bash", link: '/tools/bash' },
               { text: "Mise", link: '/tools/mise' },
               { text: "fnox", link: '/tools/fnox' },
               { text: "System Dependencies", link: '/tools/system_dependencies' },

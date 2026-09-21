@@ -1,2 +1,2 @@
-eval "$(_evalcache usage --completions bash)"
+eval "$(usage --completions bash)"
 source <(usage generate completion-init bash)

@@ -33,7 +33,7 @@ hierarchy, where the owner may refer to a user or an organization.
 - `playground/*/`: Playground for any kind of bounded trial or draft. No cloud
 backup or pushed to any remote.
 - `~/.cache/dotfiles/`: Custom dotfiles caches for performance optimizations
-(see e.g. [Bash caching](tools/bash.md#startup-caching-optimizations)).
+(see e.g. [Bash caching](bash.md#startup-caching)).
 
 [xdg-basedir]: https://specifications.freedesktop.org/basedir-spec/latest/
 [xdg-user-dirs]: https://www.freedesktop.org/wiki/Software/xdg-user-dirs/
