@@ -275,7 +275,7 @@ description = "Compress PDF files in the current directory recursively"
 run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
 
 [bootstrap.packages]
-"brew:bash-completion@2" = "latest"
+"brew:bash-completion@2" = { os = "macos" }
 "brew:beads" = "latest"
 "brew:rsync" = "latest"
 "brew:wget" = "latest"

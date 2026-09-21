@@ -1,6 +1,8 @@
 # Set shell env.
 {{ template "brew-shellenv" . }}
 
+{{- if eq .chezmoi.os "darwin" }}
 if [ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]; then
   source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
 fi
+{{- end }}

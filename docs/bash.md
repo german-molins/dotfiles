@@ -108,6 +108,69 @@ actual startup bottleneck) now handles its own caching, and the helper had no
 dependency-based invalidation, so its cache went stale silently on tool
 upgrades.
 
+## Shell completions
+
+Completions come from several independent mechanisms, deliberately kept from
+overlapping:
+
+- **Distro `bash-completion` (Linux)** — the system framework at
+  `/usr/share/bash-completion`, loaded once via `/etc/bash_completion`. It
+  provides the lazy `complete -D` loader plus a large bundled library (~900
+  command definitions).
+- **Homebrew `bash-completion@2` (macOS only)** — macOS ships no system
+  framework, so brew's is the engine there. Sourced from `08-homebrew.sh` and
+  installed only on macOS (see `[bootstrap.packages]`).
+- **carapace** — registers its own completions (`82-carapace.sh`), loaded
+  after Homebrew so it wins for any command it also covers. Its spec library
+  spans 1000+ commands.
+- **mise and packslip tools** — `mise` emits its own completion
+  (`17-mise.sh`) and, on every prompt, auto-registers completions for the
+  packslip tools it manages, reading each vendor's script lazily on first Tab
+  and version-matching it to the active version.
+
+### Why Homebrew completion is macOS-only
+
+The two `bash-completion` frameworks are the same software; at runtime they are
+mutually exclusive — each self-guards on `BASH_COMPLETION_VERSINFO`, so the
+first to load wins and the second is a no-op. Loading both is never wanted.
+
+On Linux the distro framework already provides the loader and the bundled
+library, lazily. Homebrew's `bash-completion@2` (v2) no longer ships that
+bundled library at all; formulae that provide completions instead drop them as
+eager files under `$HOMEBREW_PREFIX/etc/bash_completion.d`. Sourcing brew's
+framework on Linux to pick those up would eagerly source ~150 files on every
+shell start — the startup cost this setup exists to minimise — for completions
+the distro framework and carapace already largely cover. So on Linux brew's
+`bash-completion@2` is neither installed nor sourced; the sourcing in
+`08-homebrew.sh` is gated to Darwin with chezmoi templating
+(`{{ if eq .chezmoi.os "darwin" }}`), making the intent explicit rather than
+relying on a path that happens to be absent.
+
+On a minimal Linux distro that omits the system `bash-completion` package,
+completions come only from mise, carapace and the Usage tools. Installing
+brew's would not help — v2 carries no bundled library — so the fix there is to
+install the distro's own `bash-completion` package.
+
+### No per-tool completion hooks for auto-registered tools
+
+Because mise auto-registers completions for its packslip tools, `usage` and
+`fnox` need no completion line in their `bashrc.d` files — mise registers
+(and, being a per-prompt hook, would immediately override) them regardless.
+So the earlier `eval "$(usage --completions bash)"` and
+`eval "$(fnox completion bash)"` lines were dropped as redundant.
+
+Two related lines are deliberately kept, because mise does *not* cover them:
+
+- `19-fnox.sh` keeps `eval "$(fnox activate bash)"` — that is environment
+  activation, not completion.
+- `21-aube.sh` keeps `eval "$(aube completion bash)"` — `aube`'s packslip
+  declares no completion (`mise completion bash --tool aube` reports none), so
+  mise registers nothing for it.
+- `18-usage.sh` keeps `source <(usage generate completion-init bash)` — this
+  registers a `complete -D` handler for standalone `usage`-shebang scripts on
+  `PATH` (e.g. `~/.local/bin/pdftoepub`), a separate concern from the `usage`
+  binary's own completion.
+
 ## Startup Profiling
 
 Bash startup is instrumented so the time spent sourcing each
