@@ -171,6 +171,23 @@ Two related lines are deliberately kept, because mise does *not* cover them:
   `PATH` (e.g. `~/.local/bin/pdftoepub`), a separate concern from the `usage`
   binary's own completion.
 
+### Completion framework loads before `~/.bashrc.d/`
+
+`~/.bashrc` sources the system framework (`/etc/bash_completion`) **before**
+the `~/.bashrc.d/*.sh` loop, not after. Order matters because
+`usage generate completion-init` (in `18-usage.sh`) installs its own
+`complete -D` handler by *capturing the framework's existing `-D` loader and
+chaining to it*: for any command it does not itself handle, it delegates to
+whatever `-D` was registered when it ran. If the framework were sourced after
+the loop, it would register its `-D` loader last and overwrite usage's, so
+standalone `usage`-shebang scripts (e.g. `pdftoepub`) would never complete on
+Linux. Loading the framework first lets `completion-init` chain onto the
+distro's `_completion_loader` and both coexist.
+
+On macOS there is no `/etc/bash_completion`; Homebrew's framework is sourced
+from `08-homebrew.sh`, which already precedes `18-usage.sh` in the loop, so
+the same chaining holds there without special ordering.
+
 ## Startup Profiling
 
 Bash startup is instrumented so the time spent sourcing each

@@ -24,6 +24,10 @@ profile_source() {
   fi
 }
 
+if [ -r /etc/bash_completion ] && ! shopt -oq posix; then
+  profile_source /etc/bash_completion
+fi
+
 for file in ~/.bashrc.d/*.sh; do
   if [ -r "$file" ]; then
     # Bypass profiling for atuin to preserve execution context
@@ -35,10 +39,6 @@ for file in ~/.bashrc.d/*.sh; do
   fi
 done
 unset file
-
-if [ -r /etc/bash_completion ] && ! shopt -oq posix; then
-  profile_source /etc/bash_completion
-fi
 
 shopt -s extglob
 shopt -s globstar
