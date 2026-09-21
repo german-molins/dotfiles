@@ -10,12 +10,6 @@ Update agents resources
 
 Profile bash startup in the current directory and print the timing report
 
-## `bash:profile-process`
-
-- **Usage:** `bash:profile-process`
-
-Process an existing bash startup profiling log into a timing report
-
 ## `brew:clean`
 
 - **Usage:** `brew:clean`

@@ -204,22 +204,17 @@ mise run bash:profile
 ```
 
 This runs a login shell with `BASH_PROFILE_TIMING=1` set, in the current
-directory, then processes the resulting timing log into the report below. Run
-it from inside a project directory to measure startup as experienced there —
-`mise` resolves that project's toolset, which is usually the dominant cost.
-
-To process a log captured some other way — e.g. from a real interactive
-session started with `BASH_PROFILE_TIMING=1 exec bash` — run the processing
-step on its own:
-
-```bash
-mise run bash:profile-process
-```
+directory, captures the timing log, and prints the report below in one step.
+Run it from inside a project directory to measure startup as experienced
+there — `mise` resolves that project's toolset, which is usually the dominant
+cost.
 
 ### Output
 
-The report is produced by an awk pipeline over the timing log and printed as a
-formatted summary with rankings and percentages.
+The report is produced by a single awk program
+(`~/.config/mise/scripts/profile_summary.awk`) over the timing log
+(`~/.local/share/dotfiles/bash/profile_timing.log`), printed as a formatted
+summary with rankings and percentages.
 
 Example output (illustrative — your numbers will differ by machine, run and
 cache warmth; re-run the steps above to refresh):

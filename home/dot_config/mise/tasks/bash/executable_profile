@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+#MISE description="Profile bash startup in the current directory and print the timing report"
+#MISE dir="{{cwd}}"
+
+LOG="$HOME/.local/share/dotfiles/bash/profile_timing.log"
+SUMMARY="$HOME/.config/mise/scripts/profile_summary.awk"
+
+BASH_PROFILE_TIMING=1 bash -ilc true >/dev/null 2>&1
+
+[ -s "$LOG" ] || { echo "no timing data captured"; exit 1; }
+
+echo ""
+echo "=== Bash Startup Timing Summary ==="
+awk -f "$SUMMARY" "$LOG"

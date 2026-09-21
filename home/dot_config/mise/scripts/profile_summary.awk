@@ -1,19 +1,15 @@
-# Generate formatted summary from CSV
-# Usage: awk -f csv_summary.awk timing.csv
-BEGIN {
-    FS=","
-}
+# Summarise a bash startup timing log (lines: "<start> <end> <file>", epoch
+# seconds) into a report ranked by time spent sourcing each file.
 {
-    file=$1; start=$2; end=$3; dur=$4
+    start=$1; end=$2; file=$3
+    dur=(end - start) * 1000
     total_sourced += dur
     files[file] = dur
 
-    # Track earliest start and latest end for total elapsed time
     if (start < min_start || min_start == 0) min_start = start
     if (end > max_end) max_end = end
 }
 END {
-    # Calculate actual total elapsed time
     total_elapsed = (max_end - min_start) * 1000
 
     n=0
