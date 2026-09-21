@@ -1,7 +1,39 @@
 {
-  "alwaysThinkingEnabled": true,
-  "editorMode": "vim",
-  "effortLevel": "high",
+  "env": {
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
+  },
+  "permissions": {
+    "allow": [
+      "mcp__plugin_context-mode_context-mode__ctx_search"
+    ]
+  },
+  "model": "claude-opus-4-8",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$HOME/.claude/hooks/context-mode-cache-heal.mjs\""
+          }
+        ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash '/home/german-molins/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh"
+  },
   "enabledPlugins": {
     "beads@beads-marketplace": true,
     "caveman@caveman": true,
@@ -12,65 +44,33 @@
     "superpowers@claude-plugins-official": true,
     "nono@nolabs-ai": true
   },
-  "env": {
-    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
-  },
   "extraKnownMarketplaces": {
     "caveman": {
       "source": {
-        "repo": "JuliusBrussee/caveman",
-        "source": "github"
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
       }
     },
     "context-mode": {
       "source": {
-        "repo": "mksglu/context-mode",
-        "source": "github"
+        "source": "github",
+        "repo": "mksglu/context-mode"
       }
     },
     "ponytail": {
       "source": {
-        "repo": "DietrichGebert/ponytail",
-        "source": "github"
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
       }
     },
     "superpowers-marketplace": {
       "source": {
-        "repo": "obra/superpowers-marketplace",
-        "source": "github"
+        "source": "github",
+        "repo": "obra/superpowers-marketplace"
       }
     }
   },
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "command": "\"$HOME/.claude/hooks/context-mode-cache-heal.mjs\"",
-            "type": "command"
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "command": "bash '/home/german-molins/.claude/hooks/herdr-agent-state.sh' session",
-            "timeout": 10,
-            "type": "command"
-          }
-        ],
-        "matcher": "*"
-      }
-    ]
-  },
-  "model": "claude-opus-4-8",
-  "permissions": {
-    "allow": [
-      "mcp__plugin_context-mode_context-mode__ctx_search"
-    ]
-  },
-  "statusLine": {
-    "command": "bash ~/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh",
-    "type": "command"
-  }
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
+  "editorMode": "vim"
 }
