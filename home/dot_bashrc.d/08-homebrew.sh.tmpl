@@ -2,5 +2,5 @@
 {{ template "brew-shellenv" . }}
 
 if [ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]; then
-  eval "$(_evalcache source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh")"
+  source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
 fi
