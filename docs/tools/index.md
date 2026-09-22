@@ -70,6 +70,7 @@ VCS:
 | [Jujutsu] | `jj` | | Git-compatible VCS |
 | [Jujutsu UI] | `jjui` | `jj ui` | Jujutsu manager |
 | [Lazyjj] | `lazyjj` | | Jujutsu manager |
+| [Hunk] | `hunk` | | Diff review TUI for humans & agents |
 
 [Git]: https://git-scm.com/
 [Lazygit]: https://github.com/jesseduffield/lazygit
@@ -79,6 +80,7 @@ VCS:
 [Jujutsu]: https://docs.jj-vcs.dev
 [Jujutsu UI]: https://idursun.github.io/jjui
 [Lazyjj]: https://github.com/Cretezy/lazyjj
+[Hunk]: https://hunk.dev
 
 Agent harnesses:
 
