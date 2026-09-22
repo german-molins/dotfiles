@@ -1,48 +1,31 @@
 # [ghui](https://github.com/kitlangton/ghui)
 
-Terminal UI for GitHub pull requests. Installed via the npm backend as
-`npm:@kitlangton/ghui`.
+Terminal UI for GitHub pull requests. Installed from the upstream GitHub
+releases via the `github:kitlangton/ghui` backend.
 
-> [!NOTE]
-> Currently removed from the active tool set. The non-AVX2 `postinstall`
-> rebuild below works when run by hand but fails reproducibly under mise: the
-> installed version string carries a `~aube~<hash>` suffix that breaks the
-> `git clone --branch v$ver` the hook relies on. Parked pending a robust fix.
+## Backend choice
 
-## Non-AVX2 build
+The mise registry maps `ghui` to `npm:@kitlangton/ghui`, whose launcher execs a
+per-platform prebuilt pulled through npm optional dependencies. That path was
+dropped once: aube pinned a stale `~aube~<hash>` content hash the registry no
+longer served, and the package sat below mise's download threshold, so it could
+not lock or install cleanly.
 
-ghui ships as a [Bun](https://bun.sh) standalone binary compiled with the
-default `--compile` target (`bun-linux-x64`), which is the modern/haswell build
-and requires AVX2. On x86_64 hosts without AVX2 — such as the default
-`kvm64`/`qemu64` vCPU models of QEMU/Proxmox VMs — it faults immediately with
-`Illegal instruction (core dumped)` (SIGILL), before any code runs.
+The `github:` backend pulls the release tarball
+(`ghui-linux-x64.tar.gz`) straight from GitHub, sidestepping both the npm/aube
+layer and the download threshold, and extracts a ready-to-run `ghui` binary.
 
-This is the general behavior of `bun build --compile`: the default target bakes
-the AVX2 runtime into the binary regardless of the build host, and only the
-`-baseline` target variant produces an AVX2-free binary. Bun's own installer
-detects a non-AVX2 host and fetches the baseline runtime, so the locally
-installed `bun` runs fine; the break is only in the pre-compiled artifact.
+## Non-AVX2 note
 
-[hunkdiff](https://github.com/modem-dev/hunk) has the same root cause, but it
-falls back to a bundled baseline runtime when its prebuilt is removed. ghui
-publishes no such fallback: its npm launcher only execs the per-platform
-prebuilt, and the published package ships no source to run from. So the fix is
-to rebuild the binary with the baseline target and swap it in place.
+ghui ships as a [Bun](https://bun.sh) `--compile` standalone. Historically the
+`linux-x64` artifact used the default (haswell) target and required AVX2, so it
+faulted with `Illegal instruction` (SIGILL) on x86_64 hosts without AVX2 — such
+as the default `kvm64`/`qemu64` vCPU models of QEMU/Proxmox VMs — before any
+code ran. That required a `postinstall` hook to rebuild the binary with the
+`bun-linux-x64-baseline` target.
 
-### Workaround
-
-A `postinstall` hook on the mise tool entry, gated to non-AVX2 x86 hosts,
-rebuilds the standalone binary from the matching source tag with the baseline
-Bun target and overwrites the crashing prebuilt:
-
-```sh
-bun build --compile --bytecode --format=esm \
-  --target=bun-linux-x64-baseline \
-  --outfile="$bin" src/standalone.ts
-```
-
-On AVX2 hosts and non-x86 arches the hook is a no-op and the published prebuilt
-is used unchanged. The hook reruns on every version bump, so `mise up` stays
-fully managed. The only added cost, on the non-AVX2 host, is the rebuild
-(~3 s: shallow clone + `bun install` + compile); runtime is identical to the
-prebuilt.
+Current releases (verified on v0.9.1) run on non-AVX2 hosts directly: the
+release `linux-x64` build no longer needs AVX2, so the rebuild hook is gone and
+the tool is a plain `"github:kitlangton/ghui" = "latest"` entry. See
+[hunkdiff](https://github.com/modem-dev/hunk), which had the same root cause and
+the same resolution — a native release binary that runs baseline-safe.

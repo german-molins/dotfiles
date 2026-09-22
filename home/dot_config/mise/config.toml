@@ -97,6 +97,7 @@ colima = "latest"
 codex = "latest"
 exiftool = "latest"
 poppler = "latest"
+"github:kitlangton/ghui" = "latest"
 
 [settings]
 experimental = true

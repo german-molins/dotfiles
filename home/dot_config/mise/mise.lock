@@ -9549,6 +9549,56 @@ url = "https://github.com/github/gh-stack/releases/download/v0.1.1/darwin-amd64"
 url_api = "https://api.github.com/repos/github/gh-stack/releases/assets/541392011"
 provenance = "github-attestations"
 
+[[tools."github:kitlangton/ghui"]]
+version = "0.9.1"
+backend = "github:kitlangton/ghui"
+specifiers = ["latest"]
+
+[tools."github:kitlangton/ghui"."platforms.linux-arm64"]
+checksum = "sha256:9a90264d830d1dc3388086f0e55a294364beb53c48f33e6e2e7c58a52f044c0d"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361297"
+
+[tools."github:kitlangton/ghui"."platforms.linux-arm64-musl"]
+checksum = "sha256:9a90264d830d1dc3388086f0e55a294364beb53c48f33e6e2e7c58a52f044c0d"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361297"
+
+[tools."github:kitlangton/ghui"."platforms.linux-x64"]
+checksum = "sha256:dd46f080000a3ab9a03a3fc8b14ac0449728b002875365530de5f47375f37921"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361502"
+
+[tools."github:kitlangton/ghui"."platforms.linux-x64-baseline"]
+checksum = "sha256:dd46f080000a3ab9a03a3fc8b14ac0449728b002875365530de5f47375f37921"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361502"
+
+[tools."github:kitlangton/ghui"."platforms.linux-x64-musl"]
+checksum = "sha256:dd46f080000a3ab9a03a3fc8b14ac0449728b002875365530de5f47375f37921"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361502"
+
+[tools."github:kitlangton/ghui"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:dd46f080000a3ab9a03a3fc8b14ac0449728b002875365530de5f47375f37921"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361502"
+
+[tools."github:kitlangton/ghui"."platforms.macos-arm64"]
+checksum = "sha256:8d2d4424b4238069ceec45c610df9f09f40bbf01e40c309257aaae56795424d3"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361183"
+
+[tools."github:kitlangton/ghui"."platforms.macos-x64"]
+checksum = "sha256:321f6137d42fada3a8c7aae4a3997cc53c1ff0507383f46679ed80824b24540a"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361928"
+
+[tools."github:kitlangton/ghui"."platforms.macos-x64-baseline"]
+checksum = "sha256:321f6137d42fada3a8c7aae4a3997cc53c1ff0507383f46679ed80824b24540a"
+url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361928"
+
 [[tools."github:mat2cc/redis_tui"]]
 version = "0.2.4"
 backend = "github:mat2cc/redis_tui"
