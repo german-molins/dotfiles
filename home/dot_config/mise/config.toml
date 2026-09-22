@@ -75,17 +75,7 @@ rust-analyzer = "latest"
 "npm:codeburn" = { version = "latest", trust_policy_excludes = [
   "@peculiar/asn1-cms@2.9.0",
 ] }
-# allow_builds runs bundled bun's postinstall; postinstall drops the AVX2-only
-# prebuilt on non-AVX2 x86 CPUs so hunk falls back to its baseline bun runtime
-"npm:hunkdiff" = { version = "latest", allow_builds = ["bun"], trust_policy_excludes = ["@pierre/theme@2.0.0"], postinstall = '''
-case "$(uname -m)" in
-    x86_64 | amd64) ;;
-    *) exit 0 ;;
-esac
-{ [ -r /proc/cpuinfo ] && grep -qw avx2 /proc/cpuinfo; } && exit 0
-{ command -v sysctl >/dev/null 2>&1 && sysctl -a 2>/dev/null | grep -qiw avx2; } && exit 0
-find "$MISE_TOOL_INSTALL_PATH" \( -name hunkdiff-linux-x64 -o -name hunkdiff-darwin-x64 \) -prune -exec rm -rf {} +
-''' }
+hunk = "latest"
 oh-my-pi = { version = "latest", rename_exe = "omp" }
 witr = "latest"
 nono = "latest"
