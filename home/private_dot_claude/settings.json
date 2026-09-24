@@ -36,7 +36,7 @@
   },
   "enabledPlugins": {
     "beads@beads-marketplace": true,
-    "caveman@caveman": true,
+    "caveman@caveman": false,
     "context-mode@context-mode": true,
     "context7@claude-plugins-official": false,
     "ponytail@ponytail": true,
