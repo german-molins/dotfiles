@@ -35,6 +35,7 @@ export default defineConfig({
               { text: "fnox", link: '/tools/fnox' },
               { text: "System Dependencies", link: '/tools/system_dependencies' },
               { text: "General Utils", link: '/tools/utils' },
+              { text: "Herdr", link: '/tools/herdr' },
               { text: "Zellij", link: '/tools/zellij' },
               { text: "Git", link: '/tools/git' },
               { text: "GitHub CLI", link: '/tools/gh' },
