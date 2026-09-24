@@ -31,7 +31,19 @@
       "Bash(cargo check*)",
       "Bash(cargo install*)",
       "Bash(cargo uninstall*)",
-      "Bash(cargo search*)"
+      "Bash(cargo search*)",
+      "Bash(bd prime*)",
+      "Bash(bd status*)",
+      "Bash(bd ready*)",
+      "Bash(bd show*)",
+      "Bash(bd search*)",
+      "Bash(bd list*)",
+      "Bash(bd update*)",
+      "Bash(bd comment*)",
+      "Bash(bd note*)",
+      "Bash(bd dep*)",
+      "Bash(bd blocked*)",
+      "Bash(bd epic*)"
     ],
     "ask": [
       "Bash(git push --force*)",
