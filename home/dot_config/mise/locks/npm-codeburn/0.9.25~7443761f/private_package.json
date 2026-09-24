@@ -2,6 +2,6 @@
   "name": "mise-npm-install",
   "private": true,
   "dependencies": {
-    "ctx7": "0.5.11"
+    "codeburn": "0.9.25"
   }
 }
