@@ -2,9 +2,60 @@
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
   },
+  "defaultMode": "auto",
   "permissions": {
     "allow": [
-      "mcp__plugin_context-mode_context-mode__ctx_search"
+      "mcp__plugin_context-mode_context-mode__ctx_search",
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git show*)",
+      "Bash(git commit *)",
+      "Bash(git add *)",
+      "Bash(jj status*)",
+      "Bash(jj log*)",
+      "Bash(jj diff*)",
+      "Bash(jj show*)",
+      "Bash(npm run *)",
+      "Bash(npm test*)",
+      "Bash(npm install*)",
+      "Bash(npm ci*)",
+      "Bash(mise help*)",
+      "Bash(mise run *)",
+      "Bash(mise use*)",
+      "Bash(mise ls*)",
+      "Bash(mise tasks*)",
+      "Bash(cargo help*)",
+      "Bash(cargo test*)",
+      "Bash(cargo build*)",
+      "Bash(cargo check*)",
+      "Bash(cargo install*)",
+      "Bash(cargo uninstall*)",
+      "Bash(cargo search*)"
+    ],
+    "ask": [
+      "Bash(git push --force*)",
+      "Bash(git push * --force*)",
+      "Bash(git push -f*)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean -fd*)",
+      "Bash(git branch -D*)",
+      "Bash(rm -rf*)",
+      "Bash(gh repo delete*)",
+      "Bash(gh repo archive*)",
+      "Bash(gh release delete*)",
+      "Bash(gh workflow disable*)",
+      "Bash(gh secret *)",
+      "Bash(gh auth logout*)",
+      "Bash(sudo *)",
+      "Bash(chmod -R 777*)",
+      "Bash(curl * | sh*)",
+      "Bash(curl * | bash*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.*.env)",
+      "Read(~/.ssh/**)"
     ]
   },
   "model": "claude-opus-5-5",
