@@ -79,9 +79,11 @@ login`)
 
 ### Plugins
 
+- [Matt Pocock Skills](https://github.com/mattpocock/skills): See [the
+documentation](https://www.aihero.dev/skills).
 - [Superpowers](https://github.com/obra/superpowers): Complete software
-development workflow
-- [Caveman](https://github.com/JuliusBrussee/caveman)
+development workflow - disabled by default
+- [Caveman](https://github.com/JuliusBrussee/caveman) - disabled by default
 
 ### Configuration
 
@@ -111,3 +113,7 @@ MCP servers are configured through the `mcp` key in `settings.json` or via the
 
 - **Context7**: Remote HTTP server for up-to-date documentation
 - **Mise**: Local stdio server exposing mise environment information
+
+## References
+
+- [AIHero](https://www.aihero.dev/)
