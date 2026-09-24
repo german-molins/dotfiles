@@ -41,8 +41,9 @@
     "context7@claude-plugins-official": false,
     "ponytail@ponytail": true,
     "rust-analyzer-lsp@claude-plugins-official": false,
-    "superpowers@claude-plugins-official": true,
-    "nono@nolabs-ai": true
+    "superpowers@claude-plugins-official": false,
+    "nono@nolabs-ai": true,
+    "mattpocock-skills@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "caveman": {
