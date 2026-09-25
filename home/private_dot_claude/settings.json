@@ -121,6 +121,12 @@
         "source": "github",
         "repo": "obra/superpowers-marketplace"
       }
+    },
+    "beads-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "gastownhall/beads"
+      }
     }
   },
   "alwaysThinkingEnabled": true,

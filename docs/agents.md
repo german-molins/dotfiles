@@ -83,6 +83,8 @@ login`)
 documentation](https://www.aihero.dev/skills).
 - [Superpowers](https://github.com/obra/superpowers): Complete software
 development workflow - disabled by default
+- [Beads](https://github.com/gastownhall/beads): Issue tracker for agents;
+runs `bd prime` on session start and before compaction
 - [Context Mode](https://github.com/mksglu/context-mode): Sandboxed tool
 output to protect the context window
 - [Ponytail](https://github.com/DietrichGebert/ponytail): Lazy senior developer
