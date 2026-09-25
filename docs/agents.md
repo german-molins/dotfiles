@@ -83,7 +83,15 @@ login`)
 documentation](https://www.aihero.dev/skills).
 - [Superpowers](https://github.com/obra/superpowers): Complete software
 development workflow - disabled by default
-- [Caveman](https://github.com/JuliusBrussee/caveman) - disabled by default
+- [Context Mode](https://github.com/mksglu/context-mode): Sandboxed tool
+output to protect the context window
+- [Ponytail](https://github.com/DietrichGebert/ponytail): Lazy senior developer
+mode against over-engineering
+- [nono](https://nono.sh): Kernel sandboxing integration
+- [Context7](https://github.com/upstash/context7): Up-to-date library docs -
+disabled by default
+- [rust-analyzer LSP](https://github.com/anthropics/claude-plugins-official):
+Rust language server - disabled by default
 
 ### Configuration
 

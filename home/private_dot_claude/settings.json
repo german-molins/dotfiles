@@ -93,13 +93,8 @@
       }
     ]
   },
-  "statusLine": {
-    "type": "command",
-    "command": "bash ~/.claude/plugins/cache/caveman/caveman/*/hooks/caveman-statusline.sh"
-  },
   "enabledPlugins": {
     "beads@beads-marketplace": true,
-    "caveman@caveman": false,
     "context-mode@context-mode": true,
     "context7@claude-plugins-official": false,
     "ponytail@ponytail": true,
@@ -109,12 +104,6 @@
     "mattpocock-skills@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
-    "caveman": {
-      "source": {
-        "source": "github",
-        "repo": "JuliusBrussee/caveman"
-      }
-    },
     "context-mode": {
       "source": {
         "source": "github",
