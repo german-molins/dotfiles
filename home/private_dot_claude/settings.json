@@ -2,7 +2,6 @@
   "env": {
     "CLAUDE_CODE_DISABLE_1M_CONTEXT": "1"
   },
-  "defaultMode": "auto",
   "permissions": {
     "allow": [
       "mcp__plugin_context-mode_context-mode__ctx_search",
@@ -45,6 +44,11 @@
       "Bash(bd blocked*)",
       "Bash(bd epic*)"
     ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.*.env)",
+      "Read(~/.ssh/**)"
+    ],
     "ask": [
       "Bash(git push --force*)",
       "Bash(git push * --force*)",
@@ -64,11 +68,7 @@
       "Bash(curl * | sh*)",
       "Bash(curl * | bash*)"
     ],
-    "deny": [
-      "Read(./.env)",
-      "Read(./.*.env)",
-      "Read(~/.ssh/**)"
-    ]
+    "defaultMode": "auto"
   },
   "model": "claude-opus-5-5",
   "hooks": {
