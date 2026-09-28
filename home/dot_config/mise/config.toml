@@ -116,7 +116,7 @@ env = { MBX_CARGO_SHIM_MODE = "1" }
 
 [env]
 _.file = ["~/.dotfiles.env", "~/.env", "~/.config/user-dirs.dirs"]
-_.path = ["~/bin", "~/.local/bin"]
+_.path = ["~/.local/bin"]
 
 PS1 = ": "
 PS2 = ".. "
