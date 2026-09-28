@@ -233,7 +233,7 @@ run = "pi update --extensions"
 [tasks."yazi:install"]
 alias = "yazi:i"
 description = "Install Yazi packages"
-run = "ya pkg install"
+run = "ya pkg install --discard"
 
 [tasks."yazi:update"]
 alias = "yazi:up"
