@@ -15,7 +15,8 @@ set -eu
 
 echo "[dotfiles][install] Starting installation script."
 
-if [ ! "$(command -v chezmoi)" ]; then
+chezmoi="$(command -v chezmoi || true)"
+if [ -z "$chezmoi" ]; then
     bin_dir="$HOME/.local/bin"
     chezmoi="$bin_dir/chezmoi"
     echo "[dotfiles][install] Installing chezmoi to '${chezmoi}'." >&2
