@@ -31,6 +31,10 @@ cfg -> apply
 apply -> target
 ```
 
+See [Bootstrap and Dependencies](package_managers.md#bootstrap-and-dependencies)
+for what `chezmoi apply` installs and how the package managers depend on each
+other.
+
 ## Environment Variables
 
 Environment variables that determine the templating environment:

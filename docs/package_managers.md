@@ -1,5 +1,120 @@
 # Package and Project Managers
 
+## Bootstrap and Dependencies
+
+`install.sh` installs chezmoi, which bootstraps every other package manager
+through its scripts. mise then installs tools, bootstrap packages, system
+packages (via `upt`) and editor plugins (via its tasks):
+
+```d2
+direction: down
+
+install: install.sh {shape: page}
+
+bin: "~/.local/bin" {
+  note: "on PATH via ~/.profile\nand .bashrc.d/17-mise.sh" {shape: text}
+  chezmoi
+  mise: "mise\n(pinned in packages.yaml)"
+}
+
+scripts: chezmoi scripts {
+  before: before_00-bootstrap
+  after: after_10…82
+}
+
+brew: Homebrew {
+  cli: brew CLI
+  cellar: Cellar {shape: cylinder}
+  cli -> cellar: ad-hoc
+}
+
+nix: Nix {
+  profile: user profile {shape: cylinder}
+}
+
+tools: "mise [tools]\n(locked in mise.lock)" {shape: cylinder}
+apt: system packages {shape: cylinder}
+plugins: "nvim, yazi, nono" {shape: cylinder}
+
+install -> bin.chezmoi: get.chezmoi.io
+bin.chezmoi -> scripts: runs
+scripts.before -> bin.mise: mise.run
+scripts.before -> brew.cli: "linux-x64, macOS"
+scripts.before -> nix: "devbox.enabled\n(macOS via Devbox)"
+scripts.after -> bin.mise: "10, 20, 62, 75"
+scripts.after -> plugins: "82 nono pull"
+bin.mise -> tools
+bin.mise -> brew.cellar: "bootstrap brew:"
+bin.mise -> nix.profile: "bootstrap nix:"
+bin.mise -> apt: "upt (sudo)"
+bin.mise -> plugins: "nvim, yazi tasks"
+```
+
+chezmoi is deliberately not a mise tool: it sits at the root of the chain and
+has to work when mise does not. `~/.local/bin` holds both chezmoi and the mise
+binary, and is put on `PATH` independently of mise by `~/.profile` (any POSIX
+login shell) and by `.bashrc.d/17-mise.sh` (bash and chezmoi scripts, before
+`mise activate`). mise declares it again in `[env] _.path` as the canonical
+location; mise does not deduplicate `PATH`, so the entry appears twice, which
+is harmless. If mise startup breaks, `chezmoi` is still on `PATH` to repair
+the setup.
+
+Homebrew is bootstrapped only on `linux-x64` and macOS. Nix is gated by
+`devbox.enabled` (`DOTFILES_DEVBOX_ENABLED`); on macOS it is installed through
+the Devbox installer, on Linux with the official installer.
+
+### Updates
+
+`mise run update` runs one subtask per manager. Tracked files are re-added to
+the chezmoi source and committed as `build(<scope>): update packages`; the
+rest change the system without leaving anything to commit:
+
+```d2
+direction: right
+
+update: mise run update
+
+tasks: subtasks {
+  chezmoi: chezmoi:update
+  mise: mise:update
+  yazi: yazi:update
+  nvim: nvim:update
+  pi: pi:update
+  brew: brew:update
+  upt: upt:update
+  agents: agents:update
+}
+
+tracked: tracked in home/ {
+  lock: mise/mise.lock {shape: document}
+  yazi: yazi/package.toml {shape: document}
+  nvim: nvim/lazy-lock.json {shape: document}
+  pi: dot_pi/agent/settings.json {shape: document}
+  skills: dot_agents/dot_skill-lock.json {shape: document}
+}
+
+untracked: untracked {
+  chezmoi: "~/.local/bin/chezmoi"
+  cellar: Homebrew Cellar
+  nix: Nix profile
+  apt: system packages
+}
+
+update -> tasks
+tasks.chezmoi -> untracked.chezmoi: chezmoi upgrade
+tasks.mise -> tracked.lock: mise upgrade
+tasks.mise -> untracked.cellar: bootstrap upgrade
+tasks.mise -> untracked.nix: bootstrap upgrade
+tasks.yazi -> tracked.yazi: ya pkg upgrade
+tasks.nvim -> tracked.nvim: "Lazy! update"
+tasks.pi -> tracked.pi: pi update
+tasks.brew -> untracked.cellar: brew upgrade
+tasks.upt -> untracked.apt: "upt upgrade (sudo)"
+tasks.agents -> tracked.skills: "skills update -g"
+```
+
+## Package Sources
+
 Every user-level ("global") tool and app is installed through **Mise**, which
 drives all package sources from one config (`~/.config/mise/config.toml`). The
 sources differ in how they are declared, whether they are version-locked, and
