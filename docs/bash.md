@@ -143,7 +143,7 @@ shell start — the startup cost this setup exists to minimise — for completio
 the distro framework and carapace already largely cover. So on Linux brew's
 `bash-completion@2` is neither installed nor sourced; the sourcing in
 `08-homebrew.sh` is gated to Darwin with chezmoi templating
-(`{{ if eq .chezmoi.os "darwin" }}`), making the intent explicit rather than
+(<span v-pre>`{{ if eq .chezmoi.os "darwin" }}`</span>), making the intent explicit rather than
 relying on a path that happens to be absent.
 
 On a minimal Linux distro that omits the system `bash-completion` package,
