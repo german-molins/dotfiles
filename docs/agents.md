@@ -124,6 +124,25 @@ MCP servers are configured through the `mcp` key in `settings.json` or via the
 - **Context7**: Remote HTTP server for up-to-date documentation
 - **Mise**: Local stdio server exposing mise environment information
 
+## This Repository
+
+Setup and workflow for agents working on this dotfiles repository itself, as
+opposed to the global setup above that I use for developing other projects.
+
+- `AGENTS.md`: project context and conventions (tracked).
+- `AGENTS.local.md`, `CLAUDE.local.md`: private project context (untracked).
+- Issue tracking with [beads](https://github.com/gastownhall/beads) (`bd`).
+
+### Project Skills
+
+Authored in `.agents/skills/` and symlinked from `.claude/skills/`. Both paths
+are excluded by the global gitignore, so project skills are tracked with
+`git add -f`.
+
+| Skill | Description |
+|-------|-------------|
+| update-all | Updates all packages, tools, plugins and extensions across every package manager and commits the results to the chezmoi source, one `build(<scope>): update packages` commit per manager. |
+
 ## References
 
 - [AIHero](https://www.aihero.dev/)
