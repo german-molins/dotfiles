@@ -131,5 +131,9 @@
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
-  "editorMode": "vim"
+  "editorMode": "vim",
+  "statusLine": {
+    "type": "command",
+    "command": "bash \"$(ls -d ~/.claude/plugins/cache/ponytail/ponytail/*/ | sort -V | tail -1)hooks/ponytail-statusline.sh\""
+  }
 }
