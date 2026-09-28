@@ -185,7 +185,7 @@ run = "chezmoi upgrade"
 
 [tasks."devbox:self-update"]
 description = "Update Devbox"
-run = "devbox version update"
+run = "command -v devbox >/dev/null && devbox version update || exit 0"
 
 [tasks."upt:update"]
 description = "Update system packages"
