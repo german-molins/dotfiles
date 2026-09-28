@@ -18,6 +18,8 @@ prefix
 cases
 - **Profile-based config**: Uses `DOTFILES_PROFILE` for personal or work
 environments
+- **Target platforms**: `macos-arm64`, `linux-x64`, `linux-arm64`; other
+platforms are unsupported
 - **Modular bash**: `home/dot_bashrc.d/NN-name.sh` numbered 10-90 for load
 order
 

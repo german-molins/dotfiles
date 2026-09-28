@@ -40,7 +40,8 @@ Prefer sources top-down; drop to the next only when a tool is unavailable:
 
 ### Platform coverage
 
-Rows apply to both `arm64` and `x64` unless noted.
+Target platforms are `macos-arm64`, `linux-x64` and `linux-arm64`; others are
+unsupported.
 
 | Capability | macOS | Linux |
 |------------|:-----:|:-----:|
