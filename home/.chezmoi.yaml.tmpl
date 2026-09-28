@@ -16,5 +16,5 @@ data:
   personal_email: {{ $personal_email }}
   name: Germán Molins
   dotfiles_url: https://github.com/german-molins/dotfiles.git
-  devbox:
-    enabled: {{ env "DOTFILES_DEVBOX_ENABLED" | default "true" }}
+  nix:
+    enabled: {{ env "DOTFILES_NIX_ENABLED" | default "true" }}

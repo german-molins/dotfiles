@@ -40,7 +40,7 @@ install -> bin.chezmoi: get.chezmoi.io
 bin.chezmoi -> scripts: runs
 scripts.before -> bin.mise: mise.run
 scripts.before -> brew.cli: "linux-x64, macOS"
-scripts.before -> nix: "devbox.enabled\n(macOS via Devbox)"
+scripts.before -> nix: "nix.enabled\n(macOS via Devbox)"
 scripts.after -> bin.mise: "10, 20, 62, 75"
 scripts.after -> plugins: "82 nono pull"
 bin.mise -> tools
@@ -60,7 +60,7 @@ is harmless. If mise startup breaks, `chezmoi` is still on `PATH` to repair
 the setup.
 
 Homebrew is bootstrapped only on `linux-x64` and macOS. Nix is gated by
-`devbox.enabled` (`DOTFILES_DEVBOX_ENABLED`); on macOS it is installed through
+`nix.enabled` (`DOTFILES_NIX_ENABLED`); on macOS it is installed through
 the Devbox installer, on Linux with the official installer.
 
 ### Updates
