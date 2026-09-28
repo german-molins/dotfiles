@@ -243,7 +243,7 @@ run = "ya pkg upgrade"
 
 [tasks."agents:update"]
 description = "Update agents resources"
-run = "skills update"
+run = "skills update --global --yes"
 
 [tasks."python:scaffold"]
 description = "Scaffold a Python project with uv and pytest"
