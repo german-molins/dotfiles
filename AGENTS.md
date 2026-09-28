@@ -37,13 +37,9 @@ This repository uses Mise as the primary package and environment manager. There 
 - **Location**: `home/private_dot_config/mise/config.toml` (Chezmoi source directory)
 - **Purpose**: Manages user-wide tools and environments
 - **Tools**: Extensive list of CLI tools, editors, and utilities
-- **Environments**:
-  - `devbox`: Packages using `mise-nix` backend (Nixhub registry)
-  - `opt`: Optional/heavy packages
-- **Activation**: Controlled by `MISE_ENV` environment variable (default: "devbox,opt")
 - **Terminology**: Referred to as "global" mise config
 
-For more details on Mise, see [docs/tools/mise.md](docs/tools/mise.md).
+ See [Mise](docs/tools/mise.md) for more details.
 
 ## Tool Documentation References
 
