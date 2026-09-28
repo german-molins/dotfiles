@@ -9234,6 +9234,56 @@ checksum = "sha256:7e31028c62c6955877735d0406807aa484c2a5e6f86235a59e26c29c301da
 url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530484719"
 
+[[tools.fnox]]
+version = "1.35.3"
+backend = "packslip:github.com/jdx/fnox"
+specifiers = ["latest"]
+
+[tools.fnox."platforms.linux-arm64"]
+checksum = "sha256:0bf2d91b31d57969e6c12e4677d77f2f648dde81685fa07a6d691560c8cd89f7"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
+[tools.fnox."platforms.linux-arm64-musl"]
+checksum = "sha256:d0d808ee972747b0868317800772e80f693cb7023ca39a9e75f77c6e9cf57e38"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
+[tools.fnox."platforms.linux-x64"]
+checksum = "sha256:69066f81f624d355c83bcb394ba80f6add80c06b7be92c7b178d38af14a25c52"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
+[tools.fnox."platforms.linux-x64-baseline"]
+checksum = "sha256:69066f81f624d355c83bcb394ba80f6add80c06b7be92c7b178d38af14a25c52"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
+[tools.fnox."platforms.linux-x64-musl"]
+checksum = "sha256:e0a9bc1e132bc893301cc108afc849412046ebeb3043ef5b4a3de5e45d5f6701"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
+[tools.fnox."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:e0a9bc1e132bc893301cc108afc849412046ebeb3043ef5b4a3de5e45d5f6701"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
+[tools.fnox."platforms.macos-arm64"]
+checksum = "sha256:49965f9739d053f544aa32599494b3e2442dcf8c116d92a6a4afa5575e9decd3"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
+[tools.fnox."platforms.macos-x64"]
+checksum = "sha256:f56104dc739e6882e6a85fc32149c372450ba6a6799b31f69766234494bababb"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
+[tools.fnox."platforms.macos-x64-baseline"]
+checksum = "sha256:f56104dc739e6882e6a85fc32149c372450ba6a6799b31f69766234494bababb"
+url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+
 [[tools.fzf]]
 version = "0.74.4"
 backend = "aqua:junegunn/fzf"
@@ -11758,131 +11808,6 @@ checksum = "sha256:a24bf10499382f8855e19d2a081b8683e4ab99c7c2affb32dc89b17c8a00c
 url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-darwin-x64.zip"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/579999983"
 
-[[tools."packslip:github.com/jdx/fnox"]]
-version = "1.35.3"
-backend = "packslip:github.com/jdx/fnox"
-specifiers = ["latest"]
-
-[tools."packslip:github.com/jdx/fnox"."platforms.linux-arm64"]
-checksum = "sha256:0bf2d91b31d57969e6c12e4677d77f2f648dde81685fa07a6d691560c8cd89f7"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/fnox"."platforms.linux-arm64-musl"]
-checksum = "sha256:d0d808ee972747b0868317800772e80f693cb7023ca39a9e75f77c6e9cf57e38"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/fnox"."platforms.linux-x64"]
-checksum = "sha256:69066f81f624d355c83bcb394ba80f6add80c06b7be92c7b178d38af14a25c52"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/fnox"."platforms.linux-x64-baseline"]
-checksum = "sha256:69066f81f624d355c83bcb394ba80f6add80c06b7be92c7b178d38af14a25c52"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/fnox"."platforms.linux-x64-musl"]
-checksum = "sha256:e0a9bc1e132bc893301cc108afc849412046ebeb3043ef5b4a3de5e45d5f6701"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/fnox"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:e0a9bc1e132bc893301cc108afc849412046ebeb3043ef5b4a3de5e45d5f6701"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/fnox"."platforms.macos-arm64"]
-checksum = "sha256:49965f9739d053f544aa32599494b3e2442dcf8c116d92a6a4afa5575e9decd3"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-aarch64-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/fnox"."platforms.macos-x64"]
-checksum = "sha256:f56104dc739e6882e6a85fc32149c372450ba6a6799b31f69766234494bababb"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/fnox"."platforms.macos-x64-baseline"]
-checksum = "sha256:f56104dc739e6882e6a85fc32149c372450ba6a6799b31f69766234494bababb"
-url = "https://github.com/jdx/fnox/releases/download/v1.35.3/fnox-x86_64-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
-
-[[tools."packslip:github.com/jdx/pitchfork"]]
-version = "2.27.0"
-backend = "packslip:github.com/jdx/pitchfork"
-specifiers = ["latest"]
-
-[tools."packslip:github.com/jdx/pitchfork"."platforms.linux-arm64"]
-checksum = "sha256:14f7a5e758407e8306234cabb2dd3768670453d9078bcdec6cc4089dfd72d8ed"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.27.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/pitchfork"."platforms.linux-x64"]
-checksum = "sha256:20d7f851e3baec00fd97d53b2f95a986287b959957f56195c6f7f8d504bbea6e"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.27.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/pitchfork"."platforms.linux-x64-baseline"]
-checksum = "sha256:20d7f851e3baec00fd97d53b2f95a986287b959957f56195c6f7f8d504bbea6e"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.27.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
-
-[tools."packslip:github.com/jdx/pitchfork"."platforms.macos-arm64"]
-checksum = "sha256:77491f4d803039ae4cf346c292db62b9b5aad971cc0850413917ef92cf335901"
-url = "https://github.com/jdx/pitchfork/releases/download/v2.27.0/pitchfork-aarch64-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
-
-[[tools."packslip:github.com/jdx/usage"]]
-version = "6.11.1"
-backend = "packslip:github.com/jdx/usage"
-specifiers = ["latest"]
-
-[tools."packslip:github.com/jdx/usage"."platforms.linux-arm64"]
-checksum = "sha256:90622145566409da24d282190ad17cc786c85d498d751543824ab62931705018"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-aarch64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
-[tools."packslip:github.com/jdx/usage"."platforms.linux-arm64-musl"]
-checksum = "sha256:b8903edb0accb76576a9a454900388d629dff9a35186e653c4e5b48e622e62c0"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-aarch64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
-[tools."packslip:github.com/jdx/usage"."platforms.linux-x64"]
-checksum = "sha256:afa6cb0e76f88cc6392aeecf21bbcd869747d4eeb60ab84c98d6e6178edc359a"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
-[tools."packslip:github.com/jdx/usage"."platforms.linux-x64-baseline"]
-checksum = "sha256:afa6cb0e76f88cc6392aeecf21bbcd869747d4eeb60ab84c98d6e6178edc359a"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
-[tools."packslip:github.com/jdx/usage"."platforms.linux-x64-musl"]
-checksum = "sha256:7b37d1d36b310857908e508802db6c6b670555cf25cd0b990f09ee40cb11247b"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-x86_64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
-[tools."packslip:github.com/jdx/usage"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:7b37d1d36b310857908e508802db6c6b670555cf25cd0b990f09ee40cb11247b"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-x86_64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
-[tools."packslip:github.com/jdx/usage"."platforms.macos-arm64"]
-checksum = "sha256:e3a20b948f2665862dcbaddfc50d62ac741654e3cdd815130a6fae00b3d088ff"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-universal-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
-[tools."packslip:github.com/jdx/usage"."platforms.macos-x64"]
-checksum = "sha256:e3a20b948f2665862dcbaddfc50d62ac741654e3cdd815130a6fae00b3d088ff"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-universal-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
-[tools."packslip:github.com/jdx/usage"."platforms.macos-x64-baseline"]
-checksum = "sha256:e3a20b948f2665862dcbaddfc50d62ac741654e3cdd815130a6fae00b3d088ff"
-url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-universal-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
-
 [[tools.pandoc]]
 version = "3.11"
 backend = "github:jgm/pandoc"
@@ -11991,6 +11916,31 @@ url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/582094
 checksum = "sha256:01d8ee28d7114fec4f4eeedbb7561f790853040e9bfbdeebe79437ab66ea51f5"
 url = "https://github.com/earendil-works/pi/releases/download/v0.87.1/pi-darwin-x64.tar.gz"
 url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/582094201"
+
+[[tools.pitchfork]]
+version = "2.27.0"
+backend = "packslip:github.com/jdx/pitchfork"
+specifiers = ["latest"]
+
+[tools.pitchfork."platforms.linux-arm64"]
+checksum = "sha256:14f7a5e758407e8306234cabb2dd3768670453d9078bcdec6cc4089dfd72d8ed"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.27.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
+
+[tools.pitchfork."platforms.linux-x64"]
+checksum = "sha256:20d7f851e3baec00fd97d53b2f95a986287b959957f56195c6f7f8d504bbea6e"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.27.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
+
+[tools.pitchfork."platforms.linux-x64-baseline"]
+checksum = "sha256:20d7f851e3baec00fd97d53b2f95a986287b959957f56195c6f7f8d504bbea6e"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.27.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
+
+[tools.pitchfork."platforms.macos-arm64"]
+checksum = "sha256:77491f4d803039ae4cf346c292db62b9b5aad971cc0850413917ef92cf335901"
+url = "https://github.com/jdx/pitchfork/releases/download/v2.27.0/pitchfork-aarch64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
 
 [[tools.poppler]]
 version = "26.09.0"
@@ -13052,6 +13002,56 @@ url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004651"
 [tools.upt."platforms.macos-x64-baseline"]
 url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004651"
+
+[[tools.usage]]
+version = "6.11.1"
+backend = "packslip:github.com/jdx/usage"
+specifiers = ["latest"]
+
+[tools.usage."platforms.linux-arm64"]
+checksum = "sha256:90622145566409da24d282190ad17cc786c85d498d751543824ab62931705018"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-aarch64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+
+[tools.usage."platforms.linux-arm64-musl"]
+checksum = "sha256:b8903edb0accb76576a9a454900388d629dff9a35186e653c4e5b48e622e62c0"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-aarch64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+
+[tools.usage."platforms.linux-x64"]
+checksum = "sha256:afa6cb0e76f88cc6392aeecf21bbcd869747d4eeb60ab84c98d6e6178edc359a"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+
+[tools.usage."platforms.linux-x64-baseline"]
+checksum = "sha256:afa6cb0e76f88cc6392aeecf21bbcd869747d4eeb60ab84c98d6e6178edc359a"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+
+[tools.usage."platforms.linux-x64-musl"]
+checksum = "sha256:7b37d1d36b310857908e508802db6c6b670555cf25cd0b990f09ee40cb11247b"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+
+[tools.usage."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:7b37d1d36b310857908e508802db6c6b670555cf25cd0b990f09ee40cb11247b"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+
+[tools.usage."platforms.macos-arm64"]
+checksum = "sha256:e3a20b948f2665862dcbaddfc50d62ac741654e3cdd815130a6fae00b3d088ff"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-universal-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+
+[tools.usage."platforms.macos-x64"]
+checksum = "sha256:e3a20b948f2665862dcbaddfc50d62ac741654e3cdd815130a6fae00b3d088ff"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-universal-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+
+[tools.usage."platforms.macos-x64-baseline"]
+checksum = "sha256:e3a20b948f2665862dcbaddfc50d62ac741654e3cdd815130a6fae00b3d088ff"
+url = "https://github.com/jdx/usage/releases/download/v6.11.1/usage-universal-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
 
 [[tools.uv]]
 version = "0.12.19"
