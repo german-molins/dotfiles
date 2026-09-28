@@ -1,5 +1,5 @@
 [tools]
-"packslip:github.com/aubepkg/aube" = "latest"
+aube = "latest"
 bun = "latest"
 d2 = "latest"
 jj = "latest"

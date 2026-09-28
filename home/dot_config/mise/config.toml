@@ -65,7 +65,6 @@ atuin = "latest"
 python = "latest"
 sd = "latest"
 tmux = "latest"
-"packslip:github.com/aubepkg/aube" = "latest"
 "packslip:github.com/jdx/fnox" = "latest"
 age = "latest"
 systemctl-tui = "latest"
@@ -98,6 +97,7 @@ codex = "latest"
 exiftool = "latest"
 poppler = "latest"
 "github:kitlangton/ghui" = "latest"
+aube = "latest"
 
 [settings]
 experimental = true

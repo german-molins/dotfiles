@@ -2,6 +2,46 @@
 
 lockfile_version = 2
 
+[[tools.aube]]
+version = "2.5.0"
+backend = "packslip:github.com/aubepkg/aube"
+specifiers = ["latest"]
+
+[tools.aube."platforms.linux-arm64"]
+checksum = "sha256:478cc5c1a34a0df8d6ffa89e7cff8eff835cf480775eff9f3eb649f6daf557b7"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+
+[tools.aube."platforms.linux-arm64-musl"]
+checksum = "sha256:dad68ccd45221c30d2d5d8a96ea40ccd344893673bff19175d9c425d4552747e"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+
+[tools.aube."platforms.linux-x64"]
+checksum = "sha256:15c5371d4f847da83dd51b4d182cd0928dcd52a9d5cea36d07fb44f3776ee72e"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+
+[tools.aube."platforms.linux-x64-baseline"]
+checksum = "sha256:15c5371d4f847da83dd51b4d182cd0928dcd52a9d5cea36d07fb44f3776ee72e"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+
+[tools.aube."platforms.linux-x64-musl"]
+checksum = "sha256:335c0ccd4e2ee4faa1875132ffdd7c21534760021e944e5e638e2a0547421643"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+
+[tools.aube."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:335c0ccd4e2ee4faa1875132ffdd7c21534760021e944e5e638e2a0547421643"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-musl.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+
+[tools.aube."platforms.macos-arm64"]
+checksum = "sha256:cb40e0e58092ae9aa1781127b0770e73995562dc570113179d17705289517495"
+url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+
 [[tools.bun]]
 version = "1.4.2"
 backend = "core:bun"
@@ -201,46 +241,6 @@ checksum = "sha256:e94b266e3c26690550006abe63152b782280f4e14374accdf04cbde844f00
 url = "https://github.com/jqlang/jq/releases/download/jq-1.8.2/jq-macos-amd64"
 url_api = "https://api.github.com/repos/jqlang/jq/releases/assets/453012782"
 provenance = "github-attestations"
-
-[[tools."packslip:github.com/aubepkg/aube"]]
-version = "2.5.0"
-backend = "packslip:github.com/aubepkg/aube"
-specifiers = ["latest"]
-
-[tools."packslip:github.com/aubepkg/aube"."platforms.linux-arm64"]
-checksum = "sha256:478cc5c1a34a0df8d6ffa89e7cff8eff835cf480775eff9f3eb649f6daf557b7"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
-
-[tools."packslip:github.com/aubepkg/aube"."platforms.linux-arm64-musl"]
-checksum = "sha256:dad68ccd45221c30d2d5d8a96ea40ccd344893673bff19175d9c425d4552747e"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
-
-[tools."packslip:github.com/aubepkg/aube"."platforms.linux-x64"]
-checksum = "sha256:15c5371d4f847da83dd51b4d182cd0928dcd52a9d5cea36d07fb44f3776ee72e"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
-
-[tools."packslip:github.com/aubepkg/aube"."platforms.linux-x64-baseline"]
-checksum = "sha256:15c5371d4f847da83dd51b4d182cd0928dcd52a9d5cea36d07fb44f3776ee72e"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
-
-[tools."packslip:github.com/aubepkg/aube"."platforms.linux-x64-musl"]
-checksum = "sha256:335c0ccd4e2ee4faa1875132ffdd7c21534760021e944e5e638e2a0547421643"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
-
-[tools."packslip:github.com/aubepkg/aube"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:335c0ccd4e2ee4faa1875132ffdd7c21534760021e944e5e638e2a0547421643"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-musl.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
-
-[tools."packslip:github.com/aubepkg/aube"."platforms.macos-arm64"]
-checksum = "sha256:cb40e0e58092ae9aa1781127b0770e73995562dc570113179d17705289517495"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
 
 [[tools.yq]]
 version = "4.53.6"
