@@ -34,7 +34,6 @@ zellij = "latest"
 zoxide = "latest"
 "cargo:diffutils" = "latest"
 xh = "latest"
-"github:tstack/lnav" = "latest"
 "cargo:tlrc" = "latest"
 carapace = "latest"
 "github:ghetzel/mdnstool" = "latest"
@@ -98,6 +97,7 @@ aube = "latest"
 usage = "latest"
 pitchfork = "latest"
 fnox = "latest"
+lnav = "latest"
 
 [settings]
 experimental = true
