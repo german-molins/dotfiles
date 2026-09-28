@@ -4,7 +4,6 @@
 bat = "latest"
 bottom = "latest"
 cargo-binstall = "latest"
-chezmoi = "latest"
 coreutils = "latest"
 dua = "latest"
 duf = "latest"
