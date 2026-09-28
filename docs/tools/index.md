@@ -186,7 +186,7 @@ Mise:
 
 Devbox:
 
-- [NixHub](https://www.nixhub.io/)
+- [nixsearch](https://www.nixsearch.com)
 
 Yazi:
 
