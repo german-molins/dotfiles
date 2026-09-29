@@ -44,7 +44,7 @@ summary.
 | Subtask | Tracked files | Commit title |
 |---------|---------------|--------------|
 | `chezmoi:update` | `home/.chezmoidata/packages.yaml` | `build(chezmoi): update bootstrapped package mise` |
-| `mise:update` | `home/dot_config/mise/mise.lock` | `build(mise): update packages` |
+| `mise:update` | `home/dot_config/mise/mise.lock`, `home/dot_config/mise/locks/` | `build(mise): update packages` |
 | `yazi:update` | `home/dot_config/yazi/package.toml` | `build(yazi): update packages` |
 | `nvim:update` | `home/dot_config/nvim/lazy-lock.json` | `build(nvim): update packages` |
 | `pi:update` | `home/dot_pi/agent/settings.json` | `build(pi): update packages` |
@@ -98,6 +98,24 @@ Notes per scope:
   i.e. tool-managed state. Add them back one by one (`chezmoi add <target>`).
 - ` M`/`R` lines left after adding are pending applies (templates,
   run_onchange scripts), handled in step 7.
+- Mise lock sidecars: npm and pypi tools keep per-version lock dirs under
+  `~/.config/mise/locks/<tool>/<version>`, referenced by `path = "locks/…"` in
+  `mise.lock` (`mise.local.lock` references are machine-local). An upgrade
+  writes the new version's dir, which `chezmoi status` does not show since it
+  is unmanaged, and leaves the old one behind. Reconcile both:
+
+  ```sh
+  cd ~/.config/mise
+  grep -ohE 'path = "locks/[^"]+"' mise.lock mise.local.lock 2>/dev/null \
+      | sed 's/^path = "//; s/"$//' | sort -u >"$SCRATCH/lock-refs"
+  find locks -mindepth 2 -maxdepth 2 -type d | sort \
+      | comm -13 "$SCRATCH/lock-refs" -                  # stale
+  chezmoi unmanaged ~/.config/mise/locks                  # new
+  ```
+
+  `chezmoi add` each new dir referenced by `mise.lock`. `chezmoi destroy
+  --force` each stale dir (plain `rm -r` if unmanaged), and its `<tool>`
+  parent once empty. Both go in the `mise:update` commit.
 
 ## 5. Detect anomalies
 

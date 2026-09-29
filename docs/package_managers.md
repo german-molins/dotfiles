@@ -248,6 +248,11 @@ Lock dependencies to specific versions:
 mise lock
 ```
 
+npm and pypi tools also lock their dependency trees in per-version sidecar dirs
+(`~/.config/mise/locks/<tool>/<version>`, referenced from `mise.lock`), which
+chezmoi manages too. `mise upgrade` writes the new version's dir but leaves the
+old one; the `update-all` skill adds the new dirs and destroys the stale ones.
+
 ### Troubleshooting: mise.lock drift on apply
 
 `chezmoi apply` may abort with `mise.lock has changed since chezmoi last
