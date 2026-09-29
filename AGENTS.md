@@ -36,7 +36,7 @@ This repository uses Mise as the primary package and environment manager. There 
 
 ### Global Mise Configuration (System)
 
-- **Location**: `home/private_dot_config/mise/config.toml` (Chezmoi source directory)
+- **Location**: `home/dot_config/mise/config.toml` (Chezmoi source directory)
 - **Purpose**: Manages user-wide tools and environments
 - **Tools**: Extensive list of CLI tools, editors, and utilities
 - **Terminology**: Referred to as "global" mise config
