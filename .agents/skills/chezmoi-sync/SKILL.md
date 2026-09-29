@@ -78,6 +78,10 @@ caveat found during the task), and add it.
 ## 5. Verify
 
 - `chezmoi status <paths>` is empty for every touched target.
+- Path-scoped applies skip `run_onchange_` scripts that hash the touched files
+  (e.g. nvim package install on `lazy-lock.json` changes). Check `chezmoi
+  status` for new `R` lines not in the preflight baseline and run them with
+  `chezmoi apply ~/.chezmoiscripts/<name>`.
 - For removals, grepping the repo (excluding `.git`) and the relevant target
   locations for the name finds nothing unexpected.
 - When the affected app has a cheap smoke check, run it, e.g. `nvim --headless
