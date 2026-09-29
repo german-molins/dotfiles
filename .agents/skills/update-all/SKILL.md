@@ -13,13 +13,17 @@ description: >
 Updates every package manager through the aggregate mise task, then syncs
 target changes into the chezmoi source (`home/`) and commits them per manager.
 Maintenance of the repo itself (project `mise.lock`, project skills) is out of
-scope. Never push; offer it at the end.
+scope.
+
+Invoke the `chezmoi-sync` skill and follow it for preflight, syncing target
+changes back, verification and commits. This skill only adds what is specific
+to updates: running the update, the scopes that define the commits, and
+anomaly detection.
 
 ## 1. Preflight (stop and report on any failure)
 
-- `git status -sb`: must be on a branch (not detached HEAD) with a clean tree.
-- `chezmoi status`: must be empty. Pre-existing drift would get mixed into
-  update commits, so report it and stop instead of working around it.
+- `chezmoi-sync` preflight in **strict mode**. Updates touch files across
+  every manager, so pre-existing drift would get mixed into update commits.
 - `sudo -n true`: `upt:update` runs apt. If it fails, ask the user to run
   `! sudo -v` and wait.
 
@@ -90,10 +94,9 @@ Notes per scope:
 
 ## 4. Collect changes
 
-- `chezmoi status`: `MM`/`M ` lines are target files changed by the update.
-  Re-add **only those files**, one by one (`chezmoi re-add <target>`), never a
-  blanket `chezmoi re-add`.
-- ` M`/`R` lines left after re-adding are pending applies (templates,
+- `chezmoi status`: `MM`/`M ` lines are target files changed by the update,
+  i.e. tool-managed state. Add them back one by one (`chezmoi add <target>`).
+- ` M`/`R` lines left after adding are pending applies (templates,
   run_onchange scripts), handled in step 7.
 
 ## 5. Detect anomalies
@@ -117,15 +120,16 @@ in its own commit before the scope's update commit.
 
 ## 6. Commit
 
-One commit per scope with changes, in table order. Commit the clean scopes;
-for a held-back scope, explain the anomaly and ask the user how to proceed.
-Stage only the scope's files. Body: 1-3 short lines on notable bumps, removals
-or fixes, then the attribution trailers required by the session.
+Follow `chezmoi-sync` commit rules with each scope as one concern: one commit
+per scope with changes, in table order, using the scope's commit title. Commit
+the clean scopes; for a held-back scope, explain the anomaly and ask the user
+how to proceed. Body: 1-3 short lines on notable bumps, removals or fixes.
 
 ## 7. Finish
 
-- `chezmoi apply`, after all re-adds, so pending templates and scripts run.
-  `chezmoi status` must then be empty.
+- `chezmoi apply`, after all adds, so pending templates and scripts run. Strict
+  preflight guarantees nothing unrelated is pending. `chezmoi status` must then
+  be empty.
 - `git status --short`: only files of held-back scopes may remain. Anything
   else is a leftover to report.
 - Health: `mise doctor`, `mise ls --missing`,
