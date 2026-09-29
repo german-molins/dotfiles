@@ -293,3 +293,9 @@ run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
 "nix:readline" = "latest"
 "nix:ffmpeg" = "latest"
 "nix:git-extras" = "latest"
+
+[bootstrap.macos.dock]
+apps = [
+    "/Applications/Firefox.app",
+    "/Applications/kitty.app",
+]

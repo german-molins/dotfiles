@@ -19,3 +19,6 @@ mise install
 # checksum of mise config for bootstrap packages
 # {{ include "dot_config/mise/config.toml" | sha256sum }}
 mise bootstrap packages apply --yes
+{{- if eq .chezmoi.os "darwin" }}
+mise bootstrap macos defaults apply --yes
+{{- end }}
