@@ -64,11 +64,6 @@ last line in insert mode. This relies on the `group.meetings.note` configuration
 - [Gruvbox](https://github.com/ellisonleao/gruvbox.nvim) (default)
 - [NeoSolarized](https://github.com/Tsuzat/NeoSolarized.nvim)
 
-### [Sidekick](https://github.com/folke/sidekick.nvim) (LazyVim extra)
-
-- Next edit suggestions disabled (they require the Copilot LSP).
-- Integration with many code assistant CLIs.
-
 ## Project-Local Configuration
 
 Plugin `nvim-config-local` is used to load project-local configuration files.
