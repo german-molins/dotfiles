@@ -82,6 +82,27 @@ completion and tasks docs generation to work, since `mise` already integrates
 shebang breaks it. However, it is necessary for standalone Usage scripts not
 managed by `mise` directly as tasks.
 
+## Project Diagnostics
+
+The repository's health checks are declared as `[doctor.checks.<name>]` in the
+local `mise.toml` and run with
+[`mise doctor project`](https://mise.jdx.dev/configuration/project-diagnostics.html):
+
+```sh
+mise doctor project
+mise doctor project --json
+```
+
+- **Repository**: `commit-authors`, `git-user-email`, `beads`, `task-docs-fresh`
+- **Machine**: `chezmoi`, `mise`, `tools-installed`, `nvim`, `fnox`, `gh-auth`,
+  `nix`
+
+Machine checks live in the local config rather than the global one on purpose:
+global checks would run in every project's `mise doctor project`.
+
+Check output is discarded, so a failure only shows its description and hint.
+Run the check's command directly to see why it failed.
+
 ## Managing Multiple Versions of the Same Tool
 
 Mise supports installing several versions of the same tool, with the latest

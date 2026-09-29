@@ -6,7 +6,7 @@
 - **Build documentation**: `mise docs:build` or `aube run docs:build`
 - **Generate docs**: `mise docs:generate`
 - **Preview built docs**: `aube run docs:preview`
-- **Check health**: `mise check-health` (system health checks)
+- **Check health**: `mise doctor project` (repository and machine diagnostics)
 
 ## Architecture & Structure
 

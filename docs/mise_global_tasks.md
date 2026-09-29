@@ -79,6 +79,13 @@ List installed Nerd Fonts
 
 Clean up Nix packages and garbage collection
 
+## `nono:update`
+
+- **Usage:** `nono:update`
+- **Aliases:** `nono:up`
+
+Update nono packs
+
 ## `nvim:clean`
 
 - **Usage:** `nvim:clean`
@@ -164,7 +171,7 @@ Scaffold a project
 
 ## `update`
 
-- Depends: chezmoi:update, mise:update, yazi:update, nvim:update, pi:update, brew:update, upt:update, agents:update
+- Depends: chezmoi:update, mise:update, yazi:update, nvim:update, pi:update, nono:update, brew:update, upt:update, agents:update
 
 - **Usage:** `update`
 

@@ -27,3 +27,59 @@ alias = "mise:update-docs"
 run = """
 mise generate task-docs --cd "$HOME" >docs/mise_global_tasks.md
 """
+
+[doctor.checks.commit-authors]
+description = "All commits are authored by the chezmoi personal_email"
+run = '[ "$(git log --format=%ae | sort -u)" = "$(chezmoi data | jq -r .personal_email)" ]'
+hint = "Compare `git log --format=%ae | sort -u` with `chezmoi data | jq -r .personal_email`."
+
+[doctor.checks.git-user-email]
+description = "Git user.email matches the chezmoi personal_email"
+run = '[ "$(git config user.email)" = "$(chezmoi data | jq -r .personal_email)" ]'
+hint = "Run `git config user.email <personal_email>`."
+
+[doctor.checks.beads]
+description = "Beads database is readable"
+run = "bd stats"
+hint = "Run `bd stats` for the error; see `bd doctor` for embedded mode recovery."
+
+[doctor.checks.chezmoi]
+description = "chezmoi doctor reports no failures"
+run = "chezmoi doctor"
+hint = "Run `chezmoi doctor` and fix rows marked failed or error."
+
+[doctor.checks.mise]
+description = "mise doctor reports no problems"
+run = "mise doctor"
+hint = "Run `mise doctor` for the list of problems."
+
+[doctor.checks.tools-installed]
+description = "All configured mise tools are installed"
+run = '[ -z "$(mise ls --missing)" ]'
+hint = "Run `mise ls --missing`, then `mise install`."
+
+[doctor.checks.task-docs-fresh]
+description = "Global mise task docs are up to date"
+run = 'mise generate task-docs --cd "$HOME" | diff -q - docs/mise_global_tasks.md'
+hint = "Run `mise run mise:generate-docs` and commit the result."
+
+[doctor.checks.nvim]
+description = "Neovim core, lazy, mason and treesitter health has no errors"
+run = "sh home/dot_config/mise/scripts/nvim-health.sh"
+hint = "Run `nvim -c 'checkhealth vim.* lazy nvim-treesitter mason'` and look for ERROR."
+timeout = "30s"
+
+[doctor.checks.fnox]
+description = "All required fnox secrets are configured"
+run = "fnox check"
+hint = "Run `fnox check` to list missing secrets."
+
+[doctor.checks.gh-auth]
+description = "GitHub CLI is authenticated"
+run = "gh auth status"
+hint = "Run `gh auth login`."
+
+[doctor.checks.nix]
+description = "Nix installation is consistent"
+run = "! command -v nix >/dev/null || nix config check"
+hint = "Run `nix config check` for details."
