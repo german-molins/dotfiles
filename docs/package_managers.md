@@ -1,5 +1,18 @@
 # Package and Project Managers
 
+Package managers fall into three categories by the kind of package they
+manage:
+
+| Category | Manages | Managers |
+|----------|---------|----------|
+| System | OS-level and machine-wide packages | `upt` (native OS manager, sudo), Homebrew |
+| User (global) | User-wide CLI tools and apps | Mise `[tools]` and backends, Mise bootstrap `nix:` |
+| Per-tool | A tool's own plugins, extensions or packs | See [Per-tool Package Managers](#per-tool-package-managers) |
+
+Mise drives the first two: it installs system packages through `upt` and
+Homebrew formulae through its `brew:` bootstrap manager. Per-tool managers are
+the package managers built into a tool itself.
+
 ## Bootstrap and Dependencies
 
 `install.sh` installs chezmoi, which bootstraps every other package manager
@@ -22,32 +35,38 @@ scripts: chezmoi scripts {
   after: after_10…82
 }
 
-brew: Homebrew {
-  cli: brew CLI
-  cellar: Cellar {shape: cylinder}
-  cli -> cellar: ad-hoc
+system: System {
+  brew: Homebrew {
+    cli: brew CLI
+    cellar: Cellar {shape: cylinder}
+    cli -> cellar: ad-hoc
+  }
+  apt: system packages {shape: cylinder}
 }
 
-nix: Nix {
-  profile: user profile {shape: cylinder}
+user: User (global) {
+  nix: Nix {
+    profile: user profile {shape: cylinder}
+  }
+  tools: "mise [tools]\n(locked in mise.lock)" {shape: cylinder}
 }
 
-tools: "mise [tools]\n(locked in mise.lock)" {shape: cylinder}
-apt: system packages {shape: cylinder}
-plugins: "nvim, yazi, nono" {shape: cylinder}
+pertool: Per-tool {
+  plugins: "nvim, yazi, nono,\npi, skills, Claude Code,\nmise plugins" {shape: cylinder}
+}
 
 install -> bin.chezmoi: get.chezmoi.io
 bin.chezmoi -> scripts: runs
 scripts.before -> bin.mise: mise.run
-scripts.before -> brew.cli: "linux-x64, macOS"
-scripts.before -> nix: "nix.enabled\n(macOS via Devbox)"
+scripts.before -> system.brew.cli: "linux-x64, macOS"
+scripts.before -> user.nix: "nix.enabled\n(macOS via Devbox)"
 scripts.after -> bin.mise: "10, 20, 62, 75"
-scripts.after -> plugins: "82 nono pull"
-bin.mise -> tools
-bin.mise -> brew.cellar: "bootstrap brew:"
-bin.mise -> nix.profile: "bootstrap nix:"
-bin.mise -> apt: "upt (sudo)"
-bin.mise -> plugins: "nvim, yazi tasks"
+scripts.after -> pertool.plugins: "82 nono pull"
+bin.mise -> user.tools
+bin.mise -> system.brew.cellar: "bootstrap brew:"
+bin.mise -> user.nix.profile: "bootstrap nix:"
+bin.mise -> system.apt: "upt (sudo)"
+bin.mise -> pertool.plugins: "nvim, yazi tasks"
 ```
 
 chezmoi is deliberately not a mise tool: it sits at the root of the chain and
@@ -75,14 +94,20 @@ direction: right
 update: mise run update
 
 tasks: subtasks {
-  chezmoi: chezmoi:update
-  mise: mise:update
-  yazi: yazi:update
-  nvim: nvim:update
-  pi: pi:update
-  brew: brew:update
-  upt: upt:update
-  agents: agents:update
+  system: System {
+    brew: brew:update
+    upt: upt:update
+  }
+  user: User (global) {
+    chezmoi: chezmoi:update
+    mise: mise:update
+  }
+  pertool: Per-tool {
+    yazi: yazi:update
+    nvim: nvim:update
+    pi: pi:update
+    agents: agents:update
+  }
 }
 
 tracked: tracked in home/ {
@@ -101,16 +126,16 @@ untracked: untracked {
 }
 
 update -> tasks
-tasks.chezmoi -> untracked.chezmoi: chezmoi upgrade
-tasks.mise -> tracked.lock: mise upgrade
-tasks.mise -> untracked.cellar: bootstrap upgrade
-tasks.mise -> untracked.nix: bootstrap upgrade
-tasks.yazi -> tracked.yazi: ya pkg upgrade
-tasks.nvim -> tracked.nvim: "Lazy! update"
-tasks.pi -> tracked.pi: pi update
-tasks.brew -> untracked.cellar: brew upgrade
-tasks.upt -> untracked.apt: "upt upgrade (sudo)"
-tasks.agents -> tracked.skills: "skills update -g"
+tasks.user.chezmoi -> untracked.chezmoi: chezmoi upgrade
+tasks.user.mise -> tracked.lock: mise upgrade
+tasks.user.mise -> untracked.cellar: bootstrap upgrade
+tasks.user.mise -> untracked.nix: bootstrap upgrade
+tasks.pertool.yazi -> tracked.yazi: ya pkg upgrade
+tasks.pertool.nvim -> tracked.nvim: "Lazy! update"
+tasks.pertool.pi -> tracked.pi: pi update
+tasks.system.brew -> untracked.cellar: brew upgrade
+tasks.system.upt -> untracked.apt: "upt upgrade (sudo)"
+tasks.pertool.agents -> tracked.skills: "skills update -g"
 ```
 
 ## Package Sources
@@ -406,6 +431,25 @@ omits the `sudo` prefix on MacOS, and is used like
 ```sh
 mise run upt install my-tool
 ```
+
+## Per-tool Package Managers
+
+Tools with a built-in package manager for their own plugins, extensions or
+packs. Each is declared in the chezmoi source where the tool allows it,
+installed by a chezmoi script and updated by a `mise run update` subtask:
+
+| Tool | Manager CLI | Declared in | Lockfile | Install hook | Update task |
+|------|-------------|-------------|----------|--------------|-------------|
+| Yazi | `ya pkg` | `dot_config/yazi/package.toml` | same file | `after_75` → `yazi:install` | `yazi:update` |
+| Neovim | lazy.nvim | `dot_config/nvim/lua/` specs | `dot_config/nvim/lazy-lock.json` | `after_62` → `nvim:install` | `nvim:update` |
+| nono | `nono pull` | `.chezmoidata/packages.yaml` (`packages.nono`) | untracked (`~/.config/nono/packages/lockfile.json`) | `after_82` | — |
+| pi | `pi` | `dot_pi/agent/settings.json` | — | — | `pi:update` |
+| Skills | `skills` | `dot_agents/dot_skill-lock.json` | same file | — | `agents:update` |
+| Claude Code | `claude plugin` | `private_dot_claude/settings.json` | untracked (`~/.claude/plugins/installed_plugins.json`) | — | — |
+| Mise plugins | `mise plugins` | implicit, by plugin backends in `[tools]` | — | `after_10` (`mise install`) | `mise:update` |
+
+Claude Code plugins are changed through the `claude plugin` CLI, which
+rewrites `~/.claude/settings.json`; re-add it with `chezmoi re-add` afterwards.
 
 ## Platform Gates for Package Lists
 
