@@ -20,25 +20,12 @@ plugins.
 
 | Plugin | Runtime Dependencies | Manager |
 |--------|----------------------|---------|
-| copilot.lua | Node.js >=22 | Mise |
 | TODO | TODO | TODO |
 
 See [Mise: Managing Multiple Versions of the Same
 Tool](./mise.md#managing-multiple-versions-of-the-same-tool) for how to
-configure tool versions for plugins with runtime dependencies (like
-`copilot.lua`), which often let you configure the runtime executable path
-through options like `copilot_node_command`. The dependency executable being
-used can be often checked as e.g. the command
-
-```vim
-:Copilot version
-
-[Copilot.lua] Neovim 0.11.4
-copilot language server 1.377.0
-copilot.lua 3cd5086c28c5769f5db147721f457a3e081de254
-Node.js 24.9.0
-Language server: /Users/user/.local/share/nvim/lazy/copilot.lua/copilot/js/language-server.js
-```
+configure tool versions for plugins with runtime dependencies, which often let
+you configure the runtime executable path through plugin options.
 
 ## Plugins List
 
@@ -79,7 +66,7 @@ last line in insert mode. This relies on the `group.meetings.note` configuration
 
 ### [Sidekick](https://github.com/folke/sidekick.nvim) (LazyVim extra)
 
-- Copilot Tab completion and next cursor position prediction.
+- Next edit suggestions disabled (they require the Copilot LSP).
 - Integration with many code assistant CLIs.
 
 ## Project-Local Configuration
