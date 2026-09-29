@@ -106,6 +106,7 @@ tasks: subtasks {
     yazi: yazi:update
     nvim: nvim:update
     pi: pi:update
+    nono: nono:update
     agents: agents:update
   }
 }
@@ -123,6 +124,7 @@ untracked: untracked {
   cellar: Homebrew Cellar
   nix: Nix profile
   apt: system packages
+  nono: nono packs
 }
 
 update -> tasks
@@ -133,6 +135,7 @@ tasks.user.mise -> untracked.nix: bootstrap upgrade
 tasks.pertool.yazi -> tracked.yazi: ya pkg upgrade
 tasks.pertool.nvim -> tracked.nvim: "Lazy! update"
 tasks.pertool.pi -> tracked.pi: pi update
+tasks.pertool.nono -> untracked.nono: nono update
 tasks.system.brew -> untracked.cellar: brew upgrade
 tasks.system.upt -> untracked.apt: "upt upgrade (sudo)"
 tasks.pertool.agents -> tracked.skills: "skills update -g"
@@ -442,7 +445,7 @@ installed by a chezmoi script and updated by a `mise run update` subtask:
 |------|-------------|-------------|----------|--------------|-------------|
 | Yazi | `ya pkg` | `dot_config/yazi/package.toml` | same file | `after_75` → `yazi:install` | `yazi:update` |
 | Neovim | lazy.nvim | `dot_config/nvim/lua/` specs | `dot_config/nvim/lazy-lock.json` | `after_62` → `nvim:install` | `nvim:update` |
-| nono | `nono pull` | `.chezmoidata/packages.yaml` (`packages.nono`) | untracked (`~/.config/nono/packages/lockfile.json`) | `after_82` | — |
+| nono | `nono pull` | `.chezmoidata/packages.yaml` (`packages.nono`) | untracked (`~/.config/nono/packages/lockfile.json`) | `after_82` | `nono:update` |
 | pi | `pi` | `dot_pi/agent/settings.json` | — | — | `pi:update` |
 | Skills | `skills` | `dot_agents/dot_skill-lock.json` | same file | — | `agents:update` |
 | Claude Code | `claude plugin` | `private_dot_claude/settings.json` | untracked (`~/.claude/plugins/installed_plugins.json`) | — | — |
@@ -450,6 +453,35 @@ installed by a chezmoi script and updated by a `mise run update` subtask:
 
 Claude Code plugins are changed through the `claude plugin` CLI, which
 rewrites `~/.claude/settings.json`; re-add it with `chezmoi re-add` afterwards.
+
+### nono Packs
+
+`packages.nono` lists the [nono](https://nono.sh) packs to install. The
+`nolabs-ai/claude` pack is the base of the `claude-dotfiles` profile (used by
+the `claude-nono` alias) and also wires the `nono@nolabs-ai` Claude Code
+plugin and its marketplace.
+
+`run_onchange_after_82-install-nono-packages.sh.tmpl` runs `nono pull` for each
+declared pack. It carries two hash comments, and chezmoi re-runs it whenever
+its rendered contents differ from the last run:
+
+- **Declared packages**: `packages.nono` changes.
+- **Installed packages**: the names and versions reported by `nono list
+  --installed` change, e.g. a pack was removed or updated outside chezmoi. It
+  is rendered only when `nono` is on `PATH`.
+
+A removed pack is therefore restored on the next `chezmoi apply`. That apply
+renders the hash *before* pulling, so the following apply runs the script once
+more as a no-op, and later applies are quiet. `nono pull` of an installed pack
+is a no-op, so extra runs are harmless.
+
+`nono remove` also unwires `nono@nolabs-ai` from `~/.claude/settings.json`, so
+the healing apply first asks to overwrite it; accept to restore the source
+version.
+
+A failed `nono pull` leaves partially written files that block the next pull
+(`refusing to overwrite … not written by a managed pack`); remove the named
+file and re-apply.
 
 ## Platform Gates for Package Lists
 

@@ -44,6 +44,7 @@ summary.
 | `yazi:update` | `home/dot_config/yazi/package.toml` | `build(yazi): update packages` |
 | `nvim:update` | `home/dot_config/nvim/lazy-lock.json` | `build(nvim): update packages` |
 | `pi:update` | `home/dot_pi/agent/settings.json` | `build(pi): update packages` |
+| `nono:update` | none | none |
 | `brew:update` | none | none |
 | `upt:update` | none | none |
 | `agents:update` | `home/dot_agents/dot_skill-lock.json` | `build(skills): update packages` |

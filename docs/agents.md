@@ -89,7 +89,9 @@ runs `bd prime` on session start and before compaction
 output to protect the context window
 - [Ponytail](https://github.com/DietrichGebert/ponytail): Lazy senior developer
 mode against over-engineering
-- [nono](https://nono.sh): Kernel sandboxing integration
+- [nono](https://nono.sh): Kernel sandboxing integration; installed and wired
+by the `nolabs-ai/claude` nono pack, not a marketplace (see [nono
+Packs](package_managers.md#nono-packs))
 - [Context7](https://github.com/upstash/context7): Up-to-date library docs -
 disabled by default
 - [rust-analyzer LSP](https://github.com/anthropics/claude-plugins-official):

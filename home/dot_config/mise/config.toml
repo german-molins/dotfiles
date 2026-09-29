@@ -166,6 +166,7 @@ depends = [
   "yazi:update",
   "nvim:update",
   "pi:update",
+  "nono:update",
   "brew:update",
   "upt:update",
   "agents:update",
@@ -229,6 +230,11 @@ run = "nvim --headless '+Lazy! update' +qa"
 [tasks."pi:update"]
 alias = "pi:up"
 run = "pi update --extensions"
+
+[tasks."nono:update"]
+alias = "nono:up"
+description = "Update nono packs"
+run = "nono update"
 
 [tasks."yazi:install"]
 alias = "yazi:i"

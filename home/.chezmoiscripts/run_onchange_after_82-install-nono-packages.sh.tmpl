@@ -2,6 +2,18 @@
 
 set -eu
 
+# Make mise available in the current shell.
+{{ template "mise-shellenv" . }}
+
+if ! command -v nono >/dev/null; then
+  >&2 echo "[dotfiles][nono] ERROR: 'nono' command not found, skipping package installation"
+  exit 1
+fi
+
+>&2 echo "[dotfiles][nono] Installing nono packages..."
+
+# declared packages hash: {{ .packages.nono | toJson | sha256sum }}
+# installed packages hash: {{ if lookPath "nono" }}{{ output "sh" "-c" "nono list --installed 2>/dev/null | cut -f1,2" | sha256sum }}{{ end }}
 {{ range .packages.nono -}}
 nono pull {{ . | quote }}
 {{ end -}}
