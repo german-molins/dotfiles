@@ -3361,6 +3361,7 @@ url = "https://github.com/ghetzel/mdnstool/releases/download/v0.0.3/mdnstool-lin
 url_api = "https://api.github.com/repos/ghetzel/mdnstool/releases/assets/14763326"
 
 [tools."github:ghetzel/mdnstool"."platforms.linux-x64"]
+checksum = "blake3:ce19a861e86decc1ebe49b4be054f551a82160e3623819feb0066cd2422417f7"
 url = "https://github.com/ghetzel/mdnstool/releases/download/v0.0.3/mdnstool-linux-amd64"
 url_api = "https://api.github.com/repos/ghetzel/mdnstool/releases/assets/14763328"
 

@@ -227,6 +227,8 @@ mise install
 ```
 
 for installing the dependencies declared in `mise.toml` and `mise.lock`.
+Tools declared with `lazy = true` are skipped and install on first use; see
+[Lazy Tools](tools/mise.md#lazy-tools).
 
 Update packages as
 

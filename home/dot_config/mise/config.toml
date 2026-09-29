@@ -1,30 +1,30 @@
 [tools]
 "aqua:dlvhdr/gh-dash" = "latest"
-"aqua:jorgerojas26/lazysql" = "latest"
+"aqua:jorgerojas26/lazysql" = { version = "latest", lazy = true, lazy_bins = ["lazysql"] }
 bat = "latest"
-bottom = "latest"
+bottom = { version = "latest", lazy = true }
 cargo-binstall = "latest"
 coreutils = "latest"
-dua = "latest"
-duf = "latest"
-dust = "latest"
+dua = { version = "latest", lazy = true }
+duf = { version = "latest", lazy = true }
+dust = { version = "latest", lazy = true }
 fd = "latest"
 fzf = "latest"
 gh = "latest"
-glab = "latest"
+glab = { version = "latest", lazy = true }
 jq = "latest"
-lazydocker = "latest"
+lazydocker = { version = "latest", lazy = true }
 lazygit = "latest"
 neovim = "latest"
 node = "latest"
-"pypi:httpie" = "latest"
+"pypi:httpie" = { version = "latest", lazy = true, lazy_bins = ["http", "https", "httpie"] }
 ripgrep = "latest"
 rust = "latest"
 mr-boxington = "latest"
 tree-sitter = "latest"
-"github:dalance/procs" = "latest"
+"github:dalance/procs" = { version = "latest", lazy = true, lazy_bins = ["procs"] }
 "github:github/gh-stack" = { version = "latest", bin = "gh-stack" }
-"github:peteretelej/tree" = "latest"
+"github:peteretelej/tree" = { version = "latest", lazy = true, lazy_bins = ["tree"] }
 upt = "latest"
 uv = "latest"
 yazi = "latest"
@@ -32,71 +32,71 @@ yq = "latest"
 zellij = "latest"
 zoxide = "latest"
 "cargo:diffutils" = "latest"
-xh = "latest"
-"cargo:tlrc" = "latest"
+xh = { version = "latest", lazy = true }
+"cargo:tlrc" = { version = "latest", lazy = true, lazy_bins = ["tldr"] }
 carapace = "latest"
-"github:ghetzel/mdnstool" = "latest"
-"cargo:somo" = "latest"
+"github:ghetzel/mdnstool" = { version = "latest", lazy = true, lazy_bins = ["mdnstool"] }
+"cargo:somo" = { version = "latest", lazy = true, lazy_bins = ["somo"] }
 cosign = "latest"
-opencode = "latest"
-codebuff = "latest"
-jjui = "latest"
+opencode = { version = "latest", lazy = true }
+codebuff = { version = "latest", lazy = true }
+jjui = { version = "latest", lazy = true }
 jj = "latest"
-"github:eza-community/eza" = "latest"
-lazyssh = "latest"
-"cargo:lazyjj" = "latest"
-pandoc = "latest"
-"npm:ctx7" = "latest"
-"conda:dos2unix" = "7.5.2"
+"github:eza-community/eza" = { version = "latest", lazy = true, lazy_bins = ["eza"] }
+lazyssh = { version = "latest", lazy = true }
+"cargo:lazyjj" = { version = "latest", lazy = true, lazy_bins = ["lazyjj"] }
+pandoc = { version = "latest", lazy = true }
+"npm:ctx7" = { version = "latest", lazy = true, lazy_bins = ["ctx7"] }
+"conda:dos2unix" = { version = "7.5.2", lazy = true, lazy_bins = ["dos2unix", "unix2dos", "mac2unix", "unix2mac"] }
 "conda:dash" = "latest"
-"conda:xsel" = "latest"
+"conda:xsel" = { version = "latest", lazy = true, lazy_bins = ["xsel"] }
 "conda:grep" = "latest"
 "conda:sed" = "latest"
-"conda:dateutils" = "latest"
+"conda:dateutils" = { version = "latest", lazy = true, lazy_bins = ["dateadd", "datediff"] }
 "conda:tzdata" = "latest"
-"conda:xclip" = "latest"
-"conda:resvg" = "latest"
+"conda:xclip" = { version = "latest", lazy = true, lazy_bins = ["xclip", "xclip-copyfile", "xclip-cutfile", "xclip-pastefile"] }
+"conda:resvg" = { version = "latest", lazy = true, lazy_bins = ["resvg"] }
 "npm:skills" = "latest"
 atuin = "latest"
 python = "latest"
 sd = "latest"
-tmux = "latest"
+tmux = { version = "latest", lazy = true }
 age = "latest"
-systemctl-tui = "latest"
-"github:daptify14/chezit" = "latest"
-imagemagick = "latest"
-rust-analyzer = "latest"
-"npm:codeburn" = { version = "latest", trust_policy_excludes = [
+systemctl-tui = { version = "latest", lazy = true }
+"github:daptify14/chezit" = { version = "latest", lazy = true, lazy_bins = ["chezit"] }
+imagemagick = { version = "latest", lazy = true }
+rust-analyzer = { version = "latest", lazy = true }
+"npm:codeburn" = { version = "latest", lazy = true, lazy_bins = ["codeburn"], trust_policy_excludes = [
   "@peculiar/asn1-cms@2.9.0",
 ] }
-hunk = "latest"
-oh-my-pi = { version = "latest", rename_exe = "omp" }
-witr = "latest"
+hunk = { version = "latest", lazy = true }
+oh-my-pi = { version = "latest", lazy = true, rename_exe = "omp" }
+witr = { version = "latest", lazy = true }
 nono = "latest"
-herdr = "latest"
-zk = "latest"
-cloc = { version = "latest", bin = "cloc", depends = ["perl"], platforms = { linux-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, linux-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, windows-x64 = { asset_pattern = "cloc-{{ version }}.exe" } } }
-onefetch = "latest"
-clipboard = "latest"
-"7zip" = "latest"
+herdr = { version = "latest", lazy = true }
+zk = { version = "latest", lazy = true }
+cloc = { version = "latest", lazy = true, bin = "cloc", depends = ["perl"], platforms = { linux-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, linux-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, windows-x64 = { asset_pattern = "cloc-{{ version }}.exe" } } }
+onefetch = { version = "latest", lazy = true }
+clipboard = { version = "latest", lazy = true }
+"7zip" = { version = "latest", lazy = true }
 "cargo:findutils" = "latest"
-hyperfine = "latest"
-tssh = "latest"
-numbat = "latest"
-"github:mat2cc/redis_tui" = "latest"
+hyperfine = { version = "latest", lazy = true }
+tssh = { version = "latest", lazy = true }
+numbat = { version = "latest", lazy = true }
+"github:mat2cc/redis_tui" = { version = "latest", lazy = true, lazy_bins = ["redis_tui"] }
 claude = "latest"
 pi = "latest"
-colima = "latest"
-"aqua:kdheepak/taskwarrior-tui" = "latest"
-codex = "latest"
-exiftool = "latest"
-poppler = "latest"
-"github:kitlangton/ghui" = "latest"
+colima = { version = "latest", lazy = true }
+"aqua:kdheepak/taskwarrior-tui" = { version = "latest", lazy = true, lazy_bins = ["taskwarrior-tui"] }
+codex = { version = "latest", lazy = true }
+exiftool = { version = "latest", lazy = true }
+poppler = { version = "latest", lazy = true }
+"github:kitlangton/ghui" = { version = "latest", lazy = true, lazy_bins = ["ghui"] }
 aube = "latest"
 usage = "latest"
 pitchfork = "latest"
 fnox = "latest"
-lnav = "latest"
+lnav = { version = "latest", lazy = true }
 
 [settings]
 experimental = true

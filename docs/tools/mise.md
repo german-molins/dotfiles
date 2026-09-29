@@ -66,6 +66,60 @@ package to a config file higher in the directory hierarchy one has to either
 MISE_ENV= mise use -g tlrc
 ```
 
+## Lazy Tools
+
+Some global tools are declared with `lazy = true` (mise
+[lazy tools](https://mise.jdx.dev/dev-tools/shims.html#lazy-tools)). The
+motivation is a **fast fresh machine**: `chezmoi init --apply` runs a bare
+`mise install`, which skips lazy tools, so a new machine only downloads the
+tools its shell, apply scripts and daily workflow need. A side effect is
+per-machine relevance: a machine only gets the rarely used tools it actually
+calls.
+
+A lazy tool installs the first time one of its commands is called, from any
+context where the mise shims directory is on `PATH`: activated shells, chezmoi
+run scripts and `install.sh` (see `mise-shellenv`), `mise x` and `mise run`.
+After that it behaves like any other installed tool.
+
+Everything is installed eventually, by design:
+
+- `mise upgrade` (`mise:update`, `update`) installs every missing lazy tool, so
+  the whole stack is kept up to date after the first update.
+- `mise install --include-lazy` provisions everything at once.
+- Until then, `mise doctor` and `mise ls --missing` report lazy tools as
+  missing, so the `mise` and `tools-installed` project checks fail on a fresh
+  machine.
+
+### Criteria
+
+A tool is lazy unless it falls into one of these groups:
+
+- **Shell startup**: evaluated by `~/.bashrc.d` (usage, fnox, aube, zoxide,
+  atuin, zellij, carapace); it would install on the first shell anyway.
+- **Apply and update pipeline**: called by chezmoi run scripts, `install.sh` or
+  `update` subtasks (neovim, yazi, upt, nono, pitchfork, pi, npm:skills, jq,
+  jj, tree-sitter).
+- **Backend providers**: runtimes other backends install through (node, python,
+  uv, rust, cargo-binstall, mr-boxington).
+- **System command overrides**: they shadow `/usr/bin` names used by any script
+  (coreutils, conda:grep, conda:sed, conda:dash, cargo:findutils,
+  cargo:diffutils, conda:tzdata).
+- **Core daily or config dependencies**: bat (`PAGER`), fd, fzf, ripgrep, gh,
+  lazygit, sd, yq, claude.
+- **Indirect callers**: cosign (aqua verification), age (fnox keys), gh-dash and
+  gh-stack (chezmoi resolves their gh extension symlinks with `lookPath`).
+
+Registry shorthands get their shims from registry `bins` metadata. Explicit
+backends (`aqua:`, `github:`, `cargo:`, `npm:`, `pypi:`, `conda:`) must list
+their commands in `lazy_bins`; otherwise mise only warns and creates no shim:
+
+```toml
+"cargo:tlrc" = { version = "latest", lazy = true, lazy_bins = ["tldr"] }
+```
+
+Run `mise reshim` after editing lazy declarations and check it prints no
+`invalid lazy shim declaration` warning.
+
 ## Tasks
 
 ### Integration with Usage
