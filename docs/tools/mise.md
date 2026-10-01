@@ -160,6 +160,7 @@ Packslip tools in the global config that ship skills:
 | aube | `aube` | ✓ |
 | fnox | `fnox` | ✓ |
 | mr-boxington | `mbx` | ✓ |
+| pitchfork | `pitchfork` | ✓ |
 | usage | `usage` | ✓ |
 | worktrunk | `worktrunk`, `wt-switch-create` | ✓ |
 
