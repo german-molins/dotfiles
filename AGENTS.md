@@ -73,6 +73,7 @@ configs
 feat, build, chore, ci, docs, style, refactor, perf, test)
 - **Commit messages**: Max 72 characters, imperative mood, detailed body when
 needed
+- **Commit trailers**: NEVER add a `Co-Authored-By` line to commit messages
 - **Python code**: Type hints everywhere, pathlib for paths, sphinx-style
 docstrings
 - **File organization**: Numeric prefixes for load order, template-driven
