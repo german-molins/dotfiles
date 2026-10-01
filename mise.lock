@@ -3,26 +3,26 @@
 lockfile_version = 3
 
 [[tools.aube]]
-version = "2.5.0"
+version = "2.6.1"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:478cc5c1a34a0df8d6ffa89e7cff8eff835cf480775eff9f3eb649f6daf557b7"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+checksum = "sha256:ff945fd7a68d25d87b47e45877228ad269d5a053c04522599b31c130d734f40d"
+url = "https://github.com/aubepkg/aube/releases/download/v2.6.1/aube-v2.6.1-aarch64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327", owner = "324215402" }
 
 [tools.aube."platforms.linux-x64"]
-checksum = "sha256:15c5371d4f847da83dd51b4d182cd0928dcd52a9d5cea36d07fb44f3776ee72e"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-x86_64-unknown-linux-gnu.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+checksum = "sha256:364b4cf201970cd5c943390dd3e736b4256b14a0ac52d304f8fb4acfd6a1fbd3"
+url = "https://github.com/aubepkg/aube/releases/download/v2.6.1/aube-v2.6.1-x86_64-unknown-linux-gnu.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327", owner = "324215402" }
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:cb40e0e58092ae9aa1781127b0770e73995562dc570113179d17705289517495"
-url = "https://github.com/aubepkg/aube/releases/download/v2.5.0/aube-v2.5.0-aarch64-apple-darwin.tar.gz"
-signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release-plz.yml"
+checksum = "sha256:a36856db187dd8f2c3cbf651de1384a2d0748d7cc5507671e6ec02751f00c032"
+url = "https://github.com/aubepkg/aube/releases/download/v2.6.1/aube-v2.6.1-aarch64-apple-darwin.tar.gz"
+signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327", owner = "324215402" }
 
 [[tools.bun]]
