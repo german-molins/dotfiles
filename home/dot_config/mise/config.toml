@@ -154,7 +154,7 @@ vm = "colima"
 
 [tasks.clean]
 description = "Clean up system packages and caches"
-depends = ["mise:clean", "nix:clean", "brew:clean", "docker:clean", "aube:clean", "mbx:clean"]
+depends = ["mise:clean", "nix:clean", "brew:clean", "docker:clean", "aube:clean", "mbx:clean", "nvim:clean"]
 
 [tasks.self-update]
 depends = ["devbox:self-update", "brew:self-update"]

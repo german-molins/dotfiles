@@ -42,7 +42,7 @@ Update Chezmoi
 
 ## `clean`
 
-- Depends: mise:clean, nix:clean, brew:clean, docker:clean, aube:clean, mbx:clean
+- Depends: mise:clean, nix:clean, brew:clean, docker:clean, aube:clean, mbx:clean, nvim:clean
 
 - **Usage:** `clean`
 
