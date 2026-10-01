@@ -71,6 +71,7 @@ VCS:
 | [Jujutsu UI] | `jjui` | `jj ui` | Jujutsu manager |
 | [Lazyjj] | `lazyjj` | | Jujutsu manager |
 | [Hunk] | `hunk` | | Diff review TUI for humans & agents |
+| [Worktrunk] | `wt` | | Git worktree manager for parallel agents |
 
 [Git]: https://git-scm.com/
 [Lazygit]: https://github.com/jesseduffield/lazygit
@@ -81,6 +82,7 @@ VCS:
 [Jujutsu UI]: https://idursun.github.io/jjui
 [Lazyjj]: https://github.com/Cretezy/lazyjj
 [Hunk]: https://hunk.dev
+[Worktrunk]: https://worktrunk.dev
 
 Agent harnesses:
 

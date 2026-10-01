@@ -45,6 +45,7 @@ jj = "latest"
 "github:eza-community/eza" = { version = "latest", lazy = true, lazy_bins = ["eza"] }
 lazyssh = { version = "latest", lazy = true }
 "cargo:lazyjj" = { version = "latest", lazy = true, lazy_bins = ["lazyjj"] }
+worktrunk = "latest"
 pandoc = { version = "latest", lazy = true }
 "npm:ctx7" = { version = "latest", lazy = true, lazy_bins = ["ctx7"] }
 "conda:dos2unix" = { version = "7.5.2", lazy = true, lazy_bins = ["dos2unix", "unix2dos", "mac2unix", "unix2mac"] }
