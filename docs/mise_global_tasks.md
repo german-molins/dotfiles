@@ -4,6 +4,12 @@
 
 Update agents resources
 
+## `aube:clean`
+
+- **Usage:** `aube:clean`
+
+Prune unreferenced packages from the aube store
+
 ## `bash:profile`
 
 - **Usage:** `bash:profile`
@@ -36,7 +42,7 @@ Update Chezmoi
 
 ## `clean`
 
-- Depends: mise:clean, nix:clean, brew:clean, docker:clean
+- Depends: mise:clean, nix:clean, brew:clean, docker:clean, aube:clean, mbx:clean
 
 - **Usage:** `clean`
 
@@ -53,6 +59,12 @@ Update Devbox
 - **Usage:** `docker:clean`
 
 Clean up Docker containers, images, networks and build cache
+
+## `mbx:clean`
+
+- **Usage:** `mbx:clean`
+
+Evict mr-boxington cache down to its configured budget
 
 ## `mise:clean`
 

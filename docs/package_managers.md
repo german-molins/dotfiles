@@ -141,6 +141,27 @@ tasks.system.upt -> untracked.apt: "upt upgrade (sudo)"
 tasks.pertool.agents -> tracked.skills: "skills update -g"
 ```
 
+### Cleanup
+
+`mise run clean` reclaims disk space through one `<scope>:clean` subtask per
+scope. Package managers drop packages and versions nothing references anymore;
+tools drop caches and state they can rebuild on demand.
+
+| Kind | Scope | Task | What it cleans | In `clean` |
+|------|-------|------|----------------|------------|
+| Package manager | mise | `mise:clean` | Tool versions no config references, and brew casks no longer declared as bootstrap packages | ✓ |
+| Package manager | Nix | `nix:clean` | Old profile generations, unreachable store paths and build logs | ✓ |
+| Package manager | Homebrew | `brew:clean` | Outdated formula versions, the download cache and orphaned dependencies | ✓ |
+| Tool | Docker | `docker:clean` | Stopped containers, unused images and networks, and build cache | ✓ |
+| Tool | aube | `aube:clean` | Global store packages no project references anymore | ✓ |
+| Tool | mr-boxington | `mbx:clean` | Shared build cache beyond its configured size budget | ✓ |
+| Tool | Neovim | `nvim:clean` | Installed plugins no longer in the lazy.nvim spec | |
+
+apt has no clean task, since it needs sudo, unlike the rest; clean it by hand
+with `sudo apt autoremove --purge`, which keeps the running and newest
+kernels. `mbx:clean` never shrinks the cache below its budget; a one-off
+`mbx gc --max-size <SIZE>` does, at the cost of rebuilding evicted outputs.
+
 ## Package Sources
 
 Every user-level ("global") tool and app is installed through **Mise**, which

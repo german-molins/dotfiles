@@ -154,7 +154,7 @@ vm = "colima"
 
 [tasks.clean]
 description = "Clean up system packages and caches"
-depends = ["mise:clean", "nix:clean", "brew:clean", "docker:clean"]
+depends = ["mise:clean", "nix:clean", "brew:clean", "docker:clean", "aube:clean", "mbx:clean"]
 
 [tasks.self-update]
 depends = ["devbox:self-update", "brew:self-update"]
@@ -250,6 +250,14 @@ run = "ya pkg upgrade"
 [tasks."agents:update"]
 description = "Update agents resources"
 run = "skills update --global --yes"
+
+[tasks."aube:clean"]
+description = "Prune unreferenced packages from the aube store"
+run = "aube store prune"
+
+[tasks."mbx:clean"]
+description = "Evict mr-boxington cache down to its configured budget"
+run = "mbx gc"
 
 [tasks."python:scaffold"]
 description = "Scaffold a Python project with uv and pytest"
