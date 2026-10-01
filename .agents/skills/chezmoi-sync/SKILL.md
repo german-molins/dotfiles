@@ -46,6 +46,31 @@ Choose the edit direction per file:
   `mise.local.lock` that need a slow `mise lock --global` to clean up. The same
   applies to the skills CLI, `Lazy` for `lazy-lock.json`, etc. Settings with no
   CLI (env vars, `[settings]`) are edited in the source.
+- **Mise sidecars**: npm and pypi tools keep their native dependency lockfiles
+  (aube, uv) in per-version
+  [sidecar dirs](https://mise.jdx.dev/dev-tools/mise-lock.html#native-dependency-sidecars)
+  under `~/.config/mise/locks/`, which must be managed along with `mise.lock`.
+  `mise use`, `upgrade` or `lock` writes the new sidecar dirs, which `chezmoi
+  status` does not show while unmanaged, and leaves the old ones behind.
+  Sidecars of `mise.local.lock` live under `locks/mise.local/`, are
+  machine-local and ignored by chezmoi. After any such command touching npm or
+  pypi tools, reconcile:
+
+  ```sh
+  cd ~/.config/mise
+  mise lock --global --sidecars --json \
+      | jq -r '.[] | select(.lockfile == "mise.lock") | .sidecars[]
+          | "\(.exists) \(.path)"' >"$SCRATCH/sidecars"
+  grep '^false ' "$SCRATCH/sidecars"                       # missing
+  cut -d' ' -f2 "$SCRATCH/sidecars" | sort >"$SCRATCH/sidecars-keep"
+  find locks -mindepth 2 -maxdepth 2 -type d ! -path 'locks/mise.local/*' \
+      | sort | comm -13 "$SCRATCH/sidecars-keep" -         # stale
+  ```
+
+  A missing sidecar is an anomaly: report it and stop, do not regenerate it.
+  `chezmoi add` each sidecar dir in the keep list (a no-op when unchanged).
+  `chezmoi destroy --force` each stale sidecar dir (plain `rm -r` if
+  unmanaged), and its `<tool>` parent once empty.
 - **Templates** (`*.tmpl`): always edit the source template; `chezmoi add` would
   strip the template attribute and store rendered output.
 - **Removing a managed file**: `chezmoi destroy <target>` (removes it from

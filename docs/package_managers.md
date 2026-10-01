@@ -248,10 +248,14 @@ Lock dependencies to specific versions:
 mise lock
 ```
 
-npm and pypi tools also lock their dependency trees in per-version sidecar dirs
+npm and pypi tools also lock their dependency trees in per-version
+[sidecar dirs](https://mise.jdx.dev/dev-tools/mise-lock.html#native-dependency-sidecars)
 (`~/.config/mise/locks/<tool>/<version>`, referenced from `mise.lock`), which
-chezmoi manages too. `mise upgrade` writes the new version's dir but leaves the
-old one; the `update-all` skill adds the new dirs and destroys the stale ones.
+chezmoi manages too. `mise lock --global --sidecars` lists them. `mise upgrade`
+writes the new sidecar dirs but leaves the old ones; the `chezmoi-sync` skill
+(also used by `update-all`) adds the new sidecar dirs and destroys the stale
+ones. Sidecars of `mise.local.lock` (`locks/mise.local/`) are machine-local and
+ignored by chezmoi.
 
 ### Troubleshooting: mise.lock drift on apply
 

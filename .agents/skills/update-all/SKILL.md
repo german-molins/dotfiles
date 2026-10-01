@@ -98,24 +98,9 @@ Notes per scope:
   i.e. tool-managed state. Add them back one by one (`chezmoi add <target>`).
 - ` M`/`R` lines left after adding are pending applies (templates,
   run_onchange scripts), handled in step 7.
-- Mise lock sidecars: npm and pypi tools keep per-version lock dirs under
-  `~/.config/mise/locks/<tool>/<version>`, referenced by `path = "locks/…"` in
-  `mise.lock` (`mise.local.lock` references are machine-local). An upgrade
-  writes the new version's dir, which `chezmoi status` does not show since it
-  is unmanaged, and leaves the old one behind. Reconcile both:
-
-  ```sh
-  cd ~/.config/mise
-  grep -ohE 'path = "locks/[^"]+"' mise.lock mise.local.lock 2>/dev/null \
-      | sed 's/^path = "//; s/"$//' | sort -u >"$SCRATCH/lock-refs"
-  find locks -mindepth 2 -maxdepth 2 -type d | sort \
-      | comm -13 "$SCRATCH/lock-refs" -                  # stale
-  chezmoi unmanaged ~/.config/mise/locks                  # new
-  ```
-
-  `chezmoi add` each new dir referenced by `mise.lock`. `chezmoi destroy
-  --force` each stale dir (plain `rm -r` if unmanaged), and its `<tool>`
-  parent once empty. Both go in the `mise:update` commit.
+- Mise sidecars: reconcile them as described in chezmoi-sync ("Mise
+  sidecars"). The added and destroyed sidecar dirs go in the `mise:update`
+  commit.
 
 ## 5. Detect anomalies
 
@@ -130,6 +115,8 @@ Any hit holds back that scope's commit:
 - **Errors behind exit 0**: log lines with `ERROR`, `error:`, `failed`,
   `panic` or `conflict`, apart from the harmless lines noted in step 3.
 - **Unexpected files**: a changed file that fits no scope in step 3.
+- **Missing mise sidecars**: `exists: false` in `mise lock --global --sidecars
+  --json` for a `mise.lock` sidecar.
 
 For removals, find the root cause before asking the user. The usual cause is
 target state that chezmoi does not manage and that differs across machines
