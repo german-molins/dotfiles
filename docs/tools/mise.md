@@ -108,6 +108,8 @@ A tool is lazy unless it falls into one of these groups:
   lazygit, sd, yq, claude.
 - **Indirect callers**: cosign (aqua verification), age (fnox keys), gh-dash and
   gh-stack (chezmoi resolves their gh extension symlinks with `lookPath`).
+- **Agent skill providers**: packslip tools whose skills a bare `mise install`
+  must fetch (worktrunk); see [Agent Skills](#agent-skills).
 
 Registry shorthands get their shims from registry `bins` metadata. Explicit
 backends (`aqua:`, `github:`, `cargo:`, `npm:`, `pypi:`, `conda:`) must list
@@ -119,6 +121,47 @@ their commands in `lazy_bins`; otherwise mise only warns and creates no shim:
 
 Run `mise reshim` after editing lazy declarations and check it prints no
 `invalid lazy shim declaration` warning.
+
+## Agent Skills
+
+Tools installed with the
+[packslip backend](https://mise.jdx.dev/dev-tools/backends/packslip.html) can
+declare [agent skills](https://mise.jdx.dev/dev-tools/packslip-resources.html#skills)
+in their signed release manifest. mise fetches them into each version's install
+directory during `mise install`; `mise skills ls` lists those of the active
+tools.
+
+`run_onchange_after_10-install-mise-packages.sh` links them, right after
+`mise install` and under the same `mise.lock` trigger, into both agent skill
+directories:
+
+```sh
+mise -C "$HOME" skills sync --dir "$HOME/.agents/skills" --prune
+mise -C "$HOME" skills sync --dir "$HOME/.claude/skills" --prune
+```
+
+- **Lifecycle**: any version bump changes `mise.lock`, so the next
+  `chezmoi apply` re-points the links to the new install. Between a manual
+  `mise upgrade` and that apply, links may dangle.
+- **Idempotency**: sync only replaces or prunes links it owns (pointing into
+  the mise installs directory); handwritten skills and `npx skills` links are
+  left alone and name clashes are reported as skipped.
+- **Fresh machines**: the script runs after `mise install`, which fetches the
+  skills first. Lazy tools fetch theirs only once installed.
+- **No filtering**: sync links every skill of every active tool. Excluding one
+  requires an allowlist on top of `mise skills ls --json`; not worth it yet.
+- `skills.auto_sync` is not used: it only runs inside a mise project and
+  targets a single `skills.dir`.
+
+Packslip tools in the global config that ship skills:
+
+| Tool | Skills | Linked |
+|------|--------|--------|
+| aube | `aube` | ✓ |
+| fnox | `fnox` | ✓ |
+| mr-boxington | `mbx` | ✓ |
+| usage | `usage` | ✓ |
+| worktrunk | `worktrunk`, `wt-switch-create` | ✓ |
 
 ## Tasks
 
