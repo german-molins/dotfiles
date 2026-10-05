@@ -135,6 +135,10 @@ how to proceed. Body: 1-3 short lines on notable bumps, removals or fixes.
 - `chezmoi apply`, after all adds, so pending templates and scripts run. Strict
   preflight guarantees nothing unrelated is pending. `chezmoi status` must then
   be empty.
+- Run it under a refreshed mise env (`eval "$(mise -C ~ env -s bash)"` first).
+  A shell activated before the update still has old install dirs on PATH, and
+  run scripts inherit it: e.g. `pypi:` tools get installed under a digest dir
+  that a fresh env does not resolve, leaving them reported missing.
 - `git status --short`: only files of held-back scopes may remain. Anything
   else is a leftover to report.
 - Health: `mise doctor`, `mise ls --missing`,
