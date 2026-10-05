@@ -107,7 +107,7 @@ A tool is lazy unless it falls into one of these groups:
 - **Core daily or config dependencies**: bat (`PAGER`), fd, fzf, ripgrep, gh,
   lazygit, sd, yq, claude.
 - **Indirect callers**: cosign (aqua verification), age (fnox keys), gh-dash and
-  gh-stack (chezmoi resolves their gh extension symlinks with `lookPath`).
+  gh-stack (`gh` runs them through symlinks to their mise shims).
 - **Agent skill providers**: packslip tools whose skills a bare `mise install`
   must fetch (worktrunk); see [Agent Skills](#agent-skills).
 

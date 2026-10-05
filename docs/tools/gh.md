@@ -4,8 +4,8 @@
 
 `gh` extensions are **not** installed with `gh extension install`. Each is a
 [mise](./mise) tool (so it is version-pinned in `mise.lock` and updated through
-the single `mise` update path) plus a chezmoi-managed `symlink_` shim that makes
-`gh` discover it.
+the single `mise` update path) plus a chezmoi-managed symlink to its mise
+shim that makes `gh` discover it.
 
 | Extension | Command |
 |------|---------|
@@ -27,7 +27,17 @@ the single `mise` update path) plus a chezmoi-managed `symlink_` shim that makes
    Use `bin` / `rename_exe` when the release asset is not already named
    `gh-<name>` (see the [github backend docs](https://mise.jdx.dev/dev-tools/backends/github.html)).
 
-2. Add the shim `home/dot_local/share/gh/extensions/gh-<name>/symlink_gh-<name>.tmpl`:
+2. Add the symlink `home/dot_local/share/gh/extensions/gh-<name>/symlink_gh-<name>.tmpl`
+   pointing at the tool's mise shim:
+
+   ```
+   {{ .chezmoi.homeDir }}/.local/share/mise/shims/gh-<name>
+   ```
+
+   The shim path is stable across upgrades, `mise prune` and backend switches,
+   and does not depend on the PATH chezmoi runs with. An extension not
+   installed via mise has no shim; resolve it from PATH instead, and re-run
+   `chezmoi apply` from a fresh shell after upgrading it:
 
    ```
    {{ lookPath "gh-<name>" }}
