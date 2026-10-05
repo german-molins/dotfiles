@@ -17,8 +17,8 @@ scope.
 
 Invoke the `chezmoi-sync` skill and follow it for preflight, syncing target
 changes back, verification and commits. This skill only adds what is specific
-to updates: running the update, the scopes that define the commits, and
-anomaly detection.
+to updates: reviewing changelogs, running the update, the scopes that define
+the commits, and anomaly detection.
 
 ## 1. Preflight (stop and report on any failure)
 
@@ -27,7 +27,14 @@ anomaly detection.
 - `sudo -n true`: `upt:update` runs apt. If it fails, ask the user to run
   `! sudo -v` and wait.
 
-## 2. Run
+## 2. Review
+
+Follow [references/review.md](references/review.md): inventory pending
+upgrades, review their changelogs and settle the user's decisions before
+anything is installed. Skip this step only when the user asks for a quick run
+or no review.
+
+## 3. Run
 
 - Run `mise run update` from the repo root in the background, logging to the
   scratchpad, e.g. `mise run update > "$SCRATCH/update.log" 2>&1; echo "exit=$?"`.
@@ -35,7 +42,7 @@ anomaly detection.
 - Compare `mise tasks info update` against the scopes table. A subtask missing
   from the table is an anomaly: report it.
 
-## 3. Scopes
+## 4. Scopes
 
 Commit order follows the `update` task's dependency order. A scope without
 tracked files never produces a commit, but its log output still goes into the
@@ -92,17 +99,17 @@ Notes per scope:
   `$HOME` detects project scope and reports "No project skills to update",
   leaving `dot_skill-lock.json` untouched.
 
-## 4. Collect changes
+## 5. Collect changes
 
 - `chezmoi status`: `MM`/`M ` lines are target files changed by the update,
   i.e. tool-managed state. Add them back one by one (`chezmoi add <target>`).
 - ` M`/`R` lines left after adding are pending applies (templates,
-  run_onchange scripts), handled in step 7.
+  run_onchange scripts), handled in step 8.
 - Mise sidecars: reconcile them as described in chezmoi-sync ("Mise
   sidecars"). The added and destroyed sidecar dirs go in the `mise:update`
   commit.
 
-## 5. Detect anomalies
+## 6. Detect anomalies
 
 Any hit holds back that scope's commit:
 
@@ -113,24 +120,29 @@ Any hit holds back that scope's commit:
   `dot_skill-lock.json`.
 - **Downgrades**: any locked version or commit older than before.
 - **Errors behind exit 0**: log lines with `ERROR`, `error:`, `failed`,
-  `panic` or `conflict`, apart from the harmless lines noted in step 3.
-- **Unexpected files**: a changed file that fits no scope in step 3.
+  `panic` or `conflict`, apart from the harmless lines noted in step 4.
+- **Unexpected files**: a changed file that fits no scope in step 4.
 - **Missing mise sidecars**: `exists: false` in `mise lock --global --sidecars
   --json` for a `mise.lock` sidecar.
+- **Unreviewed versions**: locked versions past the review table; run the
+  delta review in [references/review.md](references/review.md).
 
 For removals, find the root cause before asking the user. The usual cause is
 target state that chezmoi does not manage and that differs across machines
 (see the nvim note). The fix is usually to declare it in the chezmoi source,
 in its own commit before the scope's update commit.
 
-## 6. Commit
+## 7. Commit
 
 Follow `chezmoi-sync` commit rules with each scope as one concern: one commit
 per scope with changes, in table order, using the scope's commit title. Commit
 the clean scopes; for a held-back scope, explain the anomaly and ask the user
-how to proceed. Body: 1-3 short lines on notable bumps, removals or fixes.
+how to proceed. Apply the confirmed adaptations of a scope before committing
+it and fold them into its commit, so every commit is a working state. Body:
+1-3 short lines on notable bumps, breaking or behavior changes, adaptations,
+removals or fixes.
 
-## 7. Finish
+## 8. Finish
 
 - `chezmoi apply`, after all adds, so pending templates and scripts run. Strict
   preflight guarantees nothing unrelated is pending. `chezmoi status` must then
@@ -141,10 +153,11 @@ how to proceed. Body: 1-3 short lines on notable bumps, removals or fixes.
   that a fresh env does not resolve, leaving them reported missing.
 - `git status --short`: only files of held-back scopes may remain. Anything
   else is a leftover to report.
+- Run the post-upgrade actions approved in the review.
 - Health: `mise doctor`, `mise ls --missing`,
   `nvim --headless "+Lazy! health" +qa`.
 
-## 8. Summary
+## 9. Summary
 
 Always include these sections, writing "none" when a section is empty:
 
@@ -155,7 +168,8 @@ Always include these sections, writing "none" when a section is empty:
   what you need from the user.
 - **Untracked updates**: what brew, apt (upt), nix and mise bootstrap
   upgraded. They change the system but leave nothing to commit.
-- **Health**: results of the step 7 checks.
+- **Health**: results of the step 8 checks.
+- **Follow-ups**: what the user chose to track from the review, and where.
 
 End by offering to push; state how many commits the branch is ahead of its
 upstream.
