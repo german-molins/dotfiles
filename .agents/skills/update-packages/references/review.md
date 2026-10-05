@@ -6,7 +6,8 @@ are read-only.
 
 ## Inventory
 
-List pending upgrades per scope, from `$HOME` unless noted:
+List pending upgrades per scope, from `$HOME` unless noted, keeping only the
+selected scopes and packages:
 
 | Scope | Command | Reviewed |
 |-------|---------|----------|

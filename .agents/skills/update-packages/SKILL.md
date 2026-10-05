@@ -1,17 +1,19 @@
 ---
 name: update-packages
 description: >
-  Update all packages, tools, plugins and extensions across every package
-  manager of these dotfiles (mise, nvim, yazi, pi, skills, brew, apt, ...) and
-  commit the results to the chezmoi source. Use whenever the user asks to
-  update, upgrade or refresh everything, their tools, packages, plugins or
-  lockfiles, or to run the update task, even if no manager is named.
+  Update packages, tools, plugins and extensions across the package managers
+  of these dotfiles (mise, nvim, yazi, pi, skills, brew, apt, ...), either all
+  of them, some managers, or named packages, and commit the results to the
+  chezmoi source. Use whenever the user asks to update, upgrade or refresh
+  everything, a manager, a specific tool or plugin, or lockfiles, or to run
+  the update task, even if no manager is named.
 ---
 
 # Update Packages
 
-Updates every package manager through the aggregate mise task, then syncs
-target changes into the chezmoi source (`home/`) and commits them per manager.
+Updates every package manager through the aggregate mise task, or a selection
+of them, then syncs target changes into the chezmoi source (`home/`) and
+commits them per manager.
 Maintenance of the repo itself (project `mise.lock`, project skills) is out of
 scope.
 
@@ -20,11 +22,26 @@ changes back, verification and commits. This skill only adds what is specific
 to updates: reviewing changelogs, running the update, the scopes that define
 the commits, and anomaly detection.
 
+## Selection
+
+Without arguments, everything is updated. Otherwise each argument is a scope
+(a subtask name without `:update`, e.g. `mise`, `nvim`), meaning the whole
+scope, or a package of one scope (e.g. `hunk`, `snacks.nvim`). `scope:pkg`
+(e.g. `mise:pi`) forces the package reading. Resolve every name against the
+scopes and their installed packages first; ask the user about names that
+match more than one, or none.
+
+A selection narrows every step to the selected scopes and packages: preflight,
+review inventory, run, collect, commit and finish. Steps below note how.
+
 ## 1. Preflight (stop and report on any failure)
 
 - `chezmoi-sync` preflight in **strict mode**. Updates touch files across
   every manager, so pre-existing drift would get mixed into update commits.
-- `sudo -n true`: `upt:update` runs apt. If it fails, ask the user to run
+  With a selection, only drift in the selected scopes' tracked files, and in
+  targets their changes would re-render, blocks; list any other drift in the
+  summary and leave it alone.
+- `sudo -n true`, when `upt` is selected: `upt:update` runs apt. If it fails, ask the user to run
   `! sudo -v` and wait.
 
 ## 2. Review
@@ -41,6 +58,9 @@ or no review.
   Every output line is prefixed with its subtask, e.g. `[nvim:update]`.
 - Compare `mise tasks info update` against the scopes table. A subtask missing
   from the table is an anomaly: report it.
+- With a selection, run instead, in table order, `mise run <scope>:update` for
+  each whole scope and the scope's package command, with all its selected
+  packages at once, for packages.
 
 ## 4. Scopes
 
@@ -48,17 +68,17 @@ Commit order follows the `update` task's dependency order. A scope without
 tracked files never produces a commit, but its log output still goes into the
 summary.
 
-| Subtask | Tracked files | Commit title |
-|---------|---------------|--------------|
-| `chezmoi:update` | `home/.chezmoidata/packages.yaml` | `build(chezmoi): update bootstrapped package mise` |
-| `mise:update` | `home/dot_config/mise/mise.lock`, `home/dot_config/mise/locks/` | `build(mise): update packages` |
-| `yazi:update` | `home/dot_config/yazi/package.toml` | `build(yazi): update packages` |
-| `nvim:update` | `home/dot_config/nvim/lazy-lock.json` | `build(nvim): update packages` |
-| `pi:update` | `home/dot_pi/agent/settings.json` | `build(pi): update packages` |
-| `nono:update` | none | none |
-| `brew:update` | none | none |
-| `upt:update` | none | none |
-| `agents:update` | `home/dot_agents/dot_skill-lock.json` | `build(skills): update packages` |
+| Subtask | Tracked files | Commit title | Package command |
+|---------|---------------|--------------|-----------------|
+| `chezmoi:update` | `home/.chezmoidata/packages.yaml` | `build(chezmoi): update bootstrapped package mise` | none: whole scope |
+| `mise:update` | `home/dot_config/mise/mise.lock`, `home/dot_config/mise/locks/` | `build(mise): update packages` | `mise upgrade <tool>…`; bootstrap: `mise bootstrap packages upgrade <manager:pkg>…` |
+| `yazi:update` | `home/dot_config/yazi/package.toml` | `build(yazi): update packages` | `ya pkg upgrade <id>…` |
+| `nvim:update` | `home/dot_config/nvim/lazy-lock.json` | `build(nvim): update packages` | `nvim --headless '+Lazy! update <plugin>…' +qa` |
+| `pi:update` | `home/dot_pi/agent/settings.json` | `build(pi): update packages` | `pi update --extension <source>` |
+| `nono:update` | none | none | `nono update <namespace/name>` |
+| `brew:update` | none | none | `brew upgrade <formula>…` |
+| `upt:update` | none | none | `upt update`, then `upt upgrade <pkg>…` |
+| `agents:update` | `home/dot_agents/dot_skill-lock.json` | `build(skills): update packages` | `skills update --global --yes <skill>…` |
 
 Notes per scope:
 
@@ -135,7 +155,10 @@ in its own commit before the scope's update commit.
 ## 7. Commit
 
 Follow `chezmoi-sync` commit rules with each scope as one concern: one commit
-per scope with changes, in table order, using the scope's commit title. Commit
+per scope with changes, in table order, using the scope's commit title. When
+only named packages of a scope were updated, name them in the title instead of
+`packages` (e.g. `build(mise): update hunk, gh-stack`), up to 3; beyond that
+keep the generic title and list them in the body. Commit
 the clean scopes; for a held-back scope, explain the anomaly and ask the user
 how to proceed. Apply the confirmed adaptations of a scope before committing
 it and fold them into its commit, so every commit is a working state. Body:
@@ -146,7 +169,8 @@ removals or fixes.
 
 - `chezmoi apply`, after all adds, so pending templates and scripts run. Strict
   preflight guarantees nothing unrelated is pending. `chezmoi status` must then
-  be empty.
+  be empty. With a selection, apply only the selected scopes' pending targets
+  (`chezmoi apply <target>…`); only the drift listed at preflight may remain.
 - Run it under a refreshed mise env (`eval "$(mise -C ~ env -s bash)"` first).
   A shell activated before the update still has old install dirs on PATH, and
   run scripts inherit it: e.g. `pypi:` tools get installed under a digest dir
@@ -165,7 +189,8 @@ Always include these sections, writing "none" when a section is empty:
 - **Removed packages**: every removal, per manager, with its cause. Never
   leave this implicit.
 - **Held back / needs decision**: anomalies, conflicts, suspicious signs, and
-  what you need from the user.
+  what you need from the user. With a selection, also the unrelated drift left
+  alone.
 - **Untracked updates**: what brew, apt (upt), nix and mise bootstrap
   upgraded. They change the system but leave nothing to commit.
 - **Health**: results of the step 8 checks.
