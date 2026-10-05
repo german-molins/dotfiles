@@ -14,7 +14,7 @@ fi
 
 # checksum of mise lockfile
 # {{ include "dot_config/mise/mise.lock" | sha256sum }}
-mise install
+mise install --locked
 for dir in "$HOME/.agents/skills" "$HOME/.claude/skills"; do
     mise -C "$HOME" skills sync --dir "$dir" --prune
 done

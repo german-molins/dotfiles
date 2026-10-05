@@ -35,7 +35,7 @@ zoxide = "latest"
 xh = { version = "latest", lazy = true }
 "cargo:tlrc" = { version = "latest", lazy = true, lazy_bins = ["tldr"] }
 carapace = "latest"
-"github:ghetzel/mdnstool" = { version = "latest", lazy = true, lazy_bins = ["mdnstool"] }
+"github:ghetzel/mdnstool" = { version = "latest", lazy = true, lazy_bins = ["mdnstool"], os = ["linux"] }
 "cargo:somo" = { version = "latest", lazy = true, lazy_bins = ["somo"] }
 cosign = "latest"
 opencode = { version = "latest", lazy = true }
@@ -63,7 +63,7 @@ python = "latest"
 sd = "latest"
 tmux = { version = "latest", lazy = true }
 age = "latest"
-systemctl-tui = { version = "latest", lazy = true }
+systemctl-tui = { version = "latest", lazy = true, os = ["linux"] }
 "github:daptify14/chezit" = { version = "latest", lazy = true, lazy_bins = ["chezit"] }
 imagemagick = { version = "latest", lazy = true }
 rust-analyzer = { version = "latest", lazy = true }
@@ -77,7 +77,7 @@ nono = "latest"
 herdr = { version = "latest", lazy = true }
 zk = { version = "latest", lazy = true }
 cloc = { version = "latest", lazy = true, bin = "cloc", depends = ["perl"], platforms = { linux-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, linux-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, windows-x64 = { asset_pattern = "cloc-{{ version }}.exe" } } }
-onefetch = { version = "latest", lazy = true }
+onefetch = { version = "latest", lazy = true, os = ["linux/x64", "macos"] }
 clipboard = { version = "latest", lazy = true }
 "7zip" = { version = "latest", lazy = true }
 "cargo:findutils" = "latest"
@@ -88,7 +88,7 @@ numbat = { version = "latest", lazy = true }
 claude = "latest"
 pi = "latest"
 colima = { version = "latest", lazy = true }
-"aqua:kdheepak/taskwarrior-tui" = { version = "latest", lazy = true, lazy_bins = ["taskwarrior-tui"] }
+"aqua:kdheepak/taskwarrior-tui" = { version = "latest", lazy = true, lazy_bins = ["taskwarrior-tui"], os = ["linux/x64", "macos"] }
 codex = { version = "latest", lazy = true }
 exiftool = { version = "latest", lazy = true }
 poppler = { version = "latest", lazy = true }
