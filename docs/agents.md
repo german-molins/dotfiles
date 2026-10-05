@@ -143,7 +143,7 @@ are excluded by the global gitignore, so project skills are tracked with
 
 | Skill | Description |
 |-------|-------------|
-| update-packages | Updates packages, tools, plugins and extensions across every package manager, or only the managers or packages named, and commits the results to the chezmoi source, one `build(<scope>): update packages` commit per manager. |
+| update-packages | Upgrades mise itself in its own reviewed cycle, then updates packages, tools, plugins and extensions across every package manager, or only the managers or packages named, and commits the results to the chezmoi source, one `build(<scope>): update packages` commit per manager. |
 
 ## References
 

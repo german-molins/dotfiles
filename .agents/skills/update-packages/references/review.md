@@ -25,6 +25,33 @@ releases. Mark tools declared only in `~/.config/mise/config.local.toml` as
 **local**: list them, never review them, since nothing in the repo integrates
 with them.
 
+## mise itself
+
+Reviewed in the mise cycle, before the inventory below, by one reviewer of its
+own. The jump runs from `mise --version` to the newest release published at
+least `minimum_release_age` (24h) ago: `gh release list -R jdx/mise
+--exclude-pre-releases --json tagName,publishedAt`, ignoring `vfox-*` tags.
+
+Read the notes of every release in the jump. They are curated prose, so read
+them rather than grep for a fixed format; registry changes sit under a
+`Registry` heading or in `Registry:` bullets. Report:
+
+- **Update process**: changes to the lockfile, backends, `outdated`,
+  `upgrade`, `lock`, `minimum_release_age` or config, and their impact on this
+  repo (`mise.lock`, `--locked` installs, `lockfile_platforms`, tasks).
+- **Our tools**: backend moves and new aliases for tools declared in
+  `home/dot_config/mise/config.toml`, with the command needed (e.g. `mise
+  backends switch`).
+- **New registry tools**: every one, none filtered, each with the
+  `description` of `registry/<tool>.toml` at the new tag (`gh api
+  'repos/jdx/mise/contents/registry/<tool>.toml?ref=<tag>' --jq .content |
+  base64 -d`). Aliases and backend moves of existing tools are not new.
+- **New aqua packages**: listed separately; they are installable as
+  `aqua:owner/repo`.
+
+Decide them as in Decisions, in a round of their own; new tools to try are
+follow-ups.
+
 ## Triage
 
 Classify each reviewed upgrade by its semver jump and by its integration in the
