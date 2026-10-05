@@ -274,7 +274,7 @@ npm and pypi tools also lock their dependency trees in per-version
 (`~/.config/mise/locks/<tool>/<version>`, referenced from `mise.lock`), which
 chezmoi manages too. `mise lock --global --sidecars` lists them. `mise upgrade`
 writes the new sidecar dirs but leaves the old ones; the `chezmoi-sync` skill
-(also used by `update-all`) adds the new sidecar dirs and destroys the stale
+(also used by `update-packages`) adds the new sidecar dirs and destroys the stale
 ones. Sidecars of `mise.local.lock` (`locks/mise.local/`) are machine-local and
 ignored by chezmoi.
 

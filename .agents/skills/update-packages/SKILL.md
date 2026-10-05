@@ -1,5 +1,5 @@
 ---
-name: update-all
+name: update-packages
 description: >
   Update all packages, tools, plugins and extensions across every package
   manager of these dotfiles (mise, nvim, yazi, pi, skills, brew, apt, ...) and
@@ -8,7 +8,7 @@ description: >
   lockfiles, or to run the update task, even if no manager is named.
 ---
 
-# Update All
+# Update Packages
 
 Updates every package manager through the aggregate mise task, then syncs
 target changes into the chezmoi source (`home/`) and commits them per manager.
