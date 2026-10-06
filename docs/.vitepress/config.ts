@@ -27,6 +27,7 @@ export default defineConfig({
           { text: 'Rust', link: '/rust_workflow' },
           { text: 'Agents', link: '/agents' },
           { text: 'Global Services', link: '/global_services' },
+          { text: 'Worktree Workflow', link: '/worktree_workflow' },
           {
             text: 'Tools',
             link: "/tools",
@@ -34,6 +35,8 @@ export default defineConfig({
             items: [
               { text: "Mise", link: '/tools/mise' },
               { text: "fnox", link: '/tools/fnox' },
+              { text: "aube", link: '/tools/aube' },
+              { text: "Worktrunk", link: '/tools/worktrunk' },
               { text: "System Dependencies", link: '/tools/system_dependencies' },
               { text: "General Utils", link: '/tools/utils' },
               { text: "Herdr", link: '/tools/herdr' },

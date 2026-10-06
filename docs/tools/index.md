@@ -16,6 +16,7 @@ These are my daily CLI drivers:
 | [Bash] | `bash` | | Interactive shell |
 | [Usage] | `usage` | | Polyglot script CLI manager |
 | [Fnox] | `fnox` | | Secret manager |
+| [aube] | `aube`, `aubr`, `aubx` | | Node.js package manager |
 | [Zellij] | `zellij` | `z{e,r}{,f,i}` | Terminal workspaces |
 | [Herdr] | `herdr` | | Agent-aware terminal workspaces |
 | [Zoxide] | `zoxide` | `cd`, `cdi` | Smarter `cd` |
@@ -41,6 +42,7 @@ These are my daily CLI drivers:
 [Bash]: https://devdocs.io/bash/
 [Usage]: https://usage.jdx.dev/
 [Fnox]: https://fnox.jdx.dev/
+[aube]: https://aube.sh/
 [Zellij]: https://zellij.dev/
 [Herdr]: https://herdr.dev/
 [Zoxide]: https://github.com/ajeetdsouza/zoxide
