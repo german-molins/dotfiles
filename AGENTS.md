@@ -63,6 +63,8 @@ files.
 the Chezmoi source directory (`home/`) rather than the target locations in
 `$HOME`. This repository is the source for dotfiles managed by Chezmoi.
 
+Any change under `home/` goes through the `chezmoi-sync` skill.
+
 ## Code Style & Conventions
 
 - **Bash scripts**: 4-space indentation, `shfmt` formatting, snake_case
