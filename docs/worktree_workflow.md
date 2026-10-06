@@ -63,9 +63,9 @@ run = "npm test"
 wt switch --create fix-login --base main   # copies local files, runs project hooks
 mise daemons start core                    # this worktree's stack, own ports
 # ... agent works, tests against its own stack ...
-wt remove fix-login                        # pre-remove hook stops its daemons
+wt remove fix-login                        # project hooks stop and prune its daemons
 ```
 
-Then remove the worktree's `[namespaces.*]` entry from
-`~/.config/pitchfork/config.toml` by hand; see
-[Shared with Mise Daemons](global_services.md#shared-with-mise-daemons).
+The [project lifecycle hooks](tools/worktrunk.md#per-project-lifecycle-hooks)
+also drop the worktree's leftover entry in `~/.config/pitchfork/config.toml`;
+see [Shared with Mise Daemons](global_services.md#shared-with-mise-daemons).

@@ -215,8 +215,8 @@ its own isolated set of daemons.
 - **Registration**: every checkout is registered as a namespace in
   `~/.config/pitchfork/config.toml`, the same file that holds the user
   services. See [Shared with Mise Daemons](../global_services.md#shared-with-mise-daemons)
-  for why chezmoi manages it with a modify template and how to clean up entries
-  of deleted worktrees.
+  for why chezmoi manages it with a modify template and how entries of deleted
+  worktrees get cleaned up.
 - **Global daemons**: `[daemons]` in the global config
   [join every project's set](https://mise.jdx.dev/daemons.html#configuration-inheritance)
   and can't run outside a project, so user-level services stay in pitchfork.

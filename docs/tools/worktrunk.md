@@ -71,13 +71,50 @@ When the team doesn't use worktrunk, keep the project hooks untracked too:
    .worktreeinclude
    ```
 
-3. Write the project hooks, for example:
+3. Write the project hooks in `.config/wt.toml`, for example the
+   [lifecycle hooks](#per-project-lifecycle-hooks) below.
 
-   ```toml
-   # .config/wt.toml
-   post-start = "mise x -- npm install"
-   pre-remove = "mise daemons stop --local"
-   ```
+## Per-Project Lifecycle Hooks
+
+Hooks that install dependencies on create and tear down a worktree's
+[mise daemons](mise.md#daemons) on remove. They are project config
+(`.config/wt.toml`, kept untracked as above), not user config, because they
+only make sense where the project defines `mise daemons` and an install step:
+
+```toml
+# .config/wt.toml
+pre-start = "mise x -- npm install --no-save"
+pre-remove = "if mise daemons ls | grep -qvw available; then mise daemons stop; fi"
+post-remove = '''
+mise daemons prune --yes && pitchfork clean --prune || exit
+f=~/.config/pitchfork/config.toml
+awk '
+  BEGIN { RS = ""; ORS = "" }
+  /^\[namespaces\./ && !/\nconfig = / && match($0, /\ndir = "[^"]*"/) {
+    if (system("test -d \"" substr($0, RSTART + 8, RLENGTH - 9) "\"")) next
+  }
+  { print (n++ ? "\n\n" : "") $0 }
+  END { print "\n" }
+' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+'''
+```
+
+- `pre-start` installs dependencies, here with npm; use the project's install
+  command. It is `pre-` so it blocks: user `pre-start` hooks (which copy local
+  files) run first, and a `post-start` install would run in the background,
+  racing with whatever comes next, such as an immediate `git merge`.
+  `--no-save` because a plain `npm install` over copied `node_modules` strips
+  other platforms' optional dependencies from `package-lock.json` once the lock
+  changes.
+- `pre-remove` stops the worktree's daemons while it still exists, and only if
+  any is running.
+- `post-remove` runs in the primary worktree once the removed one is gone,
+  which is when [`mise daemons prune`](https://mise.jdx.dev/daemons.html#pruning-deleted-projects)
+  can see it as deleted. The `awk` filter then drops the `[namespaces.*]`
+  entries prune leaves behind: only those without a `config =` line whose `dir`
+  no longer exists. See
+  [Shared with Mise Daemons](../global_services.md#shared-with-mise-daemons)
+  for what prune and `pitchfork clean` do and don't remove.
 
 ## Gotchas
 

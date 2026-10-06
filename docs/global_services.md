@@ -40,16 +40,24 @@ settings and keeps whatever `[namespaces.*]` entries the file already has.
 Write those sections the way pitchfork serializes them, or `chezmoi status`
 shows a cosmetic diff after every registration.
 
-Neither [`mise daemons prune`](https://mise.jdx.dev/daemons.html#pruning-deleted-projects)
+Deleted worktrees leave entries behind. Run from a surviving checkout of the
+project,
+[`mise daemons prune --yes`](https://mise.jdx.dev/daemons.html#pruning-deleted-projects)
 (see also [non-interactive cleanup](https://mise.jdx.dev/daemons.html#non-interactive-cleanup))
-nor [`pitchfork config remove`](https://pitchfork.jdx.dev/cli/config/remove.html)
-drops the namespace entries of deleted worktrees. Remove them by hand while no
-daemons run, since a running supervisor may rewrite the file:
+stops the deleted checkout's daemons, detaches its generated config (the
+`config = [...]` key) and deletes `~/.local/state/mise/daemons/<hash>/`, but
+leaves its `[namespaces.<name>-<hash>]` entry with only a `dir` line (and an
+empty, harmless `<hash>/project.lock` directory).
+[`pitchfork clean --prune`](https://pitchfork.jdx.dev/cli/clean.html) drops
+`pitchfork list` entries whose directory is gone. Neither, nor
+[`pitchfork config remove`](https://pitchfork.jdx.dev/cli/config/remove.html),
+removes the leftover namespace entry.
 
-```sh
-pitchfork list               # confirm nothing is running
-$EDITOR ~/.config/pitchfork/config.toml
-```
+A project's worktrunk `post-remove` hook can run all of this, plus a filter for
+the leftover entries, on every `wt remove`; see
+[Per-Project Lifecycle Hooks](tools/worktrunk.md#per-project-lifecycle-hooks).
+Without it, delete the leftover entries by hand while no daemons run, since a
+running supervisor may rewrite the file.
 
 Global `[daemons]` in mise's global config are not a replacement for the user
 daemons here: they
