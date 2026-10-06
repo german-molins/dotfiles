@@ -83,8 +83,8 @@ login`)
 documentation](https://www.aihero.dev/skills).
 - [Superpowers](https://github.com/obra/superpowers): Complete software
 development workflow - disabled by default
-- [Beads](https://github.com/gastownhall/beads): Issue tracker for agents;
-runs `bd prime` on session start and before compaction
+- [Beads](https://github.com/gastownhall/beads): Issue tracker for agents -
+disabled; opted into per project instead (see [Beads](#beads))
 - [Context Mode](https://github.com/mksglu/context-mode): Sandboxed tool
 output to protect the context window
 - [Ponytail](https://github.com/DietrichGebert/ponytail): Lazy senior developer
@@ -118,6 +118,79 @@ or `@AGENTS.md` in the respective `CLAUDE.md` files.
 
 Reference: [Claude Code Settings](https://code.claude.com/docs/en/settings)
 
+### Context Window and Compaction
+
+Current models run with a native 1M token window at standard pricing, and
+auto-compaction by default fires near the end of it (~967K). The settings
+keep the 1M window but compact much earlier:
+
+```json
+"env": { "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "300000" }
+```
+
+The intention is to keep two things apart:
+
+- **How large the session grows.** Long contexts make every turn slower and
+  costlier and dilute the model's attention with stale tool output. Compacting
+  at 300k bounds that, which was the original reason to avoid 1M.
+- **How much the model knows up front.** Claude Code sizes the skill listing
+  budget at ~1% of the context window. All skill names are always listed, but
+  descriptions that overflow the budget are dropped, least-invoked skills
+  first, and a skill without a description rarely auto-triggers.
+
+The previous setting, `CLAUDE_CODE_DISABLE_1M_CONTEXT=1`, achieved the first
+by shrinking the whole window to 200k, which also starved the second: the
+`chezmoi-sync` skill stopped triggering because its description no longer
+fit. `CLAUDE_CODE_AUTO_COMPACT_WINDOW` also becomes the window `/context`
+reports, so the budget follows it. Measured with `claude -p "/context"`:
+
+| Setting | Window | Skills listing | Per skill |
+|---------|--------|----------------|-----------|
+| `CLAUDE_CODE_DISABLE_1M_CONTEXT=1` | 200k | 2.4k tokens | names only (<20 tokens) |
+| `CLAUDE_CODE_AUTO_COMPACT_WINDOW=300000` | 300k | 7k tokens | full descriptions (60-300 tokens) |
+
+Anthropic sets no threshold, but recommends compacting proactively, since the
+model is at its least capable when the window is nearly full, and starting a
+new session per task ([session management and 1M
+context](https://claude.com/blog/using-claude-code-session-management-and-1m-context),
+[best practices](https://code.claude.com/docs/en/best-practices)). The 300k
+figure follows community practice. The same threshold can be set with
+`/autocompact` or `autoCompactWindow`, but the env var overrides both.
+
+Run `/context` after adding skills or plugins to check that descriptions still
+fit. Disabling unused plugins (e.g. Beads) also frees budget.
+
+Options considered and discarded:
+
+- `skillListingBudgetFraction` (or `SLASH_COMMAND_TOOL_CHAR_BUDGET`): raises the
+  budget directly while keeping 200k. Reasonable, but it tunes around a window
+  size that no longer reflects the models' defaults.
+- `skillOverrides` set to `name-only`/`off` for skills never used: does not
+  apply to plugin skills, which are only toggled as a whole plugin.
+- `CLAUDE_CODE_MAX_CONTEXT_TOKENS`: only meant for models Claude Code does not
+  recognize.
+
+### Beads
+
+The Beads plugin injects `bd prime` through hooks in every session, including
+projects without a beads database, and lists its skill and commands in every
+session. Instead, it is disabled and projects opt in through their private
+context file, with no custom hooks to maintain:
+
+```sh
+bd setup claude --print >> AGENTS.local.md
+```
+
+- `--print` writes Beads' static Claude template to stdout. The template tells
+  the agent to run `bd prime`, the source of truth for the full workflow, so
+  the snippet does not go stale when Beads changes its commands.
+- Append (`>>`) rather than overwrite when `AGENTS.local.md` already holds
+  other private context; regenerate by replacing that part.
+- `CLAUDE.local.md` must import it with `@AGENTS.local.md`. Both files are in
+  the global gitignore.
+- `bd setup claude --global` was discarded: it writes the hooks into the user
+  settings, i.e. the plugin's behavior again, now hand-maintained.
+
 ### MCP Server Configuration
 
 MCP servers are configured through the `mcp` key in `settings.json` or via the
@@ -133,7 +206,8 @@ opposed to the global setup above that I use for developing other projects.
 
 - `AGENTS.md`: project context and conventions (tracked).
 - `AGENTS.local.md`, `CLAUDE.local.md`: private project context (untracked).
-- Issue tracking with [beads](https://github.com/gastownhall/beads) (`bd`).
+- Issue tracking with [beads](https://github.com/gastownhall/beads) (`bd`),
+  opted in through `AGENTS.local.md` (see [Beads](#beads)).
 
 ### Project Skills
 
