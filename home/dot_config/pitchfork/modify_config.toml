@@ -1,0 +1,15 @@
+{{- /* chezmoi:modify-template */ -}}
+[daemons.greeting]
+run = "greeting"
+retry = 0
+ready_http = "http://localhost:7777"
+boot_start = true
+
+[daemons.heartbeat]
+run = "bash -c 'touch ~/.local/state/dotfiles/heartbeat'"
+cron = "0 0 * * * *"
+retry = 0
+
+[settings.general]
+mise = true
+{{ regexFind "(?s)\n\\[namespaces\\..*" .chezmoi.stdin -}}

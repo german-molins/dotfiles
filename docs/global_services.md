@@ -10,6 +10,15 @@ Services are defined in `~/.config/pitchfork/config.toml`. Each
 
 Set `boot_start = true` for services that should start automatically on login.
 
+The file is shared with mise: `mise daemons` registers every project checkout
+as a `[namespaces.<name>]` entry and pitchfork rewrites the whole file in its
+own format, dropping comments and `description` keys. So chezmoi manages it
+with the `modify_config.toml` template, which renders the daemons and settings
+above and keeps whatever `[namespaces.*]` entries the file already has. Write
+those sections the way pitchfork serializes them, or `chezmoi status` shows a
+cosmetic diff after every pitchfork write. `mise daemons prune` leaves the
+entries of deleted checkouts behind; remove them by hand.
+
 ## Cron Jobs
 
 Scheduled tasks are regular daemons with a `cron` field. The schedule
