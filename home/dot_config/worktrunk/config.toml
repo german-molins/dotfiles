@@ -1,0 +1,8 @@
+[pre-start]
+local-files = '''
+src="{{ primary_worktree_path }}"
+for f in mise.local.toml mise.local.lock AGENTS.local.md CLAUDE.local.md fnox.local.toml; do
+  if [ -e "$src/$f" ] && [ ! -e "$f" ]; then cp --reflink=auto "$src/$f" "$f"; fi
+done
+'''
+copy-ignored = "wt step copy-ignored --require-include"

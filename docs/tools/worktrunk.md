@@ -43,10 +43,6 @@ copy-ignored = "wt step copy-ignored --require-include"
 - `copy-ignored` copies the gitignored files listed in `.worktreeinclude`, and
   only in repositories that have one.
 
-::: warning
-This file is not managed by chezmoi yet.
-:::
-
 ## Copying Ignored Files
 
 [`wt step copy-ignored`](https://worktrunk.dev/step/#wt-step-copy-ignored)
