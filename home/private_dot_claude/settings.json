@@ -102,7 +102,7 @@
     "command": "bash \"$(ls -d ~/.claude/plugins/cache/ponytail/ponytail/*/ | sort -V | tail -1)hooks/ponytail-statusline.sh\""
   },
   "enabledPlugins": {
-    "beads@beads-marketplace": true,
+    "beads@beads-marketplace": false,
     "context-mode@context-mode": true,
     "context7@claude-plugins-official": false,
     "ponytail@ponytail": true,
