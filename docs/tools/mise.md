@@ -201,6 +201,30 @@ global checks would run in every project's `mise doctor project`.
 Check output is discarded, so a failure only shows its description and hint.
 Run the check's command directly to see why it failed.
 
+## Daemons
+
+Projects declare their dev stack in `[daemons]` and run it with
+[`mise daemons`](https://mise.jdx.dev/daemons.html#declare-a-daemon), which
+drives [Pitchfork](../global_services.md) under the hood. Each git worktree gets
+its own isolated set of daemons.
+
+- **Ports**: declare a base port; the primary checkout uses it and every other
+  worktree gets a fixed per-worktree offset
+  ([ports across git worktrees](https://mise.jdx.dev/daemons.html#ports-across-git-worktrees)).
+  Never hardcode ports elsewhere; `mise daemons urls` shows the current ones.
+- **Registration**: every checkout is registered as a namespace in
+  `~/.config/pitchfork/config.toml`, the same file that holds the user
+  services. See [Shared with Mise Daemons](../global_services.md#shared-with-mise-daemons)
+  for why chezmoi manages it with a modify template and how to clean up entries
+  of deleted worktrees.
+- **Global daemons**: `[daemons]` in the global config
+  [join every project's set](https://mise.jdx.dev/daemons.html#configuration-inheritance)
+  and can't run outside a project, so user-level services stay in pitchfork.
+- **Supervisor at login**: here `pitchfork boot enable`
+  (`run_onchange_after_15-enable-pitchfork-boot.sh.tmpl`) keeps the supervisor
+  available
+  ([keep the supervisor available at login](https://mise.jdx.dev/daemons/development-stack.html#keep-the-supervisor-available-at-login)).
+
 ## Managing Multiple Versions of the Same Tool
 
 Mise supports installing several versions of the same tool, with the latest

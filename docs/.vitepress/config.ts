@@ -26,6 +26,7 @@ export default defineConfig({
           { text: 'Bash', link: '/bash' },
           { text: 'Rust', link: '/rust_workflow' },
           { text: 'Agents', link: '/agents' },
+          { text: 'Global Services', link: '/global_services' },
           {
             text: 'Tools',
             link: "/tools",
