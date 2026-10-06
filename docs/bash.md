@@ -153,19 +153,19 @@ install the distro's own `bash-completion` package.
 
 ### No per-tool completion hooks for auto-registered tools
 
-Because mise auto-registers completions for its packslip tools, `usage` and
-`fnox` need no completion line in their `bashrc.d` files — mise registers
-(and, being a per-prompt hook, would immediately override) them regardless.
+Because mise auto-registers completions for its packslip tools, `usage`,
+`fnox` and `aube` need no completion line in their `bashrc.d` files — mise
+registers (and, being a per-prompt hook, would immediately override) them
+regardless.
 So the earlier `eval "$(usage --completions bash)"` and
-`eval "$(fnox completion bash)"` lines were dropped as redundant.
+`eval "$(fnox completion bash)"` lines were dropped as redundant. `aube`
+followed once its packslip started declaring completions (check with
+`mise completion bash --tool aube`), retiring `21-aube.sh`.
 
 Two related lines are deliberately kept, because mise does *not* cover them:
 
 - `19-fnox.sh` keeps `eval "$(fnox activate bash)"` — that is environment
   activation, not completion.
-- `21-aube.sh` keeps `eval "$(aube completion bash)"` — `aube`'s packslip
-  declares no completion (`mise completion bash --tool aube` reports none), so
-  mise registers nothing for it.
 - `18-usage.sh` keeps `source <(usage generate completion-init bash)` — this
   registers a `complete -D` handler for standalone `usage`-shebang scripts on
   `PATH` (e.g. `~/.local/bin/pdftoepub`), a separate concern from the `usage`
