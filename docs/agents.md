@@ -125,7 +125,7 @@ auto-compaction by default fires near the end of it (~967K). The settings
 keep the 1M window but compact much earlier:
 
 ```json
-"env": { "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "300000" }
+"autoCompactWindow": 300000
 ```
 
 The intention is to keep two things apart:
@@ -141,21 +141,24 @@ The intention is to keep two things apart:
 The previous setting, `CLAUDE_CODE_DISABLE_1M_CONTEXT=1`, achieved the first
 by shrinking the whole window to 200k, which also starved the second: the
 `chezmoi-sync` skill stopped triggering because its description no longer
-fit. `CLAUDE_CODE_AUTO_COMPACT_WINDOW` also becomes the window `/context`
+fit. The compact window also becomes the window `/context`
 reports, so the budget follows it. Measured with `claude -p "/context"`:
 
 | Setting | Window | Skills listing | Per skill |
 |---------|--------|----------------|-----------|
 | `CLAUDE_CODE_DISABLE_1M_CONTEXT=1` | 200k | 2.4k tokens | names only (<20 tokens) |
-| `CLAUDE_CODE_AUTO_COMPACT_WINDOW=300000` | 300k | 7k tokens | full descriptions (60-300 tokens) |
+| `autoCompactWindow: 300000` | 300k | 7k tokens | full descriptions (60-300 tokens) |
 
 Anthropic sets no threshold, but recommends compacting proactively, since the
 model is at its least capable when the window is nearly full, and starting a
 new session per task ([session management and 1M
 context](https://claude.com/blog/using-claude-code-session-management-and-1m-context),
 [best practices](https://code.claude.com/docs/en/best-practices)). The 300k
-figure follows community practice. The same threshold can be set with
-`/autocompact` or `autoCompactWindow`, but the env var overrides both.
+figure follows community practice. `/autocompact` also sets it (saved per
+model), and `CLAUDE_CODE_AUTO_COMPACT_WINDOW` overrides everything for a
+one-off run. At 300k all skill
+descriptions already fit: raising the window to 400k leaves the listing at
+7k tokens.
 
 Run `/context` after adding skills or plugins to check that descriptions still
 fit. Disabling unused plugins (e.g. Beads) also frees budget.
