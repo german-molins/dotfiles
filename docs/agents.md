@@ -12,7 +12,10 @@ rules. See [specification of `AGENTS.md` files](https://agents.md).
 of the global rules.
 - `~/.AGENTS.md` - Symlink to `~/.config/AGENTS.md`, tailored for
 [Codebuff/Freebuff](#codebuff-freebuff), which only reads dot-prefixed context
-files in `$HOME`. Other agents ignore it.
+files in `$HOME`. Claude Code never reads it, so the rules are not loaded
+twice. The dot matters: Claude Code does look up a plain `~/AGENTS.md` (and
+`~/CLAUDE.md`) as an ancestor of any project under `$HOME`, which would
+duplicate the rules it already imports.
 - `~/.claude/CLAUDE.md` - Claude Code's global context file, which imports
 `~/.config/AGENTS.md` (see [Claude Code](#claude-code)).
 - `AGENTS.md` - Local (project) agent configuration. It admits nesting files
