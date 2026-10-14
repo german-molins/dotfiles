@@ -274,6 +274,11 @@ run = "openssl rand -hex 32| cut -c -7"
 description = "Compress PDF files in the current directory recursively"
 run = "find -type f -iname '*.pdf' -exec gzip -vf {} +"
 
+[tasks."bash:bench"]
+description = "Benchmark interactive bash startup in the current directory with hyperfine"
+dir = "{{cwd}}"
+run = "hyperfine -N -w 3 -r 30 'bash -ilc true'"
+
 [bootstrap.packages]
 "brew:bash-completion@2" = { os = "macos" }
 "brew:beads" = "latest"

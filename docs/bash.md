@@ -140,7 +140,7 @@ recursing. `26-worktrunk.sh` is the reference instance.
 Completions don't block this: carapace completes the command until the first
 call, and the integration's own completion takes over once loaded. Check that
 `complete -p <tool>` shows a completer before relying on that for a new tool.
-Measure each candidate with `mise run bash:profile` and `hyperfine`
+Measure each candidate with `mise run bash:profile` and `mise run bash:bench`
 ([Startup Profiling](#startup-profiling)) before and after.
 
 ## Shell completions
@@ -281,16 +281,13 @@ Rank  Sourced File                                        Time (ms)   Relative  
 The report makes it easy to spot the slowest contributors; `mise` activation
 dominates (~57% here), which is why startup caching is left to mise itself.
 
-For end-to-end startup time, use `hyperfine` over a full interactive login
-shell (here, from the repository root):
+For end-to-end startup time, use `mise run bash:bench` in the current
+directory. Extra arguments are appended to its hyperfine run, so variants can
+be compared in one go:
 
 ```bash
-hyperfine -N -w 3 -r 30 'bash -ilc true'
+mise run bash:bench "bash -ilc 'eval \"\$(wt config shell init bash)\"'"
 ```
-
-Dropping the chezmoi and zellij completions that carapace shadowed, and
-lazy-loading worktrunk ([Lazy Loading](#lazy-loading)), took this from
-166.5 ± 6.6 ms to 133.9 ± 6.6 ms.
 
 ### Notes
 
