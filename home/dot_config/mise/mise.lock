@@ -4129,6 +4129,12 @@ aube = { path = "locks/npm-ctx7/0.5.12", digest = "sha256:20df377fb4066bf8d9ef65
 backend = "npm:ctx7"
 specifiers = ["latest"]
 
+[[tools."npm:freebuff"]]
+version = "0.2.27"
+aube = { path = "locks/npm-freebuff/0.2.27", digest = "sha256:58e465a84e04cd6dc33478a67132778ae6ed9482d2d765ef1a409841503c3c3f" }
+backend = "npm:freebuff"
+specifiers = ["latest"]
+
 [[tools."npm:skills"]]
 version = "1.7.0"
 aube = { path = "locks/npm-skills/1.7.0", digest = "sha256:5e1165c56e5de749970266d1a30e7fc0c22a36480eab6c505c7d6748076654bc" }
@@ -4667,6 +4673,7 @@ url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-aarch6
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004682"
 
 [tools.upt."platforms.linux-x64"]
+checksum = "blake3:9a66b2f132329974733de3e9625d84c361586a41d25f4dc08255b383bf2973f7"
 url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004690"
 
@@ -4754,6 +4761,8 @@ url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/5937
 checksum = "sha256:532ce3ed5eecb1be274c925b5887f61671e2434a4ca2561b9a8ac9379dbba199"
 url = "https://github.com/max-sixty/worktrunk/releases/download/v0.80.0/worktrunk-x86_64-unknown-linux-musl.tar.xz"
 url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/593794384"
+signer = "sigstore-oidc:https://github.com/max-sixty/worktrunk/.github/workflows/release.yaml"
+repository_ids = { repository = "1078528927" }
 
 [tools.worktrunk."platforms.macos-arm64"]
 checksum = "sha256:8a2bb053c4bc80dea7d9ce6c221ff038d10a3d2dca2dc8f60d1b1a094fa783a9"

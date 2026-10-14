@@ -40,6 +40,7 @@ carapace = "latest"
 cosign = "latest"
 opencode = { version = "latest", lazy = true }
 codebuff = { version = "latest", lazy = true }
+"npm:freebuff" = { version = "latest", lazy = true, lazy_bins = ["freebuff"] }
 jjui = { version = "latest", lazy = true }
 jj = "latest"
 "github:eza-community/eza" = { version = "latest", lazy = true, lazy_bins = ["eza"] }
