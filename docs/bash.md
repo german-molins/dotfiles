@@ -108,6 +108,41 @@ actual startup bottleneck) now handles its own caching, and the helper had no
 dependency-based invalidation, so its cache went stale silently on tool
 upgrades.
 
+## Lazy Loading
+
+Shell startup should stay as fast as possible: every `~/.bashrc.d/` file runs
+on every new shell, while most tools are used in only a few of them. Load
+eagerly only what has to act before the first command, such as:
+
+- environment activation and prompt hooks (`mise activate`, `fnox activate`),
+  which must run on every prompt;
+- integrations that watch or rebind the shell (zoxide records every directory
+  change, atuin binds keys).
+
+Anything else that only wraps a command, typically a `tool init bash` that
+defines a shell function, is loaded on first use with a self-replacing stub:
+
+```bash
+wt() {
+    unset -f wt
+    eval "$(command wt config shell init bash)"
+    wt "$@"
+}
+```
+
+The stub removes itself, evals the real integration (which defines its own
+`wt` function), and re-runs the call through it. Startup pays nothing, the
+first call pays the init once, and later calls go straight to the real
+function. `command` skips the stub to reach the binary, and `unset -f` comes
+first so a missing binary fails with "command not found" instead of
+recursing. `26-worktrunk.sh` is the reference instance.
+
+Completions don't block this: carapace completes the command until the first
+call, and the integration's own completion takes over once loaded. Check that
+`complete -p <tool>` shows a completer before relying on that for a new tool.
+Measure each candidate with `mise run bash:profile` and `hyperfine`
+([Startup Profiling](#startup-profiling)) before and after.
+
 ## Shell completions
 
 Completions come from several independent mechanisms, deliberately kept from
