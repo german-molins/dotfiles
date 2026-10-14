@@ -3,29 +3,36 @@
 LLM-powered coding and shell assistants that use tools to help with development
 tasks.
 
-## Context Files
+## Dotfiles Structure
 
 Agents use standardized context file paths for providing additional context and
-rules:
+rules. See [specification of `AGENTS.md` files](https://agents.md).
 
-See [specification of `AGENTS.md` files](https://agents.md).
-
-- `~/.config/AGENTS.md` - Global (user) agent context file
-- `~/.AGENTS.md` - Symlink to the above, for agents that only read dot-prefixed
-files in `$HOME` (Freebuff)
+- `~/.config/AGENTS.md` - Global (user) agent context file, the single source
+of the global rules.
+- `~/.AGENTS.md` - Symlink to `~/.config/AGENTS.md`, tailored for
+[Codebuff/Freebuff](#codebuff-freebuff), which only reads dot-prefixed context
+files in `$HOME`. Other agents ignore it.
+- `~/.claude/CLAUDE.md` - Claude Code's global context file, which imports
+`~/.config/AGENTS.md` (see [Claude Code](#claude-code)).
 - `AGENTS.md` - Local (project) agent configuration. It admits nesting files
 for subdirectories.
+- `~/.agents/skills/`, `~/.claude/skills/` - Global skills (see
+[Skills](#skills)).
 
 ## MCP Servers
 
-Several Model Context Protocol (MCP)
-servers are configured to enhance coding assistants capabilities:
+No MCP servers are configured for the coding agents. Tools that could be MCP
+servers are used through their CLI and a skill instead, which costs no context
+until needed:
 
-| Name | Type | Protocol | API Key | Description |
-|------|------|----------|---------|-------------|
-| [Context7] | remote | http | `CONTEXT7_API_KEY` | Up-to-date, version-specific documentation and code examples directly from source repositories |
+| Name | Used through | API Key | Description |
+|------|--------------|---------|-------------|
+| [Context7] | `ctx7` CLI and the `find-docs` skill | `CONTEXT7_API_KEY` (fnox) | Up-to-date, version-specific documentation and code examples directly from source repositories |
+| [Mise] | `mise` CLI | | Tools, tasks and environment of the current project |
 
 [Context7]: https://context7.com
+[Mise]: https://mise.jdx.dev/mcp.html
 
 ## Skills
 
@@ -95,7 +102,7 @@ Rust language server - disabled by default
 
 ### Configuration
 
-- **User Settings**: `~/.claude/settings.json` - defines MCP servers and user preferences
+- **User Settings**: `~/.claude/settings.json` - permissions, plugins and user preferences
 - **User Context**: `~/.claude/CLAUDE.md` - global (user) context file
 - **Project Settings**: `.claude/settings.json` - project-specific configuration
 - **Project Context**: `.claude/CLAUDE.md` - local (project) context file
@@ -190,28 +197,47 @@ bd setup claude --print >> AGENTS.local.md
 - `bd setup claude --global` was discarded: it writes the hooks into the user
   settings, i.e. the plugin's behavior again, now hand-maintained.
 
-### MCP Server Configuration
+### MCP Servers
 
-MCP servers are configured through the `mcp` key in `settings.json` or via the
-`claude mcp add` command. The following MCP servers are pre-configured:
+No local MCP servers are configured (see [MCP Servers](#mcp-servers)). User
+scope servers would be added with `claude mcp add --scope user`, which writes
+them to `~/.claude.json`, not to `settings.json`. The Context7 plugin is
+disabled in favor of the `find-docs` skill. Remote connectors of the claude.ai
+account (Atlassian, Google Drive, etc.) are listed by `claude mcp list` but
+managed in claude.ai, not in these dotfiles.
 
-- **Context7**: Remote HTTP server for up-to-date documentation
-- **Mise**: Local stdio server exposing mise environment information
+## Codebuff/Freebuff
 
-## Freebuff
-
-[Freebuff](https://freebuff.com) is the free tier of Codebuff, installed as
-`npm:freebuff` (lazy) with mise. On first run it downloads its binary to
-`~/.config/manicode/freebuff`, next to its `settings.json` and credentials.
+[Codebuff](https://www.codebuff.com) and [Freebuff](https://freebuff.com) are
+the same open source CLI ([CodebuffAI/codebuff]); Freebuff is its free,
+ad-supported tier. Both are installed lazily with mise (`codebuff` and
+`npm:freebuff`). On first run each downloads its binary to
+`~/.config/manicode/`, which also holds the shared `settings.json` and
+credentials.
 
 Global configuration equivalent to Claude Code's:
 
-- **Instructions**: reads `~/.AGENTS.md` (or `~/.CLAUDE.md`) only, never
-`~/.config/AGENTS.md`, and does not follow `@` imports, hence the symlink.
+- **Instructions**: reads `~/.AGENTS.md` (or `~/.CLAUDE.md`), hence the
+[symlink](#dotfiles-structure) to `~/.config/AGENTS.md`.
 - **Skills**: loads `~/.agents/skills/` and `~/.claude/skills/` as is.
 - **MCP servers**: `~/.agents/mcp.json` (`{"mcpServers": {...}}`), merged
 with per-project `.agents/mcp.json`. Not configured.
-- **Permissions**: no equivalent setting.
+- **Custom agents**: TypeScript/JavaScript agent definitions in `~/.agents/`
+and per-project `.agents/`.
+
+Limitations:
+
+- The global context file must be dot-prefixed in `$HOME`: `~/AGENTS.md`,
+`~/.config/AGENTS.md` and `~/.claude/CLAUDE.md` are not read.
+- `@` imports in context files are not expanded; content is injected verbatim.
+- No permission rules (allow/ask/deny) or hooks.
+- Interactive TUI only, no headless/print mode for scripting.
+- Freebuff: models are limited to its free catalog (`/model`), sessions spend
+Freebucks from a quota and expire after an hour, and the UI shows ads.
+- Configuration under `~/.config/manicode/` is written by the tool itself
+(model choice, migrations), so it is not managed by chezmoi.
+
+[CodebuffAI/codebuff]: https://github.com/CodebuffAI/codebuff
 
 ## This Repository
 
