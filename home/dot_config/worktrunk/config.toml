@@ -1,3 +1,5 @@
+worktree-path = "~/.worktrunk/worktrees/{{ repo }}/{{ branch | sanitize }}"
+
 [pre-start]
 local-files = '''
 src="{{ primary_worktree_path }}"

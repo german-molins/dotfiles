@@ -14,6 +14,11 @@ There are two config files
 - `~/.config/worktrunk/config.toml`: my hooks for every repository.
 - `.config/wt.toml` in the repository: hooks of that project.
 
+New worktrees go to `~/.worktrunk/worktrees/<repo>/<branch>` (mirroring
+herdr's `~/.herdr/worktrees/`) instead of the default sibling
+`<repo>.<branch>`, so they stay out of the repository's parent directory and
+nothing inside the repository leaks into them. Existing worktrees are not moved.
+
 Points worth knowing about [hooks](https://worktrunk.dev/hook/#hook-types):
 
 - `pre-*` hooks block and abort on failure; `post-*` hooks run in the
