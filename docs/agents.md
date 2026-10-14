@@ -3,12 +3,6 @@
 LLM-powered coding and shell assistants that use tools to help with development
 tasks.
 
-> [!NOTE]
-> [Freebuff](https://freebuff.com) is listed among the agent harnesses but is
-> currently uninstallable: its aube package's stale content hash is rejected by
-> the registry at every published version. Parked pending an upstream fix or an
-> alternative install path.
-
 ## Context Files
 
 Agents use standardized context file paths for providing additional context and
@@ -17,6 +11,8 @@ rules:
 See [specification of `AGENTS.md` files](https://agents.md).
 
 - `~/.config/AGENTS.md` - Global (user) agent context file
+- `~/.AGENTS.md` - Symlink to the above, for agents that only read dot-prefixed
+files in `$HOME` (Freebuff)
 - `AGENTS.md` - Local (project) agent configuration. It admits nesting files
 for subdirectories.
 
@@ -201,6 +197,21 @@ MCP servers are configured through the `mcp` key in `settings.json` or via the
 
 - **Context7**: Remote HTTP server for up-to-date documentation
 - **Mise**: Local stdio server exposing mise environment information
+
+## Freebuff
+
+[Freebuff](https://freebuff.com) is the free tier of Codebuff, installed as
+`npm:freebuff` (lazy) with mise. On first run it downloads its binary to
+`~/.config/manicode/freebuff`, next to its `settings.json` and credentials.
+
+Global configuration equivalent to Claude Code's:
+
+- **Instructions**: reads `~/.AGENTS.md` (or `~/.CLAUDE.md`) only, never
+`~/.config/AGENTS.md`, and does not follow `@` imports, hence the symlink.
+- **Skills**: loads `~/.agents/skills/` and `~/.claude/skills/` as is.
+- **MCP servers**: `~/.agents/mcp.json` (`{"mcpServers": {...}}`), merged
+with per-project `.agents/mcp.json`. Not configured.
+- **Permissions**: no equivalent setting.
 
 ## This Repository
 
