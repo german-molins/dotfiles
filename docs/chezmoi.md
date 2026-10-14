@@ -100,3 +100,11 @@ template.
   path, so `chezmoi apply` never creates wrong directories.
 - **Full template power** — the shared template can use any Go template logic,
   sprig functions, and chezmoi data variables.
+
+## Additional Source Directories
+
+Each directory matching `~/.local/share/chezmoi_<name>` gets an alias
+`chezmoi-<name>` that runs chezmoi with it as source, so a separate dotfiles
+repository (e.g. `~/.local/share/chezmoi_work` → `chezmoi-work`) is managed
+side by side with this one. The aliases are defined in
+`~/.bashrc.d/27-chezmoi.sh`.
