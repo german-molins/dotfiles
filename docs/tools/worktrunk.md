@@ -29,6 +29,16 @@ Points worth knowing about [hooks](https://worktrunk.dev/hook/#hook-types):
 - Project hooks need [approval](https://worktrunk.dev/config/#wt-config-approvals--how-approvals-work)
   the first time they run, and again whenever they change.
 
+## Shell Integration
+
+[Shell integration](https://worktrunk.dev/shell-integration/) lets
+`wt switch` change the shell's directory. `~/.bashrc.d/26-worktrunk.sh` loads
+it lazily: `wt` starts as a stub that replaces itself with the real
+integration on first use, so it adds nothing to shell startup (eager `eval`
+costs ~7 ms). Until then, carapace completes `wt` through its own clap
+completer; afterwards worktrunk's lazy completer takes over. Agents and
+scripts don't load it and use `wt switch --no-cd`.
+
 ## User Hooks
 
 ```toml
