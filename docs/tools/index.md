@@ -17,7 +17,7 @@ These are my daily CLI drivers:
 | [Usage] | `usage` | | Polyglot script CLI manager |
 | [Fnox] | `fnox` | | Secret manager |
 | [aube] | `aube`, `aubr`, `aubx` | | Node.js package manager |
-| [Zellij] | `zellij` | `z{e,r}{,f,i}` | Terminal workspaces |
+| [Zellij] | `zellij` | | Terminal workspaces |
 | [Herdr] | `herdr` | | Agent-aware terminal workspaces |
 | [Zoxide] | `zoxide` | `cd`, `cdi` | Smarter `cd` |
 | [Atuin] | `atuin` | | Shell history manager |
