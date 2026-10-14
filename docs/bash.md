@@ -258,29 +258,39 @@ cache warmth; re-run the steps above to refresh):
 === Bash Startup Timing Summary ===
 Rank  Sourced File                                        Time (ms)   Relative   Cumulative
 ----- -----------------------------------------           ---------   --------  -----------
-1     ~/.bashrc.d/17-mise.sh                                105.787     46.35%       46.35%
-2     ~/.bashrc.d/27-chezmoi.sh                              28.827     12.63%       58.98%
-3     ~/.bashrc.d/08-homebrew.sh                             25.396     11.13%       70.11%
-4     ~/.bashrc.d/75-zellij.sh                               20.581      9.02%       79.13%
-5     ~/.bashrc.d/19-fnox.sh                                  8.617      3.78%       82.90%
-6     ~/.bashrc.d/82-carapace.sh                              5.556      2.43%       85.34%
-7     ~/.bashrc.d/21-aube.sh                                  4.281      1.88%       87.21%
-8     ~/.bashrc.d/18-usage.sh                                 4.119      1.80%       89.02%
-9     /etc/bash_completion                                    3.818      1.67%       90.69%
-10    ~/.bashrc.d/25-zoxide.sh                                2.281      1.00%       91.69%
-11    ~/.bashrc.d/10-nix.sh                                   0.245      0.11%       91.80%
-12    ~/.bashrc.d/35-functions.sh                             0.097      0.04%       91.84%
-13    ~/.bashrc.d/55-task.sh                                  0.050      0.02%       91.86%
-14    ~/.bashrc.d/45-julia.sh                                 0.025      0.01%       91.87%
-15    ~/.bashrc.d/57-yazi.sh                                  0.024      0.01%       91.88%
-16    ~/.bashrc.d/60-tmux.sh                                  0.022      0.01%       91.89%
-17    ~/.bashrc.d/32-nvim.sh                                  0.021      0.01%       91.90%
-      TOTAL SOURCED                                         209.747     91.90%       91.90%
-      TOTAL                                                 228.228       100%         100%
+1     ~/.bashrc.d/17-mise.sh                                 71.700     56.54%       56.54%
+2     ~/.bashrc.d/08-homebrew.sh                             16.975     13.39%       69.92%
+3     ~/.bashrc.d/82-carapace.sh                              6.780      5.35%       75.27%
+4     /etc/bash_completion                                    3.651      2.88%       78.15%
+5     ~/.bashrc.d/19-fnox.sh                                  3.517      2.77%       80.92%
+6     ~/.bashrc.d/18-usage.sh                                 2.674      2.11%       83.03%
+7     ~/.bashrc.d/25-zoxide.sh                                2.620      2.07%       85.10%
+8     ~/.bashrc.d/10-nix.sh                                   0.214      0.17%       85.27%
+9     ~/.bashrc.d/35-functions.sh                             0.080      0.06%       85.33%
+10    ~/.bashrc.d/27-chezmoi.sh                               0.072      0.06%       85.39%
+11    ~/.bashrc.d/55-task.sh                                  0.051      0.04%       85.43%
+12    ~/.bashrc.d/57-yazi.sh                                  0.030      0.02%       85.45%
+13    ~/.bashrc.d/45-julia.sh                                 0.028      0.02%       85.47%
+14    ~/.bashrc.d/26-worktrunk.sh                             0.025      0.02%       85.49%
+15    ~/.bashrc.d/60-tmux.sh                                  0.022      0.02%       85.51%
+16    ~/.bashrc.d/32-nvim.sh                                  0.021      0.02%       85.52%
+      TOTAL SOURCED                                         108.460     85.52%       85.52%
+      TOTAL                                                 126.817       100%         100%
 ```
 
 The report makes it easy to spot the slowest contributors; `mise` activation
-dominates (~46% here), which is why startup caching is left to mise itself.
+dominates (~57% here), which is why startup caching is left to mise itself.
+
+For end-to-end startup time, use `hyperfine` over a full interactive login
+shell (here, from the repository root):
+
+```bash
+hyperfine -N -w 3 -r 30 'bash -ilc true'
+```
+
+Dropping the chezmoi and zellij completions that carapace shadowed, and
+lazy-loading worktrunk ([Lazy Loading](#lazy-loading)), took this from
+166.5 ± 6.6 ms to 133.9 ± 6.6 ms.
 
 ### Notes
 
