@@ -115,12 +115,17 @@ Rust language server - disabled by default
 Claude Code reads context through:
 
 1. Global `~/.claude/CLAUDE.md` file
-2. Local `.claude/CLAUDE.md` file in project root
+2. `CLAUDE.md` or `.claude/CLAUDE.md` in the project root and its ancestors,
+plus the private `CLAUDE.local.md`
 3. Referenced files using `@` syntax
 
-**Note**: While Claude Code uses `CLAUDE.md` as its native context file format,
-it can reference the standardized `AGENTS.md` files by including `@~/.config/AGENTS.md`
-or `@AGENTS.md` in the respective `CLAUDE.md` files.
+`AGENTS.md` (or `.claude/AGENTS.md`) is loaded natively, but only as a
+fallback: in a directory that also has a `CLAUDE.md` or a `CLAUDE.local.md`,
+only those are read. Importing `@AGENTS.md` from them is therefore still
+needed, and does not load it twice. `AGENTS.local.md` is never loaded
+natively, so it is imported from `CLAUDE.local.md`. The global
+`~/.config/AGENTS.md` is never found on its own and is imported from
+`~/.claude/CLAUDE.md`.
 
 Reference: [Claude Code Settings](https://code.claude.com/docs/en/settings)
 
