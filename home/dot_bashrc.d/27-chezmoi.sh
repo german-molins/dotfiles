@@ -1,5 +1,3 @@
-eval "$(chezmoi completion bash)"
-
 # Creates aliases for additional chezmoi source directories
 # For each directory matching ~/.local/share/chezmoi_*, creates
 # an alias chezmoi-name that uses that directory as source
