@@ -4037,6 +4037,26 @@ checksum = "sha256:3b860ec5b2368e045a500c107006eee7077f9b66692dc17fcbf0b36a859f6
 url = "https://github.com/tstack/lnav/releases/download/v0.14.1/lnav-0.14.1-aarch64-macos.zip"
 url_api = "https://api.github.com/repos/tstack/lnav/releases/assets/545333131"
 
+[[tools.miniserve]]
+version = "0.35.0"
+backend = "aqua:svenstaro/miniserve"
+specifiers = ["latest"]
+
+[tools.miniserve."platforms.linux-arm64"]
+checksum = "sha256:f50b296a36e2d8b38ca4ec69f1972f9f41600abacf6b7e72fedf921c48b1ee50"
+url = "https://github.com/svenstaro/miniserve/releases/download/v0.35.0/miniserve-0.35.0-aarch64-unknown-linux-gnu"
+url_api = "https://api.github.com/repos/svenstaro/miniserve/releases/assets/391553201"
+
+[tools.miniserve."platforms.linux-x64"]
+checksum = "sha256:3b43ec6cb8ef5d5cc72a216b2309ef77c90952fd2c3e3c6eb9010dec39f3a086"
+url = "https://github.com/svenstaro/miniserve/releases/download/v0.35.0/miniserve-0.35.0-x86_64-unknown-linux-gnu"
+url_api = "https://api.github.com/repos/svenstaro/miniserve/releases/assets/391553074"
+
+[tools.miniserve."platforms.macos-arm64"]
+checksum = "sha256:8e8dc916b1dc3bc2a46bf5a44308caf7db153e6940db178668929e1de40d1fbb"
+url = "https://github.com/svenstaro/miniserve/releases/download/v0.35.0/miniserve-0.35.0-aarch64-apple-darwin"
+url_api = "https://api.github.com/repos/svenstaro/miniserve/releases/assets/391554254"
+
 [[tools.mr-boxington]]
 version = "1.22.0"
 backend = "packslip:github.com/jdx/mr-boxington"

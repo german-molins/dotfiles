@@ -99,6 +99,7 @@ usage = "latest"
 pitchfork = "latest"
 fnox = "latest"
 lnav = { version = "latest", lazy = true }
+miniserve = { version = "latest", lazy = true }
 
 [settings]
 experimental = true
