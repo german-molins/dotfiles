@@ -93,6 +93,39 @@ as a lazy mise tool (`http:` backend) and point the global config's
 chezmoi script, but its version is pinned separately from the CLI's and must
 be kept compatible by hand.
 
+## Viewing Screenshots And Videos
+
+Agents save screenshots (PNG) and videos (WebM) on the machine they run on.
+Recording takes `--fps` (default 25) and `--size` (default fits 800x800), and
+`--cursor` draws a mouse cursor that glides to each action:
+
+```sh
+playwright-cli video-start ui-tour.webm --cursor --fps 60 --size 1280x720
+```
+
+To look at the files from another machine over SSH:
+
+- **[miniserve](index.md#other-tools)**: serve the directory and open it in the
+laptop's browser. The browser downloads the file and plays it locally, so
+video is smooth.
+
+  ```sh
+  miniserve -i 0.0.0.0 -p 8090 <dir>   # then open http://<host>:8090
+  ```
+
+- **[mpv](https://mpv.io) in the terminal**: no browser or port needed. With a
+terminal that supports the kitty graphics protocol (kitty, Ghostty, WezTerm),
+`--vo=kitty` shows full-resolution images and video, also through SSH and
+herdr. mpv decodes on the server and sends every frame to the terminal as an
+uncompressed image, so video drops frames and fast motion such as the cursor
+looks choppy. Other terminals can use `--vo=tct`, which draws with colored
+characters at very low resolution.
+
+  ```sh
+  mpv --vo=kitty --image-display-duration=inf screenshot.png
+  mpv --vo=kitty --really-quiet ui-tour.webm
+  ```
+
 ## Headless Servers
 
 Neither build needs a display: Chromium runs with its own headless backend

@@ -148,6 +148,7 @@ common cases:
 | [CodeBurn] | `codeburn` | | AI coding tokens and cost tracker |
 | [miniserve] | `miniserve` | | Serve files and directories over HTTP |
 | [Playwright CLI] | `playwright-cli` | | Headless browser automation for agents |
+| [mpv] | `mpv` | | Media player for video, audio and images, also inside the terminal |
 
 [Git Extras]: https://github.com/tj/git-extras
 [full list]: https://github.com/tj/git-extras/blob/main/Commands.md
@@ -162,6 +163,7 @@ common cases:
 [CodeBurn]: https://codeburn.app
 [miniserve]: https://github.com/svenstaro/miniserve
 [Playwright CLI]: playwright_cli.md
+[mpv]: https://mpv.io
 
 ### Fallback Apps
 

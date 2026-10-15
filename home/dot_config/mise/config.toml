@@ -101,6 +101,7 @@ fnox = "latest"
 lnav = { version = "latest", lazy = true }
 miniserve = { version = "latest", lazy = true }
 "npm:@playwright/cli" = { version = "latest", lazy = true, lazy_bins = ["playwright-cli"] }
+mpv = { version = "latest", lazy = true }
 
 [settings]
 experimental = true
