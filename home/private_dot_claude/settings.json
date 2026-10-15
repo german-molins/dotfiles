@@ -136,6 +136,6 @@
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
-  "editorMode": "vim",
-  "autoCompactWindow": 300000
+  "autoCompactWindow": 300000,
+  "editorMode": "vim"
 }
