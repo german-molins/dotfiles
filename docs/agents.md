@@ -33,9 +33,11 @@ until needed:
 |------|--------------|---------|-------------|
 | [Context7] | `ctx7` CLI and the `find-docs` skill | `CONTEXT7_API_KEY` (fnox) | Up-to-date, version-specific documentation and code examples directly from source repositories |
 | [Mise] | `mise` CLI | | Tools, tasks and environment of the current project |
+| [Playwright] | `playwright-cli` CLI and the `playwright-cli` skill | | Headless browser automation (see [Browser Automation](#browser-automation)) |
 
 [Context7]: https://context7.com
 [Mise]: https://mise.jdx.dev/mcp.html
+[Playwright]: https://github.com/microsoft/playwright-cli
 
 ## Skills
 
@@ -78,6 +80,15 @@ Similarly, use `ctx7` (Context7 Skills) to manage agents skills:
 - `ctx7 skills search`
 - `ctx7 skills generate`: Generate skills with the help of AI (requires `ctx7
 login`)
+
+## Browser Automation
+
+Agents check web UIs in a headless Chromium through
+[Playwright CLI](tools/playwright_cli.md): the `playwright-cli` global mise
+tool, its skill installed with the skills CLI, and a Chromium build matching
+the CLI, downloaded by a chezmoi script (191 MiB per version). The official
+Claude Code `playwright` plugin is not used, since it only bundles the
+Playwright MCP server.
 
 ## Claude Code
 

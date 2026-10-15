@@ -13,3 +13,5 @@ playground/
 ignore*/
 
 **/.claude/settings.local.json
+.playwright/
+.playwright-cli/

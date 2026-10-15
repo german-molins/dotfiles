@@ -100,6 +100,7 @@ pitchfork = "latest"
 fnox = "latest"
 lnav = { version = "latest", lazy = true }
 miniserve = { version = "latest", lazy = true }
+"npm:@playwright/cli" = { version = "latest", lazy = true, lazy_bins = ["playwright-cli"] }
 
 [settings]
 experimental = true

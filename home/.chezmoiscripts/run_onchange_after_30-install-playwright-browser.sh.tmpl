@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+set -eu
+
+# Make mise available in the current shell.
+{{ template "mise-shellenv" . }}
+
+if ! command -v mise >/dev/null; then
+    >&2 echo "[dotfiles][playwright] ERROR: 'mise' command not found, skipping browser installation"
+    exit 1
+fi
+
+>&2 echo "[dotfiles][playwright] Installing the Chromium build matching playwright-cli..."
+
+# playwright-cli version: {{ (index (index (fromToml (include "dot_config/mise/mise.lock")).tools "npm:@playwright/cli") 0).version }}
+mise -C "$HOME" exec -- playwright-cli install-browser chromium --no-shell

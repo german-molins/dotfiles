@@ -147,6 +147,7 @@ common cases:
 | [systemctl-tui] | `systemctl-tui` | | systemd TUI |
 | [CodeBurn] | `codeburn` | | AI coding tokens and cost tracker |
 | [miniserve] | `miniserve` | | Serve files and directories over HTTP |
+| [Playwright CLI] | `playwright-cli` | | Headless browser automation for agents |
 
 [Git Extras]: https://github.com/tj/git-extras
 [full list]: https://github.com/tj/git-extras/blob/main/Commands.md
@@ -160,6 +161,7 @@ common cases:
 [systemctl-tui]: https://github.com/rgwood/systemctl-tui
 [CodeBurn]: https://codeburn.app
 [miniserve]: https://github.com/svenstaro/miniserve
+[Playwright CLI]: playwright_cli.md
 
 ### Fallback Apps
 

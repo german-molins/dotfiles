@@ -4134,6 +4134,12 @@ url = "https://github.com/nolabs-ai/nono/releases/download/v0.79.0/nono-v0.79.0-
 url_api = "https://api.github.com/repos/nolabs-ai/nono/releases/assets/601172911"
 provenance = "github-attestations"
 
+[[tools."npm:@playwright/cli"]]
+version = "0.1.22"
+aube = { path = "locks/npm-playwright-cli/0.1.22", digest = "sha256:f2db4a39ff14290524c7382d2b4b40dea121f00003bb18ba19551c717adb2b17" }
+backend = "npm:@playwright/cli"
+specifiers = ["latest"]
+
 [[tools."npm:codeburn"]]
 version = "0.9.25"
 aube = { path = "locks/npm-codeburn/0.9.25~7443761f", digest = "sha256:79a63641a977b18e6d74934bb15e5e166df98efb2a95276e978f6f4904ab207e" }

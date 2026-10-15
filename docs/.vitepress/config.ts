@@ -53,6 +53,7 @@ export default defineConfig({
               { text: "http", link: '/tools/http' },
               { text: "uutils", link: '/tools/uutils' },
               { text: "tldr", link: '/tools/tldr' },
+              { text: "Playwright CLI", link: '/tools/playwright_cli' },
             ]
           }
         ]
