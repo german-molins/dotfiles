@@ -137,5 +137,6 @@
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "autoCompactWindow": 300000,
+  "idleCompaction": false,
   "editorMode": "vim"
 }
