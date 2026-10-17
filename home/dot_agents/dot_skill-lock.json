@@ -59,11 +59,10 @@
       "source": "modem-dev/hunk",
       "sourceType": "github",
       "sourceUrl": "https://github.com/modem-dev/hunk.git",
-      "ref": "main",
-      "skillPath": "packages/hunk/skills/hunk-review/SKILL.md",
-      "skillFolderHash": "7cebdeeab948cb9a44a55a131ac722d248224f9d",
+      "skillPath": ".agents/skills/hunk-review/SKILL.md",
+      "skillFolderHash": "99d0edacc307b90046fd4e6f3c9c48ea1e499971",
       "installedAt": "2026-09-22T11:05:15.478Z",
-      "updatedAt": "2026-10-17T09:48:24.920Z"
+      "updatedAt": "2026-10-17T23:10:44.157Z"
     },
     "playwright-cli": {
       "source": "microsoft/playwright-cli",
@@ -72,7 +71,7 @@
       "skillPath": "skills/playwright-cli/SKILL.md",
       "skillFolderHash": "6b746b43751be277378e0ee04fe0db69f24da045",
       "installedAt": "2026-10-15T15:38:29.126Z",
-      "updatedAt": "2026-10-15T15:38:29.126Z"
+      "updatedAt": "2026-10-17T23:10:46.373Z"
     },
     "herdr": {
       "source": "herdrdev/herdr",
@@ -81,7 +80,7 @@
       "skillPath": "skills/herdr/SKILL.md",
       "skillFolderHash": "2be0d86d481d1bb29c62e11ef37b78d27d01b478",
       "installedAt": "2026-10-17T22:12:20.888Z",
-      "updatedAt": "2026-10-17T22:12:20.888Z"
+      "updatedAt": "2026-10-17T23:10:51.718Z"
     }
   },
   "dismissed": {
