@@ -111,6 +111,7 @@ always_keep_download = true
 idiomatic_version_file_enable_tools = []
 env_shell_expand = true
 lockfile_platforms = ["macos-arm64", "linux-x64", "linux-arm64"]
+minimum_release_age = "24h"
 
 [settings.cargo]
 binstall = true
