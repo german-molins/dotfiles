@@ -42,9 +42,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/upstash/context7.git",
       "skillPath": "skills/find-docs/SKILL.md",
-      "skillFolderHash": "b635cd66f1414befd36d18646561398de2ddab54",
+      "skillFolderHash": "9bd51dc72e6807bb88171b59ca2ed8dc117361e2",
       "installedAt": "2026-03-23T17:10:18.668Z",
-      "updatedAt": "2026-09-28T10:01:23.170Z"
+      "updatedAt": "2026-10-17T09:48:21.656Z"
     },
     "gh-cli": {
       "source": "tenequm/skills",
@@ -61,9 +61,9 @@
       "sourceUrl": "https://github.com/modem-dev/hunk.git",
       "ref": "main",
       "skillPath": "packages/hunk/skills/hunk-review/SKILL.md",
-      "skillFolderHash": "6f018e1100adad770c86dfcf64a03151b51d6251",
+      "skillFolderHash": "7cebdeeab948cb9a44a55a131ac722d248224f9d",
       "installedAt": "2026-09-22T11:05:15.478Z",
-      "updatedAt": "2026-09-22T11:05:15.478Z"
+      "updatedAt": "2026-10-17T09:48:24.920Z"
     },
     "playwright-cli": {
       "source": "microsoft/playwright-cli",
