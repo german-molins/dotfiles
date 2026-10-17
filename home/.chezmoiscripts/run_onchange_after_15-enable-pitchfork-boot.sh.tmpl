@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# The boot unit pins the versioned binary path, so re-enable on upgrades.
+# pitchfork version: {{ (index (fromToml (include "dot_config/mise/mise.lock")).tools.pitchfork 0).version }}
+
 # Make mise-installed tools available in the current shell.
 {{ template "mise-shellenv" . }}
 
