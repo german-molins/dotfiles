@@ -16,7 +16,7 @@ selected scopes and packages:
 | pi extensions | `pi list`, then installed `package.json` version vs `npm view <pkg> version` | yes |
 | nono | `nono update --dry-run` | yes |
 | mise bootstrap | `mise bootstrap packages status` | no, list only |
-| skills | `skills check --global` | no, list only |
+| skills | none: `skills check` installs updates (it runs `update`); the `agents:update` log lists them | no |
 | apt | `apt list --upgradable` | no, list only |
 | yazi, nvim | none: commit-tracked, no releases | no |
 
