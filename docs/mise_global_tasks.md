@@ -10,6 +10,12 @@ Update agents resources
 
 Prune unreferenced packages from the aube store
 
+## `bash:bench`
+
+- **Usage:** `bash:bench`
+
+Benchmark interactive bash startup in the current directory with hyperfine
+
 ## `bash:profile`
 
 - **Usage:** `bash:profile`
@@ -59,6 +65,12 @@ Update Devbox
 - **Usage:** `docker:clean`
 
 Clean up Docker containers, images, networks and build cache
+
+## `herdr:integrations`
+
+- **Usage:** `herdr:integrations`
+
+Install outdated (or the given) herdr agent integrations and normalize Claude hook paths
 
 ## `mbx:clean`
 

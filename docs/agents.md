@@ -114,6 +114,9 @@ Rust language server - disabled by default
 ### Configuration
 
 - **User Settings**: `~/.claude/settings.json` - permissions, plugins and user preferences
+  - Hook commands under the home directory are written as `"$HOME/..."`, never
+  as this machine's absolute path; `mise run herdr:integrations` normalizes
+  the ones tools install (see [Herdr](tools/herdr.md#agent-integrations)).
 - **User Context**: `~/.claude/CLAUDE.md` - global (user) context file
 - **Project Settings**: `.claude/settings.json` - project-specific configuration
 - **Project Context**: `.claude/CLAUDE.md` - local (project) context file

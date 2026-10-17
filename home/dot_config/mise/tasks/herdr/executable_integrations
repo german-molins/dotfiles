@@ -1,0 +1,60 @@
+#!/usr/bin/env sh
+#MISE description="Install outdated (or the given) herdr agent integrations and normalize Claude hook paths"
+
+set -eu
+
+if ! command -v herdr >/dev/null; then
+    >&2 echo "WARNING: herdr not installed"
+    exit 0
+fi
+
+if [ $# -gt 0 ]; then
+    agents=$*
+else
+    agents=$(herdr integration status --outdated-only |
+        sed -n 's/^\([a-z0-9-]*\)[^:]*: outdated.*/\1/p')
+fi
+
+for agent in $agents; do
+    herdr integration install "$agent"
+done
+
+# herdr writes hook commands with this machine's absolute home and only
+# recognizes its own hook by that exact string, so rewrite them to $HOME and
+# keep the last duplicate, i.e. the entry herdr just (re)wrote.
+settings=$HOME/.claude/settings.json
+if [ -f "$settings" ]; then
+    tmp=$(mktemp)
+    jq '
+        (env.HOME | gsub("(?<c>[.\\\\+*?^$()\\[\\]{}|])"; "\\\(.c)")) as $h
+        | def norm:
+            gsub("'"'"'\($h)(?<p>/[^'"'"']*)'"'"'"; "\"$HOME\(.p)\"")
+            | gsub("(?<![^\\s\"=])\($h)(?<p>/)"; "$HOME\(.p)");
+        if .hooks then
+            .hooks |= with_entries(.value |= (
+                map(.hooks |= map(if .command then .command |= norm else . end))
+                | reverse
+                | reduce .[] as $e ({seen: {}, out: []};
+                    .seen as $s
+                    | ($e.hooks | map(select(($s[.command // ""] // false) | not))) as $hs
+                    | .seen += ($hs | map(select(.command) | {key: .command, value: true}) | from_entries)
+                    | if ($hs | length) > 0 then .out += [$e + {hooks: $hs}] else . end)
+                | .out
+                | reverse))
+        else . end
+    ' "$settings" >"$tmp"
+    if cmp -s "$tmp" "$settings"; then
+        rm -f "$tmp"
+    else
+        cat "$tmp" >"$settings"
+        rm -f "$tmp"
+        echo "normalized hook paths in $settings"
+    fi
+fi
+
+if [ -n "$agents" ]; then
+    echo "Integrations take effect on a new herdr server. From a shell outside herdr:"
+    echo "  herdr server stop && herdr"
+fi
+
+chezmoi status "$settings" "$HOME/.config/opencode/cli.json"
