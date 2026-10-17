@@ -49,9 +49,11 @@ stops the deleted checkout's daemons, detaches its generated config (the
 leaves its `[namespaces.<name>-<hash>]` entry with only a `dir` line (and an
 empty, harmless `<hash>/project.lock` directory).
 [`pitchfork clean --prune`](https://pitchfork.jdx.dev/cli/clean.html) drops
-`pitchfork list` entries whose directory is gone. Neither, nor
-[`pitchfork config remove`](https://pitchfork.jdx.dev/cli/config/remove.html),
-removes the leftover namespace entry.
+`pitchfork list` entries whose directory is gone and, since pitchfork 2.30.1,
+also their `[namespaces]` and `[slugs]` entries, unless daemons still run
+under them.
+[`pitchfork config remove`](https://pitchfork.jdx.dev/cli/config/remove.html)
+does not remove the namespace entry.
 
 A project's worktrunk `post-remove` hook can run all of this, plus a filter for
 the leftover entries, on every `wt remove`; see

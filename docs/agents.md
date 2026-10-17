@@ -74,12 +74,9 @@ default skills manager.
 
 #### Context7
 
-Similarly, use `ctx7` (Context7 Skills) to manage agents skills:
-
-- `ctx7 skills install`
-- `ctx7 skills search`
-- `ctx7 skills generate`: Generate skills with the help of AI (requires `ctx7
-login`)
+`ctx7` dropped its `skills` commands in 0.8.0. `ctx7 setup` still installs
+Context7's own skills (`find-docs`, `context7-mcp`) for an agent, and `ctx7
+library` / `ctx7 docs` query documentation directly.
 
 ## Browser Automation
 

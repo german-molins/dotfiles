@@ -1,0 +1,10 @@
+{{- $in := .chezmoi.stdin -}}
+{{- if regexMatch "(?m)^\\s*DisableUpdateCheck\\s*=" $in -}}
+{{- regexReplaceAll "(?m)^(\\s*DisableUpdateCheck\\s*=\\s*).*$" $in "${1}true" -}}
+{{- else if regexMatch "(?m)^\\[application\\]\\s*$" $in -}}
+{{- regexReplaceAll "(?m)^\\[application\\][ \\t]*$" $in "[application]\nDisableUpdateCheck = true" -}}
+{{- else -}}
+{{- $in }}{{ if and $in (not (hasSuffix "\n" $in)) }}{{ "\n" }}{{ end }}{{ if $in }}{{ "\n" }}{{ end -}}
+[application]
+DisableUpdateCheck = true
+{{ end -}}
