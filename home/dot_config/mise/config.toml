@@ -38,8 +38,7 @@ carapace = "latest"
 "github:ghetzel/mdnstool" = { version = "latest", lazy = true, lazy_bins = ["mdnstool"], os = ["linux"] }
 "cargo:somo" = { version = "latest", lazy = true, lazy_bins = ["somo"] }
 cosign = "latest"
-# Hold on V1: V2 (npm:@opencode/cli) needs a cli.json and herdr plugin migration.
-opencode = { version = "1", lazy = true }
+opencode = { version = "latest", lazy = true, allow_builds = ["@opencode/cli"] }
 codebuff = { version = "latest", lazy = true }
 "npm:freebuff" = { version = "latest", lazy = true, lazy_bins = ["freebuff"] }
 jjui = { version = "latest", lazy = true }

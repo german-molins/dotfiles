@@ -222,6 +222,26 @@ disabled in favor of the `find-docs` skill. Remote connectors of the claude.ai
 account (Atlassian, Google Drive, etc.) are listed by `claude mcp list` but
 managed in claude.ai, not in these dotfiles.
 
+## OpenCode
+
+The mise registry maps `opencode` to OpenCode 2 (`npm:@opencode/cli`) for
+`latest` and keeps v1 on aqua. A `[[tools.opencode]]` lock entry pins its
+backend, so moving off v1 needs that entry removed before `latest` resolves to
+v2. The npm package's postinstall links the platform binary
+from an optional dependency and must be approved with
+`allow_builds = ["@opencode/cli"]`; without it `opencode` fails with
+"postinstall script was not run".
+
+- `~/.config/opencode/opencode.jsonc` uses the native V2 `permissions` array
+  ([permissions](https://opencode.ai/docs/permissions)): the last matching rule
+  wins. V2 no longer asks before touching paths outside the project, so an
+  `external_directory` `ask` rule restores the V1 prompt.
+- `~/.config/opencode/cli.json` holds terminal client settings (theme,
+  keybinds, terminal plugins). The TUI settings screen and `/themes` rewrite
+  it.
+- V2 clients share one background server per user (`opencode service status`);
+  `opencode --standalone` runs a private one.
+
 ## Codebuff/Freebuff
 
 [Codebuff](https://www.codebuff.com) and [Freebuff](https://freebuff.com) are

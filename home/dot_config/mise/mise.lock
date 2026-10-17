@@ -826,9 +826,9 @@ checksum = "sha256:458227f759d5e3fcec5d9b7acce54e10c9e1f4f4b7ec978f3bfd54ce4ee98
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/snappy-1.2.2-h7d29b6f_2.conda"
 checksum = "sha256:195f2b5df5607b117aab69817cc1610ac61be09b73f33af05bd44dc7711dbd53"
 
-[conda-packages.linux-arm64."spirv-tools-2026.4-hde6636f_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-aarch64/spirv-tools-2026.4-hde6636f_1.conda"
-checksum = "sha256:799b3a3eb90618dbd9ef44eda72e62bb1411815e509e35ae8ddbfb9f7307565c"
+[conda-packages.linux-arm64."spirv-tools-2026.4-hde6636f_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-aarch64/spirv-tools-2026.4-hde6636f_2.conda"
+checksum = "sha256:d058bbe500b0ef6c894762a459b51cf538d8012c1083b1fa373b3a9432f91f91"
 
 [conda-packages.linux-arm64."svt-av1-4.2.0-h4154aff_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-aarch64/svt-av1-4.2.0-h4154aff_1.conda"
@@ -1858,9 +1858,9 @@ checksum = "sha256:458227f759d5e3fcec5d9b7acce54e10c9e1f4f4b7ec978f3bfd54ce4ee98
 url = "https://conda.anaconda.org/conda-forge/linux-64/snappy-1.2.2-h34e00bb_2.conda"
 checksum = "sha256:8635d10c7f127808b09c0c8e77b21a255829e0934e49326548c949f7e0551f09"
 
-[conda-packages.linux-x64."spirv-tools-2026.4-h7148c6a_1"]
-url = "https://conda.anaconda.org/conda-forge/linux-64/spirv-tools-2026.4-h7148c6a_1.conda"
-checksum = "sha256:525ff492eebbc9b093dab1986171295bf4c6edcfd94d8798a5d40d77459e231a"
+[conda-packages.linux-x64."spirv-tools-2026.4-h7148c6a_2"]
+url = "https://conda.anaconda.org/conda-forge/linux-64/spirv-tools-2026.4-h7148c6a_2.conda"
+checksum = "sha256:e8791349946b2c98ffa5cc67cf1525931e066aef8a01800d6f7c151444a3f052"
 
 [conda-packages.linux-x64."svt-av1-4.2.0-hd2095e1_1"]
 url = "https://conda.anaconda.org/conda-forge/linux-64/svt-av1-4.2.0-hd2095e1_1.conda"
@@ -2726,9 +2726,9 @@ checksum = "sha256:458227f759d5e3fcec5d9b7acce54e10c9e1f4f4b7ec978f3bfd54ce4ee98
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/snappy-1.2.2-h3951085_2.conda"
 checksum = "sha256:1f2c0290f7f88479a49df2e53ace3575c68fe41edc204875fb10423312fb7e47"
 
-[conda-packages.macos-arm64."spirv-tools-2026.4-hc0b298b_1"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/spirv-tools-2026.4-hc0b298b_1.conda"
-checksum = "sha256:949da25bec6ff020f5b60c562de7c676b333c831fbfc03563e4cd1e261c5f5c2"
+[conda-packages.macos-arm64."spirv-tools-2026.4-hc0b298b_2"]
+url = "https://conda.anaconda.org/conda-forge/osx-arm64/spirv-tools-2026.4-hc0b298b_2.conda"
+checksum = "sha256:e3529ae4406adff290ae541501e3349b7d08d057720ae46c56f4a41a97922ad1"
 
 [conda-packages.macos-arm64."svt-av1-4.2.0-h484c67d_1"]
 url = "https://conda.anaconda.org/conda-forge/osx-arm64/svt-av1-4.2.0-h484c67d_1.conda"
@@ -4924,7 +4924,7 @@ conda_deps = [
     "libglvnd-1.7.0-hd24410f_5",
     "libegl-1.7.0-hd24410f_5",
     "glslang-16.6.0-ha162a40_0",
-    "spirv-tools-2026.4-hde6636f_1",
+    "spirv-tools-2026.4-hde6636f_2",
     "libdeflate-1.25-hfa851ae_1",
     "xorg-libice-1.1.2-h80f16a2_0",
     "xorg-libsm-1.2.6-hf23e593_1",
@@ -5053,7 +5053,7 @@ conda_deps = [
     "icu-78.3-py310h44b86e0_2",
     "ca-certificates-2026.7.22-hbd8a1cb_0",
     "glslang-16.6.0-h980caa0_0",
-    "spirv-tools-2026.4-h7148c6a_1",
+    "spirv-tools-2026.4-h7148c6a_2",
     "xorg-libxrandr-1.5.5-h7cc23a3_1",
     "libdeflate-1.25-hd45a770_1",
     "mpg123-1.33.7-h877a99e_1",
@@ -5215,7 +5215,7 @@ conda_deps = [
     "libusb-1.0.30-h74c22ad_0",
     "libdeflate-1.25-he7e0567_1",
     "glslang-16.6.0-h1a33c25_0",
-    "spirv-tools-2026.4-hc0b298b_1",
+    "spirv-tools-2026.4-hc0b298b_2",
     "font-ttf-ubuntu-0.83-h77eed37_3",
     "font-ttf-inconsolata-3.000-h77eed37_0",
     "font-ttf-source-code-pro-2.038-h77eed37_0",
@@ -5388,24 +5388,13 @@ url = "https://github.com/o2sh/onefetch/releases/download/3.0.0/onefetch-mac.tar
 url_api = "https://api.github.com/repos/o2sh/onefetch/releases/assets/616681211"
 
 [[tools.opencode]]
-version = "1.19.3"
-backend = "aqua:anomalyco/opencode"
-specifiers = ["1"]
+version = "2.0.32"
+aube = { path = "locks/opencode/2.0.32~009061c2", digest = "sha256:1d53710ca0ba6bede240bd9f7d0c32d6fae76ecdf53f8bc9b15dbf9e9a6fadd0" }
+backend = "npm:@opencode/cli"
+specifiers = ["latest"]
 
-[tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:7900818a6a98881edbbadab4b7525940eff3b9750040c200481f9f56cacee405"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.3/opencode-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/647209228"
-
-[tools.opencode."platforms.linux-x64"]
-checksum = "sha256:13a8fb2978302071b86f9d7e00da9c8895f9cd846978379c3bdc6a5333536c9b"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.3/opencode-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/647209173"
-
-[tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:c2d0fecd27acf6e08be02c1f5d384614d07495587766bcc4a6bff3971749bb64"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.19.3/opencode-darwin-arm64.zip"
-url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/647222664"
+[tools.opencode.options]
+allow_builds = '["@opencode/cli"]'
 
 [[tools.pandoc]]
 version = "3.12.1"
@@ -5699,7 +5688,7 @@ url = "https://github.com/astral-sh/python-build-standalone/releases/download/20
 provenance = "github-attestations"
 
 [tools.python."platforms.linux-x64"]
-checksum = "blake3:887ee1b5da8353b32ccd1bdc2bac6075628ab0862517b58917ef046a78eb2435"
+checksum = "sha256:69740dcd9b3480b3d53760f2d3b75582adb14fa54434628dea32480ddede542a"
 url = "https://github.com/astral-sh/python-build-standalone/releases/download/20261013/cpython-3.15.0+20261013-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 

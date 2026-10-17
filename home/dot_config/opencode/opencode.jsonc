@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["~/.config/AGENTS.md"],
+  "model": "anthropic/claude-opus-4-6",
+  "permissions": [
+    { "action": "shell", "resource": "*", "effect": "ask" },
+    { "action": "shell", "resource": "git status *", "effect": "allow" },
+    { "action": "shell", "resource": "git log *", "effect": "allow" },
+    { "action": "shell", "resource": "git diff *", "effect": "allow" },
+    { "action": "shell", "resource": "git show *", "effect": "allow" },
+    { "action": "shell", "resource": "jj status *", "effect": "allow" },
+    { "action": "shell", "resource": "jj log *", "effect": "allow" },
+    { "action": "shell", "resource": "jj diff *", "effect": "allow" },
+    { "action": "shell", "resource": "jj show *", "effect": "allow" },
+    { "action": "skill", "resource": "*", "effect": "allow" },
+    // V1 asked before touching paths outside the project; V2 allows it by default.
+    { "action": "external_directory", "resource": "*", "effect": "ask" },
+  ],
+}
