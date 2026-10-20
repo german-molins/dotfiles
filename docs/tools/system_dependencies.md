@@ -9,12 +9,12 @@ backends.
 | Dependency | Environment | Backend | Tools |
 |------------|-------------|---------|-------|
 | cosign | global | aqua | mise |
-| ffmpeg | opt | asdf | Yazi |
-| resvg | opt | devbox | Neovim, Yazi |
-| file | devbox | devbox | Yazi |
+| ffmpeg | global | nix (bootstrap) | Yazi |
+| resvg | global | conda | Neovim, Yazi |
+| file | global | nix (bootstrap) | Yazi |
 | ImageMagick | global | default | Yazi |
 | Pandoc | global | default | `pdftoepub`, Neovim plugins |
-| `pdftotext` | devbox | devbox | `pdftoepub` |
+| `pdftotext` | global | default (poppler) | `pdftoepub` |
 | `md5sum` (uutils/coreutils) | global | aqua | Bash caching |
 
 ## Coreutils
