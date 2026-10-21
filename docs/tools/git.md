@@ -88,3 +88,20 @@ as Git aliases like `git <extra>`, including `git extras`:
 - `git-unwip`
 - `git-utimes`
 - `git-wip`
+
+## Global Gitignore
+
+`home/dot_gitignore` holds ignore rules that apply to every repository:
+private agent and mise config, tool output dirs, and project-local
+working dirs.
+
+### `.run/`
+
+Project-local directory for untracked run artifacts: scratch scripts, trials,
+live and integration test runs, generated data, results and logs. Each run
+goes in its own subdirectory, e.g. `.run/<topic>/`.
+
+It lives in the project rather than `/tmp` because its contents are meant to
+persist: they survive reboots and `tmp` cleanup, stay next to the code that
+produced them, and can be inspected or compared later. It is never committed;
+promote anything worth keeping into the tracked tree explicitly.

@@ -10,6 +10,7 @@ AGENTS.local.md
 CLAUDE.local.md
 
 playground/
+.run/
 ignore*/
 
 **/.claude/settings.local.json
