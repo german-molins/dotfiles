@@ -121,7 +121,7 @@ Clean Neovim plugins
 - **Usage:** `nvim:install`
 - **Aliases:** `nvim:i`
 
-Install Neovim plugins
+Install Neovim plugins at lazy-lock.json commits
 
 ## `nvim:reinstall`
 
