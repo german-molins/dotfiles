@@ -16,6 +16,18 @@ Prune unreferenced packages from the aube store
 
 Benchmark interactive bash startup in the current directory with hyperfine
 
+## `bash:clear-cache`
+
+- **Usage:** `bash:clear-cache`
+
+Clear bash startup caches
+
+## `bash:clear-mise-cache`
+
+- **Usage:** `bash:clear-mise-cache`
+
+Clear mise-related bash caches
+
 ## `bash:profile`
 
 - **Usage:** `bash:profile`
