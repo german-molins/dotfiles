@@ -157,7 +157,8 @@ overlapping:
   installed only on macOS (see `[bootstrap.packages]`).
 - **carapace** — registers its own completions (`82-carapace.sh`), loaded
   after Homebrew so it wins for any command it also covers. Its spec library
-  spans 1000+ commands.
+  spans 1000+ commands. `CARAPACE_EXCLUDES=mise` keeps mise's own
+  usage-generated completion instead of carapace's hand-written one.
 - **mise and packslip tools** — `mise` emits its own completion
   (`17-mise.sh`) and, on every prompt, auto-registers completions for the
   packslip tools it manages, reading each vendor's script lazily on first Tab

@@ -123,6 +123,9 @@ awk '
   changes.
 - `pre-remove` stops the worktree's daemons while it still exists, and only if
   any is running.
+  Since worktrunk 0.81, `wt step prune` runs the `pre-remove` hooks of several
+  worktrees concurrently. This one only stops each worktree's own daemons; the
+  shared pitchfork config is only rewritten in `post-remove`.
 - `post-remove` runs in the primary worktree once the removed one is gone,
   which is when [`mise daemons prune`](https://mise.jdx.dev/daemons.html#pruning-deleted-projects)
   can see it as deleted. The `awk` filter then drops the `[namespaces.*]`

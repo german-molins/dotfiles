@@ -2,6 +2,6 @@
   "name": "mise-npm-install",
   "private": true,
   "dependencies": {
-    "@playwright/cli": "0.1.22"
+    "skills": "1.7.4"
   }
 }
