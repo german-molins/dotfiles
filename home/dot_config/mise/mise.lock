@@ -2897,26 +2897,6 @@ checksum = "sha256:591cfe85838c3459b56b4a08bcdf0ce11a5c59a92d466ab312cca0c4ad0d1
 url = "https://github.com/dlvhdr/gh-dash/releases/download/v4.26.2/gh-dash_v4.26.2_darwin-arm64"
 url_api = "https://api.github.com/repos/dlvhdr/gh-dash/releases/assets/647120754"
 
-[[tools."aqua:ip7z/7zip"]]
-version = "26.03"
-backend = "aqua:ip7z/7zip"
-specifiers = ["latest"]
-
-[tools."aqua:ip7z/7zip"."platforms.linux-arm64"]
-checksum = "sha256:2389ba20e4d8295e8709c20b6263b69bd1ec4972fe38a04ad7a1badbf595b996"
-url = "https://github.com/ip7z/7zip/releases/download/26.03/7z2603-linux-arm64.tar.xz"
-url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/543966135"
-
-[tools."aqua:ip7z/7zip"."platforms.linux-x64"]
-checksum = "sha256:dc99eff5008f1ab79bd7084c68513701547a808a89502bf4133683535ab3c695"
-url = "https://github.com/ip7z/7zip/releases/download/26.03/7z2603-linux-x64.tar.xz"
-url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/543966173"
-
-[tools."aqua:ip7z/7zip"."platforms.macos-arm64"]
-checksum = "sha256:5ca87677072c59f5602e5c49baa27d4694bacd2259b4e507f0094249d4281480"
-url = "https://github.com/ip7z/7zip/releases/download/26.03/7z2603-mac.tar.xz"
-url_api = "https://api.github.com/repos/ip7z/7zip/releases/assets/543966195"
-
 [[tools."aqua:jorgerojas26/lazysql"]]
 version = "0.7.0"
 backend = "aqua:jorgerojas26/lazysql"
@@ -2984,16 +2964,19 @@ specifiers = ["latest"]
 checksum = "sha256:51ae6018283347ca5c8d663066c77145bb1f5ff4d5e432fbc808d012d82aea03"
 url = "https://github.com/aubepkg/aube/releases/download/v2.7.0/aube-v2.7.0-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
+repository_ids = { repository = "1214542327" }
 
 [tools.aube."platforms.linux-x64"]
 checksum = "sha256:1a1c1771a7ee3619e774f2108124f4c8c2aa877e7deacf747be9847b3bbc1231"
 url = "https://github.com/aubepkg/aube/releases/download/v2.7.0/aube-v2.7.0-x86_64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
+repository_ids = { repository = "1214542327" }
 
 [tools.aube."platforms.macos-arm64"]
 checksum = "sha256:d67dcf1ea36629445595417ea6d7de9859fa723e422394cbbcd677d0164a5fa0"
 url = "https://github.com/aubepkg/aube/releases/download/v2.7.0/aube-v2.7.0-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
+repository_ids = { repository = "1214542327" }
 
 [[tools.bat]]
 version = "0.26.1"
@@ -3132,14 +3115,17 @@ backend = "github:Slackadays/Clipboard"
 specifiers = ["latest"]
 
 [tools.clipboard."platforms.linux-arm64"]
+checksum = "sha256:aad8a3057f568afaddb091ffbb8b9d4af95e3d01bb6d182243c3a1d3dec3a60a"
 url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-linux-arm64.zip"
 url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996173"
 
 [tools.clipboard."platforms.linux-x64"]
+checksum = "sha256:23a654c05aee16a0945eb933d5466122c38bdbc9aa39f6dd168d25bf51591441"
 url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-linux-amd64.zip"
 url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996182"
 
 [tools.clipboard."platforms.macos-arm64"]
+checksum = "sha256:5e1acc01fe8c99251fcfa78ebba31aaf9b8eb0e65e0eae129fa1bbcfaa27ebaa"
 url = "https://github.com/Slackadays/Clipboard/releases/download/0.10.0/clipboard-macos-arm64.zip"
 url_api = "https://api.github.com/repos/Slackadays/Clipboard/releases/assets/206996166"
 
@@ -3982,16 +3968,19 @@ specifiers = ["latest"]
 checksum = "sha256:ad5255ab8408dc2d551c823247c64c021f2df10f6ebb52adda069021bc27c80a"
 url = "https://github.com/jdx/fnox/releases/download/v1.40.0/fnox-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+repository_ids = { repository = "1078762196" }
 
 [tools.fnox."platforms.linux-x64"]
 checksum = "sha256:9de4a80c4b43fb788f2878550d6a73a5178892a438b5611e30905e6ea11b9e28"
 url = "https://github.com/jdx/fnox/releases/download/v1.40.0/fnox-x86_64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+repository_ids = { repository = "1078762196" }
 
 [tools.fnox."platforms.macos-arm64"]
 checksum = "sha256:61da8b5f240d456d72cc7e1976c9302f73a4b6a6cd322ef9279a8516ea89f2d1"
 url = "https://github.com/jdx/fnox/releases/download/v1.40.0/fnox-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/fnox/.github/workflows/release.yml"
+repository_ids = { repository = "1078762196" }
 
 [[tools.fzf]]
 version = "0.74.5"
@@ -4102,6 +4091,7 @@ backend = "github:ghetzel/mdnstool"
 specifiers = ["latest"]
 
 [tools."github:ghetzel/mdnstool"."platforms.linux-arm64"]
+checksum = "sha256:0dd8ff91ab929d8bdb77e065db221fd63a6b27f2575ba5d4a00a620ac30d7d64"
 url = "https://github.com/ghetzel/mdnstool/releases/download/v0.0.3/mdnstool-linux-arm64"
 url_api = "https://api.github.com/repos/ghetzel/mdnstool/releases/assets/14763326"
 
@@ -5257,16 +5247,19 @@ specifiers = ["latest"]
 checksum = "sha256:0699be8e61116ff6c8e45b95c031bf69e3781cccfee18072952d4efe81b35611"
 url = "https://github.com/jdx/mr-boxington/releases/download/v1.24.1/mbx-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+repository_ids = { repository = "1340721957" }
 
 [tools.mr-boxington."platforms.linux-x64"]
 checksum = "sha256:d019fd3695d39549cd3eeb48b9518f0b43850d4d0bd9c49b955a8de9d30299fb"
 url = "https://github.com/jdx/mr-boxington/releases/download/v1.24.1/mbx-x86_64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+repository_ids = { repository = "1340721957" }
 
 [tools.mr-boxington."platforms.macos-arm64"]
 checksum = "sha256:3ddb7d86b644275db140c9ae76f57bf72c5a10b7657f930466aad5ff7e025a85"
 url = "https://github.com/jdx/mr-boxington/releases/download/v1.24.1/mbx-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/mr-boxington/.github/workflows/release.yml"
+repository_ids = { repository = "1340721957" }
 
 [[tools.neovim]]
 version = "0.12.6"
@@ -5274,12 +5267,15 @@ backend = "vfox:mise-plugins/vfox-neovim"
 specifiers = ["latest"]
 
 [tools.neovim."platforms.linux-arm64"]
+checksum = "sha256:8f1f64a0bdb97247034038c3823c6cbad5bdf9ecd5751b85494b71c3ee04c815"
 url = "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-linux-arm64.tar.gz"
 
 [tools.neovim."platforms.linux-x64"]
+checksum = "sha256:474430d53e6264f6d6dd18db42d6dc9df3a1b56ca9e88a325bbf860e1a811d87"
 url = "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-linux-x86_64.tar.gz"
 
 [tools.neovim."platforms.macos-arm64"]
+checksum = "sha256:1dbd148222b051ba6c307c4d17a318ed083df018a4f6a5a0ce46955ffc9ab87b"
 url = "https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-macos-arm64.tar.gz"
 
 [[tools.node]]
@@ -5471,16 +5467,19 @@ specifiers = ["latest"]
 checksum = "sha256:03a9f3e636a95c4cc98bee05c1540b05f58359441a10f348f624ba613333520e"
 url = "https://github.com/jdx/pitchfork/releases/download/v2.31.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
+repository_ids = { repository = "899500793" }
 
 [tools.pitchfork."platforms.linux-x64"]
 checksum = "sha256:8d7a0c361f6055086f886f19c1462a2feae2d5ad0689184c51b4eaf36209f169"
 url = "https://github.com/jdx/pitchfork/releases/download/v2.31.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
+repository_ids = { repository = "899500793" }
 
 [tools.pitchfork."platforms.macos-arm64"]
 checksum = "sha256:1be8f1b7df6e08542ecc7e1e1604c48ee4c5c6d90169eda2a31c112d59642baa"
 url = "https://github.com/jdx/pitchfork/releases/download/v2.31.0/pitchfork-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/pitchfork/.github/workflows/release.yml"
+repository_ids = { repository = "899500793" }
 
 [[tools.poppler]]
 version = "26.09.0"
@@ -5869,6 +5868,7 @@ backend = "github:sigoden/upt"
 specifiers = ["latest"]
 
 [tools.upt."platforms.linux-arm64"]
+checksum = "sha256:bd1092508fdcc2b8cff42b60575fd9c2862786f91fbb75828c6781980022062e"
 url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-aarch64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004682"
 
@@ -5878,6 +5878,7 @@ url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-x86_64
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004690"
 
 [tools.upt."platforms.macos-arm64"]
+checksum = "sha256:368eb718941ed32174ff16eb59711d5fad965373664d41bda5685845fc0c5bee"
 url = "https://github.com/sigoden/upt/releases/download/v0.9.0/upt-v0.9.0-aarch64-apple-darwin.tar.gz"
 url_api = "https://api.github.com/repos/sigoden/upt/releases/assets/203004755"
 
@@ -5890,16 +5891,19 @@ specifiers = ["latest"]
 checksum = "sha256:2dc8c0b1f1cdc9dffb69c0a4c550d2d7d62cf690915ee8657c861f97024bc0fc"
 url = "https://github.com/jdx/usage/releases/download/v7.0.1/usage-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+repository_ids = { repository = "677629099" }
 
 [tools.usage."platforms.linux-x64"]
 checksum = "sha256:f8e4a3080d5f5447e6265662d7d45522108a080bf60024a56033a289719f9828"
 url = "https://github.com/jdx/usage/releases/download/v7.0.1/usage-x86_64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+repository_ids = { repository = "677629099" }
 
 [tools.usage."platforms.macos-arm64"]
 checksum = "sha256:0d5c3a199c6fab5ba33e84e2bfb0fa82c937bf851aa03d07693d4eae800ecdc8"
 url = "https://github.com/jdx/usage/releases/download/v7.0.1/usage-universal-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-cli.yml"
+repository_ids = { repository = "677629099" }
 
 [[tools.uv]]
 version = "0.13.1"
@@ -5952,20 +5956,20 @@ specifiers = ["latest"]
 [tools.worktrunk."platforms.linux-arm64"]
 checksum = "sha256:347b260c1b044a53a7720b33181d7c66dcde945efbd605d784e5b6a5616c17e9"
 url = "https://github.com/max-sixty/worktrunk/releases/download/v0.80.0/worktrunk-aarch64-unknown-linux-musl.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/593794349"
 signer = "sigstore-oidc:https://github.com/max-sixty/worktrunk/.github/workflows/release.yaml"
+repository_ids = { repository = "1078528927" }
 
 [tools.worktrunk."platforms.linux-x64"]
 checksum = "sha256:532ce3ed5eecb1be274c925b5887f61671e2434a4ca2561b9a8ac9379dbba199"
 url = "https://github.com/max-sixty/worktrunk/releases/download/v0.80.0/worktrunk-x86_64-unknown-linux-musl.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/593794384"
 signer = "sigstore-oidc:https://github.com/max-sixty/worktrunk/.github/workflows/release.yaml"
+repository_ids = { repository = "1078528927" }
 
 [tools.worktrunk."platforms.macos-arm64"]
 checksum = "sha256:8a2bb053c4bc80dea7d9ce6c221ff038d10a3d2dca2dc8f60d1b1a094fa783a9"
 url = "https://github.com/max-sixty/worktrunk/releases/download/v0.80.0/worktrunk-aarch64-apple-darwin.tar.xz"
-url_api = "https://api.github.com/repos/max-sixty/worktrunk/releases/assets/593794347"
 signer = "sigstore-oidc:https://github.com/max-sixty/worktrunk/.github/workflows/release.yaml"
+repository_ids = { repository = "1078528927" }
 
 [[tools.xh]]
 version = "0.26.2"
