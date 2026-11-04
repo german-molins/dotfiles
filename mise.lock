@@ -3,60 +3,60 @@
 lockfile_version = 3
 
 [[tools.aube]]
-version = "2.6.1"
+version = "2.9.0"
 backend = "packslip:github.com/aubepkg/aube"
 specifiers = ["latest"]
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:ff945fd7a68d25d87b47e45877228ad269d5a053c04522599b31c130d734f40d"
-url = "https://github.com/aubepkg/aube/releases/download/v2.6.1/aube-v2.6.1-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:6439ed819ef506a076f002fb520686c84518dcea319e61be0816f1120a1d1862"
+url = "https://github.com/aubepkg/aube/releases/download/v2.9.0/aube-v2.9.0-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327", owner = "324215402" }
 
 [tools.aube."platforms.linux-x64"]
-checksum = "sha256:364b4cf201970cd5c943390dd3e736b4256b14a0ac52d304f8fb4acfd6a1fbd3"
-url = "https://github.com/aubepkg/aube/releases/download/v2.6.1/aube-v2.6.1-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:b0ecb21475ec057c523f45f1b1cc0861f614065c1cf9b51cc93548989c3a2f16"
+url = "https://github.com/aubepkg/aube/releases/download/v2.9.0/aube-v2.9.0-x86_64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327", owner = "324215402" }
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:a36856db187dd8f2c3cbf651de1384a2d0748d7cc5507671e6ec02751f00c032"
-url = "https://github.com/aubepkg/aube/releases/download/v2.6.1/aube-v2.6.1-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:8e4d70433ae1e7ba7f43581fbfd7756210881ce1f67e1440d166bd12297161e4"
+url = "https://github.com/aubepkg/aube/releases/download/v2.9.0/aube-v2.9.0-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327", owner = "324215402" }
 
 [[tools.bun]]
-version = "1.4.2"
+version = "1.4.4"
 backend = "core:bun"
 specifiers = ["latest"]
 
 [tools.bun."platforms.linux-arm64"]
-checksum = "sha256:54328bbc2d9c8e0c9f892c544d66c57a83b84139e34909e5ee81758f1ac8fda7"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-aarch64.zip"
+checksum = "sha256:baa6bb36f51d6e58561e02bbea825038a9df454f673d6d776e8bbf86f8c7850e"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-aarch64.zip"
 
 [tools.bun."platforms.linux-arm64-musl"]
-checksum = "sha256:71760b6c8ea30623b81a4907cb815d48e2ea266f2e73e751534a44a0607950df"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-aarch64-musl.zip"
+checksum = "sha256:57f01b02ac7113c61c935f28f38c2eab849e3c970dab21f8b640a87b1ef65009"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-aarch64-musl.zip"
 
 [tools.bun."platforms.linux-x64"]
-checksum = "sha256:36368faef7527875d5ffa52e53cd48021741f2a83eb6208a8dd64068d422a913"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64.zip"
+checksum = "sha256:bf8ccbfb2b0b80159e0f9a6d15c55317add8077534dbc6130a3edb52fccb395c"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64.zip"
 
 [tools.bun."platforms.linux-x64-baseline"]
-checksum = "sha256:c678040f14fe0440eb839d37cbd0ce4c051a32da72806ac97de6a6aab6bf728f"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64-baseline.zip"
+checksum = "sha256:e0446eb55995772eb9894bebae9a6be368d985a8b9271ee124486f9946eedd76"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64-baseline.zip"
 
 [tools.bun."platforms.linux-x64-musl"]
-checksum = "sha256:4835eca59d6da70f4674f5642f6e459dcadab773695b2ed9922d131057989742"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64-musl.zip"
+checksum = "sha256:a5a8ccc5e74dcb883fe974f125a7bdb3b41e5195ed1b870e73f17effd3eb2b2d"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64-musl.zip"
 
 [tools.bun."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:76e1db84e98f22f78de0a87e309bfbbf297732847f9720db36750646c85c8c18"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-linux-x64-musl-baseline.zip"
+checksum = "sha256:6e9c37098b293920aed28bfb51ab240e26d23bfdd9bbfecb3ad428ac166549bc"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64-musl-baseline.zip"
 
 [tools.bun."platforms.macos-arm64"]
-checksum = "sha256:90987a3a16d7db556d886ac3d551e7b6d3edf0a1cf43acaed622e8676be1d12f"
-url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.2/bun-darwin-aarch64.zip"
+checksum = "sha256:c240d7f0ccb90c263a849fcdb09b7ee62630d921348ed6aafda86b9d577bc510"
+url = "https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-darwin-aarch64.zip"
 
 [[tools.d2]]
 version = "0.9.0"
@@ -79,24 +79,27 @@ url = "https://github.com/d2lang/d2/releases/download/v0.9.0/d2-v0.9.0-macos-arm
 url_api = "https://api.github.com/repos/d2lang/d2/releases/assets/549449061"
 
 [[tools.jj]]
-version = "0.45.1"
+version = "0.46.0"
 backend = "aqua:jj-vcs/jj"
 specifiers = ["latest"]
 
 [tools.jj."platforms.linux-arm64"]
-checksum = "sha256:7349a43dd5a20dbc998b10114daa0ee63d2ab863fb822c7eb6b0ebca5903cc69"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/543031340"
+checksum = "sha256:80e28f7501c11e50e0ca06cd6a1fa1d982cff9cc59bfe4411a9d36aa501d867e"
+checksum_source = "mise-versions"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.46.0/jj-v0.46.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/619871804"
 
 [tools.jj."platforms.linux-x64"]
-checksum = "sha256:f35438350b5d61963aac5dd74ede510b31d6b9690769d1a6268cf058cc825f72"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/543032052"
+checksum = "sha256:fce0271158e665ceb82dc66c5eb95b1728649094e9133074f3b5baece345fc08"
+checksum_source = "mise-versions"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.46.0/jj-v0.46.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/619869961"
 
 [tools.jj."platforms.macos-arm64"]
-checksum = "sha256:51ba42e3d0682616f6eb015045bfe45289b396f03511f9897f645ce8e9272743"
-url = "https://github.com/jj-vcs/jj/releases/download/v0.45.1/jj-v0.45.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/543036998"
+checksum = "sha256:43daa37ce0f9716cdf6fb65a29cbcae74a3160aef048cf3cb3d166d41cb4ab58"
+checksum_source = "mise-versions"
+url = "https://github.com/jj-vcs/jj/releases/download/v0.46.0/jj-v0.46.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jj-vcs/jj/releases/assets/619877551"
 
 [[tools.jq]]
 version = "1.8.2"
@@ -122,24 +125,24 @@ url_api = "https://api.github.com/repos/jqlang/jq/releases/assets/453012783"
 provenance = "github-attestations"
 
 [[tools.yq]]
-version = "4.53.6"
+version = "4.54.1"
 backend = "aqua:mikefarah/yq"
 specifiers = ["latest"]
 
 [tools.yq."platforms.linux-arm64"]
-checksum = "sha256:88a1016bc1d657375a35864e4f44b6f333df8ff97b559f51bba0adcb2169df09"
-url = "https://github.com/mikefarah/yq/releases/download/v4.53.6/yq_linux_arm64"
-url_api = "https://api.github.com/repos/mikefarah/yq/releases/assets/522028007"
+checksum = "sha256:189088da0c6429ec5178dfaab1a114805f6cab0b61b165ab236efedf1d57a71b"
+url = "https://github.com/mikefarah/yq/releases/download/v4.54.1/yq_linux_arm64"
+url_api = "https://api.github.com/repos/mikefarah/yq/releases/assets/597222603"
 provenance = "cosign"
 
 [tools.yq."platforms.linux-x64"]
-checksum = "sha256:c5f056448f973ae7d39b5401949648a78f2dc1947d6a8eb65be60d5c504b9385"
-url = "https://github.com/mikefarah/yq/releases/download/v4.53.6/yq_linux_amd64"
-url_api = "https://api.github.com/repos/mikefarah/yq/releases/assets/522028022"
+checksum = "sha256:8e34fc298390875de416e6a4afcb8cabeceb25d9aa8506c1a2f9353cf702ea5f"
+url = "https://github.com/mikefarah/yq/releases/download/v4.54.1/yq_linux_amd64"
+url_api = "https://api.github.com/repos/mikefarah/yq/releases/assets/597222595"
 provenance = "cosign"
 
 [tools.yq."platforms.macos-arm64"]
-checksum = "sha256:cceb0b8d71ea5294334121f8429f33f92b920e7217d904a2f9f35443968ac424"
-url = "https://github.com/mikefarah/yq/releases/download/v4.53.6/yq_darwin_arm64"
-url_api = "https://api.github.com/repos/mikefarah/yq/releases/assets/522028033"
+checksum = "sha256:fee511a181bd8b3e6b7da98842b41973bfac8cd3bcd341ed29a584620b5b2844"
+url = "https://github.com/mikefarah/yq/releases/download/v4.54.1/yq_darwin_arm64"
+url_api = "https://api.github.com/repos/mikefarah/yq/releases/assets/597222609"
 provenance = "cosign"
