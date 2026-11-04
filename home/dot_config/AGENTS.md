@@ -22,3 +22,10 @@ shebang `#!/usr/bin/env sh`.
 ## Git Workflow
 
 - ALWAYS use conventional commits with comprehensive title and detailed body.
+
+## Untracked Artifacts
+
+- Write throwaway intermediates to the session scratchpad or `/tmp`.
+- Write anything worth inspecting later (scripts you may rerun,
+test/benchmark logs, generated data, results) under `.run/<topic>/` in the
+project root, never committed.

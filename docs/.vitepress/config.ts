@@ -28,6 +28,7 @@ export default defineConfig({
           { text: 'Agents', link: '/agents' },
           { text: 'Global Services', link: '/global_services' },
           { text: 'Worktree Workflow', link: '/worktree_workflow' },
+          { text: 'Untracked Artifacts', link: '/untracked_artifacts' },
           {
             text: 'Tools',
             link: "/tools",
