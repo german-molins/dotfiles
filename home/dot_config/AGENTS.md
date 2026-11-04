@@ -11,7 +11,7 @@
 ### Commands
 
 - List all tasks: `mise tasks --extended`
-- List project tasks: `mise tasks --local --extended`
+- List project tasks: `mise tasks --no-global --extended`
 
 ## Code Style
 

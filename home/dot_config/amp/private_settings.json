@@ -9,7 +9,7 @@
     "git log *",
     "git show *",
     "git status *",
-    "mise tasks --local --extended",
+    "mise tasks --no-global --extended",
     "pandoc *"
   ]
 }
