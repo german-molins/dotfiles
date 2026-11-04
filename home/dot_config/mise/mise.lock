@@ -3162,7 +3162,7 @@ backend = "cargo:diffutils"
 specifiers = ["latest"]
 
 [[tools."cargo:findutils"]]
-version = "0.10.0"
+version = "0.11.0"
 backend = "cargo:findutils"
 specifiers = ["latest"]
 
@@ -3182,26 +3182,26 @@ backend = "cargo:tlrc"
 specifiers = ["latest"]
 
 [[tools.claude]]
-version = "2.1.316"
+version = "2.1.317"
 backend = "aqua:anthropics/claude-code"
 specifiers = ["latest"]
 
 [tools.claude."platforms.linux-arm64"]
-checksum = "sha256:5f82c7fd9f289c9aad37792ffa5ca1bcd40d6dd3298b3a36ce01179e12ab2b14"
+checksum = "sha256:b7ab2311a8d5f4041045e63685af49ebaffcbb121fe572afdb9080a3b4f42711"
 checksum_source = "mise-versions"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882163"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596566"
 
 [tools.claude."platforms.linux-x64"]
-checksum = "sha256:9ca14cd81a7b0d9654d392fc1253773e70f31f470aa98334732744956cd1006b"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882314"
+checksum = "sha256:153511cf79cd27c55c9f9c919cc532eb90647f7893cb3f4e78dac776991714e0"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596770"
 
 [tools.claude."platforms.macos-arm64"]
-checksum = "sha256:e8956064b1c5055c1c79945aa7714faef98b29060a065c6930e8956953d0bace"
+checksum = "sha256:d550cb26bfbbdb79052435544f7edc090c2b02f5fd9b30431bfb98d07a4bb318"
 checksum_source = "mise-versions"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.316/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/693882159"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.317/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/703596562"
 
 [[tools.clipboard]]
 version = "0.10.0"
@@ -5436,8 +5436,8 @@ specifiers = ["latest"]
 trust_policy_excludes = '["@peculiar/asn1-cms@2.9.0"]'
 
 [[tools."npm:ctx7"]]
-version = "0.8.2"
-aube = { path = "locks/npm-ctx7/0.8.2", digest = "sha256:9feb5d0a1332411a1204b0b93c5ce64fb5fbcc5ff59a8305dd4980bf6daacb58" }
+version = "0.9.0"
+aube = { path = "locks/npm-ctx7/0.9.0", digest = "sha256:4acb866f1891f4f471b34ca03c377ba174c0ee638f31faad4128eb003ce218aa" }
 backend = "npm:ctx7"
 specifiers = ["latest"]
 
@@ -5448,8 +5448,8 @@ backend = "npm:freebuff"
 specifiers = ["latest"]
 
 [[tools."npm:skills"]]
-version = "1.7.4"
-aube = { path = "locks/npm-skills/1.7.4", digest = "sha256:0fc828a5def0f23c2336c3e5094fc52f74b3b73e8f86a28c338a63c4324b902b" }
+version = "1.7.6"
+aube = { path = "locks/npm-skills/1.7.6", digest = "sha256:217c1e2076b569495d2a0f30817b0adef33c8a15266bc9aa54990e0258ab75ef" }
 backend = "npm:skills"
 specifiers = ["latest"]
 
@@ -5474,26 +5474,26 @@ url = "https://github.com/sharkdp/numbat/releases/download/v1.24.0/numbat-v1.24.
 url_api = "https://api.github.com/repos/sharkdp/numbat/releases/assets/526572313"
 
 [[tools.oh-my-pi]]
-version = "18.15.0"
+version = "18.16.0"
 backend = "github:can1357/oh-my-pi"
 specifiers = ["latest"]
 
 [tools.oh-my-pi."platforms.linux-arm64"]
-checksum = "sha256:6d7d65030ba562d73cb0687b9710e0ac597b362a185d1911e7b211706dadd4ac"
+checksum = "sha256:c2be1ea85ce17c4270854b57efff2a7ea1d5a03c7557fd08721f2b9bb32698de"
 checksum_source = "mise-versions"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.15.0/omp-linux-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/698539446"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.16.0/omp-linux-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/702972280"
 
 [tools.oh-my-pi."platforms.linux-x64"]
-checksum = "sha256:6737ee2415555a3656cc7b89c14d1c25c18658ee4c0fd4f7309705149ccb7b0f"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.15.0/omp-linux-x64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/698539441"
+checksum = "sha256:6498ed785bab00d2926e0387e0ec02362d6d45f1c3d0d1b57c1618b7f95c9264"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.16.0/omp-linux-x64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/702972275"
 
 [tools.oh-my-pi."platforms.macos-arm64"]
-checksum = "sha256:d36dfabf0ee52d6f08efadb59c46f0349545c6f6975522417adae29646e73e34"
+checksum = "sha256:d4a10d97488d6054d2b18198bd24f461079952c7e0fb75ba66336ca0df0cb99e"
 checksum_source = "mise-versions"
-url = "https://github.com/can1357/oh-my-pi/releases/download/v18.15.0/omp-darwin-arm64"
-url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/698539455"
+url = "https://github.com/can1357/oh-my-pi/releases/download/v18.16.0/omp-darwin-arm64"
+url_api = "https://api.github.com/repos/can1357/oh-my-pi/releases/assets/702972282"
 
 [[tools.onefetch]]
 version = "3.2.0"
@@ -6023,26 +6023,26 @@ signer = "sigstore-oidc:https://github.com/jdx/usage/.github/workflows/publish-c
 repository_ids = { repository = "677629099" }
 
 [[tools.uv]]
-version = "0.13.6"
+version = "0.13.7"
 backend = "aqua:astral-sh/uv"
 specifiers = ["latest"]
 
 [tools.uv."platforms.linux-arm64"]
-checksum = "sha256:229e194255c7958d86d56e8790d969a6f74736592133f0dfd0076f754c642c1d"
-url = "https://github.com/astral-sh/uv/releases/download/0.13.6/uv-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/679980412"
+checksum = "sha256:71279f8d3c67241e807b9d8db872d1bf541579fb9f08b7d1eb1682196d1e57dc"
+url = "https://github.com/astral-sh/uv/releases/download/0.13.7/uv-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/704009469"
 provenance = "github-attestations"
 
 [tools.uv."platforms.linux-x64"]
-checksum = "sha256:f29c3e94ffabd7e6f3ba521dba169a9b7ec12100bf3257087f0f24f6123f3645"
-url = "https://github.com/astral-sh/uv/releases/download/0.13.6/uv-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/679980644"
+checksum = "sha256:c5221ff41b7892bfc223543883600125f6a47fe845093e0f5bdff4f359196d83"
+url = "https://github.com/astral-sh/uv/releases/download/0.13.7/uv-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/704009823"
 provenance = "github-attestations"
 
 [tools.uv."platforms.macos-arm64"]
-checksum = "sha256:60fbd5c8a1ed681845eea28d9d622fcde03c51e91a43465b64a1e17db1ed3472"
-url = "https://github.com/astral-sh/uv/releases/download/0.13.6/uv-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/679980393"
+checksum = "sha256:81b811b57e4624df7ed3aac148e0359100d9962f3d9dce00aec533dc2e086731"
+url = "https://github.com/astral-sh/uv/releases/download/0.13.7/uv-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/704009442"
 provenance = "github-attestations"
 
 [[tools.witr]]
