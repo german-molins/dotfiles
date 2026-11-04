@@ -101,6 +101,14 @@ their commands in `lazy_bins`; otherwise mise only warns and creates no shim:
 Run `mise reshim` after editing lazy declarations and check it prints no
 `invalid lazy shim declaration` warning.
 
+## Automatic Tool Updates
+
+mise can upgrade global tools on its own before they run
+([automatic tool updates](https://mise.jdx.dev/dev-tools/#automatic-tool-updates),
+`auto_update`). We do not use it: tool versions are versioned in the chezmoi
+source and changed only through `update` and the `update-packages` skill, so
+silent upgrades would drift machines away from the committed config.
+
 ## Agent Skills
 
 Tools installed with the
