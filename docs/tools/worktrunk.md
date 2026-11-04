@@ -100,18 +100,7 @@ only make sense where the project defines `mise daemons` and an install step:
 # .config/wt.toml
 pre-start = "mise x -- npm install --no-save"
 pre-remove = "if mise daemons ls | grep -qvw available; then mise daemons stop; fi"
-post-remove = '''
-mise daemons prune --yes && pitchfork clean --prune || exit
-f=~/.config/pitchfork/config.toml
-awk '
-  BEGIN { RS = ""; ORS = "" }
-  /^\[namespaces\./ && !/\nconfig = / && match($0, /\ndir = "[^"]*"/) {
-    if (system("test -d \"" substr($0, RSTART + 8, RLENGTH - 9) "\"")) next
-  }
-  { print (n++ ? "\n\n" : "") $0 }
-  END { print "\n" }
-' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
-'''
+post-remove = "mise daemons prune --yes && pitchfork clean --prune"
 ```
 
 - `pre-start` installs dependencies, here with npm; use the project's install
@@ -128,9 +117,8 @@ awk '
   shared pitchfork config is only rewritten in `post-remove`.
 - `post-remove` runs in the primary worktree once the removed one is gone,
   which is when [`mise daemons prune`](https://mise.jdx.dev/daemons.html#pruning-deleted-projects)
-  can see it as deleted. The `awk` filter then drops the `[namespaces.*]`
-  entries prune leaves behind: only those without a `config =` line whose `dir`
-  no longer exists. See
+  can see it as deleted. `pitchfork clean --prune` (pitchfork 2.30.1+) then
+  drops the `[namespaces.*]` entry prune leaves behind. See
   [Shared with Mise Daemons](../global_services.md#shared-with-mise-daemons)
   for what prune and `pitchfork clean` do and don't remove.
 

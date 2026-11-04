@@ -55,11 +55,9 @@ under them.
 [`pitchfork config remove`](https://pitchfork.jdx.dev/cli/config/remove.html)
 does not remove the namespace entry.
 
-A project's worktrunk `post-remove` hook can run all of this, plus a filter for
-the leftover entries, on every `wt remove`; see
+A project's worktrunk `post-remove` hook can run both on every `wt remove`; see
 [Per-Project Lifecycle Hooks](tools/worktrunk.md#per-project-lifecycle-hooks).
-Without it, delete the leftover entries by hand while no daemons run, since a
-running supervisor may rewrite the file.
+Without it, run both by hand from a surviving checkout.
 
 Global `[daemons]` in mise's global config are not a replacement for the user
 daemons here: they
