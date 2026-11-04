@@ -69,3 +69,10 @@ wt remove fix-login                        # project hooks stop and prune its da
 The [project lifecycle hooks](tools/worktrunk.md#per-project-lifecycle-hooks)
 also drop the worktree's leftover entry in `~/.config/pitchfork/config.toml`;
 see [Shared with Mise Daemons](global_services.md#shared-with-mise-daemons).
+
+## Jujutsu Workspaces
+
+Not used yet, for reference: `jj workspace add` can create colocated
+workspaces backed by Git worktrees, an alternative to `wt switch --create` in
+jj repositories. See
+[Colocated Workspaces](tools/jj.md#colocated-workspaces).
