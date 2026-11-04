@@ -29,7 +29,7 @@ Zellij has no native layout includes, so shared blocks live in
 
 Example:
 
-```kdl
+```text
 layout {
   {{ template "zellij-default-tab.kdl" . }}
 
