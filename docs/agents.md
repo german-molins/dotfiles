@@ -297,13 +297,8 @@ opposed to the global setup above that I use for developing other projects.
 
 ### Project Skills
 
-Authored in `.agents/skills/` and symlinked from `.claude/skills/`. Both paths
-are excluded by the global gitignore, so project skills are tracked with
-`git add -f`.
-
-| Skill | Description |
-|-------|-------------|
-| update-packages | Upgrades mise itself in its own reviewed cycle, then updates packages, tools, plugins and extensions across every package manager, or only the managers or packages named, and commits the results to the chezmoi source, one `build(<scope>): update packages` commit per manager. |
+`chezmoi-sync` and `update-packages`: see [Project Skills](project_skills.md)
+for when and how to use them.
 
 ## References
 

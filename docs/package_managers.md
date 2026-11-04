@@ -86,7 +86,9 @@ the Devbox installer, on Linux with the official installer.
 
 `mise run update` runs one subtask per manager. Tracked files are re-added to
 the chezmoi source and committed as `build(<scope>): update packages`; the
-rest change the system without leaving anything to commit:
+rest change the system without leaving anything to commit. The
+[update-packages](project_skills.md#update-packages) skill wraps it with
+changelog review, anomaly detection and the commits:
 
 ```d2
 direction: right

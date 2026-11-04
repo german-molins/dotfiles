@@ -26,6 +26,7 @@ export default defineConfig({
           { text: 'Bash', link: '/bash' },
           { text: 'Rust', link: '/rust_workflow' },
           { text: 'Agents', link: '/agents' },
+          { text: 'Project Skills', link: '/project_skills' },
           { text: 'Global Services', link: '/global_services' },
           { text: 'Worktree Workflow', link: '/worktree_workflow' },
           { text: 'Untracked Artifacts', link: '/untracked_artifacts' },
