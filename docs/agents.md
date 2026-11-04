@@ -23,6 +23,11 @@ for subdirectories.
 - `~/.agents/skills/`, `~/.claude/skills/` - Global skills (see
 [Skills](#skills)).
 
+The global rules also tell agents where to write files that are not meant to
+be committed: throwaway intermediates to their scratchpad or `/tmp`, and
+results worth inspecting later under the project's `.run/<topic>/`. See
+[Untracked Artifacts](untracked_artifacts.md).
+
 ## MCP Servers
 
 No MCP servers are configured for the coding agents. Tools that could be MCP
