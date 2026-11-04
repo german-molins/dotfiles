@@ -10,24 +10,6 @@
       "installedAt": "2026-02-11T11:58:13.327Z",
       "updatedAt": "2026-09-28T10:01:17.184Z"
     },
-    "mise": {
-      "source": "zenobi-us/dotfiles",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/zenobi-us/dotfiles.git",
-      "skillPath": "ai/files/skills/devtools/mise/SKILL.md",
-      "skillFolderHash": "52eeafb7403d77d18e35242adcd01874d8b84cd2",
-      "installedAt": "2026-02-11T15:49:21.917Z",
-      "updatedAt": "2026-02-11T15:49:21.917Z"
-    },
-    "jujutsu": {
-      "source": "ahmedelgabri/dotfiles",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/ahmedelgabri/dotfiles.git",
-      "skillPath": "config/claude/skills/jujutsu/SKILL.md",
-      "skillFolderHash": "6385700e46652c15f2c5864b2018122f7c75b5e5",
-      "installedAt": "2026-02-11T16:09:41.457Z",
-      "updatedAt": "2026-03-23T22:38:07.481Z"
-    },
     "skill-creator": {
       "source": "anthropics/skills",
       "sourceType": "github",
