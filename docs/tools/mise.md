@@ -143,7 +143,9 @@ mise -C "$HOME" skills sync --dir "$HOME/.claude/skills" --prune
 - **No filtering**: sync links every skill of every active tool. Excluding one
   requires an allowlist on top of `mise skills ls --json`; not worth it yet.
 - `skills.auto_sync` is not used: it only runs inside a mise project and
-  targets a single `skills.dir`.
+  targets a single `skills.dir`. Even set globally, it
+  [keeps project links up to date](https://mise.jdx.dev/dev-tools/packslip-resources.html#keep-project-links-up-to-date),
+  linking global tools' skills into every project instead of `$HOME`.
 
 Packslip tools in the global config that ship skills:
 
