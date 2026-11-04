@@ -76,7 +76,9 @@ default skills manager.
 
 `ctx7` dropped its `skills` commands in 0.8.0. `ctx7 setup` still installs
 Context7's own skills (`find-docs`, `context7-mcp`) for an agent, and `ctx7
-library` / `ctx7 docs` query documentation directly.
+library` / `ctx7 docs` query documentation directly. Since 0.9.0, `ctx7 search
+<query>` does it in one step across all libraries, optionally narrowed with
+`--library` (up to four), `--library-version` and `--language`.
 
 ## Browser Automation
 
