@@ -59,14 +59,16 @@ context where the mise shims directory is on `PATH`: activated shells, chezmoi
 run scripts and `install.sh` (see `mise-shellenv`), `mise x` and `mise run`.
 After that it behaves like any other installed tool.
 
-Everything is installed eventually, by design:
+A lazy tool that was never called stays uninstalled:
 
-- `mise upgrade` (`mise:update`, `update`) installs every missing lazy tool, so
-  the whole stack is kept up to date after the first update.
+- A bare `mise upgrade` (`mise:update`, `update`) upgrades lazy tools that are
+  already installed and skips the rest (since mise 2026.10.11), so
+  `mise outdated` lists them as `[MISSING] (lazy)`. Naming the tool
+  (`mise upgrade <tool>`) installs it.
 - `mise install --include-lazy` provisions everything at once.
-- Until then, `mise doctor` and `mise ls --missing` report lazy tools as
-  missing, so the `mise` and `tools-installed` project checks fail on a fresh
-  machine.
+- `mise ls --missing` lists them marked `(lazy)` instead of `(missing)`, which
+  the `tools-installed` project check ignores. A lazy tool without a shim shows
+  as `(missing)` and fails the check; `mise reshim` fixes it.
 
 ### Criteria
 

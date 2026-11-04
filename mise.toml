@@ -54,8 +54,8 @@ run = "mise doctor"
 hint = "Run `mise doctor` for the list of problems."
 
 [doctor.checks.tools-installed]
-description = "All configured mise tools are installed"
-run = '[ -z "$(mise ls --missing)" ]'
+description = "All configured non-lazy mise tools are installed"
+run = '[ -z "$(mise ls --missing --no-header | grep -v "(lazy)")" ]'
 hint = "Run `mise ls --missing`, then `mise install`."
 
 [doctor.checks.task-docs-fresh]
