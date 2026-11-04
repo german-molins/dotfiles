@@ -206,7 +206,7 @@ run = "fc-list | grep Nerd"
 alias = "mise:up"
 description = "Update Mise global packages and plugins"
 run = [
-    "mise upgrade",
+    "mise upgrade --global",
     "mise plugins upgrade",
     "mise bootstrap packages upgrade --yes",
 ]

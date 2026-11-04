@@ -102,7 +102,7 @@ summary.
 | Subtask | Tracked files | Commit title | Package command |
 |---------|---------------|--------------|-----------------|
 | `chezmoi:update` | none | none | none: whole scope |
-| `mise:update` | `home/dot_config/mise/mise.lock`, `home/dot_config/mise/locks/` | `build(mise): update packages` | `mise upgrade <tool>…`; bootstrap: `mise bootstrap packages upgrade <manager:pkg>…` |
+| `mise:update` | `home/dot_config/mise/mise.lock`, `home/dot_config/mise/locks/` | `build(mise): update packages` | `mise upgrade --global <tool>…`; bootstrap: `mise bootstrap packages upgrade <manager:pkg>…` |
 | `yazi:update` | `home/dot_config/yazi/package.toml` | `build(yazi): update packages` | `ya pkg upgrade <id>…` |
 | `nvim:update` | `home/dot_config/nvim/lazy-lock.json` | `build(nvim): update packages` | `nvim --headless '+Lazy! update <plugin>…' +qa` |
 | `pi:update` | `home/dot_pi/agent/settings.json` | `build(pi): update packages` | `pi update --extension <source>` |

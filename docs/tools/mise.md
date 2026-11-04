@@ -105,9 +105,14 @@ Run `mise reshim` after editing lazy declarations and check it prints no
 
 mise can upgrade global tools on its own before they run
 ([automatic tool updates](https://mise.jdx.dev/dev-tools/#automatic-tool-updates),
-`auto_update`). We do not use it: tool versions are versioned in the chezmoi
-source and changed only through `update` and the `update-packages` skill, so
-silent upgrades would drift machines away from the committed config.
+`auto_update`, or `tool_update.global_auto` for every global tool, which
+since 2026.10.7 also runs in the background from an activated shell). We do not
+use either: tool versions are versioned in the chezmoi source and changed only
+through `update` and the `update-packages` skill, so silent upgrades would
+drift machines away from the committed config.
+
+`mise:update` runs `mise upgrade --global`, so it only touches the global
+config's tools even when run inside a project that pins its own versions.
 
 ## Agent Skills
 
