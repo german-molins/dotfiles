@@ -16,18 +16,6 @@ Prune unreferenced packages from the aube store
 
 Benchmark interactive bash startup in the current directory with hyperfine
 
-## `bash:clear-cache`
-
-- **Usage:** `bash:clear-cache`
-
-Clear bash startup caches
-
-## `bash:clear-mise-cache`
-
-- **Usage:** `bash:clear-mise-cache`
-
-Clear mise-related bash caches
-
 ## `bash:profile`
 
 - **Usage:** `bash:profile`
@@ -98,10 +86,14 @@ Clean Mise cache
 
 ## `mise:update`
 
-- **Usage:** `mise:update`
+Update Mise global packages and plugins
+
+
+- **Usage:** `mise:update [--include-lazy]`
 - **Aliases:** `mise:up`
 
-Update Mise global packages and plugins
+### Flags
+- **`--include-lazy`** — First install lazy tools never installed on this machine, so they are upgraded from now on
 
 ## `nerd-fonts:list`
 

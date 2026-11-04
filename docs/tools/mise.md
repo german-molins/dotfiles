@@ -65,7 +65,10 @@ A lazy tool that was never called stays uninstalled:
   already installed and skips the rest (since mise 2026.10.11), so
   `mise outdated` lists them as `[MISSING] (lazy)`. Naming the tool
   (`mise upgrade <tool>`) installs it.
-- `mise install --include-lazy` provisions everything at once.
+- `mise install --include-lazy` provisions everything at once, and from then
+  on every upgrade covers them. `mise run mise:update --include-lazy` does it
+  before upgrading, and the `update-packages` skill offers it when lazy tools
+  are missing.
 - `mise ls --missing` lists them marked `(lazy)` instead of `(missing)`, which
   the `tools-installed` project check ignores. A lazy tool without a shim shows
   as `(missing)` and fails the check; `mise reshim` fixes it.

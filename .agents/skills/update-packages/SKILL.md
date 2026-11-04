@@ -49,6 +49,12 @@ review inventory, run, collect, commit and finish. Steps below note how.
   is unclean, show it and ask whether to go; the user may go when the update
   will not touch it or will likely fix it. Keep the results: later health
   checks are reported against them.
+- Uninstalled lazy tools, when `mise` is selected:
+  `mise -C ~ ls --missing --no-header | grep '(lazy)'`. A bare upgrade skips
+  them, so their `mise.lock` entries fall behind. If there are any, list them
+  and ask whether to install them on this machine for good. On yes, run
+  `mise -C ~ install --include-lazy` now, before the review, so
+  `mise outdated` inventories them; every later run upgrades them as usual.
 
 ## 2. Mise cycle
 

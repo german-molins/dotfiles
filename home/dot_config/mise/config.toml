@@ -205,7 +205,9 @@ run = "fc-list | grep Nerd"
 [tasks."mise:update"]
 alias = "mise:up"
 description = "Update Mise global packages and plugins"
+usage = 'flag "--include-lazy" help="First install lazy tools never installed on this machine, so they are upgraded from now on"'
 run = [
+    '[ "${usage_include_lazy:-}" != true ] || mise -C ~ install --include-lazy',
     "mise upgrade --global",
     "mise plugins upgrade",
     "mise bootstrap packages upgrade --yes",
