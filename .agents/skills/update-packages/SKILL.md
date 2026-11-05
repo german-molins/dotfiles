@@ -2,11 +2,12 @@
 name: update-packages
 description: >
   Update mise itself, then packages, tools, plugins and extensions across the
-  package managers of these dotfiles (mise, nvim, yazi, pi, skills, brew, apt,
-  ...), either all of them, some managers, or named packages, and commit the
-  results to the chezmoi source. Use whenever the user asks to update, upgrade
-  or refresh everything, a manager, a specific tool or plugin, or lockfiles,
-  or to run the update task, even if no manager is named.
+  package managers of these dotfiles (mise, nvim, yazi, pi, nono, herdr,
+  skills, brew, apt, ...), either all of them, some managers, or named
+  packages, and commit the results to the chezmoi source. Use whenever the
+  user asks to update, upgrade or refresh everything, a manager, a specific
+  tool or plugin, or lockfiles, or to run the update task, even if no manager
+  is named.
 ---
 
 # Update Packages
@@ -113,6 +114,7 @@ summary.
 | `nvim:update` | `home/dot_config/nvim/lazy-lock.json` | `build(nvim): update packages` | `nvim --headless '+Lazy! update <plugin>…' +qa` |
 | `pi:update` | `home/dot_pi/agent/settings.json` | `build(pi): update packages` | `pi update --extension <source>` |
 | `nono:update` | none | none | `nono update <namespace/name>` |
+| `herdr:update` | none | none | `herdr plugin update --yes <id>…` |
 | `brew:update` | none | none | `brew upgrade <formula>…` |
 | `upt:update` | none | none | `upt update`, then `upt upgrade <pkg>…` |
 | `agents:update` | `home/dot_agents/dot_skill-lock.json` | `build(skills): update packages` | `skills update --global --yes <skill>…` |
@@ -140,6 +142,9 @@ Notes per scope:
   when scanning for errors; they quote upstream commit subjects.
 - **pi**: pi itself is a mise tool; `settings.json` changes (e.g.
   `lastChangelogVersion`) usually follow a pi version bump in the global lock.
+- **herdr**: only GitHub-installed plugins are updated; linked ones are
+  skipped. `~/.config/herdr/plugins.json` holds absolute, per-process install
+  paths, so it is not tracked: report the commits each plugin moved to.
 - **brew**: mise bootstrap and the Homebrew CLI share one Cellar, and mise
   writes standard install receipts, so both see the same formulae. `mise:update`
   upgrades the declared ones first; `brew upgrade` then covers ad-hoc formulae

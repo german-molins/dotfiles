@@ -40,3 +40,15 @@ On each machine, after a herdr upgrade:
 3. New integrations load in a new server, which kills every pane process.
    Agents with an integration resume their sessions; save editors and other
    work first. From a shell outside Herdr, `herdr server stop`, then `herdr`.
+
+## Plugins
+
+Install [plugins](https://herdr.dev/docs/plugins/) per machine with
+`herdr plugin install --yes <owner/repo>`. `mise run herdr:update` (part of
+`mise run update`) updates the GitHub-installed ones; linked plugins are
+skipped.
+
+`~/.config/herdr/plugins.json` is Herdr's registry, not a lockfile: it records
+absolute checkout paths named after the installing process
+(`plugins/github-installations/<id>/<pid>-<n>/checkout`), so it stays
+untracked.

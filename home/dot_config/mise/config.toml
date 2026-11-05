@@ -173,6 +173,7 @@ depends = [
   "nvim:update",
   "pi:update",
   "nono:update",
+  "herdr:update",
   "brew:update",
   "upt:update",
   "agents:update",
@@ -243,6 +244,11 @@ run = "pi update --extensions"
 alias = "nono:up"
 description = "Update nono packs"
 run = "nono update"
+
+[tasks."herdr:update"]
+alias = "herdr:up"
+description = "Update Herdr plugins"
+run = "herdr plugin update --yes"
 
 [tasks."yazi:install"]
 alias = "yazi:i"

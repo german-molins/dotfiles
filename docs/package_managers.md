@@ -109,6 +109,7 @@ tasks: subtasks {
     nvim: nvim:update
     pi: pi:update
     nono: nono:update
+    herdr: herdr:update
     agents: agents:update
   }
 }
@@ -127,6 +128,7 @@ untracked: untracked {
   nix: Nix profile
   apt: system packages
   nono: nono packs
+  herdr: Herdr plugins
 }
 
 update -> tasks
@@ -138,6 +140,7 @@ tasks.pertool.yazi -> tracked.yazi: ya pkg upgrade
 tasks.pertool.nvim -> tracked.nvim: "Lazy! update"
 tasks.pertool.pi -> tracked.pi: pi update
 tasks.pertool.nono -> untracked.nono: nono update
+tasks.pertool.herdr -> untracked.herdr: herdr plugin update
 tasks.system.brew -> untracked.cellar: brew upgrade
 tasks.system.upt -> untracked.apt: "upt upgrade (sudo)"
 tasks.pertool.agents -> tracked.skills: "skills update -g"
@@ -480,6 +483,7 @@ installed by a chezmoi script and updated by a `mise run update` subtask:
 | Yazi | `ya pkg` | `dot_config/yazi/package.toml` | same file | `after_75` → `yazi:install` | `yazi:update` |
 | Neovim | lazy.nvim | `dot_config/nvim/lua/` specs | `dot_config/nvim/lazy-lock.json` | `after_62` → `nvim:install` | `nvim:update` |
 | nono | `nono pull` | `.chezmoidata/packages.yaml` (`packages.nono`) | untracked (`~/.config/nono/packages/lockfile.json`) | `after_82` | `nono:update` |
+| Herdr | `herdr plugin` | — | untracked (`~/.config/herdr/plugins.json`) | — | `herdr:update` |
 | pi | `pi` | `dot_pi/agent/settings.json` | — | — | `pi:update` |
 | Skills | `skills` | `dot_agents/dot_skill-lock.json` | same file | — | `agents:update` |
 | Claude Code | `claude plugin` | `private_dot_claude/settings.json` | untracked (`~/.claude/plugins/installed_plugins.json`) | — | — |
@@ -487,6 +491,12 @@ installed by a chezmoi script and updated by a `mise run update` subtask:
 
 Claude Code plugins are changed through the `claude plugin` CLI, which
 rewrites `~/.claude/settings.json`; re-add it with `chezmoi re-add` afterwards.
+
+Herdr's `plugins.json` is its plugin registry, not a portable lockfile: each
+entry records absolute, per-process installation paths
+(`plugins/github-installations/<id>/<pid>-<n>`) next to the resolved commit,
+so it stays untracked. Declaring plugins would take a `packages.herdr` list
+installed by a script, like nono packs.
 
 ### nono Packs
 

@@ -72,6 +72,13 @@ Clean up Docker containers, images, networks and build cache
 
 Install outdated (or the given) herdr agent integrations and normalize Claude hook paths
 
+## `herdr:update`
+
+- **Usage:** `herdr:update`
+- **Aliases:** `herdr:up`
+
+Update Herdr plugins
+
 ## `mbx:clean`
 
 - **Usage:** `mbx:clean`
@@ -199,7 +206,7 @@ Scaffold a project
 
 ## `update`
 
-- Depends: chezmoi:update, mise:update, yazi:update, nvim:update, pi:update, nono:update, brew:update, upt:update, agents:update
+- Depends: chezmoi:update, mise:update, yazi:update, nvim:update, pi:update, nono:update, herdr:update, brew:update, upt:update, agents:update
 
 - **Usage:** `update`
 
