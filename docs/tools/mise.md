@@ -147,10 +147,17 @@ mise -C "$HOME" skills sync --dir "$HOME/.claude/skills" --prune
   skills first. Lazy tools fetch theirs only once installed.
 - **No filtering**: sync links every skill of every active tool. Excluding one
   requires an allowlist on top of `mise skills ls --json`; not worth it yet.
-- `skills.auto_sync` is not used: it only runs inside a mise project and
-  targets a single `skills.dir`. Even set globally, it
+- `skills.auto_sync` is not used. Since mise 2026.11.0, `mise use -g`,
+  `install` and `upgrade` keep the home links current, but only in a single
+  directory: `skills.dir`, else `~/.agents/skills` because it exists, so
+  `~/.claude/skills` would still go stale. It also
   [keeps project links up to date](https://mise.jdx.dev/dev-tools/packslip-resources.html#keep-project-links-up-to-date),
-  linking global tools' skills into every project instead of `$HOME`.
+  creating `.agents/skills` and a `.claude/skills` symlink in every project
+  that lacks them.
+- `skills sync --global` cannot be combined with `--dir`, hence `-C "$HOME"`.
+- `~/.claude/skills` must stay a real directory, not a symlink to
+  `~/.agents/skills`: the relative `../../.agents/skills/*` links that
+  `npx skills` writes there would break.
 
 Packslip tools in the global config that ship skills:
 
