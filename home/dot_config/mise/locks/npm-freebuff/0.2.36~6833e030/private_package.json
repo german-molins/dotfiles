@@ -2,6 +2,6 @@
   "name": "mise-npm-install",
   "private": true,
   "dependencies": {
-    "freebuff": "0.2.35"
+    "freebuff": "0.2.36"
   }
 }

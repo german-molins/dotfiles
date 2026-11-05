@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       freebuff:
-        specifier: 0.2.35
-        version: 0.2.35
+        specifier: 0.2.36
+        version: 0.2.36
 
 packages:
 
@@ -22,8 +22,8 @@ packages:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
     engines: {node: '>=18'}
 
-  freebuff@0.2.35:
-    resolution: {integrity: sha512-jfCTIsL9VtHlmtT5WK4smJlAvdvimdpO1xVQOt6j7PoWoubcEq2rM5yUGSgz5hj/DH/xURBo1jQAiieFTOyzMg==}
+  freebuff@0.2.36:
+    resolution: {integrity: sha512-Cb2/8ux8EexLHW8M9wa4a2ZBg32bZCWxRJ9zNsUF+VJnUgt6Tclnd1isOlWLfdtEL6VpXMhQUlEottHl3sy7MQ==}
     engines: {node: '>=16'}
     cpu: [x64, arm64]
     os: [darwin, linux, win32]
@@ -53,7 +53,7 @@ snapshots:
 
   chownr@3.0.0: {}
 
-  freebuff@0.2.35:
+  freebuff@0.2.36:
     dependencies:
       tar: 7.5.22
 
