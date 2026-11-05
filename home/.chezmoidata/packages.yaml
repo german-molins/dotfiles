@@ -13,3 +13,4 @@ packages:
     - sshfs
   nono:
     - nolabs-ai/claude
+  herdr: []

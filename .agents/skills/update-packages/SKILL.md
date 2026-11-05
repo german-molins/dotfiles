@@ -145,6 +145,9 @@ Notes per scope:
 - **herdr**: only GitHub-installed plugins are updated; linked ones are
   skipped. `~/.config/herdr/plugins.json` holds absolute, per-process install
   paths, so it is not tracked: report the commits each plugin moved to.
+  Declared plugins live in `packages.herdr`; the install script ignores
+  commits, so an update does not re-trigger it. If a plugin's tracked
+  `~/.config/herdr/plugins/config/<id>/` changed, offer `chezmoi re-add`.
 - **brew**: mise bootstrap and the Homebrew CLI share one Cellar, and mise
   writes standard install receipts, so both see the same formulae. `mise:update`
   upgrades the declared ones first; `brew upgrade` then covers ad-hoc formulae

@@ -52,7 +52,7 @@ user: User (global) {
 }
 
 pertool: Per-tool {
-  plugins: "nvim, yazi, nono,\npi, skills, Claude Code,\nmise plugins" {shape: cylinder}
+  plugins: "nvim, yazi, nono, herdr,\npi, skills, Claude Code,\nmise plugins" {shape: cylinder}
 }
 
 install -> bin.chezmoi: get.chezmoi.io
@@ -61,7 +61,7 @@ scripts.before -> bin.mise: mise.run
 scripts.before -> system.brew.cli: "linux-x64, macOS"
 scripts.before -> user.nix: "nix.enabled\n(macOS via Devbox)"
 scripts.after -> bin.mise: "10, 20, 62, 75"
-scripts.after -> pertool.plugins: "82 nono pull"
+scripts.after -> pertool.plugins: "82 nono pull\n83 herdr plugin install"
 bin.mise -> user.tools
 bin.mise -> system.brew.cellar: "bootstrap brew:"
 bin.mise -> user.nix.profile: "bootstrap nix:"
@@ -483,7 +483,7 @@ installed by a chezmoi script and updated by a `mise run update` subtask:
 | Yazi | `ya pkg` | `dot_config/yazi/package.toml` | same file | `after_75` → `yazi:install` | `yazi:update` |
 | Neovim | lazy.nvim | `dot_config/nvim/lua/` specs | `dot_config/nvim/lazy-lock.json` | `after_62` → `nvim:install` | `nvim:update` |
 | nono | `nono pull` | `.chezmoidata/packages.yaml` (`packages.nono`) | untracked (`~/.config/nono/packages/lockfile.json`) | `after_82` | `nono:update` |
-| Herdr | `herdr plugin` | — | untracked (`~/.config/herdr/plugins.json`) | — | `herdr:update` |
+| Herdr | `herdr plugin` | `.chezmoidata/packages.yaml` (`packages.herdr`) | untracked (`~/.config/herdr/plugins.json`) | `after_83` | `herdr:update` |
 | pi | `pi` | `dot_pi/agent/settings.json` | — | — | `pi:update` |
 | Skills | `skills` | `dot_agents/dot_skill-lock.json` | same file | — | `agents:update` |
 | Claude Code | `claude plugin` | `private_dot_claude/settings.json` | untracked (`~/.claude/plugins/installed_plugins.json`) | — | — |
@@ -491,12 +491,6 @@ installed by a chezmoi script and updated by a `mise run update` subtask:
 
 Claude Code plugins are changed through the `claude plugin` CLI, which
 rewrites `~/.claude/settings.json`; re-add it with `chezmoi re-add` afterwards.
-
-Herdr's `plugins.json` is its plugin registry, not a portable lockfile: each
-entry records absolute, per-process installation paths
-(`plugins/github-installations/<id>/<pid>-<n>`) next to the resolved commit,
-so it stays untracked. Declaring plugins would take a `packages.herdr` list
-installed by a script, like nono packs.
 
 ### nono Packs
 
@@ -526,6 +520,24 @@ version.
 A failed `nono pull` leaves partially written files that block the next pull
 (`refusing to overwrite … not written by a managed pack`); remove the named
 file and re-apply.
+
+### Herdr Plugins
+
+`packages.herdr` lists the `owner/repo[/subdir]` sources of the
+[Herdr](tools/herdr.md#plugins) plugins to install. The list is empty by
+default: an empty list renders an empty
+`run_onchange_after_83-install-herdr-plugins.sh.tmpl`, which chezmoi skips, so
+the lazy `herdr` tool is not installed just to check it.
+
+The script mirrors the nono one: it re-runs when `packages.herdr` or the set
+of installed GitHub sources changes (commits excluded, so `herdr:update` does
+not trigger it), and installs only the declared sources that are missing. A
+plugin removed from the list is not uninstalled; run
+`herdr plugin uninstall <id>`.
+
+Herdr's `plugins.json` is its plugin registry, not a portable lockfile: each
+entry records absolute, per-process checkout paths
+(`plugins/github-installations/<id>/<pid>-<n>`), so it stays untracked.
 
 ## Platform Gates for Package Lists
 

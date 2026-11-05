@@ -1,0 +1,21 @@
+{{ if .packages.herdr -}}
+#!/usr/bin/env sh
+
+set -eu
+
+{{ template "mise-shellenv" . }}
+
+if ! command -v herdr >/dev/null; then
+  >&2 echo "[dotfiles][herdr] ERROR: 'herdr' command not found, skipping plugin installation"
+  exit 1
+fi
+
+>&2 echo "[dotfiles][herdr] Installing herdr plugins..."
+
+# declared plugins hash: {{ .packages.herdr | toJson | sha256sum }}
+# installed plugins hash: {{ if lookPath "herdr" }}{{ output "sh" "-c" "herdr plugin list 2>/dev/null | sed -n 's/.*\\[github:\\([^@]*\\)@.*/\\1/p' | sort" | sha256sum }}{{ end }}
+installed=$(herdr plugin list | sed -n 's/.*\[github:\([^@]*\)@.*/\1/p')
+{{ range .packages.herdr -}}
+printf '%s\n' "$installed" | grep -qxF {{ . | quote }} || herdr plugin install --yes {{ . | quote }}
+{{ end -}}
+{{ end -}}

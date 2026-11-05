@@ -43,12 +43,20 @@ On each machine, after a herdr upgrade:
 
 ## Plugins
 
-Install [plugins](https://herdr.dev/docs/plugins/) per machine with
-`herdr plugin install --yes <owner/repo>`. `mise run herdr:update` (part of
-`mise run update`) updates the GitHub-installed ones; linked plugins are
-skipped.
+[Plugins](https://herdr.dev/docs/plugins/) to keep on every machine go in
+`packages.herdr` in `.chezmoidata/packages.yaml` (`owner/repo[/subdir]`); the
+next `chezmoi apply` installs the missing ones. Try one out with `herdr plugin
+install --yes <owner/repo>` first. `mise run herdr:update` (part of
+`mise run update`) updates GitHub-installed plugins; linked ones are skipped.
+See [Herdr Plugins](../package_managers.md#herdr-plugins) for how the install
+script behaves.
 
-`~/.config/herdr/plugins.json` is Herdr's registry, not a lockfile: it records
-absolute checkout paths named after the installing process
-(`plugins/github-installations/<id>/<pid>-<n>/checkout`), so it stays
-untracked.
+What is tracked:
+
+- `packages.herdr`: the declared sources.
+- `~/.config/herdr/plugins/config/<id>/`: a plugin's own settings. Herdr only
+  creates it empty; add it with `chezmoi add` once you set something there,
+  after checking it holds no machine-specific paths or state.
+
+Everything else under `~/.config/herdr/plugins/` (checkouts, `plugins.json`)
+is per-machine and stays untracked.
