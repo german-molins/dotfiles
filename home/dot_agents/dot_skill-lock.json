@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/microsoft/playwright-cli.git",
       "skillPath": "skills/playwright-cli/SKILL.md",
-      "skillFolderHash": "003ec8747c78ceb8e9da5d83f12523a06830093c",
+      "skillFolderHash": "cc70f6e5f0cf42b82d3f72f6f1c3a4134694d518",
       "installedAt": "2026-10-15T15:38:29.126Z",
-      "updatedAt": "2026-11-03T16:53:29.078Z"
+      "updatedAt": "2026-11-06T10:55:54.084Z"
     },
     "herdr": {
       "source": "herdrdev/herdr",
