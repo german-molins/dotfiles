@@ -12,9 +12,7 @@ the mise registry.
 
 Beads stores its data in [Dolt](https://www.dolthub.com/), but the release
 binary has Dolt built in and only needs libc: no `dolt` binary, no server, no
-Homebrew. The Homebrew formula depends on `dolt` and `icu4c` for server mode;
-machines that installed it earlier can drop it with
-`brew uninstall beads dolt icu4c@79` once the mise `bd` is on `PATH`.
+Homebrew.
 
 ## Modes
 
