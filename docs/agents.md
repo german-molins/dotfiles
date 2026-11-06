@@ -204,6 +204,8 @@ Options considered and discarded:
 
 ### Beads
 
+Install, storage mode and repository setup are on the [Beads page](tools/beads.md).
+
 The Beads plugin injects `bd prime` through hooks in every session, including
 projects without a beads database, and lists its skill and commands in every
 session. Instead, it is disabled and projects opt in through their private
@@ -293,7 +295,8 @@ opposed to the global setup above that I use for developing other projects.
 - `AGENTS.md`: project context and conventions (tracked).
 - `AGENTS.local.md`, `CLAUDE.local.md`: private project context (untracked).
 - Issue tracking with [beads](https://github.com/gastownhall/beads) (`bd`),
-  opted in through `AGENTS.local.md` (see [Beads](#beads)).
+  opted in through `AGENTS.local.md` (see [Beads](#beads) and
+  [the Beads page](tools/beads.md)).
 
 ### Project Skills
 

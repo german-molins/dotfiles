@@ -29,6 +29,7 @@ These are my daily CLI drivers:
 | [witr] | `witr` | | Process origins explorer and manager |
 | [Lazydocker] | `lazydocker` | | Docker and docker-compose manager |
 | [Pitchfork] | `pitchfork` | | Daemons manager |
+| [Beads] | `bd` | | Local issue tracker for agents |
 | [Taskwarrior] | `task` | | Task manager |
 | [Timewarrior] | `timew` | | Time manager |
 | [Zk] | `zk` | | Notebook manager |
@@ -55,6 +56,7 @@ These are my daily CLI drivers:
 [witr]: https://github.com/pranshuparmar/witr
 [Lazydocker]: https://github.com/jesseduffield/lazydocker
 [Pitchfork]: https://pitchfork.en.dev/
+[Beads]: beads.md
 [Taskwarrior]: https://taskwarrior.org/
 [Timewarrior]: https://timewarrior.net/
 [Zk]: https://zk-org.github.io/zk/

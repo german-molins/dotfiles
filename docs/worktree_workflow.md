@@ -13,7 +13,8 @@ Building blocks:
 - [aube](tools/aube.md): optional, faster installs for npm repositories.
 - [fnox](tools/fnox.md): secrets, with personal overrides in `fnox.local.toml`.
 - [Herdr](tools/herdr.md): agent-aware terminal workspaces.
-- [Beads](agents.md#beads): issue tracking, opted in per repository.
+- [Beads](tools/beads.md): local issue tracking, opted in per repository and
+  shared by all its worktrees.
 
 ## Isolated Stack per Worktree
 

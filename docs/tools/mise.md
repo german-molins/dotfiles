@@ -197,7 +197,7 @@ mise doctor project
 mise doctor project --json
 ```
 
-- **Repository**: `commit-authors`, `git-user-email`, `beads`, `task-docs-fresh`
+- **Repository**: `commit-authors`, `git-user-email`, [`beads`](beads.md), `task-docs-fresh`
 - **Machine**: `chezmoi`, `mise`, `tools-installed`, `nvim`, `fnox`, `gh-auth`,
   `nix`
 

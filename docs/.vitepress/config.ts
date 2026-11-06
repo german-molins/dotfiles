@@ -39,6 +39,7 @@ export default defineConfig({
               { text: "fnox", link: '/tools/fnox' },
               { text: "aube", link: '/tools/aube' },
               { text: "Worktrunk", link: '/tools/worktrunk' },
+              { text: "Beads", link: '/tools/beads' },
               { text: "System Dependencies", link: '/tools/system_dependencies' },
               { text: "General Utils", link: '/tools/utils' },
               { text: "Herdr", link: '/tools/herdr' },
