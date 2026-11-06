@@ -85,7 +85,7 @@ VCS:
 [Jujutsu]: https://docs.jj-vcs.dev
 [Jujutsu UI]: https://idursun.github.io/jjui
 [Lazyjj]: https://github.com/Cretezy/lazyjj
-[Hunk]: https://hunk.dev
+[Hunk]: hunk.md
 [Worktrunk]: https://worktrunk.dev
 
 Agent harnesses:

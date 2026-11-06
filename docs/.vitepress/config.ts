@@ -47,6 +47,7 @@ export default defineConfig({
               { text: "Git", link: '/tools/git' },
               { text: "GitHub CLI", link: '/tools/gh' },
               { text: "ghui", link: '/tools/ghui' },
+              { text: "Hunk", link: '/tools/hunk' },
               { text: "Lazygit", link: '/tools/lazygit' },
               { text: "Jujutsu", link: '/tools/jj' },
               { text: "Jujutsu UI", link: '/tools/jjui' },
