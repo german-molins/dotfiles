@@ -494,7 +494,7 @@ rewrites `~/.claude/settings.json`; re-add it with `chezmoi re-add` afterwards.
 
 ### nono Packs
 
-`packages.nono` lists the [nono](https://nono.sh) packs to install. The
+`packages.nono` lists the [nono](tools/nono.md) packs to install. The
 `nolabs-ai/claude` pack is the base of the `claude-dotfiles` profile (used by
 the `claude-nono` alias) and also wires the `nono@nolabs-ai` Claude Code
 plugin and its marketplace.

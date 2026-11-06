@@ -185,7 +185,7 @@ The following apps are not installed by default but have configuration available
 
 [Devpod]: https://devpod.sh/
 [Colima]: https://colima.run
-[nono]: https://nono.sh
+[nono]: nono.md
 
 ## Package Registries
 

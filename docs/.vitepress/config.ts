@@ -44,6 +44,7 @@ export default defineConfig({
               { text: "General Utils", link: '/tools/utils' },
               { text: "Herdr", link: '/tools/herdr' },
               { text: "Zellij", link: '/tools/zellij' },
+              { text: "nono", link: '/tools/nono' },
               { text: "Git", link: '/tools/git' },
               { text: "GitHub CLI", link: '/tools/gh' },
               { text: "ghui", link: '/tools/ghui' },
