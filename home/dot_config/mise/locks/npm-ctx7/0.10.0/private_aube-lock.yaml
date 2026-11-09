@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       ctx7:
-        specifier: 0.9.0
-        version: 0.9.0
+        specifier: 0.10.0
+        version: 0.10.0
 
 packages:
 
@@ -195,12 +195,12 @@ packages:
     resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
 
-  commander@15.0.0:
-    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
     engines: {node: '>=22.12.0'}
 
-  ctx7@0.9.0:
-    resolution: {integrity: sha512-ngxgOzZQMbIiiE3TNiDYj6Gd9mXFX56EYRJu161+/P2pUPpe1RL0BwAr/B+Biv16y1Jo7vniuSZz77y6QoJ+wg==}
+  ctx7@0.10.0:
+    resolution: {integrity: sha512-9lbKE8gjfgQIn4ocTu4o8ucyi1iVUgv+WG3/u9Yc4YV107tyflaFg5UHrz8Jwws81+JfIMAwOzqiEspaTURntA==}
     engines: {node: '>=22.13.0'}
     hasBin: true
 
@@ -486,13 +486,13 @@ snapshots:
 
   commander@14.0.3: {}
 
-  commander@15.0.0: {}
+  commander@15.1.0: {}
 
-  ctx7@0.9.0:
+  ctx7@0.10.0:
     dependencies:
       '@inquirer/prompts': 8.7.5
       boxen: 9.0.0
-      commander: 15.0.0
+      commander: 15.1.0
       figlet: 1.12.0
       jsonc-parser: 3.3.1
       open: 11.0.4
