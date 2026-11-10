@@ -221,6 +221,26 @@ removals or fixes.
 - `git status --short`: only files of held-back scopes may remain. Anything
   else is a leftover to report.
 - Run the post-upgrade actions approved in the review.
+- Running processes keep their old binaries. `mise run -q stale --json` lists
+  processes of upgraded tools still on an older install, outermost only
+  (children such as MCP servers and LSPs restart with their parent), with
+  their Herdr pane and agent status. Show them as a table and ask once:
+  - **herdr upgraded**: run `mise run herdr:integrations` (sync what it
+    reports via chezmoi-sync). Restarting the server resumes every Claude pane,
+    so skip per-pane restarts and give the user the commands to run from a
+    shell outside Herdr, after saving their editors and other work: `herdr
+    server stop`, then `herdr`.
+  - **Otherwise**, restart in place each Claude pane Herdr reports `idle`:
+    read its session id (`herdr agent get <pane>`, `.agent_session.value`),
+    send `/exit`, wait for `claude --resume <id>` in the pane output, then
+    `herdr agent start <name> --kind claude --pane <pane> -- --resume <id>`
+    and check the session id matches. Skip busy panes, panes with unsent
+    input on the prompt line, anything unclear, and the pane running this
+    session (`$HERDR_PANE_ID`): leave those to the user.
+  - Everything else (nvim, TUIs, services, processes outside Herdr panes) is
+    only reported, with the command to restart it; never send keys to it.
+  - Run `stale` again afterwards. A child still on the old version under a
+    restarted parent means a config pins the old install path: report it.
 - Health: the baseline checks again. Compare with the baseline: a **new**
   issue was caused by the update and holds back its scope like an anomaly; a
   **resolved** one was fixed by it; a **pre-existing** one is only reported.
@@ -238,6 +258,8 @@ Always include these sections, writing "none" when a section is empty:
 - **Untracked updates**: what brew, apt (upt), nix and mise bootstrap
   upgraded. They change the system but leave nothing to commit.
 - **Health**: step 9 results as new, resolved and pre-existing.
+- **Stale processes**: what was restarted, and what is left for the user with
+  its command (including this session's own pane).
 - **Follow-ups**: what the user chose to track from the review, and where.
 
 End by offering to push; state how many commits the branch is ahead of its

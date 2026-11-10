@@ -204,6 +204,16 @@ Scaffold a project
 
 - **Usage:** `self-update`
 
+## `stale`
+
+List running processes of mise tools on an older version than their current one
+
+
+- **Usage:** `stale [--json]`
+
+### Flags
+- **`--json`** — Print the processes as JSON
+
 ## `update`
 
 - Depends: chezmoi:update, mise:update, yazi:update, nvim:update, pi:update, nono:update, herdr:update, brew:update, upt:update, agents:update
