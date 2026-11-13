@@ -144,6 +144,7 @@ p = "pwd"
 u = "df -H $HOME"
 e = "{{env.EDITOR}}"
 v = "{{env.VISUAL}}"
+x = "exec bash"
 
 wh = "where"
 
