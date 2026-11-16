@@ -85,7 +85,7 @@ A tool is lazy unless it falls into one of these groups:
 - **Backend providers**: runtimes other backends install through (node, python,
   uv, rust, cargo-binstall, mr-boxington).
 - **System command overrides**: they shadow `/usr/bin` names used by any script
-  (coreutils, conda:grep, conda:sed, conda:dash, cargo:findutils,
+  (coreutils, conda:grep, conda:sed, cargo:findutils,
   conda:tzdata). cargo:diffutils installs a single `diffutils` multicall binary,
   not `diff` or `cmp`, so it shadows nothing.
 - **Core daily or config dependencies**: bat (`PAGER`), fd, fzf, ripgrep, gh,

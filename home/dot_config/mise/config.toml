@@ -75,7 +75,6 @@ pandoc = { version = "latest", lazy = true }
   "mac2unix",
   "unix2mac",
 ] }
-"conda:dash" = "latest"
 "conda:xsel" = { version = "latest", lazy = true, lazy_bins = ["xsel"] }
 "conda:grep" = "latest"
 "conda:sed" = "latest"
