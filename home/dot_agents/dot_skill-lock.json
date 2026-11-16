@@ -24,18 +24,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/upstash/context7.git",
       "skillPath": "skills/find-docs/SKILL.md",
-      "skillFolderHash": "9bd51dc72e6807bb88171b59ca2ed8dc117361e2",
+      "skillFolderHash": "909aeb8682313970ebfe48b63b149400c8bd65b5",
       "installedAt": "2026-03-23T17:10:18.668Z",
-      "updatedAt": "2026-10-17T09:48:21.656Z"
+      "updatedAt": "2026-11-16T14:21:43.755Z"
     },
     "hunk-review": {
       "source": "modem-dev/hunk",
       "sourceType": "github",
       "sourceUrl": "https://github.com/modem-dev/hunk.git",
       "skillPath": ".agents/skills/hunk-review/SKILL.md",
-      "skillFolderHash": "48ebdc86f8d7d4aea4e01379d65f2911b8b3c93f",
+      "skillFolderHash": "cff496e671d9f5c807d6e7e0c0c2f47f63a011f5",
       "installedAt": "2026-09-22T11:05:15.478Z",
-      "updatedAt": "2026-11-03T16:53:26.614Z"
+      "updatedAt": "2026-11-16T14:21:43.909Z"
     },
     "playwright-cli": {
       "source": "microsoft/playwright-cli",
