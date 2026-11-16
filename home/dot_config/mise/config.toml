@@ -1,6 +1,8 @@
 [tools]
 "aqua:dlvhdr/gh-dash" = "latest"
-"aqua:jorgerojas26/lazysql" = { version = "latest", lazy = true, lazy_bins = ["lazysql"] }
+"aqua:jorgerojas26/lazysql" = { version = "latest", lazy = true, lazy_bins = [
+  "lazysql",
+] }
 bat = "latest"
 bottom = { version = "latest", lazy = true }
 cargo-binstall = "latest"
@@ -17,14 +19,22 @@ lazydocker = { version = "latest", lazy = true }
 lazygit = "latest"
 neovim = "latest"
 node = "latest"
-"pypi:httpie" = { version = "latest", lazy = true, lazy_bins = ["http", "https", "httpie"] }
+"pypi:httpie" = { version = "latest", lazy = true, lazy_bins = [
+  "http",
+  "https",
+  "httpie",
+] }
 ripgrep = "latest"
 rust = "latest"
 mr-boxington = "latest"
 tree-sitter = "latest"
-"github:dalance/procs" = { version = "latest", lazy = true, lazy_bins = ["procs"] }
+"github:dalance/procs" = { version = "latest", lazy = true, lazy_bins = [
+  "procs",
+] }
 "github:github/gh-stack" = { version = "latest", bin = "gh-stack" }
-"github:peteretelej/tree" = { version = "latest", lazy = true, lazy_bins = ["tree"] }
+"github:peteretelej/tree" = { version = "latest", lazy = true, lazy_bins = [
+  "tree",
+] }
 upt = "latest"
 uv = "latest"
 yazi = "latest"
@@ -35,28 +45,51 @@ zoxide = "latest"
 xh = { version = "latest", lazy = true }
 "cargo:tlrc" = { version = "latest", lazy = true, lazy_bins = ["tldr"] }
 carapace = "latest"
-"github:ghetzel/mdnstool" = { version = "latest", lazy = true, lazy_bins = ["mdnstool"], os = ["linux"] }
+"github:ghetzel/mdnstool" = { version = "latest", lazy = true, lazy_bins = [
+  "mdnstool",
+], os = [
+  "linux",
+] }
 "cargo:somo" = { version = "latest", lazy = true, lazy_bins = ["somo"] }
 cosign = "latest"
 opencode = { version = "latest", lazy = true, allow_builds = ["@opencode/cli"] }
 codebuff = { version = "latest", lazy = true }
-"npm:freebuff" = { version = "latest", lazy = true, lazy_bins = ["freebuff"], trust_policy_excludes = ["freebuff@0.2.36"] }
+"npm:freebuff" = { version = "latest", lazy = true, lazy_bins = [
+  "freebuff",
+], trust_policy_excludes = [
+  "freebuff@0.2.36",
+] }
 jjui = { version = "latest", lazy = true }
 jj = "latest"
-"github:eza-community/eza" = { version = "latest", lazy = true, lazy_bins = ["eza"] }
+"github:eza-community/eza" = { version = "latest", lazy = true, lazy_bins = [
+  "eza",
+] }
 lazyssh = { version = "latest", lazy = true }
 "cargo:lazyjj" = { version = "latest", lazy = true, lazy_bins = ["lazyjj"] }
 worktrunk = "latest"
 pandoc = { version = "latest", lazy = true }
 "npm:ctx7" = { version = "latest", lazy = true, lazy_bins = ["ctx7"] }
-"conda:dos2unix" = { version = "7.5.2", lazy = true, lazy_bins = ["dos2unix", "unix2dos", "mac2unix", "unix2mac"] }
+"conda:dos2unix" = { version = "7.5.2", lazy = true, lazy_bins = [
+  "dos2unix",
+  "unix2dos",
+  "mac2unix",
+  "unix2mac",
+] }
 "conda:dash" = "latest"
 "conda:xsel" = { version = "latest", lazy = true, lazy_bins = ["xsel"] }
 "conda:grep" = "latest"
 "conda:sed" = "latest"
-"conda:dateutils" = { version = "latest", lazy = true, lazy_bins = ["dateadd", "datediff"] }
+"conda:dateutils" = { version = "latest", lazy = true, lazy_bins = [
+  "dateadd",
+  "datediff",
+] }
 "conda:tzdata" = "latest"
-"conda:xclip" = { version = "latest", lazy = true, lazy_bins = ["xclip", "xclip-copyfile", "xclip-cutfile", "xclip-pastefile"] }
+"conda:xclip" = { version = "latest", lazy = true, lazy_bins = [
+  "xclip",
+  "xclip-copyfile",
+  "xclip-cutfile",
+  "xclip-pastefile",
+] }
 "conda:resvg" = { version = "latest", lazy = true, lazy_bins = ["resvg"] }
 "npm:skills" = "latest"
 atuin = "latest"
@@ -65,7 +98,9 @@ sd = "latest"
 tmux = { version = "latest", lazy = true }
 age = "latest"
 systemctl-tui = { version = "latest", lazy = true, os = ["linux"] }
-"github:daptify14/chezit" = { version = "latest", lazy = true, lazy_bins = ["chezit"] }
+"github:daptify14/chezit" = { version = "latest", lazy = true, lazy_bins = [
+  "chezit",
+] }
 imagemagick = { version = "latest", lazy = true }
 rust-analyzer = { version = "latest", lazy = true }
 "npm:codeburn" = { version = "latest", lazy = true, lazy_bins = ["codeburn"], trust_policy_excludes = [
@@ -77,7 +112,9 @@ witr = { version = "latest", lazy = true }
 nono = "latest"
 herdr = { version = "latest", lazy = true }
 zk = { version = "latest", lazy = true }
-cloc = { version = "latest", lazy = true, bin = "cloc", depends = ["perl"], platforms = { linux-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, linux-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, windows-x64 = { asset_pattern = "cloc-{{ version }}.exe" } } }
+cloc = { version = "latest", lazy = true, bin = "cloc", depends = [
+  "perl",
+], platforms = { linux-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, linux-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-arm64 = { asset_pattern = "cloc-{{ version }}.pl" }, macos-x64 = { asset_pattern = "cloc-{{ version }}.pl" }, windows-x64 = { asset_pattern = "cloc-{{ version }}.exe" } } }
 onefetch = { version = "latest", lazy = true, os = ["linux/x64", "macos"] }
 clipboard = { version = "latest", lazy = true }
 "7zip" = { version = "latest", lazy = true }
@@ -85,22 +122,33 @@ clipboard = { version = "latest", lazy = true }
 hyperfine = { version = "latest", lazy = true }
 tssh = { version = "latest", lazy = true }
 numbat = { version = "latest", lazy = true }
-"github:mat2cc/redis_tui" = { version = "latest", lazy = true, lazy_bins = ["redis_tui"] }
+"github:mat2cc/redis_tui" = { version = "latest", lazy = true, lazy_bins = [
+  "redis_tui",
+] }
 claude = "latest"
 pi = "latest"
 colima = { version = "latest", lazy = true }
-"aqua:kdheepak/taskwarrior-tui" = { version = "latest", lazy = true, lazy_bins = ["taskwarrior-tui"], os = ["linux/x64", "macos"] }
+"aqua:kdheepak/taskwarrior-tui" = { version = "latest", lazy = true, lazy_bins = [
+  "taskwarrior-tui",
+], os = [
+  "linux/x64",
+  "macos",
+] }
 codex = { version = "latest", lazy = true }
 exiftool = { version = "latest", lazy = true }
 poppler = { version = "latest", lazy = true }
-"github:kitlangton/ghui" = { version = "latest", lazy = true, lazy_bins = ["ghui"] }
+"github:kitlangton/ghui" = { version = "latest", lazy = true, lazy_bins = [
+  "ghui",
+] }
 aube = "latest"
 usage = "latest"
 pitchfork = "latest"
 fnox = "latest"
 lnav = { version = "latest", lazy = true }
 miniserve = { version = "latest", lazy = true }
-"npm:@playwright/cli" = { version = "latest", lazy = true, lazy_bins = ["playwright-cli"] }
+"npm:@playwright/cli" = { version = "latest", lazy = true, lazy_bins = [
+  "playwright-cli",
+] }
 mpv = { version = "latest", lazy = true }
 "conda:zstd" = "latest"
 "github:gastownhall/beads" = "latest"
@@ -161,7 +209,15 @@ vm = "colima"
 
 [tasks.clean]
 description = "Clean up system packages and caches"
-depends = ["mise:clean", "nix:clean", "brew:clean", "docker:clean", "aube:clean", "mbx:clean", "nvim:clean"]
+depends = [
+  "mise:clean",
+  "nix:clean",
+  "brew:clean",
+  "docker:clean",
+  "aube:clean",
+  "mbx:clean",
+  "nvim:clean",
+]
 
 [tasks.self-update]
 depends = ["devbox:self-update", "brew:self-update"]
@@ -210,15 +266,18 @@ alias = "mise:up"
 description = "Update Mise global packages and plugins"
 usage = 'flag "--include-lazy" help="First install lazy tools never installed on this machine, so they are upgraded from now on"'
 run = [
-    '[ "${usage_include_lazy:-}" != true ] || mise -C ~ install --include-lazy',
-    "mise upgrade --global",
-    "mise plugins upgrade",
-    "mise bootstrap packages upgrade --yes",
+  '[ "${usage_include_lazy:-}" != true ] || mise -C ~ install --include-lazy',
+  "mise upgrade --global",
+  "mise plugins upgrade",
+  "mise bootstrap packages upgrade --yes",
 ]
 
 [tasks."mise:clean"]
 description = "Clean Mise cache"
-run = ["mise prune -y", "mise bootstrap packages prune --manager brew-cask --yes"]
+run = [
+  "mise prune -y",
+  "mise bootstrap packages prune --manager brew-cask --yes",
+]
 
 [tasks."nvim:clean"]
 description = "Clean Neovim plugins"
@@ -299,10 +358,10 @@ run = "hyperfine -w 3 -r 30 'bash -ilc true'"
 "brew:wget" = "latest"
 "brew:taskopen" = { os = "macos" }
 "brew-cask:firefox" = { os = "macos" }
-"brew-cask:devpod" = { os = "macos" }              # Then install the CLI with the GUI button.
+"brew-cask:devpod" = { os = "macos" }             # Then install the CLI with the GUI button.
 "brew-cask:kitty" = { os = "macos" }
 "brew-cask:visual-studio-code" = { os = "macos" }
-"brew-cask:programmer-dvorak" = { os = "macos" }   # Reboot; then available among keeb layouts.
+"brew-cask:programmer-dvorak" = { os = "macos" }  # Reboot; then available among keeb layouts.
 "brew-cask:obsidian" = { os = "macos" }
 # Desktop app needed because it ships with a Linux VM, since macOS can't
 # virtualise Linux kernel otherwise.
