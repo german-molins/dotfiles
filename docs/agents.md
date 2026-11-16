@@ -84,6 +84,9 @@ Context7's own skills (`find-docs`, `context7-mcp`) for an agent, and `ctx7
 library` / `ctx7 docs` query documentation directly. Since 0.9.0,
 `ctx7 search <query>` does it in one step across all libraries, optionally
 narrowed with `--library` (up to four), `--library-version` and `--language`.
+Since 0.11.0, `ctx7 code <libraryId> [pattern]` reads a library's source at a
+version, like ripgrep: `--op` picks grep (default), definition, references,
+outline, read or list.
 
 ## Browser Automation
 
