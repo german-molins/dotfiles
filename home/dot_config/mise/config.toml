@@ -53,7 +53,6 @@ carapace = "latest"
 "cargo:somo" = { version = "latest", lazy = true, lazy_bins = ["somo"] }
 cosign = "latest"
 opencode = { version = "latest", lazy = true, allow_builds = ["@opencode/cli"] }
-codebuff = { version = "latest", lazy = true }
 "npm:freebuff" = { version = "latest", lazy = true, lazy_bins = [
   "freebuff",
 ], trust_policy_excludes = [

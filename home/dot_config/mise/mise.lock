@@ -2827,15 +2827,6 @@ checksum_source = "mise-versions"
 url = "https://github.com/AlDanial/cloc/releases/download/v2.12/cloc-2.12.pl"
 url_api = "https://api.github.com/repos/AlDanial/cloc/releases/assets/742367356"
 
-[[tools.codebuff]]
-version = "1.0.688"
-aube = { path = "locks/codebuff/1.0.688~785c9220", digest = "sha256:907cada48b57a98b72dec110a1b1b72cda0fe89b5522a709d37abe070d3f2a61" }
-backend = "npm:codebuff"
-specifiers = ["latest"]
-
-[tools.codebuff.options]
-allow_builds = '["codebuff"]'
-
 [[tools.codex]]
 version = "0.169.0"
 backend = "aqua:openai/codex"

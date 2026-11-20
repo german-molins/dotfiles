@@ -11,7 +11,7 @@ rules. See [specification of `AGENTS.md` files](https://agents.md).
 - `~/.config/AGENTS.md` - Global (user) agent context file, the single source
 of the global rules.
 - `~/.AGENTS.md` - Symlink to `~/.config/AGENTS.md`, tailored for
-[Codebuff/Freebuff](#codebuff-freebuff), which only reads dot-prefixed context
+[Freebuff](#freebuff), which only reads dot-prefixed context
 files in `$HOME`. Claude Code never reads it, so the rules are not loaded
 twice. The dot matters: Claude Code does look up a plain `~/AGENTS.md` (and
 `~/CLAUDE.md`) as an ancestor of any project under `$HOME`, which would
@@ -257,14 +257,13 @@ from an optional dependency and must be approved with
 - V2 clients share one background server per user (`opencode service status`);
   `opencode --standalone` runs a private one.
 
-## Codebuff/Freebuff
+## Freebuff
 
-[Codebuff](https://www.codebuff.com) and [Freebuff](https://freebuff.com) are
-the same open source CLI ([CodebuffAI/codebuff]); Freebuff is its free,
-ad-supported tier. Both are installed lazily with mise (`codebuff` and
-`npm:freebuff`). On first run each downloads its binary to
-`~/.config/manicode/`, which also holds the shared `settings.json` and
-credentials.
+[Freebuff](https://freebuff.com) is a free, ad-supported coding agent built on
+the open source Codebuff CLI ([CodebuffAI/codebuff]), whose paid service shut
+down on 2026-12-01. It is installed lazily with mise (`npm:freebuff`). On
+first run it downloads its binary to `~/.config/manicode/`, which also holds
+its `settings.json` and credentials.
 
 Global configuration equivalent to Claude Code's:
 
@@ -283,7 +282,7 @@ Limitations:
 - `@` imports in context files are not expanded; content is injected verbatim.
 - No permission rules (allow/ask/deny) or hooks.
 - Interactive TUI only, no headless/print mode for scripting.
-- Freebuff: models are limited to its free catalog (`/model`), sessions spend
+- Models are limited to its free catalog (`/model`), sessions spend
 Freebucks from a quota and expire after an hour, and the UI shows ads.
 - Configuration under `~/.config/manicode/` is written by the tool itself
 (model choice, migrations), so it is not managed by chezmoi.
