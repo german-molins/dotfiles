@@ -256,6 +256,10 @@ from an optional dependency and must be approved with
   it.
 - V2 clients share one background server per user (`opencode service status`);
   `opencode --standalone` runs a private one.
+- `instructions` loads `~/.config/AGENTS.md` directly. Since 2.3.1 OpenCode
+  would also fall back to `~/.claude/CLAUDE.md`, which imports the same file,
+  so `OPENCODE_DISABLE_CLAUDE_CODE_PROMPT=1` in the global mise `[env]` skips
+  every `CLAUDE.md`.
 
 ## Freebuff
 

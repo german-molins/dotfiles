@@ -181,6 +181,7 @@ BROWSER = "firefox"
 FNOX_AGE_KEY_FILE = "~/.config/fnox/age.txt"
 JULIA_PROJECT = "@."
 TLRC_CONFIG = "$HOME/.config/tlrc/config.toml"
+OPENCODE_DISABLE_CLAUDE_CODE_PROMPT = "1"
 
 [shell_alias]
 c = "clear"

@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       ctx7:
-        specifier: 0.11.1
-        version: 0.11.1
+        specifier: 0.12.2
+        version: 0.12.2
 
 packages:
 
@@ -199,8 +199,8 @@ packages:
     resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
     engines: {node: '>=22.12.0'}
 
-  ctx7@0.11.1:
-    resolution: {integrity: sha512-BZpnMHK8Oz7CIvKYkGzgi2uIW6aM34U5uRzu9NR/7mFvNUk3DJP8WZ4cSaj6Q9Hp35qET9iWfm0Elleqzxfq1A==}
+  ctx7@0.12.2:
+    resolution: {integrity: sha512-HSq+MW5lLbDxcnKx7aloyFVoV5SZ97WTnuwJBXzMgbOnSoleqlrSF5E2OTrq3S3k6zytwuty22BwIV2PblDSKw==}
     engines: {node: '>=22.13.0'}
     hasBin: true
 
@@ -488,7 +488,7 @@ snapshots:
 
   commander@15.1.0: {}
 
-  ctx7@0.11.1:
+  ctx7@0.12.2:
     dependencies:
       '@inquirer/prompts': 8.8.0
       boxen: 9.0.0
