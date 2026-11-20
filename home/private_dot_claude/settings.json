@@ -100,7 +100,7 @@
   },
   "enabledPlugins": {
     "beads@beads-marketplace": false,
-    "context-mode@context-mode": true,
+    "context-mode@context-mode": false,
     "context7@claude-plugins-official": false,
     "ponytail@ponytail": true,
     "rust-analyzer-lsp@claude-plugins-official": false,
@@ -137,7 +137,7 @@
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "autoCompactWindow": 300000,
+  "skipWorkflowUsageWarning": false,
   "editorMode": "vim",
-  "idleCompaction": false,
-  "skipWorkflowUsageWarning": false
+  "idleCompaction": false
 }
