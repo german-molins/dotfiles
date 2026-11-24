@@ -23,8 +23,6 @@ Mise has been configured with some specific settings:
 - Downloaded files are kept after installation
 - Idiomatic version files are disabled (like ~/.python-version)
 - Tool versions unused for 3 months are forgotten by `mise prune`
-- Versions replaced by `mise upgrade` are pruned after a 1 week grace period
-  (`upgrade.prune_after`), so a rollback stays cheap for a while
 
 ## Shell Integration
 
