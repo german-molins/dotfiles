@@ -160,6 +160,7 @@ env_shell_expand = true
 lockfile_platforms = ["macos-arm64", "linux-x64", "linux-arm64"]
 minimum_release_age = "24h"
 prune.forget_unused_after = "3 months"
+upgrade.prune_after = "1 week"
 
 [settings.cargo]
 binstall = true
@@ -276,6 +277,7 @@ run = [
 description = "Clean Mise cache"
 run = [
   "mise prune -y",
+  "mise prune --system -y",
   "mise bootstrap packages prune --manager brew-cask --yes",
 ]
 
