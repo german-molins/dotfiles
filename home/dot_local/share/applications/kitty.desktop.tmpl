@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=kitty
+GenericName=Terminal emulator
+Comment=Fast, feature-rich, GPU based terminal
+TryExec={{ .chezmoi.homeDir }}/.local/share/mise/shims/kitty
+Exec={{ .chezmoi.homeDir }}/.local/share/mise/shims/kitty --start-as=maximized
+Icon=kitty
+Categories=System;TerminalEmulator;
+StartupWMClass=kitty

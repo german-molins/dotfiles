@@ -3650,6 +3650,26 @@ checksum = "sha256:8d2d4424b4238069ceec45c610df9f09f40bbf01e40c309257aaae5679542
 url = "https://github.com/kitlangton/ghui/releases/download/v0.9.1/ghui-darwin-arm64.tar.gz"
 url_api = "https://api.github.com/repos/kitlangton/ghui/releases/assets/541361183"
 
+[[tools."github:kovidgoyal/kitty"]]
+version = "0.51.1"
+backend = "github:kovidgoyal/kitty"
+specifiers = ["latest"]
+
+[tools."github:kovidgoyal/kitty".options]
+matching = "kitty-"
+
+[tools."github:kovidgoyal/kitty"."platforms.linux-arm64"]
+checksum = "sha256:9c3e8e38a5068c511e3a94e065cbd2c5af4922d76d2d205d5084018e8572648d"
+checksum_source = "mise-versions"
+url = "https://github.com/kovidgoyal/kitty/releases/download/v0.51.1/kitty-0.51.1-arm64.txz"
+url_api = "https://api.github.com/repos/kovidgoyal/kitty/releases/assets/781785432"
+
+[tools."github:kovidgoyal/kitty"."platforms.linux-x64"]
+checksum = "sha256:d309be978f017dbdcccae175d281092fefe7c8bc64478fa620581604ab0b53c0"
+checksum_source = "mise-versions"
+url = "https://github.com/kovidgoyal/kitty/releases/download/v0.51.1/kitty-0.51.1-x86_64.txz"
+url_api = "https://api.github.com/repos/kovidgoyal/kitty/releases/assets/781785194"
+
 [[tools."github:mat2cc/redis_tui"]]
 version = "0.2.4"
 backend = "github:mat2cc/redis_tui"

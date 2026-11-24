@@ -143,6 +143,9 @@ usage = "latest"
 pitchfork = "latest"
 fnox = "latest"
 lnav = { version = "latest", lazy = true }
+"github:kovidgoyal/kitty" = { version = "latest", matching = "kitty-", os = [
+  "linux",
+] }
 miniserve = { version = "latest", lazy = true }
 "npm:@playwright/cli" = { version = "latest", lazy = true, lazy_bins = [
   "playwright-cli",
