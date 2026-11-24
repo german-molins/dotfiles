@@ -22,6 +22,7 @@ Mise has been configured with some specific settings:
 - Lockfile is used to track exact versions
 - Downloaded files are kept after installation
 - Idiomatic version files are disabled (like ~/.python-version)
+- Tool versions unused for 3 months are forgotten by `mise prune`
 
 ## Shell Integration
 

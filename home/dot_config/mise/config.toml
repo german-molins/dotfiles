@@ -159,6 +159,7 @@ idiomatic_version_file_enable_tools = []
 env_shell_expand = true
 lockfile_platforms = ["macos-arm64", "linux-x64", "linux-arm64"]
 minimum_release_age = "24h"
+prune.forget_unused_after = "3 months"
 
 [settings.cargo]
 binstall = true
